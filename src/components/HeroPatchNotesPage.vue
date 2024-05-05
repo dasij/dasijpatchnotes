@@ -76,8 +76,6 @@
 
 
 <script>
-import { heroes } from '../heroData.js'
-
 export default {
   name: 'HeroPatchNotesPage',
   data() {
@@ -87,9 +85,10 @@ export default {
     }
   },
   created() {
-    const heroId = parseInt(this.$route.params.id)
-    this.hero = heroes.find(hero => hero.id === heroId)
-    this.patchNotes = this.hero.patchNotes
+    const heroName = this.$route.params.name.toLowerCase();
+    const heroData = require(`../data/heroes/${heroName}.json`);
+    this.hero = heroData;
+    this.patchNotes = heroData.patchNotes;
   },
 }
 </script>

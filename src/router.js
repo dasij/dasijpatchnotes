@@ -4,7 +4,7 @@ import HeroPatchNotesPage from './components/HeroPatchNotesPage.vue'
 
 const routes = [
   { path: '/heroes', component: HeroesPage },
-  { path: '/heroes/:id', component: HeroPatchNotesPage },
+  { path: '/hero/:name', component: HeroPatchNotesPage },
 ]
 
 const router = createRouter({

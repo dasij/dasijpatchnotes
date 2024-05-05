@@ -1,31 +1,31 @@
 export const heroes = [
   {
-    id: 1,
-    name: 'GAZLOWE',
-    image: require('@/assets/heroes_portraits/gazlowe.png'),
-    patchNotes: [
+    "id": 1,
+    "name": "GAZLOWE",
+    "image": "../../assets/heroes_portraits/gazlowe.png",
+    "patchNotes": [
       {
-        id: 1,
-        title: 'Talent rework',
-        general: [],
-        developerCommentary: 'Right now Gazlowe is a mix of a mage and an Auto Attacker where he doesn\'t shine in both roles. His auto attack build ain\'t complete enough and the mage build centers on comboing his ultimate. What i want to accomplish here is to make his kit more play-creative while giving a boost to the auto attack build and i want to do that by boosting his roleplay fantasy while increasing the skill ceiling(not the skill floor)',
-        sections: [
+        "id": 1,
+        "title": "Talent rework",
+        "general": [],
+        "developerCommentary": "Right now Gazlowe is a mix of a mage and an Auto Attacker where he doesn't shine in both roles. His auto attack build ain't complete enough and the mage build centers on comboing his ultimate. What i want to accomplish here is to make his kit more play-creative while giving a boost to the auto attack build and i want to do that by boosting his roleplay fantasy while increasing the skill ceiling(not the skill floor)",
+        "sections": [
           {
-            name: 'Level 1',
-            changes: [
+            "name": "Level 1",
+            "changes": [
               {
-                name: 'New: MOLL-E Blingtron 5000 Gift(Active)',
-                texts: [
+                "name": "New: MOLL-E Blingtron 5000 Gift(Active)",
+                "texts": [
                   {
-                    text: 'Activate to put a Mailbox that will give a random item after 30 seconds the items disappears after 60 if not picked and after 2 minutes if not used. Any hero can get the items (Cooldown 20 seconds):',
-                    subtexts: [
-                      'Invisibility Field - Grants invisibility for 10 seconds.',
-                      'Hyperspeed Accelerators - Grants speed by 20% for 3 seconds.',
-                      'Grounded Plasma Shield - Grants 200 shield for 3 seconds.',
-                    ],
-                  },
+                    "text": "Activate to put a Mailbox that will give a random item after 30 seconds the items disappears after 60 if not picked and after 2 minutes if not used. Any hero can get the items (Cooldown 20 seconds):",
+                    "subtexts": [
+                      "Invisibility Field - Grants invisibility for 10 seconds.",
+                      "Hyperspeed Accelerators - Grants speed by 20% for 3 seconds.",
+                      "Grounded Plasma Shield - Grants 200 shield for 3 seconds."
+                    ]
+                  }
                 ],
-                developerCommentary: 'This is made thinking on improve gazlowe utility as a 4-man hero rather than a solo laner granting her more of gadget power to his side.',
+                "developerCommentary": "This is made thinking on improve gazlowe utility as a 4-man hero rather than a solo laner granting her more of gadget power to his side."
               },
               {
                 name: 'One Man Wrecking Crew',
