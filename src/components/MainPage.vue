@@ -3,7 +3,7 @@
     <div>
       <h1>Main Page</h1>
       <nav>
-        <router-link to="/heroes">Heroes</router-link>
+        <router-link to="/heroes">Heroes CLICK HERE TO START</router-link>
       </nav>
       <router-view></router-view>
     </div>

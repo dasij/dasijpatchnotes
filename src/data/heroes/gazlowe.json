@@ -1,7 +1,7 @@
 {
     "id": 1,
     "name": "GAZLOWE",
-    "category": "Bruiser",
+    "role": "Bruiser",
     "image": "heroes_portraits/gazlowe.png",
     "patchNotes": [
       {
@@ -25,7 +25,7 @@
                     ]
                   }
                 ],
-                "developerCommentary": "This is made thinking on improve gazlowe utility as a 4-man hero rather than a solo laner granting her more of gadget power to his side."
+                "developerCommentary": "This is made thinking on improve gazlowe utility as a 4-man hero rather than a solo laner granting him more of gadget power to his side."
               },
               {
                 "name": "One Man Wrecking Crew",

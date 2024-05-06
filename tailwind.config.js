@@ -8,6 +8,7 @@ module.exports = {
         extend: {
           backgroundImage: {
             'hots-repeat': "url('@/assets/background-hots-bg.jpg')",
+            'heroes-page-container': "url('@/assets/heroes_page_background.webp')",
           },
         },
       },

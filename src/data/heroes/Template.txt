@@ -1,0 +1,182 @@
+{
+    "id": 1,
+    "name": "HERO_NAME",
+    "category": "role",
+    "image": "heroes_portraits/hero.png",
+    "patchNotes": [
+      {
+        "id": 1,
+        "title": "Talent rework",
+        "general": [],
+        "developerCommentary": "DEVELOPER_COMMENTARY_HERE",
+        "general": [
+            {
+              "change": "New Baseline Talent",
+              "texts": [
+                {
+                  "text": "Lucio now has a new baseline talent called 'Wall Ride'."
+                },
+                {
+                  "text": "When Lucio rides on a wall, he gains a 20% movement speed boost for 2 seconds."
+                }
+              ],
+              "developerCommentary": "We wanted to enhance Lucio's mobility and make wall riding a more integral part of his kit."
+            }
+          ],
+        "sections": [
+          {
+            "name": "Level 1",
+            "changes": [
+              {
+                "name": "",
+                "texts": [
+                  {
+                    "text": "",
+                    "subtexts": [
+                      ""
+                    ]
+                  }
+                ],
+                "developerCommentary": ""
+              },
+              {
+                "name": "",
+                "texts": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "developerCommentary": ""
+              },
+              {
+                "name": "",
+                "texts": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "developerCommentary": ""
+              }
+            ]
+          },
+          {
+            "name": "Level 4",
+            "changes": [
+              {
+                "name": "",
+                "texts": [
+                  {
+                    "text": "",
+                    "subtexts": [
+                      ""
+                    ]
+                  }
+                ],
+                "developerCommentary": ""
+              },
+              {
+                "name": "",
+                "texts": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "developerCommentary": ""
+              },
+              {
+                "name": "",
+                "texts": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "developerCommentary": ""
+              }
+            ]
+          },
+          {
+            "name": "Level 7",
+            "changes": [
+              {
+                "name": "",
+                "texts": [
+                  {
+                    "text": "",
+                    "subtexts": [
+                      ""
+                    ]
+                  }
+                ],
+                "developerCommentary": ""
+              },
+              {
+                "name": "",
+                "texts": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "developerCommentary": ""
+              }
+            ]
+          },
+          {
+            "name": "Level 10",
+            "changes": [
+              {
+                "name": "",
+                "texts": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "developerCommentary": ""
+              }
+            ]
+          },
+          {
+            "name": "Level 13",
+            "changes": [
+              {
+                "name": "",
+                "texts": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "developerCommentary": ""
+              }
+            ]
+          },
+          {
+            "name": "Level 16",
+            "changes": [
+              {
+                "name": "",
+                "texts": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "developerCommentary": ""
+              }
+            ]
+          },
+          {
+            "name": "Level 20",
+            "changes": [
+              {
+                "name": "",
+                "texts": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "developerCommentary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
