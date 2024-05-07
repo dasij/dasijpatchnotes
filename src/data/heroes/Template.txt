@@ -14,13 +14,13 @@
               "change": "New Baseline Talent",
               "texts": [
                 {
-                  "text": "Lucio now has a new baseline talent called 'Wall Ride'."
+                  "text": ""
                 },
                 {
-                  "text": "When Lucio rides on a wall, he gains a 20% movement speed boost for 2 seconds."
+                  "text": ""
                 }
               ],
-              "developerCommentary": "We wanted to enhance Lucio's mobility and make wall riding a more integral part of his kit."
+              "developerCommentary": ""
             }
           ],
         "sections": [
