@@ -1,0 +1,37 @@
+[
+    {
+      "id": "all",
+      "name": "All",
+      "image": "all.png"
+    },
+    {
+      "id": "bruiser",
+      "name": "Bruiser",
+      "image": "bruiser.png"
+    },
+    {
+      "id": "healer",
+      "name": "Healer",
+      "image": "healer.png"
+    },
+    {
+      "id": "melee-assassin",
+      "name": "Melee Assassin",
+      "image": "melee-assassin.png"
+    },
+    {
+      "id": "ranged-assassin",
+      "name": "Ranged Assassin",
+      "image": "ranged-assassin.png"
+    },
+    {
+      "id": "support",
+      "name": "Support",
+      "image": "support.png"
+    },
+    {
+      "id": "tank",
+      "name": "Tank",
+      "image": "tank.png"
+    }
+  ]
