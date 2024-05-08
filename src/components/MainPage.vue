@@ -14,7 +14,27 @@
         </ul>
       </div>
     </nav>
+
     <div class="content-wrapper">
+      <div v-if="isMainRoute" class="welcome-title-container">
+        <h1 class="welcome-title">WELCOME TO DASIJ PATCH NOTES</h1>
+      </div>
+      <div v-if="isMainRoute" class="explanation-section px-4 sm:px-6 lg:px-8">
+        <p class="text-lg sm:text-xl lg:text-2xl max-w-3xl mx-auto">Here you will find a patch notes based on my
+          philosophy so every change i propose will be base on things i
+          believe are correct for the Heroes of the Storm crave. I my self can't recreate the feeling that the original
+          developers wanted and neither i want to and that's because i can't and i don't pretend to. My main focus on
+          the changes i propose are based on further diving into the estabilished concept of how the heroes role both in
+          lore and gameplay prioritizing the fun rather than full gameplay</p>
+      </div>
+      <div v-if="isMainRoute" class="link-section">
+        <router-link to="/heroes">
+          <div class="image-wrapper">
+            <img class="rounded-full" src="@/assets/mainpage/Nexus_Recruit_Portrait.webp" alt="Heroes">
+          </div>
+          <span>Heroes</span>
+        </router-link>
+      </div>
       <router-view></router-view>
     </div>
   </div>
@@ -23,6 +43,11 @@
 <script>
 export default {
   name: 'MainPage',
+  computed: {
+    isMainRoute() {
+      return this.$route.path === '/';
+    }
+  }
 }
 </script>
 
@@ -147,8 +172,95 @@ export default {
 }
 
 .content-wrapper {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.9);
   min-height: calc(100vh);
 
+}
+
+
+.welcome-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  /* Adjust the height as needed */
+}
+
+.welcome-title {
+  font-family: "Blizzard", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.explanation-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.explanation-section p {
+  font-family: "Blizzard", sans-serif;
+  font-size: 20px;
+  color: #fff;
+}
+
+.link-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.link-section a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  position: relative;
+}
+
+.link-section .image-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.link-section img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 50%;
+}
+
+.link-section a:hover img {
+  transform: scale(1.1) translateY(-5px);
+}
+
+.link-section a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 205px;
+  height: 205px;
+  border-radius: 50%;
+  border: 6px solid #2E60A3;
+  pointer-events: none;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.link-section a:hover::before {
+  transform: translateX(-50%) scale(1.1) translateY(-5px);
+  box-shadow: inset 0 0 7px rgba(74, 143, 217, 0.8), inset 0 0 3px rgba(74, 143, 217, 0.5);
+}
+
+.link-section span {
+  margin-top: 20px;
+  font-family: "Blizzard", sans-serif;
+  font-size: 18px;
+  color: #fff;
 }
 </style>
