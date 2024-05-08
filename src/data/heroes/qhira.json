@@ -1,305 +1,214 @@
 {
-    "id": 1,
-    "name": "Qhira",
-    "role": "Melee Assassin",
-    "image": "heroes_portraits/qhira.webp",
-    "patchNotes": [
-      {
-        "id": 1,
-        "title": "Talent rework",
-        "general": [],
-        "developerCommentary": "Right now Qhira is one melee assassin that have a kit focused only on fighting without any clear wave and even with that she's also not the strongest fighter. My objective here will be to bring Qhira fight potential to the maximum while i give her little options for PvE as i want her to be an PvP focused character and for that i will give her tools to maximize the Spiderman potential",
-        "general": [
+  "id": 1,
+  "name": "QHIRA",
+  "role": "Melee Assassin",
+  "image": "heroes_portraits/qhira.webp",
+  "patchNotes": [
+    {
+      "id": 1,
+      "title": "Talent rework",
+      "general": [],
+      "developerCommentary": "Right now Qhira is one melee assassin that have a kit focused only on fighting without any clear wave and even with that she's also not the strongest fighter. My objective here will be to bring Qhira fight potential to the maximum while i give her little options for PvE as i want her to be an PvP focused character and for that i will give her tools to maximize the Spiderman potential",
+      "general": [
+        {
+          "change": "Basic Attack",
+          "texts": [
             {
-              "change": "Basic Attack",
-              "texts": [
-                {
-                  "text": "Basic attack damage reduced to 80 from 100"
-                },
-                {
-                  "text": "Basic attacks against bleeding targets increase the damage by 20% per bleed stack"
-                }
-              ],
-              "developerCommentary": "I want to further compromisse Qhira with the Bleeding synergy"
+              "text": "Basic attack damage reduced to 80 from 100"
             },
             {
-              "change": "Grappling Hook(T)",
-              "texts": [
-                {
-                  "text": "Additional functionality: Grappling Hook cooldown reduces faster for each current bleeding stack active on heroes by 2,5%"
-                },
-                {
-                  "text": "Increased cooldown from 25 to 35 "
-                }
-                
-              ],
-              "developerCommentary": "I want to go on by making Qhira a focused brawler"
+              "text": "Basic attacks against bleeding targets increase the damage by 20% per bleed stack"
             }
           ],
-        "sections": [
-          {
-            "name": "Level 1",
-            "changes": [
-              {
-                "name": "Maximum Effort",
-                "texts": [
-                  {
-                    "text": "Additional functionality: Also reduces grappling hook cooldown by 5 seconds hitting the same hero 3 times"
-                  }
-                ],
-                "developerCommentary": ""
-              },
-              {
-                "name": "Fatal Wounds",
-                "texts": [
-                  {
-                    "text": "Additional functionality: After hitting enemies heroes with blood rage 225 times increase bleed damage to non-heroic units by 250%"
-                  }
-                ],
-                "developerCommentary": ""
-              },
-              {
-                "name": "Finishing touch",
-                "texts": [
-                  {
-                    "text": "Doesn't increase basic attack damage anymore"
-                  },
-                  {
-                    "text": "Additional functionality: Hitting enemies with grappling hook increase Qhira movespeed by 15% for 2 seconds"
-                  }
-                ],
-                "developerCommentary": "With the changes i made with the extra attack damage by hitting bleed targets giving her more basic attack damage would be overkill"
-              }
-            ]
-          },
-          {
-            "name": "Level 4",
-            "changes": [
-              {
-                "name": "Upstage",
-                "texts": [
-                  {
-                    "text": "Damaging atleast 3 heroes  with blood rage reduces grappling hook cooldown by 10 seconds"
-                  }
-                ],
-                "developerCommentary": ""
-              },
-              {
-                "name": "Esnaring swing",
-                "texts": [
-                  {
-                    "text": "Additional functionality: Increase Qhira rotating speed on revolving sweep by 200%"
-                  }
-                ],
-                "developerCommentary": ""
-              },
-              {
-                "name": "Your Pain, My Gain",
-                "texts": [
-                  {
-                    "text": "Changed functionality: Basic Attacks and Grappling hooks on enemy Hero causes Qhira to gain 10 Armor for 3 seconds. Stacks 3 times."
-                  },
-                  {
-                    "text": "Additional functionality: Increase Qhira grappling hook charges by 1"
-                  }
-                ],
-                "developerCommentary": ""
-              },
-              {
-                "name": "New:Hooked",
-                "texts": [
-                  {
-                    "text": "Grappling hook now target non-heroic units dealing extra 2000% damage, grappling hook gains a charge if it kills the non-heroic target"
-                  }
-                ],
-                "developerCommentary": ""
-              }
-            ]
-          },
-          {
-            "name": "Level 7",
-            "changes": [
-              {
-                "name": "The thirst",
-                "texts": [
-                  {
-                    "text": "Changed functionality: After using grappling hook empower the next carnage use within 6 seconds, increasing it's range and size by 15% and healing 100% of all damage done."
-                  },
-                  {
-                    "text": "Additional functionality:Increase Qhira grappling hook charges by 1"
-                  }
-                ],
-                "developerCommentary": ""
-              },
-              {
-                "name": "Healmonger",
-                "texts": [
-                  {
-                    "text": "If Blood Rage damages an enemy Hero below 50% Health, it heals for an additional 150 Health and 50 more health for other heroes under 50% Health."
-                  },
-                  {
-                    "text": "Additional functionality: Increase Qhira grappling hook bleeding cooldown recharge rate by 2.5%"
-                  }
-                ],
-                "developerCommentary": ""
-              },
-              {
-                "name": "Siphoning Link",
-                "texts": [
-                  {
-                    "text": "Changed functionality: Revolving Sweep initial impact heals Qhira by 8% of her maximum life"
-                  },
-                  {
-                    "text": "Chaging prey(Active) : While under Revolving Sweep effect activate to re-cast Revolving Sweep in the target direction, if Qhira hits someone she changes the Revolving Sweep target"
-                  }
-                ],
-                "developerCommentary": ""
-              }
-            ]
-          },
-          {
-            "name": "Level 10",
-            "changes": [
-              {
-                "name": "Unrelenting Strikes",
-                "texts": [
-                  {
-                    "text": "Increases unrelenting strikes area by 1 meter"
-                  }
-                ],
-                "developerCommentary": "Unrelenting Strikes is not eazy to hit before getting Silent Killer as you can eazily be stunned or crowd controlled BUT it should be that way as a counter-measure we are expanding it to make it eazier to hit."
-              },
-              {
-                "name": "Final Strike",
-                "texts": [
-                  {
-                    "text": "Range is now global"
-                  },
-                  {
-                    "text": "Decrease missile speed from 36 to 32"
-                  },
-                  {
-                    "text": "Only deals damage to heroes now"
-                  }
-                ],
-                "developerCommentary": "This is one of the ultimates that could be hype inducing.. similar to old moments where a Tyrande hits someone with the Owl from a very big distance and just wiped someone from existence, i find that this ultimate should have the opportunity to bring the same joy of a well placed skillshot predict."
-              }
-            ]
-          },
-          {
-            "name": "Level 13",
-            "changes": [
-              {
-                "name": "Chainsaw",
-                "texts": [
-                  {
-                    "text": "Additional functionality: Increase Qhira grappling hook charges by 1"
-                  }
-                ],
-                "developerCommentary": ""
-              },
-              {
-                "name": "Pulsing pain",
-                "texts": [
-                  {
-                    "text": "Additional functionality: Secondary targets hits on the sweep decrease grappling hook cooldown by 1 second"
-                  }
-                ],
-                "developerCommentary": ""
-              },
-              {
-                "name": "The Hunted",
-                "texts": [
-                  {
-                    "text": "Additional functionality: Decrease grappling hook cooldown by 1 second when hitting enemy heroes"
-                  }
-                ],
-                "developerCommentary": ""
-              }
-            ]
-          },
-          {
-            "name": "Level 16",
-            "changes": [
-              {
-                "name": "Swing Life Away",
-                "texts": [
-                  {
-                    "text": "Changed functionality: For each second Qhira swings around a target she receives 12 spell armor that will expire 5 seconds after re-activates or stop swinging. Hitting enemy heroes with Grappling hook decreases Revolving Sweep cooldown by 3 seconds"
-                  }
-                ],
-                "developerCommentary": ""
-              }
-            ]
-          },
-          {
-            "name": "Level 20",
-            "changes": [
-              {
-                "name": "Silent Killer",
-                "texts": [
-                  {
-                    "text": "Decrease unrelenting strikes are by 1 meter"
-                  }
-                ],
-                "developerCommentary": "With the changes on the base Unrenlenting strikes we need to nerf it to the original on Silent Killer, this is one of the level 20 talents that could solo win a fight and the extra area would eazily make it wipe entire teams without effort. It's the Leoric entomb upgrade treatment"
-              },
-              {
-                "name": "Unsleashed potential",
-                "texts": [
-                  {
-                    "text": "Changed functionality: Qhira now goes with Final Strike and the first enemy hit by Final Strikes will be hit by Qhira Revolving Sweep.If the target dies 3 seconds after being hit by final strike resets Qhira basic and heroic abilities cooldown."
-                    
-                  },
-                  {
-                    "text": "Reduces final strike range to 20 (Same range as the normal ultimate)"
-                  }
-                ],
-                "developerCommentary": ""
-              },
-              {
-                "name": "new: Mortal Wounds",
-                "texts": [
-                  {
-                    "text": "Activating Blood rage makes targets with 5 bleed stacks do receive 100% more bleed damage for 3 seconds if they move"
-                  },
-                  {
-                    "text": "Reference: Dota 2 Bloodseeker RUPTURE ",
-                    "subtexts": [
-                      "https://www.dota2.com/hero/bloodseeker"
-                    ]
-                    
-                  }
-                ],
-                "developerCommentary": ""
-              },
-              {
-                "name": "No Sanctuary",
-                "texts": [
-                  {
-                    "text": "Additional functionality: Grappling hook now always pulls Qhira"
-                  },
-                  {
-                    "text": "Killing an enemy hero resets grappling hook charges"
-                  }
-                ],
-                "developerCommentary": ""
-              },
-              {
-                "name": "Utility belt",
-                "texts": [
-                  {
-                    "text": "Come over here(Active): While swinging on revolving sweep Qhira pulls the affected target to her"
-                  },
-                  {
-                    "text": "Grappling hook now stuns targets it hit for 0.25 seconds and hitting terrain refunds half of the hook cooldown."
-                  }
-                ],
-                "developerCommentary": ""
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
+          "developerCommentary": "I want to further compromisse Qhira with the Bleeding synergy"
+        },
+        {
+          "change": "Grappling Hook(T)",
+          "texts": [
+            {
+              "text": "Qhira gains an extra charge of grappling hook every 3 takedowns up to 5 times"
+            },
+            {
+              "text": "Grappling Hook recharges 10% faster for every active Blood Rage stack"
+            }
+          ],
+          "developerCommentary": "This is the beginning of spiderQhira. I am going for that route because i always thought that the grappling hook was an underdeveloped part of Qhira kits, one of her skills that could increase her skill ceiling to the roof but it's missused"
+        }
+      ],
+      "sections": [
+        {
+          "name": "Level 1",
+          "changes": [
+            {
+              "name": "Fatal Wounds",
+              "texts": [
+                {
+                  "text": "Additional quest completion method: Activate Blood Rage while 3 enemies are at full stack."
+                }
+              ],
+              "developerCommentary": "Following Alarak and Maiev quest completion method i want to make it eazier to complete quests when you do it right fast"
+            },
+            {
+              "name": "Finishing touch",
+              "texts": [
+                {
+                  "text": "Doesn't increase basic attack damage anymore"
+                },
+                {
+                  "text": "Additional functionality: Hitting enemies with grappling hook increase Qhira movespeed by 15% for 2 seconds"
+                }
+              ],
+              "developerCommentary": "With the changes i made with the extra attack damage by hitting bleed targets giving her more basic attack damage would be overkill"
+            }
+          ]
+        },
+        {
+          "name": "Level 4",
+          "changes": [
+            {
+              "name": "Esnaring swing",
+              "texts": [
+                {
+                  "text": "Additional functionality: Increase Qhira rotating speed on revolving sweep by 200%"
+                }
+              ],
+              "developerCommentary": "Esnaring sweep wasn't one of the most attractive talents compared to their counterparts but increasing rotating speed could lead to better interaction with other sweep talents"
+            },
+            {
+              "name": "Your Pain, My Gain",
+              "texts": [
+                {
+                  "text": "Now grappling hooks also give armor stacks"
+                }
+              ],
+              "developerCommentary": "Changing it to better suit the SpiderQhira lore."
+            },
+            {
+              "name": "New:Hooked",
+              "texts": [
+                {
+                  "text": "Grappling hook now target non-heroic units dealing extra 2000% damage, grappling hook refunds a charge if it kills a non-heroic target"
+                }
+              ],
+              "developerCommentary": "The objective here is to give Qhira new ways to chase whilst also giving her a little PvE damage, take in mind that the damage is supposed to be around the life of a warrior minion + 1 auto but i don't know if i put the correct value"
+            }
+          ]
+        },
+        {
+          "name": "Level 7",
+          "changes": [
+            {
+              "name": "Healmonger",
+              "texts": [
+                {
+                  "text": "If Blood Rage damages an enemy Hero below 50% Health, it heals for an additional 150 Health and 75 more health for other heroes under 50% Health."
+                }
+              ],
+              "developerCommentary": "I wish to make this talent a little worse on 1x1 and better on teamfights."
+            },
+            {
+              "name": "Siphoning Link",
+              "texts": [
+                {
+                  "text": "Removed passive"
+                },
+                {
+                  "text": "Additional functionality: Chaging prey(Active) : While under Revolving Sweep effect activate to re-cast Revolving Sweep in the target direction, if Qhira hits someone she changes the Revolving Sweep target"
+                }
+              ],
+              "developerCommentary": "The Siphoning link always bugged me..why would something related to the sweep have a healing talent on basic attack whilst it doesn't benefit it on anything or synergize and for that i didn't feel like it belonged there. Replacing it we have something that would benefit the SpiderQhira possibilities and synergizing with the primary talent concept"
+            }
+          ]
+        },
+        {
+          "name": "Level 10",
+          "changes": [
+            {
+              "name": "Final Strike",
+              "texts": [
+                {
+                  "text": "Increased range by 5"
+                }
+              ],
+              "developerCommentary": "Qhira Final strike always felt too short, increasing it by a little less than half it's range would just make it 10/10. The amount of time i see other people and myself had the little range difference to hit the target is not normal and shouldn't be taught as only 'skill issue'"
+            }
+          ]
+        },
+        {
+          "name": "Level 16",
+          "changes": [
+            {
+              "name": "Swing Life Away",
+              "texts": [
+                {
+                  "text": "Changed functionality: For each second Qhira swings around a target she receives 12 spell armor that will expire 5 seconds after re-activates or stop swinging. Hitting enemy heroes with Grappling hook decreases Revolving Sweep cooldown by 3 seconds"
+                }
+              ],
+              "developerCommentary": ""
+            }
+          ]
+        },
+        {
+          "name": "Level 20",
+          "changes": [
+            {
+              "name": "Silent Killer",
+              "texts": [
+                {
+                  "text": "Decrease unrelenting strikes are by 1 meter"
+                }
+              ],
+              "developerCommentary": "With the changes on the base Unrenlenting strikes we need to nerf it to the original on Silent Killer, this is one of the level 20 talents that could solo win a fight and the extra area would eazily make it wipe entire teams without effort. It's the Leoric entomb upgrade treatment"
+            },
+            {
+              "name": "Unleashed Potential",
+              "texts": [
+                {
+                  "text": "Casting Final Strike unleashes two additional beams that curve outward, each dealing 50% damage. The beams converge towards the end of the original Final Strike, creating an area of effect that deals 250% of the ultimate damage."
+                }
+              ],
+              "developerCommentary": "I tried lots of times to think..What is making the level 20 talent of Final Strike a little odd? First it starts by being a finishing ultimate that RESETS COOLDOWN if you are finishing someone it make less likely that you will use that resets and the ultimate doesn't give any give of mobility for you to use these resets better..sure you have the hook but on a teamfight you have high chances to have alredy used the hook when you reset atleast on my vision it's counterintuitive except for the ultimate reset on kill. On that instance i want to bring something that further increase the concept of 'unsleashed potential' and finisher move to make it more original and unique that is bringing more the finishing part."
+            },
+            {
+              "name": "New: Mortal Wounds",
+              "texts": [
+                {
+                  "text": "Activating Blood rage makes targets with 5 bleed stacks do receive 100% more bleed damage for 3 seconds if they move"
+                },
+                {
+                  "text": "Reference: Dota 2 Bloodseeker RUPTURE ",
+                  "subtexts": ["https://www.dota2.com/hero/bloodseeker"]
+                }
+              ],
+              "developerCommentary": "I would say that would be a test..i find it fun but also too disruptive"
+            },
+            {
+              "name": "No Sanctuary",
+              "texts": [
+                {
+                  "text": "Additional functionality: Grappling hook now always pulls Qhira"
+                },
+                {
+                  "text": "Killing an enemy hero resets grappling hook charges"
+                }
+              ],
+              "developerCommentary": "No Sanctuary  has the 'predator' conecpt and with that in mind i want to suit it with the grappling hook changes and make Qhira the ultimate predator (That sounds criminal)"
+            },
+            {
+              "name": "Utility belt",
+              "texts": [
+                {
+                  "text": "Changed functionality: Come over here(Active): While swinging on revolving sweep Qhira pulls the affected target to her"
+                },
+                {
+                  "text": "Grappling hook now stuns targets it hit for 0.25 seconds and hitting terrain refunds half of the hook cooldown."
+                }
+              ],
+              "developerCommentary": "With the changes i made for grappling hook utility belt the way it is doesn't fell valid anymore so i'm really changing it to be closer of an utility belt. Also the pull active is to better suit Lingering Ailment and Swing Life Away playstyles all you don't want always to kick lots of people like with Booming Kick"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

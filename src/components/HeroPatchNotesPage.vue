@@ -125,6 +125,20 @@
                           </div>
                         </div>
                         <p class="text-sm">{{ talent.description }}</p>
+                        <div v-if="talent.quest" class="mt-2">
+                          <p class="text-sm">
+                            <span class="font-semibold" style="color: #DFCB00;">Quest:</span> {{ talent.quest }}
+                          </p>
+                          <div v-if="Array.isArray(talent.rewards)">
+                            <p v-for="(reward, index) in talent.rewards" :key="index" class="text-sm">
+                              <span class="font-semibold" style="color: #DFCB00;">Reward:</span> {{
+                                reward }}
+                            </p>
+                          </div>
+                          <p v-else class="text-sm">
+                            <span class="font-semibold" style="color: #DFCB00;">Reward:</span> {{ talent.reward }}
+                          </p>
+                        </div>
                         <div v-if="talent.passives && talent.passives.length > 0" class="mt-2">
                           <p v-for="(passive, index) in talent.passives" :key="index" class="text-sm">
                             <span class="font-semibold" style="color: #78da5b;">Passive:</span> {{ passive }}

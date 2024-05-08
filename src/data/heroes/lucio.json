@@ -1,156 +1,155 @@
 {
-    "id": 1,
-    "name": "Lucio",
-    "role": "Healer",
-    "image": "heroes_portraits/lucio.webp",
-    "patchNotes": [
-      {
-        "id": 1,
-        "title": "Talent rework",
-        "general": [],
-        "developerCommentary": "Lucio sits on a pretty good spot right now in my vision on gameplay standards.What i aim here is just to strenghten his place as a speedster healer",
-        "general": [
+  "id": 1,
+  "name": "LUCIO",
+  "role": "Healer",
+  "image": "heroes_portraits/lucio.webp",
+  "patchNotes": [
+    {
+      "id": 1,
+      "title": "Talent rework",
+      "general": [],
+      "developerCommentary": "Lucio sits on a pretty good spot right now in my vision on gameplay standards.What i aim here is just to strenghten his place as a speedster healer",
+      "general": [
+        {
+          "change": "Soundwave (Q)",
+          "texts": [
             {
-              "change": "Soundwave (Q)",
-              "texts": [
-                {
-                  "text": "Soundboop(Active): Deal 105 damage to enemies in an area and knock them back. Also knock back allied heros( Share cooldown with Soundwave(Q) )"
-                }
-              ],
-              "developerCommentary": "Increase flexibility plays, Soundbook can work as a pseudo-cleanse depending on the situation AND soundboop is supposed to work with Subwoofer reward. Similar to Stiches friendly hook that ain't made to be used all the time"
+              "text": "Soundboop(Active): Deal 105 damage to enemies in an area and knock them back. Also knock back allied heros( Share cooldown with Soundwave(Q) )"
             }
           ],
+          "developerCommentary": "Increase flexibility plays, Soundbook can work as a pseudo-cleanse depending on the situation AND soundboop is supposed to work with Subwoofer reward. Similar to Stiches friendly hook that ain't made to be used all the time"
+        }
+      ],
 
-        "sections": [
-          {
-            "name": "Level 1",
-            "changes": [
-              {
-                "name": "Party mix",
-                "texts": [
-                  {
-                    "text": "Changed functionality: Every time Lucio uses crossfades after 5 seconds without using it crossfade gains 10% more effectiviness and 7.5% more range and increase Lucio Mana regeneration by 50% up to 4 times. This effect resets after Amp It Up! expires (Amp it Up is affected by the buffs too)"
-                  }
-                ],
-                "developerCommentary": "I want to increase the skill ceiling of this talent and the floor while maintaining it casual friendly. One thing i really wanted is the opportunity to make crossfade interactive in some sort of quest or effect BUT it's supposed to be something that you can't lock cooldowns(because it dumbs the character too much) and neither make something that you can spam..With that quest in mind i wanted to change to make that idea happen. The why of change here is to make the game more close to my ideas."
-              }
-            ]
-          },
-          {
-            "name": "Level 7",
-            "changes": [
-              
-              {
-                "name": "Boombox",
-                "texts": [
-                 {
-                    "text": "Additional functionality: Boombox Pet(active): Place the boombox on an allied hero, the boombox will be dragged by him and will expire after 15 seconds(Shares cooldown with boombox)"  
-                 },
-                 {
-                    "text": "armor removed"
-                 }
-                ],
-                "developerCommentary": "Boombox right now is better served as an ward than a spot for receiving Lucio Heal/Speed, boombox is not intuitive on the Lucio playstyle as Deckard Cain potions. With that in mind i want to make boombox stronger by giving Lucio the option to truly buff other characters with his baseline kit during that time."
-              }
-            ]
-          },
-          {
-            "name": "Level 10",
-            "changes": [
-              {
-                "name": "Sound Barrier",
-                "texts": [
-                 {
-                    "text": "Additional functionality: Sound Barrier cooldown recharges faster based on the current Lucio Movement speed(Minimum of 100%)"
-                 },
-                 {
-                    "text": "Additional functionality: Sound Barrier refresh wall slide movement speed bonus to the maximum"
-                 }
-                ],
-                "developerCommentary": "The concept and functionality of the Sound Barrier is good but the game today is rather fast and so on an shield ultimate is not as strong it could be and with High Five that cleanses targets and prevent good engages while also giving some mobility you question why would you go with Sound Barrier. We could buff the shield until it became OP but i would rather not, we could add passive buffs for other skills..for me the best route is to increase the number of times you can use Sound Barrier while also preventing Lucio Players from losing their momentum while performing good ultimates."
-              },
-              {
-                "name": "High five",
-                "texts": [
-                  {
-                    "text": "Changed functionality: activate to slide towards a targeted location, any allied hero hit by the slide will healed by 230 and Lucio by 80 both will also be granted unstopabble by 1 second. Cooldown : 15 seconds(2 charges)(Range 7.0 | For reference Push Off has 7.0 range)"
-                  }
-                ],
-                "developerCommentary": "Changing High Five to be an skillshot rather than a point click ability is something i would certainly do for some reasons but the most important one is about feeling, Lucio is a speed car that doesn't want to stop BUT when using High five Lucio clicks a target and moves to it --kissing-- it and the problem lies on the loss of momentum by doing that, it doesn't feel like something a speedster like Lucio would do..why stop. The second reason is to increase options with that ultimate, making it work like an extra Push Off dash could even change it to something more agressive depending on what position you are. Lastly i wanted to go through that route because it makes me feel like something a Lucio player would want..NON STOPPING SPEED"
-              }
-            ]
-          },
-          {
-            "name": "Level 16",
-            "changes": [
-              {
-                "name": "Up to Eleven",
-                "texts": [
-                  {
-                    "text": "Moved to level 20"
-                  }
-                ],
-                "developerCommentary": ""
-              }
-            ]
-          },
-          {
-            "name": "Level 20",
-            "changes": [
-              {
-                "name": "Mixing Fire",
-                "texts": [
-                 {
-                    "text": "High Five can now hit enemy Heroes, dealing 160 damage and reducing all healing received by 50% for 3 seconds."
-                 },
-                 {
-                    "text": "Passive: Reduce the Mana cost by 30% and cooldown of High Five by 30%."
-                 }
-                ],
-                "developerCommentary": "Just readjusting it the text for the changes on level 10"
-              },
-              {
-                "name": "Up to Eleven",
-                "texts": [
-                 {
-                        "text": "Moved from level 16"
-                 },
-                 {
-                    "text": "additional functionality: Recasting Amp it Up! makes Lucio dance for 2 seconds increasing Amp it Up duration! by the same duration. Wall ride movement speed bonus won't decrease during the dance"
-                 }
-                ],
-                "developerCommentary": "Just readjusting it the text for the changes on level 10"
-              },
-              {
-                "name": "House Party",
-                "texts": [
-                 {
-                    "text": "removed"
-                 }
-                ],
-                "developerCommentary": "With the changes within up to eleven and party mix i believe this talent is not necessary anymore and would be redundant/cover the same role of other talents"
-              },
-              {
-                "name": "Push it to the limit",
-                "texts": [
-                 {
-                    "text": "Reduces Pusho Off cooldown to 8 seconds and give it 2 charges(1 second cooldown between charges)"
-                 }
-                ],
-                "developerCommentary": "For me level 20 should be based on being ultra strong or ultra funny. This talent is supposed to be on the ultra fun vibe but still it's strong as Heavy Casters could make some trouble with the extra charges and supersonic combo"
-              },
-              {
-                "name": "Summer anthem",
-                "texts": [
-                 {
-                    "text": "Moved to level 16"
-                 }
-                ],
-                "developerCommentary": "Buffing this talent could make it broken but right now for a level 20 it stands as a weak option but not a bad talent either..And mostly can't change it to protected because it would certainly break the character"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
+      "sections": [
+        {
+          "name": "Level 1",
+          "changes": [
+            {
+              "name": "Party mix",
+              "texts": [
+                {
+                  "text": "Changed functionality: Every time Lucio uses crossfades after 5 seconds without using it crossfade gains 10% more effectiviness and 7.5% more range and increase Lucio Mana regeneration by 50% up to 4 times. This effect resets after Amp It Up! expires (Amp it Up is affected by the buffs too)"
+                }
+              ],
+              "developerCommentary": "I want to increase the skill ceiling of this talent and the floor while maintaining it casual friendly. One thing i really wanted is the opportunity to make crossfade interactive in some sort of quest or effect BUT it's supposed to be something that you can't lock cooldowns(because it dumbs the character too much) and neither make something that you can spam..With that quest in mind i wanted to change to make that idea happen. The why of change here is to make the game more close to my ideas."
+            }
+          ]
+        },
+        {
+          "name": "Level 7",
+          "changes": [
+            {
+              "name": "Boombox",
+              "texts": [
+                {
+                  "text": "Additional functionality: Boombox Pet(active): Place the boombox on an allied hero, the boombox will be dragged by him and will expire after 15 seconds(Shares cooldown with boombox)"
+                },
+                {
+                  "text": "armor removed"
+                }
+              ],
+              "developerCommentary": "Boombox right now is better served as an ward than a spot for receiving Lucio Heal/Speed, boombox is not intuitive on the Lucio playstyle as Deckard Cain potions. With that in mind i want to make boombox stronger by giving Lucio the option to truly buff other characters with his baseline kit during that time."
+            }
+          ]
+        },
+        {
+          "name": "Level 10",
+          "changes": [
+            {
+              "name": "Sound Barrier",
+              "texts": [
+                {
+                  "text": "Additional functionality: Sound Barrier cooldown recharges faster based on the current Lucio Movement speed(Minimum of 100%)"
+                },
+                {
+                  "text": "Additional functionality: Sound Barrier refresh wall slide movement speed bonus to the maximum"
+                }
+              ],
+              "developerCommentary": "The concept and functionality of the Sound Barrier is good but the game today is rather fast and so on an shield ultimate is not as strong it could be and with High Five that cleanses targets and prevent good engages while also giving some mobility you question why would you go with Sound Barrier. We could buff the shield until it became OP but i would rather not, we could add passive buffs for other skills..for me the best route is to increase the number of times you can use Sound Barrier while also preventing Lucio Players from losing their momentum while performing good ultimates."
+            },
+            {
+              "name": "High five",
+              "texts": [
+                {
+                  "text": "Changed functionality: activate to slide towards a targeted location, any allied hero hit by the slide will healed by 230 and Lucio by 80 both will also be granted unstopabble by 1 second. Cooldown : 15 seconds(2 charges)(Range 7.0 | For reference Push Off has 7.0 range)"
+                }
+              ],
+              "developerCommentary": "Changing High Five to be an skillshot rather than a point click ability is something i would certainly do for some reasons but the most important one is about feeling, Lucio is a speed car that doesn't want to stop BUT when using High five Lucio clicks a target and moves to it --kissing-- it and the problem lies on the loss of momentum by doing that, it doesn't feel like something a speedster like Lucio would do..why stop. The second reason is to increase options with that ultimate, making it work like an extra Push Off dash could even change it to something more agressive depending on what position you are. Lastly i wanted to go through that route because it makes me feel like something a Lucio player would want..NON STOPPING SPEED"
+            }
+          ]
+        },
+        {
+          "name": "Level 16",
+          "changes": [
+            {
+              "name": "Up to Eleven",
+              "texts": [
+                {
+                  "text": "Moved to level 20"
+                }
+              ],
+              "developerCommentary": ""
+            }
+          ]
+        },
+        {
+          "name": "Level 20",
+          "changes": [
+            {
+              "name": "Mixing Fire",
+              "texts": [
+                {
+                  "text": "High Five can now hit enemy Heroes, dealing 160 damage and reducing all healing received by 50% for 3 seconds."
+                },
+                {
+                  "text": "Passive: Reduce the Mana cost by 30% and cooldown of High Five by 30%."
+                }
+              ],
+              "developerCommentary": "Just readjusting it the text for the changes on level 10"
+            },
+            {
+              "name": "Up to Eleven",
+              "texts": [
+                {
+                  "text": "Moved from level 16"
+                },
+                {
+                  "text": "additional functionality: Recasting Amp it Up! makes Lucio dance for 2 seconds increasing Amp it Up duration! by the same duration. Wall ride movement speed bonus won't decrease during the dance"
+                }
+              ],
+              "developerCommentary": "Just readjusting it the text for the changes on level 10"
+            },
+            {
+              "name": "House Party",
+              "texts": [
+                {
+                  "text": "removed"
+                }
+              ],
+              "developerCommentary": "With the changes within up to eleven and party mix i believe this talent is not necessary anymore and would be redundant/cover the same role of other talents"
+            },
+            {
+              "name": "Push it to the limit",
+              "texts": [
+                {
+                  "text": "Reduces Pusho Off cooldown to 8 seconds and give it 2 charges(1 second cooldown between charges)"
+                }
+              ],
+              "developerCommentary": "For me level 20 should be based on being ultra strong or ultra funny. This talent is supposed to be on the ultra fun vibe but still it's strong as Heavy Casters could make some trouble with the extra charges and supersonic combo"
+            },
+            {
+              "name": "Summer anthem",
+              "texts": [
+                {
+                  "text": "Moved to level 16"
+                }
+              ],
+              "developerCommentary": "Buffing this talent could make it broken but right now for a level 20 it stands as a weak option but not a bad talent either..And mostly can't change it to protected because it would certainly break the character"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

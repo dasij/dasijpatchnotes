@@ -20,7 +20,7 @@
             <div
               class="hero-border rounded-full border-4 border-[#2E60A3] transition duration-300 ease-in-out hover:border-[#4a8fd9]">
             </div>
-            <span class="text-lg font-bold text-[#CCE5FA] mt-6">{{ hero.name }}</span>
+            <span class="text-lg font-bold text-[#CCE5FA] mt-6">{{ formatHeroName(hero.name) }}</span>
           </router-link>
         </div>
       </div>
@@ -29,7 +29,6 @@
 </template>
 
 <style scoped>
-
 .hero-image-container {
   overflow: hidden;
   border-radius: 50%;
@@ -119,6 +118,9 @@ export default {
   methods: {
     filterHeroes(role) {
       this.selectedRole = role;
+    },
+    formatHeroName(name) {
+      return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
     },
   },
   async created() {
