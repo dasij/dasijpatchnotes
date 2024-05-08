@@ -1,0 +1,92 @@
+{
+  "1": [
+    {
+      "name": "Talent 1",
+      "description": "Description of Talent 1",
+      "image": "talent1.png"
+    },
+    {
+      "name": "Talent 2",
+      "description": "Description of Talent 2",
+      "image": "talent1.png"
+    },
+    {
+      "name": "Talent 3",
+      "description": "Description of Talent 3",
+      "image": "talent1.png"
+    }
+  ],
+  "4": [
+    {
+      "name": "Talent 4",
+      "description": "Description of Talent 4",
+      "image": "talent1.png"
+    },
+    {
+      "name": "Talent 5",
+      "description": "Description of Talent 5",
+      "manaCost": 75,
+      "image": "talent1.png"
+    }
+  ],
+  "7": [
+    {
+      "name": "Talent 6",
+      "description": "Description of Talent 6",
+      "image": "talent1.png"
+    },
+    {
+      "name": "Talent 7",
+      "description": "Description of Talent 7",
+      "image": "talent1.png"
+    }
+  ],
+  "10": [
+    {
+      "name": "Talent 8",
+      "description": "Description of Talent 8",
+      "image": "talent1.png"
+    },
+    {
+      "name": "Talent 9",
+      "description": "Description of Talent 9",
+      "image": "talent1.png"
+    }
+  ],
+  "13": [
+    {
+      "name": "Talent 10",
+      "description": "Description of Talent 10",
+      "image": "talent1.png"
+    },
+    {
+      "name": "Talent 11",
+      "description": "Description of Talent 11",
+      "image": "talent1.png"
+    }
+  ],
+  "16": [
+    {
+      "name": "Talent 12",
+      "description": "Description of Talent 12",
+      "image": "talent1.png"
+    },
+    {
+      "name": "Talent 13",
+      "description": "Description of Talent 13",
+      "image": "talent1.png"
+    }
+  ],
+  "20": [
+    {
+      "name": "Talent 14",
+      "description": "Description of Talent 14",
+      "image": "talent1.png"
+    },
+    {
+      "name": "Talent 15",
+      "description": "Description of Talent 15",
+      "image": "talent1.png"
+    }
+  ]
+}

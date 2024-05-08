@@ -53,7 +53,7 @@
                 "name": "Fatal Wounds",
                 "texts": [
                   {
-                    "text": "Additional functionality: After hitting enemies with blood rage 300 times increase maximum bleed stacks by 1"
+                    "text": "Additional functionality: After hitting enemies heroes with blood rage 225 times increase bleed damage to non-heroic units by 250%"
                   }
                 ],
                 "developerCommentary": ""
@@ -101,6 +101,15 @@
                   },
                   {
                     "text": "Additional functionality: Increase Qhira grappling hook charges by 1"
+                  }
+                ],
+                "developerCommentary": ""
+              },
+              {
+                "name": "New:Hooked",
+                "texts": [
+                  {
+                    "text": "Grappling hook now target non-heroic units dealing extra 2000% damage, grappling hook gains a charge if it kills the non-heroic target"
                   }
                 ],
                 "developerCommentary": ""
@@ -234,6 +243,59 @@
                   }
                 ],
                 "developerCommentary": "With the changes on the base Unrenlenting strikes we need to nerf it to the original on Silent Killer, this is one of the level 20 talents that could solo win a fight and the extra area would eazily make it wipe entire teams without effort. It's the Leoric entomb upgrade treatment"
+              },
+              {
+                "name": "Unsleashed potential",
+                "texts": [
+                  {
+                    "text": "Changed functionality: Qhira now goes with Final Strike and the first enemy hit by Final Strikes will be hit by Qhira Revolving Sweep.If the target dies 3 seconds after being hit by final strike resets Qhira basic and heroic abilities cooldown."
+                    
+                  },
+                  {
+                    "text": "Reduces final strike range to 20 (Same range as the normal ultimate)"
+                  }
+                ],
+                "developerCommentary": ""
+              },
+              {
+                "name": "new: Mortal Wounds",
+                "texts": [
+                  {
+                    "text": "Activating Blood rage makes targets with 5 bleed stacks do receive 100% more bleed damage for 3 seconds if they move"
+                  },
+                  {
+                    "text": "Reference: Dota 2 Bloodseeker RUPTURE ",
+                    "subtexts": [
+                      "https://www.dota2.com/hero/bloodseeker"
+                    ]
+                    
+                  }
+                ],
+                "developerCommentary": ""
+              },
+              {
+                "name": "No Sanctuary",
+                "texts": [
+                  {
+                    "text": "Additional functionality: Grappling hook now always pulls Qhira"
+                  },
+                  {
+                    "text": "Killing an enemy hero resets grappling hook charges"
+                  }
+                ],
+                "developerCommentary": ""
+              },
+              {
+                "name": "Utility belt",
+                "texts": [
+                  {
+                    "text": "Come over here(Active): While swinging on revolving sweep Qhira pulls the affected target to her"
+                  },
+                  {
+                    "text": "Grappling hook now stuns targets it hit for 0.25 seconds and hitting terrain refunds half of the hook cooldown."
+                  }
+                ],
+                "developerCommentary": ""
               }
             ]
           }
