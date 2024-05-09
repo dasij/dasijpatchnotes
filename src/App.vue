@@ -6,10 +6,11 @@
             <div class="navbar-content">
                 <div class="navbar-background"></div>
                 <div class="navbar-logo">
-                    <img src="@\assets\nav\logo_hots.png" alt="Logo">
+                    <router-link to="/">
+                        <img src="@\assets\nav\logo_hots.png" alt="Logo">
+                    </router-link>
                 </div>
                 <ul class="navbar-menu">
-                    <li><router-link to="/">Home</router-link></li>
                     <li><router-link to="/heroes">Heroes</router-link></li>
                 </ul>
             </div>
@@ -79,6 +80,10 @@
     z-index: 2;
     margin-left: 1rem;
     /* Add margin to the logo */
+}
+
+.navbar-logo a {
+    display: block;
 }
 
 .navbar-logo img {

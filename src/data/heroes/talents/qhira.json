@@ -8,7 +8,7 @@
     {
       "name": "Fatal Wounds",
       "description": "While at maximum stacks, Blood Rage's bleed deals 30% additional damage to enemy Heroes under 50% Health.",
-      "quest": "Damage enemy Heroes with Blood Rage's bleed damage {highlight}or Activate Blood Rage while 3 enemies are at full stack.{/highlight} ",
+      "quest": "Damage enemy Heroes with Blood Rage's bleed damage {highlight}or activate Blood Rage while 3 enemies are at full stack.{/highlight} ",
       "rewards": [
         "After damaging Heroes with Blood Rage's bleed damage 150 times, Blood Rage's duration is increased by 2 seconds"
       ],
@@ -19,7 +19,7 @@
       "name": "Finishing Touch",
       "description": "When Qhira Basic Attacks an enemy Hero below 50% Health it deals 20% additional damage, and she gains 35% Attack Speed for 3 seconds.",
       "passives": [
-        "{highlight} Hitting enemies with grappling hook increase Qhira movespeed by 15% for 2 seconds{/highlight}"
+        "{highlight} Hitting enemies with grappling hook increases Qhira movespeed by 15% for 2 seconds{/highlight}"
       ],
       "image": "storm_ui_icon_nexushunter_passive.png",
       "talentChanged": true
@@ -35,20 +35,20 @@
       "name": "Ensnaring Swing",
       "description": "The primary target of Revolving Sweep is Slowed by 60% while Qhira is attached to them. Secondary targets hit by Revolving Sweep's swing are Slowed by 40% for 3 seconds",
       "passives": [
-        "{highlight} Increase Qhira rotating speed on revolving sweep by 200%{/highlight}"
+        "{highlight} Increases Qhira rotating speed on revolving sweep by 200%{/highlight}"
       ],
       "image": "storm_ui_icon_nexushunter_e.png",
       "talentChanged": true
     },
     {
       "name": "Your Pain, My Gain",
-      "description": "Hitting enemy heros with basic attacks {highlight}or the grappling hook{/highlight} causes Qhira to gain 10 Armor for 3 seconds. Stacks 3 times.",
+      "description": "Hitting enemy heroes with basic attacks {highlight}or the grappling hook{/highlight} causes Qhira to gain 10 Armor for 3 seconds. Stacks 3 times.",
       "image": "storm_ui_icon_nexushunter_passive.png",
       "talentChanged": true
     },
     {
       "name": "Hooked",
-      "description": "{highlight}Grappling hook now target non-heroic units dealing extra 2000% damage to them, refunds a charge if it kills a non-heroic target.{/highlight}",
+      "description": "{highlight}Grappling hook now targets non-heroic units dealing extra 2000% damage to them, refunds a charge if it kills a non-heroic target.{/highlight}",
       "image": "talent1.png",
       "talentChanged": true
     }
@@ -67,7 +67,7 @@
     },
     {
       "name": "Siphoning Link",
-      "description": "{highlight}Chaging prey(Active) : While under Revolving Sweep effect activate to re-cast Revolving Sweep in the target direction, if Qhira hits someone she changes the Revolving Sweep target{/highlight}",
+      "description": "{highlight}Changing prey(Active) : While under Revolving Sweep effect activate to re-cast Revolving Sweep in the target direction, if Qhira hits someone she changes the Revolving Sweep target{/highlight}",
       "passives": [
         "Damaging an enemy Hero with Revolving Sweep's initial impact or swing causes Qhira to regenerate 96 (+4% per level) Health over 4 seconds. Stacks up to 4 times."
       ],
@@ -127,7 +127,7 @@
   "20": [
     {
       "name": "Silent Killer",
-      "description": "Hitting enemy Heroes with Unrelenting Strikes Silences them for 0.5 seconds and reduces its cooldown by 3 seconds. {highlight}Decrease unrelenting strikes are by 1 meter{/highlight}",
+      "description": "Hitting enemy Heroes with Unrelenting Strikes Silences them for 0.5 seconds and reduces its cooldown by 3 seconds. {highlight}Decrease unrelenting strikes area by 1 meter{/highlight}",
       "image": "storm_ui_icon_nexushunter_r1.png",
       "talentChanged": true
     },
@@ -158,7 +158,7 @@
     },
     {
       "name": "Mortal Wounds",
-      "description": "{highlight}Activating Blood rage makes targets with 5 bleed stacks do receive 100% more bleed damage for 3 seconds if they move{/highlight}",
+      "description": "{highlight}Activating Blood rage makes targets with 5 bleed stacks receive 100% more bleed damage for 3 seconds if they move{/highlight}",
       "image": "talent1.png",
       "talentChanged": true
     }

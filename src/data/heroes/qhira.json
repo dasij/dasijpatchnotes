@@ -8,7 +8,7 @@
       "id": 1,
       "title": "Talent rework",
       "general": [],
-      "developerCommentary": "Right now Qhira is one melee assassin that have a kit focused only on fighting without any clear wave and even with that she's also not the strongest fighter. My objective here will be to bring Qhira fight potential to the maximum while i give her little options for PvE as i want her to be an PvP focused character and for that i will give her tools to maximize the Spiderman potential",
+      "developerCommentary": "Right now Qhira is one melee assassin that has a kit focused only on fighting without any clear wave and even with that she's also not the strongest fighter. My objective here will be to bring Qhira fight potential to the maximum while i give her little options for PvE as i want her to be an PvP focused character and for that i will give her tools to maximize the Spiderman potential",
       "general": [
         {
           "change": "Basic Attack",
@@ -46,7 +46,7 @@
                   "text": "Additional quest completion method: Activate Blood Rage while 3 enemies are at full stack."
                 }
               ],
-              "developerCommentary": "Following Alarak and Maiev quest completion method i want to make it eazier to complete quests when you do it right fast"
+              "developerCommentary": "Following Alarak and Maiev quest completion method i want to make it easier to complete quests when you do it right fast"
             },
             {
               "name": "Finishing touch",
@@ -158,7 +158,7 @@
                   "text": "Decrease unrelenting strikes are by 1 meter"
                 }
               ],
-              "developerCommentary": "With the changes on the base Unrenlenting strikes we need to nerf it to the original on Silent Killer, this is one of the level 20 talents that could solo win a fight and the extra area would eazily make it wipe entire teams without effort. It's the Leoric entomb upgrade treatment"
+              "developerCommentary": "With the changes on the base Unrenlenting strikes we need to nerf it to the original on Silent Killer, this is one of the level 20 talents that could solo win a fight and the extra area would easily make it wipe entire teams without effort. It's the Leoric entomb upgrade treatment"
             },
             {
               "name": "Unleashed Potential",
@@ -167,7 +167,7 @@
                   "text": "Casting Final Strike unleashes two additional beams that curve outward, each dealing 50% damage. The beams converge towards the end of the original Final Strike, creating an area of effect that deals 250% of the ultimate damage."
                 }
               ],
-              "developerCommentary": "I tried lots of times to think..What is making the level 20 talent of Final Strike a little odd? First it starts by being a finishing ultimate that RESETS COOLDOWN if you are finishing someone it make less likely that you will use that resets and the ultimate doesn't give any give of mobility for you to use these resets better..sure you have the hook but on a teamfight you have high chances to have alredy used the hook when you reset atleast on my vision it's counterintuitive except for the ultimate reset on kill. On that instance i want to bring something that further increase the concept of 'unsleashed potential' and finisher move to make it more original and unique that is bringing more the finishing part."
+              "developerCommentary": "I tried lots of times to think..What is making the level 20 talent of Final Strike a little odd? First it starts by being a finishing ultimate that RESETS COOLDOWN if you are finishing someone it make less likely that you will use that resets and the ultimate doesn't give any give of mobility for you to use these resets better..sure you have the hook but on a teamfight you have high chances to have already used the hook when you reset atleast on my vision it's counterintuitive except for the ultimate reset on kill. On that instance i want to bring something that further increase the concept of 'unsleashed potential' and finisher move to make it more original and unique that is bringing more the finishing part."
             },
             {
               "name": "New: Mortal Wounds",
@@ -204,7 +204,7 @@
                   "text": "Grappling hook now stuns targets it hit for 0.25 seconds and hitting terrain refunds half of the hook cooldown."
                 }
               ],
-              "developerCommentary": "With the changes i made for grappling hook utility belt the way it is doesn't fell valid anymore so i'm really changing it to be closer of an utility belt. Also the pull active is to better suit Lingering Ailment and Swing Life Away playstyles all you don't want always to kick lots of people like with Booming Kick"
+              "developerCommentary": "With the changes i made for grappling hook utility belt the way it is doesn't feel valid anymore so i'm really changing it to be closer of an utility belt. Also the pull active is to better suit Lingering Ailment and Swing Life Away playstyles all you don't want always to kick lots of people like with Booming Kick"
             }
           ]
         }

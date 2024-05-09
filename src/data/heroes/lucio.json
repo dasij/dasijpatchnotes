@@ -8,16 +8,16 @@
       "id": 1,
       "title": "Talent rework",
       "general": [],
-      "developerCommentary": "Lucio sits on a pretty good spot right now in my vision on gameplay standards.What i aim here is just to strenghten his place as a speedster healer",
+      "developerCommentary": "Lucio sits on a pretty good spot right now in my vision on gameplay standards.What i aim here is just to strengthen his place as a speedster healer",
       "general": [
         {
           "change": "Soundwave (Q)",
           "texts": [
             {
-              "text": "Soundboop(Active): Deal 105 damage to enemies in an area and knock them back. Also knock back allied heros( Share cooldown with Soundwave(Q) )"
+              "text": "Soundboop(Active): Deal 105 damage to enemies in an area and knock them back. Also knock back allied heroes( Share cooldown with Soundwave(Q) )"
             }
           ],
-          "developerCommentary": "Increase flexibility plays, Soundbook can work as a pseudo-cleanse depending on the situation AND soundboop is supposed to work with Subwoofer reward. Similar to Stiches friendly hook that ain't made to be used all the time"
+          "developerCommentary": "Increase flexibility plays, Soundbook can work as a pseudo-cleanse depending on the situation AND soundboop is supposed to work with Subwoofer reward. Similar to Stitches friendly hook that isn't made to be used all the time"
         }
       ],
 
@@ -29,7 +29,7 @@
               "name": "Party mix",
               "texts": [
                 {
-                  "text": "Changed functionality: Every time Lucio uses crossfades after 5 seconds without using it crossfade gains 10% more effectiviness and 7.5% more range and increase Lucio Mana regeneration by 50% up to 4 times. This effect resets after Amp It Up! expires (Amp it Up is affected by the buffs too)"
+                  "text": "Changed functionality: Every time Lucio uses crossfades after 5 seconds without using it crossfade gains 10% more effectiveness and 7.5% more range and increase Lucio Mana regeneration by 50% up to 4 times. This effect resets after Amp It Up! expires (Amp it Up is affected by the buffs too)"
                 }
               ],
               "developerCommentary": "I want to increase the skill ceiling of this talent and the floor while maintaining it casual friendly. One thing i really wanted is the opportunity to make crossfade interactive in some sort of quest or effect BUT it's supposed to be something that you can't lock cooldowns(because it dumbs the character too much) and neither make something that you can spam..With that quest in mind i wanted to change to make that idea happen. The why of change here is to make the game more close to my ideas."
@@ -72,7 +72,7 @@
               "name": "High five",
               "texts": [
                 {
-                  "text": "Changed functionality: activate to slide towards a targeted location, any allied hero hit by the slide will healed by 230 and Lucio by 80 both will also be granted unstopabble by 1 second. Cooldown : 15 seconds(2 charges)(Range 7.0 | For reference Push Off has 7.0 range)"
+                  "text": "Changed functionality: activate to slide towards a targeted location, any allied hero hit by the slide will healed by 230 and Lucio by 80 both will also be granted unstoppabble by 1 second. Cooldown : 15 seconds(2 charges)(Range 7.0 | For reference Push Off has 7.0 range)"
                 }
               ],
               "developerCommentary": "Changing High Five to be an skillshot rather than a point click ability is something i would certainly do for some reasons but the most important one is about feeling, Lucio is a speed car that doesn't want to stop BUT when using High five Lucio clicks a target and moves to it --kissing-- it and the problem lies on the loss of momentum by doing that, it doesn't feel like something a speedster like Lucio would do..why stop. The second reason is to increase options with that ultimate, making it work like an extra Push Off dash could even change it to something more agressive depending on what position you are. Lastly i wanted to go through that route because it makes me feel like something a Lucio player would want..NON STOPPING SPEED"
@@ -133,7 +133,7 @@
               "name": "Push it to the limit",
               "texts": [
                 {
-                  "text": "Reduces Pusho Off cooldown to 8 seconds and give it 2 charges(1 second cooldown between charges)"
+                  "text": "Reduces Push Off cooldown to 8 seconds and give it 2 charges(1 second cooldown between charges)"
                 }
               ],
               "developerCommentary": "For me level 20 should be based on being ultra strong or ultra funny. This talent is supposed to be on the ultra fun vibe but still it's strong as Heavy Casters could make some trouble with the extra charges and supersonic combo"

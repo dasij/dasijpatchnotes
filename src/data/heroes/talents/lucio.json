@@ -68,7 +68,7 @@
     },
     {
       "name": "High Five",
-      "description": "{highlight}activate to slide towards a targeted location, any allied hero hit by the slide will healed by 230 and Lucio by 80 both will also be granted unstopabble by 1 second.(2 charges){/highlight}",
+      "description": "{highlight}activate to slide towards a targeted location, any allied hero hit by the slide will healed by 230 and Lucio by 80 both will also be granted unstoppabble by 1 second.(2 charges){/highlight}",
       "image": "storm_ui_icon_lucio_highfive.png",
       "manaCost": 30,
       "cooldown": 15,
@@ -124,7 +124,7 @@
     },
     {
       "name": "Push it to the limit",
-      "description": "{highlight}Reduces Pusho Off cooldown to 8 seconds and give it 2 charges(1 second cooldown between charges){/highlight}",
+      "description": "{highlight}Reduces Push Off cooldown to 8 seconds and give it 2 charges(1 second cooldown between charges){/highlight}",
       "image": "lucio.png",
       "talentChanged": true
     },
