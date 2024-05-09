@@ -124,24 +124,27 @@
                             <span class="font-semibold">Cooldown:</span> {{ talent.cooldown }}
                           </div>
                         </div>
-                        <p class="text-sm">{{ talent.description }}</p>
+                        <p class="text-sm" v-html="formatText(talent.description)"></p>
                         <div v-if="talent.quest" class="mt-2">
                           <p class="text-sm">
-                            <span class="font-semibold" style="color: #DFCB00;">Quest:</span> {{ talent.quest }}
+                            <span class="font-semibold" style="color: #DFCB00;">Quest:</span> <span
+                              v-html="formatText(talent.quest)"></span>
                           </p>
                           <div v-if="Array.isArray(talent.rewards)">
                             <p v-for="(reward, index) in talent.rewards" :key="index" class="text-sm">
-                              <span class="font-semibold" style="color: #DFCB00;">Reward:</span> {{
-                                reward }}
+                              <span class="font-semibold" style="color: #DFCB00;">Reward:</span> <span
+                                v-html="formatText(reward)"></span>
                             </p>
                           </div>
                           <p v-else class="text-sm">
-                            <span class="font-semibold" style="color: #DFCB00;">Reward:</span> {{ talent.reward }}
+                            <span class="font-semibold" style="color: #DFCB00;">Reward:</span> <span
+                              v-html="formatText(talent.reward)"></span>
                           </p>
                         </div>
                         <div v-if="talent.passives && talent.passives.length > 0" class="mt-2">
                           <p v-for="(passive, index) in talent.passives" :key="index" class="text-sm">
-                            <span class="font-semibold" style="color: #78da5b;">Passive:</span> {{ passive }}
+                            <span class="font-semibold" style="color: #78da5b;">Passive:</span>
+                            <span v-html="formatText(passive)"></span>
                           </p>
                         </div>
                       </div>
@@ -191,6 +194,18 @@
   object-fit: cover;
 }
 
+.highlight-text {
+  color: red !important;
+  font-size: 30px !important;
+  /* Adjust the color as needed */
+}
+
+.talent-tooltip .highlight-text {
+  color: red !important;
+  font-size: 30px !important;
+  /* Adjust the color as needed */
+}
+
 .talent-changed {
   border: 2px solid red;
 }
@@ -229,6 +244,9 @@ export default {
     },
     hideTooltip() {
       this.tooltipTalent = null;
+    },
+    formatText(text) {
+      return text.replace(/{highlight}(.*?){\/highlight}/g, '<span style="color: red;">$1</span>');
     },
   },
 }

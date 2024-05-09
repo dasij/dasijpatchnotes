@@ -7,16 +7,16 @@
     },
     {
       "name": "Big Game Hunter",
-      "description": "Increase maximum Scrap by 2. Basic Attacks against enemy Heroes, Mercenaries, or Monsters accelerates Reduce, Reuse, Recycle Scrap regeneration by 1.5 seconds.",
+      "description": "Increase maximum Scrap by 2. Basic Attacks against enemy Heroes, Mercenaries, or Monsters accelerates Reduce, Reuse, Recycle Scrap regeneration by 1.5 seconds.{/highlight}",
       "passives": [
-        "Destroying a turret with Reduce, Reuse, Recycle gives Gazlowe 15% movespeed for 2 seconds"
+        "{highlight}Destroying a turret with Reduce, Reuse, Recycle gives Gazlowe 15% movespeed for 2 seconds{/highlight}"
       ],
       "image": "storm_ui_icon_gazlowe_salvager.png",
       "talentChanged": true
     },
     {
       "name": "MOLL-E Blingtron 5000 Gift(Active)",
-      "description": "Activate to put a Mailbox that will give a random item after 30 seconds the items disappears after 60 if not picked and after 2 minutes if not used. Any hero can get the items:",
+      "description": "{highlight}Activate to put a Mailbox that will give a random item after 30 seconds the items disappears after 60 if not picked and after 2 minutes if not used. Any hero can get the items:{/highlight}",
       "cooldown": 20,
       "image": "talent1.png",
       "talentChanged": true
@@ -25,9 +25,9 @@
   "4": [
     {
       "name": "Mekgineer's Mount 5000",
-      "description": "Activate to make Gazlowe becomes unstopabble for 5 seconds and can't be unmounted by damage while mounted and increases his mount speed to 150%, loses the effect if Gazlowe dismounts",
+      "description": "{highlight}Activate to make Gazlowe becomes unstopabble for 5 seconds and can't be unmounted by damage while mounted and increases his mount speed to 150%, loses the effect if Gazlowe dismounts{/highlight}",
       "passives": [
-        "Gazlowe mount let another mount together on a mining cart installed by Gazlowe, the allied hero will mount instantly to the gazlowe cart without reseting his own mount cooldown"
+        "{highlight}Gazlowe mount let another mount together on a mining cart installed by Gazlowe, the allied hero will mount instantly to the gazlowe cart without reseting his own mount cooldown{/highlight}"
       ],
       "cooldown": 30,
       "image": "talent1.png",
@@ -35,13 +35,13 @@
     },
     {
       "name": "Hyperfocus Coils",
-      "description": "Heroes hit with Deth Lazor are affected by zapped for 3 seconds dealing 40 damage per second to enemy heros close to them. Hitting the same enemy hero with Deth Lazor and Xplodium Charge within 3 seconds on a enemy hero makes Gazlowe zaps all his Rock-It! Turret to deal damage to the enemies. Gazlowe is healed 100% of all zapped damage",
+      "description": "{highlight}Heroes hit with Deth Lazor are affected by zapped for 3 seconds dealing 40 damage per second to enemy heros close to them. Hitting the same enemy hero with Deth Lazor and Xplodium Charge within 3 seconds on a enemy hero makes Gazlowe zaps all his Rock-It! Turret to deal damage to the enemies. Gazlowe is healed 100% of all zapped damage{/highlight}",
       "image": "storm_ui_icon_gazlowe_combo_w_e.png",
       "talentChanged": true
     },
     {
       "name": "EZ-PZ Dimensional Ripper",
-      "description": "Destroying a turret with Reduce, Reuse, Recycle reduces enemy heroes nearby that turret damage by 20% and increase allied heros armor by 10 for 4 seconds, Gazlowe will receive a shield that absorbs 100 damage for each hero affected for 2.5 seconds",
+      "description": "{highlight}Destroying a turret with Reduce, Reuse, Recycle reduces enemy heroes nearby that turret damage by 20% and increase allied heros armor by 10 for 4 seconds, Gazlowe will receive a shield that absorbs 100 damage for each hero affected for 2.5 seconds{/highlight}",
       "image": "storm_ui_icon_talent_imposingpresence.png",
       "talentChanged": true
     }
@@ -54,10 +54,10 @@
     },
     {
       "name": "Cardboard Assassin(active)",
-      "description": "Activate to place a Cardboard Assassin decoy unit that have 1000 health and act as a heroic unit for 10 seconds. If you hit Cardboard Assassin with Deth Lazor it becomes zapped and deals enemy heros 40 damage per second and taunts enemy heros for 0.5 second, after 3 seconds it explodes.",
+      "description": "{highlight}Activate to place a Cardboard Assassin decoy unit that have 1000 health and act as a heroic unit for 10 seconds. If you hit Cardboard Assassin with Deth Lazor it becomes zapped and deals enemy heros 40 damage per second and taunts enemy heros for 0.5 second, after 3 seconds it explodes.{/highlight}",
       "cooldown": 10,
       "passives": [
-        "Deth Lazor cooldown is reduced by 2 seconds"
+        "{highlight}Deth Lazor cooldown is reduced by 2 seconds{/highlight}"
       ],
       "image": "talent1.png",
       "talentChanged": true
@@ -74,8 +74,8 @@
       "description": "Basic Attacks deal 90 (+4% per level) bonus damage over 5 seconds, stacking up to 3 times.",
       "passives": [
         "Basic Attacks deal 90 (+4% per level) bonus damage over 5 seconds, stacking up to 3 times.",
-        "Rock-It! Turrets now explode dealing 135 damage to enemies when they are destroyed",
-        "Increase max scrap limit by 6 and increase scrap regeneration speed by 50%"
+        "{highlight}Rock-It! Turrets now explode dealing 135 damage to enemies when they are destroyed{/highlight}",
+        "{highlight}Increase max scrap limit by 6 and increase scrap regeneration speed by 50%{/highlight}"
       ],
       "cooldown": 40,
       "image": "storm_ui_icon_gazlowe_robogoblin.png",
@@ -91,7 +91,7 @@
   "13": [
     {
       "name": "Positive Reinforcement",
-      "description": "Primary Rock-It! Turret attacks against Heroes increase Gazlowe's Attack Speed by 40% for 3 seconds.Dealing Basic Attack adamage extends the duration of Rock-it! Turrets by 0.75 seconds.",
+      "description": "Primary Rock-It! Turret attacks against Heroes increase Gazlowe's Attack Speed by 40% for 3 seconds.{highlight}Dealing Basic Attack adamage extends the duration of Rock-it! Turrets by 0.75 seconds.{/highlight}",
       "image": "storm_ui_icon_gazlowe_rockitturret.png",
       "talentChanged": true
     },
@@ -102,7 +102,7 @@
     },
     {
       "name": "Overload",
-      "description": "Deth Lazor can now be recast during its channeling up to three times, each recast will increase the channel time in 0.65 the area in 100% of it's base area and the damage by 75% of the base damage",
+      "description": "{highlight}Deth Lazor can now be recast during its channeling up to three times, each recast will increase the channel time in 0.65 the area in 100% of it's base area and the damage by 75% of the base damage{/highlight}",
       "image": "storm_ui_icon_gazlowe_dethlazor_a.png",
       "talentChanged": true
     }
@@ -110,9 +110,9 @@
   "16": [
     {
       "name": "Firin' Mah Lazorz",
-      "description": "L-A-Z-O-R: The next time you cast a Deth Lazor will make all your Rock-it! Turrets shoot a lazor",
+      "description": "{highlight}L-A-Z-O-R: The next time you cast a Deth Lazor will make all your Rock-it! Turrets shoot a lazor{/highlight}",
       "passives": [
-        "Rock-It! Turrets every 5 seconds will charge a lazor making it next shoot deal 125 damage"
+        "{highlight}Rock-It! Turrets every 5 seconds will charge a lazor making it next shoot deal 125 damage{/highlight}"
       ],
       "cooldown": 30,
       "image": "storm_ui_icon_gazlowe_dethlazor.png",
@@ -132,7 +132,7 @@
   "20": [
     {
       "name": "Mecha-Lord",
-      "description": "Deplay a homing missile to seek the targeted enemy unit. The missile gains speed over time, dealing 300 damage and stunning for 1.5 second when it impacts the target. Enemy units can destroy the missile before it reaches its target.",
+      "description": "{highlight}Deplay a homing missile to seek the targeted enemy unit. The missile gains speed over time, dealing 300 damage and stunning for 1.5 second when it impacts the target. Enemy units can destroy the missile before it reaches its target.{/highlight}",
       "passives": [
         "Basic Attacks increase Gazlowe's Armor by 10 for 10 seconds, up to a maximum of 30."
       ],

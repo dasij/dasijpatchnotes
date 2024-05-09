@@ -8,7 +8,7 @@
     {
       "name": "Fatal Wounds",
       "description": "While at maximum stacks, Blood Rage's bleed deals 30% additional damage to enemy Heroes under 50% Health.",
-      "quest": "Damage enemy Heroes with Blood Rage's bleed damage or Activate Blood Rage while 3 enemies are at full stack.",
+      "quest": "Damage enemy Heroes with Blood Rage's bleed damage {highlight}or Activate Blood Rage while 3 enemies are at full stack.{/highlight} ",
       "rewards": [
         "After damaging Heroes with Blood Rage's bleed damage 150 times, Blood Rage's duration is increased by 2 seconds"
       ],
@@ -19,7 +19,7 @@
       "name": "Finishing Touch",
       "description": "When Qhira Basic Attacks an enemy Hero below 50% Health it deals 20% additional damage, and she gains 35% Attack Speed for 3 seconds.",
       "passives": [
-        "Hitting enemies with grappling hook increase Qhira movespeed by 15% for 2 seconds"
+        "{highlight} Hitting enemies with grappling hook increase Qhira movespeed by 15% for 2 seconds{/highlight}"
       ],
       "image": "storm_ui_icon_nexushunter_passive.png",
       "talentChanged": true
@@ -34,19 +34,21 @@
     {
       "name": "Ensnaring Swing",
       "description": "The primary target of Revolving Sweep is Slowed by 60% while Qhira is attached to them. Secondary targets hit by Revolving Sweep's swing are Slowed by 40% for 3 seconds",
-      "passives": ["Increase Qhira rotating speed on revolving sweep by 200%"],
+      "passives": [
+        "{highlight} Increase Qhira rotating speed on revolving sweep by 200%{/highlight}"
+      ],
       "image": "storm_ui_icon_nexushunter_e.png",
       "talentChanged": true
     },
     {
       "name": "Your Pain, My Gain",
-      "description": "Hitting enemy heros with basic attacks or the grappling hook causes Qhira to gain 10 Armor for 3 seconds. Stacks 3 times.",
+      "description": "Hitting enemy heros with basic attacks {highlight}or the grappling hook{/highlight} causes Qhira to gain 10 Armor for 3 seconds. Stacks 3 times.",
       "image": "storm_ui_icon_nexushunter_passive.png",
       "talentChanged": true
     },
     {
       "name": "Hooked",
-      "description": "Grappling hook now target non-heroic units dealing extra 2000% damage to them, refunds a charge if it kills a non-heroic target.",
+      "description": "{highlight}Grappling hook now target non-heroic units dealing extra 2000% damage to them, refunds a charge if it kills a non-heroic target.{/highlight}",
       "image": "talent1.png",
       "talentChanged": true
     }
@@ -59,13 +61,13 @@
     },
     {
       "name": "Healmonger",
-      "description": "If Blood Rage damages an enemy Hero below 50% Health, it heals for an additional 150 Health and 75 more health for other heroes under 50% Health.",
+      "description": "If Blood Rage damages an enemy Hero below 50% Health, {highlight}it heals for an additional 150 Health and 75 more health for other heroes under 50% Health.{/highlight}",
       "image": "storm_ui_icon_nexushunter_w.png",
       "talentChanged": true
     },
     {
       "name": "Siphoning Link",
-      "description": "Chaging prey(Active) : While under Revolving Sweep effect activate to re-cast Revolving Sweep in the target direction, if Qhira hits someone she changes the Revolving Sweep target",
+      "description": "{highlight}Chaging prey(Active) : While under Revolving Sweep effect activate to re-cast Revolving Sweep in the target direction, if Qhira hits someone she changes the Revolving Sweep target{/highlight}",
       "passives": [
         "Damaging an enemy Hero with Revolving Sweep's initial impact or swing causes Qhira to regenerate 96 (+4% per level) Health over 4 seconds. Stacks up to 4 times."
       ],
@@ -77,7 +79,8 @@
     {
       "name": "Unrelenting Strikes",
       "description": "Deal 44 (+4% per level) damage to nearby enemies every 0.5 seconds for 2.5 seconds as your sword grows outward. Upon expiring, deal 160 (+4% per level) damage to nearby enemy Heroes and Stun them for 1.5 seconds",
-      "image": "storm_ui_icon_nexushunter_r1.png"
+      "image": "storm_ui_icon_nexushunter_r1.png",
+      "talentChanged": true
     },
     {
       "name": "Final Strike",
@@ -116,7 +119,7 @@
     },
     {
       "name": "Swing Life Away",
-      "description": "For each second Qhira swings around a target she receives 12 spell armor that will expire 5 seconds after re-activates or stop swinging. Hitting enemy heroes with Grappling hook decreases Revolving Sweep cooldown by 3 seconds",
+      "description": "{highlight}For each second Qhira swings around a target she receives 12 spell armor that will expire 5 seconds after re-activates or stop swinging. Hitting enemy heroes with Grappling hook decreases Revolving Sweep cooldown by 3 seconds{/highlight}",
       "image": "storm_ui_icon_nexushunter_e_alt_2.png",
       "talentChanged": true
     }
@@ -124,21 +127,21 @@
   "20": [
     {
       "name": "Silent Killer",
-      "description": "Hitting enemy Heroes with Unrelenting Strikes Silences them for 0.5 seconds and reduces its cooldown by 3 seconds. Decrease unrelenting strikes are by 1 meter",
+      "description": "Hitting enemy Heroes with Unrelenting Strikes Silences them for 0.5 seconds and reduces its cooldown by 3 seconds. {highlight}Decrease unrelenting strikes are by 1 meter{/highlight}",
       "image": "storm_ui_icon_nexushunter_r1.png",
       "talentChanged": true
     },
     {
       "name": "Unleashed Potential",
-      "description": "Casting Final Strike unleashes two additional beams that curve outward, each dealing 50% damage. The beams converge towards the end of the original Final Strike, creating an area of effect that deals 250% of the ultimate damage.",
+      "description": "{highlight}Casting Final Strike unleashes two additional beams that curve outward, each dealing 50% damage. The beams converge towards the end of the original Final Strike, creating an area of effect that deals 250% of the ultimate damage.{/highlight}",
       "image": "storm_ui_icon_nexushunter_r2.png",
       "talentChanged": true
     },
     {
       "name": "Utility Belt",
-      "description": "Changed functionality: Come over here(Active): While swinging on revolving sweep Qhira pulls the affected target to her",
+      "description": "{highlight}Changed functionality: Come over here(Active): While swinging on revolving sweep Qhira pulls the affected target to her{/highlight}",
       "passives": [
-        "Grappling hook now stuns targets it hit for 0.25 seconds and hitting terrain refunds half of the hook cooldown."
+        "{highlight}Grappling hook now stuns targets it hit for 0.25 seconds and hitting terrain refunds half of the hook cooldown.{/highlight}"
       ],
       "image": "storm_ui_icon_nexushunter_d.png",
       "talentChanged": true
@@ -147,15 +150,15 @@
       "name": "No Sanctuary",
       "description": "Nearby enemy Heroes below 50% Health are revealed and you gain 20% Movement Speed while an enemy Hero is revealed by you in this way. Additionally, you deal 20% increased damage to these revealed enemies.",
       "passives": [
-        "Grappling hook now always pulls Qhira",
-        "Killing an enemy hero resets grappling hook charges"
+        "{highlight}Grappling hook now always pulls Qhira{/highlight}",
+        "{highlight}Killing an enemy hero resets grappling hook charges{/highlight}"
       ],
       "image": "storm_ui_icon_nexushunter_passive_alt_1.png",
       "talentChanged": true
     },
     {
       "name": "Mortal Wounds",
-      "description": "Activating Blood rage makes targets with 5 bleed stacks do receive 100% more bleed damage for 3 seconds if they move",
+      "description": "{highlight}Activating Blood rage makes targets with 5 bleed stacks do receive 100% more bleed damage for 3 seconds if they move{/highlight}",
       "image": "talent1.png",
       "talentChanged": true
     }

@@ -2,7 +2,7 @@
   "1": [
     {
       "name": "Party Mix",
-      "description": "Each Crossfade cast after 5s without casting increases its effectiveness by 10%, range by 7.5%, and Lucio's Mana regeneration by 50%, up to 4 times. Resets when Amp It Up expires.",
+      "description": "{highlight}Each Crossfade cast after 5s without casting increases its effectiveness by 10%, range by 7.5%, and Lucio's Mana regeneration by 50%, up to 4 times. Resets when Amp It Up expires.{/highlight}",
       "image": "storm_ui_icon_lucio_crossfade_all.png",
       "talentChanged": true
     },
@@ -47,7 +47,7 @@
     },
     {
       "name": "Boombox",
-      "description": "Place a boombox that plays Lúcio's Crossfade track, adjusting volume with Amp It Up. Tracks don't stack. Active: Place on an ally to follow them for 15s (shares cooldown).",
+      "description": "Place a boombox that plays Lúcio's Crossfade track, adjusting volume with Amp It Up. Tracks don't stack.{highlight} Active: Place on an ally to follow them for 15s (shares cooldown).{/highlight}",
       "cooldown": 20,
       "image": "storm_ui_icon_lucio_fineshrine.png",
       "talentChanged": true
@@ -57,18 +57,18 @@
     {
       "name": "Sound Barrier",
       "description": "After 1 second, Lúcio and nearby allied Heroes gain a 1296 (+4% per level) point Shield that rapidly decays over 6 seconds.",
-      "passives":[
-        "Cooldown recharges faster based on Lucio's Movement Speed (min 100%)",
-        "Refreshes Wall Ride speed bonus to maximum"
+      "passives": [
+        "{highlight}Cooldown recharges faster based on Lucio's Movement Speed (min 100%){/highlight}",
+        "{highlight}Refreshes Wall Ride speed bonus to maximum{/highlight}"
       ],
       "image": "storm_ui_icon_lucio_soundbarrier.png",
-      "manaCost" : 100,
-      "cooldown" : 80,
+      "manaCost": 100,
+      "cooldown": 80,
       "talentChanged": true
     },
     {
       "name": "High Five",
-      "description": "activate to slide towards a targeted location, any allied hero hit by the slide will healed by 230 and Lucio by 80 both will also be granted unstopabble by 1 second.(2 charges)",
+      "description": "{highlight}activate to slide towards a targeted location, any allied hero hit by the slide will healed by 230 and Lucio by 80 both will also be granted unstopabble by 1 second.(2 charges){/highlight}",
       "image": "storm_ui_icon_lucio_highfive.png",
       "manaCost": 30,
       "cooldown": 15,
@@ -102,7 +102,8 @@
       "name": "Up the Frequency",
       "description": "Hitting enemy Heroes with Basic Attacks reduces the cooldown of Amp It Up by 0.4 seconds. Passive: Wall Ride increases Basic Attack range by 2.2.",
       "image": "storm_ui_icon_lucio_ampitup_b.png"
-    },{
+    },
+    {
       "name": "Summer Anthem",
       "description": "Activate for allies affected by Crossfade to become Unkillable for 1.5 seconds.",
       "image": "storm_ui_icon_lucio_crossfade_a.png",
@@ -120,17 +121,18 @@
       "description": "High Five can now be cast on enemy Heroes, dealing 160 (+4% per level) damage and reducing all healing received by 50% for 3 seconds. Passive: Reduce the cost and cooldown of High Five by 30%.",
       "image": "storm_ui_icon_lucio_highfive.png",
       "talentChanged": true
-    },    {
+    },
+    {
       "name": "Push it to the limit",
-      "description": "Reduces Pusho Off cooldown to 8 seconds and give it 2 charges(1 second cooldown between charges)",
+      "description": "{highlight}Reduces Pusho Off cooldown to 8 seconds and give it 2 charges(1 second cooldown between charges){/highlight}",
       "image": "lucio.png",
       "talentChanged": true
-    }, 
+    },
     {
       "name": "Up To Eleven",
-      "description": "Amp It Up lasts 1s longer. Hitting enemies with Soundwave or Push-Off during Amp It Up extends its duration by 0.3s. Recast Amp It Up to dance for 2s, extending the duration and maintaining Wall Ride speed.",
+      "description": "Amp It Up lasts 1s longer. Hitting enemies with Soundwave or Push-Off during Amp It Up extends its duration by 0.3s. {highlight}Recast Amp It Up to dance for 2s, extending the duration and maintaining Wall Ride speed.{/highlight}",
       "image": "storm_ui_icon_lucio_ampitup_a.png",
       "talentChanged": true
-    }   
+    }
   ]
 }
