@@ -71,7 +71,7 @@
   "10": [
     {
       "name": "Robo-Goblin",
-      "description": "Basic Attacks deal 90 (+4% per level) bonus damage over 5 seconds, stacking up to 3 times.",
+      "description": "Basic Attacks deal 60 (+4% per level) bonus damage over 5 seconds, stacking up to 9 times.",
       "passives": [
         "Basic Attacks deal 90 (+4% per level) bonus damage over 5 seconds, stacking up to 3 times.",
         "{highlight}Rock-It! Turrets now explode dealing 135 damage to enemies when they are destroyed{/highlight}",
@@ -134,7 +134,7 @@
       "name": "Mecha-Lord",
       "description": "{highlight}Deploy a homing missile to seek the targeted enemy unit. The missile gains speed over time, dealing 300 damage and stunning for 1.5 seconds when it impacts the target. Enemy units can destroy the missile before it reaches its target.{/highlight}",
       "passives": [
-        "Basic Attacks increase Gazlowe's Armor by 10 for 10 seconds, up to a maximum of 30."
+        "Basic Attacks increase Gazlowe's Armor by 5 for 5 seconds, up to a maximum of 45."
       ],
       "cooldown": 60,
       "image": "storm_ui_icon_gazlowe_robogoblin.png",
