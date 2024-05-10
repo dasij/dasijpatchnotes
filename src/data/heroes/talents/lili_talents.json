@@ -1,0 +1,139 @@
+{
+  "1": [
+    {
+      "name": "Eager adventurer",
+      "description": "Increase Fast Feet's duration by 150%",
+      "image": "storm_ui_icon_lili_fastfeet.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Safety Sprint",
+      "description": "Activate to gain Fast Feet, 30 Armor, and 30% Movement Speed for {highlight}1.5{/highlight} seconds.",
+      "passives": ["While Fast Feet is active, Li Li gains 10 Armor."],
+      "image": "storm_ui_icon_lili_fastfeet.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Fast as the Feet",
+      "description": "{highlight}Fast Feet increases Li Li's and Cloud Serpent's attack speed by 25%{/highlight}",
+      "image": "talent1.png",
+      "talentChanged": true
+    }
+  ],
+  "4": [
+    {
+      "name": "Two for One",
+      "description": "Healing brew now heals an additional target{highlight} being the closest hero to Li Li{/highlight}",
+      "image": "storm_ui_icon_lili_healingbrew.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Spill the Tea",
+      "description": "{highlight}Healing brew now heals an area around the hero by 50%{/highlight}",
+      "image": "talent1.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Tea Time",
+      "description": "{highlight}Tea Table (Active|Toggle): The next Healing Brew heals all heroes within range (18 seconds){/highlight}",
+      "image": "talent1.png",
+      "talentChanged": true
+    }
+  ],
+  "7": [
+    {
+      "name": "The Good Stuff",
+      "description": "Healing Brew heals for an additional 42 over 3 seconds. While Fast Feet is active, this heal amount is increased by 100%.",
+      "image": "storm_ui_icon_lili_healingbrew.png"
+    },
+    {
+      "name": "Mass Vortex",
+      "description": "{highlight}Every Time Li Li hit all Blinding Wind Targets makes her next cast hit one more target also increasing Li Li spell power by 10% each stack for 4 seconds, not hitting all targets reset the bonus{/highlight}",
+      "image": "talent1.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Don't Stop, We Need Adventure!",
+      "description": "{highlight}Cloud Serpent now cleanses roots, silence, stuns and silence on cast and expire{/highlight}",
+      "passives": [
+        "{highlight}Fast feet increase cloud serpent refresh rate an additional 50%{/highlight}"
+      ],
+      "image": "talent1.png",
+      "talentChanged": true
+    }
+  ],
+  "10": [
+    {
+      "name": "Jug of 1,000 Cups",
+      "description": "Cooldown: 20 secondsChannel for up to 6 seconds. Every 0.25 seconds, increase the cooldown of Jug of 1,000 Cups by 2 seconds, up to 50 additional seconds, and heal the lowest Health nearby allied Hero for 75 Health.",
+      "image": "storm_ui_icon_lili_jugofathousandcups.png"
+    },
+    {
+      "name": "Water Dragon",
+      "description": "Cooldown: 50 secondsLi Li channels for 2 seconds, summoning a Water Dragon that hits the nearest enemy Hero within 12 range and all enemies near them, dealing 300 damage and slowing their Movement Speed by 70% for 4 seconds.",
+      "image": "storm_ui_icon_lili_waterdragon.png"
+    }
+  ],
+  "13": [
+    {
+      "name": "Gale Force",
+      "description": "{highlight}Li Li basic attacks againt blinded heroes increases the blind duration by 0.25 and bounces to the closest hero if the hero is also blinded the attack bounces again.{/highlight}",
+      "image": "talent1.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Lightning Serpent",
+      "description": "Cloud Serpent attacks bounce to hit 2 additional targets for 13 (+4% per level) damage and 10 (+4% per level) healing",
+      "image": "storm_ui_icon_lili_cloudserpent.png"
+    },
+    {
+      "name": "Hindering Winds",
+      "description": "Increase Blinding Wind's Slow amount to 30% and its duration to 2 seconds.",
+      "image": "storm_ui_icon_lili_blindingwind_a.png"
+    }
+  ],
+  "16": [
+    {
+      "name": "Shake It Off",
+      "description": "Gain 35 Armor while Stunned, Silenced, or Rooted.",
+      "passives": [
+        "{highlight}Passive: Fast feet increases Li Li health regeneration by 400%{/highlight}"
+      ],
+      "image": "storm_ui_icon_lili_fastfeet.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Pick Me Up",
+      "description": "Healing Brew's healing for Heroes is increased by 33% if they are under 50% Health.",
+      "image": "storm_ui_icon_lili_healingbrew_a.png"
+    },
+    {
+      "name": "Blessings of Yu'lon",
+      "description": "Cloud Serpent grants its bearer 10% increased healing received and heals them for an additional 0.5% of their maximum Health each time it attacks.",
+      "image": "storm_ui_icon_lili_cloudserpent.png"
+    }
+  ],
+  "20": [
+    {
+      "name": "Jug of 1,000,000 Cups",
+      "description": "Jug of 1,000 Cups heals two allies at a time.",
+      "image": "storm_ui_icon_lili_jugofathousandcups.png"
+    },
+    {
+      "name": "Double Dragon",
+      "description": "After hitting a target with Water Dragon, another Water Dragon is summoned at the point of impact.",
+      "image": "storm_ui_icon_lili_waterdragon.png"
+    },
+    {
+      "name": "Mistweaver",
+      "description": "Cooldown: 30 secondsActive:  Activate to heal nearby allied Heroes for 149. Basic Attacks and Cloud Serpent attacks reduce the cooldown of Mistweaver by 1 second.",
+      "image": "storm_ui_icon_lili_mistweaver.png"
+    },
+    {
+      "name": "Tea Bagging",
+      "description": "{highlight}Decrease the cups needed for Li Li to collect to 2{/highlight}",
+      "image": "talent1.png",
+      "talentChanged": true
+    }
+  ]
+}

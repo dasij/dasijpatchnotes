@@ -8,32 +8,34 @@
       "id": 1,
       "title": "Talent rework",
       "general": [],
-      "developerCommentary": "From the start, the developers aimed to make Li Li the perfect starter hero. They believed some heroes weren't meant to be viable, which is why they didn't significantly change her or give her a higher skill ceiling. I agree that a hero doesn't necessarily need to be viable, but I dislike the idea of not giving her the potential for a high skill ceiling. Over time, this lack of potential can make players less inclined to play Li Li and opt for other characters instead. This doesn't have to be the case. In Team Fortress 2, for example, the Soldier is a perfect starter character for those unfamiliar with the game. Despite being easy to pick up, the Soldier has one of the highest skill ceilings among the nine characters. My point is, Li Li can remain an easy character to start with, but I want to slightly increase her skill floor while significantly raising her skill ceiling.",
+      "developerCommentary": "From the start, developers aimed to make Li Li an ideal starter hero. They didn't change her much, believing not all heroes need high viability or skill ceilings. However, I think every hero should have growth potential. Over time, a lack of this can deter players from choosing Li Li. Take Team Fortress 2's Soldier: simple yet with a high skill ceiling. Similarly, I want Li Li to be easy for beginners but also offer significant skill development opportunities.",
       "general": [
         {
           "change": "Healing Brew (Q)",
           "texts": [
             {
-              "text": "Additional functionality: Li Li's Healing Brew marks healed allies with cups. After an allied hero receive 3 cups Li Li can collect the cups from that hero giving him the same effects of fast feet. (Including talent ones)"
+              "text": "Additional functionality: Li Li's Healing Brew marks healed allies with cups. After an allied hero receives 3 cups, Li Li can collect them, granting that hero the same effects of Fast Feet, including those from talents."
             }
           ],
-          "developerCommentary": "This changes start with the concept of increasing the Li Li skill ceiling by empowering Fast Feet as an stronger tool this leads to a complete talent reestructure as Fast Feet can't be strong as it is right now because you can give an allied hero the effects of the fast feet including your talents."
+          "developerCommentary": "This change aims to raise Li Li's skill ceiling by enhancing Fast Feet, necessitating a talent overhaul. The current Fast Feet is too potent with this new ability interaction."
+        },
+        {
+          "change": "Blinding Winds (E)",
+          "texts": [
+            {
+              "text": "Additional functionality: Passive: Li Li gains 6 mana by hitting blinded targets"
+            }
+          ],
+          "developerCommentary": "After the talent overhaul, I obliterated the mana talents, recognizing Li Li's need for mana. I aimed to provide a simple solution for her mana needs."
         },
         {
           "change": "Fast feet (T)",
           "texts": [
             {
-              "text": "Removed the faster cooldown refresh"
-            },
-            {
-              "text": "Now increases mana regeneration by 75%"
-            },
-
-            {
-              "text": "On level 10 Increase Fast feet duration to 2 seconds."
+              "text": "Reduced cooldown refresh to 30%"
             }
           ],
-          "developerCommentary": "With how healing brew works fast feet needs to be naturally a little weaker and further customize it and with the old level 1 talents being about mana regeneration i had to change it for you naturally having it otherwise lili would become mana hungry eazier. Also all fast feet talent effects will affect the heal Li Li takes the Tea so i wanted to use it as a further customizer"
+          "developerCommentary": "Given Healing Brew's mechanics, Fast Feet was adjusted to be slightly weaker and more customizable."
         }
       ],
       "sections": [
@@ -41,31 +43,34 @@
           "name": "Level 1",
           "changes": [
             {
-              "name": "New: Refreshing feet",
+              "name": "Eager adventurer",
               "texts": [
                 {
-                  "text": "Increase cooldown refresh of basic abilities by 30% while fast feet is active"
+                  "text": "Don't increase mana regeneration anymore"
                 }
               ],
-              "developerCommentary": "This is probally a thing i want to add at the same it can be troublesome..currently there are few things that can increase cooldown refresh of other heroes mostly Innervate(malf) and Nano Boost(Ana) and both this skills are very high cooldown with the changes on healing brew Li Li will be able to juggle this cooldown to allied heros. Also she will be able herself to increase her own effectiviness on healing but i really like the concept for newbier players see cooldown pick cooldown so that's why i'm making the other talents more situational"
+              "developerCommentary": "Fast Feet now affects allied heroes, so extending its duration also prolongs its effect on them."
             },
             {
               "name": "Safety Sprint",
               "texts": [
                 {
                   "text": "Moved from level 4"
+                },
+                {
+                  "text": "Decrease the duration to 1.5 seconds"
                 }
               ],
-              "developerCommentary": "This one is a defense situational one..the objective here is to make a Li Li player press this active to run as it was supposed to be or to go all in and taking someone cup to buff the fast feet the person will receive"
+              "developerCommentary": "This talent is defensive, designed to encourage Li Li players to use it for escaping or engaging by enhancing Fast Feet effects to be using on par with the new healing brew effect. Bigger duration while affecting allied heros could be troublesome."
             },
             {
               "name": "New: Fast as the feet",
               "texts": [
                 {
-                  "text": "Fast Feet increase Li Li and Cloud serpent attack speed by 35%"
+                  "text": "Fast Feet increase Li Li and Cloud serpent attack speed by 25%"
                 }
               ],
-              "developerCommentary": "I don't want to give ability power to her because Ana cover this role and the basic abilities alredy give spell spower besides i think the interaction on giving spell power won't be so good for something that you could SUDDENLY receive as the fast feet bonus and for that instance i choose attack speed."
+              "developerCommentary": "I don't want to give ability power to her because Ana cover this role and the basic abilities alredy give spell spower besides i think the interaction on giving spell power won't be so good for something that you could SUDDENLY receive as the fast feet bonus and for that instance i choose attack speed. One more thing, allied heros with Fast Feet should further increase cloud serpent and Li Li attack speed"
             },
             {
               "name": "Free drinks",
@@ -94,9 +99,9 @@
               "name": "Two for one",
               "texts": [
                 {
-                  "text": "Healing brew now heals an additional target being the closest hero to Li Li"
+                  "text": "Healing Brew now also heals the closest hero to Li Li"
                 },
-                                {
+                {
                   "text": "Moved from level 16"
                 }
               ],
@@ -162,16 +167,16 @@
                   "text": "Fast feet increase cloud serpent refresh rate an additional 50%"
                 }
               ],
-              "developerCommentary": "I bring here the new Li Li cleanse..Im some ways it's better on others it's worse but why change it to that? Because i want to make the Li Li cleanse more friendly to use..this is supposed to be an entry character but at the same time it can't be useless and this is the answer i got and besides the classic cleanse is not noob friendly."
+              "developerCommentary": "This new cleanse for Li Li is more user-friendly, balancing effectiveness with accessibility for new players. It's designed to be practical without being overly complex."
             },
             {
               "name": "Mass Vortex",
               "texts": [
                 {
-                  "text": "Changed functionality: Every Time Li Li hit all Blinding Wind Targets makes her next cast hit one more target and increase Li Li spell power by 12%, not hitting all targets reset the bonus"
+                  "text": "Changed functionality: Every Time Li Li hit all Blinding Wind Targets makes her next cast hit one more target also increasing Li Li spell power by 10% each stack for 4 seconds , not hitting all targets reset the bonus"
                 },
                 {
-                  "text": "Increase blinding wind range by 42%"
+                  "text": "Increase blinding wind range by 20%"
                 }
               ],
               "developerCommentary": "Now this is a thing i got the idea from the Lucio talent i changed on resetting stacks, this talent always felt kinda weak and i wanted it to be stronger but not about necessarily about the damage and on that way i could say it makes the talent fair holds the nature of having more surging winds hits and could be a good entry for higher skill ceiling talents while not being so hard."
@@ -183,21 +188,7 @@
                   "text": "Removed"
                 }
               ],
-              "developerCommentary": "As explained on the Don't stop, we need adventure! i wanted to make a eazier version of the cleanse based on Li Li being an entry healer"
-            }
-          ]
-        },
-        {
-          "name": "Level 10",
-          "changes": [
-            {
-              "name": "",
-              "texts": [
-                {
-                  "text": ""
-                }
-              ],
-              "developerCommentary": ""
+              "developerCommentary": "As explained on the Don't stop, we need adventure i wanted to make a eazier version of the cleanse based on Li Li being an entry healer"
             }
           ]
         },
@@ -229,17 +220,15 @@
                 }
               ],
               "developerCommentary": "Nerfing it would be necessary for the new healing brew not become problematic as more ability refresh rate could become too strong when you can share it with other heroes. Health regeneration bonus could combo with more survavibility which is the main talent effect BUT i really don't know how much bonus health regen would be good as you could also give it to other heroes..imagine sharing health regen with a dehaka on essence build? Character would have 2 seconds of 160 health regen."
-            }
-          ]
-        },           
-         {
-              "name": "Two For One",
+            },
+            {
+              "name": "Two for one",
               "texts": [
                 {
-                  "text": "moved to level 4"
+                  "text": "Moved to level 4"
                 }
               ],
-              "developerCommentary": "With how i want to build Li Li this talent came to Level 4"
+              "developerCommentary": "With the talent tree i envision this talent should be placed earlier"
             }
           ]
         },

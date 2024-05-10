@@ -236,7 +236,7 @@ export default {
     const heroData = require(`../data/heroes/${this.heroName}.json`);
     this.hero = heroData;
     this.patchNotes = heroData.patchNotes;
-    this.talents = require(`../data/heroes/talents/${this.heroName}.json`);
+    this.talents = require(`../data/heroes/talents/${this.heroName}_talents.json`);
   },
   methods: {
     showTooltip(talent) {
