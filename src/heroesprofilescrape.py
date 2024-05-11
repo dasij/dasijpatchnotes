@@ -5,11 +5,8 @@ import json
 import html
 
 def scrape_hero_talents(hero_name):
-    # Get the absolute path to the src directory
-    
-
     # Define the base directory for images
-    base_image_dir = os.path.join( "assets", "talents", hero_name)
+    base_image_dir = os.path.join("src", "assets", "talents", hero_name)
     if not os.path.exists(base_image_dir):
         os.makedirs(base_image_dir)
 
@@ -55,7 +52,7 @@ def scrape_hero_talents(hero_name):
         })
 
     # Save the data to a JSON file named after the hero
-    json_filename = os.path.join( "data", "heroes", "talents", f"{hero_name}_talents.json")
+    json_filename = os.path.join("src", "data", "heroes", "talents", f"{hero_name}_talents.json")
     if not os.path.exists(os.path.dirname(json_filename)):
         os.makedirs(os.path.dirname(json_filename))
     with open(json_filename, "w") as file:

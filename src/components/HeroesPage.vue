@@ -70,6 +70,7 @@
   border-radius: 0.375rem;
   background-color: transparent;
   transition: background-color 0.3s ease-in-out;
+
 }
 
 .role-button img {
@@ -78,6 +79,7 @@
   object-fit: contain;
   filter: brightness(0.6);
   transition: filter 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border-radius: 50%;
 }
 
 .role-button:hover img {

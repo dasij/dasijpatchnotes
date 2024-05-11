@@ -1,7 +1,7 @@
 {
   "id": 1,
   "name": "LiLi",
-  "category": "role",
+  "role": "Healer",
   "image": "heroes_portraits/lili.webp",
   "patchNotes": [
     {
@@ -67,7 +67,7 @@
               "name": "New: Fast as the feet",
               "texts": [
                 {
-                  "text": "Fast Feet increase Li Li and Cloud serpent attack speed by 25%"
+                  "text": "Fast Feet increase self and Cloud serpent attack speed by 25%"
                 }
               ],
               "developerCommentary": "I don't want to give ability power to her because Ana cover this role and the basic abilities alredy give spell spower besides i think the interaction on giving spell power won't be so good for something that you could SUDDENLY receive as the fast feet bonus and for that instance i choose attack speed. One more thing, allied heros with Fast Feet should further increase cloud serpent and Li Li attack speed"
@@ -111,7 +111,7 @@
               "name": "New: Spill the tea",
               "texts": [
                 {
-                  "text": "Healing brew now heals an area around the hero by 50%"
+                  "text": "Healing brew now heals an area around the hero by 50% applying cups to everyone"
                 }
               ],
               "developerCommentary": "This one is best suited for melee teams"
@@ -161,7 +161,7 @@
               "name": "New: Don't stop, we need adventure!",
               "texts": [
                 {
-                  "text": "Cloud Serpent now cleanses roots, silence, stuns and silence on cast and expire"
+                  "text": "Cloud Serpent now cleanses roots, stuns and silence on cast and expire"
                 },
                 {
                   "text": "Fast feet increase cloud serpent refresh rate an additional 50%"

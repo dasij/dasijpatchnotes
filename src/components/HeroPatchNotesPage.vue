@@ -234,9 +234,14 @@ export default {
   },
   created() {
     const heroData = require(`../data/heroes/${this.heroName}.json`);
-    this.hero = heroData;
-    this.patchNotes = heroData.patchNotes;
-    this.talents = require(`../data/heroes/talents/${this.heroName}_talents.json`);
+    if (heroData) {
+      this.hero = heroData;
+      this.patchNotes = heroData.patchNotes;
+      this.talents = require(`../data/heroes/talents/${this.heroName}_talents.json`);
+    } else {
+      console.error('Failed to load hero data');
+      // Handle the error appropriately
+    }
   },
   methods: {
     showTooltip(talent) {

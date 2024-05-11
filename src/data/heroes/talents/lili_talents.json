@@ -15,7 +15,7 @@
     },
     {
       "name": "Fast as the Feet",
-      "description": "{highlight}Fast Feet increases Li Li's and Cloud Serpent's attack speed by 25%{/highlight}",
+      "description": "{highlight}Fast Feet increases self and Cloud Serpent's attack speed by 25%{/highlight}",
       "image": "talent1.png",
       "talentChanged": true
     }
@@ -29,7 +29,7 @@
     },
     {
       "name": "Spill the Tea",
-      "description": "{highlight}Healing brew now heals an area around the hero by 50%{/highlight}",
+      "description": "{highlight}Healing brew now heals an area around the hero by 50% applying cups to everyone{/highlight}",
       "image": "talent1.png",
       "talentChanged": true
     },
@@ -49,7 +49,7 @@
     {
       "name": "Mass Vortex",
       "description": "{highlight}Every Time Li Li hit all Blinding Wind Targets makes her next cast hit one more target also increasing Li Li spell power by 10% each stack for 4 seconds, not hitting all targets reset the bonus{/highlight}",
-      "image": "talent1.png",
+      "image": "storm_ui_icon_lili_blindingwind.png",
       "talentChanged": true
     },
     {
