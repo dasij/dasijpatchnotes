@@ -1,4 +1,64 @@
 {
+  "abilities": {
+    "basic": [
+      {
+        "name": "Healing Brew (Q)",
+        "description": "Throw a cup of tea that heals the lowest Health ally within range for a moderate amount. {highlight}Marks healed allies with cups. After an allied hero receives 3 cups, Li Li can collect them, granting that hero the same effects of Fast Feet, including those from talents.{/highlight}",
+        "cooldown": "4s",
+        "manaCost": "30 Mana",
+        "classes": "text-small text-primary",
+        "image": "storm_ui_icon_lili_healingbrew.png",
+        "abilityChanged": true
+      },
+      {
+        "name": "Cloud Serpent (W)",
+        "description": "Summon a Cloud Serpent on an allied Hero that automatically attacks nearby enemies, doing minor damage. Lasts for 8 seconds.",
+        "cooldown": "12s",
+        "manaCost": "40 Mana",
+        "classes": "text-small text-secondary",
+        "image": "storm_ui_icon_lili_cloudserpent.png",
+        "abilityChanged": false
+      },
+      {
+        "name": "Blinding Wind (E)",
+        "description": "Throw a cloud of wind at the 2 nearest enemies (prioritizing Heroes), dealing moderate damage. Affected enemies are blinded for 1.5 seconds, causing their Basic Attacks to miss and deal no damage.",
+        "passives": [
+          "{highlight}Passive: Li Li gains 6 mana by hitting blinded targets.{/highlight}"
+        ],
+        "cooldown": "12s",
+        "manaCost": "35 Mana",
+        "classes": "text-small text-danger",
+        "image": "storm_ui_icon_lili_blindingwind.png",
+        "abilityChanged": true
+      }
+    ],
+    "heroic": [
+      {
+        "name": "Jug of 1,000 Cups (R)",
+        "description": "Channel for up to 6 seconds, healing the lowest Health nearby allied Hero every 0.25 seconds.",
+        "cooldown": "70s",
+        "manaCost": "100 Mana",
+        "classes": "text-small text-warning",
+        "image": "storm_ui_icon_lili_jugofathousandcups.png",
+        "abilityChanged": false
+      },
+      {
+        "name": "Water Dragon (R)",
+        "description": "Summon a Water Dragon that after a short delay hits an enemy Hero and all enemies near them, dealing significant damage and slowing their Movement Speed by 70% for 4 seconds.",
+        "cooldown": "45s",
+        "manaCost": "75 Mana",
+        "classes": "text-small text-warning",
+        "image": "storm_ui_icon_lili_waterdragon.png",
+        "abilityChanged": false
+      }
+    ],
+    "trait": {
+      "name": "Fast Feet (Trait)",
+      "description": "Upon taking damage, your Basic Ability cooldowns refresh {highlight}50%{/highlight} faster and you gain 10% Movement Speed for 1 second.",
+      "image": "storm_ui_icon_lili_fastfeet.png"
+    }
+  },
+
   "1": [
     {
       "name": "Eager adventurer",
@@ -65,11 +125,15 @@
   "10": [
     {
       "name": "Jug of 1,000 Cups",
-      "description": "Cooldown: 20 secondsChannel for up to 6 seconds. Every 0.25 seconds, increase the cooldown of Jug of 1,000 Cups by 2 seconds, up to 50 additional seconds, and heal the lowest Health nearby allied Hero for 75 Health.",
+      "cooldown": 20,
+      "manaCost": 80,
+      "description": "Channel for up to 6 seconds. Every 0.25 seconds, increase the cooldown of Jug of 1,000 Cups by 2 seconds, up to 50 additional seconds, and heal the lowest Health nearby allied Hero for 75 Health.",
       "image": "storm_ui_icon_lili_jugofathousandcups.png"
     },
     {
       "name": "Water Dragon",
+      "cooldown": 50,
+      "manaCost": 60,
       "description": "Cooldown: 50 secondsLi Li channels for 2 seconds, summoning a Water Dragon that hits the nearest enemy Hero within 12 range and all enemies near them, dealing 300 damage and slowing their Movement Speed by 70% for 4 seconds.",
       "image": "storm_ui_icon_lili_waterdragon.png"
     }

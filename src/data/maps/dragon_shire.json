@@ -1,0 +1,31 @@
+{
+  "id": "6",
+  "name": "Dragon Shire",
+  "image": "maps/menu/dragon-shire-banner.png",
+  "changed": "true",
+  "patchNotes": [
+    {
+      "id": 6,
+      "title": "Map small changes",
+      "date": "2024-05-14",
+      "general": [
+        {
+          "change": "New globes spawner",
+          "texts": [
+            {
+              "text": "Additional globes spawn have been added on corners of the map that will be mirrored"
+            },
+            {
+              "text": "This globes will spawn between 30-55 seconds(random) on this positions and will have no warning that they spawned"
+            },
+            {
+              "text": "Globe 1 on the path between top and middle lane.",
+              "image": "maps/dragon-shire/globe_1.jpg"
+            }
+          ],
+          "developerCommentary": "These changes are aimed at encouraging players to use this paths more by remembering them that they exist, most of these corners are almost never used so rewarding players for going there is my meta."
+        }
+      ]
+    }
+  ]
+}

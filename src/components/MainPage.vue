@@ -15,14 +15,40 @@
           diving into the established concept of how the heroes' roles, both in lore and gameplay, prioritize fun rather
           than full gameplay balance.</p>
       </div>
-      <div v-if="isMainRoute" class="link-section">
-        <router-link to="/heroes">
-          <div class="image-wrapper">
-            <img class="rounded-full" src="@/assets/mainpage/Nexus_Recruit_Portrait.webp" alt="Heroes">
-          </div>
-          <span>Heroes</span>
-        </router-link>
+
+
+      <div class="links-container">
+        <div v-if="isMainRoute" class="link-section">
+          <router-link to="/heroes">
+            <div class="image-wrapper">
+              <img class="rounded-full" src="@/assets/mainpage/heroes.webp" alt="Heroes">
+            </div>
+            <span>Heroes</span>
+          </router-link>
+        </div>
+
+        <!-- Repeat for other links -->
+        <div v-if="isMainRoute" class="link-section">
+          <router-link to="/maps">
+            <div class="image-wrapper">
+              <img class="rounded-full" src="@/assets/mainpage/maps.webp" alt="Heroes">
+            </div>
+            <span>Maps</span>
+          </router-link>
+        </div>
+
+        <div v-if="isMainRoute" class="link-section">
+          <router-link to="/heroes">
+            <div class="image-wrapper">
+              <img class="rounded-full" src="@/assets/mainpage/general.webp" alt="Heroes">
+            </div>
+            <span>General</span>
+          </router-link>
+        </div>
       </div>
+
+
+
       <router-view></router-view>
     </div>
   </div>
@@ -84,10 +110,18 @@ export default {
   color: #fff;
 }
 
-.link-section {
+
+.links-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+  /* Center the links horizontally */
+  flex-wrap: wrap;
+  /* Allows wrapping if the screen is too small */
+}
+
+.link-section {
+  margin: 0 20px;
+  /* Adds spacing between the links */
 }
 
 .link-section a {
@@ -104,7 +138,7 @@ export default {
 }
 
 .link-section img {
-  width: 200px;
+  width: 152px;
   height: auto;
   margin-bottom: 10px;
   transition: transform 0.3s ease-in-out;
@@ -121,8 +155,8 @@ export default {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 205px;
-  height: 205px;
+  width: 157px;
+  height: 157px;
   border-radius: 50%;
   border: 6px solid #2E60A3;
   pointer-events: none;

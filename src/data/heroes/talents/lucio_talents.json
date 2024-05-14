@@ -1,4 +1,75 @@
 {
+  "abilities": {
+    "basic": [
+      {
+        "name": "Soundwave (Q)",
+        "description": "Release a burst of sound, dealing damage to enemies in a wide area and knocking them back.",
+        "cooldown": "7s",
+        "manaCost": "30",
+        "classes": "text-small text-primary",
+        "image": "storm_ui_icon_lucio_soundwave.png",
+        "abilityChanged": false
+      },
+      {
+        "name": "Soundboop (?)",
+        "description": "{highlight}Deal 105 damage to enemies in an area and knock them back. Also knock back allied heroes Share cooldown with Soundwave(Q){/highlight}",
+        "cooldown": "{highlight}7s{/highlight}",
+        "manaCost": "{highlight}30{/highlight}",
+        "classes": "text-small text-primary",
+        "image": "storm_ui_icon_lucio_soundwave_a.png",
+        "abilityChanged": true
+      },
+
+      {
+        "name": "Crossfade (W)",
+        "description": "Play one of two tracks that passively provide all nearby allied Heroes with either a speed boost or a heal over time. Switch tracks at will.",
+        "cooldown": "No Cooldown",
+        "manaCost": "No Mana",
+        "classes": "text-small text-secondary",
+        "image": "storm_ui_icon_lucio_crossfade_all.png",
+        "abilityChanged": false
+      },
+      {
+        "name": "Amp It Up (E)",
+        "description": "Increase the volume on Lúcio's Crossfade track, boosting the effects of his songs.",
+        "cooldown": "13s",
+        "manaCost": "90",
+        "classes": "text-small text-danger",
+        "image": "storm_ui_icon_lucio_ampitup.png",
+        "abilityChanged": false
+      }
+    ],
+    "heroic": [
+      {
+        "name": "Sound Barrier (R)",
+        "description": "Provide a large shield to all nearby allies that rapidly decays over a short period.",
+        "passives": [
+          "{highlight}Sound Barrier cooldown recharges faster based on the current Lucio Movement speed(Minimum of 100%).{/highlight} ",
+          "{highlight}Sound Barrier refresh wall slide movement speed bonus to the maximum.{/highlight}"
+        ],
+        "cooldown": "80s",
+        "manaCost": "100",
+        "classes": "text-small text-warning",
+        "image": "storm_ui_icon_lucio_soundbarrier.png",
+        "abilityChanged": true
+      },
+      {
+        "name": "High Five (R)",
+        "description": "{highlight}activate to slide towards a targeted location, any allied hero hit by the slide will healed by 230 and Lucio by 80 both will also be granted unstoppabble by 1 second.{/highlight}",
+        "cooldown": "{highlight}15s | 2 charges {/highlight}",
+        "manaCost": "30",
+        "classes": "text-small text-warning",
+        "image": "storm_ui_icon_lucio_highfive.png",
+        "abilityChanged": true
+      }
+    ],
+    "trait": {
+      "name": "Wall Ride (Trait)",
+      "description": "Lúcio can skate along walls to bypass obstacles and gain a speed boost.",
+      "image": "storm_ui_icon_lucio_wallride.png"
+    }
+  },
+
   "1": [
     {
       "name": "Party Mix",

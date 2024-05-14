@@ -1,4 +1,65 @@
 {
+  "abilities": {
+    "basic": [
+      {
+        "name": "Rock-It! Turret (Q)",
+        "description": "Create a turret that deals 62 damage per second. Lasts for 30 seconds.",
+        "cooldown": "15s",
+        "manaCost": "70 Mana",
+        "classes": "text-small text-primary",
+        "image": "storm_ui_icon_gazlowe_rockitturret.png",
+        "abilityChanged": false
+      },
+      {
+        "name": "Deth Lazor (W)",
+        "description": "Charge up a powerful laser that deals 137 to 411 damage. The longer it's charged, the more damage it deals.",
+        "cooldown": "12s",
+        "manaCost": "60 Mana",
+        "classes": "text-small text-secondary",
+        "image": "storm_ui_icon_gazlowe_dethlazor.png",
+        "abilityChanged": false
+      },
+      {
+        "name": "Xplodium Charge (E)",
+        "description": "Place a bomb that deals 233 damage and stuns enemies for 1.75 seconds after a short delay.",
+        "cooldown": "14s",
+        "manaCost": "50 Mana",
+        "classes": "text-small text-danger",
+        "image": "storm_ui_icon_gazlowe_explodiumcharge.png"
+      }
+    ],
+    "heroic": [
+      {
+        "name": "Grav-O-Bomb 3000 (R)",
+        "description": "After a 2 second delay, pull enemies toward the center of an area and deal 251 damage.",
+        "cooldown": "110s",
+        "manaCost": "100 Mana",
+        "classes": "text-small text-warning",
+        "image": "storm_ui_icon_gazlowe_gravobomb.png",
+        "abilityChanged": false
+      },
+      {
+        "name": "Robo-Goblin",
+        "description": "Activate to become Unstoppable for 1.5 seconds.",
+        "passives": [
+          "Basic Attacks deal {highlight}60{/highlight} (+4% per level) bonus damage over 5 seconds, stacking up to {highlight}9{/highlight} times.",
+          "{highlight}Rock-It! Turrets now explode dealing 135 damage to enemies when they are destroyed{/highlight}",
+          "{highlight}Increase max scrap limit by 6 and increase scrap regeneration speed by 50%{/highlight}"
+        ],
+        "cooldown": "60s",
+        "manaCost": "No cost",
+        "classes": "text-small text-warning",
+        "image": "storm_ui_icon_gazlowe_robogoblin.png",
+        "abilityChanged": true
+      }
+    ],
+    "trait": {
+      "name": "Salvager (D)",
+      "description": "Destroying enemy structures or Rock-It! Turrets grants Scrap. Collecting Scrap restores mana and reduces the cooldown of abilities.",
+      "image": "storm_ui_icon_gazlowe_salvager.png"
+    }
+  },
+
   "1": [
     {
       "name": "Rocket Boots",
@@ -77,9 +138,11 @@
         "{highlight}Rock-It! Turrets now explode dealing 135 damage to enemies when they are destroyed{/highlight}",
         "{highlight}Increase max scrap limit by 6 and increase scrap regeneration speed by 50%{/highlight}"
       ],
-      "cooldown": 40,
+      "cooldown": "60s",
+      "manaCost": "No cost",
+      "classes": "text-small text-warning",
       "image": "storm_ui_icon_gazlowe_robogoblin.png",
-      "talentChanged": true
+      "abilityChanged": true
     },
     {
       "name": "Grav-O-Bomb 3000",

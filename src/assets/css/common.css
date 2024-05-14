@@ -1,0 +1,91 @@
+/* Common styles for both pages */
+.bg-hots-repeat {
+    background-image: url('@/assets/background-hots-bg.jpg');
+    background-repeat: repeat-y;
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.nav-tabs {
+    font-size: 20px;
+    border: 1px #742AFF solid;
+    background-color: #200B41;
+}
+
+.nav-tabs:hover {
+    box-shadow: #742AFF;
+    filter: drop-shadow(0 0 20px #742AFF);
+}
+
+.nav-tabs.selected {
+    background-color: #6B21A8;
+    /* This is the Tailwind CSS color for bg-purple-600 */
+}
+
+/* Additional common styles */
+.text-white {
+    color: #ffffff;
+}
+
+.text-gray-400 {
+    color: #9ca3af;
+}
+
+.text-4xl {
+    font-size: 2.25rem;
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.rounded {
+    border-radius: 0.25rem;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.mb-8 {
+    margin-bottom: 2rem;
+}
+
+.mb-12 {
+    margin-bottom: 3rem;
+}
+
+.mt-8 {
+    margin-top: 2rem;
+}
+
+.px-14 {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+}
+
+.py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.min-h-screen {
+    min-height: 100vh;
+}

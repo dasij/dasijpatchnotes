@@ -1,0 +1,54 @@
+{
+  "id": "12",
+  "name": "Towers of Doom",
+  "image": "maps/menu/towers-of-doom-banner.png",
+  "changed": "true",
+  "patchNotes": [
+    {
+      "id": 12,
+      "title": "Map small changes",
+      "date": "2024-05-14",
+      "general": [
+        {
+          "change": "Structures",
+          "texts": [
+            {
+              "text": "Fort capture speed is now based on the number of forts you have, starting at 50% and increasing by 25% per fort."
+            },
+            {
+              "text": "Starting with 3 forts, capturing a fourth will increase the capture speed to 125%."
+            },
+            {
+              "text": "If you have 2 forts and capture a third, it will build at 100% speed."
+            }
+          ],
+          "developerCommentary": "This change aims to prevent stomps. If you capture many forts, they will rebuild quickly, allowing the enemy team to recapture them faster. However, if a losing team captures a fort, it will rebuild very slowly, preventing further stomping in highly one-sided situations."
+        },
+        {
+          "change": "New globes spawner",
+          "texts": [
+            {
+              "text": "Additional globes spawn have been added on corners of the map that will be mirrored"
+            },
+            {
+              "text": "This globes will spawn between 30-55 seconds(random) on this positions and will have no warning that they spawned"
+            },
+            {
+              "text": "Globe 1 next to the mercenary camp.",
+              "image": "maps/towers-of-doom/globe_1.jpg"
+            },
+            {
+              "text": "Globe 2 next to the middle gate.",
+              "image": "maps/towers-of-doom/globe_2.jpg"
+            },
+            {
+              "text": "Globe 3 next to the top objective.",
+              "image": "maps/towers-of-doom/globe_3.jpg"
+            }
+          ],
+          "developerCommentary": "These changes are aimed at encouraging players to use this paths more by remembering them that they exist, most of these corners are almost never used so rewarding players for going there is my meta."
+        }
+      ]
+    }
+  ]
+}

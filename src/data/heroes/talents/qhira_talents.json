@@ -1,4 +1,67 @@
 {
+  "abilities": {
+    "basic": [
+      {
+        "name": "Carnage (Q)",
+        "description": "Unleash your sword in a targeted direction, continuously dealing damage to enemies caught in its path.",
+        "cooldown": "6s",
+        "manaCost": "40",
+        "classes": "text-small text-primary",
+        "image": "storm_ui_icon_nexushunter_q.png",
+        "abilityChanged": false
+      },
+      {
+        "name": "Blood Rage (W)",
+        "description": "Passive: Basic Attacks and abilities cause enemies to bleed. Active: Detonate all bleed effects on enemies, dealing additional damage and healing Qhira for a portion of the damage dealt.",
+        "cooldown": "8s",
+        "manaCost": "35",
+        "classes": "text-small text-secondary",
+        "image": "storm_ui_icon_nexushunter_w.png",
+        "abilityChanged": false
+      },
+      {
+        "name": "Revolving Sweep (E)",
+        "description": "Attach your sword to the first enemy Hero hit, pulling you to them and spinning you around them for several seconds. Reactivate to send you to their location, dealing damage and stunning them briefly.",
+        "cooldown": "16s",
+        "manaCost": "70",
+        "classes": "text-small text-danger",
+        "image": "storm_ui_icon_nexushunter_e.png",
+        "abilityChanged": false
+      }
+    ],
+    "heroic": [
+      {
+        "name": "Unrelenting Strikes (R)",
+        "description": "Rapidly strike in a large area around Qhira, dealing damage and slowing enemies. After several strikes, a final strike deals additional damage and stuns enemies.",
+        "cooldown": "60s",
+        "manaCost": "50",
+        "classes": "text-small text-warning",
+        "image": "storm_ui_icon_nexushunter_r1.png",
+        "abilityChanged": false
+      },
+      {
+        "name": "Final Strike (R)",
+        "description": "After a short delay, strike in a long line, dealing significant damage to all enemies hit. Damage is increased against low health enemies.",
+        "cooldown": "40s",
+        "manaCost": "45",
+        "classes": "text-small text-warning",
+        "image": "storm_ui_icon_nexushunter_r2.png",
+        "abilityChanged": false
+      }
+    ],
+    "trait": {
+      "name": "Grappling Hook (Trait)",
+      "description": "Throw a grappling hook that attaches to terrain. Reactivate to pull yourself to the hooked location.",
+      "passives": [
+        "{highlight}Qhira gains an extra charge of grappling hook every 3 takedowns up to 5 times.{/highlight} ",
+        "{highlight}Grappling Hook recharges 10% faster for every active Blood Rage stack. {/highlight}."
+      ],
+
+      "image": "storm_ui_icon_nexushunter_d.png",
+      "abilityChanged": true
+    }
+  },
+
   "1": [
     {
       "name": "Maximum Effort",
