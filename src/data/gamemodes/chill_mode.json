@@ -1,0 +1,27 @@
+{
+  "id": "1",
+  "name": "CHILL MODE",
+  "image": "gamemodes/smile.webp",
+  "changed": true,
+  "patchNotes": [
+    {
+      "id": 1,
+      "date": "2024-05-14",
+      "general": [
+        {
+          "change": "New gamemode: Chill mode",
+          "texts": [
+            {
+              "text": "Play a normal quick match setup but with one big difference: both teams will only be granted passive experience, meaning they will always have the same level all the time!"
+            },
+            {
+              "text": "Passive experience will be changed so both teams will be granted one level of experience every 50 seconds, meaning you will get to level 20 at the 16 minutes and 40 seconds mark and level 30 at the 25 minutes mark."
+            }
+          ],
+
+          "developerCommentary": "One thing that has always frustrated me while playing Quick Matches is that I generally perform better than most players in my region, and my friend group also tends to outperform others. However, constantly playing one-sided games isn't enjoyable. I don't want to queue for a match only to dominate the other team and ruin their Friday night. I want everyone to have fun, even if they might lose. That's why I believe it's essential to have a mode that allows for a more relaxed experience, without the pressure of mastering all the game mechanics that can lead to unbalanced matches. This mode serves as an alternative to ARAM, providing a more enjoyable and fair experience for everyone."
+        }
+      ]
+    }
+  ]
+}

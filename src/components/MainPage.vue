@@ -1,8 +1,5 @@
-<!-- MainPage.vue -->
 <template>
   <div class="main-page">
-
-
     <div class="content-wrapper">
       <div v-if="isMainRoute" class="welcome-title-container">
         <h1 class="welcome-title">WELCOME TO DASIJ PATCH NOTES</h1>
@@ -10,12 +7,11 @@
       <div v-if="isMainRoute" class="explanation-section px-4 sm:px-6 lg:px-8">
         <p class="text-lg sm:text-xl lg:text-2xl max-w-3xl mx-auto">Here you will find patch notes based on my
           philosophy, so every change I propose will be based on things I believe are correct for the Heroes of the
-          Storm i envision. I myself can't recreate the feeling that the original developers wanted, and I don't want to
+          Storm I envision. I myself can't recreate the feeling that the original developers wanted, and I don't want to
           either, because I can't and I don't pretend to. My main focus on the changes I propose is based on further
           diving into the established concept of how the heroes' roles, both in lore and gameplay, prioritize fun rather
           than full gameplay balance.</p>
       </div>
-
 
       <div class="links-container">
         <div v-if="isMainRoute" class="link-section">
@@ -27,27 +23,33 @@
           </router-link>
         </div>
 
-        <!-- Repeat for other links -->
         <div v-if="isMainRoute" class="link-section">
           <router-link to="/maps">
             <div class="image-wrapper">
-              <img class="rounded-full" src="@/assets/mainpage/maps.webp" alt="Heroes">
+              <img class="rounded-full" src="@/assets/mainpage/maps.webp" alt="Maps">
             </div>
             <span>Maps</span>
           </router-link>
         </div>
 
         <div v-if="isMainRoute" class="link-section">
-          <router-link to="/heroes">
+          <router-link to="/general">
             <div class="image-wrapper">
-              <img class="rounded-full" src="@/assets/mainpage/general.webp" alt="Heroes">
+              <img class="rounded-full" src="@/assets/mainpage/general.webp" alt="General">
             </div>
             <span>General</span>
           </router-link>
         </div>
+
+        <div v-if="isMainRoute" class="link-section">
+          <router-link to="/gamemodes">
+            <div class="image-wrapper">
+              <img class="rounded-full" src="@/assets/mainpage/gamemodes.webp" alt="Game Modes">
+            </div>
+            <span>Game Modes</span>
+          </router-link>
+        </div>
       </div>
-
-
 
       <router-view></router-view>
     </div>
@@ -73,14 +75,10 @@ export default {
   min-height: 100vh;
 }
 
-
-
 .content-wrapper {
   background-color: rgba(0, 0, 0, 0.9);
   min-height: calc(100vh);
-
 }
-
 
 .welcome-title-container {
   display: flex;
@@ -109,7 +107,6 @@ export default {
   font-size: 20px;
   color: #fff;
 }
-
 
 .links-container {
   display: flex;

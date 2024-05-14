@@ -13,6 +13,15 @@
                 <ul class="navbar-menu">
                     <li><router-link to="/heroes">Heroes</router-link></li>
                 </ul>
+                <ul class="navbar-menu">
+                    <li><router-link to="/Maps">Maps</router-link></li>
+                </ul>
+                <ul class="navbar-menu">
+                    <li><router-link to="/General">General</router-link></li>
+                </ul>
+                <ul class="navbar-menu">
+                    <li><router-link to="/Gamemodes">Gamemodes</router-link></li>
+                </ul>
             </div>
         </nav>
         <router-view></router-view>

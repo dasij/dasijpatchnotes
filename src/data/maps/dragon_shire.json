@@ -1,12 +1,12 @@
 {
   "id": "6",
-  "name": "Dragon Shire",
+  "name": "DRAGON SHIRE",
   "image": "maps/menu/dragon-shire-banner.png",
   "changed": "true",
   "patchNotes": [
     {
       "id": 6,
-      "title": "Map small changes",
+      "title": "Small map changes",
       "date": "2024-05-14",
       "general": [
         {

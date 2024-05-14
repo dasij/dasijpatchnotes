@@ -1,12 +1,12 @@
 {
   "id": "12",
-  "name": "Towers of Doom",
+  "name": "TOWERS OF DOOM",
   "image": "maps/menu/towers-of-doom-banner.png",
   "changed": "true",
   "patchNotes": [
     {
       "id": 12,
-      "title": "Map small changes",
+      "title": "Small map changes",
       "date": "2024-05-14",
       "general": [
         {

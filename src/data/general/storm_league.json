@@ -1,0 +1,44 @@
+{
+  "id": "1",
+  "name": "STORM LEAGUE",
+  "image": "general/HeroesOfTheStormRankedPlay.png",
+  "changed": true,
+  "patchNotes": [
+    {
+      "id": 1,
+      "date": "2024-05-14",
+      "general": [
+        {
+          "change": "Draft",
+          "texts": [
+            {
+              "text": "We are changing ranked play bans to 1 ban per player before drafting. All bans are made within a period of 30 seconds. Bans can overlap, similar to how bans work in League of Legends."
+            },
+            {
+              "text": "Changing the current pick order to 1L-2R-2L-2R-2L-1R (L: Left team, R: Right team)."
+            }
+          ],
+          "developerCommentary": "We are not going to have a good ban section in Heroes of the Storm as players could think differently during the planning stage and bans might not target the correct hero. Therefore, the general approach tested by League of Legends seems to be a good solution for this case, making it easier for everyone to provide their opinion."
+        },
+        {
+          "change": "Queue rules",
+          "texts": [
+            {
+              "text": "Max group size for ranked play is 2 players."
+            }
+          ],
+          "developerCommentary": "The comeback of team league for a game that few regions still have a considerable amount of players is not a good one. Besides, queuing for matches in big groups can cause disruptions in the game experience. Even though you lose more ELO, it still feels frustrating to play against groups, making it easy for boosting a player's account with smurfs. For this reason, we are decreasing the group sizes. In my opinion, even playing as a duo can still be frustrating, but to preserve the social aspect, we are still allowing it."
+        },
+        {
+          "change": "Ranked seasons",
+          "texts": [
+            {
+              "text": "We are decreasing the max ELO you can restart a season with to Diamond 5, 200 points."
+            }
+          ],
+          "developerCommentary": "We want to recover some of the integrity of the leaderboard ranking by not preserving old accounts' MMR ELO so highly and updating the top leaderboard only with those who truly play the game."
+        }
+      ]
+    }
+  ]
+}

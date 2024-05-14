@@ -131,29 +131,36 @@
           </div>
           <h2 class="text-2xl font-bold text-white mb-4">Heroic Abilities</h2>
           <div class="flex justify-start">
-            <div v-if="tooltipAbility === ability"
-              class="absolute bg-black bg-opacity-95 text-white p-4 rounded border border-purple-800"
-              style="top: 50%; left: calc(100% + 10px); transform: translateY(-50%); width: 250px; z-index: 1;">
-              <h3 class="text-xl font-semibold" style="color: #0099ff;">{{ ability.name }}</h3>
-              <div class="flex items-center text-xs mb-2">
-                <div v-if="ability.cooldown" class="mr-2">
-                  <span class="font-semibold">Cooldown:</span> <span v-html="formatText(ability.cooldown)"></span>
-                </div>
-                <div v-if="ability.manaCost">
-                  <span class="font-semibold">Mana Cost:</span> <span v-html="formatText(ability.manaCost)"></span>
-                </div>
+            <div v-for="ability in talents.abilities.heroic" :key="ability.name" class="ability"
+              @mouseover="tooltipAbility = ability" @mouseleave="tooltipAbility = null">
+              <div class="hexagon-border" :class="{ 'ability-changed': ability.abilityChanged }">
+                <img :src="require(`@/assets/talents/${heroName}/${ability.image}`)" alt="ability image"
+                  class="ability-image">
               </div>
-              <p class="text-sm" v-html="formatText(ability.description)"></p>
-              <div v-if="ability.passives && ability.passives.length > 0" class="mt-2">
-                <ul>
-                  <li v-for="(passive, index) in ability.passives" :key="index" class="text-sm text-gray-400"
-                    v-html="formatText(passive)">
-                  </li>
-                </ul>
+              <div v-if="tooltipAbility === ability"
+                class="absolute bg-black bg-opacity-95 text-white p-4 rounded border border-purple-800"
+                style="top: 50%; left: calc(100% + 10px); transform: translateY(-50%); width: 250px; z-index: 1;">
+                <h3 class="text-xl font-semibold" style="color: #0099ff;">{{ ability.name }}</h3>
+                <div class="flex items-center text-xs mb-2">
+                  <div v-if="ability.cooldown" class="mr-2">
+                    <span class="font-semibold">Cooldown:</span> <span v-html="formatText(ability.cooldown)"></span>
+                  </div>
+                  <div v-if="ability.manaCost">
+                    <span class="font-semibold">Mana Cost:</span> <span v-html="formatText(ability.manaCost)"></span>
+                  </div>
+                </div>
+                <p class="text-sm" v-html="formatText(ability.description)"></p>
+                <div v-if="ability.passives && ability.passives.length > 0" class="mt-2">
+                  <ul>
+                    <li v-for="(passive, index) in ability.passives" :key="index" class="text-sm text-gray-400"
+                      v-html="formatText(passive)">
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-
           </div>
+
           <h2 class="text-2xl font-bold text-white mb-4">Trait</h2>
           <div class="flex justify-start">
             <div class="ability" @mouseover="tooltipAbility = talents.abilities.trait"

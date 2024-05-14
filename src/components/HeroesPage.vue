@@ -1,4 +1,3 @@
-<!-- HeroesPage.vue -->
 <template>
   <div class="bg-heroes-page-container bg-cover bg-no-repeat min-h-screen">
     <div class="container mx-auto py-8">
@@ -10,8 +9,8 @@
           <span>{{ role.name }}</span>
         </button>
       </div>
-      <div class="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-10 gap-4">
-        <div v-for="hero in filteredHeroes" :key="hero.id" class="text-center w-28">
+      <div class="heroes-grid">
+        <div v-for="hero in filteredHeroes" :key="hero.id" class="text-center hero-item">
           <router-link :to="'/hero/' + hero.name.toLowerCase()" class="block relative">
             <div class="hero-image-container">
               <img :src="require(`@/assets/${hero.image}`)" :alt="hero.name"
@@ -70,7 +69,6 @@
   border-radius: 0.375rem;
   background-color: transparent;
   transition: background-color 0.3s ease-in-out;
-
 }
 
 .role-button img {
@@ -95,6 +93,26 @@
 
 .role-button.active {
   background-color: rgba(59, 130, 246, 0.5);
+}
+
+.heroes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.hero-item {
+  width: 113px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+  .heroes-grid {
+    grid-template-columns: repeat(6, 1fr);
+    max-width: calc(150px * 6 + 5rem);
+    /* 6 items + 5 gaps */
+    margin-right: auto;
+  }
 }
 </style>
 
@@ -122,7 +140,7 @@ export default {
       this.selectedRole = role;
     },
     formatHeroName(name) {
-      return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+      return name.split('-').map(part => part.charAt(0).toUpperCase() + part.slice(1).toLowerCase()).join(' ');
     },
   },
   async created() {

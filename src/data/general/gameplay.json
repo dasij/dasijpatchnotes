@@ -1,0 +1,74 @@
+{
+  "id": "1",
+  "name": "GAMEPLAY",
+  "image": "general/gameplay.jpg",
+  "changed": true,
+  "patchNotes": [
+    {
+      "id": 1,
+      "date": "2024-05-14",
+      "general": [
+        {
+          "change": "Experience",
+          "texts": [
+            {
+              "text": "Experience received from structures, troops, and mercenaries is affected by the underdog bonus only on the losing team."
+            },
+            {
+              "text": "The underdog values will be different for troops and mercenaries kill bonuses for the respective 1, 2, 3, and 4+ level differences (5% | 22.5% | 45% | 80%)."
+            },
+            {
+              "text": "The underdog values will be different for structures kill bonuses for the respective 1, 2, 3, and 4+ level differences (20% | 50% | 150% | 225%)."
+            }
+          ],
+          "developerCommentary": "There's one thing Heroes of the Storm is famous for, and it's comebacks. However, coming back from a 3-4 level difference is something that almost never happens, and I want to make it more believable. One could say that I am punishing those who are making better plays and gaining XP more efficiently, and you are not entirely wrong. But in reality, with a 3-level advantage, you should have already finished the game."
+        },
+        {
+          "change": "Forts and Keeps",
+          "texts": [
+            {
+              "text": "Removed the passive experience bonus."
+            },
+            {
+              "text": "Forts will grant instant 800 experience (equivalent)."
+            },
+            {
+              "text": "Keeps will grant instant 1,300 experience (equivalent)."
+            }
+          ],
+          "developerCommentary": "With the passive experience changes, Heroes of the Storm has become more of a late-game experience, as you will rarely see games that don't finish before level 20 and commonly go to level 22. I myself like reaching level 20 because of all the cool stuff you can do, but at the same time, I miss having a more relevant early/mid-game section. One of the few things that made that believable was the instant experience gratification. Also, by increasing the underdog bonus with these changes, this could make comebacks a little easier when destroying structures."
+        },
+        {
+          "change": "Healing wells",
+          "texts": [
+            {
+              "text": "Healing wells will no longer be protected, and their life values will revert to the old 75% life and 25% shield."
+            },
+            {
+              "text": "Directly destroying healing wells will only deactivate them for 30 seconds."
+            }
+          ],
+          "developerCommentary": "Healing wells went through update cycles in the last stages of the game to try to prevent Genji players and similar heroes from obliterating the fountain at the beginning of the game as a cheesing strategy. This strategy made the general game experience worse, and I agreed that it was detrimental to the game flow. However, I don't think it should be impossible to break fountains; rather, the cheesing strategy should be made less impactful."
+        },
+        {
+          "change": "Experience globes",
+          "texts": [
+            {
+              "text": "Reduced the original experience globe lifetime to 1.25 seconds for the original value and 10 seconds for the diminished value."
+            },
+            {
+              "text": "Experience globes can't be seen by the enemy team anymore."
+            },
+            {
+              "text": "Experience globes can be collected in the fog or while invisible."
+            },
+            {
+              "text": "Increased grab radius from 6 to 9."
+            }
+          ],
+          "developerCommentary": "The experience globes made getting experience a much more trivial task, removing one of the key aspects that made better players stand out from others, which was correct soaking. Nowadays, you can make a lot of mistakes in rotation or macro and not get punished due to how easy it is to collect experience. I still want the globe with the original value to spawn to prevent too harsh environments for solo laning, making it possible to deny experience or lose that small chunk of experience because you weren't close. Additionally, experience globes were somewhat of a visual nuisance."
+        }
+      ]
+    }
+  ]
+}
