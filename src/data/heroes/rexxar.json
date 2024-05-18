@@ -1,0 +1,289 @@
+{
+  "id": 1,
+  "name": "REXXAR",
+  "role": "bruiser",
+  "image": "heroes_portraits/rexxar.webp",
+  "patchNotes": [
+    {
+      "id": 1,
+      "title": "Hero Rework",
+      "general": [
+        {
+          "change": "Spirit Swoop",
+          "texts": [
+            {
+              "text": "No longer slows enemies."
+            },
+            {
+              "text": "Additional functionality: Spirit stays at the end of the skill for 4 seconds, providing vision. Reactivate to move Spirit. If targeting an enemy Hero, Spirit divebombs them, dealing 120 damage and slowing by 50% (decays over 3 seconds), then returns to Rexxar."
+            },
+            {
+              "text": "Spirit Swoop cooldown only starts when it returns to Rexxar."
+            }
+          ],
+          "developerCommentary": "Spirit Swoop is currently a simple skillshot that slows and damages enemies in a straight line, underutilizing the concept of Spirit, a bird dedicated to scouting. Inspired by Beastmaster from Dota 2, I wanted to give Spirit a better role while increasing Rexxar's decision-making without creating a new active ability."
+        },
+        {
+          "change": "Misha, Focus!",
+          "texts": [
+            {
+              "text": "Additional functionality: Misha Independence (active): Switch between Misha's automatic and manual modes. In automatic mode, Misha, Focus! changes to Offensive and Defensive behaviors. In Offensive Mode, Misha targets any enemy hero within leash range. In Defensive Mode, Misha focuses on enemies close to Rexxar."
+            }
+          ],
+          "developerCommentary": "While I aimed to increase Rexxar's skill floor, I find it acceptable to create a more casual-friendly version of Rexxar, even if it performs slightly worse compared to manual mode."
+        }
+      ],
+      "developerCommentary": "Rexxar, despite not underperforming, lacks depth due to a straightforward kit centered around managing two characters with simplistic abilities. This simplicity is acceptable given the challenge of controlling multiple entities, but Rexxar's identity as a Beastmaster is underutilized. Enhancing his complexity is justified to cater to high-skill-cap players, focusing on deepening the strategic and visual appeal of Rexxar's Beastmaster persona.",
+      "sections": [
+        {
+          "name": "Level 1",
+          "changes": [
+            {
+              "name": "New: Meat Mending",
+              "texts": [
+                {
+                  "text": "Empowers Misha's next basic attack, increasing its damage by 100% and reducing its target's armor by 20 when Mend Pet is used."
+                }
+              ],
+              "developerCommentary": "One of the many changes I want for Rexxar is to give more strategic uses for Mend Pet, encouraging players to hold the skill and use it in different ways."
+            },
+            {
+              "name": "Animal Husbandry",
+              "texts": [
+                {
+                  "text": "Moved from level 4."
+                },
+                {
+                  "text": "Regeneration globes now give 10 extra stacks and kills 25 stacks."
+                },
+                {
+                  "text": "Max stacks are capped at 500, increasing by 100 every level."
+                }
+              ],
+              "developerCommentary": "Animal Husbandry should be a commitment from level 1, showcasing the player's dedication and spreading defensive talents across Rexxar's skill tree."
+            },
+            {
+              "name": "Thrill of the Hunt",
+              "texts": [
+                {
+                  "text": "Moved from level 16."
+                },
+                {
+                  "text": "Changed functionality: Rexxar's basic attacks increase Misha's movement speed by 25%. If Misha gets close to Rexxar after stunning a target with Misha, Charge!, Rexxar gains 30% movement speed for 4 seconds."
+                }
+              ],
+              "developerCommentary": "At level 1, I want to make it easier to mix defensive and offensive talents, with Thrill of the Hunt empowering a different playstyle."
+            },
+            {
+              "name": "Flare, Easy Prey",
+              "texts": [
+                {
+                  "text": "Removed."
+                }
+              ],
+              "developerCommentary": "With the Spirit Swoop changes, Flare is no longer needed as it would overlap. Easy Prey covers a role that Rexxar shouldn't take."
+            },
+            {
+              "name": "Bird of Prey",
+              "texts": [
+                {
+                  "text": "Moved to level 4."
+                }
+              ],
+              "developerCommentary": "Rexxar shouldn't focus on wave clear from level 1. Instead, he should take a more oppressive stance in solo lane duels, being a punisher."
+            }
+          ]
+        },
+        {
+          "name": "Level 4",
+          "changes": [
+            {
+              "name": "Spirit Swoop",
+              "texts": [
+                {
+                  "text": "Additional functionality: Spirit can now divebomb mercenaries and monsters, dealing 400% damage."
+                },
+                {
+                  "text": "Moved from level 1."
+                }
+              ],
+              "developerCommentary": "With the changes to Spirit, this talent is weaker if you wish to use its vision. As a level 4 talent competing with survivability talents, it could be a risk to take clear wave without any problem on buffing it."
+            },
+            {
+              "name": "Hungry Bear renamed to Hungry Animals",
+              "texts": [
+                {
+                  "text": "Misha now kills enemy troops instantly with basic attacks and recovers 4.5%."
+                },
+                {
+                  "text": "Additional functionality: When Spirit divebombs an enemy hero, it heals Rexxar for 12.5% of his maximum health."
+                }
+              ],
+              "developerCommentary": "With the changes to Spirit, it's the perfect opportunity to make this talent a reliable choice."
+            },
+            {
+              "name": "Hunter Gatherer, Grizzled Fortitude",
+              "texts": [
+                {
+                  "text": "Removed."
+                }
+              ],
+              "developerCommentary": "I dislike generic talents. These talents do not utilize Rexxar's skills creatively."
+            },
+            {
+              "name": "Animal Husbandry",
+              "texts": [
+                {
+                  "text": "Moved to level 1."
+                }
+              ],
+              "developerCommentary": "Show your dedication from level 1."
+            }
+          ]
+        },
+        {
+          "name": "Level 7",
+          "changes": [
+            {
+              "name": "Crippling Talons",
+              "texts": [
+                {
+                  "text": "Changed functionality: Spirit divebomb's slow is now increased to 60% and doesn't decay anymore."
+                }
+              ],
+              "developerCommentary": "Changing Crippling Talons to still be an effective slowing skill but more inclined to the new Spirit Swoop mechanics."
+            },
+            {
+              "name": "Bestial Wrath",
+              "texts": [
+                {
+                  "text": "Moved from level 10."
+                },
+                {
+                  "text": "Changed functionality: (Passive) Misha's basic attacks against enemy heroes grant a stacking 25% increased attack damage bonus for 4 seconds, up to a maximum of 300%."
+                }
+              ],
+              "developerCommentary": "I don't dislike the effects of Bestial Wrath, but I found it too simple and not worth a high cooldown active for dynamic purposes. Instead, I wanted to make it similar to Tyrande's Darnassian Archery and put it on level 7 to increase how you want to optimize your build, damage|utility|control talents for level 7."
+            }
+          ]
+        },
+        {
+          "name": "Level 10",
+          "changes": [
+            {
+              "name": "Bestial Wrath",
+              "texts": [
+                {
+                  "text": "Moved to level 7."
+                }
+              ],
+              "developerCommentary": "Heroes of the Storm ultimates generally make the player feel powerful and distinct. Bestial Wrath, in my opinion, does not give that feeling and rather feels like an active talent that could fit either on level 13 or 16."
+            },
+            {
+              "name": "New: Stampede",
+              "texts": [
+                {
+                  "text": "Channel to call down hordes of rampaging thunder lizards that explode around Rexxar's enemies for 3 seconds. The lizards appear in parallel lines on either side of Rexxar, each explosion dealing 120 damage."
+                },
+                {
+                  "text": "The stampede area will cover two parallel lines on Rexxar's sides."
+                }
+              ],
+              "developerCommentary": "Stampede is a Rexxar classic from the Warcraft 3 era, but it's a challenging ultimate to implement because it works similarly to March of the Murlocs. Changing the area Stampede covers was the best solution to give it a distinct feel while avoiding the randomness similar to Gul'dan's Rain of Chaos."
+            }
+          ]
+        },
+        {
+          "name": "Level 13",
+          "changes": [
+            {
+              "name": "Wildfire Bear",
+              "texts": [
+                {
+                  "text": "Additional functionality: Increases Misha's size by 20%."
+                },
+                {
+                  "text": "While under Mend Pet effect, increases Wildfire Bear damage by 100%."
+                }
+              ],
+              "developerCommentary": "Initially, I wanted to remove Wildfire Bear, but now I see an opportunity to bring two things I wanted: a talent that increases Misha's size for better body blocking and also increases Mend Pet interactions."
+            }
+          ]
+        },
+        {
+          "name": "Level 16",
+          "changes": [
+            {
+              "name": "Primal Intimidation",
+              "texts": [
+                {
+                  "text": "After using Mend Pet, Misha will reduce every nearby enemy hero's spell power by 50% and attack speed by 35% for 2 seconds."
+                }
+              ],
+              "developerCommentary": "Rexxar will have an option for survivability and now a debuff option, allowing him to choose better what he truly wants."
+            },
+            {
+              "name": "New: Beast Roar",
+              "texts": [
+                {
+                  "text": "Knocks back enemies around Misha by a significant distance when Mend Pet is used."
+                }
+              ],
+              "developerCommentary": "The knockback is intended to be smaller than Lucio's Soundwave, just enough for Misha to cancel enemy animations."
+            },
+            {
+              "name": "Thrill of the Hunt",
+              "texts": [
+                {
+                  "text": "Moved to level 1."
+                }
+              ],
+              "developerCommentary": "We are being thrilled faster now, but seriously, I wanted to provide more fun ways to change Rexxar at level 16 instead of just movement speed."
+            }
+          ]
+        },
+        {
+          "name": "Level 20",
+          "changes": [
+            {
+              "name": "New: Leokk",
+              "texts": [
+                {
+                  "text": "Summons Leokk to inspire nearby allied heroes, increasing their attack speed by 40% in an area. Leokk will have 1200 HP and will be controlled by Focus, Leokk!, a skill command that works similarly to Misha, Focus!."
+                }
+              ],
+              "developerCommentary": "A common complaint, which I agree with, is that Rexxar could be more challenging by utilizing the Beastmaster fantasy. I want to bring that with Leokk."
+            },
+            {
+              "name": "New: STAAAAAAAAAAAAAAAMPEDE",
+              "texts": [
+                {
+                  "text": "Rexxar's Stampede will have a second wave after three seconds, starting from Rexxar's initial cast position."
+                }
+              ],
+              "developerCommentary": "A simple upgrade that will be effective as a level 20 talent."
+            },
+            {
+              "name": "New: Bond of Sacrifice",
+              "texts": [
+                {
+                  "text": "If Rexxar takes a fatal hit while Misha is alive, Misha will die and heal Rexxar for Misha's remaining HP."
+                }
+              ],
+              "developerCommentary": "After reading some of Rexxar's lore to better understand new talents I could create, I found out about Haratha and saw a perfect opportunity to make a reference that could still make sense and be useful/dynamic for a level 20 talent, and also fun."
+            },
+            {
+              "name": "Frenzy of Kalimdor, Hardened Skin, Spirit Bond",
+              "texts": [
+                {
+                  "text": "Removed."
+                }
+              ],
+              "developerCommentary": "I dislike having generic talents in builds and will probably hold this line of thinking until the end. Spirit Bond is a Bestial Wrath upgrade that I don't see any use for right now."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

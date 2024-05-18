@@ -1,5 +1,50 @@
 {
-    "id": "9",
-    "name": "Infernal Shrines",
-    "image": "maps/menu/shrines-banner.png"
+  "id": "9",
+  "name": "INFERNAL SHRINES",
+  "image": "maps/menu/shrines-banner.png",
+  "changed": "true",
+  "patchNotes": [
+    {
+      "id": 12,
+      "title": "Small map changes",
+      "date": "2024-05-15",
+      "general": [
+        {
+          "change": "Objective",
+          "texts": [
+            {
+              "text": "The first shrine can't spawn the frozen punisher anymore."
+            },
+            {
+              "text": "The second shrine will spawn either the frozen punisher or the one that didn't spawn in the first shrine."
+            },
+            {
+              "text": "The third shrine will spawn the punisher that hasn't spawned yet."
+            }
+          ],
+          "developerCommentary": "Conquering the first shrine with of a frozen punisher generally means a free first fort push destruction due to the frozen punisher's strength at the beginning of the game compared to other punishers. This change also aims to make the first three shrines predictable, similar to how it works on Sky Temple."
+        },
+        {
+          "change": "New globes spawner",
+          "texts": [
+            {
+              "text": "Additional globes have been added at mirrored corners of the map."
+            },
+            {
+              "text": "These globes will spawn randomly between 30-55 seconds at these positions without any warning."
+            },
+            {
+              "text": "Globe 1 is next to the hard mercenary camp.",
+              "image": "maps/infernal-shrines/globe_1.jpg"
+            },
+            {
+              "text": "Globe 2 is next to the path between the middle and bottom lanes.",
+              "image": "maps/infernal-shrines/globe_2.jpg"
+            }
+          ],
+          "developerCommentary": "These changes aim to encourage players to use these paths more by reminding them of their existence. Most of these corners are almost never used, so rewarding players for going there is my goal."
+        }
+      ]
+    }
+  ]
 }

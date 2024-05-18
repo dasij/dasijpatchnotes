@@ -1,0 +1,209 @@
+{
+  "hero": "Rexxar",
+  "abilities": {
+    "basic": [
+      {
+        "name": "Spirit Swoop",
+        "description": "Deal 141 damage to enemies in a line. {highlight}Spirit stays at the end of the line for 4 seconds, providing vision. Reactivate to move Spirit. If targeting an enemy Hero, Spirit divebombs them, dealing 120 damage and slowing by 50% (decays over 3 seconds), then returns to Rexxar.{/highlight}",
+        "manaCost": "40 Mana",
+        "cooldown": "8s",
+        "image": "storm_ui_icon_rexxar_spiritswoop.png",
+        "abilityChanged": true
+      },
+      {
+        "name": "Misha, Charge!",
+        "description": "Misha charges in a line, dealing 150 damage and stunning enemies for 1.25 seconds.",
+        "manaCost": "50 Mana",
+        "cooldown": "12s",
+        "image": "storm_ui_icon_rexxar_mishacharge.png",
+        "abilityChanged": false
+      },
+      {
+        "name": "Mend Pet",
+        "description": "Heal Misha for 714 Health over 5 seconds.",
+        "manaCost": "70 Mana",
+        "cooldown": "10s",
+        "image": "storm_ui_icon_rexxar_mendpet.png",
+        "abilityChanged": false
+      },
+      {
+        "name": "Jungle Instincts",
+        "description": "{highlight}Switch between Misha's automatic and manual modes. In automatic mode, Misha, Focus! changes to Offensive and Defensive behaviors. In Offensive Mode, Misha targets any enemy hero within leash range. In Defensive Mode, Misha focuses on enemies close to Rexxar.{/highlight}",
+        "cooldown": "5s",
+        "image": "storm_ui_icon_rexxar_mishafixate.png",
+        "abilityChanged": true
+      }
+    ],
+    "heroic": [
+      {
+        "name": "Stampede",
+        "description": "{highlight}Channel to call down hordes of rampaging thunder lizards that explode around Rexxar's enemies for 3 seconds. Each explosion deals 120 damage.{/highlight}",
+        "manaCost": "100 Mana",
+        "cooldown": "80s",
+        "image": "storm_ui_icon_rexxar_stampede.webp",
+        "abilityChanged": true
+      },
+      {
+        "name": "Unleash the Boars",
+        "description": "Release a herd of boars that track down all enemy Heroes in a direction, dealing damage, revealing, and slowing enemies.",
+        "manaCost": "75 Mana",
+        "cooldown": "60s",
+        "image": "storm_ui_icon_rexxar_unleashtheboars.png",
+        "abilityChanged": false
+      }
+    ],
+    "trait": {
+      "name": "Misha, Focus!",
+      "description": "Command Misha to attack a specific enemy or move to a point and wait.\nTargeting Rexxar commands Misha to retreat to his position, gaining 30% move speed until she reaches Rexxar.\nTargeting Misha commands her to hold her current position.",
+      "passives": ["Misha gains 15% move speed."],
+      "cooldown": "10s",
+      "image": "storm_ui_icon_rexxar_mishafixate.png",
+      "abilityChanged": true
+    }
+  },
+  "1": [
+    {
+      "name": "Meat Mending",
+      "description": "{highlight}Empowers Misha's next basic attack, increasing its damage by 100% and reducing its target's armor by 20 when Mend Pet is used.{/highlight}",
+      "image": "storm_ui_icon_rexxar_mendpet.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Animal Husbandry",
+      "description": "Rexxar and Misha gain 2 maximum Health every second, {highlight}up to 500, increasing the cap by 100 every level. You receive a bonus of 25 maximum health on takedowns and 10 on globes.{/highlight} This bonus is lost on Rexxar's death.",
+      "image": "storm_ui_icon_rexxar_stayinalive.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Thrill of the Hunt",
+      "description": "{highlight}Rexxar's basic attacks increase Misha's movement speed by 25%, and if Misha gets close to Rexxar after stunning a target with Misha, Charge!, Rexxar gains 30% movement speed for 4 seconds.{/highlight}",
+      "image": "storm_ui_icon_rexxar_heremishaactive.png",
+      "talentChanged": true
+    }
+  ],
+  "4": [
+    {
+      "name": "Hungry Animals",
+      "description": "{highlight}Misha's basic attacks instantly kill enemy troops and heal Misha for 2.25% health. This bonus is doubled against heroes. When Spirit divebombs an enemy hero, it heals Rexxar for 12.5% of his maximum health.{/highlight}",
+      "image": "storm_ui_icon_rexxar_heremishaactive.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Bird of Prey",
+      "description": "Increases Spirit Swoop's damage by 150% to Minions. {highlight}Spirit can now divebomb mercenaries and monsters, dealing 400% damage.{/highlight}",
+      "image": "storm_ui_icon_rexxar_spiritswoop.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Misha, Protect!",
+      "description": "{highlight}When Misha stays close to Rexxar, both receive 25 armor and reduced crowd control effect durations by 35%.{/highlight}",
+      "image": "storm_ui_icon_rexxar_heremishaactive.png",
+      "talentChanged": true
+    }
+  ],
+  "7": [
+    {
+      "name": "Crippling Talons",
+      "description": "{highlight}Spirit divebomb's slow is now increased to 70% and doesn't decay anymore.{/highlight}",
+      "image": "storm_ui_icon_rexxar_spiritswoop.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Aspect of the Beast",
+      "description": "Misha's basic attacks lower the cooldown of Misha, Charge! by 1 second.",
+      "image": "storm_ui_icon_rexxar_mishacharge.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Bestial Wrath",
+      "description": "{highlight}Misha's basic attacks against enemy heroes grant a stacking 25% increased attack damage bonus for 4 seconds.{/highlight}",
+      "image": "storm_ui_icon_rexxar_bestialwrath.png",
+      "talentChanged": true
+    }
+  ],
+
+  "10": [
+    {
+      "name": "Stampede",
+      "description": "{highlight}Channel to call down hordes of rampaging thunder lizards that explode around Rexxar's enemies for 3 seconds. Each explosion deals 120 damage.{/highlight}",
+      "image": "storm_ui_icon_rexxar_stampede.webp",
+      "talentChanged": true
+    },
+    {
+      "name": "Unleash the Boars",
+      "description": "Release a herd of boars that track down all enemy Heroes in a direction, dealing 110 damage, revealing, and slowing enemies by 40% for 5 seconds.",
+      "manaCost": "75 Mana",
+      "cooldown": "60s",
+      "image": "storm_ui_icon_rexxar_unleashtheboars.png",
+      "talentChanged": false
+    }
+  ],
+  "13": [
+    {
+      "name": "Wildfire Bear",
+      "description": "Misha deals 21 damage per second to nearby enemies for 4 seconds. {highlight}While under Mend Pet effect, increase Wildfire Bear damage by 100%.{/highlight}",
+      "passives": ["{highlight}Increase Misha's size by 20%{/highlight}"],
+      "image": "storm_ui_icon_talent_burningrage.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Aspect of the Hawk",
+      "description": "When Spirit Swoop hits an enemy Hero, Rexxar gains 125% Attack Speed for 4 seconds. Misha's basic attacks increase the duration of this buff by 0.75 seconds.",
+      "image": "storm_ui_icon_rexxar_spiritswoop.png"
+    },
+    {
+      "name": "Dire Beast",
+      "description": "Rexxar and Misha's basic attacks increase the damage of the next Misha, Charge! by 15%, stacking up to a 150% bonus.",
+      "image": "storm_ui_icon_rexxar_mishacharge.png",
+      "talentChanged": false
+    }
+  ],
+  "16": [
+    {
+      "name": "Beast Roar",
+      "description": "{highlight}Knocks back enemies around Misha by a significant distance when Mend Pet is used.{/highlight}",
+      "image": "storm_ui_icon_rexxar_mendpet.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Primal Intimidation",
+      "description": "{highlight}After using Mend Pet, Misha will reduce every nearby enemy hero's spell power by 50% and attack speed by 35% for 2 seconds.{/highlight}",
+      "image": "storm_ui_icon_rexxar_mendpet.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Feigned Death",
+      "description": "Activate to cause Rexxar to feign death, becoming Invulnerable and untargetable for 5 seconds. During this time, Rexxar can control Misha.",
+      "manaCost": "75 Mana",
+      "cooldown": "35s",
+      "image": "storm_ui_icon_rexxar_feigndeath.png",
+      "talentChanged": false
+    }
+  ],
+  "20": [
+    {
+      "name": "STAAAAAAAAAAMPEDE",
+      "description": "{highlight}Rexxar's Stampede will have a second wave after three seconds, starting from Rexxar's initial cast position.{/highlight}",
+      "image": "storm_ui_icon_rexxar_stampede.webp",
+      "talentChanged": true
+    },
+    {
+      "name": "Kill Command",
+      "description": "Unleash the Boars roots enemy Heroes for 1.5 seconds.",
+      "image": "storm_ui_icon_rexxar_unleashtheboars.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Leokk",
+      "description": "{highlight}Summons Leokk to inspire nearby allied heroes, increasing their attack speed by 40% in an area. Leokk will have 1200 HP.{/highlight}",
+      "image": "storm_ui_icon_rexxar_heremisha.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Bond of Sacrifice",
+      "description": "{highlight}If Rexxar takes a fatal hit while Misha is alive, Misha will die and heal Rexxar for Misha's remaining HP.{/highlight}",
+      "image": "storm_ui_icon_rexxar_heremishaactive.png",
+      "talentChanged": true
+    }
+  ]
+}

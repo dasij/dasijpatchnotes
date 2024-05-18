@@ -195,7 +195,8 @@
     },
     {
       "name": "Healing Beacon",
-      "description": "{highlight}Morales drops a beacon with 1200 health. If Morales redirects her healing beam to the beacon, all allied heroes within 6.5 range of that beacon will receive the Healing Beam and overcharge effects used by Morales.{/highlight}",
+      "description": "{highlight}Morales drops a beacon with 1200 health for 12 seconds. If Morales redirects her healing beam to the beacon, all allied heroes within 6.5 range of that beacon will receive the Healing Beam and overcharge effects used by Morales.{/highlight}",
+      "cooldown": "60s",
       "image": "medic_healingbeam.png",
       "talentChanged": true
     },

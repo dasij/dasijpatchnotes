@@ -30,9 +30,9 @@
               "name": "New: MOLL-E Blingtron 5000 Gift(Active)",
               "texts": [
                 {
-                  "text": "Activate to put a Mailbox that will give a random item after 30 seconds. The item disappears after 60 seconds if not picked up and after 2 minutes if not used. Any hero can get the items (Cooldown 20 seconds):",
+                  "text": "Activate to put a Mailbox that will give a random item after 30 seconds. The item disappears after 60 seconds if not picked up and after 60 seconds if not used. Any hero can get the items (Cooldown 20 seconds):",
                   "subtexts": [
-                    "Invisibility Field - Grants invisibility for 10 seconds.",
+                    "Invisibility Field - Grants invisibility in target area for 10 seconds.",
                     "Hyperspeed Accelerators - Grants speed by 20% for 3 seconds.",
                     "Grounded Plasma Shield - Grants 200 shield for 3 seconds."
                   ]
@@ -114,7 +114,7 @@
                   "text": "Activate to place a Cardboard Assassin decoy unit that have 1000 health and act as a heroic unit for 10 seconds."
                 },
                 {
-                  "text": "If you hit Cardboard Assassin with Deth Lazor, it becomes Zapped and deals 40 damage per second to enemy heroes and taunts them for 0.5 seconds. After 3 seconds, it explodes. (Cooldown: 10 seconds)"
+                  "text": "If you hit Cardboard Assassin with Deth Lazor, it becomes Zapped and deals 40 damage per second and heals 100% of the damage to enemy heroes and taunts them for 0.5 seconds. After 3 seconds, it explodes and get destroyed. (Cooldown: 10 seconds)"
                 },
                 {
                   "text": "Passive: Deth Lazor cooldown is reduced by 2 seconds"

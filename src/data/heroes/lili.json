@@ -1,5 +1,5 @@
 {
-  "id": 1,
+  "id": 4,
   "name": "LiLi",
   "role": "Healer",
   "image": "heroes_portraits/lili.webp",
@@ -99,7 +99,10 @@
               "name": "Two for one",
               "texts": [
                 {
-                  "text": "Healing Brew now also heals the closest hero to Li Li"
+                  "text": "The extra healing brew will also heals the closest hero to Li Li"
+                },
+                {
+                  "text": "The extra heal can affect the same target as the base healing brew"
                 },
                 {
                   "text": "Moved from level 16"
@@ -164,7 +167,7 @@
                   "text": "Cloud Serpent now cleanses roots, stuns and silence on cast and expire"
                 },
                 {
-                  "text": "Fast feet increase cloud serpent refresh rate an additional 50%"
+                  "text": "Fast feet increase cloud serpent cooldown speed an additional 50%"
                 }
               ],
               "developerCommentary": "This new cleanse for Li Li is more user-friendly, balancing effectiveness with accessibility for new players. It's designed to be practical without being overly complex."
@@ -217,6 +220,9 @@
                 },
                 {
                   "text": "Passive: Fast feet increases Li Li health regeneration by 400%"
+                },
+                {
+                  "text": "Moved from level 20"
                 }
               ],
               "developerCommentary": "Nerfing it would be necessary for the new healing brew not become problematic as more ability refresh rate could become too strong when you can share it with other heroes. Health regeneration bonus could combo with more survavibility which is the main talent effect BUT i really don't know how much bonus health regen would be good as you could also give it to other heroes..imagine sharing health regen with a dehaka on essence build? Character would have 2 seconds of 160 health regen."

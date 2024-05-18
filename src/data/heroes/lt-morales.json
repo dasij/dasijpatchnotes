@@ -1,5 +1,5 @@
 {
-  "id": 1,
+  "id": 5,
   "name": "Lt-Morales",
   "role": "Healer",
   "image": "heroes_portraits/lt-morales.webp",
@@ -222,7 +222,7 @@
                   "text": "Medivac now takes off 5 seconds after being used and can carry any amount of people."
                 }
               ],
-              "developerCommentary": "It's supposed to work like League of Legends' Redemption."
+              "developerCommentary": "It's supposed to work like before for any nostalgic player."
             },
             {
               "name": "New: Ambulance driving",
@@ -237,7 +237,7 @@
               "name": "Reinforcements",
               "texts": [
                 {
-                  "text": "Call down a Medivac Dropship at your Hall of Storms for your allies. After 10 seconds, or when a hero enters, the Medivac will travel to the target location to unload the passenger."
+                  "text": "(Active)Call down a Medivac Dropship at your Hall of Storms for your allies. After 10 seconds, or when a hero enters, the Medivac will travel to the target location to unload the passenger (Shares cooldown with medivac dropship)"
                 }
               ],
               "developerCommentary": "Changed it to hold only one person and also drop it where Morales wants for increased map control potential."
@@ -301,7 +301,7 @@
               "name": "New: Healing Beacon",
               "texts": [
                 {
-                  "text": "Morales drops a beacon with 1200 health. If Morales redirects her healing beam to the beacon, all allied heroes within 6.5 range of that beacon will receive the Healing Beam and overcharge effects used by Morales."
+                  "text": "Morales drops a beacon with 1200 health for 15 seconds. If Morales redirects her healing beam to the beacon, all allied heroes within 6.5 range of that beacon will receive the Healing Beam and overcharge effects used by Morales.(60 sec de cooldown)"
                 }
               ],
               "developerCommentary": "I always saw an opportunity to make Morales area healing a thing and with the Steroids Charge changes it gets even better"

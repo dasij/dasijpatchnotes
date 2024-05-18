@@ -1,182 +1,239 @@
 {
-    "id": 1,
-    "name": "HERO_NAME",
-    "category": "role",
-    "image": "heroes_portraits/hero.png",
-    "patchNotes": [
-      {
-        "id": 1,
-        "title": "Talent rework",
-        "general": [],
-        "developerCommentary": "DEVELOPER_COMMENTARY_HERE",
-        "general": [
+  "id": 1,
+  "name": "HERO_NAME",
+  "role": "ROLE",
+  "image": "heroes_portraits/hero.webp",
+  "patchNotes": [
+    {
+      "id": 1,
+      "title": "PATCH_TITLE",
+      "general": [
+        {
+          "change": "GENERAL_CHANGE_TITLE",
+          "texts": [
             {
-              "change": "New Baseline Talent",
-              "texts": [
-                {
-                  "text": ""
-                },
-                {
-                  "text": ""
-                }
-              ],
-              "developerCommentary": ""
+              "text": "GENERAL_CHANGE_TEXT_1"
+            },
+            {
+              "text": "GENERAL_CHANGE_TEXT_2"
             }
           ],
-        "sections": [
-          {
-            "name": "Level 1",
-            "changes": [
-              {
-                "name": "",
-                "texts": [
-                  {
-                    "text": "",
-                    "subtexts": [
-                      ""
-                    ]
-                  }
-                ],
-                "developerCommentary": ""
-              },
-              {
-                "name": "",
-                "texts": [
-                  {
-                    "text": ""
-                  }
-                ],
-                "developerCommentary": ""
-              },
-              {
-                "name": "",
-                "texts": [
-                  {
-                    "text": ""
-                  }
-                ],
-                "developerCommentary": ""
-              }
-            ]
-          },
-          {
-            "name": "Level 4",
-            "changes": [
-              {
-                "name": "",
-                "texts": [
-                  {
-                    "text": "",
-                    "subtexts": [
-                      ""
-                    ]
-                  }
-                ],
-                "developerCommentary": ""
-              },
-              {
-                "name": "",
-                "texts": [
-                  {
-                    "text": ""
-                  }
-                ],
-                "developerCommentary": ""
-              },
-              {
-                "name": "",
-                "texts": [
-                  {
-                    "text": ""
-                  }
-                ],
-                "developerCommentary": ""
-              }
-            ]
-          },
-          {
-            "name": "Level 7",
-            "changes": [
-              {
-                "name": "",
-                "texts": [
-                  {
-                    "text": "",
-                    "subtexts": [
-                      ""
-                    ]
-                  }
-                ],
-                "developerCommentary": ""
-              },
-              {
-                "name": "",
-                "texts": [
-                  {
-                    "text": ""
-                  }
-                ],
-                "developerCommentary": ""
-              }
-            ]
-          },
-          {
-            "name": "Level 10",
-            "changes": [
-              {
-                "name": "",
-                "texts": [
-                  {
-                    "text": ""
-                  }
-                ],
-                "developerCommentary": ""
-              }
-            ]
-          },
-          {
-            "name": "Level 13",
-            "changes": [
-              {
-                "name": "",
-                "texts": [
-                  {
-                    "text": ""
-                  }
-                ],
-                "developerCommentary": ""
-              }
-            ]
-          },
-          {
-            "name": "Level 16",
-            "changes": [
-              {
-                "name": "",
-                "texts": [
-                  {
-                    "text": ""
-                  }
-                ],
-                "developerCommentary": ""
-              }
-            ]
-          },
-          {
-            "name": "Level 20",
-            "changes": [
-              {
-                "name": "",
-                "texts": [
-                  {
-                    "text": ""
-                  }
-                ],
-                "developerCommentary": ""
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
+          "developerCommentary": "GENERAL_CHANGE_DEVELOPER_COMMENTARY"
+        }
+      ],
+      "developerCommentary": "PATCH_DEVELOPER_COMMENTARY",
+      "sections": [
+        {
+          "name": "LEVEL_1",
+          "changes": [
+            {
+              "name": "CHANGE_NAME_1",
+              "texts": [
+                {
+                  "text": "CHANGE_TEXT_1",
+                  "subtexts": [
+                    "SUBTEXT_1",
+                    "SUBTEXT_2",
+                    "SUBTEXT_3"
+                  ]
+                }
+              ],
+              "developerCommentary": "CHANGE_DEVELOPER_COMMENTARY_1"
+            },
+            {
+              "name": "CHANGE_NAME_2",
+              "texts": [
+                {
+                  "text": "CHANGE_TEXT_2"
+                }
+              ],
+              "developerCommentary": "CHANGE_DEVELOPER_COMMENTARY_2"
+            },
+            {
+              "name": "CHANGE_NAME_3",
+              "texts": [
+                {
+                  "text": "CHANGE_TEXT_3"
+                }
+              ],
+              "developerCommentary": "CHANGE_DEVELOPER_COMMENTARY_3"
+            }
+          ]
+        },
+        {
+          "name": "LEVEL_4",
+          "changes": [
+            {
+              "name": "CHANGE_NAME_4",
+              "texts": [
+                {
+                  "text": "CHANGE_TEXT_4",
+                  "subtexts": [
+                    "SUBTEXT_4",
+                    "SUBTEXT_5",
+                    "SUBTEXT_6"
+                  ]
+                }
+              ],
+              "developerCommentary": "CHANGE_DEVELOPER_COMMENTARY_4"
+            },
+            {
+              "name": "CHANGE_NAME_5",
+              "texts": [
+                {
+                  "text": "CHANGE_TEXT_5"
+                }
+              ],
+              "developerCommentary": "CHANGE_DEVELOPER_COMMENTARY_5"
+            },
+            {
+              "name": "CHANGE_NAME_6",
+              "texts": [
+                {
+                  "text": "CHANGE_TEXT_6",
+                  "subtexts": [
+                    "SUBTEXT_7",
+                    "SUBTEXT_8",
+                    "SUBTEXT_9"
+                  ]
+                }
+              ],
+              "developerCommentary": "CHANGE_DEVELOPER_COMMENTARY_6"
+            }
+          ]
+        },
+        {
+          "name": "LEVEL_7",
+          "changes": [
+            {
+              "name": "CHANGE_NAME_7",
+              "texts": [
+                {
+                  "text": "CHANGE_TEXT_7"
+                },
+                {
+                  "text": "CHANGE_TEXT_8"
+                },
+                {
+                  "text": "CHANGE_TEXT_9"
+                }
+              ],
+              "developerCommentary": "CHANGE_DEVELOPER_COMMENTARY_7"
+            },
+            {
+              "name": "CHANGE_NAME_8",
+              "texts": [
+                {
+                  "text": "CHANGE_TEXT_10"
+                }
+              ],
+              "developerCommentary": "CHANGE_DEVELOPER_COMMENTARY_8"
+            }
+          ]
+        },
+        {
+          "name": "LEVEL_10",
+          "changes": [
+            {
+              "name": "CHANGE_NAME_9",
+              "texts": [
+                {
+                  "text": "CHANGE_TEXT_11"
+                },
+                {
+                  "text": "CHANGE_TEXT_12"
+                },
+                {
+                  "text": "CHANGE_TEXT_13"
+                }
+              ],
+              "developerCommentary": "CHANGE_DEVELOPER_COMMENTARY_9"
+            }
+          ]
+        },
+        {
+          "name": "LEVEL_13",
+          "changes": [
+            {
+              "name": "CHANGE_NAME_10",
+              "texts": [
+                {
+                  "text": "CHANGE_TEXT_14"
+                }
+              ],
+              "developerCommentary": "CHANGE_DEVELOPER_COMMENTARY_10"
+            },
+            {
+              "name": "CHANGE_NAME_11",
+              "texts": [
+                {
+                  "text": "CHANGE_TEXT_15"
+                },
+                {
+                  "text": "CHANGE_TEXT_16"
+                }
+              ],
+              "developerCommentary": "CHANGE_DEVELOPER_COMMENTARY_11"
+            },
+            {
+              "name": "CHANGE_NAME_12",
+              "texts": [
+                {
+                  "text": "CHANGE_TEXT_17"
+                }
+              ],
+              "developerCommentary": "CHANGE_DEVELOPER_COMMENTARY_12"
+            }
+          ]
+        },
+        {
+          "name": "LEVEL_16",
+          "changes": [
+            {
+              "name": "CHANGE_NAME_13",
+              "texts": [
+                {
+                  "text": "CHANGE_TEXT_18"
+                }
+              ],
+              "developerCommentary": "CHANGE_DEVELOPER_COMMENTARY_13"
+            },
+            {
+              "name": "CHANGE_NAME_14",
+              "texts": [
+                {
+                  "text": "CHANGE_TEXT_19"
+                },
+                {
+                  "text": "CHANGE_TEXT_20"
+                }
+              ],
+              "developerCommentary": "CHANGE_DEVELOPER_COMMENTARY_14"
+            }
+          ]
+        },
+        {
+          "name": "LEVEL_20",
+          "changes": [
+            {
+              "name": "CHANGE_NAME_15",
+              "texts": [
+                {
+                  "text": "CHANGE_TEXT_21"
+                },
+                {
+                  "text": "CHANGE_TEXT_22",
+                  "subtexts": [
+                    "SUBTEXT_10",
+                    "SUBTEXT_11"
+                  ]
+                }
+              ],
+              "developerCommentary": "CHANGE_DEVELOPER_COMMENTARY_15"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
