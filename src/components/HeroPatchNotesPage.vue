@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-hots-repeat bg-repeat-y bg-contain bg-center bg-no-repeat min-h-screen">
+  <div class="bg-hots-repeat bg-repeat-y bg-contain bg-center min-h-screen">
     <div class="container mx-auto py-8">
 
       <nav class="mb-8">
@@ -24,7 +24,7 @@
       </nav>
 
       <div v-if="selectedTab === 'patchNotes'" class="mt-8">
-        <div class="bg-hots-repeat bg-repeat-y bg-contain bg-center bg-no-repeat min-h-screen">
+        <div class="bg-hots-repeat bg-contain bg-center bg-no-repeat min-h-screen">
           <div class="container mx-auto py-8">
             <h1 class="text-4xl font-bold text-white mb-4">{{ hero.name }} PATCH NOTES</h1>
             <div v-for="patchNote in patchNotes" :key="patchNote.id" class="mb-12">
