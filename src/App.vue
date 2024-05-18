@@ -1,4 +1,3 @@
-<!-- App.vue -->
 <template>
     <div id="app">
         <div class="navbar-overlay"></div>
