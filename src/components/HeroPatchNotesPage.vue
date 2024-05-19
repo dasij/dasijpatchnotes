@@ -1,10 +1,7 @@
 <template>
   <div class="bg-hots-repeat bg-repeat-y bg-contain bg-center min-h-screen">
     <div class="container mx-auto py-8">
-
       <nav class="mb-8">
-
-
         <button @click="selectTab('patchNotes')" :class="{ 'selected': selectedTab === 'patchNotes' }"
           class="px-14 py-8 text-white font-semibold rounded mr-4 nav-tabs">
           Patch Notes
@@ -19,8 +16,6 @@
             Vote on Discord
           </button>
         </a>
-
-
       </nav>
 
       <div v-if="selectedTab === 'patchNotes'" class="mt-8">
@@ -58,6 +53,9 @@
                       <p class="font-semibold mb-2">Developer Comment:</p>
                       <p>{{ item.developerCommentary }}</p>
                     </div>
+                    <button @click="likeChange(patchNote.id, index)" :class="{ 'loading': isLoading }">
+                      👍 {{ item.likes || 0 }}
+                    </button>
                   </li>
                 </ul>
               </div>
@@ -85,6 +83,10 @@
                           <p class="font-semibold mb-2">Developer Comment:</p>
                           <p>{{ change.developerCommentary }}</p>
                         </div>
+                        <button @click="likeChange(patchNote.id, sectionIndex, changeIndex)"
+                          :class="{ 'loading': isLoading }">
+                          👍 {{ change.likes || 0 }}
+                        </button>
                       </li>
                     </ul>
                   </li>
@@ -238,13 +240,157 @@
         <p class="text-white">Thumbs Up Count: {{ thumbsUpCount }}.</p>
         <!-- Additional content can be added here -->
       </div>
-
-
-
-
     </div>
   </div>
 </template>
+
+
+<script>
+import { database, ref, auth } from '../firebase';
+import { set, get } from 'firebase/database';
+import { onAuthStateChanged, signInAnonymously } from 'firebase/auth';
+import axios from 'axios';
+
+export default {
+  data() {
+    return {
+      hero: {},
+      patchNotes: [],
+      talents: {},
+      tooltipTalent: null,
+      tooltipAbility: null,
+      selectedTab: 'patchNotes',
+      abilities: {},
+      thumbsUpCount: 0,
+      userId: null,
+      isLoading: true,
+    };
+  },
+  computed: {
+    heroName() {
+      return this.$route.params.name.toLowerCase();
+    },
+  },
+  created() {
+    const heroData = require(`../data/heroes/${this.heroName}.json`);
+    if (heroData) {
+      this.hero = heroData;
+      this.patchNotes = heroData.patchNotes;
+      this.talents = require(`../data/heroes/talents/${this.heroName}_talents.json`);
+      console.log(this.talents); // Log to check the loaded talents data
+    } else {
+      console.error('Failed to load hero data');
+    }
+    this.authenticateUser();
+    this.loadChanges();
+  },
+  methods: {
+    fetchThumbsUpCount() {
+      axios.get('http://localhost:3000/api/reactions')
+        .then(response => {
+          this.thumbsUpCount = response.data.thumbsUpCount;
+        })
+        .catch(error => console.error('Error fetching thumbs-up count:', error));
+    },
+    selectTab(tab) {
+      this.selectedTab = tab;
+      if (tab === 'communityApproval') {
+        this.fetchThumbsUpCount();
+      }
+    },
+    showTooltip(talent) {
+      this.tooltipTalent = talent;
+    },
+    hideTooltip() {
+      this.tooltipTalent = null;
+    },
+    formatText(text) {
+      // Highlight changes and important details
+      return text.replace(/{highlight}(.*?){\/highlight}/g, '<span style="color: red;">$1</span>');
+    },
+    likeChange(patchNoteId, generalIndex, changeIndex = null) {
+      if (!this.hasLocalStorage()) {
+        alert("Você precisa desativar o modo anônimo para votar.");
+        return;
+      }
+
+      const patchNote = this.patchNotes.find(note => note.id === patchNoteId);
+      let change;
+      if (changeIndex !== null) {
+        const section = patchNote.sections[generalIndex];
+        change = section.changes[changeIndex];
+      } else {
+        change = patchNote.general[generalIndex];
+      }
+
+      // Garantir que 'likedBy' esteja definido
+      if (!change.likedBy) {
+        change.likedBy = {};
+      }
+
+      const userId = this.getUserId();
+      if (userId) {
+        if (change.likedBy[userId]) {
+          change.likes = (change.likes || 0) - 1;
+          delete change.likedBy[userId];
+        } else {
+          change.likes = (change.likes || 0) + 1;
+          change.likedBy[userId] = true;
+        }
+        this.saveChanges();
+      }
+    },
+    saveChanges() {
+      const changesRef = ref(database, `heroes/${this.heroName}/patchNotes`);
+      set(changesRef, this.patchNotes);
+    },
+    loadChanges() {
+      const changesRef = ref(database, `heroes/${this.heroName}/patchNotes`);
+      get(changesRef).then(snapshot => {
+        if (snapshot.exists()) {
+          this.patchNotes = snapshot.val();
+        }
+        this.isLoading = false; // Atualizar o estado de carregamento
+      });
+    },
+    authenticateUser() {
+      onAuthStateChanged(auth, user => {
+        if (user) {
+          this.userId = user.uid;
+        } else {
+          signInAnonymously(auth).then(({ user }) => {
+            this.userId = user.uid;
+          });
+        }
+      });
+    },
+    hasLocalStorage() {
+      try {
+        localStorage.setItem('test', 'test');
+        localStorage.removeItem('test');
+        return true;
+      } catch (e) {
+        return false;
+      }
+    },
+    getUserId() {
+      let userId = localStorage.getItem('userId');
+      if (!userId) {
+        userId = 'user-' + Math.random().toString(36).substr(2, 9);
+        localStorage.setItem('userId', userId);
+      }
+      return userId;
+    }
+  },
+
+
+  mounted() {
+    this.authenticateUser();
+    this.loadChanges();
+  },
+};
+</script>
+
 <style scoped>
 .talent-calculator-container {
   background-size: cover;
@@ -404,25 +550,6 @@
 }
 
 
-.text-small {
-  font-size: 0.8rem;
-}
-
-.text-primary {
-  color: blue;
-}
-
-.text-secondary {
-  color: green;
-}
-
-.text-danger {
-  color: red;
-}
-
-.text-warning {
-  color: orange;
-}
 
 .trait {
   display: flex;
@@ -462,65 +589,40 @@
   background-color: #6B21A8;
   /* This is the Tailwind CSS color for bg-purple-600 */
 }
-</style>
 
-<script>
-import axios from 'axios';
-
-export default {
-  name: 'HeroPatchNotesPage',
-  data() {
-    return {
-      hero: {},
-      patchNotes: [],
-      talents: {},
-      tooltipTalent: null,
-      tooltipAbility: null,
-      selectedTab: 'patchNotes',
-      abilities: {},
-      thumbsUpCount: 0,
-    }
-  },
-  computed: {
-    heroName() {
-      return this.$route.params.name.toLowerCase();
-    },
-  },
-  created() {
-    const heroData = require(`../data/heroes/${this.heroName}.json`);
-    if (heroData) {
-      this.hero = heroData;
-      this.patchNotes = heroData.patchNotes;
-      this.talents = require(`../data/heroes/talents/${this.heroName}_talents.json`);
-      console.log(this.talents); // Log to check the loaded talents data
-    } else {
-      console.error('Failed to load hero data');
-    }
-  },
-  methods: {
-    fetchThumbsUpCount() {
-      axios.get('http://localhost:3000/api/reactions')
-        .then(response => {
-          this.thumbsUpCount = response.data.thumbsUpCount;
-        })
-        .catch(error => console.error('Error fetching thumbs-up count:', error));
-    },
-    selectTab(tab) {
-      this.selectedTab = tab;
-      if (tab === 'communityApproval') {
-        this.fetchThumbsUpCount();
-      }
-    },
-    showTooltip(talent) {
-      this.tooltipTalent = talent;
-    },
-    hideTooltip() {
-      this.tooltipTalent = null;
-    },
-    formatText(text) {
-      // Highlight changes and important details
-      return text.replace(/{highlight}(.*?){\/highlight}/g, '<span style="color: red;">$1</span>');
-    },
-  },
+.test-page {
+  padding: 20px;
 }
-</script>
+
+.change-line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+button {
+  margin-left: 10px;
+}
+
+
+.test-page {
+  padding: 20px;
+}
+
+.change-line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+button {
+  margin-left: 10px;
+}
+
+button.loading {
+  background-color: #555;
+  /* Cor escura para indicar carregamento */
+  cursor: not-allowed;
+  /* Cursor indicando que não está disponível */
+}
+</style>

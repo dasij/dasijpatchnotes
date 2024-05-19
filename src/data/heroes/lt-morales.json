@@ -7,7 +7,6 @@
     {
       "id": 1,
       "title": "Talent and hero rework",
-      "general": [],
       "developerCommentary": "I believe Morales is either the top or at least among the top three most boring characters to play right now, according to a significant portion of the community. After considering these opinions, I agree with the players: Morales feels more like a tool for the team rather than a hero. You lack agency, and your role is reduced to a walking bot that simply presses Q on someone. The changes I propose are inspired by what I consider the ideal healing beam character, the TF2 Medic. I aim to give Morales a similar level of agency and introduce some risks.",
       "general": [
         {
@@ -17,7 +16,9 @@
               "text": "Morales no longer has energy regeneration and starts with 0."
             }
           ],
-          "developerCommentary": "This change is due to modifications in her ultimate ability."
+          "developerCommentary": "This change is due to modifications in her ultimate ability.",
+          "likes": 0,
+          "likedBy": {}
         },
         {
           "change": "Healing Beam (Q)",
@@ -29,7 +30,9 @@
               "text": "Healing reduced by 30%."
             }
           ],
-          "developerCommentary": "The removal of the energy cost necessitated a nerf."
+          "developerCommentary": "The removal of the energy cost necessitated a nerf.",
+          "likes": 0,
+          "likedBy": {}
         },
         {
           "change": "Safeguard (W)",
@@ -38,7 +41,9 @@
               "text": "Removed."
             }
           ],
-          "developerCommentary": "Safeguard is a skill that predisposes Morales to being a healbot, as it provides additional survivability to another character without the need for precise timing like a cleanse or Medivh's Force of Will. It can be used indiscriminately. I believe it's unhealthy for Morales to have a kit that encourages passive gameplay, which is why I am removing this skill."
+          "developerCommentary": "Safeguard is a skill that predisposes Morales to being a healbot, as it provides additional survivability to another character without the need for precise timing like a cleanse or Medivh's Force of Will. It can be used indiscriminately. I believe it's unhealthy for Morales to have a kit that encourages passive gameplay, which is why I am removing this skill.",
+          "likes": 0,
+          "likedBy": {}
         },
         {
           "change": "Medivac Dropship (W)",
@@ -59,7 +64,9 @@
               "text": "Heroes are prevented from entering the Medivac while taking damage."
             }
           ],
-          "developerCommentary": "The Medivac is one of the few tools that gives Morales agency. It allows for rapid transport of players between map areas. By converting this ultimate-level skill into a basic ability, some adjustments are necessary for balance and practicality."
+          "developerCommentary": "The Medivac is one of the few tools that gives Morales agency. It allows for rapid transport of players between map areas. By converting this ultimate-level skill into a basic ability, some adjustments are necessary for balance and practicality.",
+          "likes": 0,
+          "likedBy": {}
         },
         {
           "change": "New: Steroids Charge (R)",
@@ -77,7 +84,9 @@
               "text": "Gains 2 energy for every 125 health healed. Morales loses all energy upon death."
             }
           ],
-          "developerCommentary": "As previously mentioned, I want to bring Morales closer to the gameplay experience of the Medic in TF2. Introducing Steroids as a baseline skill that charges up enhances Morales' engagement in gameplay, focusing on skillful play rather than passive cooldown management. This also distinguishes her from other healers."
+          "developerCommentary": "As previously mentioned, I want to bring Morales closer to the gameplay experience of the Medic in TF2. Introducing Steroids as a baseline skill that charges up enhances Morales' engagement in gameplay, focusing on skillful play rather than passive cooldown management. This also distinguishes her from other healers.",
+          "likes": 0,
+          "likedBy": {}
         }
       ],
       "sections": [
@@ -91,7 +100,9 @@
                   "text": "Energy grant per basic attack reduced from 4 to 1."
                 }
               ],
-              "developerCommentary": "Balancing the talent for the new ultimate"
+              "developerCommentary": "Balancing the talent for the new ultimate",
+              "likes": 0,
+              "likedBy": {}
             },
             {
               "name": "Life Support",
@@ -100,7 +111,9 @@
                   "text": "Changed functionality: Morales now receives all movement speed bonuses from the target she's healing."
                 }
               ],
-              "developerCommentary": "There's no more need for the energy BUT there's always a need for giving Morales a chance to heal junkrat with the fast mount and also follow the steroids target"
+              "developerCommentary": "There's no more need for the energy BUT there's always a need for giving Morales a chance to heal junkrat with the fast mount and also follow the steroids target",
+              "likes": 0,
+              "likedBy": {}
             },
             {
               "name": "Clear",
@@ -115,7 +128,9 @@
                   "text": "Quest: Hit 4 targets with Displacement Grenade | Reward: Reduces Clear cooldown to 9 seconds."
                 }
               ],
-              "developerCommentary": "I rebalanced the quest so we could preserve the grenade quest and bring earlier the grenade reset"
+              "developerCommentary": "I rebalanced the quest so we could preserve the grenade quest and bring earlier the grenade reset",
+              "likes": 0,
+              "likedBy": {}
             }
           ]
         },
@@ -135,7 +150,9 @@
                   "text": "Prevents Morales from losing energy upon death."
                 }
               ],
-              "developerCommentary": "Rebalanced it for the new energy settings"
+              "developerCommentary": "Rebalanced it for the new energy settings",
+              "likes": 0,
+              "likedBy": {}
             }
           ]
         },
@@ -149,7 +166,9 @@
                   "text": "Moved from level 13."
                 }
               ],
-              "developerCommentary": "The Displacement Grenade talent tier was not very strong, and the new talents created for Medivac are somewhat stronger, so I'm shifting them to level 7 for better power spikes."
+              "developerCommentary": "The Displacement Grenade talent tier was not very strong, and the new talents created for Medivac are somewhat stronger, so I'm shifting them to level 7 for better power spikes.",
+              "likes": 0,
+              "likedBy": {}
             },
             {
               "name": "Physical Therapy, Vanadium Plating, and Medi-drone",
@@ -158,7 +177,9 @@
                   "text": "Removed."
                 }
               ],
-              "developerCommentary": "With the baseline kit changes, there's no more room for these talents."
+              "developerCommentary": "With the baseline kit changes, there's no more room for these talents.",
+              "likes": 0,
+              "likedBy": {}
             }
           ]
         },
@@ -172,7 +193,9 @@
                   "text": "Steroids charge now makes allied heroes' basic attacks deal an extra 30% damage."
                 }
               ],
-              "developerCommentary": "I didn't want to just buff attack speed and movement speed as a simple buff and wanted to make something that reminds me of the Kritzkrieg from TF2. Perfect time to make Morales a significant problem considering that some characters are troublesome with higher attack damage."
+              "developerCommentary": "I didn't want to just buff attack speed and movement speed as a simple buff and wanted to make something that reminds me of the Kritzkrieg from TF2. Perfect time to make Morales a significant problem considering that some characters are troublesome with higher attack damage.",
+              "likes": 0,
+              "likedBy": {}
             },
             {
               "name": "New: Caffeineroids",
@@ -181,7 +204,9 @@
                   "text": "Increase Steroids charge movement speed bonus by 25% and makes the target unkillable."
                 }
               ],
-              "developerCommentary": "The risk plays with Morales, remember that the healing beam can be cancelled with crowd control."
+              "developerCommentary": "The risk plays with Morales, remember that the healing beam can be cancelled with crowd control.",
+              "likes": 0,
+              "likedBy": {}
             },
             {
               "name": "New: Get back to the fight-roids",
@@ -190,9 +215,10 @@
                   "text": "Targets receive additional healing equal to 330% of the Healing Beam."
                 }
               ],
-              "developerCommentary": "I wanted to give it 300% of the original Healing Beam value."
+              "developerCommentary": "I wanted to give it 300% of the original Healing Beam value.",
+              "likes": 0,
+              "likedBy": {}
             },
-
             {
               "name": "Medivac Dropship",
               "texts": [
@@ -201,7 +227,6 @@
                 }
               ]
             },
-
             {
               "name": "Stim Drone",
               "texts": [
@@ -222,7 +247,9 @@
                   "text": "Medivac now takes off 5 seconds after being used and can carry any amount of people."
                 }
               ],
-              "developerCommentary": "It's supposed to work like before for any nostalgic player."
+              "developerCommentary": "It's supposed to work like before for any nostalgic player.",
+              "likes": 0,
+              "likedBy": {}
             },
             {
               "name": "New: Ambulance driving",
@@ -231,7 +258,9 @@
                   "text": "Now Medivac calls upon Morales after 1 second of channeling, the Medivac is 150% faster and has the cooldown reduced by half plus instantly taking off as soon as it's used."
                 }
               ],
-              "developerCommentary": "This works very close to how the old Medivac was, but only Morales will ride it."
+              "developerCommentary": "This works very close to how the old Medivac was, but only Morales will ride it.",
+              "likes": 0,
+              "likedBy": {}
             },
             {
               "name": "Reinforcements",
@@ -240,7 +269,9 @@
                   "text": "(Active)Call down a Medivac Dropship at your Hall of Storms for your allies. After 10 seconds, or when a hero enters, the Medivac will travel to the target location to unload the passenger (Shares cooldown with medivac dropship)"
                 }
               ],
-              "developerCommentary": "Changed it to hold only one person and also drop it where Morales wants for increased map control potential."
+              "developerCommentary": "Changed it to hold only one person and also drop it where Morales wants for increased map control potential.",
+              "likes": 0,
+              "likedBy": {}
             },
             {
               "name": "EMP Grenade, System Shock, and Bedside Manner",
@@ -249,7 +280,9 @@
                   "text": "Moved to level 7."
                 }
               ],
-              "developerCommentary": "The Displacement Grenade talent tier isn't so strong, and the new talents created for Medivac are somewhat strong, so I'm changing positions to level 7 for better power spikes."
+              "developerCommentary": "The Displacement Grenade talent tier isn't so strong, and the new talents created for Medivac are somewhat strong, so I'm changing positions to level 7 for better power spikes.",
+              "likes": 0,
+              "likedBy": {}
             }
           ]
         },
@@ -263,7 +296,9 @@
                   "text": "Morales' Displacement Grenade now gets bigger the farther it travels, up to 40% extra. On explosion, it also heals allied heroes in the area by 480."
                 }
               ],
-              "developerCommentary": "Sometimes using the grenade feels like an disadvantage and this is a talent option for this games."
+              "developerCommentary": "Sometimes using the grenade feels like an disadvantage and this is a talent option for this games.",
+              "likes": 0,
+              "likedBy": {}
             },
             {
               "name": "Shield Sequencer",
@@ -272,7 +307,9 @@
                   "text": "Removed."
                 }
               ],
-              "developerCommentary": "No more safeguard needed"
+              "developerCommentary": "No more safeguard needed",
+              "likes": 0,
+              "likedBy": {}
             },
             {
               "name": "First Responder",
@@ -281,7 +318,9 @@
                   "text": "Changed functionality: Morales can overheal targets, granting them an overshield up to 20% of their maximum health that rapidly decays after 5 seconds. Healing resets the shield duration."
                 }
               ],
-              "developerCommentary": "Inspired by the Tf2 medic overheal and bringing some more utility for late game Morales"
+              "developerCommentary": "Inspired by the Tf2 medic overheal and bringing some more utility for late game Morales",
+              "likes": 0,
+              "likedBy": {}
             }
           ]
         },
@@ -295,7 +334,9 @@
                   "text": "When Morales dies, every hero nearby will receive the Steroids Charge effects for 4 seconds."
                 }
               ],
-              "developerCommentary": "Now the people on ranked will think twice before saying that"
+              "developerCommentary": "Now the people on ranked will think twice before saying that",
+              "likes": 0,
+              "likedBy": {}
             },
             {
               "name": "New: Healing Beacon",
@@ -304,7 +345,9 @@
                   "text": "Morales drops a beacon with 1200 health for 15 seconds. If Morales redirects her healing beam to the beacon, all allied heroes within 6.5 range of that beacon will receive the Healing Beam and overcharge effects used by Morales.(60 sec de cooldown)"
                 }
               ],
-              "developerCommentary": "I always saw an opportunity to make Morales area healing a thing and with the Steroids Charge changes it gets even better"
+              "developerCommentary": "I always saw an opportunity to make Morales area healing a thing and with the Steroids Charge changes it gets even better",
+              "likes": 0,
+              "likedBy": {}
             },
             {
               "name": "New: I am Ambulance!",
@@ -316,7 +359,9 @@
                   "text": "Passive: Increase her energy generation by 25%."
                 }
               ],
-              "developerCommentary": "This is made to be the ultimate safe talento for Morales..i wanted to go more on a Soraka from Lol passive route but i taught this would be funnier and better."
+              "developerCommentary": "This is made to be the ultimate safe talento for Morales..i wanted to go more on a Soraka from Lol passive route but i taught this would be funnier and better.",
+              "likes": 0,
+              "likedBy": {}
             },
             {
               "name": "Hospice Care, Second Opinion",
@@ -325,7 +370,9 @@
                   "text": "Removed."
                 }
               ],
-              "developerCommentary": "Second opinion now comes earlier and hospice care have no more space in the game"
+              "developerCommentary": "Second opinion now comes earlier and hospice care have no more space in the game",
+              "likes": 0,
+              "likedBy": {}
             }
           ]
         }

@@ -7,7 +7,6 @@
     {
       "id": 1,
       "title": "Talent and mini hero-rework",
-      "general": [],
       "developerCommentary": "From the start, developers aimed to make Li Li an ideal starter hero. They didn't change her much, believing not all heroes need high viability or skill ceilings. However, I think every hero should have growth potential. Over time, a lack of this can deter players from choosing Li Li. Take Team Fortress 2's Soldier: simple yet with a high skill ceiling. Similarly, I want Li Li to be easy for beginners but also offer significant skill development opportunities.",
       "general": [
         {
@@ -17,7 +16,9 @@
               "text": "Additional functionality: Li Li's Healing Brew marks healed allies with cups. After an allied hero receives 3 cups, Li Li can collect them, granting that hero the same effects of Fast Feet, including those from talents."
             }
           ],
-          "developerCommentary": "This change aims to raise Li Li's skill ceiling by enhancing Fast Feet, necessitating a talent overhaul. The current Fast Feet is too potent with this new ability interaction."
+          "developerCommentary": "This change aims to raise Li Li's skill ceiling by enhancing Fast Feet, necessitating a talent overhaul. The current Fast Feet is too potent with this new ability interaction.",
+          "likes": 0,
+          "likedBy": {}
         },
         {
           "change": "Blinding Winds (E)",
@@ -26,7 +27,9 @@
               "text": "Additional functionality: Passive: Li Li gains 6 mana by hitting blinded targets"
             }
           ],
-          "developerCommentary": "After the talent overhaul, I obliterated the mana talents, recognizing Li Li's need for mana. I aimed to provide a simple solution for her mana needs."
+          "developerCommentary": "After the talent overhaul, I obliterated the mana talents, recognizing Li Li's need for mana. I aimed to provide a simple solution for her mana needs.",
+          "likes": 0,
+          "likedBy": {}
         },
         {
           "change": "Fast feet (T)",
@@ -35,7 +38,9 @@
               "text": "Reduced cooldown refresh to 30%"
             }
           ],
-          "developerCommentary": "Given Healing Brew's mechanics, Fast Feet was adjusted to be slightly weaker and more customizable."
+          "developerCommentary": "Given Healing Brew's mechanics, Fast Feet was adjusted to be slightly weaker and more customizable.",
+          "likes": 0,
+          "likedBy": {}
         }
       ],
       "sections": [
@@ -49,7 +54,9 @@
                   "text": "Don't increase mana regeneration anymore"
                 }
               ],
-              "developerCommentary": "Fast Feet now affects allied heroes, so extending its duration also prolongs its effect on them."
+              "developerCommentary": "Fast Feet now affects allied heroes, so extending its duration also prolongs its effect on them.",
+              "likes": 0,
+              "likedBy": {}
             },
             {
               "name": "Safety Sprint",
@@ -61,7 +68,9 @@
                   "text": "Decrease the duration to 1.5 seconds"
                 }
               ],
-              "developerCommentary": "This talent is defensive, designed to encourage Li Li players to use it for escaping or engaging by enhancing Fast Feet effects to be using on par with the new healing brew effect. Bigger duration while affecting allied heros could be troublesome."
+              "developerCommentary": "This talent is defensive, designed to encourage Li Li players to use it for escaping or engaging by enhancing Fast Feet effects to be using on par with the new healing brew effect. Bigger duration while affecting allied heros could be troublesome.",
+              "likes": 0,
+              "likedBy": {}
             },
             {
               "name": "New: Fast as the feet",
@@ -70,7 +79,9 @@
                   "text": "Fast Feet increase self and Cloud serpent attack speed by 25%"
                 }
               ],
-              "developerCommentary": "I don't want to give ability power to her because Ana cover this role and the basic abilities alredy give spell spower besides i think the interaction on giving spell power won't be so good for something that you could SUDDENLY receive as the fast feet bonus and for that instance i choose attack speed. One more thing, allied heros with Fast Feet should further increase cloud serpent and Li Li attack speed"
+              "developerCommentary": "I don't want to give ability power to her because Ana cover this role and the basic abilities alredy give spell spower besides i think the interaction on giving spell power won't be so good for something that you could SUDDENLY receive as the fast feet bonus and for that instance i choose attack speed. One more thing, allied heros with Fast Feet should further increase cloud serpent and Li Li attack speed",
+              "likes": 0,
+              "likedBy": {}
             },
             {
               "name": "Free drinks",
@@ -79,7 +90,9 @@
                   "text": "removed"
                 }
               ],
-              "developerCommentary": "With the changes mades there no more use for free drinks, level 4 is a new talent tier from healing brew but i want healing brew to be used changed"
+              "developerCommentary": "With the changes mades there no more use for free drinks, level 4 is a new talent tier from healing brew but i want healing brew to be used changed",
+              "likes": 0,
+              "likedBy": {}
             },
             {
               "name": "Serpent sidekick",
@@ -88,7 +101,9 @@
                   "text": "removed"
                 }
               ],
-              "developerCommentary": "With the new fast as the feet covering it's attack speed part and the new healing brew effect giving speed there's no more space for serpent sidekick"
+              "developerCommentary": "With the new fast as the feet covering it's attack speed part and the new healing brew effect giving speed there's no more space for serpent sidekick",
+              "likes": 0,
+              "likedBy": {}
             }
           ]
         },
@@ -108,7 +123,9 @@
                   "text": "Moved from level 16"
                 }
               ],
-              "developerCommentary": "This talent is one that i want to give the best control possible of who Li Li heals"
+              "developerCommentary": "This talent is one that i want to give the best control possible of who Li Li heals",
+              "likes": 0,
+              "likedBy": {}
             },
             {
               "name": "New: Spill the tea",
@@ -117,7 +134,9 @@
                   "text": "Healing brew now heals an area around the hero by 50% applying cups to everyone"
                 }
               ],
-              "developerCommentary": "This one is best suited for melee teams"
+              "developerCommentary": "This one is best suited for melee teams",
+              "likes": 0,
+              "likedBy": {}
             },
             {
               "name": "New: Tea time",
@@ -126,7 +145,9 @@
                   "text": "Tea table(Active|Toggle): The next healing brew heals all heroes on range(18 seconds)"
                 }
               ],
-              "developerCommentary": "This one is an alternative version of Two for one but more focused on stacking the cups"
+              "developerCommentary": "This one is an alternative version of Two for one but more focused on stacking the cups",
+              "likes": 0,
+              "likedBy": {}
             },
             {
               "name": "Wind serpent",
@@ -135,7 +156,9 @@
                   "text": "removed"
                 }
               ],
-              "developerCommentary": "With how i want the level 4 to focus there's no space for Wind serpent the only thing i could re-use it's the additional cooldown refresh rate on another talent"
+              "developerCommentary": "With how i want the level 4 to focus there's no space for Wind serpent the only thing i could re-use it's the additional cooldown refresh rate on another talent",
+              "likes": 0,
+              "likedBy": {}
             },
             {
               "name": "Surging Winds",
@@ -144,7 +167,9 @@
                   "text": "removed"
                 }
               ],
-              "developerCommentary": "There's no need for surging winds on how i am building Li Li but increasing spell power by hitting surging winds is a nice idea"
+              "developerCommentary": "There's no need for surging winds on how i am building Li Li but increasing spell power by hitting surging winds is a nice idea",
+              "likes": 0,
+              "likedBy": {}
             },
             {
               "name": "Safety sprint",
@@ -153,7 +178,9 @@
                   "text": "Moved to level 1"
                 }
               ],
-              "developerCommentary": "Moved for better talent customization journey"
+              "developerCommentary": "Moved for better talent customization journey",
+              "likes": 0,
+              "likedBy": {}
             }
           ]
         },
@@ -170,7 +197,9 @@
                   "text": "Fast feet increase cloud serpent cooldown speed an additional 50%"
                 }
               ],
-              "developerCommentary": "This new cleanse for Li Li is more user-friendly, balancing effectiveness with accessibility for new players. It's designed to be practical without being overly complex."
+              "developerCommentary": "This new cleanse for Li Li is more user-friendly, balancing effectiveness with accessibility for new players. It's designed to be practical without being overly complex.",
+              "likes": 0,
+              "likedBy": {}
             },
             {
               "name": "Mass Vortex",
@@ -182,7 +211,9 @@
                   "text": "Increase blinding wind range by 20%"
                 }
               ],
-              "developerCommentary": "Now this is a thing i got the idea from the Lucio talent i changed on resetting stacks, this talent always felt kinda weak and i wanted it to be stronger but not about necessarily about the damage and on that way i could say it makes the talent fair holds the nature of having more surging winds hits and could be a good entry for higher skill ceiling talents while not being so hard."
+              "developerCommentary": "Now this is a thing i got the idea from the Lucio talent i changed on resetting stacks, this talent always felt kinda weak and i wanted it to be stronger but not about necessarily about the damage and on that way i could say it makes the talent fair holds the nature of having more surging winds hits and could be a good entry for higher skill ceiling talents while not being so hard.",
+              "likes": 0,
+              "likedBy": {}
             },
             {
               "name": "Let's go",
@@ -191,7 +222,9 @@
                   "text": "Removed"
                 }
               ],
-              "developerCommentary": "As explained on the Don't stop, we need adventure i wanted to make a eazier version of the cleanse based on Li Li being an entry healer"
+              "developerCommentary": "As explained on the Don't stop, we need adventure i wanted to make a eazier version of the cleanse based on Li Li being an entry healer",
+              "likes": 0,
+              "likedBy": {}
             }
           ]
         },
@@ -205,7 +238,9 @@
                   "text": "Changed functionality: Li Li basic attacks againt blinded heroes increases the blind duration by 0.25 and bounces to the closest hero if the hero is also blinded the attack bounces again."
                 }
               ],
-              "developerCommentary": "On this talent i wanted to give a more funny interaction with Surging Winds..Initially i wanted to reduce it's cooldown by hitting blinded targets but that could become recursive by hitting blind targets you blind them..kinda off..For that instance i wanted to give a bigger meaning on blinding targets by also making it work with other blind synergies like Johanna and Cássia and making the blind stronger overall."
+              "developerCommentary": "On this talent i wanted to give a more funny interaction with Surging Winds..Initially i wanted to reduce it's cooldown by hitting blinded targets but that could become recursive by hitting blind targets you blind them..kinda off..For that instance i wanted to give a bigger meaning on blinding targets by also making it work with other blind synergies like Johanna and Cássia and making the blind stronger overall.",
+              "likes": 0,
+              "likedBy": {}
             }
           ]
         },
@@ -225,7 +260,9 @@
                   "text": "Moved from level 20"
                 }
               ],
-              "developerCommentary": "Nerfing it would be necessary for the new healing brew not become problematic as more ability refresh rate could become too strong when you can share it with other heroes. Health regeneration bonus could combo with more survavibility which is the main talent effect BUT i really don't know how much bonus health regen would be good as you could also give it to other heroes..imagine sharing health regen with a dehaka on essence build? Character would have 2 seconds of 160 health regen."
+              "developerCommentary": "Nerfing it would be necessary for the new healing brew not become problematic as more ability refresh rate could become too strong when you can share it with other heroes. Health regeneration bonus could combo with more survavibility which is the main talent effect BUT i really don't know how much bonus health regen would be good as you could also give it to other heroes..imagine sharing health regen with a dehaka on essence build? Character would have 2 seconds of 160 health regen.",
+              "likes": 0,
+              "likedBy": {}
             },
             {
               "name": "Two for one",
@@ -234,7 +271,9 @@
                   "text": "Moved to level 4"
                 }
               ],
-              "developerCommentary": "With the talent tree i envision this talent should be placed earlier"
+              "developerCommentary": "With the talent tree i envision this talent should be placed earlier",
+              "likes": 0,
+              "likedBy": {}
             }
           ]
         },
@@ -242,13 +281,15 @@
           "name": "Level 20",
           "changes": [
             {
-              "name": "New:Tea bagging",
+              "name": "New: Tea bagging",
               "texts": [
                 {
                   "text": "Decrease the cups needed for Li Li to collect to 2"
                 }
               ],
-              "developerCommentary": "With the Shake it Off change i had to add a new talent to that tier and it's hard to add talents for a character that should be simple most of the time BUT with the new mechanic created on healing brew that's not impossible, decreasing healing brew cups needed for the bonus activation would be a game changer as you could abuse more eazier with all the talents that help Li Li stacks cups more eazily."
+              "developerCommentary": "With the Shake it Off change i had to add a new talent to that tier and it's hard to add talents for a character that should be simple most of the time BUT with the new mechanic created on healing brew that's not impossible, decreasing healing brew cups needed for the bonus activation would be a game changer as you could abuse more eazier with all the talents that help Li Li stacks cups more eazily.",
+              "likes": 0,
+              "likedBy": {}
             },
             {
               "name": "Shake it off",
@@ -257,7 +298,9 @@
                   "text": "Moved to level 16"
                 }
               ],
-              "developerCommentary": "I don't want to empower Fast Feet too much or else healing brew new effect could become problematic so i changed it's tier so i could nerf it but still make it viable."
+              "developerCommentary": "I don't want to empower Fast Feet too much or else healing brew new effect could become problematic so i changed it's tier so i could nerf it but still make it viable.",
+              "likes": 0,
+              "likedBy": {}
             }
           ]
         }

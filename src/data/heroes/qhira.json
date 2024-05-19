@@ -7,7 +7,6 @@
     {
       "id": 1,
       "title": "Talent rework",
-      "general": [],
       "developerCommentary": "Right now Qhira is one melee assassin that has a kit focused only on fighting without any clear wave and even with that she's also not the strongest fighter. My objective here will be to bring Qhira fight potential to the maximum while i give her little options for PvE as i want her to be an PvP focused character and for that i will give her tools to maximize the Spiderman potential",
       "general": [
         {
@@ -20,7 +19,9 @@
               "text": "Basic attacks against bleeding targets increase the damage by 20% per bleed stack"
             }
           ],
-          "developerCommentary": "I want to further compromisse Qhira with the Bleeding synergy"
+          "developerCommentary": "I want to further compromisse Qhira with the Bleeding synergy",
+          "likes": 0,
+          "likedBy": {}
         },
         {
           "change": "Grappling Hook(T)",
@@ -32,7 +33,9 @@
               "text": "Grappling Hook recharges 10% faster for every active Blood Rage stack"
             }
           ],
-          "developerCommentary": "This is the beginning of spiderQhira. I am going for that route because i always thought that the grappling hook was an underdeveloped part of Qhira kits, one of her skills that could increase her skill ceiling to the roof but it's missused"
+          "developerCommentary": "This is the beginning of spiderQhira. I am going for that route because i always thought that the grappling hook was an underdeveloped part of Qhira kits, one of her skills that could increase her skill ceiling to the roof but it's missused",
+          "likes": 0,
+          "likedBy": {}
         }
       ],
       "sections": [
@@ -46,7 +49,9 @@
                   "text": "Additional quest completion method: Activate Blood Rage while 3 enemies are at full stack."
                 }
               ],
-              "developerCommentary": "Following Alarak and Maiev quest completion method i want to make it easier to complete quests when you do it right fast"
+              "developerCommentary": "Following Alarak and Maiev quest completion method i want to make it easier to complete quests when you do it right fast",
+              "likes": 0,
+              "likedBy": {}
             },
             {
               "name": "Finishing touch",
@@ -58,7 +63,9 @@
                   "text": "Additional functionality: Hitting enemies with grappling hook increase Qhira movespeed by 15% for 2 seconds"
                 }
               ],
-              "developerCommentary": "With the changes i made with the extra attack damage by hitting bleed targets giving her more basic attack damage would be overkill"
+              "developerCommentary": "With the changes i made with the extra attack damage by hitting bleed targets giving her more basic attack damage would be overkill",
+              "likes": 0,
+              "likedBy": {}
             }
           ]
         },
@@ -72,7 +79,9 @@
                   "text": "Additional functionality: Increase Qhira rotating speed on revolving sweep by 200%"
                 }
               ],
-              "developerCommentary": "Esnaring sweep wasn't one of the most attractive talents compared to their counterparts but increasing rotating speed could lead to better interaction with other sweep talents"
+              "developerCommentary": "Esnaring sweep wasn't one of the most attractive talents compared to their counterparts but increasing rotating speed could lead to better interaction with other sweep talents",
+              "likes": 0,
+              "likedBy": {}
             },
             {
               "name": "Your Pain, My Gain",
@@ -81,7 +90,9 @@
                   "text": "Now grappling hooks also give armor stacks"
                 }
               ],
-              "developerCommentary": "Changing it to better suit the SpiderQhira lore."
+              "developerCommentary": "Changing it to better suit the SpiderQhira lore.",
+              "likes": 0,
+              "likedBy": {}
             },
             {
               "name": "New:Hooked",
@@ -90,7 +101,9 @@
                   "text": "Grappling hook now target non-heroic units dealing extra 2000% damage, grappling hook refunds a charge if it kills a non-heroic target"
                 }
               ],
-              "developerCommentary": "The objective here is to give Qhira new ways to chase whilst also giving her a little PvE damage, take in mind that the damage is supposed to be around the life of a warrior minion + 1 auto but i don't know if i put the correct value"
+              "developerCommentary": "The objective here is to give Qhira new ways to chase whilst also giving her a little PvE damage, take in mind that the damage is supposed to be around the life of a warrior minion + 1 auto but i don't know if i put the correct value",
+              "likes": 0,
+              "likedBy": {}
             }
           ]
         },
@@ -104,7 +117,9 @@
                   "text": "If Blood Rage damages an enemy Hero below 50% Health, it heals for an additional 150 Health and 75 more health for other heroes under 50% Health."
                 }
               ],
-              "developerCommentary": "I wish to make this talent a little worse on 1x1 and better on teamfights."
+              "developerCommentary": "I wish to make this talent a little worse on 1x1 and better on teamfights.",
+              "likes": 0,
+              "likedBy": {}
             },
             {
               "name": "Siphoning Link",
@@ -116,7 +131,9 @@
                   "text": "Additional functionality: Chaging prey(Active) : While under Revolving Sweep effect activate to re-cast Revolving Sweep in the target direction, if Qhira hits someone she changes the Revolving Sweep target"
                 }
               ],
-              "developerCommentary": "The Siphoning link always bugged me..why would something related to the sweep have a healing talent on basic attack whilst it doesn't benefit it on anything or synergize and for that i didn't feel like it belonged there. Replacing it we have something that would benefit the SpiderQhira possibilities and synergizing with the primary talent concept"
+              "developerCommentary": "The Siphoning link always bugged me..why would something related to the sweep have a healing talent on basic attack whilst it doesn't benefit it on anything or synergize and for that i didn't feel like it belonged there. Replacing it we have something that would benefit the SpiderQhira possibilities and synergizing with the primary talent concept",
+              "likes": 0,
+              "likedBy": {}
             }
           ]
         },
@@ -130,7 +147,9 @@
                   "text": "Increased range by 5"
                 }
               ],
-              "developerCommentary": "Qhira Final strike always felt too short, increasing it by a little less than half it's range would just make it 10/10. The amount of time i see other people and myself had the little range difference to hit the target is not normal and shouldn't be taught as only 'skill issue'"
+              "developerCommentary": "Qhira Final strike always felt too short, increasing it by a little less than half it's range would just make it 10/10. The amount of time i see other people and myself had the little range difference to hit the target is not normal and shouldn't be taught as only 'skill issue'",
+              "likes": 0,
+              "likedBy": {}
             }
           ]
         },
@@ -144,7 +163,9 @@
                   "text": "Changed functionality: For each second Qhira swings around a target she receives 12 spell armor that will expire 5 seconds after re-activates or stop swinging. Hitting enemy heroes with Grappling hook decreases Revolving Sweep cooldown by 3 seconds"
                 }
               ],
-              "developerCommentary": ""
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
             }
           ]
         },
@@ -158,7 +179,9 @@
                   "text": "Decrease unrelenting strikes are by 1 meter"
                 }
               ],
-              "developerCommentary": "With the changes on the base Unrenlenting strikes we need to nerf it to the original on Silent Killer, this is one of the level 20 talents that could solo win a fight and the extra area would easily make it wipe entire teams without effort. It's the Leoric entomb upgrade treatment"
+              "developerCommentary": "With the changes on the base Unrenlenting strikes we need to nerf it to the original on Silent Killer, this is one of the level 20 talents that could solo win a fight and the extra area would easily make it wipe entire teams without effort. It's the Leoric entomb upgrade treatment",
+              "likes": 0,
+              "likedBy": {}
             },
             {
               "name": "Unleashed Potential",
@@ -167,7 +190,9 @@
                   "text": "Casting Final Strike unleashes two additional beams that curve outward, each dealing 50% damage. The beams converge towards the end of the original Final Strike, creating an area of effect that deals 250% of the ultimate damage."
                 }
               ],
-              "developerCommentary": "I tried lots of times to think..What is making the level 20 talent of Final Strike a little odd? First it starts by being a finishing ultimate that RESETS COOLDOWN if you are finishing someone it make less likely that you will use that resets and the ultimate doesn't give any give of mobility for you to use these resets better..sure you have the hook but on a teamfight you have high chances to have already used the hook when you reset atleast on my vision it's counterintuitive except for the ultimate reset on kill. On that instance i want to bring something that further increase the concept of 'unsleashed potential' and finisher move to make it more original and unique that is bringing more the finishing part."
+              "developerCommentary": "I tried lots of times to think..What is making the level 20 talent of Final Strike a little odd? First it starts by being a finishing ultimate that RESETS COOLDOWN if you are finishing someone it make less likely that you will use that resets and the ultimate doesn't give any give of mobility for you to use these resets better..sure you have the hook but on a teamfight you have high chances to have already used the hook when you reset atleast on my vision it's counterintuitive except for the ultimate reset on kill. On that instance i want to bring something that further increase the concept of 'unsleashed potential' and finisher move to make it more original and unique that is bringing more the finishing part.",
+              "likes": 0,
+              "likedBy": {}
             },
             {
               "name": "New: Mortal Wounds",
@@ -180,7 +205,9 @@
                   "subtexts": ["https://www.dota2.com/hero/bloodseeker"]
                 }
               ],
-              "developerCommentary": "I would say that would be a test..i find it fun but also too disruptive"
+              "developerCommentary": "I would say that would be a test..i find it fun but also too disruptive",
+              "likes": 0,
+              "likedBy": {}
             },
             {
               "name": "No Sanctuary",
@@ -192,7 +219,9 @@
                   "text": "Killing an enemy hero resets grappling hook charges"
                 }
               ],
-              "developerCommentary": "No Sanctuary  has the 'predator' conecpt and with that in mind i want to suit it with the grappling hook changes and make Qhira the ultimate predator (That sounds criminal)"
+              "developerCommentary": "No Sanctuary has the 'predator' concept and with that in mind i want to suit it with the grappling hook changes and make Qhira the ultimate predator (That sounds criminal)",
+              "likes": 0,
+              "likedBy": {}
             },
             {
               "name": "Utility belt",
@@ -204,7 +233,9 @@
                   "text": "Grappling hook now stuns targets it hit for 0.25 seconds and hitting terrain refunds half of the hook cooldown."
                 }
               ],
-              "developerCommentary": "With the changes i made for grappling hook utility belt the way it is doesn't feel valid anymore so i'm really changing it to be closer of an utility belt. Also the pull active is to better suit Lingering Ailment and Swing Life Away playstyles all you don't want always to kick lots of people like with Booming Kick"
+              "developerCommentary": "With the changes i made for grappling hook utility belt the way it is doesn't feel valid anymore so i'm really changing it to be closer of an utility belt. Also the pull active is to better suit Lingering Ailment and Swing Life Away playstyles all you don't want always to kick lots of people like with Booming Kick",
+              "likes": 0,
+              "likedBy": {}
             }
           ]
         }
