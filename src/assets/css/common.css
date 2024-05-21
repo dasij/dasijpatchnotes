@@ -89,3 +89,32 @@
 .min-h-screen {
     min-height: 100vh;
 }
+
+.like-button {
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding: 8px 16px;
+    border-radius: 12px;
+    border: 2px solid #742aff;
+    background-color: #200b41;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.like-button:hover {
+    box-shadow: 0 0 10px 5px rgba(116, 42, 255, 0.8);
+}
+
+button.like-button.liked {
+    background-color: #6b21a8;
+    border-color: #4b0082;
+    box-shadow: 0 0 20px 10px rgba(116, 42, 255, 1);
+}
+
+
+.like-button.loading {
+    background-color: #555;
+    cursor: not-allowed;
+}

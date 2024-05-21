@@ -77,7 +77,7 @@
                   "text": "Moved from level 16."
                 },
                 {
-                  "text": "Changed functionality: Rexxar's basic attacks increase Misha's movement speed by 25%. If Misha gets close to Rexxar after stunning a target with Misha, Charge!, Rexxar gains 30% movement speed for 4 seconds."
+                  "text": "Changed functionality: Rexxar's basic attacks increase Misha's movement speed by 25%. If Misha gets close to Rexxar after stunning a target with Misha, Charge!, Rexxar gains 20% movement speed for 4 seconds."
                 }
               ],
               "developerCommentary": "At level 1, I want to make it easier to mix defensive and offensive talents, with Thrill of the Hunt empowering a different playstyle.",
@@ -129,13 +129,38 @@
               "name": "Hungry Bear renamed to Hungry Animals",
               "texts": [
                 {
-                  "text": "Misha now kills enemy troops instantly with basic attacks and recovers 4.5%."
+                  "text": "Additional functionality: Misha now kills enemy troops instantly with basic attacks and recovers 2.25% health."
                 },
                 {
                   "text": "Additional functionality: When Spirit divebombs an enemy hero, it heals Rexxar for 12.5% of his maximum health."
                 }
               ],
               "developerCommentary": "With the changes to Spirit, it's the perfect opportunity to make this talent a reliable choice.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "name": "New: Misha Protect",
+              "texts": [
+                {
+                  "text": "When Misha stays close to Rexxar, both receive 25 armor and reduced crowd control effect durations by 35%."
+                }
+              ],
+              "developerCommentary": "A talent to help Rexxar against dive comps.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "name": "New: Huffer",
+              "texts": [
+                {
+                  "text": "Summons Huffer to damage enemy heroes for 12 seconds, . Huffer will have 1200 HP and 5 attack range and will be controlled by Focus, Huffer!, a skill command that works similarly to Misha, Focus!. On the last 5 seconds alive Huffer will have increased 40% attack speed and 25% movement speed"
+                },
+                {
+                  "text": "60 seconds cooldown"
+                }
+              ],
+              "developerCommentary": "Further exploring the Rexxar Beastmaster gameplay and besides Summoners are a great problem on Moba games so for this reason im capping it's time and not letting it play automatic to justify.",
               "likes": 0,
               "likedBy": {}
             },
@@ -249,7 +274,7 @@
               "name": "Primal Intimidation",
               "texts": [
                 {
-                  "text": "After using Mend Pet, Misha will reduce every nearby enemy hero's spell power by 50% and attack speed by 35% for 2 seconds."
+                  "text": "After using Mend Pet, Misha will reduce every nearby enemy hero's spell power by 50% and attack speed by 35% for 2.5 seconds."
                 }
               ],
               "developerCommentary": "Rexxar will have an option for survivability and now a debuff option, allowing him to choose better what he truly wants.",
@@ -287,7 +312,10 @@
               "name": "New: Leokk",
               "texts": [
                 {
-                  "text": "Summons Leokk to inspire nearby allied heroes, increasing their attack speed by 40% in an area. Leokk will have 1200 HP and will be controlled by Focus, Leokk!, a skill command that works similarly to Misha, Focus!."
+                  "text": "Summons Leokk to inspire nearby allied heroes for 12 seconds, increasing their attack speed by 40% in an area. Leokk will have 1200 HP and will be controlled by Focus, Leokk!, a skill command that works similarly to Misha, Focus!."
+                },
+                {
+                  "text": "60 seconds cooldown."
                 }
               ],
               "developerCommentary": "A common complaint, which I agree with, is that Rexxar could be more challenging by utilizing the Beastmaster fantasy. I want to bring that with Leokk.",

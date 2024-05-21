@@ -10,12 +10,7 @@
           class="px-14 py-8 text-white font-semibold rounded mr-4 nav-tabs">
           Talent Selector
         </button>
-        <a href="https://discord.gg/EJCMyy44ej">
-          <button :class="{ 'selected': selectedTab === 'communityApproval' }"
-            class="px-14 py-8 text-white font-semibold rounded mr-4 nav-tabs">
-            Vote on Discord
-          </button>
-        </a>
+
       </nav>
 
       <div v-if="selectedTab === 'patchNotes'" class="mt-8">
@@ -53,9 +48,14 @@
                       <p class="font-semibold mb-2">Developer Comment:</p>
                       <p>{{ item.developerCommentary }}</p>
                     </div>
-                    <button @click="likeChange(patchNote.id, index)" :class="{ 'loading': isLoading }">
+                    <button @click="likeChange(patchNote.id, index)"
+                      :class="['like-button', { 'loading': isLoading, 'liked': item.likedBy && item.likedBy[userId] }]">
                       👍 {{ item.likes || 0 }}
                     </button>
+
+
+
+
                   </li>
                 </ul>
               </div>
@@ -84,9 +84,11 @@
                           <p>{{ change.developerCommentary }}</p>
                         </div>
                         <button @click="likeChange(patchNote.id, sectionIndex, changeIndex)"
-                          :class="{ 'loading': isLoading }">
+                          :class="['like-button', { 'loading': isLoading, 'liked': change.likedBy && change.likedBy[userId] }]">
                           👍 {{ change.likes || 0 }}
                         </button>
+
+
                       </li>
                     </ul>
                   </li>
@@ -246,9 +248,9 @@
 
 
 <script>
-import { database, ref, auth } from '../firebase';
+import { database, ref, auth, googleProvider, facebookProvider } from '../firebase';
 import { set, get } from 'firebase/database';
-import { onAuthStateChanged, signInAnonymously } from 'firebase/auth';
+import { signInWithPopup } from 'firebase/auth';
 import axios from 'axios';
 
 export default {
@@ -264,6 +266,7 @@ export default {
       thumbsUpCount: 0,
       userId: null,
       isLoading: true,
+      isUserLoggedIn: false,
     };
   },
   computed: {
@@ -309,21 +312,34 @@ export default {
       return text.replace(/{highlight}(.*?){\/highlight}/g, '<span style="color: red;">$1</span>');
     },
     likeChange(patchNoteId, generalIndex, changeIndex = null) {
-      if (!this.hasLocalStorage()) {
-        alert("Você precisa desativar o modo anônimo para votar.");
+      if (!this.isUserLoggedIn) {
+        this.$emit('open-login-modal');
         return;
       }
 
       const patchNote = this.patchNotes.find(note => note.id === patchNoteId);
+      if (!patchNote) {
+        console.error('Patch note not found');
+        return;
+      }
+
       let change;
       if (changeIndex !== null) {
         const section = patchNote.sections[generalIndex];
+        if (!section) {
+          console.error('Section not found');
+          return;
+        }
         change = section.changes[changeIndex];
       } else {
         change = patchNote.general[generalIndex];
       }
 
-      // Garantir que 'likedBy' esteja definido
+      if (!change) {
+        console.error('Change not found');
+        return;
+      }
+
       if (!change.likedBy) {
         change.likedBy = {};
       }
@@ -337,6 +353,9 @@ export default {
           change.likes = (change.likes || 0) + 1;
           change.likedBy[userId] = true;
         }
+        console.log('Updated change:', change); // Log the updated change
+        console.log('Liked by:', change.likedBy); // Log the likedBy object
+        console.log('User ID:', userId); // Log the user ID
         this.saveChanges();
       }
     },
@@ -354,13 +373,10 @@ export default {
       });
     },
     authenticateUser() {
-      onAuthStateChanged(auth, user => {
+      auth.onAuthStateChanged(user => {
+        this.isUserLoggedIn = !!user;
         if (user) {
           this.userId = user.uid;
-        } else {
-          signInAnonymously(auth).then(({ user }) => {
-            this.userId = user.uid;
-          });
         }
       });
     },
@@ -380,11 +396,25 @@ export default {
         localStorage.setItem('userId', userId);
       }
       return userId;
+    },
+    handleLogin() {
+      const provider = Math.random() > 0.5 ? googleProvider : facebookProvider; // Escolhe aleatoriamente entre Google e Facebook
+      signInWithPopup(auth, provider)
+        .then(result => {
+          console.log('Usuário logado:', result.user);
+        })
+        .catch(error => {
+          console.error('Erro ao tentar autenticar:', error);
+        });
+    },
+    checkUserLogin() {
+      auth.onAuthStateChanged(user => {
+        this.isUserLoggedIn = !!user;
+      });
     }
   },
-
-
   mounted() {
+    this.checkUserLogin();
     this.authenticateUser();
     this.loadChanges();
   },
@@ -615,14 +645,6 @@ button {
   margin-bottom: 10px;
 }
 
-button {
-  margin-left: 10px;
-}
 
-button.loading {
-  background-color: #555;
-  /* Cor escura para indicar carregamento */
-  cursor: not-allowed;
-  /* Cursor indicando que não está disponível */
-}
+@import '@/assets/css/common.css';
 </style>

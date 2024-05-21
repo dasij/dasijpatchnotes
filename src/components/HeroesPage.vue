@@ -69,6 +69,9 @@
   border-radius: 0.375rem;
   background-color: transparent;
   transition: background-color 0.3s ease-in-out;
+  border: 0px;
+
+
 }
 
 .role-button img {
@@ -83,6 +86,11 @@
 .role-button:hover img {
   filter: brightness(1);
   box-shadow: 0 0 8px rgba(74, 143, 217, 0.8);
+}
+
+.role-button:hover {
+  filter: brightness(1);
+  box-shadow: 0 0 0px rgba(74, 143, 217, 0.8);
 }
 
 .role-button span {

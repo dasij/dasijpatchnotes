@@ -76,7 +76,7 @@
     },
     {
       "name": "Thrill of the Hunt",
-      "description": "{highlight}Rexxar's basic attacks increase Misha's movement speed by 25%, and if Misha gets close to Rexxar after stunning a target with Misha, Charge!, Rexxar gains 30% movement speed for 4 seconds.{/highlight}",
+      "description": "{highlight}Rexxar's basic attacks increase Misha's movement speed by 25%, and if Misha gets close to Rexxar after stunning a target with Misha, Charge!, Rexxar gains 20% movement speed for 4 seconds.{/highlight}",
       "image": "storm_ui_icon_rexxar_heremishaactive.png",
       "talentChanged": true
     }
@@ -99,6 +99,13 @@
       "description": "{highlight}When Misha stays close to Rexxar, both receive 25 armor and reduced crowd control effect durations by 35%.{/highlight}",
       "image": "storm_ui_icon_rexxar_heremishaactive.png",
       "talentChanged": true
+    },
+    {
+      "name": "Huffer",
+      "description": "{highlight}Summons Huffer to damage enemy heroes from distance for 12 seconds. On the last 5 seconds alive Huffer will have increased 40% attack speed and 25% movement speed{/highlight}",
+      "image": "storm_ui_icon_rexxar_heremishaactive.png",
+      "talentChanged": true,
+      "cooldown": "60s"
     }
   ],
   "7": [
@@ -195,9 +202,10 @@
     },
     {
       "name": "Leokk",
-      "description": "{highlight}Summons Leokk to inspire nearby allied heroes, increasing their attack speed by 40% in an area. Leokk will have 1200 HP.{/highlight}",
+      "description": "{highlight}Summons Leokk to inspire nearby allied heroes for 12 seconds, increasing their attack speed by 40% in an area. Leokk will have 1200 HP.{/highlight}",
       "image": "storm_ui_icon_rexxar_heremisha.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "cooldown": "60s"
     },
     {
       "name": "Bond of Sacrifice",

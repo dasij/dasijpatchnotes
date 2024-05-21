@@ -22,7 +22,9 @@
               "text": "The third shrine will spawn the punisher that hasn't spawned yet."
             }
           ],
-          "developerCommentary": "Conquering the first shrine with of a frozen punisher generally means a free first fort push destruction due to the frozen punisher's strength at the beginning of the game compared to other punishers. This change also aims to make the first three shrines predictable, similar to how it works on Sky Temple."
+          "developerCommentary": "Conquering the first shrine with of a frozen punisher generally means a free first fort push destruction due to the frozen punisher's strength at the beginning of the game compared to other punishers. This change also aims to make the first three shrines predictable, similar to how it works on Sky Temple.",
+          "likes": 0,
+          "likedBy": {}
         },
         {
           "change": "New globes spawner",
@@ -42,7 +44,9 @@
               "image": "maps/infernal-shrines/globe_2.jpg"
             }
           ],
-          "developerCommentary": "These changes aim to encourage players to use these paths more by reminding them of their existence. Most of these corners are almost never used, so rewarding players for going there is my goal."
+          "developerCommentary": "These changes aim to encourage players to use these paths more by reminding them of their existence. Most of these corners are almost never used, so rewarding players for going there is my goal.",
+          "likes": 0,
+          "likedBy": {}
         }
       ]
     }
