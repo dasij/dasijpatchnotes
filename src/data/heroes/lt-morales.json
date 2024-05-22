@@ -10,6 +10,7 @@
       "developerCommentary": "I believe Morales is either the top or at least among the top three most boring characters to play right now, according to a significant portion of the community. After considering these opinions, I agree with the players: Morales feels more like a tool for the team rather than a hero. You lack agency, and your role is reduced to a walking bot that simply presses Q on someone. The changes I propose are inspired by what I consider the ideal healing beam character, the TF2 Medic. I aim to give Morales a similar level of agency and introduce some risks.",
       "general": [
         {
+          "change_id": "lt-morales_1",
           "change": "Stats",
           "texts": [
             {
@@ -21,6 +22,7 @@
           "likedBy": {}
         },
         {
+          "change_id": "lt-morales_2",
           "change": "Healing Beam (Q)",
           "texts": [
             {
@@ -35,6 +37,7 @@
           "likedBy": {}
         },
         {
+          "change_id": "lt-morales_3",
           "change": "Safeguard (W)",
           "texts": [
             {
@@ -46,6 +49,7 @@
           "likedBy": {}
         },
         {
+          "change_id": "lt-morales_4",
           "change": "Medivac Dropship (W)",
           "texts": [
             {
@@ -69,6 +73,7 @@
           "likedBy": {}
         },
         {
+          "change_id": "lt-morales_5",
           "change": "New: Steroids Charge (R)",
           "texts": [
             {
@@ -94,6 +99,7 @@
           "name": "Level 1",
           "changes": [
             {
+              "change_id": "lt-morales_6",
               "name": "Caduceus Feedback",
               "texts": [
                 {
@@ -105,6 +111,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "lt-morales_7",
               "name": "Life Support",
               "texts": [
                 {
@@ -116,6 +123,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "lt-morales_8",
               "name": "Clear",
               "texts": [
                 {
@@ -138,6 +146,7 @@
           "name": "Level 4",
           "changes": [
             {
+              "change_id": "lt-morales_9",
               "name": "Cellular Reactor",
               "texts": [
                 {
@@ -160,6 +169,7 @@
           "name": "Level 7",
           "changes": [
             {
+              "change_id": "lt-morales_10",
               "name": "EMP Grenade, System Shock, and Bedside Manner",
               "texts": [
                 {
@@ -171,6 +181,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "lt-morales_11",
               "name": "Physical Therapy, Vanadium Plating, and Medi-drone",
               "texts": [
                 {
@@ -187,6 +198,7 @@
           "name": "Level 10",
           "changes": [
             {
+              "change_id": "lt-morales_12",
               "name": "New: Kritzroid",
               "texts": [
                 {
@@ -198,6 +210,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "lt-morales_13",
               "name": "New: Caffeineroids",
               "texts": [
                 {
@@ -209,6 +222,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "lt-morales_14",
               "name": "New: Get back to the fight-roids",
               "texts": [
                 {
@@ -220,20 +234,28 @@
               "likedBy": {}
             },
             {
+              "change_id": "lt-morales_15",
               "name": "Medivac Dropship",
               "texts": [
                 {
                   "text": "Moved to baseline (W)."
                 }
-              ]
+              ],
+              "developerCommentary": "Moved to baseline W so not necessary to be here anymore.",
+              "likes": 0,
+              "likedBy": {}
             },
             {
+              "change_id": "lt-morales_16",
               "name": "Stim Drone",
               "texts": [
                 {
                   "text": "Removed."
                 }
-              ]
+              ],
+              "developerCommentary": "Made it a baseline ult so it's not necessary to be here anymore.",
+              "likes": 0,
+              "likedBy": {}
             }
           ]
         },
@@ -241,6 +263,7 @@
           "name": "Level 13",
           "changes": [
             {
+              "change_id": "lt-morales_17",
               "name": "New: There's always room for one more",
               "texts": [
                 {
@@ -252,6 +275,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "lt-morales_18",
               "name": "New: Ambulance driving",
               "texts": [
                 {
@@ -263,6 +287,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "lt-morales_19",
               "name": "Reinforcements",
               "texts": [
                 {
@@ -274,6 +299,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "lt-morales_20",
               "name": "EMP Grenade, System Shock, and Bedside Manner",
               "texts": [
                 {
@@ -290,6 +316,7 @@
           "name": "Level 16",
           "changes": [
             {
+              "change_id": "lt-morales_21",
               "name": "New: Medigrenade",
               "texts": [
                 {
@@ -301,6 +328,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "lt-morales_22",
               "name": "Shield Sequencer",
               "texts": [
                 {
@@ -312,6 +340,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "lt-morales_23",
               "name": "First Responder",
               "texts": [
                 {
@@ -328,6 +357,7 @@
           "name": "Level 20",
           "changes": [
             {
+              "change_id": "lt-morales_24",
               "name": "New: Focus Morales!",
               "texts": [
                 {
@@ -339,6 +369,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "lt-morales_25",
               "name": "New: Healing Beacon",
               "texts": [
                 {
@@ -350,6 +381,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "lt-morales_26",
               "name": "New: I am Ambulance!",
               "texts": [
                 {
@@ -364,6 +396,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "lt-morales_27",
               "name": "Hospice Care, Second Opinion",
               "texts": [
                 {

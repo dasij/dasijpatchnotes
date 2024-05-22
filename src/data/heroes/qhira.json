@@ -10,6 +10,7 @@
       "developerCommentary": "Right now Qhira is one melee assassin that has a kit focused only on fighting without any clear wave and even with that she's also not the strongest fighter. My objective here will be to bring Qhira fight potential to the maximum while i give her little options for PvE as i want her to be an PvP focused character and for that i will give her tools to maximize the Spiderman potential",
       "general": [
         {
+          "change_id": "qhira_1",
           "change": "Basic Attack",
           "texts": [
             {
@@ -24,6 +25,7 @@
           "likedBy": {}
         },
         {
+          "change_id": "qhira_2",
           "change": "Grappling Hook(T)",
           "texts": [
             {
@@ -43,6 +45,7 @@
           "name": "Level 1",
           "changes": [
             {
+              "change_id": "qhira_3",
               "name": "Fatal Wounds",
               "texts": [
                 {
@@ -54,6 +57,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "qhira_4",
               "name": "Finishing touch",
               "texts": [
                 {
@@ -73,6 +77,7 @@
           "name": "Level 4",
           "changes": [
             {
+              "change_id": "qhira_5",
               "name": "Esnaring swing",
               "texts": [
                 {
@@ -84,6 +89,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "qhira_6",
               "name": "Your Pain, My Gain",
               "texts": [
                 {
@@ -95,6 +101,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "qhira_7",
               "name": "New:Hooked",
               "texts": [
                 {
@@ -111,6 +118,7 @@
           "name": "Level 7",
           "changes": [
             {
+              "change_id": "qhira_8",
               "name": "Healmonger",
               "texts": [
                 {
@@ -122,6 +130,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "qhira_9",
               "name": "Siphoning Link",
               "texts": [
                 {
@@ -141,6 +150,7 @@
           "name": "Level 10",
           "changes": [
             {
+              "change_id": "qhira_10",
               "name": "Final Strike",
               "texts": [
                 {
@@ -157,6 +167,7 @@
           "name": "Level 16",
           "changes": [
             {
+              "change_id": "qhira_11",
               "name": "Swing Life Away",
               "texts": [
                 {
@@ -173,6 +184,7 @@
           "name": "Level 20",
           "changes": [
             {
+              "change_id": "qhira_12",
               "name": "Silent Killer",
               "texts": [
                 {
@@ -184,6 +196,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "qhira_13",
               "name": "Unleashed Potential",
               "texts": [
                 {
@@ -195,13 +208,14 @@
               "likedBy": {}
             },
             {
+              "change_id": "qhira_14",
               "name": "New: Mortal Wounds",
               "texts": [
                 {
                   "text": "Activating Blood rage makes targets with 5 bleed stacks do receive 100% more bleed damage for 3 seconds if they move"
                 },
                 {
-                  "text": "Reference: Dota 2 Bloodseeker RUPTURE ",
+                  "text": "Reference: Dota 2 Bloodseeker RUPTURE",
                   "subtexts": ["https://www.dota2.com/hero/bloodseeker"]
                 }
               ],
@@ -210,6 +224,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "qhira_15",
               "name": "No Sanctuary",
               "texts": [
                 {
@@ -224,6 +239,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "qhira_16",
               "name": "Utility belt",
               "texts": [
                 {

@@ -48,7 +48,7 @@
                       <p class="font-semibold mb-2">Developer Comment:</p>
                       <p>{{ item.developerCommentary }}</p>
                     </div>
-                    <button @click="likeChange(patchNote.id, index)"
+                    <button @click="likeChange(patchNote.id, item.change_id)"
                       :class="['like-button', { 'loading': isLoading, 'liked': item.likedBy && item.likedBy[userId] }]">
                       👍 {{ item.likes || 0 }}
                     </button>
@@ -83,7 +83,7 @@
                           <p class="font-semibold mb-2">Developer Comment:</p>
                           <p>{{ change.developerCommentary }}</p>
                         </div>
-                        <button @click="likeChange(patchNote.id, sectionIndex, changeIndex)"
+                        <button @click="likeChange(patchNote.id, change.change_id)"
                           :class="['like-button', { 'loading': isLoading, 'liked': change.likedBy && change.likedBy[userId] }]">
                           👍 {{ change.likes || 0 }}
                         </button>
@@ -267,6 +267,7 @@ export default {
       userId: null,
       isLoading: true,
       isUserLoggedIn: false,
+      likesData: {},
     };
   },
   computed: {
@@ -275,19 +276,52 @@ export default {
     },
   },
   created() {
-    const heroData = require(`../data/heroes/${this.heroName}.json`);
-    if (heroData) {
-      this.hero = heroData;
-      this.patchNotes = heroData.patchNotes;
-      this.talents = require(`../data/heroes/talents/${this.heroName}_talents.json`);
-      console.log(this.talents); // Log to check the loaded talents data
-    } else {
-      console.error('Failed to load hero data');
-    }
+    this.loadHeroData();
     this.authenticateUser();
     this.loadChanges();
   },
   methods: {
+    loadHeroData() {
+      const heroData = require(`../data/heroes/${this.heroName}.json`);
+      if (heroData) {
+        this.hero = heroData;
+        this.patchNotes = heroData.patchNotes;
+        this.talents = require(`../data/heroes/talents/${this.heroName}_talents.json`);
+        console.log(this.talents); // Log to check the loaded talents data
+        this.loadLikes();
+      } else {
+        console.error('Failed to load hero data');
+      }
+    },
+    loadLikes() {
+      const likesRef = ref(database, `heroes/${this.heroName}/likes`);
+      get(likesRef).then(snapshot => {
+        if (snapshot.exists()) {
+          this.likesData = snapshot.val();
+          this.applyLikes();
+        }
+      });
+    },
+    applyLikes() {
+      this.patchNotes.forEach(patchNote => {
+        patchNote.general.forEach(change => {
+          const likeInfo = this.likesData[change.change_id];
+          if (likeInfo) {
+            change.likes = likeInfo.likes;
+            change.likedBy = likeInfo.likedBy;
+          }
+        });
+        patchNote.sections.forEach(section => {
+          section.changes.forEach(change => {
+            const likeInfo = this.likesData[change.change_id];
+            if (likeInfo) {
+              change.likes = likeInfo.likes;
+              change.likedBy = likeInfo.likedBy;
+            }
+          });
+        });
+      });
+    },
     fetchThumbsUpCount() {
       axios.get('http://localhost:3000/api/reactions')
         .then(response => {
@@ -311,33 +345,22 @@ export default {
       // Highlight changes and important details
       return text.replace(/{highlight}(.*?){\/highlight}/g, '<span style="color: red;">$1</span>');
     },
-    likeChange(patchNoteId, generalIndex, changeIndex = null) {
+    likeChange(patchNoteId, changeId) {
       if (!this.isUserLoggedIn) {
         this.$emit('open-login-modal');
         return;
       }
 
       const patchNote = this.patchNotes.find(note => note.id === patchNoteId);
-      if (!patchNote) {
-        console.error('Patch note not found');
-        return;
-      }
-
-      let change;
-      if (changeIndex !== null) {
-        const section = patchNote.sections[generalIndex];
-        if (!section) {
-          console.error('Section not found');
-          return;
-        }
-        change = section.changes[changeIndex];
-      } else {
-        change = patchNote.general[generalIndex];
-      }
+      let change = patchNote.general.find(item => item.change_id === changeId);
 
       if (!change) {
-        console.error('Change not found');
-        return;
+        patchNote.sections.forEach(section => {
+          const sectionChange = section.changes.find(item => item.change_id === changeId);
+          if (sectionChange) {
+            change = sectionChange;
+          }
+        });
       }
 
       if (!change.likedBy) {
@@ -353,15 +376,31 @@ export default {
           change.likes = (change.likes || 0) + 1;
           change.likedBy[userId] = true;
         }
-        console.log('Updated change:', change); // Log the updated change
-        console.log('Liked by:', change.likedBy); // Log the likedBy object
-        console.log('User ID:', userId); // Log the user ID
         this.saveChanges();
       }
     },
     saveChanges() {
-      const changesRef = ref(database, `heroes/${this.heroName}/patchNotes`);
-      set(changesRef, this.patchNotes);
+      const changesRef = ref(database, `heroes/${this.heroName}/likes`);
+      const likesToSave = {};
+
+      this.patchNotes.forEach(patchNote => {
+        patchNote.general.forEach(change => {
+          likesToSave[change.change_id] = {
+            likes: change.likes,
+            likedBy: change.likedBy
+          };
+        });
+        patchNote.sections.forEach(section => {
+          section.changes.forEach(change => {
+            likesToSave[change.change_id] = {
+              likes: change.likes,
+              likedBy: change.likedBy
+            };
+          });
+        });
+      });
+
+      set(changesRef, likesToSave);
     },
     loadChanges() {
       const changesRef = ref(database, `heroes/${this.heroName}/patchNotes`);

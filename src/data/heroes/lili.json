@@ -10,6 +10,7 @@
       "developerCommentary": "From the start, developers aimed to make Li Li an ideal starter hero. They didn't change her much, believing not all heroes need high viability or skill ceilings. However, I think every hero should have growth potential. Over time, a lack of this can deter players from choosing Li Li. Take Team Fortress 2's Soldier: simple yet with a high skill ceiling. Similarly, I want Li Li to be easy for beginners but also offer significant skill development opportunities.",
       "general": [
         {
+          "change_id": "lili_1",
           "change": "Healing Brew (Q)",
           "texts": [
             {
@@ -21,6 +22,7 @@
           "likedBy": {}
         },
         {
+          "change_id": "lili_2",
           "change": "Blinding Winds (E)",
           "texts": [
             {
@@ -32,6 +34,7 @@
           "likedBy": {}
         },
         {
+          "change_id": "lili_3",
           "change": "Fast feet (T)",
           "texts": [
             {
@@ -48,6 +51,7 @@
           "name": "Level 1",
           "changes": [
             {
+              "change_id": "lili_4",
               "name": "Eager adventurer",
               "texts": [
                 {
@@ -59,6 +63,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "lili_5",
               "name": "Safety Sprint",
               "texts": [
                 {
@@ -73,6 +78,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "lili_6",
               "name": "New: Fast as the feet",
               "texts": [
                 {
@@ -84,6 +90,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "lili_7",
               "name": "Free drinks",
               "texts": [
                 {
@@ -95,6 +102,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "lili_8",
               "name": "Serpent sidekick",
               "texts": [
                 {
@@ -111,6 +119,7 @@
           "name": "Level 4",
           "changes": [
             {
+              "change_id": "lili_9",
               "name": "Two for one",
               "texts": [
                 {
@@ -128,6 +137,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "lili_10",
               "name": "New: Spill the tea",
               "texts": [
                 {
@@ -139,6 +149,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "lili_11",
               "name": "New: Tea time",
               "texts": [
                 {
@@ -150,6 +161,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "lili_12",
               "name": "Wind serpent",
               "texts": [
                 {
@@ -161,6 +173,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "lili_13",
               "name": "Surging Winds",
               "texts": [
                 {
@@ -172,6 +185,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "lili_14",
               "name": "Safety sprint",
               "texts": [
                 {
@@ -188,6 +202,7 @@
           "name": "Level 7",
           "changes": [
             {
+              "change_id": "lili_15",
               "name": "New: Don't stop, we need adventure!",
               "texts": [
                 {
@@ -202,6 +217,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "lili_16",
               "name": "Mass Vortex",
               "texts": [
                 {
@@ -216,6 +232,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "lili_17",
               "name": "Let's go",
               "texts": [
                 {
@@ -232,6 +249,7 @@
           "name": "Level 13",
           "changes": [
             {
+              "change_id": "lili_18",
               "name": "Gale force",
               "texts": [
                 {
@@ -248,6 +266,7 @@
           "name": "Level 16",
           "changes": [
             {
+              "change_id": "lili_19",
               "name": "Shake it off",
               "texts": [
                 {
@@ -265,6 +284,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "lili_20",
               "name": "Two for one",
               "texts": [
                 {
@@ -281,6 +301,7 @@
           "name": "Level 20",
           "changes": [
             {
+              "change_id": "lili_21",
               "name": "New: Tea bagging",
               "texts": [
                 {
@@ -292,6 +313,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "lili_22",
               "name": "Shake it off",
               "texts": [
                 {

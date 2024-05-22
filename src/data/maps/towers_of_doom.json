@@ -10,6 +10,7 @@
       "date": "2024-05-14",
       "general": [
         {
+          "change_id": "towers_of_doom_1",
           "change": "Structures",
           "texts": [
             {
@@ -27,6 +28,7 @@
           "likedBy": {}
         },
         {
+          "change_id": "towers_of_doom_2",
           "change": "New globes spawner",
           "texts": [
             {

@@ -50,7 +50,7 @@
                                             <p class="font-semibold mb-2">Developer Comment:</p>
                                             <p>{{ item.developerCommentary }}</p>
                                         </div>
-                                        <button @click="likeChange(patchNote.id, index)"
+                                        <button @click="likeChange(patchNote.id, item.change_id)"
                                             :class="['like-button', { 'loading': isLoading, 'liked': item.likedBy && item.likedBy[userId] }]">
                                             👍 {{ item.likes || 0 }}
                                         </button>
@@ -89,15 +89,38 @@ export default {
         const selectedTab = ref('patchNotes');
         const isUserLoggedIn = ref(false);
         const isLoading = ref(false);
+        const likesData = ref({});
 
         const loadMapData = async (mapName) => {
             try {
                 const mapData = await import(`../data/maps/${mapName}.json`);
                 map.value = mapData.default;
                 patchNotes.value = mapData.default.patchNotes;
+                loadLikes(mapName);
             } catch (error) {
                 console.error('Failed to load map data', error);
             }
+        };
+
+        const loadLikes = async (mapName) => {
+            const likesRef = dbRef(database, `maps/${mapName}/likes`);
+            const snapshot = await get(likesRef);
+            if (snapshot.exists()) {
+                likesData.value = snapshot.val();
+                applyLikes();
+            }
+        };
+
+        const applyLikes = () => {
+            patchNotes.value.forEach(patchNote => {
+                patchNote.general.forEach(change => {
+                    const likeInfo = likesData.value[change.change_id];
+                    if (likeInfo) {
+                        change.likes = likeInfo.likes;
+                        change.likedBy = likeInfo.likedBy;
+                    }
+                });
+            });
         };
 
         watch(
@@ -113,20 +136,14 @@ export default {
             selectedTab.value = tab;
         };
 
-        const likeChange = (patchNoteId, generalIndex, changeIndex = null) => {
+        const likeChange = (patchNoteId, changeId) => {
             if (!isUserLoggedIn.value) {
                 emit('open-login-modal');
                 return;
             }
 
             const patchNote = patchNotes.value.find(note => note.id === patchNoteId);
-            let change;
-            if (changeIndex !== null) {
-                const section = patchNote.sections[generalIndex];
-                change = section.changes[changeIndex];
-            } else {
-                change = patchNote.general[generalIndex];
-            }
+            const change = patchNote.general.find(item => item.change_id === changeId);
 
             if (!change.likedBy) {
                 change.likedBy = {};
@@ -146,8 +163,20 @@ export default {
         };
 
         const saveChanges = () => {
-            const changesRef = dbRef(database, `maps/${map.value.name.toLowerCase().replace(/ /g, '_')}/patchNotes`);
-            set(changesRef, patchNotes.value);
+            const mapName = map.value.name.toLowerCase().replace(/ /g, '_');
+            const likesRef = dbRef(database, `maps/${mapName}/likes`);
+            const likesToSave = {};
+
+            patchNotes.value.forEach(patchNote => {
+                patchNote.general.forEach(change => {
+                    likesToSave[change.change_id] = {
+                        likes: change.likes,
+                        likedBy: change.likedBy
+                    };
+                });
+            });
+
+            set(likesRef, likesToSave);
         };
 
         const getUserId = () => {

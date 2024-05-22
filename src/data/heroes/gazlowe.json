@@ -9,13 +9,14 @@
       "title": "Talent rework",
       "general": [
         {
+          "change_id": "gazlowe_1",
           "change": "Basic attack",
           "texts": [
             {
-              "text": "Gazlowe basic attack speed is reduced by 66%"
+              "text": "Gazlowe basic attack speed is reduced by 66%."
             },
             {
-              "text": "Gazlowe basic attack is now a triple-hit attack"
+              "text": "Gazlowe basic attack is now a triple-hit attack."
             }
           ],
           "developerCommentary": "This is the change that helps Auto attack Gazlowe, he doesn't have any gap closer he shouldn't be forced on melee range all the time for making it efficient.",
@@ -29,6 +30,7 @@
           "name": "Level 1",
           "changes": [
             {
+              "change_id": "gazlowe_2",
               "name": "New: MOLL-E Blingtron 5000 Gift(Active)",
               "texts": [
                 {
@@ -45,6 +47,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "gazlowe_3",
               "name": "One Man Wrecking Crew",
               "texts": [
                 {
@@ -56,6 +59,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "gazlowe_4",
               "name": "Big Game Hunter",
               "texts": [
                 {
@@ -72,6 +76,7 @@
           "name": "Level 4",
           "changes": [
             {
+              "change_id": "gazlowe_5",
               "name": "EZ-PZ Dimensional Ripper",
               "texts": [
                 {
@@ -83,6 +88,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "gazlowe_6",
               "name": "Rock It Sock It",
               "texts": [
                 {
@@ -94,6 +100,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "gazlowe_7",
               "name": "New: Mekgineer's Mount 5000",
               "texts": [
                 {
@@ -108,6 +115,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "gazlowe_8",
               "name": "Hyperfocus Coils",
               "texts": [
                 {
@@ -124,6 +132,7 @@
           "name": "Level 7",
           "changes": [
             {
+              "change_id": "gazlowe_9",
               "name": "Cardboard Assassin(active)",
               "texts": [
                 {
@@ -141,6 +150,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "gazlowe_10",
               "name": "Overload",
               "texts": [
                 {
@@ -157,6 +167,7 @@
           "name": "Level 10",
           "changes": [
             {
+              "change_id": "gazlowe_11",
               "name": "Robo-Goblin",
               "texts": [
                 {
@@ -179,6 +190,7 @@
           "name": "Level 13",
           "changes": [
             {
+              "change_id": "gazlowe_12",
               "name": "Overcharged Capacitors",
               "texts": [
                 {
@@ -190,6 +202,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "gazlowe_13",
               "name": "Overload",
               "texts": [
                 {
@@ -204,6 +217,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "gazlowe_14",
               "name": "Positive Reinforcement",
               "texts": [
                 {
@@ -220,6 +234,7 @@
           "name": "Level 16",
           "changes": [
             {
+              "change_id": "gazlowe_17",
               "name": "Overklock",
               "texts": [
                 {
@@ -231,6 +246,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "gazlowe_18",
               "name": "Firin' Mah Lazorz",
               "texts": [
                 {
@@ -250,6 +266,7 @@
           "name": "Level 20",
           "changes": [
             {
+              "change_id": "gazlowe_19",
               "name": "Mecha lord",
               "texts": [
                 {

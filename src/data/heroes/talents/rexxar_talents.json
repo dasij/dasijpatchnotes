@@ -103,7 +103,7 @@
     {
       "name": "Huffer",
       "description": "{highlight}Summons Huffer to damage enemy heroes from distance for 12 seconds. On the last 5 seconds alive Huffer will have increased 40% attack speed and 25% movement speed{/highlight}",
-      "image": "storm_ui_icon_rexxar_heremishaactive.png",
+      "image": "storm_ui_icon_rexxar_heremisha.png",
       "talentChanged": true,
       "cooldown": "60s"
     }

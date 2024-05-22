@@ -5,11 +5,12 @@
   "changed": "true",
   "patchNotes": [
     {
-      "id": 12,
+      "id": 9,
       "title": "Small map changes",
       "date": "2024-05-15",
       "general": [
         {
+          "change_id": "infernal_shrines_1",
           "change": "Objective",
           "texts": [
             {
@@ -27,6 +28,7 @@
           "likedBy": {}
         },
         {
+          "change_id": "infernal_shrines_2",
           "change": "New globes spawner",
           "texts": [
             {

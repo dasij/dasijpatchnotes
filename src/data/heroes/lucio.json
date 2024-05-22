@@ -10,6 +10,7 @@
       "developerCommentary": "Lucio sits on a pretty good spot right now in my vision on gameplay standards.What i aim here is just to strengthen his place as a speedster healer",
       "general": [
         {
+          "change_id": "lucio_1",
           "change": "Soundwave (Q)",
           "texts": [
             {
@@ -26,6 +27,7 @@
           "name": "Level 1",
           "changes": [
             {
+              "change_id": "lucio_2",
               "name": "Party mix",
               "texts": [
                 {
@@ -42,6 +44,7 @@
           "name": "Level 7",
           "changes": [
             {
+              "change_id": "lucio_3",
               "name": "Boombox",
               "texts": [
                 {
@@ -61,6 +64,7 @@
           "name": "Level 10",
           "changes": [
             {
+              "change_id": "lucio_4",
               "name": "Sound Barrier",
               "texts": [
                 {
@@ -75,6 +79,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "lucio_5",
               "name": "High five",
               "texts": [
                 {
@@ -91,6 +96,7 @@
           "name": "Level 16",
           "changes": [
             {
+              "change_id": "lucio_6",
               "name": "Up to Eleven",
               "texts": [
                 {
@@ -107,6 +113,7 @@
           "name": "Level 20",
           "changes": [
             {
+              "change_id": "lucio_7",
               "name": "Mixing Fire",
               "texts": [
                 {
@@ -121,6 +128,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "lucio_8",
               "name": "Up to Eleven",
               "texts": [
                 {
@@ -135,6 +143,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "lucio_9",
               "name": "House Party",
               "texts": [
                 {
@@ -146,6 +155,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "lucio_10",
               "name": "Push it to the limit",
               "texts": [
                 {
@@ -157,6 +167,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "lucio_11",
               "name": "Summer anthem",
               "texts": [
                 {

@@ -1,5 +1,5 @@
 {
-  "id": "1",
+  "id": "2",
   "name": "STORM LEAGUE",
   "image": "general/HeroesOfTheStormRankedPlay.png",
   "changed": true,
@@ -9,6 +9,7 @@
       "date": "2024-05-14",
       "general": [
         {
+          "change_id": "storm_league_1",
           "change": "Draft",
           "texts": [
             {
@@ -23,6 +24,7 @@
           "likedBy": {}
         },
         {
+          "change_id": "storm_league_2",
           "change": "Queue rules",
           "texts": [
             {
@@ -34,13 +36,44 @@
           "likedBy": {}
         },
         {
+          "change_id": "storm_league_3",
           "change": "Ranked seasons",
           "texts": [
             {
-              "text": "We are decreasing the max ELO you can restart a season with to Diamond 5, 200 points."
+              "text": "We are decreasing the max ELO you can restart a season with to Platinum 1: 500 points."
             }
           ],
           "developerCommentary": "We want to recover some of the integrity of the leaderboard ranking by not preserving old accounts' MMR ELO so highly and updating the top leaderboard only with those who truly play the game.",
+          "likes": 0,
+          "likedBy": {}
+        },
+        {
+          "change_id": "storm_league_4",
+          "change": "Elo Reset",
+          "texts": [
+            {
+              "text": "Reset every account MMR to Bronze 5 and every new account will start at Bronze 5 without needing to make placements."
+            }
+          ],
+          "developerCommentary": "Heroes of the Storm MMR snowballed very hard in the game, causing many players to play under the wrong ELO. This happens mostly in minor regions like South America, where I play. Sometimes I encounter Diamond or Master players who perform significantly worse than Gold players. This issue is exacerbated by the ranked reset boosting many accounts' MMR. There are few options to restore ranked integrity, and I also want to make life difficult for smurfs [I am a smurf hater, no cap].",
+          "likes": 0,
+          "likedBy": {}
+        },
+        {
+          "change_id": "storm_league_5",
+          "change": "New seasons",
+          "texts": [
+            {
+              "text": "Every new season, you will be demoted two tiers without the need to make placements."
+            },
+            {
+              "text": "If you were Platinum 3, you will be placed at Platinum 5. If you were Master, you will be placed at Platinum 1, 500 points in contrast to the ranked cap."
+            },
+            {
+              "text": "The first 10 games you play will reward a bonus of +300 points per victory and -100 extra losing points."
+            }
+          ],
+          "developerCommentary": "This change reflects my perspective on MMR points. I see placement matches in every game as somewhat useless, serving only to create hype under the premise that you could achieve a higher ELO. I believe that ranked systems should be more consistent than hyped, and for that reason, having a system that always works the same and has no mystery integrates a better integrity system.",
           "likes": 0,
           "likedBy": {}
         }

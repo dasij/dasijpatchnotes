@@ -9,6 +9,7 @@
       "date": "2024-05-14",
       "general": [
         {
+          "change_id": "gameplay_1",
           "change": "Experience",
           "texts": [
             {
@@ -26,6 +27,7 @@
           "likedBy": {}
         },
         {
+          "change_id": "gameplay_2",
           "change": "Forts and Keeps",
           "texts": [
             {
@@ -43,6 +45,7 @@
           "likedBy": {}
         },
         {
+          "change_id": "gameplay_3",
           "change": "Healing wells",
           "texts": [
             {
@@ -57,6 +60,7 @@
           "likedBy": {}
         },
         {
+          "change_id": "gameplay_4",
           "change": "Experience globes",
           "texts": [
             {

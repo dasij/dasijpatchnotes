@@ -10,10 +10,11 @@
       "date": "2024-05-14",
       "general": [
         {
+          "change_id": "dragon_shire_1",
           "change": "New globes spawner",
           "texts": [
             {
-              "text": "Additional globes spawn have been added on corners of the map that will be mirrored"
+              "text": "Additional globes spawn have been added on corners of the map that will be mirrored."
             },
             {
               "text": "This globes will spawn between 30-55 seconds(random) on this positions and will have no warning that they spawned"

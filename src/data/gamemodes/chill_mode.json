@@ -9,6 +9,7 @@
       "date": "2024-05-14",
       "general": [
         {
+          "change_id": "chill_mode_1",
           "change": "New gamemode: Chill mode",
           "texts": [
             {

@@ -9,6 +9,7 @@
       "title": "Hero Rework",
       "general": [
         {
+          "change_id": "rexxar_1",
           "change": "Spirit Swoop",
           "texts": [
             {
@@ -26,6 +27,7 @@
           "likedBy": {}
         },
         {
+          "change_id": "rexxar_2",
           "change": "Misha, Focus!",
           "texts": [
             {
@@ -43,6 +45,7 @@
           "name": "Level 1",
           "changes": [
             {
+              "change_id": "rexxar_3",
               "name": "New: Meat Mending",
               "texts": [
                 {
@@ -54,6 +57,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "rexxar_4",
               "name": "Animal Husbandry",
               "texts": [
                 {
@@ -71,6 +75,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "rexxar_5",
               "name": "Thrill of the Hunt",
               "texts": [
                 {
@@ -85,6 +90,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "rexxar_6",
               "name": "Flare, Easy Prey",
               "texts": [
                 {
@@ -96,6 +102,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "rexxar_7",
               "name": "Bird of Prey",
               "texts": [
                 {
@@ -112,6 +119,7 @@
           "name": "Level 4",
           "changes": [
             {
+              "change_id": "rexxar_8",
               "name": "Spirit Swoop",
               "texts": [
                 {
@@ -126,6 +134,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "rexxar_9",
               "name": "Hungry Bear renamed to Hungry Animals",
               "texts": [
                 {
@@ -140,6 +149,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "rexxar_10",
               "name": "New: Misha Protect",
               "texts": [
                 {
@@ -151,13 +161,14 @@
               "likedBy": {}
             },
             {
+              "change_id": "rexxar_11",
               "name": "New: Huffer",
               "texts": [
                 {
-                  "text": "Summons Huffer to damage enemy heroes for 12 seconds, . Huffer will have 1200 HP and 5 attack range and will be controlled by Focus, Huffer!, a skill command that works similarly to Misha, Focus!. On the last 5 seconds alive Huffer will have increased 40% attack speed and 25% movement speed"
+                  "text": "Summons Huffer to damage enemy heroes for 12 seconds. Huffer will have 1200 HP and 5 attack range and will be controlled by Focus, Huffer!, a skill command that works similarly to Misha, Focus!. On the last 5 seconds alive Huffer will have increased 40% attack speed and 25% movement speed."
                 },
                 {
-                  "text": "60 seconds cooldown"
+                  "text": "60 seconds cooldown."
                 }
               ],
               "developerCommentary": "Further exploring the Rexxar Beastmaster gameplay and besides Summoners are a great problem on Moba games so for this reason im capping it's time and not letting it play automatic to justify.",
@@ -165,6 +176,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "rexxar_12",
               "name": "Hunter Gatherer, Grizzled Fortitude",
               "texts": [
                 {
@@ -176,6 +188,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "rexxar_13",
               "name": "Animal Husbandry",
               "texts": [
                 {
@@ -192,6 +205,7 @@
           "name": "Level 7",
           "changes": [
             {
+              "change_id": "rexxar_14",
               "name": "Crippling Talons",
               "texts": [
                 {
@@ -203,6 +217,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "rexxar_15",
               "name": "Bestial Wrath",
               "texts": [
                 {
@@ -222,6 +237,7 @@
           "name": "Level 10",
           "changes": [
             {
+              "change_id": "rexxar_16",
               "name": "Bestial Wrath",
               "texts": [
                 {
@@ -233,6 +249,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "rexxar_17",
               "name": "New: Stampede",
               "texts": [
                 {
@@ -252,6 +269,7 @@
           "name": "Level 13",
           "changes": [
             {
+              "change_id": "rexxar_18",
               "name": "Wildfire Bear",
               "texts": [
                 {
@@ -271,6 +289,7 @@
           "name": "Level 16",
           "changes": [
             {
+              "change_id": "rexxar_19",
               "name": "Primal Intimidation",
               "texts": [
                 {
@@ -282,6 +301,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "rexxar_20",
               "name": "New: Beast Roar",
               "texts": [
                 {
@@ -293,6 +313,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "rexxar_21",
               "name": "Thrill of the Hunt",
               "texts": [
                 {
@@ -309,6 +330,7 @@
           "name": "Level 20",
           "changes": [
             {
+              "change_id": "rexxar_22",
               "name": "New: Leokk",
               "texts": [
                 {
@@ -323,6 +345,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "rexxar_23",
               "name": "New: STAAAAAAAAAAAAAAAMPEDE",
               "texts": [
                 {
@@ -334,6 +357,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "rexxar_24",
               "name": "New: Bond of Sacrifice",
               "texts": [
                 {
@@ -345,6 +369,7 @@
               "likedBy": {}
             },
             {
+              "change_id": "rexxar_25",
               "name": "Frenzy of Kalimdor, Hardened Skin, Spirit Bond",
               "texts": [
                 {
