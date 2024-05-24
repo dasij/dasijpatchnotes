@@ -1,0 +1,219 @@
+{
+  "hero": "Chromie",
+  "abilities": {
+    "basic": [
+      {
+        "name": "Sand Blast",
+        "description": "After 0.5 seconds, fire a missile that deals 305 damage to the first enemy hit. Deals 50% damage to Structures. Casting Sand Blast leaves an Echo behind that mimics Chromie's Sand Blast and Basic Attack, dealing 40% damage. Maximum of 1 Echo active at a time.",
+        "manaCost": "20 Mana",
+        "cooldown": "3s",
+        "image": "chromie_aethercannon.png",
+        "abilityChanged": false
+      },
+      {
+        "name": "Dragon's Breath",
+        "description": "Launch 3 blasts into the air that land every 0.75 seconds toward the targeted direction, dealing 215 damage each.",
+        "manaCost": "65 Mana",
+        "cooldown": "14s",
+        "image": "chromie_sandstrike.png",
+        "abilityChanged": false
+      },
+      {
+        "name": "Time Trap",
+        "description": "Place a Time Trap that arms and Stealths after 2 seconds. Chromie's Trait can be activated to detonate the trap, placing all nearby allied or enemy Heroes in Time Stop for 2 seconds. Maximum of 1 trap active at a time.",
+        "manaCost": "20 Mana",
+        "cooldown": "15s",
+        "image": "chromie_timetrap.png",
+        "abilityChanged": false
+      },
+      {
+        "name": "Detonate Time Trap",
+        "description": "Detonate active Time Traps.",
+        "cooldown": "2s",
+        "image": "storm_ui_icon_chromie_detonate_timetrap.png",
+        "abilityChanged": false
+      }
+    ],
+    "heroic": [
+      {
+        "name": "Slowing Sands",
+        "description": "Summon a sand vortex that Slows enemies by 10% every 0.25 seconds, up to 70%.",
+        "manaCost": "5 Mana per second",
+        "cooldown": "5s",
+        "image": "chromie_timewarp.png",
+        "abilityChanged": false
+      },
+      {
+        "name": "Temporal Loop",
+        "description": "Choose an enemy Hero. After 3 seconds, they are teleported back to the location where Temporal Loop was cast on them. Basic Abilities recharge 500% faster for 3 seconds after casting Temporal Loop.",
+        "manaCost": "60 Mana",
+        "cooldown": "50s",
+        "image": "chromie_looper.png",
+        "abilityChanged": false
+      },
+      {
+        "name": "Friendship Loop",
+        "description": "{highlight}Choose an Allied Hero. After 4 seconds, they are teleported back to the location where Temporal friendship was cast on them on the exact same state except for the heroic ability.{/highlight}",
+        "manaCost": "60 Mana",
+        "cooldown": "50s",
+        "image": "chromie_looper.png",
+        "abilityChanged": true
+      }
+    ],
+    "trait": {
+      "name": "Timewalker",
+      "description": "Chromie has traveled to the future, and as such, will learn her Talents 2 levels earlier than her teammates!",
+      "image": "storm_ui_icon_chromie_timetraveler.png",
+      "abilityChanged": false
+    }
+  },
+  "1": [
+    {
+      "name": "Once Again the First Time",
+      "description": "Quest: Hit 40 Heroes with Sand Blast from Chromie or her Echoes. Reward: Increase the maximum number of active Echoes to 2, and increase Echo damage to 45%.",
+      "image": "chromie_aethercannon.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Deep Breathing",
+      "description": "Quest: Every time Dragon's Breath hits a Hero increase its damage by 1%, up to 20%. Reward: After hitting 20 Heroes, reduce the cooldown of Dragon's Breath by 4 seconds and its Mana cost from 65 to 40.",
+      "image": "chromie_sandstrike.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Timewalker's Pursuit",
+      "description": "Cooldown: 25s Gain 10% Spell Power and reduce the arming time of Time Traps by 0.75 seconds. Activate to reveal the targeted area for 4 seconds. Enemies seen are revealed for 4 seconds.",
+      "image": "talent_clairvoyance.png",
+      "talentChanged": false
+    }
+  ],
+  "4": [
+    {
+      "name": "Chronic Conditions",
+      "description": "After its Time Stop ends, enemies affected by Time Trap are Slowed by 30% for 3 seconds and allies gain {highlight}stacking{/highlight} 30% Movement Speed for 3 seconds.",
+      "image": "chromie_timetrap.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Time Troubles",
+      "description": "After its Time Stop ends, enemies affected by Time Trap lose 15 Armor for 3 seconds and allies gain 30 Armor for 3 seconds.",
+      "image": "chromie_timetrap_a.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Andorhal Anomaly",
+      "description": "Increase the charges and maximum active Time Traps to 3, and reduce its cooldown by 8 seconds.",
+      "image": "chromie_timetrap_b.png",
+      "talentChanged": false
+    }
+  ],
+  "7": [
+    {
+      "name": "Bronze Talons",
+      "description": "Hitting a Hero with Sand Blast from Chromie or her Echoes grants 50% additional Basic Attack damage for 5 seconds.",
+      "image": "chromie_aethercannon.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Mobius Loop",
+      "description": "Dragon's Breath deals 30% bonus damage to enemies hit by its center. Enemy Heroes hit by its center are Slowed by 60% for 0.75 seconds.",
+      "image": "chromie_sandstrike.png",
+      "talentChanged": false
+    },
+    {
+      "name": "It's Skill O'Clock",
+      "description": "{highlight}Every 12 seconds resets Chromie basic abilities cooldown.{/highlight}",
+      "image": "chromie_timetrap_b.png",
+      "talentChanged": true
+    }
+  ],
+  "10": [
+    {
+      "name": "Slowing Sands",
+      "description": "Summon a sand vortex that Slows enemies by 10% every 0.25 seconds, up to 70%.",
+      "cooldown": "5s",
+      "manaCost": "5 Mana per second",
+      "image": "chromie_timewarp.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Temporal Loop",
+      "description": "Choose an enemy Hero. After 3 seconds, they are teleported back to the location where Temporal Loop was cast on them. Basic Abilities recharge 500% faster for 3 seconds after casting Temporal Loop. {highlight} Friendship Loop can also be cast on allied heros resetting their state after 4 seconds except for the heroic ability. Shares cooldown with Temporal Loop{/highlight}",
+      "cooldown": "50s",
+      "manaCost": "60 Mana",
+      "image": "chromie_looper.png",
+      "talentChanged": true
+    }
+  ],
+  "13": [
+    {
+      "name": "Gnome Speed Ahead!",
+      "description": "After casting Sand Blast{highlight} or exiting stasis effects{/highlight}, Chromie gains 20% Movement Speed and 200% increased Health Regeneration for 3 seconds.",
+      "image": "chromie_aethercannon.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Here and There",
+      "description": "Activate Here and There to teleport to an area near an Echo{highlight} or There and There for a stasis trap{/highlight}, swapping it with Chromie's previous location. {highlight}And activate Here and Here to bring all echos on Chromie current position{/highlight} ",
+      "cooldown": "20s",
+      "image": "chromie_herethere.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Time Out",
+      "description": "Cooldown: 60s Activate to place Chromie in Stasis and gain Invulnerability for up to 5 seconds. Can be reactivated to end the effect early.",
+      "image": "chromie_timeblock.png",
+      "talentChanged": false
+    }
+  ],
+  "16": [
+    {
+      "name": "Shifting Sands",
+      "description": "Hitting an enemy Hero with Chromie's primary Sand Blast grants 5% Spell Power for 8 seconds, up to a maximum of 50%. The duration is refreshed whenever an enemy is damaged by the primary Sand Blast.",
+      "image": "chromie_aethercannon.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Fast Forward",
+      "description": "If Chromie's primary Sand Blast travels at least 50% of its base distance and hits a Hero, its cooldown is reduced to 0.5 seconds and it refunds 10 Mana.",
+      "passives": [
+        "{highlight}Increase projectile speed by 15% and max range by 15%.{/highlight}"
+      ],
+      "image": "chromie_aethercannon_a.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Quantum Overdrive",
+      "description": "{highlight}Creates a zone that will speed every allied non-heroic unit time by 100% and slow every enemy non-heroic unit time by 75% for 8 seconds.{/highlight}",
+      "cooldown": "60s",
+      "image": "chromie_hyperdrivesreach.png",
+      "talentChanged": true
+    }
+  ],
+  "20": [
+    {
+      "name": "Unravelling",
+      "description": "{highlight}Cast an additional Speeding sands area on Chromie cast position, this area will instead speed up allied heroes by 10% every 0.25 second, up to 50%. The speed effect will persist for 0.75 seconds after leaving the area.{/highlight}",
+      "image": "chromie_timewarp.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Stuck in a Loop",
+      "description": "Temporal Loop teleports the target a second time after the first, and Basic Abilities continue recharging for an additional 3 seconds. Increase the cooldown recharge rate from 500% to 700%. {highlight} Using Friendship Loop will also reset heroics {/highlight}",
+      "image": "chromie_looper.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Piercing Sands",
+      "description": "Sand Blasts cast from Chromie and her Echoes now pierce all enemies hit.",
+      "image": "chromie_aethercannon.png",
+      "talentChanged": true
+    },
+    {
+      "name": "T-I-M-E TRAP",
+      "description": "{highlight}Chromie casts a giant time trap in target position that will detonate after 1.25 seconds making every hero in the area be on stasis for 4 seconds.{/highlight}",
+      "image": "storm_ui_icon_chromie_detonate_timetrap.png",
+      "talentChanged": true
+    }
+  ]
+}

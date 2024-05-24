@@ -160,6 +160,18 @@
               "developerCommentary": "Qhira Final strike always felt too short, increasing it by a little less than half it's range would just make it 10/10. The amount of time i see other people and myself had the little range difference to hit the target is not normal and shouldn't be taught as only 'skill issue'",
               "likes": 0,
               "likedBy": {}
+            },
+            {
+              "change_id": "qhira_17",
+              "name": "Unrelenting strikes",
+              "texts": [
+                {
+                  "text": "You can now use grappling hook while  channeling Unreleting Strikes"
+                }
+              ],
+              "developerCommentary": "This talent is hardly used right",
+              "likes": 0,
+              "likedBy": {}
             }
           ]
         },
@@ -191,7 +203,7 @@
                   "text": "Decrease unrelenting strikes are by 1 meter"
                 }
               ],
-              "developerCommentary": "With the changes on the base Unrenlenting strikes we need to nerf it to the original on Silent Killer, this is one of the level 20 talents that could solo win a fight and the extra area would easily make it wipe entire teams without effort. It's the Leoric entomb upgrade treatment",
+              "developerCommentary": "With the changes on the base Unrenlenting strikes we need to nerf it because it's truly eazier to perform the wombo wipes we've seen Qhira mains making, this is one of the level 20 talents that could solo win a fight and the extra area would easily make it wipe entire teams without effort. It's the Leoric entomb upgrade treatment",
               "likes": 0,
               "likedBy": {}
             },
@@ -200,7 +212,7 @@
               "name": "Unleashed Potential",
               "texts": [
                 {
-                  "text": "Casting Final Strike unleashes two additional beams that curve outward, each dealing 50% damage. The beams converge towards the end of the original Final Strike, creating an area of effect that deals 250% of the ultimate damage."
+                  "text": "Changed functionality: Casting Final Strike unleashes two additional beams that curve outward, each dealing 50% damage. The beams converge towards the end of the original Final Strike, creating an area of effect that deals 250% of the ultimate damage."
                 }
               ],
               "developerCommentary": "I tried lots of times to think..What is making the level 20 talent of Final Strike a little odd? First it starts by being a finishing ultimate that RESETS COOLDOWN if you are finishing someone it make less likely that you will use that resets and the ultimate doesn't give any give of mobility for you to use these resets better..sure you have the hook but on a teamfight you have high chances to have already used the hook when you reset atleast on my vision it's counterintuitive except for the ultimate reset on kill. On that instance i want to bring something that further increase the concept of 'unsleashed potential' and finisher move to make it more original and unique that is bringing more the finishing part.",

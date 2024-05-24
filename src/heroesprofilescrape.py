@@ -59,5 +59,5 @@ def scrape_hero_talents(hero_name):
         json.dump(talent_data, file, indent=2)
 
 # Example usage
-hero_name = "lt-morales"  # This can be dynamically changed
+hero_name = "chromie"  # This can be dynamically changed
 scrape_hero_talents(hero_name)
