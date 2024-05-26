@@ -1,0 +1,211 @@
+{
+  "abilities": {
+    "basic": [
+      {
+        "name": "Spider Mines (Q)",
+        "description": "Create 3 mines that arm after 1.25 seconds. Mines detonate when an enemy comes in range, dealing 96 damage to nearby enemies and Slowing them by 25% for 1.5 seconds.\n\nSiege Mode: Cast range increased by 100%.",
+        "manaCost": "50",
+        "cooldown": "14s",
+        "image": "sgthammer_spidermines.png",
+        "abilityChanged": false
+      },
+      {
+        "name": "Concussive Blast (W)",
+        "description": "Deal 141 damage to enemies in front of Sgt. Hammer and knock them back.\n\nSiege Mode: Radius increased by 50%.",
+        "manaCost": "80",
+        "cooldown": "12s",
+        "image": "sgthammer_concussiveblast.png",
+        "abilityChanged": false
+      },
+      {
+        "name": "Neosteel Plating (E)",
+        "description": "Gain 25 Armor for 2 seconds.\n\nSiege Mode: Grants 100% more Armor.",
+        "manaCost": "60",
+        "cooldown": "16s",
+        "image": "sgthammer_neosteelplating.png",
+        "abilityChanged": false
+      }
+    ],
+    "heroic": [
+      {
+        "name": "Blunt Force Gun (R)",
+        "description": "Fire a missile across the battlefield, dealing 500 damage to non-Structure enemies in its path.",
+        "manaCost": "100",
+        "cooldown": "70s",
+        "image": "sgthammer_bluntforcegun.png",
+        "abilityChanged": false
+      },
+      {
+        "name": "Napalm Strike (R)",
+        "description": "Deals 164 damage on impact, and leaves a napalm area that deals 50 damage per second. Lasts for 4 seconds.",
+        "manaCost": "35",
+        "cooldown": "6s",
+        "image": "sgthammer_napalmstrike.png",
+        "abilityChanged": false
+      }
+    ],
+    "trait": {
+      "name": "Siege Mode (T)",
+      "description": "Activate to enter Siege Mode. While in Siege Mode, Basic Attacks deal 20% more damage, have 100% increased range, and deal 25% of their damage as splash damage around the target.",
+      "passives": [
+        "{highlight}Heat Tank: While under siege mode Sgt. Hammer can move at 50% of her base move speed but each time she auto attacks that movespeed decreases by 2.5% capping at 25% slowly regaining the speed after 2 seconds not shooting. Mounting reset the heat effect{/highlight}"
+      ],
+      "cooldown": "2s",
+      "image": "sgthammer_siegemode.png",
+      "abilityChanged": true
+    }
+  },
+
+  "1": [
+    {
+      "name": "Advanced Siege Tech",
+      "description": "{highlight}Increase the siege mount and dismount speed by 100% and also grants cleanse on that period{/highlight}",
+      "image": "sgthammer_siegemode.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Advanced Artillery",
+      "description": "Increase Siege Mode's splash damage to 60% of Basic Attack damage, and increase its splash radius by 25%.",
+      "image": "sgthammer_siegemode_var1.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Maelstrom Rounds",
+      "description": "{highlight}Activate while in siege mode to increase Sgt Hammer attack speed by 60% for 3 seconds, Sgt Hammer won't be able to move during that duration, hitting enemy heroes or structures reduces the cooldown by 2 seconds{/highlight}",
+      "cooldown": "80s",
+      "image": "sgthammer_siegemode_var2.png",
+      "talentChanged": true
+    }
+  ],
+  "4": [
+    {
+      "name": "New: Mounting spiders",
+      "description": "{highlight}When you mount and dismount spawn 4 spider mines around Sgt. Hammer. When you mount and dismount also heals 10% of Sgt. Hammer maximum health. {/highlight}",
+      "cooldown": "10s",
+      "image": "sgthammer_spidermines.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Siege Tactics",
+      "description": "Using Neosteel Plating while in Siege Mode grants Unstoppable for 2 seconds, as long as she remains in Siege Mode.",
+      "image": "sgthammer_neosteelplating.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Regenerative Bio-Steel",
+      "description": "Basic Attacks while in Siege Mode heal for 10% of the damage dealt.",
+      "image": "sgthammer_siegemode.png",
+      "talentChanged": false
+    }
+  ],
+  "7": [
+    {
+      "name": "Pulse Detonation Core",
+      "description": "Spider Mines detonate 3 times over 3 seconds. Basic Attacks against enemy Heroes grant 5 Mana and reduce the cooldown of Spider Mines by 1.5 seconds. Increase this bonus to 2.5 seconds while in Siege Mode.",
+      "image": "sgthammer_spidermines.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Hover Siege Mode",
+      "description": "{highlight}Decrease Heat Tank speed lost with basic attacks to 1.25% also increase the maximum move speed to 60%{/highlight}",
+      "image": "sgthammer_siegemode.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Graduating Range",
+      "description": "{highlight}While under siege mode if you don't shoot you progressively increase you range up to 3 and basic attack damage up to 200% on a period of 2.5seconds.{/highlight}",
+      "image": "sgthammer_siegemode_var1.png",
+      "talentChanged": true
+    }
+  ],
+  "10": [
+    {
+      "name": "Blunt Force Gun",
+      "description": "Fire a missile across the battlefield, dealing 500 damage to non-Structure enemies in its path.",
+      "manaCost": "100",
+      "cooldown": "70s",
+      "image": "sgthammer_bluntforcegun.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Napalm Strike",
+      "description": "Deals 164 damage on impact, and leaves a napalm area that deals 50 damage per second. Lasts for 4 seconds.",
+      "manaCost": "35",
+      "cooldown": "6s",
+      "image": "sgthammer_napalmstrike.png",
+      "talentChanged": false
+    }
+  ],
+  "13": [
+    {
+      "name": "Tactical Mine Deployment",
+      "description": "Moving while Thrusters is active leaves a trail of up to 5 Spider Mines. Additionally, increase the Slow of Spider Mines by 15% {highlight}and duration by 200%.{/highlight}",
+      "image": "sgthammer_spidermines.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Jump blast",
+      "description": "{highlight}Activate to knock enemies around Sgt. Hammer and make her reposition herself with ground thrusters while on siege mode.{/highlight}",
+      "cooldown": "20s",
+      "image": "sgthammer_concussiveblast.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Hyper-Cooling Engines",
+      "description": "While in Siege Mode, hitting Heroes with Basic Attacks reduces the cooldown of Thrusters by 5 seconds.",
+      "image": "sgthammer_hypercoolingengines.png",
+      "talentChanged": false
+    }
+  ],
+  "16": [
+    {
+      "name": "Mechanical Know-how",
+      "description": "Neosteel Plating grants 20% maximum Health as a Shield for 2 seconds and increases Basic Attack damage by 30% for 5 seconds.",
+      "image": "sgthammer_neosteelplating.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Emp shoot",
+      "description": "{highlight}Activate to empower Sgt. Hammer next attack to deal 600% extra damage to shield, stun the target hit for 0.75 seconds and knock back all targets that received collateral damage.{/highlight}",
+      "cooldown": "30s",
+      "image": "sgthammer_siegemode.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Giant Killer",
+      "description": "Basic Attacks against enemy Heroes deal bonus damage equal to 1.5% of the Hero's maximum Health.",
+      "image": "talent_autoattack_searing.png",
+      "talentChanged": false
+    }
+  ],
+  "20": [
+    {
+      "name": "Orbital BFG",
+      "description": "Blunt Force Gun's missile orbits the planet every 5 seconds. Only the last missile fired orbits.",
+      "image": "sgthammer_bluntforcegun.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Advanced spider strike",
+      "description": "Napalm Strike's range is increased by 75% and deploy 4 spider mines on impact.",
+      "passives": [
+        "Spider mines now decrease 5 armor up to 25 for 4 seconds when hitting enemy heroes"
+      ],
+      "image": "sgthammer_napalmstrike.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Immortality Protocol",
+      "description": "{highlight}After Sgt. Hammer dies she become a destroyed unit with 75% of her base hit points and can't be healed. If she is not kill under 5 seconds she will revive. Allied heros can interact with the debris, each interacting allied hero increases the revive speed by 50%. {/highlight}",
+      "cooldown": "90s",
+      "image": "sgthammer_siegemode.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Ultra Capacitors",
+      "description": "Hitting enemy Heroes with Basic Attacks while in Siege Mode grants 10% Attack Speed for 5 seconds, up to 60%.",
+      "image": "sgthammer_siegemode.png",
+      "talentChanged": false
+    }
+  ]
+}

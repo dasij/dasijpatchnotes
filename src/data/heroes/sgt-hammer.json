@@ -1,0 +1,243 @@
+{
+  "id": 1,
+  "name": "SGT-HAMMER",
+  "role": "ROLE",
+  "image": "heroes_portraits/sgt-hammer.webp",
+  "patchNotes": [
+    {
+      "id": 1,
+      "title": "Mini-hero rework and talent rework",
+      "general": [
+        {
+          "change_id": "sgt-hammer_1",
+          "change": "Siege Mode (T)",
+          "texts": [
+            {
+              "text": "Additional functionality: Heat Tank: While under siege mode Sgt. Hammer can move at 50% of her base move speed but each time she auto attacks that movespeed decreases by 2.5% capping at 25% slowly regaining the speed after 2 seconds not shooting. Mounting reset the heat effect"
+            }
+          ],
+          "developerCommentary": "Changing Hammer to be mobile from beginning at the old Hover siege mode speed but with a catch so it won't just become baseline talent or it would be too strong.",
+          "likes": 0,
+          "likedBy": {}
+        }
+      ],
+      "developerCommentary": "That rework will be based on the things that we could use on Sgt. Hammer and build my vision that would benefit the Hammer gameplay. One of the big things i dislike about how hammer is right now is the idea of not moving while under Siege mode even tho we have a talent that let Hammer move and differently from some other talents it gives the same feeling of playing Cassia and not picking the active on level 7 it's like a core talent for your gameplay atleast that's how i feel BUT i like the idea of her having trouble to go with the team because she is naturally slower.",
+      "sections": [
+        {
+          "name": "Level 1",
+          "changes": [
+            {
+              "change_id": "sgt-hammer_2",
+              "name": "Maelstrom Rounds",
+              "texts": [
+                {
+                  "text": "Activate while in siege mode to increase Sgt Hammer attack speed by 60% for 3 seconds, Sgt Hammer won't be able to move during that duration, hitting enemy heroes or structures reduces the cooldown by 2 seconds",
+                  "subtexts": ["cooldown: 80 seconds"]
+                }
+              ],
+              "developerCommentary": "I didn't want to remove Maelstrom Rounds because of how much i like the interaction between a cooldown reduced on hitting enemy targets BUT i wanted to make it different and have i also wanted to make Hammer unmovable somehow like the 'old days'",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "sgt-hammer_3",
+              "name": "Ambush renamed to Advanced Siege Tech",
+              "texts": [
+                {
+                  "text": "Increase the siege mount and dismount speed by 100% and also grants cleanse on that period"
+                }
+              ],
+              "developerCommentary": "I do not think hammer tools are made to ambush enemies and it's rather used for the extra single target damage and with that in mind i think the other talents alredy cover that. I placed that new talent on level 1 for any one that want to play safer and could be eazily targeted with the drawback of losing a important damage skill",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 4",
+          "changes": [
+            {
+              "change_id": "sgt-hammer_4",
+              "name": "New: Mounting spiders",
+              "texts": [
+                {
+                  "text": "When you mount and dismount spawn 4 spider mines around Sgt. Hammer"
+                },
+                {
+                  "text": "When mount and dismount also heals 10% of Sgt. Hammer maximum health"
+                },
+                {
+                  "text": "Cooldown: 10s"
+                }
+              ],
+              "developerCommentary": "This is supposed to synergise with a spider mines build but not be built on a way that makes you go for a spider mines build to pick it. Placed on level 4 due to be a sustain competitor. ALSO BOTH EFFECTS ARE ON COOLDOWN so you can't spam mount and dismount for healing",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "sgt-hammer_5",
+              "name": "Barricade",
+              "texts": [
+                {
+                  "text": "removed"
+                }
+              ],
+              "developerCommentary": "Barricade",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 7",
+          "changes": [
+            {
+              "change_id": "sgt-hammer_6",
+              "name": "Graduating range",
+              "texts": [
+                {
+                  "text": "While under siege mode if you don't shoot you progressively increase you range up to 3 and basic attack damage up to 200% on a period of 2.5seconds."
+                }
+              ],
+              "developerCommentary": "This is to make the graduating range somewhat similar to his old effect but also making a better synergy with the new heat passive",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "sgt-hammer_7",
+              "name": "Hover siege mode",
+              "texts": [
+                {
+                  "text": "Decrease Heat Tank speed lost with basic attacks to 1.25% also increase the maximum move speed to 60%"
+                }
+              ],
+              "developerCommentary": "This if for the ones that still like to be the walking machines",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 13",
+          "changes": [
+            {
+              "change_id": "sgt-hammer_8",
+              "name": "Entrenched renamed to Jump blast",
+              "texts": [
+                {
+                  "text": "Activate to knock enemies around Sgt. Hammer and make her reposition herself with ground thrusters while on siege mode"
+                },
+                {
+                  "text": "Cooldown: 20s"
+                }
+              ],
+              "developerCommentary": "We are adding the jump jets from SC2 on top of entrenched as it makes a similar effect of wanting to stay at the Siege mode but repelling divers.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "sgt-hammer_9",
+              "name": "Tactical Mine Depolyment",
+              "texts": [
+                {
+                  "text": "Additional Bonus:Increase spider mines duration by 200%"
+                }
+              ],
+              "developerCommentary": "After thinking for long i think that this talent is cool and don't need drastic changes but a little spicy to make it more attractive on different gameplay styles.",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 16",
+          "changes": [
+            {
+              "change_id": "sgt-hammer_10",
+              "name": "Executioner",
+              "texts": [
+                {
+                  "text": "Removed"
+                }
+              ],
+              "developerCommentary": "It's a bland talent that serves it purpose BUT it's competing with other two talents that also serve the same purpose.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "sgt-hammer_11",
+              "name": "Emp shoot",
+              "texts": [
+                {
+                  "text": "Activate to empower Sgt. Hammer next attack to deal 600% extra damage to shield, stun the target hit for 0.75 seconds and knock back all targets that received collateral damage"
+                },
+                {
+                  "text": "Cooldown: 30s"
+                }
+              ],
+              "developerCommentary": "I wanted to bring something that could replace Executioner without being directly targeted towards doing more damage but being a more situational one.",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 20",
+          "changes": [
+            {
+              "change_id": "sgt-hammer_12",
+              "name": "Immortality Protocol",
+              "texts": [
+                {
+                  "text": "After Sgt. Hammer dies she become a destroyed unit with 75% of her base hit points and can't be healed"
+                },
+                {
+                  "text": "If she is not kill under 5 seconds she will revive"
+                },
+                {
+                  "text": "Allied heros can interact with the debris, each interacting allied hero increases the revive speed by 50%"
+                },
+                {
+                  "text": "Cooldown: 90s"
+                }
+              ],
+              "developerCommentary": "Immortality protocol was classic for me from Sc2 and it should be applied here on Hots too. Level 20 is very stacked with offensive options too and giving a chance for some utility would be good.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "sgt-hammer_13",
+              "name": "Advanced lava strike renamed to Advanced spider strike",
+              "texts": [
+                {
+                  "text": "Won't increase the damage anymore"
+                },
+                {
+                  "text": "Additional functionality: Deploy 4 spider mines on explosion"
+                },
+                {
+                  "text": "Additional functionality: Spider mines now decrease 5 armor up to 25 of enemy heroes hit for 4 seconds"
+                }
+              ],
+              "developerCommentary": "Advanced lava strike serves it purpose but directly competing on damage with Orbital BFG and Ultra Capacitors is hard because Advanced Napalm Strike doesn't feel like an extravagant upgrade compared with those two, we are changing it to better perform with the spider mines so you can give it a different appeal, if someone don't build mines there's no problem as they can just go for ultra capacitors.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "sgt-hammer_14",
+              "name": "Shrapnel mines",
+              "texts": [
+                {
+                  "text": "Removed"
+                }
+              ],
+              "developerCommentary": "With the changes made to the Advanced spider strike it's not necessary anymore",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

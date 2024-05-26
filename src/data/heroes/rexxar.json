@@ -49,7 +49,7 @@
               "name": "New: Meat Mending",
               "texts": [
                 {
-                  "text": "Empowers Misha's next basic attack, increasing its damage by 100% and reducing its target's armor by 20 when Mend Pet is used."
+                  "text": "Empowers Misha's next basic attack, reducing its target's healing received by 75% for 1.25 seconds when Mend Pet is used."
                 }
               ],
               "developerCommentary": "One of the many changes I want for Rexxar is to give more strategic uses for Mend Pet, encouraging players to hold the skill and use it in different ways.",
@@ -120,7 +120,7 @@
           "changes": [
             {
               "change_id": "rexxar_8",
-              "name": "Spirit Swoop",
+              "name": "Bird of Prey",
               "texts": [
                 {
                   "text": "Additional functionality: Spirit can now divebomb mercenaries and monsters, dealing 400% damage."
@@ -129,7 +129,7 @@
                   "text": "Moved from level 1."
                 }
               ],
-              "developerCommentary": "With the changes to Spirit, this talent is weaker if you wish to use its vision. As a level 4 talent competing with survivability talents, it could be a risk to take clear wave without any problem on buffing it.",
+              "developerCommentary": "With the changes to Spirit, this talent is weaker if you wish to use its vision. As a level 4 talent competing with survivability talents, it could be a risk to take clear wave without any problem on buffing it. I removed the talent on level 1 for misha damaging mercenaries camps because that talent incentivize doing camps but i added mercenary damage on this talent with the sake of using it more to kill lane camps than doing camps.",
               "likes": 0,
               "likedBy": {}
             },
@@ -154,6 +154,9 @@
               "texts": [
                 {
                   "text": "When Misha stays close to Rexxar, both receive 25 armor and reduced crowd control effect durations by 35%."
+                },
+                {
+                  "text": "The intended range is something close to 2, almost melee range"
                 }
               ],
               "developerCommentary": "A talent to help Rexxar against dive comps.",
@@ -293,10 +296,10 @@
               "name": "Primal Intimidation",
               "texts": [
                 {
-                  "text": "After using Mend Pet, Misha will reduce every nearby enemy hero's spell power by 50% and attack speed by 35% for 2.5 seconds."
+                  "text": "If Misha is Stunned or rooted when Mend Pet is used, Misha will be cleansed for 0.5 seconds  and will receive an extra full healing from Mend Pet."
                 }
               ],
-              "developerCommentary": "Rexxar will have an option for survivability and now a debuff option, allowing him to choose better what he truly wants.",
+              "developerCommentary": "Rexxar will have an option for survivability and now a survivability for Misha, allowing him to choose better what he truly wants.",
               "likes": 0,
               "likedBy": {}
             },
@@ -306,6 +309,9 @@
               "texts": [
                 {
                   "text": "Knocks back enemies around Misha by a significant distance when Mend Pet is used."
+                },
+                {
+                  "text": "The radius is supposed to be 3.5, a little smaller than E.T.C face melt"
                 }
               ],
               "developerCommentary": "The knockback is intended to be smaller than Lucio's Soundwave, just enough for Misha to cancel enemy animations.",

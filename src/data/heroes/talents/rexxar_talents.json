@@ -64,7 +64,7 @@
   "1": [
     {
       "name": "Meat Mending",
-      "description": "{highlight}Empowers Misha's next basic attack, increasing its damage by 100% and reducing its target's armor by 20 when Mend Pet is used.{/highlight}",
+      "description": "{highlight}Empowers Misha's next basic attack, reducing its target's healing received by 75% for 1.25 seconds when Mend Pet is used.{/highlight}",
       "image": "storm_ui_icon_rexxar_mendpet.png",
       "talentChanged": true
     },
@@ -174,7 +174,7 @@
     },
     {
       "name": "Primal Intimidation",
-      "description": "{highlight}After using Mend Pet, Misha will reduce every nearby enemy hero's spell power by 50% and attack speed by 35% for 2 seconds.{/highlight}",
+      "description": "{highlight}If Misha is Stunned or rooted when Mend Pet is used, Misha will be cleansed for 0.5 seconds  and will receive an extra full healing from Mend Pet{/highlight}",
       "image": "storm_ui_icon_rexxar_mendpet.png",
       "talentChanged": true
     },

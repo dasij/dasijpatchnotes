@@ -49,7 +49,7 @@
               "name": "Fatal Wounds",
               "texts": [
                 {
-                  "text": "Additional quest completion method: Activate Blood Rage while 3 enemies are at full stack."
+                  "text": "Additional quest completion method: Activate Blood Rage while 3 enemy heros are at full stack."
                 }
               ],
               "developerCommentary": "Following Alarak and Maiev quest completion method i want to make it easier to complete quests when you do it right fast",

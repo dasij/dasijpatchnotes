@@ -1,7 +1,7 @@
 {
   "id": 1,
   "name": "CHROMIE",
-  "role": "ROLE",
+  "role": "ranged-assassin",
   "image": "heroes_portraits/chromie.webp",
   "patchNotes": [
     {
@@ -134,7 +134,7 @@
                   "subtexts": ["60 seconds cooldown"]
                 }
               ],
-              "developerCommentary": "A Utility talent that will slow everything from the non-heroic units including their attack speed, movement speed, cooldowns and so on. Similar to how the Void Prison does but on that case it slows by about 99.99% and will speed up the allied ones. One example: If used on a allied Keep the keep will shoot 75% faster and if used on an enemy keep it will attack 75% slower and neutral units counts as allied units so if you use it on the uncaptured boss it will hit 75% faster.. I wanted to make neutral units count as allied because if we let Chromies uses that for safe boss making it will make invading a boss really harder at the point people would evade invades. Now the reason i changed it's functionality was the fact it competes with Shifting Sands as a Spell Power talent but being on the boring and safe way..if you wish to do more damages then hit your sandblasts.",
+              "developerCommentary": "A Utility talent that will slow everything from the non-heroic units including their attack speed, movement speed, cooldowns and so on. Similar to how the Void Prison does but on that case it slows by about 99.99% and will speed up the allied ones. One example: If used on a allied Keep the keep will shoot 100% faster and if used on an enemy keep it will attack 75% slower and neutral units counts as allied units so if you use it on the uncaptured boss it will hit 100% faster.. I wanted to make neutral units count as allied because if we let Chromies uses that for safe boss making it will make invading a boss really harder at the point people would evade invades. Now the reason i changed it's functionality was the fact it competes with Shifting Sands as a Spell Power talent but being on the boring and safe way..if you wish to do more damages then hit your sandblasts.",
               "likes": 0,
               "likedBy": {}
             }
@@ -160,8 +160,8 @@
               "name": "NEW: T-I-M-E TRAP(active)",
               "texts": [
                 {
-                  "text": "Chromie casts a giant time trap in target position that will detonate after 1.25 seconds making every hero in the area be on stasis for 4 seconds (Radius 7.0 | Blaze combustion radius is 6.5 for reference)",
-                  "subtexts": ["60 seconds cooldown"]
+                  "text": "Chromie casts a giant time trap in target position that will detonate after 1.50 seconds making every hero in the area be on stasis for 0.75 seconds, this effect will be triggered 3 times sequentially. (Radius 7.0 | Blaze combustion radius is 6.5 for reference)",
+                  "subtexts": ["60 seconds cooldown", "global range"]
                 }
               ],
               "developerCommentary": "The idea is inspired on the League Of Legends Bard ultimate that will stasis a big area and i wanted to implement that somehow on the game making chromie the perfect one to make that both in terms of gameplay and roleplay.",

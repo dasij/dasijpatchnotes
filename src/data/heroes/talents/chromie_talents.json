@@ -211,7 +211,7 @@
     },
     {
       "name": "T-I-M-E TRAP",
-      "description": "{highlight}Chromie casts a giant time trap in target position that will detonate after 1.25 seconds making every hero in the area be on stasis for 4 seconds.{/highlight}",
+      "description": "{highlight}Chromie casts a giant time trap in target position that will detonate after 1.50 seconds making every hero in the area be on stasis for 0.75 seconds, this effect will be triggered 3 times sequentially.{/highlight}",
       "image": "storm_ui_icon_chromie_detonate_timetrap.png",
       "talentChanged": true
     }
