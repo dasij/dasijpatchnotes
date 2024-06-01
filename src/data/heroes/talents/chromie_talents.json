@@ -207,7 +207,7 @@
       "name": "Piercing Sands",
       "description": "Sand Blasts cast from Chromie and her Echoes now pierce all enemies hit.",
       "image": "chromie_aethercannon.png",
-      "talentChanged": true
+      "talentChanged": false
     },
     {
       "name": "T-I-M-E TRAP",

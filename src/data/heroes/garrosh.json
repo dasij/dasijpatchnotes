@@ -1,0 +1,139 @@
+{
+  "id": 1,
+  "name": "GARROSH",
+  "role": "",
+  "image": "heroes_portraits/garrosh.webp",
+  "patchNotes": [
+    {
+      "id": 1,
+      "title": "",
+      "general": [
+        {
+          "change": "",
+          "texts": [
+            {
+              "text": ""
+            }
+          ],
+          "developerCommentary": ""
+        }
+      ],
+      "developerCommentary": "",
+      "sections": [
+        {
+          "name": "Level 1",
+          "changes": [
+            {
+              "name": "Lok-tar ogar!",
+              "texts": [
+                {
+                  "text": "Changed functionality: If Into the Fray's target throw target is a non-heroic unit it stuns enemies near the impact area for 0.5 seconds"
+                }
+              ],
+              "developerCommentary": "I want to make throwing non-heroic units something viable rather than a mistake"
+            }
+          ]
+        },
+        {
+          "name": "Level 4",
+          "changes": [
+            {
+              "name": "New: Bull rush",
+              "texts": [
+                {
+                  "text": "Garrosh runs in a straigh line, knockbacking enemies that enters on contact with him.",
+                  "subtexts": [
+                    "Range will be 7.0 | Valla Vault has 5.0 range | Dwarf Toss has 8.0 range",
+                    "Missile Speed will be 15 | Valla Vault is 14 | Dwarf toss is 30",
+                    "Cast needs to be finished before being to cast skills"
+                  ]
+                }
+              ],
+              "developerCommentary": "Even tho this gives Garrosh great mobility it's on cost of not getting cleanse also it's on par with the character angry style."
+            },
+            {
+              "name": "New: Groundbreaking tactics",
+              "texts": [
+                {
+                  "text": "GroundBreaker can now be channeled for up to 2 seconds, increasing the outer area radius up to 40%. If channeled to Maximum enemies will be pulled towards Garrosh instead of stunned"
+                }
+              ],
+              "developerCommentary": "Inspired on Sion Decimating Smash and justify the old garrosh interaction being gatekeeped by maximum channeling and by not picking cleanse"
+            }
+          ]
+        },
+        {
+          "name": "Level 7",
+          "changes": [
+            {
+              "name": "",
+              "texts": [
+                {
+                  "text": ""
+                }
+              ],
+              "developerCommentary": ""
+            }
+          ]
+        },
+        {
+          "name": "Level 10",
+          "changes": [
+            {
+              "name": "",
+              "texts": [
+                {
+                  "text": ""
+                }
+              ],
+              "developerCommentary": ""
+            }
+          ]
+        },
+        {
+          "name": "Level 13",
+          "changes": [
+            {
+              "name": "",
+              "texts": [
+                {
+                  "text": ""
+                }
+              ],
+              "developerCommentary": ""
+            }
+          ]
+        },
+        {
+          "name": "Level 16",
+          "changes": [
+            {
+              "name": "",
+              "texts": [
+                {
+                  "text": ""
+                }
+              ],
+              "developerCommentary": ""
+            }
+          ]
+        },
+        {
+          "name": "Level 20",
+          "changes": [
+            {
+              "name": "",
+              "texts": [
+                {
+                  "text": "",
+                  "subtexts": [""]
+                }
+              ],
+              "developerCommentary": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

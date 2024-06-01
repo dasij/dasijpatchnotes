@@ -1,7 +1,7 @@
 {
   "id": 1,
   "name": "CHROMIE",
-  "role": "ranged-assassin",
+  "role": "Ranged Assassin",
   "image": "heroes_portraits/chromie.webp",
   "patchNotes": [
     {
@@ -68,6 +68,9 @@
                 },
                 {
                   "text": "Temporal Friendship shares cooldown with Temporal Loop."
+                },
+                {
+                  "text": "Temporal Friendship DOES NOT have the 500% cooldown reduction effect while loop is being cast."
                 }
               ],
               "developerCommentary": "I always found an interesting idea the concept of using temporal loop on allied heros, it could be a long one it could be a shorter one buffed BUT one that i found the concept funny is the cooldown one, you could temporal loop a garrosh so he throws people and he is ready to throw it again or do it on a azmodan for double BALLS",
@@ -111,7 +114,7 @@
           ]
         },
         {
-          "name": "Level 15",
+          "name": "Level 14",
           "changes": [
             {
               "change_id": "chromie_7",
@@ -132,6 +135,12 @@
                 {
                   "text": "Changed functionality: Creates a zone that will speed every allied non-heroic unit time by 100% and slow every enemy non-heroic unit time by 75% for 8 seconds",
                   "subtexts": ["60 seconds cooldown"]
+                },
+                {
+                  "text": "Radius : 7.0 ( Blaze combustion is 6.5 )"
+                },
+                {
+                  "text": "Range : 13 (Dragon's Breath range)"
                 }
               ],
               "developerCommentary": "A Utility talent that will slow everything from the non-heroic units including their attack speed, movement speed, cooldowns and so on. Similar to how the Void Prison does but on that case it slows by about 99.99% and will speed up the allied ones. One example: If used on a allied Keep the keep will shoot 100% faster and if used on an enemy keep it will attack 75% slower and neutral units counts as allied units so if you use it on the uncaptured boss it will hit 100% faster.. I wanted to make neutral units count as allied because if we let Chromies uses that for safe boss making it will make invading a boss really harder at the point people would evade invades. Now the reason i changed it's functionality was the fact it competes with Shifting Sands as a Spell Power talent but being on the boring and safe way..if you wish to do more damages then hit your sandblasts.",

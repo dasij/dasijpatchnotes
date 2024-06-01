@@ -1,0 +1,286 @@
+{
+  "id": "1",
+  "name": "ARAM",
+  "image": "gamemodes/smile.webp",
+  "changed": true,
+  "patchNotes": [
+    {
+      "id": 1,
+      "date": "2024-05-14",
+      "general": [
+        {
+          "change_id": "aram_1",
+          "change": "Special Chance Mode",
+          "texts": [
+            {
+              "text": "Now you have a 10% chance of getting into a special chance ARAM mode. If your ARAM game has special rules, one of the special modes will be chosen."
+            },
+            {
+              "text": "All same hero games will be part of the special chance ARAM mode."
+            }
+          ],
+          "developerCommentary": "People enjoy special modes but sometimes dislike how they are implemented. This is the first step towards making ARAM a better experience.",
+          "likes": 0,
+          "likedBy": {}
+        },
+        {
+          "change_id": "aram_2",
+          "change": "All Same Hero Mode",
+          "texts": [
+            {
+              "text": "Now categorized as a special chance ARAM mode."
+            },
+            {
+              "text": "Special rule subsets will be applied to this type of game."
+            },
+            {
+              "text": "If the chosen hero is a Melee Assassin or Ranged Assassin:",
+              "subtexts": [
+                "Troops will have 75 base armor and 200% increased health points.",
+                "Globes of regeneration will heal 20% of maximum health and 20% of mana over 8 seconds but also grant 25 stacking spell armor over the duration.",
+                "Heroes will also be granted 10% omnivamp. Any overheal effect will be converted to a maximum 20% health shield that decays over 4 seconds."
+              ]
+            },
+            {
+              "text": "If the chosen hero is a Tank:",
+              "subtexts": [
+                "Troops will have 100% extra health points and deal 300% additional damage to structures.",
+                "Globes of regeneration will heal 20% of maximum health and 40% of mana over 8 seconds.",
+                "Structures will deal 100% more damage but will receive 200% more damage from heroic units and won't reduce armor anymore.",
+                "Heroes now reduce enemy heroes' armor by 3, up to 30, with basic attacks for 3 seconds. (This is a stacking effect.)"
+              ]
+            },
+            {
+              "text": "If the chosen hero is a Healer:",
+              "subtexts": [
+                "Troops will have 100% extra health points and deal 300% additional damage to structures.",
+                "Globes of regeneration will heal 0% of maximum health and 30% of mana over 8 seconds.",
+                "Structures receive 200% more damage from heroic units.",
+                "Every time you get healed by an allied hero, you receive a stack of -2.5% healing, up to 50%. This effect lasts 4 seconds and slowly decays. (This is a stacking effect.)"
+              ]
+            },
+            {
+              "text": "If the chosen hero is a Bruiser:",
+              "subtexts": [
+                "Troops will have 75 base armor and 200% increased health points.",
+                "Globes of regeneration will heal 30% of maximum health and 10% of mana over 8 seconds but also grant 30% faster cooldown effect for basic abilities over the duration.",
+                "Structures receive 100% more damage from heroic units.",
+                "Healing effects are reduced by 40%."
+              ]
+            },
+            {
+              "text": "Special Heroes:",
+              "subtexts": [
+                "Medivh will be counted as a Ranged Assassin.",
+                "Zarya will be counted as a Bruiser."
+              ]
+            }
+          ],
+          "developerCommentary": "This is my first idea at implementing special rules for these matches based on the hero class. I aimed to make the game faster, especially for tanks and healers, and less frustrating for assassins. One of the main issues that made ARAM unplayable were matches with heroes like Kael'thas and Lunara, where everyone was constantly dying.",
+          "likes": 0,
+          "likedBy": {}
+        },
+        {
+          "change_id": "aram_3",
+          "change": "New mode: Repeated teams",
+          "texts": [
+            {
+              "text": "Now each team will receive only three choices of hero to pick.",
+              "subtexts": [
+                "One tank/bruiser, One Ranged Assassin/Melee Assassin, One healer",
+                "The roles will be mirrored, so it will be sorted between ranged/melee assassin for both teams not only one."
+              ]
+            },
+            {
+              "text": "Example:",
+              "subtexts": [
+                "1º -> The game will sort the roles that will be in the game for each team.",
+                "2º -> The game sorted Bruiser, Melee Assassin and the healer",
+                "3º -> The game now will sort one hero from each role to both teams",
+                "4º -> Team A got : Arthas, Zul'jin and Morales | Team B got : Anub'arak, Mephisto and Li Li",
+                "5º -> The only champions Team A can pick are the ones sorted the same also apply for Team B"
+              ]
+            }
+          ],
+          "developerCommentary": "This idea is an alternative to the same hero mode but more balanced in terms of heroes and also letting you pick repeated heroes without the worries of the enemy team making the same repeated picks",
+          "likes": 0,
+          "likedBy": {}
+        },
+        {
+          "change_id": "aram_4",
+          "change": "New mode: Critical Mass",
+          "texts": [
+            {
+              "text": "Everytime someone dies everyone will refresh all cooldown abilities"
+            },
+            {
+              "text": "We are only banning Mephisto Consume souls and Li Ming from that mode"
+            }
+          ],
+          "developerCommentary": "I like the idea of a chaotic mode for aram..can't make that only for the allied team or else it would be a stompfest.",
+          "likes": 0,
+          "likedBy": {}
+        },
+        {
+          "change_id": "aram_5",
+          "change": "New mode: Egg zombies",
+          "texts": [
+            {
+              "text": "Everyone will be able to place an egg and respawn from that egg on a 8 seconds cooldown but everytime you respawn your hero will lose 2% of their maximum health each second."
+            },
+            {
+              "text": "If you don't place the egg you will respawn normally and have no losing life."
+            },
+            {
+              "text": "Murky is banned from this mode."
+            }
+          ],
+          "developerCommentary": "I like the idea of murky eggs from other heroes even tho it could transform the game into base rushing.",
+          "likes": 0,
+          "likedBy": {}
+        },
+        {
+          "change_id": "aram_6",
+          "change": "New mode: Chaotic arena",
+          "texts": [
+            {
+              "text": "Every 45 seconds one of the following buffs will be applied to EVERYONE alive",
+              "subtexts": [
+                "bloodlust ( with level 20 talent )",
+                "Nano Boost (10 second duration)",
+                "Stim Drone( 10 seconds duration )",
+                "Divine palm(10 second duration)",
+                "Sound Barrier (10 second duration)",
+                "Fury of the Berserker (8 seconds duration and can't be prolonged)",
+                "Divine shield(1 second duration that will be applied 4 times durin 12 seconds)"
+              ]
+            }
+          ],
+          "developerCommentary": "This is for giving the roulette effect.",
+          "likes": 0,
+          "likedBy": {}
+        },
+        {
+          "change_id": "aram_7",
+          "change": "New mode: Blademaster duel",
+          "texts": [
+            {
+              "text": "Every hero will receive a Samuro Mirror Image active"
+            },
+            {
+              "text": "You can't extend clones duration"
+            },
+            {
+              "text": "Cooldown: 30 seconds"
+            },
+            {
+              "text": "Samuro is banned on that mode"
+            }
+          ],
+          "developerCommentary": "Would be fun to see a genji reset his X-strike bazilions times only to see that he missed every enemy hero.",
+          "likes": 0,
+          "likedBy": {}
+        },
+        {
+          "change_id": "aram_8",
+          "change": "New mode: Shadow ult",
+          "texts": [
+            {
+              "text": "You will be granted from level 1 an extra active that will be a random hero ultimate from the game, that active will change the current ultimate every time you cast it."
+            },
+            {
+              "text": "Ultimates that have to interact with another skill to work will be banned Example: Probius overcharge."
+            }
+          ],
+          "developerCommentary": "A complex mode that would probally not be able to be made on the current Hots engine but similar to the spellbook mode on League of legends it's proven fun.",
+          "likes": 0,
+          "likedBy": {}
+        },
+        {
+          "change_id": "aram_9",
+          "change": "New mode: Catastrophe",
+          "texts": [
+            {
+              "text": "Lorenados and Death Moshs will periodically be spawned on the map hitting both teams."
+            },
+            {
+              "text": "Deckard cain and E.T.C are banned on that mode."
+            }
+          ],
+          "developerCommentary": "Normally modes that debuff teams are not well received but i want to atleast write it down",
+          "likes": 0,
+          "likedBy": {}
+        },
+        {
+          "change_id": "aram_10",
+          "change": "New mode: Invis cloak",
+          "texts": [
+            {
+              "text": "Every hero will receive an extra active that will make them invisible for 10 seconds ."
+            },
+            {
+              "text": "Cooldown: 60 seconds."
+            },
+            {
+              "text": "Invisible heroes are banned, not the ones that have invisibility talents"
+            }
+          ],
+          "developerCommentary": "One active to make the surprise garrosh earlier",
+          "likes": 0,
+          "likedBy": {}
+        },
+        {
+          "change_id": "aram_11",
+          "change": "New mode: Spider storm",
+          "texts": [
+            {
+              "text": "Every hero will receive the grappling hook active."
+            },
+            {
+              "text": "Cooldown: 20 seconds."
+            },
+            {
+              "text": "Qhira is banned in this mode."
+            }
+          ],
+          "developerCommentary": "One active to make the super surprise garrosh earlier",
+          "likes": 0,
+          "likedBy": {}
+        },
+        {
+          "change_id": "aram_12",
+          "change": "New mode: Reinforcements",
+          "texts": [
+            {
+              "text": "each time a wave spawn it will spawn an cumulative three extra melee and ranged troops and every 3 waves it will start to spawn an extra mage."
+            },
+            {
+              "text": "Structures hit kill enemy troops."
+            },
+            {
+              "text": "Wave troops will share the total exp of 1 normal wave between the entire wave, so you won't level up as fast as you think"
+            },
+            {
+              "text": "Every summoner hero will be banned, only includes basic abilities and ultimates."
+            }
+          ],
+          "developerCommentary": "When i see the league of legends clips of Karthus killing 3000 waves i saw an opportunity to make that real",
+          "likes": 0,
+          "likedBy": {}
+        },
+        {
+          "change_id": "aram_13",
+          "change": "New mode: Portal madness",
+          "texts": [
+            {
+              "text": "Random medivh portals will be spawn on the map with the different lenghty sizes, the portals can surpass the normal medivh portal lenght so it's possible to make a portal from one core to the other."
+            }
+          ],
+          "developerCommentary": "I like chaotic ideas and that's it.",
+          "likes": 0,
+          "likedBy": {}
+        }
+      ]
+    }
+  ]
+}

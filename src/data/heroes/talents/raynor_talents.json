@@ -1,0 +1,205 @@
+{
+  "abilities": {
+    "basic": [
+      {
+        "name": "Penetrating Round (Q)",
+        "description": "Deal 205 damage, knock back, and Slow enemies in a line by 20% for 2 seconds. Enemies close to Raynor are knocked back further.",
+        "image": "raynor_penetratinground.png",
+        "abilityChanged": false
+      },
+      {
+        "name": "Inspire (W)",
+        "description": "Raynor and all nearby allied Minions and Mercenaries gain 30% Attack Speed and 10% Movement Speed for 4 seconds. Casting Inspire resets Raynor's Basic Attack cooldown.",
+        "image": "raynor_inspire.png",
+        "abilityChanged": false
+      },
+      {
+        "name": "Adrenaline Rush (E)",
+        "description": "Heal Raynor for 25% of his maximum Health over 1 second. Raynor's Basic Attacks lower the cooldown of this by 0.5 seconds, doubled against Heroes.",
+        "image": "raynor_adrenalinrush.png",
+        "abilityChanged": false
+      },
+      {
+        "name": "Drop Pod (?)",
+        "description": "Activate to respawn at the targeted position instead of the halls of the storm dealing 200 damage on contact.",
+        "image": "DropPod_SC2_Rend1.webp",
+        "abilityChanged": true
+      }
+    ],
+    "heroic": [
+      {
+        "name": "Hyperion (R)",
+        "description": "Order the Hyperion to make a strafing run for 12 seconds, hitting up to 4 enemies for 66 damage every second. Every 4 seconds, it can fire its Yamato Cannon at a Structure, dealing 794 damage.",
+        "image": "raynor_hyperion.png",
+        "cooldown": "100s",
+        "manaCost": "100 Mana",
+        "abilityChanged": false
+      },
+      {
+        "name": "Raynor's Raider (R)",
+        "description": "Summon a Banshee that assists Raynor. The Banshee deals 84 damage per second and regenerates 75 Health per second if it hasn't taken damage in the last 4 seconds. Can reactivate to retarget or move the Banshee. The Banshee respawns automatically after 45 seconds.",
+        "image": "raynor_raynorsraiders.png",
+        "cooldown": "45s",
+        "abilityChanged": false
+      }
+    ],
+    "trait": {
+      "name": "Give 'Em Some Pepper (T)",
+      "description": "Every 4th Basic Attack splashes in a small area and deals 125% more damage to the main target.",
+      "image": "raynor_acquireweakspot.png",
+      "abilityChanged": false
+    }
+  },
+  "1": [
+    {
+      "name": "Exterminator",
+      "description": "Basic Attacks deal 50% more damage to Minions, Mercenaries, and Monsters. This is increased to 125% while Inspire is active. Passive: Inspire does not expire on friendly Minions and Mercenaries.",
+      "image": "raynor_inspire.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Veteran Marksman",
+      "description": "Quest: Every time the primary target of Give 'Em Some Pepper is a Hero, permanently increase its damage bonus by 0.75%. Gambit: Gain 60% bonus Give 'Em Some Pepper damage. Every death reduces this bonus by 15%.",
+      "image": "raynor_acquireweakspot.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Ace In The Hole",
+      "description": "{highlight}Quest: Hitting Penetrating Round increases the slow by 5% up to 5 times. When at max stacks, increase Raynor's damage by 15%. Stacks are lost on miss. Increase Penetrating Round's slow duration by 2 seconds.{/highlight}",
+      "image": "raynor_acardtoplay.png",
+      "talentChanged": true
+    }
+  ],
+  "4": [
+    {
+      "name": "Fight or Flight",
+      "description": "Reduce Adrenaline Rush's cooldown by 10 seconds. Casting Adrenaline Rush grants 25 Armor for 3 seconds.",
+      "image": "raynor_adrenalinrush.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Raynor raiders",
+      "description": "{highlight}Deploy a terran pod that deals 200 damage on contact with 3 marines and 1 medic that will go towards the closest lane to push.{/highlight}",
+      "cooldown": "45s",
+      "image": "DropPod_SC2_Rend1.webp",
+      "talentChanged": true
+    },
+    {
+      "name": "Behemoth Armor",
+      "description": "{highlight}Give 'Em Some Pepper heals 2% maximum health, doubled when the primary target is a Hero. Quest: Every time Give 'Em Some Pepper's primary target is a Hero, gain an additional 40 Health. After reaching 400 Health, each stack will now give 8 maximum Health instead. Loses the bonus Health on death.{/highlight}",
+      "image": "raynor_hulkarmor.png",
+      "talentChanged": true
+    }
+  ],
+  "7": [
+    {
+      "name": "Old Times",
+      "description": "{highlight}Raynor always rides his Vulture. The first shot after dismounting deals 50% extra damage, and slows the target by 40% for 2 seconds.{/highlight}",
+      "image": "Vulture_WoL.webp",
+      "talentChanged": true
+    },
+    {
+      "name": "Fuel The Rush",
+      "description": "Reduce the Mana cost of Adrenaline Rush from 75 to 45. While Inspire is active, increase Adrenaline Rush's cooldown reduction from Basic Attacks by 300%.",
+      "image": "raynor_split_debilitatingrounds.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Unstable Compound",
+      "description": "Increase the area of Give 'Em Some Pepper by 15%. Each enemy Hero hit by Give 'Em Some Pepper grants Raynor 10 Mana and reduces the cooldown of Penetrating Round by 1.5 seconds.",
+      "image": "raynor_acquireweakspot.png",
+      "talentChanged": false
+    }
+  ],
+  "10": [
+    {
+      "name": "Hyperion",
+      "description": "Order the Hyperion to make a strafing run for 12 seconds, hitting up to 4 enemies for 66 damage every second. Every 4 seconds, it can fire its Yamato Cannon at a Structure, dealing 794 damage.",
+      "image": "raynor_hyperion.png",
+      "cooldown": "100s",
+      "manaCost": "100 Mana",
+      "talentChanged": false
+    },
+    {
+      "name": "Raynor's Raider",
+      "description": "Summon a Banshee that assists Raynor. The Banshee deals 84 damage per second and regenerates 75 Health per second if it hasn't taken damage in the last 4 seconds. Can reactivate to retarget or move the Banshee. The Banshee respawns automatically after 45 seconds.",
+      "image": "raynor_raynorsraiders.png",
+      "cooldown": "45s",
+      "talentChanged": false
+    }
+  ],
+  "13": [
+    {
+      "name": "Line 'Em Up",
+      "description": "Reduce the cooldown of Penetrating Round by 3 seconds. Penetrating Round hitting two or more enemy Heroes reduces its cooldown by an additional 3 seconds.",
+      "image": "raynor_penetratinground.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Giddy-Up",
+      "description": "Gain 10% Movement Speed while mounted and unmounted. Inspire grants 10% more Movement Speed.",
+      "image": "raynor_inspire.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Give Me More!",
+      "description": "Increase Adrenaline Rush healing by 50%. While Inspire is active, gain 1 Basic Attack range.",
+      "image": "raynor_split_debilitatingrounds.png",
+      "talentChanged": false
+    }
+  ],
+  "16": [
+    {
+      "name": "Paint Them Red",
+      "description": "Increase the damage of Penetrating Round by 50% and heal for 90% of the damage Penetrating Round deals to Heroes.",
+      "image": "raynor_penetratinground.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Rallying Cry",
+      "description": "Increase the Attack Speed bonus of Inspire by 20%. Passive: After every 12 Basic Attacks, cast Inspire for free.",
+      "image": "raynor_inspire.png",
+      "talentChanged": false
+    },
+    {
+      "name": "We all got our choices to make",
+      "description": "{highlight}Activate to make a pistol shoot on a straight line dealing 250 damage to the first enemy hero that it hits and preventing it from using any dash or similar for the next 4 seconds.{/highlight}",
+      "passives": [
+        "{highlight}If Give 'Em Some Pepper's primary target is a hero it receives additional 3% of their maximum health as damage.{/highlight}"
+      ],
+      "image": "raynor_acquireweakspot.png",
+      "cooldown": "30s",
+      "talentChanged": true
+    }
+  ],
+  "20": [
+    {
+      "name": "Cavalry's Arrived",
+      "description": "{highlight}Activate for Hyperion to fire the Yamato Cannon at the target location dealing 450 damage after 1.25 seconds.{/highlight}",
+      "passives": [
+        "{highlight}Raynor drop pod respawn inspire nearby units{/highlight}"
+      ],
+      "cooldown": "20s",
+      "image": "raynor_hyperion.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Dusk Wing",
+      "description": "Increase the Health and leash range of Raynor's Raider by 100%. Its Basic Attack lowers enemy Hero Armor by 3 for 1 second, stacking up to 30.",
+      "image": "raynor_raynorsraiders.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Raiders Roll",
+      "description": "Adrenaline Rush grants Unstoppable and continues healing for an additional 2 seconds. The additional duration ends upon reaching 70% Health.",
+      "image": "raynor_adrenalinrush.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Sergeant Pepper",
+      "description": "Give 'Em Some Pepper now activates every 3 Basic Attacks.",
+      "image": "raynor_acquireweakspot.png",
+      "talentChanged": false
+    }
+  ]
+}

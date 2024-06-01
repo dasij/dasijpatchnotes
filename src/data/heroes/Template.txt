@@ -13,9 +13,6 @@
           "texts": [
             {
               "text": "GENERAL_CHANGE_TEXT_1"
-            },
-            {
-              "text": "GENERAL_CHANGE_TEXT_2"
             }
           ],
           "developerCommentary": "GENERAL_CHANGE_DEVELOPER_COMMENTARY"
@@ -31,32 +28,10 @@
               "texts": [
                 {
                   "text": "CHANGE_TEXT_1",
-                  "subtexts": [
-                    "SUBTEXT_1",
-                    "SUBTEXT_2",
-                    "SUBTEXT_3"
-                  ]
+                  "subtexts": ["SUBTEXT_1"]
                 }
               ],
               "developerCommentary": "CHANGE_DEVELOPER_COMMENTARY_1"
-            },
-            {
-              "name": "CHANGE_NAME_2",
-              "texts": [
-                {
-                  "text": "CHANGE_TEXT_2"
-                }
-              ],
-              "developerCommentary": "CHANGE_DEVELOPER_COMMENTARY_2"
-            },
-            {
-              "name": "CHANGE_NAME_3",
-              "texts": [
-                {
-                  "text": "CHANGE_TEXT_3"
-                }
-              ],
-              "developerCommentary": "CHANGE_DEVELOPER_COMMENTARY_3"
             }
           ]
         },
@@ -68,37 +43,10 @@
               "texts": [
                 {
                   "text": "CHANGE_TEXT_4",
-                  "subtexts": [
-                    "SUBTEXT_4",
-                    "SUBTEXT_5",
-                    "SUBTEXT_6"
-                  ]
+                  "subtexts": ["SUBTEXT_4"]
                 }
               ],
               "developerCommentary": "CHANGE_DEVELOPER_COMMENTARY_4"
-            },
-            {
-              "name": "CHANGE_NAME_5",
-              "texts": [
-                {
-                  "text": "CHANGE_TEXT_5"
-                }
-              ],
-              "developerCommentary": "CHANGE_DEVELOPER_COMMENTARY_5"
-            },
-            {
-              "name": "CHANGE_NAME_6",
-              "texts": [
-                {
-                  "text": "CHANGE_TEXT_6",
-                  "subtexts": [
-                    "SUBTEXT_7",
-                    "SUBTEXT_8",
-                    "SUBTEXT_9"
-                  ]
-                }
-              ],
-              "developerCommentary": "CHANGE_DEVELOPER_COMMENTARY_6"
             }
           ]
         },
@@ -110,24 +58,9 @@
               "texts": [
                 {
                   "text": "CHANGE_TEXT_7"
-                },
-                {
-                  "text": "CHANGE_TEXT_8"
-                },
-                {
-                  "text": "CHANGE_TEXT_9"
                 }
               ],
               "developerCommentary": "CHANGE_DEVELOPER_COMMENTARY_7"
-            },
-            {
-              "name": "CHANGE_NAME_8",
-              "texts": [
-                {
-                  "text": "CHANGE_TEXT_10"
-                }
-              ],
-              "developerCommentary": "CHANGE_DEVELOPER_COMMENTARY_8"
             }
           ]
         },
@@ -139,12 +72,6 @@
               "texts": [
                 {
                   "text": "CHANGE_TEXT_11"
-                },
-                {
-                  "text": "CHANGE_TEXT_12"
-                },
-                {
-                  "text": "CHANGE_TEXT_13"
                 }
               ],
               "developerCommentary": "CHANGE_DEVELOPER_COMMENTARY_9"
@@ -162,27 +89,6 @@
                 }
               ],
               "developerCommentary": "CHANGE_DEVELOPER_COMMENTARY_10"
-            },
-            {
-              "name": "CHANGE_NAME_11",
-              "texts": [
-                {
-                  "text": "CHANGE_TEXT_15"
-                },
-                {
-                  "text": "CHANGE_TEXT_16"
-                }
-              ],
-              "developerCommentary": "CHANGE_DEVELOPER_COMMENTARY_11"
-            },
-            {
-              "name": "CHANGE_NAME_12",
-              "texts": [
-                {
-                  "text": "CHANGE_TEXT_17"
-                }
-              ],
-              "developerCommentary": "CHANGE_DEVELOPER_COMMENTARY_12"
             }
           ]
         },
@@ -197,18 +103,6 @@
                 }
               ],
               "developerCommentary": "CHANGE_DEVELOPER_COMMENTARY_13"
-            },
-            {
-              "name": "CHANGE_NAME_14",
-              "texts": [
-                {
-                  "text": "CHANGE_TEXT_19"
-                },
-                {
-                  "text": "CHANGE_TEXT_20"
-                }
-              ],
-              "developerCommentary": "CHANGE_DEVELOPER_COMMENTARY_14"
             }
           ]
         },
@@ -219,14 +113,8 @@
               "name": "CHANGE_NAME_15",
               "texts": [
                 {
-                  "text": "CHANGE_TEXT_21"
-                },
-                {
                   "text": "CHANGE_TEXT_22",
-                  "subtexts": [
-                    "SUBTEXT_10",
-                    "SUBTEXT_11"
-                  ]
+                  "subtexts": []
                 }
               ],
               "developerCommentary": "CHANGE_DEVELOPER_COMMENTARY_15"

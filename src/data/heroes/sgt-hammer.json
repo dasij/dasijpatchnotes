@@ -1,7 +1,7 @@
 {
-  "id": 1,
+  "id": 8,
   "name": "SGT-HAMMER",
-  "role": "ROLE",
+  "role": "Ranged Assassin",
   "image": "heroes_portraits/sgt-hammer.webp",
   "patchNotes": [
     {
@@ -31,7 +31,7 @@
               "name": "Maelstrom Rounds",
               "texts": [
                 {
-                  "text": "Activate while in siege mode to increase Sgt Hammer attack speed by 60% for 3 seconds, Sgt Hammer won't be able to move during that duration, hitting enemy heroes or structures reduces the cooldown by 2 seconds",
+                  "text": "Changed functionality: Activate while in siege mode to increase Sgt Hammer attack speed by 60% for 3 seconds, Sgt Hammer won't be able to move during that duration, hitting enemy heroes or structures reduces the cooldown by 2 seconds",
                   "subtexts": ["cooldown: 80 seconds"]
                 }
               ],
@@ -44,7 +44,7 @@
               "name": "Ambush renamed to Advanced Siege Tech",
               "texts": [
                 {
-                  "text": "Increase the siege mount and dismount speed by 100% and also grants cleanse on that period"
+                  "text": "Increase the siege mount and dismount speed by 100% and also grants unstopabble on that period"
                 }
               ],
               "developerCommentary": "I do not think hammer tools are made to ambush enemies and it's rather used for the extra single target damage and with that in mind i think the other talents alredy cover that. I placed that new talent on level 1 for any one that want to play safer and could be eazily targeted with the drawback of losing a important damage skill",
@@ -65,6 +65,9 @@
                 },
                 {
                   "text": "When mount and dismount also heals 10% of Sgt. Hammer maximum health"
+                },
+                {
+                  "text": "Both effects are only activated on cooldown"
                 },
                 {
                   "text": "Cooldown: 10s"
@@ -128,7 +131,7 @@
                   "text": "Activate to knock enemies around Sgt. Hammer and make her reposition herself with ground thrusters while on siege mode"
                 },
                 {
-                  "text": "Cooldown: 20s"
+                  "text": "Cooldown: 30s"
                 }
               ],
               "developerCommentary": "We are adding the jump jets from SC2 on top of entrenched as it makes a similar effect of wanting to stay at the Siege mode but repelling divers.",
@@ -166,7 +169,7 @@
             },
             {
               "change_id": "sgt-hammer_11",
-              "name": "Emp shoot",
+              "name": "NEW: Emp shoot",
               "texts": [
                 {
                   "text": "Activate to empower Sgt. Hammer next attack to deal 600% extra damage to shield, stun the target hit for 0.75 seconds and knock back all targets that received collateral damage"
@@ -186,7 +189,7 @@
           "changes": [
             {
               "change_id": "sgt-hammer_12",
-              "name": "Immortality Protocol",
+              "name": "NEW: Immortality Protocol",
               "texts": [
                 {
                   "text": "After Sgt. Hammer dies she become a destroyed unit with 75% of her base hit points and can't be healed"

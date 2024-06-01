@@ -1,0 +1,171 @@
+{
+  "id": 9,
+  "name": "RAYNOR",
+  "role": "Ranged Assassin",
+  "image": "heroes_portraits/raynor.webp",
+  "patchNotes": [
+    {
+      "id": 1,
+      "title": "Hero mini-rework and talent rework",
+      "general": [
+        {
+          "change": "New: Drop Pod",
+          "texts": [
+            {
+              "text": "Activate to respawn at the targeted position instead of the halls of the storm dealing 200 damage on contact."
+            },
+            {
+              "text": "The drop pod animation takes 2 seconds"
+            }
+          ],
+          "developerCommentary": "This change is made to have a better approach on the fantasy of a Terran Soldier with the drop pods."
+        }
+      ],
+      "developerCommentary": "For me Raynor is on a good path to represent what being a Terran Marine or Jim Raynor represents the objective here is to give him more utility tools and approach him more of the one we know from starcraft 2",
+      "sections": [
+        {
+          "name": "Level 1",
+          "changes": [
+            {
+              "change_id": "raynor_1",
+              "name": "Ace in the Hole",
+              "texts": [
+                {
+                  "text": "Changed functionality: Quest: Hitting penetrating shots increase the slow by 5% up to 5 times. When on max stacks increase raynor damage by 15%. Stacks are lost on miss"
+                },
+                {
+                  "text": "Increase penetrating shoot slow duration by 2 seconds"
+                }
+              ],
+              "developerCommentary": "Ace in the hole compete with Veteran Marksman on being a damage talent but on the safe way and with being sincere it's hard to compete with the fun on making DINGS DINGS with Veteran Marksman and besides i wanted to make this talent still be on the same direction but increasing it's output.",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 4",
+          "changes": [
+            {
+              "change_id": "raynor_2",
+              "name": "Behemoth Armor",
+              "texts": [
+                {
+                  "text": "Changed functionality: Give 'Em Some Pepper heals 2% maximum health double the amount when the primary target is a hero. Quest:Every time Give 'Em Some Pepper's primary target is a hero gain an additional 40 after reaching 400 health each stack will now give 8 maximum health instead. Loses the bonus health on death"
+                }
+              ],
+              "developerCommentary": "I like both sustaining rounds and behemoth armor but i first dislike a second mission of infinite stacking and also i would say that both these quests synergise well and could aggregate.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "raynor_3",
+              "name": "NEW: Raynor raiders",
+              "texts": [
+                {
+                  "text": "Deploy a terran pod that deals 200 damage on contact with 3 marines and 1 medic that will go towards the closest lane to push."
+                },
+                {
+                  "text": "This units can grab experience globes"
+                },
+                {
+                  "text": "Shares Raynor Drop Pod talents"
+                },
+                {
+                  "text": "Cooldown: 45s"
+                },
+                {
+                  "text": "Range: global"
+                }
+              ],
+              "developerCommentary": "The intent here is to bring more of the leadership that Raynor has on the campaign of Starcraft 2 being a tool more focused on Macro or vision.",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 7",
+          "changes": [
+            {
+              "change_id": "raynor_4",
+              "name": "Heavy Slugs renamed to Old Times",
+              "texts": [
+                {
+                  "text": "Changed functionality: Raynor always rides his Vulture instead of the normal mount. The first shot after dismounting deals 50% extra damage and slows the target by 40% for 2 seconds."
+                }
+              ],
+              "developerCommentary": "Heavy Slugs always felt kinda eeh and would only be picked on big numbers. I'm changing it for something that level 7 doesn't cover and giving a damage option instead of the utility/healing options.",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 16",
+          "changes": [
+            {
+              "change_id": "raynor_7",
+              "name": "Bounty Hunter renamed to We all got our choices to make ",
+              "texts": [
+                {
+                  "text": "Changed functionality: Activate to make a pistol shoot on a straight line dealing 250 damage to the first enemy hero that it hits and preventing it from using any dash or similar for the next 4 seconds."
+                },
+                {
+                  "text": " Passive: If Give 'Em Some Pepper's primary target is a hero it receives additional 3% of their maximum health as damage."
+                },
+                {
+                  "text": " Cooldown 30 seconds."
+                },
+                {
+                  "text": " Range 8 ( Penetrating round has 9.5 range )."
+                }
+              ],
+              "developerCommentary": "I first wanted to add a flashbang grenade for Raynor who would make a similar effect but bringing one of the most iconic moments of SC2 wings of liberty seems a better choice. Gameplay wise this is to be an optional talent against Mobile targets further make Raynor a good counter to them. And why change it from the original? It's because the results are somewhat similar to Rallying cry with the big difference being about killing high life targets but that doesn't mean you couldn't do it alredy with Rallying cry so im making it an more uility based rather than a direct option.",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 20",
+          "changes": [
+            {
+              "change_id": "raynor_5",
+              "name": "Cavalary's Arrived",
+              "texts": [
+                {
+                  "text": "Changed functionality: Activate for Hyperion to fire the Yamato Cannon at the target location dealing 450 damage after 1.25 seconds."
+                },
+                {
+                  "text": "3.0 radius ( The size of a probius warp rift )"
+                },
+                {
+                  "text": "20s cooldown"
+                },
+                {
+                  "text": "Additionaly if Raynor respawn from a Drop pod he will inspire nearby units"
+                }
+              ],
+              "developerCommentary": "Hyperion by itself doesn't feel strong as we imagine coming from the Starcraft 2 perspective and it further diminishes this effect by using it as a Siege ultimate by having no control of the Yamato Cannon. Cavalary's arrived current effect do not make Hyperion upgrade feel and act powerful but rather incentivize the ultimate spam.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "raynor_6",
+              "name": "Execute orders",
+              "texts": [
+                {
+                  "text": "removed"
+                }
+              ],
+              "developerCommentary": "Especially with the new Ressurect drop pod this could lead to extremely toxic gameplay.",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

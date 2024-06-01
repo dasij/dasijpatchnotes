@@ -220,11 +220,20 @@
                           </div>
                         </div>
                         <p class="text-sm" v-html="formatText(talent.description)"></p>
+                        <div v-if="talent.quest" class="mt-2">
+                          <p class="text-sm" v-html="formatText('Quest: ' + talent.quest)"></p>
+                        </div>
+                        <div v-if="talent.rewards && talent.rewards.length > 0" class="mt-2">
+                          <ul>
+                            <li v-for="(reward, index) in talent.rewards" :key="index" class="text-sm "
+                              v-html="formatText('Reward: ' + reward)"></li>
+                          </ul>
+                        </div>
                         <div v-if="talent.passives && talent.passives.length > 0" class="mt-2">
-                          <p v-for="(passive, index) in talent.passives" :key="index" class="text-sm">
-                            <span class="font-semibold" style="color: #78da5b;">Passive:</span>
-                            <span v-html="formatText(passive)"></span>
-                          </p>
+                          <ul>
+                            <li v-for="(passive, index) in talent.passives" :key="index" class="text-sm "
+                              v-html="formatText(passive)"></li>
+                          </ul>
                         </div>
                       </div>
                     </div>

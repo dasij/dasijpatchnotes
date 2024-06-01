@@ -1,0 +1,218 @@
+{
+  "abilities": {
+    "basic": [
+      {
+        "name": "Healing Potion (Q)",
+        "description": "Throw a Healing Potion on the ground that heals the first allied Hero that comes in contact with it for 285. Limit 5 active Potions.",
+        "manaCost": "25 Mana",
+        "cooldown": "4s",
+        "image": "deckard_healing_potion.png",
+        "abilityChanged": false
+      },
+      {
+        "name": "Horadric Cube (W)",
+        "description": "Release the Horadric Cube. After 0.5 seconds it explodes, dealing 80 damage to all enemies in the area and Slowing them by 35% for 2 seconds.",
+        "manaCost": "35 Mana",
+        "cooldown": "12s",
+        "passives": [
+          "{highlight}Horadric cube will now roulette between 7 gems sequentially each time it's cast, each gem will have a different effect.{/highlight}"
+        ],
+        "image": "deckard_horadric_cube.png",
+        "abilityChanged": true
+      },
+      {
+        "name": "Scroll Of Sealing (E)",
+        "description": "Unfurl an enchanted scroll over 2.25 seconds, forming a triangle that deals 150 damage to enemies inside and Roots them for 1.5 seconds.",
+        "manaCost": "40 Mana",
+        "cooldown": "16s",
+        "image": "deckard_scroll_of_sealing.png",
+        "abilityChanged": false
+      }
+    ],
+    "heroic": [
+      {
+        "name": "Stay Awhile and Listen (R)",
+        "description": "After 1 second, Channel for 3 seconds, putting enemy Heroes in front of Deckard to Sleep while Channeling, and for 2 seconds after. Enemies can only be put to Sleep once per cast, and Sleep's effects end instantly if they take damage.",
+        "manaCost": "60 Mana",
+        "cooldown": "70s",
+        "image": "deckard_stay_awhile_and_listen.png",
+        "abilityChanged": false
+      },
+      {
+        "name": "Lorenado (R)",
+        "description": "Vector Targeting. After 1 second, create a twirling tome tornado that travels towards the targeted direction, continually knocking away enemies that come into contact with it. Deals 20 damage to Heroes hit.",
+        "manaCost": "35 Mana",
+        "cooldown": "30s",
+        "passives": [
+          "{highlight}Will also apply the gem effect from the roulette.{/highlight}"
+        ],
+        "image": "deckard_lorenado.png",
+        "abilityChanged": true
+      }
+    ],
+    "trait": {
+      "name": "Fortitude of the Faithful (T)",
+      "description": "When at least 1 other allied Hero is nearby, Deckard gains 10 Armor and his Basic Abilities recharge 50% faster.",
+      "image": "deckard_protectors_of_cain.png",
+      "abilityChanged": false
+    }
+  },
+  "1": [
+    {
+      "name": "Scroll of Identify",
+      "description": "",
+      "quest": "{highlight}Quest: Hitting an enemy Hero with Scroll of Sealing permanently increases its damage by 2.{/highlight}",
+      "rewards": [
+        "{highlight} 15 hits Scroll of sealing will also apply gems from the roulette and reveal hit heroes by 6 seconds.{/highlight}",
+        "{highlight} 30 hits Scroll of sealing now deal 500% extra damage to summons.{/highlight}"
+      ],
+      "image": "deckard_scroll_of_sealing.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Scroll of town portal",
+      "description": "{highlight}Deckard Cain creates a portal at both the Halls of the Storm and his original Hearthstone location. Allied heroes can teleport between these positions. The portal lasts for 6 seconds and vanishes if Deckard Cain uses it.{/highlight}",
+      "image": "deckard_scroll_of_sealing.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Polished Sapphire",
+      "description": "{highlight}Activate to lock Sapphire on the roulette and increase the damage of the next Horadric Cube by 100% and its slow from by 30%.{/highlight}",
+      "image": "deckard_sapphire.png",
+      "talentChanged": true
+    }
+  ],
+  "4": [
+    {
+      "name": "Potion of Shielding",
+      "description": "Whenever an ally is healed by a Healing Potion, they gain a 140 Shield for 6 seconds.",
+      "image": "deckard_healing_potion.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Mana potion",
+      "description": "{highlight}Whenever an ally is healed by a healing potion, they restore 35 mana under 3 seconds and gain 10% spell power on that duration.{/highlight}",
+      "image": "deckard_rejuvination_potion.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Polished Ruby",
+      "description": "{highlight}Activate to lock Ruby on the roulette and increase the damage of the next Horadric Cube by 100% and it spawns 3 Lesser Healing Potions from each enemy Hero hit, healing allied Heroes for 250 when picked up. Lesser Healing Potions last for 10 seconds.{/highlight}",
+      "image": "deckard_ruby.png",
+      "talentChanged": true
+    }
+  ],
+  "7": [
+    {
+      "name": "Cube Mastery",
+      "description": "Reduce the Mana cost of Scroll of Sealing from 40 to 25. Each enemy Hero hit by Horadric Cube reduces the cooldown of Scroll of Sealing by 4 seconds.",
+      "image": "deckard_horadric_cube.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Kanai's Cube",
+      "description": "Horadric Cube reduces Hero damage dealt by 30% for 4 seconds.",
+      "image": "deckard_kanais_cube.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Polished Emerald",
+      "description": "{highlight}Activate to lock Emerald on the roulette and make the next Horadric Cube reduce healing received by 75% for 4 seconds.{/highlight}",
+      "image": "deckard_emerald.png",
+      "talentChanged": true
+    }
+  ],
+  "10": [
+    {
+      "name": "Stay Awhile and Listen",
+      "description": "After 1 second, Channel for 3 seconds, putting enemy Heroes in front of Deckard to Sleep while Channeling, and for 2 seconds after. Enemies can only be put to Sleep once per cast, and Sleep's effects end instantly if they take damage.",
+      "manaCost": "60 Mana",
+      "cooldown": "70s",
+      "image": "deckard_stay_awhile_and_listen.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Lorenado",
+      "description": "Vector Targeting. After 1 second, create a twirling tome tornado that travels towards the targeted direction, continually knocking away enemies that come into contact with it. Deals 20 damage to Heroes hit.",
+      "passives": [
+        "{highlight}Will also apply the gem effect from the roulette.{/highlight}"
+      ],
+      "manaCost": "35 Mana",
+      "cooldown": "30s",
+      "image": "deckard_lorenado.png",
+      "talentChanged": true
+    }
+  ],
+  "13": [
+    {
+      "name": "Super Healing Potion",
+      "description": "If a Healing Potion isn't picked up for at least 2 seconds, it heals for 100% more.",
+      "passives": [
+        "Healing Potion heals for 25% more when the target is under 50% health."
+      ],
+      "image": "deckard_super_healing_potion.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Hotbar",
+      "description": "{highlight}Whenever an ally is healed by a healing potion 0.5 seconds after it's cast grants 15 armor and 15% movement speed for 2 seconds.{/highlight}",
+      "image": "deckard_unstable_healing_potion.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Ancient Blessings",
+      "description": "Cooldown: 45s. Activate Fortitude of the Faithful to empower nearby allied Hero Basic Attacks for 8 seconds, causing them to deal an additional 62 damage in an area and heal for 90 for each Hero hit. This effect can only occur once per second.",
+      "image": "deckard_angelic_conduit.png",
+      "talentChanged": false
+    }
+  ],
+  "16": [
+    {
+      "name": "Scroll of Stone Curse",
+      "description": "Scroll of Sealing deals 200% more damage when hitting at least 2 Heroes.",
+      "image": "deckard_scroll_of_sealing.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Safety in Numbers",
+      "description": "If at least 2 allied Heroes are nearby, Fortitude of the Faithful grants an additional 10 Armor, 50% Mana Regeneration per second, and causes Deckard's Basic Abilities to recharge an additional 50% faster.",
+      "image": "deckard_study_time.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Horadric Staff",
+      "description": "Every 5 seconds, Deckard's next Basic Attack Stuns Heroes for 0.75 seconds.",
+      "image": "deckard_horadric_staff.png",
+      "talentChanged": false
+    }
+  ],
+  "20": [
+    {
+      "name": "Respect the Elderly",
+      "description": "Stay Awhile and Listen Silences and Blinds enemies for 3 seconds upon waking up from Sleep.",
+      "image": "deckard_stay_awhile_and_listen.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Morenados!",
+      "description": "Lorenado gains an additional charge and its cooldown is reduced by 10 seconds every time an enemy Hero is knocked back. This effect can only occur once per 0.5 seconds.",
+      "image": "deckard_lorenado.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Bottomless Flask",
+      "description": "After use, Healing Potions recharge after 8 seconds.",
+      "passives": [
+        "{highlight}Hitting enemy heros with Scroll of Sealing and horadric cube recharges the potions 0.75 second faster.{/highlight}"
+      ],
+      "image": "deckard_healing_potion.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Perfect Gems",
+      "description": "{highlight}Horadric cube will now cast 3 times at the target position with 0.5 delay between casts, each time applying the following gem on the roulette.{/highlight}.",
+      "image": "deckard_perfect_gems.png",
+      "talentChanged": true
+    }
+  ]
+}
