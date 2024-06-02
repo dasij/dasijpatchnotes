@@ -56,7 +56,7 @@
         "{highlight}Qhira gains an extra charge of grappling hook every 3 takedowns up to 5 times.{/highlight} ",
         "{highlight}Grappling Hook recharges 10% faster for every active Blood Rage stack. {/highlight}."
       ],
-
+      "cooldown": "20s",
       "image": "storm_ui_icon_nexushunter_d.png",
       "abilityChanged": true
     }

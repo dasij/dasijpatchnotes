@@ -1,21 +1,28 @@
 {
-  "id": 1,
+  "id": 11,
   "name": "GARROSH",
-  "role": "",
+  "role": "Tank",
   "image": "heroes_portraits/garrosh.webp",
   "patchNotes": [
     {
-      "id": 1,
-      "title": "",
+      "id": 11,
+      "title": "Talent Rework",
       "general": [
         {
-          "change": "",
+          "change_id": "garrosh_1",
+          "change": "Armor Up (T)",
           "texts": [
             {
-              "text": ""
+              "text": "Additional functionality: Warchief pride -> Taunting up to 1.5 seconds after a takedown heals Garrosh 25% of his maximum health on the end.",
+              "subtexts": [
+                "Cooldown 45 seconds",
+                "Enemies will have vision of Garrosh when he is taunting even if it's on cooldown."
+              ]
             }
           ],
-          "developerCommentary": ""
+          "developerCommentary": "A brutal leader that wants to intimidate the enemy should have the possibility to do it.",
+          "likes": 0,
+          "likedBy": {}
         }
       ],
       "developerCommentary": "",
@@ -24,13 +31,31 @@
           "name": "Level 1",
           "changes": [
             {
-              "name": "Lok-tar ogar!",
+              "change_id": "garrosh_2",
+              "name": "New: Brutality",
               "texts": [
                 {
-                  "text": "Changed functionality: If Into the Fray's target throw target is a non-heroic unit it stuns enemies near the impact area for 0.5 seconds"
+                  "text": "For every 2% missing maximum health Garrosh receive 3% extra attack speed"
+                },
+                {
+                  "text": "Basic Attacks against Heroes reduce the cooldown of Bloodthirst by 1 second."
                 }
               ],
-              "developerCommentary": "I want to make throwing non-heroic units something viable rather than a mistake"
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "garrosh_3",
+              "name": "Body Check",
+              "texts": [
+                {
+                  "text": "Moved to 16"
+                }
+              ],
+              "developerCommentary": "I have plans",
+              "likes": 0,
+              "likedBy": {}
             }
           ]
         },
@@ -38,27 +63,46 @@
           "name": "Level 4",
           "changes": [
             {
+              "change_id": "garrosh_4",
               "name": "New: Bull rush",
               "texts": [
                 {
                   "text": "Garrosh runs in a straigh line, knockbacking enemies that enters on contact with him.",
                   "subtexts": [
+                    "Cooldown 45 seconds",
                     "Range will be 7.0 | Valla Vault has 5.0 range | Dwarf Toss has 8.0 range",
                     "Missile Speed will be 15 | Valla Vault is 14 | Dwarf toss is 30",
                     "Cast needs to be finished before being to cast skills"
                   ]
                 }
               ],
-              "developerCommentary": "Even tho this gives Garrosh great mobility it's on cost of not getting cleanse also it's on par with the character angry style."
+              "developerCommentary": "Even tho this gives Garrosh great mobility it's on cost of not getting cleanse also it's on par with the character angry style.",
+              "likes": 0,
+              "likedBy": {}
             },
             {
+              "change_id": "garrosh_5",
               "name": "New: Groundbreaking tactics",
               "texts": [
                 {
                   "text": "GroundBreaker can now be channeled for up to 2 seconds, increasing the outer area radius up to 40%. If channeled to Maximum enemies will be pulled towards Garrosh instead of stunned"
                 }
               ],
-              "developerCommentary": "Inspired on Sion Decimating Smash and justify the old garrosh interaction being gatekeeped by maximum channeling and by not picking cleanse"
+              "developerCommentary": "Inspired on Sion Decimating Smash and justify the old garrosh interaction being gatekeeped by maximum channeling and by not picking cleanse",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "garrosh_6",
+              "name": "In for the kill, Thirst for Battle",
+              "texts": [
+                {
+                  "text": "Removed"
+                }
+              ],
+              "developerCommentary": "I see no purpose for In for the kill with the new talent i made for level 1 Brutality as it takes the same effect and Thirsft for battle is really niche and i don't think it fits Garrosh, not the non-heroic killing but the spammable non-heroic style",
+              "likes": 0,
+              "likedBy": {}
             }
           ]
         },
@@ -66,27 +110,28 @@
           "name": "Level 7",
           "changes": [
             {
-              "name": "",
+              "change_id": "garrosh_7",
+              "name": "Intimidation",
               "texts": [
                 {
-                  "text": ""
+                  "text": "Additional functionality: Not hitting Heroes on the Groundbreaker Outer Radius reduces the cooldown by 2 seconds."
                 }
               ],
-              "developerCommentary": ""
-            }
-          ]
-        },
-        {
-          "name": "Level 10",
-          "changes": [
+              "developerCommentary": "I want to make throwing non-heroic units something viable rather than a mistake",
+              "likes": 0,
+              "likedBy": {}
+            },
             {
-              "name": "",
+              "change_id": "garrosh_8",
+              "name": "Lok-tar ogar!",
               "texts": [
                 {
-                  "text": ""
+                  "text": "Changed functionality: Into the Fray's target throw target stuns enemies near the impact area for 0.25 seconds, if the target is a non-heroic unit reduces the cooldown by 20 seconds."
                 }
               ],
-              "developerCommentary": ""
+              "developerCommentary": "I want to make throwing non-heroic units something viable rather than a mistake",
+              "likes": 0,
+              "likedBy": {}
             }
           ]
         },
@@ -94,13 +139,17 @@
           "name": "Level 13",
           "changes": [
             {
-              "name": "",
+              "change_id": "garrosh_9",
+              "name": "Double Up renamed to Don't let them run",
               "texts": [
                 {
-                  "text": ""
+                  "text": "Changed functionality: Increase Garrosh movement speed by %1 every 4% missing health capping at 15%. This Talent only take effect if there's an visible enemy hero close to Garrosh.",
+                  "subtexts": ["8 radius | Blaze combustion has 6.5 radius"]
                 }
               ],
-              "developerCommentary": ""
+              "developerCommentary": "One thing that i always wanted was a talent to make Garrosh pursuing better especially on a decimate focused build",
+              "likes": 0,
+              "likedBy": {}
             }
           ]
         },
@@ -108,13 +157,34 @@
           "name": "Level 16",
           "changes": [
             {
-              "name": "",
+              "change_id": "garrosh_11",
+              "name": "Body Check",
               "texts": [
                 {
-                  "text": ""
+                  "text": "Moved from level 1."
+                },
+                {
+                  "text": "Body Check won't reduce heal received anymore instead it will prevent enemy heros from using dash abilities for 3 seconds."
+                },
+                {
+                  "text": "Cooldown increased to 20 seconds."
                 }
               ],
-              "developerCommentary": ""
+              "developerCommentary": "Garrosh is a character that suffers a lot against mobility characters and this talent itself still not make it eazy for Garrosh to deal with this weaklings BUT turns him into a menace if he gets in range and making the kill eazy.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "garrosh_10",
+              "name": "Earthshaker",
+              "texts": [
+                {
+                  "text": "removed"
+                }
+              ],
+              "developerCommentary": "With the changes to Lok-tar Ogar! there's no need anymore for that talent",
+              "likes": 0,
+              "likedBy": {}
             }
           ]
         },
@@ -122,14 +192,31 @@
           "name": "Level 20",
           "changes": [
             {
-              "name": "",
+              "change_id": "garrosh_12",
+              "name": "New: Bloodhowl",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "After Garrosh uses Groundbreaker, three additional waves are created sequentially from the edge of the original area. Each wave deals 81 damage and stuns enemies for 0.5 seconds.",
+                  "subtexts": [
+                    "Additional waves are affected by groundbreaking tactics size increase but won't pull the enemies."
+                  ]
                 }
               ],
-              "developerCommentary": ""
+              "developerCommentary": "I wanted to empower groundbreaker somehow and this, this is good. I really like the concept of Angry Garrosh simply destroying the ground angry as he is and it also feels like an level 20 talent.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "garrosh_13",
+              "name": "Inner rage",
+              "texts": [
+                {
+                  "text": "Removed"
+                }
+              ],
+              "developerCommentary": "I dislike talents that forces it to be picked with other if you want to use them like the Leoric level 13,16 talents on the vanilla game and i hate it even more when it forces you to pick a talent to use it.",
+              "likes": 0,
+              "likedBy": {}
             }
           ]
         }
