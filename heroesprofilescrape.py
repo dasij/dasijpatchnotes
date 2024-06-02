@@ -107,10 +107,14 @@ def scrape_hero_talents(hero_name):
             abilities = abilities_section.find_all("li")
             for ability in abilities:
                 name = ability.find("h3", class_="ability-name").text.strip()
-                stats = ability.find("p", class_="ability-stats").text.strip()
+                stats = ability.find("p", class_="ability-stats")
+                if stats:
+                    stats_text = stats.text.strip()
+                else:
+                    stats_text = ""
                 description = ability.find("p", class_="ability-description").text.strip()
                 description = clean_description(description)  # Clean the description
-                description, mana_cost, cooldown = extract_mana_and_cooldown(stats + " " + description)  # Extract mana and cooldown
+                description, mana_cost, cooldown = extract_mana_and_cooldown(stats_text + " " + description)  # Extract mana and cooldown
                 # Remove the part in parentheses
                 name_without_parentheses = name.split(" (")[0]
                 normalized_name = normalize_name(f"{hero_name}_{name_without_parentheses}")
@@ -287,7 +291,7 @@ def scrape_hero_talents(hero_name):
         os.makedirs(os.path.dirname(hero_json_filename))
     with open(hero_json_filename, "w") as file:
         json.dump(hero_json_data, file, indent=2)
-
+        
 # Example usage
 hero_name = "muradin"  # This can be dynamically changed
 scrape_hero_talents(hero_name)

@@ -1,0 +1,127 @@
+{
+  "id": 1,
+  "name": "MURADIN",
+  "role": "Tank",
+  "image": "heroes_portraits/muradin.webp",
+  "patchNotes": [
+    {
+      "id": 1,
+      "title": "",
+      "general": [
+        {
+          "change": "",
+          "texts": [
+            {
+              "text": ""
+            }
+          ],
+          "developerCommentary": ""
+        }
+      ],
+      "developerCommentary": "",
+      "sections": [
+        {
+          "name": "Level 1",
+          "changes": [
+            {
+              "name": "",
+              "texts": [
+                {
+                  "text": "",
+                  "subtexts": [""]
+                }
+              ],
+              "developerCommentary": ""
+            }
+          ]
+        },
+        {
+          "name": "Level 4",
+          "changes": [
+            {
+              "name": "",
+              "texts": [
+                {
+                  "text": "",
+                  "subtexts": [""]
+                }
+              ],
+              "developerCommentary": ""
+            }
+          ]
+        },
+        {
+          "name": "Level 7",
+          "changes": [
+            {
+              "name": "",
+              "texts": [
+                {
+                  "text": ""
+                }
+              ],
+              "developerCommentary": ""
+            }
+          ]
+        },
+        {
+          "name": "Level 10",
+          "changes": [
+            {
+              "name": "",
+              "texts": [
+                {
+                  "text": ""
+                }
+              ],
+              "developerCommentary": ""
+            }
+          ]
+        },
+        {
+          "name": "Level 13",
+          "changes": [
+            {
+              "name": "",
+              "texts": [
+                {
+                  "text": ""
+                }
+              ],
+              "developerCommentary": ""
+            }
+          ]
+        },
+        {
+          "name": "Level 16",
+          "changes": [
+            {
+              "name": "",
+              "texts": [
+                {
+                  "text": ""
+                }
+              ],
+              "developerCommentary": ""
+            }
+          ]
+        },
+        {
+          "name": "Level 20",
+          "changes": [
+            {
+              "name": "",
+              "texts": [
+                {
+                  "text": "",
+                  "subtexts": [""]
+                }
+              ],
+              "developerCommentary": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
