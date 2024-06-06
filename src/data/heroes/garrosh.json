@@ -164,7 +164,7 @@
                   "text": "Moved from level 1."
                 },
                 {
-                  "text": "Body Check won't reduce heal received anymore instead it will prevent enemy heros from using dash abilities for 3 seconds."
+                  "text": "Body Check won't reduce heal received anymore instead it will apply exhaustion that prevent enemy heros from using dash abilities for 3 seconds."
                 },
                 {
                   "text": "Cooldown increased to 20 seconds."
@@ -193,7 +193,7 @@
           "changes": [
             {
               "change_id": "garrosh_12",
-              "name": "New: Bloodhowl",
+              "name": "New: Gorehowl",
               "texts": [
                 {
                   "text": "After Garrosh uses Groundbreaker, three additional waves are created sequentially from the edge of the original area. Each wave deals 81 damage and stuns enemies for 0.5 seconds.",

@@ -143,12 +143,14 @@
       "name": "Unrelenting Strikes",
       "description": "Deal 44 (+4% per level) damage to nearby enemies every 0.5 seconds for 2.5 seconds as your sword grows outward. Upon expiring, deal 160 (+4% per level) damage to nearby enemy Heroes and Stun them for 1.5 seconds",
       "image": "storm_ui_icon_nexushunter_r1.png",
+      "cooldown": "60s",
       "talentChanged": true
     },
     {
       "name": "Final Strike",
       "description": "After 1 second, deal 395 (+4% per level) damage to enemies in a line. This damage is increased by 25% against enemy Heroes who are below 50% Health.",
       "image": "storm_ui_icon_nexushunter_r2.png",
+      "cooldown": "40s",
       "talentChanged": true
     }
   ],

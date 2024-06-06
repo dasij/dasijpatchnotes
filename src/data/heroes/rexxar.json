@@ -293,13 +293,14 @@
           "changes": [
             {
               "change_id": "rexxar_19",
-              "name": "Primal Intimidation",
+              "name": "Primal Intimidation renamed to Ambush",
               "texts": [
                 {
-                  "text": "If Misha is Stunned or rooted when Mend Pet is used, Misha will be cleansed for 0.5 seconds  and will receive an extra full healing from Mend Pet."
+                  "text": "Entering bushes grants Rexxar or his pets invisibility for 3 seconds.",
+                  "subtexts": ["5 seconds cooldown for each one"]
                 }
               ],
-              "developerCommentary": "Rexxar will have an option for survivability and now a survivability for Misha, allowing him to choose better what he truly wants.",
+              "developerCommentary": "Hunters should know the jungle and it also grants a great power to ambush or either escape from engages all on a hunter lore.",
               "likes": 0,
               "likedBy": {}
             },

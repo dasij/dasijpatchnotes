@@ -168,7 +168,7 @@
     },
     {
       "name": "Body Check",
-      "description": "{highlight}Activate to deal 111 (+4% per level) damage to a target enemy and Slow them by 35% for 3 seconds. Enemy Heroes hit won't be able to use movement abilities for 3 seconds.{/highlight}",
+      "description": "{highlight}Activate to deal 111 (+4% per level) damage to a target enemy and Slow them by 35% for 3 seconds. Enemy Heroes hit will be applied exhaustion and won't be able to use movement abilities for 3 seconds.{/highlight}",
       "image": "garrosh_slam.png",
       "talentChanged": true,
       "cooldown": "20s"
@@ -200,7 +200,7 @@
       "talentChanged": false
     },
     {
-      "name": "Bloodhowl",
+      "name": "Gorehowl",
       "description": "{highlight}After Garrosh uses Groundbreaker, three additional waves are created sequentially from the edge of the original area. Each wave deals 81 damage and stuns enemies for 0.5 seconds. Additional waves are affected by groundbreaking tactics size increase but won't pull the enemies.{/highlight}",
       "image": "garrosh_groundbreaker.png",
       "talentChanged": true

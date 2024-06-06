@@ -168,13 +168,16 @@ def scrape_hero_talents(hero_name):
                 "title": "",
                 "general": [
                     {
+                        "change_id": "heroname_number",
                         "change": "",
                         "texts": [
                             {
                                 "text": ""
                             }
                         ],
-                        "developerCommentary": ""
+                        "developerCommentary": "",
+                                "likes": 0,
+                                "likedBy": {}
                     }
                 ],
                 "developerCommentary": "",
@@ -183,6 +186,7 @@ def scrape_hero_talents(hero_name):
                         "name": "Level 1",
                         "changes": [
                             {
+                                "change_id": "heroname_number",
                                 "name": "",
                                 "texts": [
                                     {
@@ -190,7 +194,9 @@ def scrape_hero_talents(hero_name):
                                         "subtexts": [""]
                                     }
                                 ],
-                                "developerCommentary": ""
+                                "developerCommentary": "",
+                                "likes": 0,
+                                "likedBy": {}
                             }
                         ]
                     },
@@ -198,6 +204,7 @@ def scrape_hero_talents(hero_name):
                         "name": "Level 4",
                         "changes": [
                             {
+                                "change_id": "heroname_number",
                                 "name": "",
                                 "texts": [
                                     {
@@ -205,7 +212,9 @@ def scrape_hero_talents(hero_name):
                                         "subtexts": [""]
                                     }
                                 ],
-                                "developerCommentary": ""
+                                "developerCommentary": "",
+                                "likes": 0,
+                                "likedBy": {}
                             }
                         ]
                     },
@@ -213,13 +222,16 @@ def scrape_hero_talents(hero_name):
                         "name": "Level 7",
                         "changes": [
                             {
+                                "change_id": "heroname_number",
                                 "name": "",
                                 "texts": [
                                     {
                                         "text": ""
                                     }
                                 ],
-                                "developerCommentary": ""
+                                "developerCommentary": "",
+                                "likes": 0,
+                                "likedBy": {}
                             }
                         ]
                     },
@@ -227,13 +239,16 @@ def scrape_hero_talents(hero_name):
                         "name": "Level 10",
                         "changes": [
                             {
+                                "change_id": "heroname_number",
                                 "name": "",
                                 "texts": [
                                     {
                                         "text": ""
                                     }
                                 ],
-                                "developerCommentary": ""
+                                "developerCommentary": "",
+                                "likes": 0,
+                                "likedBy": {}
                             }
                         ]
                     },
@@ -241,13 +256,16 @@ def scrape_hero_talents(hero_name):
                         "name": "Level 13",
                         "changes": [
                             {
+                                "change_id": "heroname_number",
                                 "name": "",
                                 "texts": [
                                     {
                                         "text": ""
                                     }
                                 ],
-                                "developerCommentary": ""
+                                "developerCommentary": "",
+                                "likes": 0,
+                                "likedBy": {}
                             }
                         ]
                     },
@@ -255,17 +273,21 @@ def scrape_hero_talents(hero_name):
                         "name": "Level 16",
                         "changes": [
                             {
+                                "change_id": "heroname_number",
                                 "name": "",
                                 "texts": [
                                     {
                                         "text": ""
                                     }
                                 ],
-                                "developerCommentary": ""
+                                "developerCommentary": "",
+                                "likes": 0,
+                                "likedBy": {}
                             }
                         ]
                     },
                     {
+                        "change_id": "heroname_number",
                         "name": "Level 20",
                         "changes": [
                             {
@@ -276,7 +298,9 @@ def scrape_hero_talents(hero_name):
                                         "subtexts": [""]
                                     }
                                 ],
-                                "developerCommentary": ""
+                                "developerCommentary": "",
+                                "likes": 0,
+                                "likedBy": {}
                             }
                         ]
                     }
@@ -293,5 +317,5 @@ def scrape_hero_talents(hero_name):
         json.dump(hero_json_data, file, indent=2)
         
 # Example usage
-hero_name = "muradin"  # This can be dynamically changed
+hero_name = "guldan"  # This can be dynamically changed
 scrape_hero_talents(hero_name)

@@ -177,6 +177,12 @@
                 class="absolute bg-black bg-opacity-95 text-white p-4 rounded border border-purple-800"
                 style="top: 50%; left: calc(100% + 10px); transform: translateY(-50%); width: 250px; z-index: 1;">
                 <h3 class="text-xl font-semibold" style="color: #0099ff;">{{ talents.abilities.trait.name }}</h3>
+                <div class="flex items-center text-xs mb-2">
+                  <div v-if="talents.abilities.trait.cooldown" class="mr-2">
+                    <span class="font-semibold">Cooldown:</span> <span
+                      v-html="formatText(talents.abilities.trait.cooldown)"></span>
+                  </div>
+                </div>
                 <p class="text-sm" v-html="formatText(talents.abilities.trait.description)"></p>
                 <div v-if="talents.abilities.trait.passives && talents.abilities.trait.passives.length > 0"
                   class="mt-2">

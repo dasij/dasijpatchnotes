@@ -109,7 +109,7 @@
               "name": "Bounty Hunter renamed to We all got our choices to make ",
               "texts": [
                 {
-                  "text": "Changed functionality: Activate to make a pistol shoot on a straight line dealing 250 damage to the first enemy hero that it hits and preventing it from using any dash or similar for the next 4 seconds."
+                  "text": "Changed functionality: Activate to make a pistol shoot on a straight line dealing 250 damage to the first enemy hero that it hits applying exhaustion that preventing it from using any dash or similar for the next 4 seconds."
                 },
                 {
                   "text": " Passive: If Give 'Em Some Pepper's primary target is a hero it receives additional 3% of their maximum health as damage."

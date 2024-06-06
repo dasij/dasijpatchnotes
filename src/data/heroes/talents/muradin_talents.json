@@ -4,7 +4,7 @@
       {
         "name": "Storm Bolt (Q)",
         "description": "Throw a hammer, dealing 110 damage to the first enemy hit and Stunning them for 1.25 seconds.After reaching level 10, Storm Bolt pierces to hit an additional target. Muradin's Basic Attacks reduce the cooldown of Storm Bolt by 1 second and restore 3 Mana.",
-        "image": "muradin_storm_bolt.png",
+        "image": "muradin_stormbolt.png",
         "abilityChanged": false,
         "manaCost": "45 Mana",
         "cooldown": "10s"
@@ -12,7 +12,7 @@
       {
         "name": "Thunder Clap (W)",
         "description": "Blast nearby enemies for 96 damage and Slow them by 30% for 2.5 seconds. Heroes hit also have their Attack Speed reduced by 30% for the duration.",
-        "image": "muradin_thunder_clap.png",
+        "image": "muradin_thunderclap.png",
         "abilityChanged": false,
         "manaCost": "50 Mana",
         "cooldown": "8s"
@@ -20,7 +20,7 @@
       {
         "name": "Dwarf Toss (E)",
         "description": "Leap to target location, dealing 59 damage to enemies on landing. Upon leaping, gain 30 Armor for 2 seconds, reducing damage taken by 30%.",
-        "image": "muradin_dwarf_toss.png",
+        "image": "muradin_dwarftoss.png",
         "abilityChanged": false,
         "manaCost": "55 Mana",
         "cooldown": "10s"
@@ -46,8 +46,8 @@
     ],
     "trait": {
       "name": "Second Wind (T)",
-      "description": " Muradin restores 55 Health per second when he has not taken damage for 4 seconds. When below 40% Health, increased to 111 Health per second.",
-      "image": "muradin_second_wind.png",
+      "description": "Muradin restores 55 Health per second when he has not taken damage for 4 seconds. When below 40% Health, increased to 111 Health per second.",
+      "image": "muradin_secondwind.png",
       "abilityChanged": false
     }
   },
@@ -143,10 +143,10 @@
       "talentChanged": false
     },
     {
-      "name": "Thunder Strike",
-      "description": "Thunder Clap deals 300% damage if only one target is hit.Passive: Increase the duration of Dwarf Toss's Armor by 2 seconds.",
-      "image": "muradin_thunderclap.png",
-      "talentChanged": false
+      "name": "Dwarf Survival Tactics",
+      "description": "{highlight}Increase dwarf toss armor duration by 2 seconds. Decrease Second Wind activation time to 1.5 seconds.{/highlight}",
+      "image": "muradin_dwarftoss.png",
+      "talentChanged": true
     }
   ],
   "16": [
@@ -157,46 +157,48 @@
       "talentChanged": false
     },
     {
-      "name": "Imposing Presence",
-      "description": "Activate to reduce the Attack Speed by 50% and Movement Speed by 20% of nearby Heroes and Summons for 2.5 seconds.Passive: Heroes and Summons that attack your Hero have their Attack Speed Slowed by 20% for 2.5 seconds.",
-      "image": "talent_imposingpresence.png",
-      "talentChanged": false,
-      "cooldown": "20s"
-    },
-    {
       "name": "Stoneform",
       "description": "Activate to heal Muradin for 30% of his maximum Health over 10 seconds. Second Wind is disabled during this time.",
       "image": "muradin_secondwind.png",
       "talentChanged": false,
       "cooldown": "60s"
+    },
+    {
+      "name": "Empowered Storm Bolt",
+      "description": "{highlight}Activate to empower the next Storm Bolt making it stuns and damage enemies on a small area around the target and at the maximum range.{/highlight}",
+      "image": "muradin_stormbolt.png",
+      "talentChanged": true,
+      "cooldown": "60s",
+      "radius": "3.0"
     }
   ],
   "20": [
     {
       "name": "Unstoppable Force",
-      "description": "While active, Avatar grants 20 Armor and causes Muradin's Basic Attacks to reduce the cooldowns of Thunder Clap and Dwarf Toss by 0.75 seconds.",
+      "description": "While active, Avatar grants 20 Armor and causes Muradin's Basic Attacks to reduce the cooldowns of Thunder Clap by 0.75 seconds {highlight} and reduce the duration of Stuns, Slows, and Roots against Muradin by 50%{/highlight}",
       "image": "muradin_avatar.png",
-      "talentChanged": false
+      "talentChanged": true
     },
     {
       "name": "Grand Slam",
       "description": "Haymaker gains a 2nd charge and its damage is increased by 25%. If a Hero dies within 3 seconds of being hit by Haymaker, instantly gain 1 charge.",
       "image": "muradin_haymaker.png",
-      "talentChanged": false
+      "talentChanged": true,
+      "passives": [
+        "{highlight}Casting Haymaker reset Dwarf Toss cooldown{/highlight}"
+      ]
     },
     {
-      "name": "Hardened Shield",
-      "description": "Activate to gain 75 Armor for 4 seconds, taking 75% less damage.",
-      "image": "talent_hardenedshield.png",
-      "talentChanged": false,
-      "cooldown": "60s"
+      "name": "Thunder Strike",
+      "description": "{highlight}Activate to empower the next Thunderclap. Muradin will cast thunderclap three times under a period of 1.25 seconds increasing the thunderclap size by 50% and damage by 75% each time it's cast.{/highlight}",
+      "image": "muradin_thunderclap.png",
+      "talentChanged": true
     },
     {
-      "name": "Rewind",
-      "description": "Activate to reset the cooldowns of your Basic Abilities.",
-      "image": "talent_rewind.png",
-      "talentChanged": false,
-      "cooldown": "60s"
+      "name": "It's Hammer Time",
+      "description": "{highlight}Storm Bolt now pierces all targets. Hitting an enemy with Storm Bolt increases Muradin attack speed by 40% for 4 seconds{/highlight}",
+      "image": "muradin_stormbolt.png",
+      "talentChanged": true
     }
   ]
 }

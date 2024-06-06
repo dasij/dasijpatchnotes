@@ -173,8 +173,9 @@
       "talentChanged": true
     },
     {
-      "name": "Primal Intimidation",
-      "description": "{highlight}If Misha is Stunned or rooted when Mend Pet is used, Misha will be cleansed for 0.5 seconds  and will receive an extra full healing from Mend Pet{/highlight}",
+      "name": "Ambush",
+      "description": "{highlight}Entering bushes grants Rexxar or his pets invisibility for 3 seconds.{/highlight}",
+      "cooldown": "5s individually",
       "image": "storm_ui_icon_rexxar_mendpet.png",
       "talentChanged": true
     },
