@@ -7,7 +7,20 @@
     {
       "id": 1,
       "title": "Talent Rework",
-      "general": [],
+      "general": [
+        {
+          "change_id": "guldan_21",
+          "change": "Drain life (W)",
+          "texts": [
+            {
+              "text": "Increase cast range by 25%"
+            }
+          ],
+          "developerCommentary": "Gul'dan drain life currently has a problem..depending on how you build Gul'dan drain life becomes your priority skill by far or the useless one and with the other changes i propose on the drain life aspect one thing is prevalent..Without the extra cast range there's almost no incentive to use it.",
+          "likes": 0,
+          "likedBy": {}
+        }
+      ],
       "developerCommentary": "I like Gul'dan's gameplay and how he has developed in various aspects, but just because I like something doesn't mean it's solid. Currently, he faces two serious problems: one where one of his ultimates is basically losing a talent by picking it, and the other is that his talents have been molded into a funnel shape. What I mean is that there is little room for variability in Gul'dan's talents, especially if you choose to go for the drain life build. What I initially thought could be something simple, I realized how difficult it is to change his talents without altering his entire structure and completely changing how Gul'dan should choose his talents, since the talents themselves are not necessarily bad or uncreative and with that i will probally kill some builds and i will instead make it a more all-rounded mage to preserve something i really like on Heroes of the Storm talent tree system and that's the possibility of mixing builds.",
       "sections": [
         {
@@ -18,22 +31,25 @@
               "name": "Chaotic Energy",
               "texts": [
                 {
-                  "text": "Changed functionality: Increase the cast range of drain life by 25%, the size of fel flames by 10% "
+                  "text": "Changed functionality: Drain life reduces the target self-heal and regeneration effects by 75% while it's active.",
+                  "subtexts": [
+                    "For complete context, it won't reduce healing from other heroes. For example Dehaka essence or adaptation healing will be cut but receiving healing from a Healer will work normally."
+                  ]
                 }
               ],
-              "developerCommentary": "I am not a big fan of reducing Gul'dan skills cost but rather give him more talents on the complete build that could sustain it's skill and i also like the concept of increasing the drain life range and fel flames size",
+              "developerCommentary": "I am not a big fan of reducing Gul'dan skills cost but rather give him more talents on the complete build that could sustain it's skill so instead in changing it for a situational talent.",
               "likes": 0,
               "likedBy": {}
             },
             {
               "change_id": "guldan_2",
-              "name": "New talent:Fel Leech",
+              "name": "Pursuit of flame",
               "texts": [
                 {
-                  "text": "Changed functionality: Hitting Corruption affected targets with fel flame restores Gul'dan life by 22.5 this bonus is increased to 90 on heroes"
+                  "text": "Additional functionality: Hitting Corruption affected targets with fel flame restores Gul'dan life by 22.5 this bonus is increased to 90 on heroes"
                 }
               ],
-              "developerCommentary": "Corruption is a high cost skill that Gul'dan players should take a little more care to use BUT i wanted to increase interactions between corruption and the rest of the Kit",
+              "developerCommentary": "Corruption is a high cost skill that Gul'dan players should take a little more care to use BUT i wanted to increase interactions between corruption and the rest of the Kit. Also i wanted to provide some 'more' to the pursuit of flame as it's not very popular for being a little dull",
               "likes": 0,
               "likedBy": {}
             },
@@ -62,18 +78,6 @@
                 }
               ],
               "developerCommentary": "With how i want to bring the level one talents there's not much space for Echoed Corruption here",
-              "likes": 0,
-              "likedBy": {}
-            },
-            {
-              "change_id": "guldan_5",
-              "name": "Pursuit of flame",
-              "texts": [
-                {
-                  "text": "Removed"
-                }
-              ],
-              "developerCommentary": "With the changes on chaotic energy it's not necessary anymore",
               "likes": 0,
               "likedBy": {}
             }
@@ -172,7 +176,7 @@
               "name": "Rain of destruction",
               "texts": [
                 {
-                  "text": "Rain of destruction will now start at a 3.0 radius and will be gradually increasing it up to 9 on the 5 second mark.",
+                  "text": "Rain of destruction will now start at a 3.0 radius and will be gradually increasing it up to 9 on the 5 second mark. Has 50% reduced damage against structures now",
                   "subtexts": [
                     "This won't change the meteor spawn rate it will just concentrate the damage at the beginning at a smaller area.",
                     "Muradin thunderclap has 3.0 radius."
@@ -196,7 +200,8 @@
                   "text": "Changed functionality: Activate to consume a enemy or allied hero body to absorb their maximum health points, the extra health granted will decay over 15 seconds",
                   "subtexts": [
                     "This will consume their maximum health points after death. So if you guldan has 3000hp and kill a maximum souls Diablo that had 8k life by losing his souls lets say he has 6k life now then you will be granted 6k health points. ",
-                    "Cooldown: 60 seconds"
+                    "Cooldown: 60 seconds",
+                    "1 second cast time"
                   ]
                 }
               ],
@@ -209,7 +214,7 @@
               "name": "Harvest life",
               "texts": [
                 {
-                  "text": "Moved from to level 4"
+                  "text": "Moved to level 4"
                 }
               ],
               "developerCommentary": "You alredy saw my deeds and also, i dislike healthstone and harvest life on the same tier as they achieve the same goal with the only difference that drain life was gatekeeped by picking other talents",
@@ -230,6 +235,9 @@
                   "subtexts": [
                     "7.0 range | Same as Malfurion 20 astral Communion"
                   ]
+                },
+                {
+                  "text": "Passive: Enemies that take full Drain life take additional 8% damage on the end"
                 }
               ],
               "developerCommentary": "Inspired by Fiddlesticks ultimate i wanted to create some way to make a ultra power move with drain life and make the Chupacabra build a little different.",
@@ -247,23 +255,49 @@
               "developerCommentary": "You alredy saw my deeds but i always felt that was a little strange a talent that had little appeal on gameplay variability compared to the other talents appear on level 16. Rampant Hellfire requires consistent gameplay and Ruinous Affliction timed Corruptions but Darkness Within just require damaging to provide damage FOR THAT TIER i kinda dislike the bladness.",
               "likes": 0,
               "likedBy": {}
-            }
-          ]
-        },
-        {
-          "change_id": "guldan_17",
-          "name": "Level 20",
-          "changes": [
+            },
             {
-              "change_id": "guldan_",
+              "change_id": "guldan_19",
               "name": "Echoed corruption",
               "texts": [
                 {
                   "text": "Moved from level 1"
+                }
+              ],
+              "developerCommentary": "This is a strong level 16 contender and with the new level 20 talent it becomes more willing to be picked.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "guldan_20",
+              "name": "Ruinous Affliction",
+              "texts": [
+                {
+                  "text": "Moved to level 20"
+                }
+              ],
+              "developerCommentary": "We are adding a little buff to him and pushing echoed corruption to level 16 to better balance things",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 20",
+          "changes": [
+            {
+              "change_id": "guldan_18",
+              "name": "Ruinous Affliction",
+              "texts": [
+                {
+                  "text": "Moved from level 16"
                 },
                 {
-                  "text": "Changed functionality: After the third strike, Corruption strikes 3 times in the opposite direction, each time a enemy hero is hit by he is marked by Gul'dan envy, stealing all healing received by 40% for 6 seconds.",
-                  "subtexts": ["Receiving extra stacks resets the duration"]
+                  "text": "Additional functionality: Enemy heroes hit by corruption are marked by Gul'dan envy, stealing all healing received by 40% for 6 seconds.",
+                  "subtexts": [
+                    "Receiving extra stacks resets the duration",
+                    " This is not reduced healing effect is literally healing stealing"
+                  ]
                 }
               ],
               "developerCommentary": "I like this talent but with how i wanted to rework it there wasn't much space for it BUT i also wanted something that would make Gul'dan steal healing so WE GOT AN OPPORTUNITY",

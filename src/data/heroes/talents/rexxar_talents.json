@@ -4,7 +4,7 @@
     "basic": [
       {
         "name": "Spirit Swoop",
-        "description": "Deal 141 damage to enemies in a line. {highlight}Spirit stays at the end of the line for 4 seconds, providing vision. Reactivate to move Spirit. If targeting an enemy Hero, Spirit divebombs them, dealing 120 damage and slowing by 50% (decays over 3 seconds), then returns to Rexxar.{/highlight}",
+        "description": "Deal 141 damage to enemies in a line. {highlight}Spirit stays at the end of the skill for 2 seconds, providing a big area vision upon reaching it's end. Spirit will automatically divebombs the closest Hero on the end of duration, dealing 120 damage and slowing by 50% (decays over 3 seconds), then returns to Rexxar.{/highlight}",
         "manaCost": "40 Mana",
         "cooldown": "8s",
         "image": "storm_ui_icon_rexxar_spiritswoop.png",
@@ -36,11 +36,10 @@
     ],
     "heroic": [
       {
-        "name": "Stampede",
-        "description": "{highlight}Channel to call down hordes of rampaging thunder lizards that explode around Rexxar's enemies for 3 seconds. Each explosion deals 120 damage.{/highlight}",
-        "manaCost": "100 Mana",
-        "cooldown": "80s",
-        "image": "storm_ui_icon_rexxar_stampede.webp",
+        "name": "Animal companions",
+        "description": "{highlight}Rexxar calls Huffer his boar companion to aid him in battle. Huffer will have 1200 HP and 5 attack range and will be controlled by Focus, Huffer!, a skill command that works similarly to Misha, Focus!. After engaging in combat with heroes for atleast 5 seconds Huffer will have increased 40% attack speed and 25% movement speed. This bonus is lost if Huffer doesn't hit heroes for 3 seconds.{/highlight}",
+        "image": "storm_ui_icon_rexxar_heremisha.png",
+        "passives": ["Increase Rexxar companions leash range by 30%."],
         "abilityChanged": true
       },
       {
@@ -90,7 +89,7 @@
     },
     {
       "name": "Bird of Prey",
-      "description": "Increases Spirit Swoop's damage by 150% to Minions. {highlight}Spirit can now divebomb mercenaries and monsters, dealing 400% damage.{/highlight}",
+      "description": "Increases Spirit Swoop's damage by 150% to Minions. {highlight}Vision will stay for 3 seconds after Spirit comes back and if it hits no targets on the initial cast reduces it's cooldown by 4 seconds and refunds mana.{/highlight}",
       "image": "storm_ui_icon_rexxar_spiritswoop.png",
       "talentChanged": true
     },
@@ -99,13 +98,6 @@
       "description": "{highlight}When Misha stays close to Rexxar, both receive 25 armor and reduced crowd control effect durations by 35%.{/highlight}",
       "image": "storm_ui_icon_rexxar_heremishaactive.png",
       "talentChanged": true
-    },
-    {
-      "name": "Huffer",
-      "description": "{highlight}Summons Huffer to damage enemy heroes from distance for 12 seconds. On the last 5 seconds alive Huffer will have increased 40% attack speed and 25% movement speed{/highlight}",
-      "image": "storm_ui_icon_rexxar_heremisha.png",
-      "talentChanged": true,
-      "cooldown": "60s"
     }
   ],
   "7": [
@@ -131,9 +123,10 @@
 
   "10": [
     {
-      "name": "Stampede",
-      "description": "{highlight}Channel to call down hordes of rampaging thunder lizards that explode around Rexxar's enemies for 3 seconds. Each explosion deals 120 damage.{/highlight}",
-      "image": "storm_ui_icon_rexxar_stampede.webp",
+      "name": "Animal companions",
+      "description": "{highlight}Rexxar calls Huffer his boar companion to aid him in battle. Huffer will have 1200 HP and 5 attack range and will be controlled by Focus, Huffer!, a skill command that works similarly to Misha, Focus!. After engaging in combat with heroes for atleast 5 seconds Huffer will have increased 40% attack speed and 25% movement speed. This bonus is lost if Huffer doesn't hit heroes for 3 seconds.{/highlight}",
+      "image": "storm_ui_icon_rexxar_heremisha.png",
+      "passives": ["Increase Rexxar companions leash range by 30%."],
       "talentChanged": true
     },
     {
@@ -190,23 +183,27 @@
   ],
   "20": [
     {
-      "name": "STAAAAAAAAAAMPEDE",
-      "description": "{highlight}Rexxar's Stampede will have a second wave after three seconds, starting from Rexxar's initial cast position.{/highlight}",
-      "image": "storm_ui_icon_rexxar_stampede.webp",
+      "name": "Leokk",
+      "description": "{highlight}Summons Leokk to inspire nearby allied heroes, increasing their attack speed by 40% in an area. Leokk will have 1200 HP and will be automatically following Rexxar  close to his back. Rexxar can activate Leokk, Follow! To change the target Leokk will follow.{/highlight}",
+      "image": "storm_ui_icon_rexxar_heremisha.png",
+      "passives": ["Make Rexxar companions leash range global."],
       "talentChanged": true
     },
+
     {
       "name": "Kill Command",
       "description": "Unleash the Boars roots enemy Heroes for 1.5 seconds.",
       "image": "storm_ui_icon_rexxar_unleashtheboars.png",
       "talentChanged": false
     },
+
     {
-      "name": "Leokk",
-      "description": "{highlight}Summons Leokk to inspire nearby allied heroes for 12 seconds, increasing their attack speed by 40% in an area. Leokk will have 1200 HP.{/highlight}",
-      "image": "storm_ui_icon_rexxar_heremisha.png",
-      "talentChanged": true,
-      "cooldown": "60s"
+      "name": "Stampede",
+      "description": "{highlight}Channel to call down hordes of rampaging thunder lizards that explode around Rexxar's enemies for 3 seconds. Each explosion deals 120 damage.{/highlight}",
+      "image": "storm_ui_icon_rexxar_stampede.webp",
+      "manaCost": "100 Mana",
+      "cooldown": "80s",
+      "talentChanged": true
     },
     {
       "name": "Bond of Sacrifice",

@@ -16,7 +16,8 @@
               "text": "Additional functionality: Warchief pride -> Taunting up to 1.5 seconds after a takedown heals Garrosh 25% of his maximum health on the end.",
               "subtexts": [
                 "Cooldown 45 seconds",
-                "Enemies will have vision of Garrosh when he is taunting even if it's on cooldown."
+                "Enemies will have vision of Garrosh when he is taunting even if it's on cooldown.",
+                "This is the game taunt button which show mastery button not to be confused with warlord's challenge"
               ]
             }
           ],
@@ -117,7 +118,7 @@
                   "text": "Additional functionality: Not hitting Heroes on the Groundbreaker Outer Radius reduces the cooldown by 2 seconds."
                 }
               ],
-              "developerCommentary": "I want to make throwing non-heroic units something viable rather than a mistake",
+              "developerCommentary": "This could be considered strong as Intimidation is a niche talent BUT i want you to propositally miss the outer radius sometimes just for attack speed reduction.",
               "likes": 0,
               "likedBy": {}
             },
@@ -126,10 +127,10 @@
               "name": "Lok-tar ogar!",
               "texts": [
                 {
-                  "text": "Changed functionality: Into the Fray's target throw target stuns enemies near the impact area for 0.25 seconds, if the target is a non-heroic unit reduces the cooldown by 20 seconds."
+                  "text": "Changed functionality: Into the Fray's target throw target stuns enemies near the impact area for 0.25 seconds, if the target is a non-heroic unit reduces the cooldown by 30 seconds."
                 }
               ],
-              "developerCommentary": "I want to make throwing non-heroic units something viable rather than a mistake",
+              "developerCommentary": "I want to bring a utility for throwing minions instead of only a mistake.",
               "likes": 0,
               "likedBy": {}
             }

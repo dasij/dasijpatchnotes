@@ -54,13 +54,15 @@
   "1": [
     {
       "name": "Chaotic Energy",
-      "description": "{highlight}Increase the cast range of drain life by 25%, the size of fel flames by 10%{/highlight}",
+      "description": "{highlight}Drain life reduces the target self-heal and regeneration effects by 75% while it's active.{/highlight}",
       "image": "guldan_healthfunnel.png",
       "talentChanged": true
     },
     {
-      "name": "Fel Leech",
+      "name": "Rampant Hellfire",
       "description": "{highlight}Hitting Corruption affected targets with fel flame restores Gul'dan life by 22.5 this bonus is increased to 90 on heroes{/highlight}",
+      "quest": "Hit 30 enemy Heroes with Fel Flame.",
+      "rewards": ["Fel Flame's radius is increased by 10%."],
       "image": "guldan_felflame.png",
       "talentChanged": true
     },
@@ -155,6 +157,9 @@
     {
       "name": "Drain Hope",
       "description": "{highlight}Activate to channel for 1.5 second, and then instantly teleport and cast drain life on all enemies in range.{/highlight}",
+      "passives": [
+        "Enemies that take full Drain life take additional 8% damage on the end"
+      ],
       "cooldown": "60s",
       "image": "guldan_healthfunnel.png",
       "talentChanged": true
@@ -166,10 +171,10 @@
       "talentChanged": false
     },
     {
-      "name": "Ruinous Affliction",
-      "description": "Corruption deals an additional 78 damage on impact. If the enemy is hit by all three strikes, the third strike deals 268 damage.",
+      "name": "Echoed Corruption",
+      "description": " After the third strike, Corruption strikes 3 times in the opposite direction. ",
       "image": "guldan_handofguldan.png",
-      "talentChanged": false
+      "talentChanged": true
     }
   ],
   "20": [
@@ -193,8 +198,8 @@
       "cooldown": "60s"
     },
     {
-      "name": "Echoed Corruption",
-      "description": " After the third strike, Corruption strikes 3 times in the opposite direction. {highlight}Each time an enemy hero is hit, they are marked by Gul'dan's envy, stealing all healing received by 40% for 6 seconds. Receiving extra stacks resets the duration.{/highlight}",
+      "name": "Ruinous Affliction",
+      "description": "Corruption deals an additional 78 damage on impact. If the enemy is hit by all three strikes, the third strike deals 268 damage.{highlight}Each time an enemy hero is hit, they are marked by Gul'dan's envy, stealing all healing received by 40% for 6 seconds. Receiving extra stacks resets the duration.{/highlight}",
       "image": "guldan_handofguldan.png",
       "talentChanged": true
     }

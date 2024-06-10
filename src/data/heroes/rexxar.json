@@ -16,10 +16,14 @@
               "text": "No longer slows enemies."
             },
             {
-              "text": "Additional functionality: Spirit stays at the end of the skill for 4 seconds, providing vision. Reactivate to move Spirit. If targeting an enemy Hero, Spirit divebombs them, dealing 120 damage and slowing by 50% (decays over 3 seconds), then returns to Rexxar."
+              "text": "Additional functionality: Spirit stays at the end of the skill for 2 seconds, providing a big area vision upon reaching it's end. Spirit will automatically divebombs the closest Hero on the end of duration, dealing 120 damage and slowing by 50% (decays over 3 seconds), then returns to Rexxar."
             },
             {
-              "text": "Spirit Swoop cooldown only starts when it returns to Rexxar."
+              "subtexts": [
+                "Spirit Swoop cooldown only starts when it returns to Rexxar.",
+                "The vision radius is 10 | Timerwalker's Pursuit Chromie vision is 10",
+                "Will only divebomb enemies on vision radius, if there's no enemy on vision radius won't divebomb anyone and will just return to Rexxar"
+              ]
             }
           ],
           "developerCommentary": "Spirit Swoop is currently a simple skillshot that slows and damages enemies in a straight line, underutilizing the concept of Spirit, a bird dedicated to scouting. Inspired by Beastmaster from Dota 2, I wanted to give Spirit a better role while increasing Rexxar's decision-making without creating a new active ability.",
@@ -123,13 +127,16 @@
               "name": "Bird of Prey",
               "texts": [
                 {
-                  "text": "Additional functionality: Spirit can now divebomb mercenaries and monsters, dealing 400% damage."
+                  "text": "Additional functionality: Spirit Swoop vision will stay for 3 seconds after Spirit comes back."
+                },
+                {
+                  "text": "Additional functionality: If Spirit Swoop hits no targets on the initial cast reduces it's cooldown by 4 seconds and refunds mana."
                 },
                 {
                   "text": "Moved from level 1."
                 }
               ],
-              "developerCommentary": "With the changes to Spirit, this talent is weaker if you wish to use its vision. As a level 4 talent competing with survivability talents, it could be a risk to take clear wave without any problem on buffing it. I removed the talent on level 1 for misha damaging mercenaries camps because that talent incentivize doing camps but i added mercenary damage on this talent with the sake of using it more to kill lane camps than doing camps.",
+              "developerCommentary": "With the changes to Spirit, this talent is weaker if you wish to use its vision. As a level 4 talent competing with survivability talents bringing the 'flare' survavibility could make it a good choice. ",
               "likes": 0,
               "likedBy": {}
             },
@@ -163,21 +170,7 @@
               "likes": 0,
               "likedBy": {}
             },
-            {
-              "change_id": "rexxar_11",
-              "name": "New: Huffer",
-              "texts": [
-                {
-                  "text": "Summons Huffer to damage enemy heroes for 12 seconds. Huffer will have 1200 HP and 5 attack range and will be controlled by Focus, Huffer!, a skill command that works similarly to Misha, Focus!. On the last 5 seconds alive Huffer will have increased 40% attack speed and 25% movement speed."
-                },
-                {
-                  "text": "60 seconds cooldown."
-                }
-              ],
-              "developerCommentary": "Further exploring the Rexxar Beastmaster gameplay and besides Summoners are a great problem on Moba games so for this reason im capping it's time and not letting it play automatic to justify.",
-              "likes": 0,
-              "likedBy": {}
-            },
+
             {
               "change_id": "rexxar_12",
               "name": "Hunter Gatherer, Grizzled Fortitude",
@@ -252,17 +245,20 @@
               "likedBy": {}
             },
             {
-              "change_id": "rexxar_17",
-              "name": "New: Stampede",
+              "change_id": "rexxar_11",
+              "name": "New: Animal companions",
               "texts": [
                 {
-                  "text": "Channel to call down hordes of rampaging thunder lizards that explode around Rexxar's enemies for 3 seconds. The lizards appear in parallel lines on either side of Rexxar, each explosion dealing 120 damage."
+                  "text": "Rexxar calls Huffer his boar companion to aid him in battle. Huffer will have 1200 HP and 5 attack range and will be controlled by Focus, Huffer!, a skill command that works similarly to Misha, Focus!. After engaging in combat with heroes for atleast 5 seconds Huffer will have increased 40% attack speed and 25% movement speed. This bonus is lost if Huffer doesn't hit heroes for 3 seconds.",
+                  "subtexts": [
+                    "Huffer will work similar as Misha, giving exp to the enemy team on kill and having the same respawn time."
+                  ]
                 },
                 {
-                  "text": "The stampede area will cover two parallel lines on Rexxar's sides."
+                  "text": "Passive: Increase Rexxar companions leash range by 30%."
                 }
               ],
-              "developerCommentary": "Stampede is a Rexxar classic from the Warcraft 3 era, but it's a challenging ultimate to implement because it works similarly to March of the Murlocs. Changing the area Stampede covers was the best solution to give it a distinct feel while avoiding the randomness similar to Gul'dan's Rain of Chaos.",
+              "developerCommentary": "Further exploring the Rexxar Beastmaster gameplay and besides Summoners are a great problem on Moba games so for this reason im not letting it play automatic to justify.",
               "likes": 0,
               "likedBy": {}
             }
@@ -341,10 +337,13 @@
               "name": "New: Leokk",
               "texts": [
                 {
-                  "text": "Summons Leokk to inspire nearby allied heroes for 12 seconds, increasing their attack speed by 40% in an area. Leokk will have 1200 HP and will be controlled by Focus, Leokk!, a skill command that works similarly to Misha, Focus!."
+                  "text": "Summons Leokk to inspire nearby allied heroes, increasing their attack speed by 40% in an area. Leokk will have 1200 HP and will be automatically following Rexxar  close to his back. Rexxar can activate Leokk, Follow! To change the target Leokk will follow.",
+                  "subtexts": [
+                    "Leokk will work similar as Misha, giving exp to the enemy team on kill and having the same respawn time."
+                  ]
                 },
                 {
-                  "text": "60 seconds cooldown."
+                  "text": "Passive: Removes animal companions leash max range."
                 }
               ],
               "developerCommentary": "A common complaint, which I agree with, is that Rexxar could be more challenging by utilizing the Beastmaster fantasy. I want to bring that with Leokk.",
@@ -352,14 +351,17 @@
               "likedBy": {}
             },
             {
-              "change_id": "rexxar_23",
-              "name": "New: STAAAAAAAAAAAAAAAMPEDE",
+              "change_id": "rexxar_17",
+              "name": "New: Stampede",
               "texts": [
                 {
-                  "text": "Rexxar's Stampede will have a second wave after three seconds, starting from Rexxar's initial cast position."
+                  "text": "Channel to call down hordes of rampaging thunder lizards that explode around Rexxar's enemies for 3 seconds. The lizards appear in parallel lines on either side of Rexxar, each explosion dealing 120 damage."
+                },
+                {
+                  "text": "The stampede area will cover two parallel lines on Rexxar's sides."
                 }
               ],
-              "developerCommentary": "A simple upgrade that will be effective as a level 20 talent.",
+              "developerCommentary": "Stampede is a Rexxar classic from the Warcraft 3 era, but it's a challenging ultimate to implement because it works similarly to March of the Murlocs. Changing the area Stampede covers was the best solution to give it a distinct feel while avoiding the randomness similar to Gul'dan's Rain of Chaos.",
               "likes": 0,
               "likedBy": {}
             },

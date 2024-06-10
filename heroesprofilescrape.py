@@ -317,5 +317,5 @@ def scrape_hero_talents(hero_name):
         json.dump(hero_json_data, file, indent=2)
         
 # Example usage
-hero_name = "guldan"  # This can be dynamically changed
+hero_name = "thrall"  # This can be dynamically changed
 scrape_hero_talents(hero_name)

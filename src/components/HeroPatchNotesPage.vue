@@ -204,11 +204,15 @@
           <div class="talent-calculator-container"
             :style="{ backgroundImage: `url(${require('@/assets/talents/talents_bg.webp')})` }">
             <div class="flex flex-col space-y-4">
+              <div class="flex justify-center mb-4">
+                <button @click="resetTalents" class="reset-button">Reset selection</button>
+              </div>
               <div v-for="level in [1, 4, 7, 10, 13, 16, 20]" :key="level" class="flex items-center">
                 <h3 class="text-xl font-semibold mr-4 w-20" style="color: #9900ff;"> Level {{ level }}</h3>
                 <div class="flex ml-12">
                   <div v-for="(talent, index) in talents[level]" :key="talent.name" class="talent-column"
-                    :class="{ 'ml-8': index > 0 }">
+                    :class="{ 'ml-8': index > 0, 'selected': isSelected(level, talent), 'not-selected': !isSelected(level, talent) && isAnySelected(level) }"
+                    @click="toggleTalentSelection(level, talent)">
                     <div class="talent-image-container" :class="{ 'talent-changed': talent.talentChanged }"
                       @mouseover="showTooltip(talent)" @mouseleave="hideTooltip">
                       <img :src="require(`@/assets/talents/${heroName}/${talent.image}`)" :alt="talent.name"
@@ -283,6 +287,15 @@ export default {
       isLoading: true,
       isUserLoggedIn: false,
       likesData: {},
+      selectedTalents: {
+        1: null,
+        4: null,
+        7: null,
+        10: null,
+        13: null,
+        16: null,
+        20: null,
+      },
     };
   },
   computed: {
@@ -465,6 +478,30 @@ export default {
       auth.onAuthStateChanged(user => {
         this.isUserLoggedIn = !!user;
       });
+    },
+    toggleTalentSelection(level, talent) {
+      if (this.selectedTalents[level] === talent) {
+        this.selectedTalents[level] = null;
+      } else {
+        this.selectedTalents[level] = talent;
+      }
+    },
+    isSelected(level, talent) {
+      return this.selectedTalents[level] === talent;
+    },
+    isAnySelected(level) {
+      return this.selectedTalents[level] !== null;
+    },
+    resetTalents() {
+      this.selectedTalents = {
+        1: null,
+        4: null,
+        7: null,
+        10: null,
+        13: null,
+        16: null,
+        20: null,
+      };
     }
   },
   mounted() {
@@ -473,6 +510,8 @@ export default {
     this.loadChanges();
   },
 };
+
+
 </script>
 
 <style scoped>
@@ -699,6 +738,32 @@ button {
   margin-bottom: 10px;
 }
 
+.reset-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Blizzard", sans-serif;
+  text-shadow: 1px 1px 2px black;
+}
+
+.reset-button:hover {
+  text-decoration: underline;
+}
+
+.talent-column .talent-image-container {
+  transition: filter 0.3s ease;
+}
+
+.talent-column.selected .talent-image-container {
+  filter: brightness(1);
+}
+
+.talent-column.not-selected .talent-image-container {
+  filter: brightness(0.3);
+}
 
 @import '@/assets/css/common.css';
 </style>
