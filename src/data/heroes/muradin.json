@@ -27,7 +27,7 @@
             },
             {
               "change_id": "muradin_2",
-              "name": "Dwarf Survival Tactics",
+              "name": "NEW: Dwarf Survival Tactics",
               "texts": [
                 {
                   "text": "Increase dwarf toss armor duration by 2 seconds"
@@ -47,7 +47,7 @@
           "changes": [
             {
               "change_id": "muradin_3",
-              "name": "Empowered Storm Bolt",
+              "name": "NEW: Empowered Storm Bolt",
               "texts": [
                 {
                   "text": "Activate to empower the next Storm Bolt making it stuns and damage enemies on a small area around the target and at the maximum range",
@@ -86,7 +86,7 @@
                   "text": "Won't reduce dwarf toss cooldown anymore"
                 },
                 {
-                  "text": "While Avatar is active reduce the duration of Stuns, Slows, and Roots against Muradin by 50%"
+                  "text": "While Avatar is active reduce the duration of Stuns, Slows, and Roots against Muradin by 50%. Dwarf Toss grants unstoppable while leaping"
                 }
               ],
               "developerCommentary": "For making the new Flying Dwarf talent",
@@ -98,7 +98,7 @@
               "name": "Grand Slam",
               "texts": [
                 {
-                  "text": "Casting Haymaker reset Dwarf Toss cooldown"
+                  "text": "Additional functionality: Casting Haymaker reset Dwarf Toss cooldown"
                 }
               ],
               "developerCommentary": "I find extremely funny to punch jump. No more reasons",
@@ -115,7 +115,8 @@
                     "The first thunderclap will be normal",
                     "The second thunderclap will have extra 50% size and 75% more damage",
                     "The third thunderclap will have extra 100% size and 150% more damage ",
-                    "Final radius is 6.0 | Blaze combustion is 6.5"
+                    "Final radius is 6.0 | Blaze combustion is 6.5",
+                    "It interacts with all the thunder clap talents"
                   ]
                 },
                 {

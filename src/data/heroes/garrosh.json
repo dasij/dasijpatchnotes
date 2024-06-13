@@ -127,7 +127,7 @@
               "name": "Lok-tar ogar!",
               "texts": [
                 {
-                  "text": "Changed functionality: Into the Fray's target throw target stuns enemies near the impact area for 0.25 seconds, if the target is a non-heroic unit reduces the cooldown by 30 seconds."
+                  "text": "Changed functionality: Into the Fray's target throw target stuns enemies near the impact area for 0.25 seconds, if the target throw is a non-heroic unit reduces the cooldown by 30 seconds."
                 }
               ],
               "developerCommentary": "I want to bring a utility for throwing minions instead of only a mistake.",
@@ -144,7 +144,7 @@
               "name": "Double Up renamed to Don't let them run",
               "texts": [
                 {
-                  "text": "Changed functionality: Increase Garrosh movement speed by %1 every 4% missing health capping at 15%. This Talent only take effect if there's an visible enemy hero close to Garrosh.",
+                  "text": "Changed functionality: Increase Garrosh movement speed by 1% every 4% missing health capping at 15%. This Talent only take effect if there's an visible enemy hero close to Garrosh.",
                   "subtexts": ["8 radius | Blaze combustion has 6.5 radius"]
                 }
               ],
@@ -199,7 +199,8 @@
                 {
                   "text": "After Garrosh uses Groundbreaker, three additional waves are created sequentially from the edge of the original area. Each wave deals 81 damage and stuns enemies for 0.5 seconds.",
                   "subtexts": [
-                    "Additional waves are affected by groundbreaking tactics size increase but won't pull the enemies."
+                    "Additional waves are affected by groundbreaking tactics size increase but WILL pull the enemies.",
+                    "Imagine something  close to the Sonya Seismic Slam"
                   ]
                 }
               ],

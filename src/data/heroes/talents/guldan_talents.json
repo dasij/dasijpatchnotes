@@ -124,7 +124,7 @@
     },
     {
       "name": "Rain of Destruction",
-      "description": "After 1.5 seconds, summon a rain of meteors in an {highlight}small area{/highlight} for 7 seconds{highlight}, that area will expand within it's duration{/highlight}. Each meteor deals 165 damage in a small area.",
+      "description": "After 1.5 seconds, summon a rain of meteors in an {highlight}small area{/highlight} for 7 seconds{highlight}, that area will expand within it's duration{/highlight}. Each meteor deals 165 damage in a small area.{highlight} Reduced 50% damage on structures {/highlight}",
       "image": "guldan_rainoffire.png",
       "talentChanged": true,
       "manaCost": "80 Mana",
@@ -158,7 +158,7 @@
       "name": "Drain Hope",
       "description": "{highlight}Activate to channel for 1.5 second, and then instantly teleport and cast drain life on all enemies in range.{/highlight}",
       "passives": [
-        "Enemies that take full Drain life take additional 8% damage on the end"
+        "{highlight}Enemies that take full Drain life take additional 8% maximum health damage on the end{/highlight}"
       ],
       "cooldown": "60s",
       "image": "guldan_healthfunnel.png",

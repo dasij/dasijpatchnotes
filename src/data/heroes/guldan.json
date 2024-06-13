@@ -58,10 +58,10 @@
               "name": "New talent: Consume life",
               "texts": [
                 {
-                  "text": "Changed functionality: Quest: Killing troops increase Gul'dan maximun health points by 0.3% up to 20%"
+                  "text": "Quest: Killing troops increase Gul'dan maximun health points by 0.3% up to 20%"
                 },
                 {
-                  "text": "Changed functionality: Reward: If Consume life is fully charged it can be activated while dead to immediately respawn at the Hall of Storms, but must be charged again."
+                  "text": "Reward: If Consume life is fully charged it can be activated while dead to immediately respawn at the Hall of Storms, but must be charged again."
                 }
               ],
               "developerCommentary": "I wanted to make something related to the Vanilla Dark Bargain effect but i disliked increasing respawn time the way it is..on counterpart the Malthael No One Can Stop Death gives a better control of it",
@@ -124,7 +124,7 @@
             },
             {
               "change_id": "guldan_9",
-              "name": "Improved life tap, consume souls",
+              "name": "Health funnel, Improved life tap, consume souls",
               "texts": [
                 {
                   "text": "Removed"
@@ -201,7 +201,8 @@
                   "subtexts": [
                     "This will consume their maximum health points after death. So if you guldan has 3000hp and kill a maximum souls Diablo that had 8k life by losing his souls lets say he has 6k life now then you will be granted 6k health points. ",
                     "Cooldown: 60 seconds",
-                    "1 second cast time"
+                    "1 second cast time",
+                    "This will literally consume de corpse so Auriel Ressurect can't be used on the consumed target"
                   ]
                 }
               ],
@@ -262,6 +263,9 @@
               "texts": [
                 {
                   "text": "Moved from level 1"
+                },
+                {
+                  "text": "Only reward..not a quest anymore"
                 }
               ],
               "developerCommentary": "This is a strong level 16 contender and with the new level 20 talent it becomes more willing to be picked.",

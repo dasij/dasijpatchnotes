@@ -261,10 +261,13 @@
               "name": "New talent:OverExtend",
               "texts": [
                 {
-                  "text": "After expiring Overkill does an extra hit reducing every enemy hero hit physical armor by 50 for 3 seconds."
+                  "text": "After expiring Overkill does an extra hit applying a decaying slow on every enemy hero of 75% for 2.5 seconds."
+                },
+                {
+                  "text": "Passive: Reduce minigun cooldown by 4 seconds."
                 }
               ],
-              "developerCommentary": "Something that i want to make is a talent that could make Overkill feel a little different somehow and that's a solution a liked. For better targetting melee targets without the need from the Stun and Gun new talent.",
+              "developerCommentary": "Something that i want to make is a talent that could make Overkill feel a little different somehow and that's a solution a liked. For better targetting melee targets without the need from the Stun and Gun new talent but on with a good synergy with it.",
               "likes": 0,
               "likedBy": {}
             }

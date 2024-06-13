@@ -4,7 +4,7 @@
       {
         "name": "Chain Lightning (Q)",
         "description": "Shock an enemy with lightning, dealing 162 damage. The lightning then bounces 3 times to nearby enemies, dealing 81 damage to each enemy hit.",
-        "image": "thrall_chain_lightning.png",
+        "image": "thrall_chainlightning.png",
         "abilityChanged": false,
         "manaCost": "40 Mana",
         "cooldown": "7s"
@@ -12,7 +12,7 @@
       {
         "name": "Feral Spirit (W)",
         "description": "Unleash a Feral Spirit that deals 153 damage to enemies in its path and Roots Heroes hit for 1 second. Each Hero hit increases the distance traveled by 25%.",
-        "image": "thrall_feral_spirit.png",
+        "image": "thrall_feralspirit.png",
         "abilityChanged": false,
         "manaCost": "40 Mana",
         "cooldown": "12s"
@@ -21,9 +21,13 @@
         "name": "Windfury (E)",
         "description": "Increase Thrall's Movement Speed by 30% for 4 seconds. His next 3 Basic Attacks occur 100% faster and generate stacks of Frostwolf Resilience.",
         "image": "thrall_windfury.png",
-        "abilityChanged": false,
+        "abilityChanged": true,
         "manaCost": "60 Mana",
-        "cooldown": "12s"
+        "cooldown": "12s",
+        "passives": [
+          "{highlight}Quest: Basic Attacks against Heroes while Windfury's Movement Speed bonus is active increase Attack Damage by 1{/highlight}",
+          "{highlight}Reward 30 hits: Grants Thrall Far Sight{/highlight}"
+        ]
       }
     ],
     "heroic": [
@@ -47,7 +51,7 @@
     "trait": {
       "name": "Frostwolf Resilience (T)",
       "description": " Dealing damage with Abilities grants 1 stack of Frostwolf Resilience. At 5 stacks, Thrall is instantly healed for 223 Health.",
-      "image": "thrall_frostwolf_resilience.png",
+      "image": "thrall_frostwolfresilience.png",
       "abilityChanged": false
     }
   },
@@ -73,16 +77,20 @@
   ],
   "4": [
     {
-      "name": "Feral Resilience",
-      "description": "Heroes damaged by Feral Spirit grant 4 stacks of Frostwolf Resilience and 2 stacks of Feral Resilience, granting 75 Physical Armor against the next incoming Hero Basic Attack.Stacks are consumed on the next cast of Feral Spirit.",
-      "image": "thrall_feralspirit.png",
-      "talentChanged": false
+      "name": "Frostwolf's Grace",
+      "description": "Frostwolf Resilience can be activated to instantly heal. This healing is increased by up to 100% based on Thrall's missing health.",
+      "image": "thrall_frostwolfresilience.png",
+      "talentChanged": true,
+      "cooldown": "15s"
     },
     {
       "name": "Frostwolf Pack",
       "description": "Quest: Hit 6 Heroes with Feral Spirit. Progress is lost on death and when Thrall fails to hit a Hero.Reward: Reduce the cooldown and Mana cost of Feral Spirit by 50%.",
       "image": "thrall_feralspirit_var1.png",
-      "talentChanged": false
+      "talentChanged": true,
+      "passives": [
+        "{highlight}Heroes hit by Feral Spirit grants 3 stacks of Frostwolf Resilience{/highlight}"
+      ]
     },
     {
       "name": "Mana Tide",
@@ -93,22 +101,25 @@
   ],
   "7": [
     {
-      "name": "Maelstrom Weapon",
-      "description": "Repeatable Quest: Basic Attacks against Heroes while Windfury's Movement Speed bonus is active increase Attack Damage by 1.Reward: After gaining 20 Attack Damage, increase the Movement Speed bonus of Windfury to 40%.Reward: After gaining 40 Attack Damage, Thrall permanently gains 15% increased Movement Speed.",
+      "name": "Grace of Air",
+      "description": "{highlight}Maelstrom basic attacks will be imbued with air granting twice many stacks of Frostwolf Resilience{/highlight}",
+      "passives": [
+        "{highlight} Increase Thrall movement speed by 10% {/highlight}"
+      ],
       "image": "thrall_windfury.png",
-      "talentChanged": false
+      "talentChanged": true
     },
     {
-      "name": "Ancestral Wrath",
-      "description": "Activate to consume 8 stacks of Ancestral Wrath, damaging a target enemy Hero for 15% of their maximum Health over 3 seconds, and healing Thrall for 150% of the damage dealt.Gain 1 stack of Ancestral Wrath every time Frostwolf Resilience activates.",
-      "image": "talent_bloodforblood.png",
-      "talentChanged": false
+      "name": "Grace of Lava",
+      "description": "{highlight}Maelstrom basic attacks will be imbued with lava dealing 6% maximum health damage over 3 seconds on each attack and Healing Thrall 150% of that damage dealt{/highlight}",
+      "image": "thrall_windfury.png",
+      "talentChanged": true
     },
     {
-      "name": "Follow Through",
-      "description": "After using an Ability, your next Basic Attack within 6 seconds deals 40% additional damage.",
-      "image": "talent_autoattack_damage.png",
-      "talentChanged": false
+      "name": "Grace of Lighting",
+      "description": "{highlight}Maelstrom basic attacks will now teleport to the target and reduce their armor by 8 on each hit{/highlight}",
+      "image": "thrall_windfury.png",
+      "talentChanged": true
     }
   ],
   "10": [
@@ -131,24 +142,22 @@
   ],
   "13": [
     {
-      "name": "Grace Of Air",
-      "description": "Windfury attacks grant twice as many stacks of Frostwolf Resilience.",
-      "image": "thrall_windfury.png",
-      "talentChanged": false
+      "name": "Spirit of Lightning",
+      "description": "{highlight}Chain Lightning can now bounce to allied heroes, dealing area damage around them and converting the damage dealt into a shield for the ally.{/highlight}",
+      "image": "thrall_chainlightning.png",
+      "talentChanged": true
     },
     {
-      "name": "Frostwolf's Grace",
-      "description": "Frostwolf Resilience can be activated to instantly heal. This healing is increased by up to 100% based on Thrall's missing health.",
+      "name": "Earth Spirit",
+      "description": "{highlight}Frostwolf resilience now grants one stack of block to Thrall and Allied heroes close for 6 seconds reducing the damage of the next basic attack received by 75%. Caps at 3 stacks{/highlight}",
       "image": "thrall_frostwolfresilience.png",
-      "talentChanged": false,
-      "cooldown": "15s"
+      "talentChanged": true
     },
     {
-      "name": "Spirit Shield",
-      "description": "Every 45 seconds, gain 50 Spell Armor against the next enemy Ability and subsequent Abilities for 4 seconds. Frostwolf Resilience reduces this cooldown by 10 seconds.Can be toggled to allow or prevent this talent from triggering automatically.",
-      "image": "talent_spellshield.png",
-      "talentChanged": false,
-      "cooldown": "45s"
+      "name": "Spirit of Air",
+      "description": "{highlight}Frostwolf Resilience cleanses slows and grants 20 magic resistence for 2 seconds{/highlight}",
+      "image": "thrall_frostwolfresilience.png",
+      "talentChanged": true
     }
   ],
   "16": [
@@ -166,17 +175,17 @@
     },
     {
       "name": "Alpha Wolf",
-      "description": "For 3 seconds after a Hero is hit by Feral Spirit, Thrall's Basic Attacks against them deal an additional 3% of the target's maximum Health as damage.Passive: Increase the duration of Feral Spirit's Root to 1.5 seconds.",
+      "description": "{highlight}Thrall now mounts an Alpha Wolf, the Alpha Wolf mount can't be dismounted by damage. Casting Spirit Wolf while riding Alpha Wolf empowers it dealing extra 10% maximum health damage to every one hit.{/highlight}",
       "image": "thrall_feralspirit.png",
-      "talentChanged": false
+      "talentChanged": true
     }
   ],
   "20": [
     {
       "name": "Worldbreaker",
-      "description": "Lower the cooldown of Sundering by 40 seconds. After Sundering impacts, it leaves behind an impassable rift, blocking unit movement for 3 seconds.",
+      "description": "{highlight}Sundering now travels the planet until hits the starting point leaving behind an impassable rift, blocking unit movement. After 2.5 seconds the rift starts to be destroyed.{/highlight}",
       "image": "thrall_sundering.png",
-      "talentChanged": false
+      "talentChanged": true
     },
     {
       "name": "Earthen Shields",
@@ -185,23 +194,16 @@
       "talentChanged": false
     },
     {
-      "name": "Elemental Momentum",
-      "description": "Basic Attacks reduce Thrall's Basic and Heroic Ability cooldowns by 0.25 seconds, tripled against Heroes.",
-      "image": "talent_autoattack_cooldown.png",
-      "talentChanged": false
+      "name": "ThunderFury",
+      "description": "{highlight}Windfury basic attacks casts a Chain of Lighting at the target.{/highlight}",
+      "image": "thrall_chainlightning.png",
+      "talentChanged": true
     },
     {
-      "name": "Nexus Blades",
-      "description": "Basic Attacks deal 20% more damage and Slow enemy Movement Speed by 20% for 1 second.",
-      "image": "talent_autoattack_slow.png",
-      "talentChanged": false
-    },
-    {
-      "name": "Wind Rush",
-      "description": "Activate to immediately teleport to a target location and gain Windfury.",
-      "image": "talent_boltofthestorm.png",
-      "talentChanged": false,
-      "cooldown": "80s"
+      "name": "Feral Violence",
+      "description": "{highlight}Feral Spirit will now travel 25% farther and will continually grow its way to end also increasing root duration up to 1.5 extra seconds{/highlight}",
+      "image": "thrall_feralspirit.png",
+      "talentChanged": true
     }
   ]
 }

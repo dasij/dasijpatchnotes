@@ -212,9 +212,9 @@
                 <div class="flex ml-12">
                   <div v-for="(talent, index) in talents[level]" :key="talent.name" class="talent-column"
                     :class="{ 'ml-8': index > 0, 'selected': isSelected(level, talent), 'not-selected': !isSelected(level, talent) && isAnySelected(level) }"
-                    @click="toggleTalentSelection(level, talent)">
-                    <div class="talent-image-container" :class="{ 'talent-changed': talent.talentChanged }"
-                      @mouseover="showTooltip(talent)" @mouseleave="hideTooltip">
+                    @click="toggleTalentSelection(level, talent)" @mouseenter="showTooltip(talent)"
+                    @mouseleave="hideTooltip">
+                    <div class="talent-image-container" :class="{ 'talent-changed': talent.talentChanged }">
                       <img :src="require(`@/assets/talents/${heroName}/${talent.image}`)" :alt="talent.name"
                         class="talent-image" />
                       <div v-if="tooltipTalent === talent"
@@ -248,6 +248,8 @@
                       </div>
                     </div>
                   </div>
+
+
                 </div>
               </div>
             </div>
@@ -757,12 +759,10 @@ button {
   transition: filter 0.3s ease;
 }
 
-.talent-column.selected .talent-image-container {
-  filter: brightness(1);
-}
+
 
 .talent-column.not-selected .talent-image-container {
-  filter: brightness(0.3);
+  filter: brightness(0.15);
 }
 
 @import '@/assets/css/common.css';

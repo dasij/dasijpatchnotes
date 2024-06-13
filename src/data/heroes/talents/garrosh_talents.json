@@ -116,7 +116,7 @@
     },
     {
       "name": "Lok-tar ogar!",
-      "description": "{highlight}Into the Fray stuns enemies near the impact for 0.25 seconds. If the target is a non-heroic unit, reduces cooldown by 20 seconds.{/highlight}",
+      "description": "{highlight}Into the Fray stuns enemies near the impact for 0.25 seconds. If the target throw is a non-heroic unit, reduces cooldown by 20 seconds.{/highlight}",
       "image": "garrosh_intothefray.png",
       "talentChanged": true
     }

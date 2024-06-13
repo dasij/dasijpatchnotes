@@ -175,7 +175,10 @@
   "20": [
     {
       "name": "Unstoppable Force",
-      "description": "While active, Avatar grants 20 Armor and causes Muradin's Basic Attacks to reduce the cooldowns of Thunder Clap by 0.75 seconds {highlight} and reduce the duration of Stuns, Slows, and Roots against Muradin by 50%{/highlight}",
+      "description": "While active, Avatar grants 20 Armor and causes Muradin's Basic Attacks to reduce the cooldowns of Thunder Clap by 0.75 seconds {highlight} and reduce the duration of Stuns, Slows, and Roots against Muradin by 50%. Dwarf Toss grants unstoppable while leaping{/highlight}",
+      "passive": [
+        "{highlight}Dwarf Toss grants unstoppable while leaping{/highlight}"
+      ],
       "image": "muradin_avatar.png",
       "talentChanged": true
     },
