@@ -1,0 +1,193 @@
+{
+  "abilities": {
+    "basic": [
+      {
+        "name": "Rock-It! Turret (Q)",
+        "description": "Create a turret that deals 36 damage. Lasts for 15 seconds.Turrets prioritize the nearest enemy Hero when first created.",
+        "image": "gazlowe_rockitturret.png",
+        "abilityChanged": false,
+        "manaCost": "4 Mana",
+        "cooldown": "1s"
+      },
+      {
+        "name": "Deth Lazor (W)",
+        "description": "After 0.65 seconds, deal 175 damage to enemies in a line. Heal for 25% of the damage dealt, increased to 75% against enemy Heroes.",
+        "image": "gazlowe_dethlazor.png",
+        "abilityChanged": false,
+        "cooldown": "8s"
+      },
+      {
+        "name": "Xplodium Charge (E)",
+        "description": "Place a bomb that deals 142 damage to enemies within the target area after 1.25 seconds.  Enemies hit are also Stunned for 1 second.",
+        "image": "gazlowe_explodiumcharge.png",
+        "abilityChanged": false,
+        "cooldown": "12s"
+      }
+    ],
+    "heroic": [
+      {
+        "name": "Robo-Goblin (R)",
+        "description": "Activate to become Unstoppable for 1.5 seconds. Passive: Basic Attacks deal 90 bonus damage over 5 seconds, stacking up to 3 times.",
+        "image": "gazlowe_robogoblin.png",
+        "abilityChanged": false,
+        "cooldown": "40s"
+      },
+      {
+        "name": "Grav-O-Bomb 3000 (R)",
+        "description": "After a 1.5 second delay, pull enemies toward the center of an area and deal 220 damage. Basic Abilities deal 30% more damage for 5 seconds after casting Grav-O-Bomb 3000.",
+        "image": "gazlowe_gravobomb.png",
+        "abilityChanged": false,
+        "cooldown": "60s"
+      }
+    ],
+    "trait": {
+      "name": "Reduce, Reuse, Recycle (T)",
+      "description": " Regenerate 1 Scrap every 4 seconds. Destroyed Rock-It! Turrets drop 1 Scrap, which can be picked up.Activate to destroy a target Rock-It! Turret.",
+      "image": "storm_ui_icon_gazlowe_salvager.png",
+      "abilityChanged": false
+    }
+  },
+  "1": [
+    {
+      "name": "Rocket Boots",
+      "description": "Increase the cast range of Xplodium Charge by 30% and its damage by 35%. Hitting an enemy Hero increases Movement Speed by 20% for 3 seconds.",
+      "image": "gazlowe_explodiumcharge.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Big Game Hunter",
+      "description": "Increase maximum Scrap by 2. Basic Attacks against enemy Heroes, Mercenaries, or Monsters accelerates Reduce, Reuse, Recycle Scrap regeneration by 1.5 seconds.",
+      "image": "gazlowe_salvager.png",
+      "talentChanged": false
+    },
+    {
+      "name": "One Man Wrecking Crew",
+      "description": "Casting Basic Abilities cause Gazlowe's next Basic Attack within 6 seconds to deal 60% more damage.  Stores up to 2 charges.",
+      "image": "talent_autoattack_damage.png",
+      "talentChanged": false
+    }
+  ],
+  "4": [
+    {
+      "name": "Rock It Sock It",
+      "description": "Casting Rock-It! Turret grants Gazlowe a Shield that absorbs up to 200 damage for 2.5 seconds.",
+      "image": "gazlowe_rockitturret.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Hyperfocus Coils",
+      "description": "Heroes hit by Deth Lazor or Xplodium Charge take an additional 2% of their maximum Health in damage. Gazlowe is healed for 150% of the damage dealt.",
+      "image": "gazlowe_combo_w_e.png",
+      "talentChanged": false
+    },
+    {
+      "name": "EZ-PZ Dimensional Ripper",
+      "description": "Activate to gain 40 Armor for 3 seconds, reducing damage taken by 40%, and reduce damage dealt by all nearby enemy Heroes and Summons by 50% for 3 seconds",
+      "image": "talent_imposingpresence.png",
+      "talentChanged": false,
+      "cooldown": "30s"
+    }
+  ],
+  "7": [
+    {
+      "name": "Goblin Fusion",
+      "description": "Generate 3 Scrap for each Hero hit by Deth Lazor.",
+      "image": "gazlowe_combo_q_w.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Overload",
+      "description": "Deth Lazor can now store up to 2 charges. Each enemy Hero hit by Deth Lazor reduces its cooldown by 0.75 seconds.",
+      "image": "gazlowe_dethlazor_a.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Master Blaster",
+      "description": "Deth Lazor and Xplodium Charge Slow enemies hit by 35% for 3 seconds. Rock-It! Turret Basic Attacks against enemies Slowed in this way extend the Slow duration by 0.5 seconds.",
+      "image": "gazlowe_combo_w_e.png",
+      "talentChanged": false
+    }
+  ],
+  "10": [
+    {
+      "name": "Robo-Goblin",
+      "description": "Activate to become Unstoppable for 1.5 seconds. Passive: Basic Attacks deal 90 bonus damage over 5 seconds, stacking up to 3 times.",
+      "image": "gazlowe_robogoblin.png",
+      "talentChanged": false,
+      "cooldown": "40s"
+    },
+    {
+      "name": "Grav-O-Bomb 3000",
+      "description": "After a 1.5 second delay, pull enemies toward the center of an area and deal 220 damage. Basic Abilities deal 30% more damage for 5 seconds after casting Grav-O-Bomb 3000.",
+      "image": "gazlowe_gravobomb.png",
+      "talentChanged": false,
+      "cooldown": "60s"
+    }
+  ],
+  "13": [
+    {
+      "name": "Positive Reinforcement",
+      "description": "Primary Rock-It! Turret attacks against Heroes increase Gazlowe's Attack Speed by 40% for 3 seconds.",
+      "image": "gazlowe_rockitturret.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Superior Schematics",
+      "description": "Rock-It! Turrets attack up to 2 additional enemies for 100% damage and have 30% increased Basic Attack range.",
+      "image": "gazlowe_rockitturret_var1.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Overcharged Capacitors",
+      "description": "Gazlowe gains 5% Spell Power for each active Rock-It! Turret, up to a maximum of 15%. Dealing Basic Attack damage extends the duration of Rock-It! Turrets by 1.25 seconds.",
+      "image": "gazlowe_rockitturret_var2.png",
+      "talentChanged": false
+    }
+  ],
+  "16": [
+    {
+      "name": "Firin' Mah Lazorz",
+      "description": "Firing Deth Lazor causes all of Gazlowe's Rock-It! Turrets to fire a Deth Lazor of their own that deals 125 damage.",
+      "image": "gazlowe_dethlazor.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Ark Reaktor",
+      "description": "Reduce the cooldown of Xplodium Charge by 2 seconds. Casting Xplodium Charge creates 3 miniature Rock-It! Turrets that last for 3 seconds.These Turrets do not drop Scrap or benefit from other Talents.",
+      "image": "gazlowe_explodiumcharge.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Overklock",
+      "description": "Basic Attacks grant Gazlowe 15% Movement Speed for 2 seconds.Dealing Basic Attack damage to Heroes causes them to take an additional 2.5% of their maximum Health as damage.",
+      "image": "talent_autoattack_searing.png",
+      "talentChanged": false
+    }
+  ],
+  "20": [
+    {
+      "name": "Mecha-Lord",
+      "description": "Basic Attacks increase Gazlowe's Armor by 10 for 10 seconds, up to a maximum of 30, and deal 50% bonus damage to Stunned or Slowed enemies.",
+      "image": "gazlowe_robogoblin.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Miniature Black Hole",
+      "description": "Increase Grav-O-Bomb 3000's radius by 25% and its damage by 50%. Each enemy Hero pulled reduces its cooldown by 12 seconds.",
+      "image": "gazlowe_gravobomb.png",
+      "talentChanged": false
+    },
+    {
+      "name": "It's Raining Scrap",
+      "description": "Reduce the Scrap cost of Rock-It! Turrets by 1. Regain 2 Scrap for each Scrap pickup.",
+      "image": "gazlowe_rockitturret.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Bomb Toss",
+      "description": "Xplodium Charge gains a 2nd charge with a 3 second cooldown between uses and launches 2 more bombs when it detonates.",
+      "image": "gazlowe_explodiumcharge.png",
+      "talentChanged": false
+    }
+  ]
+}

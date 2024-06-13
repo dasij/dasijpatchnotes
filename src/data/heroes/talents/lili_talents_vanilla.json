@@ -1,0 +1,201 @@
+{
+  "abilities": {
+    "basic": [
+      {
+        "name": "Healing Brew (Q)",
+        "description": "Heal the lowest Health allied Hero within 6 range for 175 Health.",
+        "image": "storm_ui_icon_lili_healingbrew.png",
+        "abilityChanged": false,
+        "manaCost": "25 Mana",
+        "cooldown": "4s"
+      },
+      {
+        "name": "Cloud Serpent (W)",
+        "description": "Summon a Cloud Serpent on an allied Hero that attacks nearby enemies every second. Each attack deals 26 damage and heals the ally for 20. Lasts for 8 seconds.",
+        "image": "storm_ui_icon_lili_cloudserpent.png",
+        "abilityChanged": false,
+        "manaCost": "35 Mana",
+        "cooldown": "11s"
+      },
+      {
+        "name": "Blinding Wind (E)",
+        "description": "Throw a cloud of wind at the 2 nearest enemies (prioritizing Heroes), dealing 133 damage. Heroes hit are Blinded and Slowed by 15% for 1.5 seconds.",
+        "image": "storm_ui_icon_lili_blindingwind.png",
+        "abilityChanged": false,
+        "manaCost": "30 Mana",
+        "cooldown": "12s"
+      }
+    ],
+    "heroic": [
+      {
+        "name": "Jug of 1,000 Cups (R)",
+        "description": "Channel for up to 6 seconds. Every 0.25 seconds, increase the cooldown of Jug of 1,000 Cups by 2 seconds, up to 50 additional seconds, and heal the lowest Health nearby allied Hero for 75 Health.",
+        "image": "storm_ui_icon_lili_jugofathousandcups.png",
+        "abilityChanged": false,
+        "manaCost": "80 Mana",
+        "cooldown": "20s"
+      },
+      {
+        "name": "Water Dragon (R)",
+        "description": "Li Li channels for 2 seconds, summoning a Water Dragon that hits the nearest enemy Hero within 12 range and all enemies near them, dealing 300 damage and slowing their Movement Speed by 70% for 4 seconds.",
+        "image": "storm_ui_icon_lili_waterdragon.png",
+        "abilityChanged": false,
+        "manaCost": "60 Mana",
+        "cooldown": "50s"
+      }
+    ],
+    "trait": {
+      "name": "Fast Feet (T)",
+      "description": " Upon taking damage, your Basic Ability cooldowns refresh 50% faster and you gain 10% Movement Speed for 1 second.",
+      "image": "storm_ui_icon_lili_fastfeet.png",
+      "abilityChanged": false
+    }
+  },
+  "1": [
+    {
+      "name": "Free Drinks",
+      "description": "Healing Brew's cooldown is reduced by 1 second and its Mana cost is refunded if it heals a Hero under 50% Health.",
+      "image": "storm_ui_icon_lili_healingbrew.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Serpent Sidekick",
+      "description": "Cloud Serpent no longer costs Mana and while Fast Feet is active its cooldown refreshes an additional 75% faster.",
+      "image": "storm_ui_icon_lili_cloudserpent.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Eager Adventurer",
+      "description": "Increase Fast Feet's duration by 150% and increase Mana regeneration by 150% while Fast Feet is active.",
+      "image": "storm_ui_icon_lili_fastfeet.png",
+      "talentChanged": false
+    }
+  ],
+  "4": [
+    {
+      "name": "Wind Serpent",
+      "description": "Cloud Serpent grants its bearer 10% increased Movement Speed. Casting Blinding Wind increases this bonus to 20% for 3 seconds. Passive: Cloud Serpent attacks 25% faster.",
+      "image": "storm_ui_icon_lili_cloudserpent.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Surging Winds",
+      "description": "If Blinding Wind hits 2 Heroes, its cooldown is reduced by 2 seconds and Li Li gains 10% Spell Power for 10 seconds.",
+      "image": "storm_ui_icon_lili_blindingwind.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Safety Sprint",
+      "description": "Activate to gain Fast Feet, 30 Armor, and 30% Movement Speed for 3 seconds.Passive: While Fast Feet is active, Li Li gains 10 Armor.",
+      "image": "storm_ui_icon_lili_fastfeet.png",
+      "talentChanged": false,
+      "cooldown": "30s"
+    }
+  ],
+  "7": [
+    {
+      "name": "The Good Stuff",
+      "description": "Healing Brew heals for an additional 42 over 3 seconds. While Fast Feet is active, this heal amount is increased by 100%.",
+      "image": "storm_ui_icon_lili_healingbrew.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Mass Vortex",
+      "description": "Increase the number of enemies hit by Blinding Wind from 2 to 3. Blinding Wind deals 75% additional damage if all 3 enemies hit are Heroes.",
+      "image": "storm_ui_icon_lili_blindingwind.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Let's Go!",
+      "description": "Activate to heal an allied Hero for 160 and make them Unstoppable for 1 second. Let's Go's cooldown is affected by Fast Feet.Cannot be used on Li Li.",
+      "image": "storm_ui_icon_talent_cleanse.png",
+      "talentChanged": false,
+      "cooldown": "40s"
+    }
+  ],
+  "10": [
+    {
+      "name": "Jug of 1,000 Cups",
+      "description": "Channel for up to 6 seconds. Every 0.25 seconds, increase the cooldown of Jug of 1,000 Cups by 2 seconds, up to 50 additional seconds, and heal the lowest Health nearby allied Hero for 75 Health.",
+      "image": "storm_ui_icon_lili_jugofathousandcups.png",
+      "talentChanged": false,
+      "manaCost": "80 Mana",
+      "cooldown": "20s"
+    },
+    {
+      "name": "Water Dragon",
+      "description": "Li Li channels for 2 seconds, summoning a Water Dragon that hits the nearest enemy Hero within 12 range and all enemies near them, dealing 300 damage and slowing their Movement Speed by 70% for 4 seconds.",
+      "image": "storm_ui_icon_lili_waterdragon.png",
+      "talentChanged": false,
+      "manaCost": "60 Mana",
+      "cooldown": "50s"
+    }
+  ],
+  "13": [
+    {
+      "name": "Lightning Serpent",
+      "description": "Cloud Serpent attacks bounce to hit 2 additional targets for 13 damage and 10 healing.",
+      "image": "storm_ui_icon_lili_cloudserpent.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Gale Force",
+      "description": "Increase Blinding Wind's Blind duration by 0.75 seconds. Li Li's Basic Attacks against Blinded Heroes deal 100% increased damage.",
+      "image": "storm_ui_icon_lili_blindingwind.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Hindering Winds",
+      "description": "Increase Blinding Wind's Slow amount to 30% and its duration to 2 seconds.",
+      "image": "storm_ui_icon_lili_blindingwind_a.png",
+      "talentChanged": false
+    }
+  ],
+  "16": [
+    {
+      "name": "Two For One",
+      "description": "Increases the number of allies healed by Healing Brew to 2, but increases the cooldown by 1 second.",
+      "image": "storm_ui_icon_lili_healingbrew.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Pick Me Up",
+      "description": "Healing Brew's healing for Heroes is increased by 33% if they are under 50% Health.",
+      "image": "storm_ui_icon_lili_healingbrew_a.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Blessings Of Yu\u2019lon",
+      "description": "Cloud Serpent grants its bearer 10% increased healing received and heals them for an additional 0.5% of their maximum Health each time it attacks.",
+      "image": "storm_ui_icon_lili_cloudserpent.png",
+      "talentChanged": false
+    }
+  ],
+  "20": [
+    {
+      "name": "Jug of 1,000,000 Cups",
+      "description": "Jug of 1,000 Cups heals two allies at a time.",
+      "image": "storm_ui_icon_lili_jugofathousandcups.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Double Dragon",
+      "description": "After hitting a target with Water Dragon, another Water Dragon is summoned at the point of impact.",
+      "image": "storm_ui_icon_lili_waterdragon.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Mistweaver",
+      "description": "Activate to heal nearby allied Heroes for 149. Basic Attacks and Cloud Serpent attacks reduce the cooldown of Mistweaver by 1 second.",
+      "image": "storm_ui_icon_lili_mistweaver.png",
+      "talentChanged": false,
+      "cooldown": "30s"
+    },
+    {
+      "name": "Shake It Off",
+      "description": "Gain 35 Armor while Stunned, Silenced, or Rooted.Passive: Increase Fast Feet's cooldown refresh rate to 75%",
+      "image": "storm_ui_icon_lili_fastfeet.png",
+      "talentChanged": false
+    }
+  ]
+}

@@ -7,7 +7,7 @@ import re
 
 def normalize_name(name):
     """Normalize the name to match the image file naming convention."""
-    return name.lower().replace(" ", "_").replace("(", "").replace(")", "").replace("'", "").replace(".", "").replace("-", "_")
+    return name.lower().replace(" ", "").replace("(", "").replace(")", "").replace("'", "").replace(".", "").replace("-", "")
 
 def clean_description(description):
     """Remove unwanted Unicode characters from the description."""
@@ -107,13 +107,18 @@ def scrape_hero_talents(hero_name):
             abilities = abilities_section.find_all("li")
             for ability in abilities:
                 name = ability.find("h3", class_="ability-name").text.strip()
+                stats = ability.find("p", class_="ability-stats")
+                if stats:
+                    stats_text = stats.text.strip()
+                else:
+                    stats_text = ""
                 description = ability.find("p", class_="ability-description").text.strip()
                 description = clean_description(description)  # Clean the description
-                description, mana_cost, cooldown = extract_mana_and_cooldown(description)  # Extract mana and cooldown
+                description, mana_cost, cooldown = extract_mana_and_cooldown(stats_text + " " + description)  # Extract mana and cooldown
                 # Remove the part in parentheses
                 name_without_parentheses = name.split(" (")[0]
-                normalized_name = normalize_name(f"{hero_name}_{name_without_parentheses}")
-                image_name = f"{normalized_name}.png"  # Construct the image name
+                normalized_name = normalize_name(name_without_parentheses)
+                image_name = f"{hero_name}_{normalized_name}.png"  # Construct the image name
 
                 ability_data = {
                     "name": name,
@@ -144,13 +149,13 @@ def scrape_hero_talents(hero_name):
     # Add talents data directly to hero_data
     hero_data.update(talent_data)
 
-    # Save the data to a JSON file named after the hero
-    json_filename = os.path.join("src", "data", "heroes", "talents", f"{hero_name}_talents.json")
+    # Save the talents data to a JSON file named after the hero
+    json_filename = os.path.join("src", "data", "heroes", "talents", f"{hero_name}_talents_vanilla.json")
     if not os.path.exists(os.path.dirname(json_filename)):
         os.makedirs(os.path.dirname(json_filename))
     with open(json_filename, "w") as file:
         json.dump(hero_data, file, indent=2)
 
 # Example usage
-hero_name = "garrosh"  # This can be dynamically changed
+hero_name = "li-li"  # This can be dynamically changed
 scrape_hero_talents(hero_name)

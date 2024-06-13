@@ -101,8 +101,10 @@
 
       <div v-if="selectedTab === 'talents'" class="mt-8">
         <div class="abilities-container mt-8">
+
           <h2 class="text-2xl font-bold text-white mb-4">Basic Abilities</h2>
           <div class="flex justify-start">
+
             <div v-for="ability in talents.abilities.basic" :key="ability.name" class="ability"
               @mouseover="tooltipAbility = ability" @mouseleave="tooltipAbility = null">
               <div class="hexagon-border" :class="{ 'ability-changed': ability.abilityChanged }">
@@ -199,6 +201,16 @@
           </div>
         </div>
 
+        <div class="toggle-switch">
+          <span :class="{ 'active': talentType === 'vanilla' }">Vanilla</span>
+          <label class="switch">
+            <input type="checkbox" @change="toggleTalentType" :checked="talentType === 'new'">
+            <span class="slider"></span>
+          </label>
+          <span :class="{ 'active': talentType === 'new' }">New</span>
+        </div>
+
+
         <div class="mt-8">
           <h2 class="text-2xl font-bold text-white mb-4">Talent Calculator</h2>
           <div class="talent-calculator-container"
@@ -289,6 +301,7 @@ export default {
       isLoading: true,
       isUserLoggedIn: false,
       likesData: {},
+      talentType: 'new',
       selectedTalents: {
         1: null,
         4: null,
@@ -316,12 +329,20 @@ export default {
       if (heroData) {
         this.hero = heroData;
         this.patchNotes = heroData.patchNotes;
-        this.talents = require(`../data/heroes/talents/${this.heroName}_talents.json`);
-        console.log(this.talents); // Log to check the loaded talents data
+        this.loadTalents(); // Modificado para chamar loadTalents
         this.loadLikes();
       } else {
         console.error('Failed to load hero data');
       }
+    },
+    loadTalents() { // Adicionado
+      const talentsFileName = this.talentType === 'new' ? `${this.heroName}_talents.json` : `${this.heroName}_talents_vanilla.json`;
+      this.talents = require(`../data/heroes/talents/${talentsFileName}`);
+      console.log(this.talents); // Log to check the loaded talents data
+    },
+    toggleTalentType() { // Adicionado
+      this.talentType = this.talentType === 'new' ? 'vanilla' : 'new';
+      this.loadTalents();
     },
     loadLikes() {
       const likesRef = ref(database, `heroes/${this.heroName}/likes`);
@@ -763,6 +784,66 @@ button {
 
 .talent-column.not-selected .talent-image-container {
   filter: brightness(0.15);
+}
+
+.toggle-switch {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: white;
+}
+
+.toggle-switch span {
+  padding: 0 10px;
+}
+
+.toggle-switch span.active {
+  font-weight: bold;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked+.slider {
+  background-color: #2196F3;
+}
+
+input:checked+.slider:before {
+  transform: translateX(26px);
 }
 
 @import '@/assets/css/common.css';

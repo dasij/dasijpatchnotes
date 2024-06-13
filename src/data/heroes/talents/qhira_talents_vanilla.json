@@ -1,0 +1,199 @@
+{
+  "abilities": {
+    "basic": [
+      {
+        "name": "Carnage (Q)",
+        "description": "Unleash your sword in the target direction, continuously dealing 30 damage to enemies caught in its path.",
+        "image": "nexushunter_q.png",
+        "abilityChanged": false,
+        "manaCost": "40 Mana",
+        "cooldown": "6s"
+      },
+      {
+        "name": "Blood Rage (W)",
+        "description": "Passive: Basic Attack and Ability damage cause enemies to bleed for 44 damage over 4 seconds. Stacks 5 times.Qhira deals 32 damage and heals for 85 Health per enemy Hero affected. Damage and healing is increased by 50% per each additional stack on that Hero.",
+        "image": "nexushunter_w.png",
+        "abilityChanged": false,
+        "manaCost": "35 Mana",
+        "cooldown": "8s"
+      },
+      {
+        "name": "Revolving Sweep (E)",
+        "description": "Attach your sword on the first enemy Hero hit, dealing 96 damage and Stunning them for 0.25 seconds. Once attached, Qhira becomes Immune to all effects, swinging around the target for 2.75 seconds and dealing 105 damage to enemies between you and the target.Re-activate to send you to the target's location knocking them away, dealing 108 damage and Stunning them for 0.75 seconds.",
+        "image": "nexushunter_e.png",
+        "abilityChanged": false,
+        "manaCost": "70 Mana",
+        "cooldown": "16s"
+      }
+    ],
+    "heroic": [
+      {
+        "name": "Unrelenting Strikes (R)",
+        "description": "Deal 44 damage to nearby enemies every 0.5 seconds for 2.5 seconds as your sword grows outward. Upon expiring, deal 160 damage to nearby enemy Heroes and Stun them for 1.5 seconds.",
+        "image": "nexushunter_r1.png",
+        "abilityChanged": false,
+        "manaCost": "50 Mana",
+        "cooldown": "60s"
+      },
+      {
+        "name": "Final Strike (R)",
+        "description": "After 1 second, deal 395 damage to enemies in a line. This damage is increased by 25% against enemy Heroes who are below 50% Health.",
+        "image": "nexushunter_r2.png",
+        "abilityChanged": false,
+        "manaCost": "45 Mana",
+        "cooldown": "40s"
+      }
+    ],
+    "trait": {
+      "name": "Grappling Hook (T)",
+      "description": "Qhira fires a grappling hook that pulls her to terrain it contacts. If an enemy Hero is hit, they take 35 damage and Qhira launches at them, kicking them for an additional 108 damage.Can be used while Revolving Sweep is active.",
+      "image": "storm_ui_icon_nexushunter_d.png",
+      "abilityChanged": false,
+      "cooldown": "25s"
+    }
+  },
+  "1": [
+    {
+      "name": "Maximum Effort",
+      "description": "If Carnage damages the same enemy Hero 3 times it deals an additional 108 damage and Slows by 25% for 2.5 seconds.",
+      "image": "nexushunter_q.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Fatal Wounds",
+      "description": "While at maximum stacks, Blood Rage's bleed deals 30% additional damage to enemy Heroes under 50% Health.Quest: Damage enemy Heroes with Blood Rage's bleed damage. Reward: After damaging Heroes with Blood Rage's bleed damage 150 times, Blood Rage's duration is increased by 2 seconds.",
+      "image": "nexushunter_w.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Finishing Touch",
+      "description": "Gain 20% Basic Attack damage. When Qhira Basic Attacks an enemy Hero below 50% Health it deals 20% additional damage, and she gains 35% Attack Speed for 3 seconds.",
+      "image": "nexushunter_passive.png",
+      "talentChanged": false
+    }
+  ],
+  "4": [
+    {
+      "name": "Upstage",
+      "description": "Damaging at least 2 Heroes with Blood Rage causes Qhira to Evade the next 4 Heroic Basic Attacks within 12 seconds.",
+      "image": "nexushunter_w.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Ensnaring Swing",
+      "description": "The primary target of Revolving Sweep is Slowed by 60% while Qhira is attached to them. Secondary targets hit by Revolving Sweep's swing are Slowed by 40% for 3 seconds.",
+      "image": "nexushunter_e.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Your Pain, My Gain",
+      "description": "Basic Attacking an enemy Hero causes Qhira to gain 10 Armor for 3 seconds. Stacks 3 times.",
+      "image": "nexushunter_passive.png",
+      "talentChanged": false
+    }
+  ],
+  "7": [
+    {
+      "name": "The Thirst",
+      "description": "Carnage heals for 50% of the damage dealt to enemy Heroes. Anytime Carnage damages an enemy Hero, Qhira's next Basic Attack within 4 seconds against an enemy Hero deals 15% additional damage, stacking up to 10 times.",
+      "image": "nexushunter_q.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Healmonger",
+      "description": "If Blood Rage damages an enemy Hero below 50% Health, it heals for an additional 190 Health.",
+      "image": "nexushunter_w.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Siphoning Link",
+      "description": "Damaging an enemy Hero with Revolving Sweep's initial impact or swing causes Qhira to regenerate 96 Health over 4 seconds. Stacks up to 4 times.Passive: Basic Attacks heal for 20% of the damage dealt.",
+      "image": "nexushunter_e.png",
+      "talentChanged": false
+    }
+  ],
+  "10": [
+    {
+      "name": "Unrelenting Strikes",
+      "description": "Deal 44 damage to nearby enemies every 0.5 seconds for 2.5 seconds as your sword grows outward. Upon expiring, deal 160 damage to nearby enemy Heroes and Stun them for 1.5 seconds.",
+      "image": "nexushunter_r1.png",
+      "talentChanged": false,
+      "manaCost": "50 Mana",
+      "cooldown": "60s"
+    },
+    {
+      "name": "Final Strike",
+      "description": "After 1 second, deal 395 damage to enemies in a line. This damage is increased by 25% against enemy Heroes who are below 50% Health.",
+      "image": "nexushunter_r2.png",
+      "talentChanged": false,
+      "manaCost": "45 Mana",
+      "cooldown": "40s"
+    }
+  ],
+  "13": [
+    {
+      "name": "Chainsaw",
+      "description": "Carnage's cooldown recharges 100% faster while an enemy Hero has maximum Blood Rage stacks.",
+      "image": "nexushunter_q.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Pulsing Pain",
+      "description": "Each additional enemy Hero hit by Revolving Sweep causes the primary target to take an additional 135 damage.",
+      "image": "nexushunter_e.png",
+      "talentChanged": false
+    },
+    {
+      "name": "The Hunted",
+      "description": "Basic Attacking an enemy Hero increases your Basic Attack damage against that Hero by 25%. Stacks up to 4 times and lasts 4 seconds. Bonus is reset if a different Hero is attacked.",
+      "image": "nexushunter_passive.png",
+      "talentChanged": false
+    }
+  ],
+  "16": [
+    {
+      "name": "Booming Kick",
+      "description": "Increase the Stun duration of Revolving Sweep's re-activation by 0.25 seconds. Enemy Heroes around the primary target are also affected by Revolving Sweep's re-activation.",
+      "image": "nexushunter_e.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Lingering Ailment",
+      "description": "Enemy Heroes hit by Revolving Sweep or by Grappling Hook have their Armor reduced by 25 for 3 seconds.",
+      "image": "nexushunter_e_alt_1.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Swing Life Away",
+      "description": "Revolving Sweep's cooldown recharges 250% faster while Qhira is swinging around her target. She also gains 60 Spell Armor for 5 seconds after the re-activation impact.",
+      "image": "nexushunter_e_alt_2.png",
+      "talentChanged": false
+    }
+  ],
+  "20": [
+    {
+      "name": "Silent Killer",
+      "description": "Hitting enemy Heroes with Unrelenting Strikes Silences them for 0.5 seconds and reduces its cooldown by 3 seconds.",
+      "image": "nexushunter_r1.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Unleashed Potential",
+      "description": "Increase the damage to enemy Heroes under 50% Health from 25% to 50%.If an enemy Hero dies within 1.5 seconds of being hit by Final Strike, then reset the cooldowns of Final Strike and all of Qhira's Basic Abilities.",
+      "image": "nexushunter_r2.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Utility Belt",
+      "description": "Grappling Hook's cooldown is reset when hitting an enemy Hero with the initial impact of Revolving Sweep and recharges 900% faster if Qhira hasn't taken damage within the last 2 seconds.",
+      "image": "nexushunter_d.png",
+      "talentChanged": false
+    },
+    {
+      "name": "No Sanctuary",
+      "description": "Nearby enemy Heroes below 50% Health are revealed and you gain 20% Movement Speed while an enemy Hero is revealed by you in this way.Additionally, you deal 20% increased damage to these revealed enemies.",
+      "image": "nexushunter_passive_alt_1.png",
+      "talentChanged": false
+    }
+  ]
+}

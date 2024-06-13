@@ -1,11 +1,11 @@
 {
-  "id": 1,
+  "id": 14,
   "name": "TYCHUS",
   "role": "Ranged Assassin",
   "image": "heroes_portraits/tychus.webp",
   "patchNotes": [
     {
-      "id": 1,
+      "id": 14,
       "title": "Hero changes and Talent Rework",
       "general": [
         {

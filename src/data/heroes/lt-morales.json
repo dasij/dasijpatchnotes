@@ -5,7 +5,7 @@
   "image": "heroes_portraits/lt-morales.webp",
   "patchNotes": [
     {
-      "id": 1,
+      "id": 5,
       "title": "Talent and hero rework",
       "developerCommentary": "I believe Morales is either the top or at least among the top three most boring characters to play right now, according to a significant portion of the community. After considering these opinions, I agree with the players: Morales feels more like a tool for the team rather than a hero. You lack agency, and your role is reduced to a walking bot that simply presses Q on someone. The changes I propose are inspired by what I consider the ideal healing beam character, the TF2 Medic. I aim to give Morales a similar level of agency and introduce some risks.",
       "general": [
