@@ -78,10 +78,10 @@
               "name": "Grace of Air",
               "texts": [
                 {
-                  "text": "Changed functionality: Maelstrom basic attacks will be imbued with air granting twice many stacks of Frostwolf Resilience."
+                  "text": "Changed functionality: Windfury basic attacks will be imbued with air granting twice many stacks of Frostwolf Resilience."
                 },
                 {
-                  "text": "increase Thrall movement speed permanently by 10%"
+                  "text": "Increase Thrall movement speed permanently by 10%"
                 },
                 {
                   "text": "Moved from level 13"
@@ -96,7 +96,7 @@
               "name": "Ancestral Wrath renamed to Grace of lava",
               "texts": [
                 {
-                  "text": "Changed functionality: Maelstrom basic attacks will be imbued with lava dealing 6% maximum health damage over 3 seconds on each attack and Healing Thrall 150% of that damage dealt"
+                  "text": "Changed functionality: Windfury basic attacks will be imbued with lava dealing 6% maximum health damage over 3 seconds on each attack and Healing Thrall 150% of that damage dealt"
                 }
               ],
               "developerCommentary": "This one is reimagining the Ancestral Wrath but instead of being point and click you need to enter in contact tu use it being a tank burster talent",
@@ -105,10 +105,10 @@
             },
             {
               "change_id": "thrall_12",
-              "name": "New: Grace of lighting",
+              "name": "New: Grace of lightning",
               "texts": [
                 {
-                  "text": "Maelstrom basic attacks will now teleport to the target and reduce their armor by 8 on each hit",
+                  "text": "Windfury basic attacks will now teleport to the target and reduce their armor by 8 on each hit",
                   "substexts": [
                     "The teleport range will be 5.0 | Malfurion astral communion is 7",
                     "Works the same as the Old Zeratul auto attack teleporting ultimate"
@@ -154,7 +154,7 @@
               "name": "New: Spirit of air",
               "texts": [
                 {
-                  "text": "Frostwolf Resilience cleanses slows and grants 20 magic resistence for 2 seconds"
+                  "text": "Frostwolf Resilience cleanses slows and grants 20 magic resistance for 2 seconds"
                 }
               ],
               "developerCommentary": "Specific type of cleanses are something that i find cool to see and fitting the fast stacking Thrall passive has it could be a niche pick against heavy slow comps.",

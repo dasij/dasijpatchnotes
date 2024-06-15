@@ -13,7 +13,7 @@
 
       </nav>
 
-      <div v-if="selectedTab === 'patchNotes'" class="mt-8">
+      <div ref="patchNotesContainer" v-if="selectedTab === 'patchNotes'" class="mt-8">
         <div class="bg-hots-repeat bg-contain bg-center bg-no-repeat min-h-screen">
           <div class="container mx-auto py-8">
             <h1 class="text-4xl font-bold text-white mb-4">{{ hero.name }} PATCH NOTES</h1>
@@ -24,21 +24,22 @@
                 class="mt-4 bg-[#742aff] bg-opacity-5 border-l-4 border-[#742aff] p-4 text-white italic">
                 <p class="font-semibold mb-2">Developer Comment:</p>
                 <p v-for="(paragraph, index) in patchNote.developerCommentary.split('\n\n')" :key="index">
-                  {{ paragraph }}
+                  <span v-html="convertTextPlaceholders(paragraph)"></span>
                 </p>
               </div>
               <div v-if="patchNote.general && patchNote.general.length > 0" class="mt-8">
                 <h3 class="text-xl font-semibold" style="color: #9900ff;">Base</h3>
                 <ul class="list-disc list-inside space-y-4" style="color: #ccc8d3;">
                   <li v-for="(item, index) in patchNote.general" :key="index">
-                    <span class="text-lg font-medium" style="color: #0099ff;">{{ item.change }}</span>
+                    <span class="text-lg font-medium" style="color: #0099ff;"
+                      v-html="convertTextPlaceholders(item.change)"></span>
                     <ul class="list-disc list-inside ml-4">
                       <li v-for="(textItem, textIndex) in item.texts" :key="textIndex">
-                        <span style="color: #ccc8d3;">{{ textItem.text }}</span>
+                        <span style="color: #ccc8d3;" v-html="convertTextPlaceholders(textItem.text)"></span>
                         <ul v-if="textItem.subtexts" class="list-disc list-inside ml-8">
                           <li v-for="(subtext, subtextIndex) in textItem.subtexts" :key="subtextIndex" class="text-sm"
                             style="color: #ccc8d3;">
-                            {{ subtext }}
+                            <span v-html="convertTextPlaceholders(subtext)"></span>
                           </li>
                         </ul>
                       </li>
@@ -46,16 +47,12 @@
                     <div v-if="item.developerCommentary"
                       class="mt-4 bg-[#742aff] bg-opacity-5 border-l-4 border-[#742aff] p-4 text-white italic">
                       <p class="font-semibold mb-2">Developer Comment:</p>
-                      <p>{{ item.developerCommentary }}</p>
+                      <p v-html="convertTextPlaceholders(item.developerCommentary)"></p>
                     </div>
                     <button @click="likeChange(patchNote.id, item.change_id)"
                       :class="['like-button', { 'loading': isLoading, 'liked': item.likedBy && item.likedBy[userId] }]">
                       👍 {{ item.likes || 0 }}
                     </button>
-
-
-
-
                   </li>
                 </ul>
               </div>
@@ -66,14 +63,15 @@
                     <span class="text-lg font-medium">{{ section.name }}</span>
                     <ul class="list-disc list-inside ml-4">
                       <li v-for="(change, changeIndex) in section.changes" :key="changeIndex">
-                        <span class="text-lg font-medium" style="color: #0099ff;">{{ change.name }}</span>
+                        <span class="text-lg font-medium" style="color: #0099ff;"
+                          v-html="convertTextPlaceholders(change.name)"></span>
                         <ul class="list-disc list-inside ml-4">
                           <li v-for="(textItem, textIndex) in change.texts" :key="textIndex">
-                            <span style="color: #ccc8d3;">{{ textItem.text }}</span>
+                            <span style="color: #ccc8d3;" v-html="convertTextPlaceholders(textItem.text)"></span>
                             <ul v-if="textItem.subtexts" class="list-disc list-inside ml-8">
                               <li v-for="(subtext, subtextIndex) in textItem.subtexts" :key="subtextIndex"
                                 class="text-sm" style="color: #ccc8d3;">
-                                {{ subtext }}
+                                <span v-html="convertTextPlaceholders(subtext)"></span>
                               </li>
                             </ul>
                           </li>
@@ -81,14 +79,12 @@
                         <div v-if="change.developerCommentary"
                           class="mt-4 bg-[#742aff] bg-opacity-5 border-l-4 border-[#742aff] p-4 text-white italic">
                           <p class="font-semibold mb-2">Developer Comment:</p>
-                          <p>{{ change.developerCommentary }}</p>
+                          <p v-html="convertTextPlaceholders(change.developerCommentary)"></p>
                         </div>
                         <button @click="likeChange(patchNote.id, change.change_id)"
                           :class="['like-button', { 'loading': isLoading, 'liked': change.likedBy && change.likedBy[userId] }]">
                           👍 {{ change.likes || 0 }}
                         </button>
-
-
                       </li>
                     </ul>
                   </li>
@@ -96,6 +92,26 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div v-if="tooltipAbility" ref="tooltipAbilityElement" class="tooltip">
+        <h3 class="text-xl font-semibold" style="color: #0099ff;">{{ tooltipAbility.name }}</h3>
+        <div class="flex items-center text-xs mb-2">
+          <div v-if="tooltipAbility.cooldown" class="mr-2">
+            <span class="font-semibold">Cooldown:</span> <span v-html="formatText(tooltipAbility.cooldown)"></span>
+          </div>
+          <div v-if="tooltipAbility.manaCost">
+            <span class="font-semibold">Mana Cost:</span> <span v-html="formatText(tooltipAbility.manaCost)"></span>
+          </div>
+        </div>
+        <p class="text-sm" v-html="formatText(tooltipAbility.description)"></p>
+        <div v-if="tooltipAbility.passives && tooltipAbility.passives.length > 0" class="mt-2">
+          <ul>
+            <li v-for="(passive, index) in tooltipAbility.passives" :key="index" class="text-sm text-gray-400"
+              v-html="formatText(passive)">
+            </li>
+          </ul>
         </div>
       </div>
 
@@ -302,7 +318,16 @@ export default {
       isUserLoggedIn: false,
       likesData: {},
       talentType: 'new',
-      selectedTalents: {
+      selectedTalentsNew: {
+        1: null,
+        4: null,
+        7: null,
+        10: null,
+        13: null,
+        16: null,
+        20: null,
+      },
+      selectedTalentsVanilla: {
         1: null,
         4: null,
         7: null,
@@ -313,6 +338,7 @@ export default {
       },
     };
   },
+
   computed: {
     heroName() {
       return this.$route.params.name.toLowerCase();
@@ -324,6 +350,88 @@ export default {
     this.loadChanges();
   },
   methods: {
+    handleMouseOver(event) {
+      const target = event.target;
+      if (target.classList.contains('ability-tooltip')) {
+        const type = target.getAttribute('data-type');
+        const section = target.getAttribute('data-section');
+        const category = target.getAttribute('data-category');
+        const index = parseInt(target.getAttribute('data-index'), 10);
+        this.showTooltipAbility(type, section, category, index, event);
+      }
+    },
+
+    handleMouseLeave(event) {
+      const target = event.target;
+      if (target.classList.contains('ability-tooltip')) {
+        this.hideTooltipAbility();
+      }
+    },
+
+    beforeDestroy() {
+      const container = this.$refs.patchNotesContainer;
+      if (container) {
+        container.removeEventListener('mouseover', this.handleMouseOver);
+        container.removeEventListener('mouseleave', this.handleMouseLeave);
+      }
+    },
+
+    findAbilityOrTalent(type, section, category, index) {
+      const talentsFileName = type === 'new' ? `${this.heroName}_talents.json` : `${this.heroName}_talents_vanilla.json`;
+      const talentsData = require(`../data/heroes/talents/${talentsFileName}`);
+      if (section === 'abilities') {
+        if (category === 'trait') {
+          return talentsData.abilities.trait; // Retorna a trait diretamente
+        } else {
+          return talentsData.abilities[category][index];
+        }
+      } else {
+        return talentsData[category][index];
+      }
+    },
+
+    convertTextPlaceholders(text) {
+      return text.replace(/<([^,]+),\s*([^,]+),\s*([^,]+),\s*(\d+)>/g, (match, type, section, category, index) => {
+        const item = this.findAbilityOrTalent(type, section, category, parseInt(index, 10));
+        if (item) {
+          return `<span class="ability-tooltip" 
+                data-type="${type}" 
+                data-section="${section}" 
+                data-category="${category}" 
+                data-index="${index}" 
+                data-tooltip="${item.name}" 
+                style="color:red"
+                @mouseover="showTooltipAbility('${type}', '${section}', '${category}', ${index}, $event)"
+                @mouseleave="hideTooltipAbility()">
+              ${item.name}
+            </span>`;
+        }
+        return match;
+      });
+    },
+
+    showTooltipAbility(type, section, category, index, event) {
+      this.tooltipAbility = this.findAbilityOrTalent(type, section, category, index);
+      const tooltipElement = this.$refs.tooltipAbilityElement;
+      if (tooltipElement && event) {
+        const spanElement = event.target;
+        const rect = spanElement.getBoundingClientRect();
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+        tooltipElement.style.top = `${rect.top + scrollTop}px`;
+        tooltipElement.style.left = `${rect.right + scrollLeft + 10}px`; // 10px de margem à direita
+        tooltipElement.style.display = 'block';
+      }
+    },
+
+    hideTooltipAbility() {
+      this.tooltipAbility = null;
+      const tooltipElement = this.$refs.tooltipAbilityElement;
+      if (tooltipElement) {
+        tooltipElement.style.display = 'none';
+      }
+    },
     loadHeroData() {
       const heroData = require(`../data/heroes/${this.heroName}.json`);
       if (heroData) {
@@ -340,7 +448,7 @@ export default {
       this.talents = require(`../data/heroes/talents/${talentsFileName}`);
       console.log(this.talents); // Log to check the loaded talents data
     },
-    toggleTalentType() { // Adicionado
+    toggleTalentType() {
       this.talentType = this.talentType === 'new' ? 'vanilla' : 'new';
       this.loadTalents();
     },
@@ -503,37 +611,105 @@ export default {
       });
     },
     toggleTalentSelection(level, talent) {
-      if (this.selectedTalents[level] === talent) {
-        this.selectedTalents[level] = null;
+      const selectedTalents = this.talentType === 'new' ? this.selectedTalentsNew : this.selectedTalentsVanilla;
+      if (selectedTalents[level] === talent) {
+        selectedTalents[level] = null;
       } else {
-        this.selectedTalents[level] = talent;
+        selectedTalents[level] = talent;
       }
     },
     isSelected(level, talent) {
-      return this.selectedTalents[level] === talent;
+      const selectedTalents = this.talentType === 'new' ? this.selectedTalentsNew : this.selectedTalentsVanilla;
+      return selectedTalents[level] === talent;
     },
     isAnySelected(level) {
-      return this.selectedTalents[level] !== null;
+      const selectedTalents = this.talentType === 'new' ? this.selectedTalentsNew : this.selectedTalentsVanilla;
+      return selectedTalents[level] !== null;
     },
     resetTalents() {
-      this.selectedTalents = {
-        1: null,
-        4: null,
-        7: null,
-        10: null,
-        13: null,
-        16: null,
-        20: null,
-      };
+      if (this.talentType === 'new') {
+        this.selectedTalentsNew = {
+          1: null,
+          4: null,
+          7: null,
+          10: null,
+          13: null,
+          16: null,
+          20: null,
+        };
+      } else {
+        this.selectedTalentsVanilla = {
+          1: null,
+          4: null,
+          7: null,
+          10: null,
+          13: null,
+          16: null,
+          20: null,
+        };
+      }
     }
+
   },
   mounted() {
     this.checkUserLogin();
     this.authenticateUser();
     this.loadChanges();
-  },
-};
 
+    this.$nextTick(() => {
+      const container = this.$refs.patchNotesContainer;
+      if (container) {
+        container.addEventListener('mouseover', this.handleMouseOver);
+        container.addEventListener('mouseleave', this.handleMouseLeave);
+      }
+
+
+      const abilityTooltips = container.querySelectorAll('.ability-tooltip');
+      abilityTooltips.forEach(span => {
+        span.addEventListener('mouseover', (event) => {
+          const type = span.getAttribute('data-type');
+          const section = span.getAttribute('data-section');
+          const category = span.getAttribute('data-category');
+          const index = parseInt(span.getAttribute('data-index'), 10);
+          this.showTooltipAbility(type, section, category, index, event);
+        });
+        span.addEventListener('mouseleave', this.hideTooltipAbility);
+      });
+    });
+  },
+
+
+  updated() {
+    this.$nextTick(() => {
+      const container = this.$refs.patchNotesContainer;
+      if (container) {
+        // Remover eventos antigos para evitar duplicação
+        container.removeEventListener('mouseover', this.handleMouseOver);
+        container.removeEventListener('mouseleave', this.handleMouseLeave);
+
+        // Adicionar eventos novamente
+        container.addEventListener('mouseover', this.handleMouseOver);
+        container.addEventListener('mouseleave', this.handleMouseLeave);
+
+        // Adicionando eventos para os spans gerados dinamicamente
+        const abilityTooltips = container.querySelectorAll('.ability-tooltip');
+        abilityTooltips.forEach(span => {
+          span.removeEventListener('mouseover', this.handleMouseOver);
+          span.removeEventListener('mouseleave', this.handleMouseLeave);
+
+          span.addEventListener('mouseover', (event) => {
+            const type = span.getAttribute('data-type');
+            const section = span.getAttribute('data-section');
+            const category = span.getAttribute('data-category');
+            const index = parseInt(span.getAttribute('data-index'), 10);
+            this.showTooltipAbility(type, section, category, index, event);
+          });
+          span.addEventListener('mouseleave', this.hideTooltipAbility);
+        });
+      }
+    });
+  },
+}
 
 </script>
 
@@ -786,65 +962,7 @@ button {
   filter: brightness(0.15);
 }
 
-.toggle-switch {
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-  color: white;
-}
 
-.toggle-switch span {
-  padding: 0 10px;
-}
-
-.toggle-switch span.active {
-  font-weight: bold;
-}
-
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  transition: .4s;
-  border-radius: 34px;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  transition: .4s;
-  border-radius: 50%;
-}
-
-input:checked+.slider {
-  background-color: #2196F3;
-}
-
-input:checked+.slider:before {
-  transform: translateX(26px);
-}
 
 @import '@/assets/css/common.css';
 </style>

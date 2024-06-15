@@ -116,7 +116,7 @@
       "talentChanged": true
     },
     {
-      "name": "Grace of Lighting",
+      "name": "Grace of Lightning",
       "description": "{highlight}Maelstrom basic attacks will now teleport to the target and reduce their armor by 8 on each hit{/highlight}",
       "image": "thrall_windfury.png",
       "talentChanged": true

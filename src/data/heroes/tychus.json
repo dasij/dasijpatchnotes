@@ -13,17 +13,17 @@
           "change": "Minigun (T)",
           "texts": [
             {
-              "text": "Additional functionality: You can reactive minigun to activate it earlier"
+              "text": "Additional functionality: You can reactive <new, abilities, trait, 0> to activate it earlier"
             },
             {
-              "text": "Additional functionality: Overkill is also affected by Minigun with 50% of the effect",
+              "text": "Additional functionality: <new, abilities, basic, 0> is also affected by Minigun with 50% of the effect",
               "subtexts": [
                 "Everyone hit is affected by the Minigun",
-                "Using Overkill DOESN'T activate the minigun effect you need to manually activate it or basic attack someone"
+                "Using <new, abilities, basic, 0> DOESN'T activate the minigun effect you need to manually activate it or basic attack someone"
               ]
             }
           ],
-          "developerCommentary": "This is a change both for QoL on the situations you press Minigun and can't hit a hero so minigun trait is activated and you can't do anything and also to combo with the new Overkill Mechanic better. The new Overkill interaction is worse on single targets but better on area damage as the Overkill stacks less hits(3.0second) in comparison of the basic attacks(4.0second) but with the advantage of hitting on area.",
+          "developerCommentary": "This is a change both for QoL on the situations you press Minigun and can't hit a hero so minigun trait is activated and you can't do anything and also to combo with the new <new, abilities, basic, 0> Mechanic better. The new <new, abilities, basic, 0> interaction is worse on single targets but better on area damage as the <new, abilities, basic, 0> stacks less hits(3.0second) in comparison of the basic attacks(4.0second) but with the advantage of hitting on area.",
           "likes": 0,
           "likedBy": {}
         }
@@ -38,7 +38,7 @@
               "name": "New talent: Stun and Gun",
               "texts": [
                 {
-                  "text": "At the end of Run and Gun, enemies in front of Tychus will be stunned for 0.75 seconds and will have their physical armor reduced by 40 for 2 seconds, as Tychus hits them with the butt of his minigun.",
+                  "text": "At the end of <new, abilities, basic, 2>, enemies in front of Tychus will be stunned for 0.75 seconds and will have their physical armor reduced by 40 for 2 seconds, as Tychus hits them with the butt of his minigun.",
                   "subtexts": [
                     "Range: 1.5 on a 45º radius. It should perform as an very small arc"
                   ]
@@ -94,7 +94,7 @@
               "name": "The Bigger They Are...",
               "texts": [
                 {
-                  "text": "Additional bonus: Reduces the cooldown of Minigun by 4 seconds after using Run and Gun"
+                  "text": "Additional bonus: Reduces the cooldown of Minigun by 4 seconds after using <new, abilities, basic, 2>"
                 }
               ],
               "developerCommentary": "This is a hard talent to either nerf or buff on numerical reasons i feel like mixing it with combat tactician could help it to better balance it.",
@@ -182,10 +182,10 @@
           "changes": [
             {
               "change_id": "tychus_12",
-              "name": "Drakken Laser Drill",
+              "name": "<new, abilities, heroic, 1>",
               "texts": [
                 {
-                  "text": "Changed functionality: The Drakken Laser Drill now spawns at the Halls of the Storm and targets the closest enemy unit to Tychus, dealing 142 (+4% per level) damage per second. It will switch targets every 3 seconds or instantly if the current target dies. Activating the Drakken Laser Drill allows you to select a target. After 2 seconds, the laser will fire a high-damage continuous beam at the target's position, stunning enemies for 0.5 seconds and dealing damage over 3 seconds.",
+                  "text": "Changed functionality: The <new, abilities, heroic, 1> now spawns at the Halls of the Storm and targets the closest enemy unit to Tychus, dealing 142 (+4% per level) damage per second. It will switch targets every 3 seconds or instantly if the current target dies. Activating the <new, abilities, heroic, 1> allows you to select a target. After 2 seconds, the laser will fire a high-damage continuous beam at the target's position, stunning enemies for 0.5 seconds and dealing damage over 3 seconds.",
                   "subtexts": [
                     "The laser activation will not follow the target but will stay on the target position after it start BEAMING.",
                     "The Activated beam radius is 2.0 | Sgt.Hammer Napalm strike radius is 2.0",
@@ -213,7 +213,7 @@
                   "text": "Moved from level 16"
                 }
               ],
-              "developerCommentary": "As a talent i consider less important for synergy with any talent from overkill builds i bring it here so i can make this tier the Overkill Talent tree choice and put Spray'n'Pray as the big choice on 16",
+              "developerCommentary": "As a talent i consider less important for synergy with any talent from <new, abilities, basic, 0> builds i bring it here so i can make this tier the <new, abilities, basic, 0> Talent tree choice and put Spray'n'Pray as the big choice on 16",
               "likes": 0,
               "likedBy": {}
             },
@@ -225,7 +225,7 @@
                   "text": "Moved to level 16"
                 }
               ],
-              "developerCommentary": "This talent is the most important if you want to focus on a overkill build because it gives everything extra you would want AND i am putting it on 16 as a very important choice to make.",
+              "developerCommentary": "This talent is the most important if you want to focus on a <new, abilities, basic, 0> build because it gives everything extra you would want AND i am putting it on 16 as a very important choice to make.",
               "likes": 0,
               "likedBy": {}
             },
@@ -237,7 +237,7 @@
                   "text": "Moved from level 20"
                 },
                 {
-                  "text": "Cooldown reduction is now reduced by 5 if Tychus complete overkill instead of flat bonus"
+                  "text": "Cooldown reduction is now reduced by 5 if Tychus complete <new, abilities, basic, 0> instead of flat bonus"
                 }
               ],
               "developerCommentary": "Nerfing it a little to better suit level 13 and bringing it here as the new defensive talent.",
@@ -261,13 +261,13 @@
               "name": "New talent:OverExtend",
               "texts": [
                 {
-                  "text": "After expiring Overkill does an extra hit applying a decaying slow on every enemy hero of 75% for 2.5 seconds."
+                  "text": "After expiring <new, abilities, basic, 0> does an extra hit applying a decaying slow on every enemy hero of 75% for 2.5 seconds."
                 },
                 {
                   "text": "Passive: Reduce minigun cooldown by 4 seconds."
                 }
               ],
-              "developerCommentary": "Something that i want to make is a talent that could make Overkill feel a little different somehow and that's a solution a liked. For better targetting melee targets without the need from the Stun and Gun new talent but on with a good synergy with it.",
+              "developerCommentary": "Something that i want to make is a talent that could make <new, abilities, basic, 0> feel a little different somehow and that's a solution a liked. For better targetting melee targets without the need from the Stun and Gun new talent but on with a good synergy with it.",
               "likes": 0,
               "likedBy": {}
             }
@@ -285,7 +285,7 @@
                   "text": "Moved to level 13"
                 }
               ],
-              "developerCommentary": "It was changed to level 13 because it ain't the most necessary talent for the overkill build and i am changing level 13 to be it.",
+              "developerCommentary": "It was changed to level 13 because it ain't the most necessary talent for the <new, abilities, basic, 0> build and i am changing level 13 to be it.",
               "likes": 0,
               "likedBy": {}
             }
@@ -303,7 +303,7 @@
                   "text": "Moved to level 13"
                 }
               ],
-              "developerCommentary": "Not a bad talent but not strong enough to be here. It could be rebalanced with unstopabble or better bonuses but for me it would be overkill",
+              "developerCommentary": "Not a bad talent but not strong enough to be here. It could be rebalanced with unstopabble or better bonuses but for me it would be <new, abilities, basic, 0>",
               "likes": 0,
               "likedBy": {}
             },

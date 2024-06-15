@@ -3,12 +3,7 @@
     <header><!-- Cabeçalho aqui --></header>
     <main class="container mx-auto py-8">
       <h1 class="text-4xl font-bold mb-4">Patch Notes</h1>
-      <PatchNoteItem 
-        v-for="note in patchNotes"
-        :key="note.id"
-        :title="note.title"
-        :description="note.description"
-      />
+      <PatchNoteItem v-for="note in patchNotes" :key="note.id" :title="note.title" :description="note.description" />
     </main>
     <footer><!-- Rodapé aqui --></footer>
   </div>
