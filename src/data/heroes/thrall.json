@@ -10,10 +10,10 @@
       "general": [
         {
           "change_id": "thrall_8",
-          "change": "Windfury",
+          "change": "<vanilla, abilities, basic, 2>",
           "texts": [
             {
-              "text": "Additional functinoality: Quest: Basic Attacks against Heroes while Windfury's Movement Speed bonus is active increase Attack Damage by 1"
+              "text": "Additional functinoality: Quest: Basic Attacks against Heroes while <vanilla, abilities, basic, 2> Movement Speed bonus is active increase Attack Damage by 1"
             },
             {
               "text": "Reward 30 hits: Grants Thrall Far Sight",
@@ -34,37 +34,37 @@
           "changes": [
             {
               "change_id": "thrall_15",
-              "name": "Frostwolf's Grace",
+              "name": "<new, talents, 13, 1>",
               "texts": [
                 {
                   "text": "moved from level 13"
                 }
               ],
-              "developerCommentary": "I see Frostwolf's Grace being put at level 4 a good option to make decisions on how you want to handle your passive.",
+              "developerCommentary": "I see <new, talents, 13, 1> being put at level 4 a good option to make decisions on how you want to handle your passive.",
               "likes": 0,
               "likedBy": {}
             },
             {
               "change_id": "thrall_14",
-              "name": "Feral Resilience",
+              "name": "<new, talents, 4, 0>",
               "texts": [
                 {
                   "text": "Removed"
                 }
               ],
-              "developerCommentary": "Im mixing it with frostwolf pack",
+              "developerCommentary": "Im mixing it with <new, talents, 4, 1>",
               "likes": 0,
               "likedBy": {}
             },
             {
               "change_id": "thrall_16",
-              "name": "Frostwolf Pack",
+              "name": "<new, talents, 4, 1>",
               "texts": [
                 {
-                  "text": "Additional passive: Heroes hit by Feral Spirit grants 3 stacks of Frostwolf Resilience"
+                  "text": "Additional passive: Heroes hit by <modified, abilities, basic, 1> grants 3 stacks of <modified, abilities, trait, 0>"
                 }
               ],
-              "developerCommentary": "The objective here is to make all talents of level 4 be centered around the passive and frostwolf pack is included, a weaker version to use the passive being inconsistent BUT giving another buff in compensation",
+              "developerCommentary": "The objective here is to make all talents of level 4 be centered around the passive and <new, talents, 4, 1> is included, a weaker version to use the passive being inconsistent BUT giving another buff in compensation",
               "likes": 0,
               "likedBy": {}
             }
@@ -75,10 +75,10 @@
           "changes": [
             {
               "change_id": "thrall_10",
-              "name": "Grace of Air",
+              "name": "<new, talents, 13, 0>",
               "texts": [
                 {
-                  "text": "Changed functionality: Windfury basic attacks will be imbued with air granting twice many stacks of Frostwolf Resilience."
+                  "text": "Changed functionality: <modified, abilities, basic, 2> basic attacks will be imbued with air granting twice many stacks of <modified, abilities, trait, 0>."
                 },
                 {
                   "text": "Increase Thrall movement speed permanently by 10%"
@@ -93,13 +93,13 @@
             },
             {
               "change_id": "thrall_11",
-              "name": "Ancestral Wrath renamed to Grace of lava",
+              "name": "<new, talents, 7, 1> renamed to Grace of lava",
               "texts": [
                 {
-                  "text": "Changed functionality: Windfury basic attacks will be imbued with lava dealing 6% maximum health damage over 3 seconds on each attack and Healing Thrall 150% of that damage dealt"
+                  "text": "Changed functionality: <modified, abilities, basic, 2> basic attacks will be imbued with lava dealing 6% maximum health damage over 3 seconds on each attack and Healing Thrall 150% of that damage dealt"
                 }
               ],
-              "developerCommentary": "This one is reimagining the Ancestral Wrath but instead of being point and click you need to enter in contact tu use it being a tank burster talent",
+              "developerCommentary": "This one is reimagining the <new, talents, 7, 1> but instead of being point and click you need to enter in contact tu use it being a tank burster talent",
               "likes": 0,
               "likedBy": {}
             },
@@ -108,7 +108,7 @@
               "name": "New: Grace of lightning",
               "texts": [
                 {
-                  "text": "Windfury basic attacks will now teleport to the target and reduce their armor by 8 on each hit",
+                  "text": "<modified, abilities, basic, 2> basic attacks will now teleport to the target and reduce their armor by 8 on each hit",
                   "substexts": [
                     "The teleport range will be 5.0 | Malfurion astral communion is 7",
                     "Works the same as the Old Zeratul auto attack teleporting ultimate"
@@ -126,10 +126,10 @@
           "changes": [
             {
               "change_id": "thrall_2",
-              "name": "Spirit shield renamed to Spirit of Lightning",
+              "name": "<new, talents, 13, 2> renamed to Spirit of Lightning",
               "texts": [
                 {
-                  "text": "Changed functionality: Chain Lightning can now bounce to allied heroes, dealing area damage around them and converting the damage dealt into a shield for the ally."
+                  "text": "Changed functionality: <modified, abilities, basic, 0> can now bounce to allied heroes, dealing area damage around them and converting the damage dealt into a shield for the ally."
                 }
               ],
               "developerCommentary": "This should bring some scenarios similar to a Cassia using the lighing ball on a 1v1. But besides this just seems like a fun scenario to handle",
@@ -141,7 +141,7 @@
               "name": "New: Earth spirit",
               "texts": [
                 {
-                  "text": "Frostwolf resilience now grants one stack of block to Thrall and Allied heroes close for 6 seconds reducing the damage of the next basic attack received by 75%. Caps at 3 stacks ",
+                  "text": "<modified, abilities, trait, 0> now grants one stack of block to Thrall and Allied heroes close for 6 seconds reducing the damage of the next basic attack received by 75%. Caps at 3 stacks ",
                   "subtexts": ["Radius is 4.4 same as ETC Block Party"]
                 }
               ],
@@ -154,7 +154,7 @@
               "name": "New: Spirit of air",
               "texts": [
                 {
-                  "text": "Frostwolf Resilience cleanses slows and grants 20 magic resistance for 2 seconds"
+                  "text": "<modified, abilities, trait, 0> cleanses slows and grants 20 magic resistance for 2 seconds"
                 }
               ],
               "developerCommentary": "Specific type of cleanses are something that i find cool to see and fitting the fast stacking Thrall passive has it could be a niche pick against heavy slow comps.",
@@ -164,7 +164,7 @@
 
             {
               "change_id": "thrall_9",
-              "name": "Grace of air",
+              "name": "<new, talents, 13, 0>",
               "texts": [
                 {
                   "text": "Moved to level 7"
@@ -176,7 +176,7 @@
             },
             {
               "change_id": "thrall_13",
-              "name": "Frostwolf's Grace",
+              "name": "<new, talents, 13, 1>",
               "texts": [
                 {
                   "text": "Moved to level 4"
@@ -193,13 +193,13 @@
           "changes": [
             {
               "change_id": "thrall_7",
-              "name": "Alpha Wolf",
+              "name": "<new, talents, 16, 2>",
               "texts": [
                 {
-                  "text": "Thrall now mounts an Alpha Wolf, the Alpha Wolf mount can't be dismounted by damage. Casting Spirit Wolf while riding Alpha Wolf empowers it dealing extra 10% maximum health damage to every one hit."
+                  "text": "Thrall now mounts an Alpha Wolf, the Alpha Wolf mount can't be dismounted by damage. Casting <modified, abilities, basic, 1> while riding Alpha Wolf empowers it dealing extra 10% maximum health damage to every one hit."
                 }
               ],
-              "developerCommentary": "One thing that bothers me is the fact Alpha Wolf doesn't feel like Alpha Wolf",
+              "developerCommentary": "One thing that bothers me is the fact <new, talents, 16, 2> doesn't feel like <new, talents, 16, 2>",
               "likes": 0,
               "likedBy": {}
             }
@@ -210,7 +210,7 @@
           "changes": [
             {
               "change_id": "thrall_3",
-              "name": "Worldbreaker",
+              "name": "<new, talents, 20, 0>",
               "texts": [
                 {
                   "text": "Changed functionality: Sundering now travels the planet until hits the starting point leaving behind an impassable rift, blocking unit movement. After 2.5 seconds the rift starts to be destroyed.",
@@ -229,7 +229,7 @@
               "name": "New Talent:ThunderFury",
               "texts": [
                 {
-                  "text": "Windfury basic attacks casts a Chain of Lighting at the target.",
+                  "text": "<modified, abilities, basic, 2> basic attacks casts a Chain of Lighting at the target.",
                   "subtexts": [
                     "It will work with Thunderstorm but remember, hitting the same hero target will reset the mission progress"
                   ]
@@ -244,7 +244,7 @@
               "name": "New Talent:Feral Violence",
               "texts": [
                 {
-                  "text": "Feral Spirit will now travel 25% farther and will continually grow it's way to end also increasing root duration up to 1.5 extra seconds",
+                  "text": "<modified, abilities, basic, 1> will now travel 25% farther and will continually grow it's way to end also increasing root duration up to 1.5 extra seconds",
                   "subtexts": [
                     "getting atleast 60% bigger if it don't hit anyone, i don't know to put that on consistent numbers.",
                     "The extra 1.5 duration will cap at the 60% bigger"
@@ -257,13 +257,13 @@
             },
             {
               "change_id": "thrall_1",
-              "name": "Elemental Momentum, Nexus Blades, Winds Rush",
+              "name": "<vanilla, talents, 20, 2>, <vanilla, talents, 20, 3>, <vanilla, talents, 20, 4>",
               "texts": [
                 {
                   "text": "Removed"
                 }
               ],
-              "developerCommentary": "I dislike the usage of all this generic talents. Elemental momentum doesn't really add anything great for Thrall gameplay. Nexus Blades only purpose is to make big numbers with Maelstrom Weapon but does not feel like a level 20 talent and finally Wind Rush is strong enough to be at level 20 but won't add much to the table roleplay wise.",
+              "developerCommentary": "I dislike the usage of all this generic talents. <vanilla, talents, 20, 2> doesn't really add anything great for Thrall gameplay. <vanilla, talents, 20, 3> only purpose is to make big numbers with Maelstrom Weapon but does not feel like a level 20 talent and finally <vanilla, talents, 20, 4> is strong enough to be at level 20 but won't add much to the table roleplay wise.",
               "likes": 0,
               "likedBy": {}
             }

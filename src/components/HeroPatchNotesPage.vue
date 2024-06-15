@@ -96,6 +96,8 @@
       </div>
 
       <div v-if="tooltipAbility" ref="tooltipAbilityElement" class="tooltip">
+        <p class="text-sm font-semibold" style="color: #0099ff;">
+          {{ tooltipAbilityType === 'modified' ? 'Modified Version' : 'Vanilla Version' }}</p>
         <h3 class="text-xl font-semibold" style="color: #0099ff;">{{ tooltipAbility.name }}</h3>
         <div class="flex items-center text-xs mb-2">
           <div v-if="tooltipAbility.cooldown" class="mr-2">
@@ -220,10 +222,10 @@
         <div class="toggle-switch">
           <span :class="{ 'active': talentType === 'vanilla' }">Vanilla</span>
           <label class="switch">
-            <input type="checkbox" @change="toggleTalentType" :checked="talentType === 'new'">
+            <input type="checkbox" @change="toggleTalentType" :checked="talentType === 'modified'">
             <span class="slider"></span>
           </label>
-          <span :class="{ 'active': talentType === 'new' }">New</span>
+          <span :class="{ 'active': talentType === 'modified' }">Modified</span>
         </div>
 
 
@@ -310,6 +312,7 @@ export default {
       talents: {},
       tooltipTalent: null,
       tooltipAbility: null,
+      tooltipAbilityType: '',
       selectedTab: 'patchNotes',
       abilities: {},
       thumbsUpCount: 0,
@@ -317,8 +320,8 @@ export default {
       isLoading: true,
       isUserLoggedIn: false,
       likesData: {},
-      talentType: 'new',
-      selectedTalentsNew: {
+      talentType: 'modified',
+      selectedTalentsmodified: {
         1: null,
         4: null,
         7: null,
@@ -342,6 +345,9 @@ export default {
   computed: {
     heroName() {
       return this.$route.params.name.toLowerCase();
+    },
+    versionText() {
+      return this.talentType === 'modified' ? 'Modified Version' : 'Vanilla Version';
     },
   },
   created() {
@@ -377,7 +383,7 @@ export default {
     },
 
     findAbilityOrTalent(type, section, category, index) {
-      const talentsFileName = type === 'new' ? `${this.heroName}_talents.json` : `${this.heroName}_talents_vanilla.json`;
+      const talentsFileName = type === 'modified' ? `${this.heroName}_talents.json` : `${this.heroName}_talents_vanilla.json`;
       const talentsData = require(`../data/heroes/talents/${talentsFileName}`);
       if (section === 'abilities') {
         if (category === 'trait') {
@@ -391,20 +397,21 @@ export default {
     },
 
     convertTextPlaceholders(text) {
+      if (!text) return ''; // Return an empty string if text is undefined or null
       return text.replace(/<([^,]+),\s*([^,]+),\s*([^,]+),\s*(\d+)>/g, (match, type, section, category, index) => {
         const item = this.findAbilityOrTalent(type, section, category, parseInt(index, 10));
         if (item) {
-          return `<span class="ability-tooltip" 
-                data-type="${type}" 
-                data-section="${section}" 
-                data-category="${category}" 
-                data-index="${index}" 
-                data-tooltip="${item.name}" 
-                style="color:red"
-                @mouseover="showTooltipAbility('${type}', '${section}', '${category}', ${index}, $event)"
-                @mouseleave="hideTooltipAbility()">
-              ${item.name}
-            </span>`;
+          const className = type === 'modified' ? 'modified-text' : 'vanilla-text';
+          return `<span class="ability-tooltip ${className}" 
+          data-type="${type}" 
+          data-section="${section}" 
+          data-category="${category}" 
+          data-index="${index}" 
+          data-tooltip="${item.name}" 
+          @mouseover="showTooltipAbility('${type}', '${section}', '${category}', ${index}, $event)"
+          @mouseleave="hideTooltipAbility()">
+          ${item.name}
+        </span>`;
         }
         return match;
       });
@@ -412,6 +419,7 @@ export default {
 
     showTooltipAbility(type, section, category, index, event) {
       this.tooltipAbility = this.findAbilityOrTalent(type, section, category, index);
+      this.tooltipAbilityType = type; // Adicione esta linha para definir o tipo de habilidade
       const tooltipElement = this.$refs.tooltipAbilityElement;
       if (tooltipElement && event) {
         const spanElement = event.target;
@@ -444,12 +452,12 @@ export default {
       }
     },
     loadTalents() { // Adicionado
-      const talentsFileName = this.talentType === 'new' ? `${this.heroName}_talents.json` : `${this.heroName}_talents_vanilla.json`;
+      const talentsFileName = this.talentType === 'modified' ? `${this.heroName}_talents.json` : `${this.heroName}_talents_vanilla.json`;
       this.talents = require(`../data/heroes/talents/${talentsFileName}`);
       console.log(this.talents); // Log to check the loaded talents data
     },
     toggleTalentType() {
-      this.talentType = this.talentType === 'new' ? 'vanilla' : 'new';
+      this.talentType = this.talentType === 'modified' ? 'vanilla' : 'modified';
       this.loadTalents();
     },
     loadLikes() {
@@ -611,7 +619,7 @@ export default {
       });
     },
     toggleTalentSelection(level, talent) {
-      const selectedTalents = this.talentType === 'new' ? this.selectedTalentsNew : this.selectedTalentsVanilla;
+      const selectedTalents = this.talentType === 'modified' ? this.selectedTalentsmodified : this.selectedTalentsVanilla;
       if (selectedTalents[level] === talent) {
         selectedTalents[level] = null;
       } else {
@@ -619,16 +627,16 @@ export default {
       }
     },
     isSelected(level, talent) {
-      const selectedTalents = this.talentType === 'new' ? this.selectedTalentsNew : this.selectedTalentsVanilla;
+      const selectedTalents = this.talentType === 'modified' ? this.selectedTalentsmodified : this.selectedTalentsVanilla;
       return selectedTalents[level] === talent;
     },
     isAnySelected(level) {
-      const selectedTalents = this.talentType === 'new' ? this.selectedTalentsNew : this.selectedTalentsVanilla;
+      const selectedTalents = this.talentType === 'modified' ? this.selectedTalentsmodified : this.selectedTalentsVanilla;
       return selectedTalents[level] !== null;
     },
     resetTalents() {
-      if (this.talentType === 'new') {
-        this.selectedTalentsNew = {
+      if (this.talentType === 'modified') {
+        this.selectedTalentsmodified = {
           1: null,
           4: null,
           7: null,
@@ -960,6 +968,13 @@ button {
 
 .talent-column.not-selected .talent-image-container {
   filter: brightness(0.15);
+}
+
+.version-icon {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+  vertical-align: middle;
 }
 
 
