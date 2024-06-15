@@ -15,7 +15,7 @@
           "changes": [
             {
               "change_id": "muradin_1",
-              "name": "Thunder Strike",
+              "name": "<vanilla, talents,  13, 2>",
               "texts": [
                 {
                   "text": "moved to level 20"
@@ -30,7 +30,7 @@
               "name": "NEW: Dwarf Survival Tactics",
               "texts": [
                 {
-                  "text": "Increase dwarf toss armor duration by 2 seconds"
+                  "text": "Increase <modified, abilities, basic, 2> armor duration by 2 seconds"
                 },
                 {
                   "text": "Decrease Second Wind activation time to 1.5 seconds"
@@ -47,10 +47,10 @@
           "changes": [
             {
               "change_id": "muradin_3",
-              "name": "NEW: Empowered Storm Bolt",
+              "name": "NEW: Empowered <modified, abilities, basic, 0>",
               "texts": [
                 {
-                  "text": "Activate to empower the next Storm Bolt making it stuns and damage enemies on a small area around the target and at the maximum range",
+                  "text": "Activate to empower the next <modified, abilities, basic, 0> making it stuns and damage enemies on a small area around the target and at the maximum range",
                   "subtexts": [
                     "Cooldown: 60 seconds",
                     "Radius will be 3.0 | The same as thunder clap"
@@ -63,13 +63,13 @@
             },
             {
               "change_id": "muradin_4",
-              "name": "Imposing presence",
+              "name": "<vanilla, talents,  16, 1>",
               "texts": [
                 {
                   "text": "removed"
                 }
               ],
-              "developerCommentary": "I dislike the generic talents concept and i also see no reason for such talent due to Muradin thunderclap it just overlaps.",
+              "developerCommentary": "I dislike the generic talents concept and i also see no reason for such talent due to Muradin <modified, abilities, basic, 1> it just overlaps.",
               "likes": 0,
               "likedBy": {}
             }
@@ -80,13 +80,13 @@
           "changes": [
             {
               "change_id": "muradin_5",
-              "name": "Unstoppable Force",
+              "name": "<vanilla, talents,  20, 0>",
               "texts": [
                 {
-                  "text": "Won't reduce dwarf toss cooldown anymore"
+                  "text": "Won't reduce <modified, abilities, basic, 2> cooldown anymore"
                 },
                 {
-                  "text": "While Avatar is active reduce the duration of Stuns, Slows, and Roots against Muradin by 50%. Dwarf Toss grants unstoppable while leaping"
+                  "text": "While <vanilla, abilities, heroic, 0> is active reduce the duration of Stuns, Slows, and Roots against Muradin by 50%. <modified, abilities, basic, 2> grants unstoppable while leaping"
                 }
               ],
               "developerCommentary": "For making the new Flying Dwarf talent",
@@ -95,10 +95,10 @@
             },
             {
               "change_id": "muradin_6",
-              "name": "Grand Slam",
+              "name": "<vanilla, talents,  20, 1>",
               "texts": [
                 {
-                  "text": "Additional functionality: Casting Haymaker reset Dwarf Toss cooldown"
+                  "text": "Additional functionality: Casting <modified, abilities, heroic, 1> reset <modified, abilities, basic, 2> cooldown"
                 }
               ],
               "developerCommentary": "I find extremely funny to punch jump. No more reasons",
@@ -107,14 +107,14 @@
             },
             {
               "change_id": "muradin_7",
-              "name": "Thunder Strike",
+              "name": "<vanilla, talents,  13, 2>",
               "texts": [
                 {
-                  "text": "Activate to empower the next Thunderclap. Muradin will cast thunderclap three times under a period of 1.25 seconds increasing the thunderclap size by 50% and damage by 75% each time it's cast",
+                  "text": "Changed functionality: Activate to empower the next <modified, abilities, basic, 1>. Muradin will cast <modified, abilities, basic, 1> three times under a period of 1.25 seconds increasing the <modified, abilities, basic, 1> size by 50% and damage by 75% each time it's cast",
                   "subtexts": [
-                    "The first thunderclap will be normal",
-                    "The second thunderclap will have extra 50% size and 75% more damage",
-                    "The third thunderclap will have extra 100% size and 150% more damage ",
+                    "The first <modified, abilities, basic, 1> will be normal",
+                    "The second <modified, abilities, basic, 1> will have extra 50% size and 75% more damage",
+                    "The third <modified, abilities, basic, 1> will have extra 100% size and 150% more damage ",
                     "Final radius is 6.0 | Blaze combustion is 6.5",
                     "It interacts with all the thunder clap talents"
                   ]
@@ -132,7 +132,7 @@
               "name": "It's Hammer Time",
               "texts": [
                 {
-                  "text": "Storm Bolt now pierces all targets. Hitting an enemy with Storm Bolt increases Muradin attack speed by 40% for 4 seconds"
+                  "text": "<modified, abilities, basic, 0> now pierces all targets. Hitting an enemy with <modified, abilities, basic, 0> increases Muradin attack speed by 40% for 4 seconds"
                 }
               ],
               "developerCommentary": "For all my bruiseradins i got you.",
@@ -141,13 +141,13 @@
             },
             {
               "change_id": "muradin_9",
-              "name": "Hardened shield, Rewind",
+              "name": "<vanilla, talents,  20, 2>, <vanilla, talents,  20, 3>",
               "texts": [
                 {
                   "text": "removed"
                 }
               ],
-              "developerCommentary": "I really dislike talents that are made on the concept of being generic and also Hardened Shield serves the purpose of Avatar when you take Haymaker but that shouldn't be a possibility as you went for the damage route. As for rewind the talent is extremely toxic on tanks and i tell this being a tank main not a butthurt assassin.",
+              "developerCommentary": "I really dislike talents that are made on the concept of being generic and also <vanilla, talents,  20, 2> serves the purpose of <vanilla, abilities, heroic, 0> when you take <vanilla, abilities, heroic, 1> but that shouldn't be a possibility as you went for the damage route. As for <vanilla, talents,  20, 3> the talent is extremely toxic on tanks and i tell this being a tank main not a butthurt assassin.",
               "likes": 0,
               "likedBy": {}
             }

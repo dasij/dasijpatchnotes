@@ -97,7 +97,7 @@
                   "text": "Additional bonus: Reduces the cooldown of <modified, abilities, trait, 0> by 4 seconds after using <modified, abilities, basic, 2>"
                 }
               ],
-              "developerCommentary": "This is a hard talent to either nerf or buff on numerical reasons i feel like mixing it with combat tactician could help it to better balance it.",
+              "developerCommentary": "This is a hard talent to either nerf or buff on numerical reasons i feel like mixing it with <vanilla, talents, 7, 1> could help it to better balance it.",
               "likes": 0,
               "likedBy": {}
             },
@@ -109,7 +109,7 @@
                   "text": "Moved from level 13"
                 }
               ],
-              "developerCommentary": "The biggest reason to bring That's the Stuff is to make the player choose on how he wants the minigun to behave for the entire game, choose between killing a target, extended duration or self-healing.",
+              "developerCommentary": "The biggest reason to <vanilla, talents, 13, 1> is to make the player choose on how he wants the minigun to behave for the entire game, choose between killing a target, extended duration or self-healing.",
               "likes": 0,
               "likedBy": {}
             }
@@ -171,7 +171,7 @@
                   "text": "Removed"
                 }
               ],
-              "developerCommentary": "By mixing it with The Bigger They Are and with the way i am changing the talent tree i see no reason to that exist",
+              "developerCommentary": "By mixing it with <vanilla, talents, 4, 1> and with the way i am changing the talent tree i see no reason to that exist",
               "likes": 0,
               "likedBy": {}
             }
@@ -196,7 +196,7 @@
                   ]
                 }
               ],
-              "developerCommentary": "One problem i have with the current Drakken Laser is the fighting summonable aspect that can't be changed if it has a fixed duration but i like the idea of Drakken because it's a very important mission that Tychus takes care. For that i want to bring it closer to how it works in game and that means being global BUT i will remove the natural retargetting aspect for not start a Toxic global constant damage ultimate. And also for to better enhance the lore aspect Drakken is global",
+              "developerCommentary": "One problem i have with the current <vanilla, abilities, heroic, 1> is the fighting summonable aspect that can't be changed if it has a fixed duration but i like the idea of Drakken because it's a very important mission that Tychus takes care. For that i want to bring it closer to how it works in game and that means being global BUT i will remove the natural retargetting aspect for not start a Toxic global constant damage ultimate. And also for to better enhance the lore aspect <vanilla, abilities, heroic, 1> is global",
               "likes": 0,
               "likedBy": {}
             }
@@ -267,7 +267,7 @@
                   "text": "Passive: Reduce minigun cooldown by 4 seconds."
                 }
               ],
-              "developerCommentary": "Something that i want to make is a talent that could make <modified, abilities, basic, 0> feel a little different somehow and that's a solution a liked. For better targetting melee targets without the need from the Stun and Gun new talent but on with a good synergy with it.",
+              "developerCommentary": "Something that i want to make is a talent that could make <modified, abilities, basic, 0> feel a little different somehow and that's a solution a liked. For better targetting melee targets without the need from the <modified, talents, 1, 0> new talent but on with a good synergy with it.",
               "likes": 0,
               "likedBy": {}
             }

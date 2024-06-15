@@ -10,7 +10,7 @@
       "general": [
         {
           "change_id": "garrosh_1",
-          "change": "Armor Up (T)",
+          "change": "<vanilla, abilities,  trait, 0>",
           "texts": [
             {
               "text": "Additional functionality: Warchief pride -> Taunting up to 1.5 seconds after a takedown heals Garrosh 25% of his maximum health on the end.",
@@ -26,7 +26,7 @@
           "likedBy": {}
         }
       ],
-      "developerCommentary": "",
+      "developerCommentary": "Im leveling up the Garrosh bringing him new ways to become the prideful warchief he is",
       "sections": [
         {
           "name": "Level 1",
@@ -39,7 +39,7 @@
                   "text": "For every 2% missing maximum health Garrosh receive 3% extra attack speed"
                 },
                 {
-                  "text": "Basic Attacks against Heroes reduce the cooldown of Bloodthirst by 1 second."
+                  "text": "Basic Attacks against Heroes reduce the cooldown of <modified, abilities,  basic, 1> by 1 second."
                 }
               ],
               "developerCommentary": "",
@@ -48,7 +48,7 @@
             },
             {
               "change_id": "garrosh_3",
-              "name": "Body Check",
+              "name": "<vanilla, talents, 1, 2>",
               "texts": [
                 {
                   "text": "Moved to 16"
@@ -86,7 +86,7 @@
               "name": "New: Groundbreaking tactics",
               "texts": [
                 {
-                  "text": "GroundBreaker can now be channeled for up to 2 seconds, increasing the outer area radius up to 40%. If channeled to Maximum enemies will be pulled towards Garrosh instead of stunned"
+                  "text": "<modified, abilities,  basic, 0> can now be channeled for up to 2 seconds, increasing the outer area radius up to 40%. If channeled to Maximum enemies will be pulled towards Garrosh instead of stunned"
                 }
               ],
               "developerCommentary": "Inspired on Sion Decimating Smash and justify the old garrosh interaction being gatekeeped by maximum channeling and by not picking cleanse",
@@ -95,7 +95,7 @@
             },
             {
               "change_id": "garrosh_6",
-              "name": "In for the kill, Thirst for Battle",
+              "name": "<vanilla, talents, 4, 0>, <vanilla, talents, 4, 1>",
               "texts": [
                 {
                   "text": "Removed"
@@ -112,10 +112,10 @@
           "changes": [
             {
               "change_id": "garrosh_7",
-              "name": "Intimidation",
+              "name": "<vanilla, talents, 7, 0>",
               "texts": [
                 {
-                  "text": "Additional functionality: Not hitting Heroes on the Groundbreaker Outer Radius reduces the cooldown by 2 seconds."
+                  "text": "Additional functionality: Not hitting Heroes on the <modified, abilities,  basic, 0> Outer Radius reduces the cooldown by 2 seconds."
                 }
               ],
               "developerCommentary": "This could be considered strong as Intimidation is a niche talent BUT i want you to propositally miss the outer radius sometimes just for attack speed reduction.",
@@ -124,10 +124,10 @@
             },
             {
               "change_id": "garrosh_8",
-              "name": "Lok-tar ogar!",
+              "name": "<vanilla, talents, 7, 2>",
               "texts": [
                 {
-                  "text": "Changed functionality: Into the Fray's target throw target stuns enemies near the impact area for 0.25 seconds, if the target throw is a non-heroic unit reduces the cooldown by 30 seconds."
+                  "text": "Changed functionality: <modified, abilities,  basic, 3> target throw target stuns enemies near the impact area for 0.25 seconds, if the target throw is a non-heroic unit reduces the cooldown by 30 seconds."
                 }
               ],
               "developerCommentary": "I want to bring a utility for throwing minions instead of only a mistake.",
@@ -141,7 +141,7 @@
           "changes": [
             {
               "change_id": "garrosh_9",
-              "name": "Double Up renamed to Don't let them run",
+              "name": "<vanilla, talents, 13, 2> renamed to Don't let them run",
               "texts": [
                 {
                   "text": "Changed functionality: Increase Garrosh movement speed by 1% every 4% missing health capping at 15%. This Talent only take effect if there's an visible enemy hero close to Garrosh.",
@@ -159,7 +159,7 @@
           "changes": [
             {
               "change_id": "garrosh_11",
-              "name": "Body Check",
+              "name": "<vanilla, talents, 1, 2>",
               "texts": [
                 {
                   "text": "Moved from level 1."
@@ -177,13 +177,13 @@
             },
             {
               "change_id": "garrosh_10",
-              "name": "Earthshaker",
+              "name": "<vanilla, talents, 16, 1>",
               "texts": [
                 {
                   "text": "removed"
                 }
               ],
-              "developerCommentary": "With the changes to Lok-tar Ogar! there's no need anymore for that talent",
+              "developerCommentary": "With the changes to <modified, abilities,  basic, 3> there's no need anymore for that talent",
               "likes": 0,
               "likedBy": {}
             }
@@ -197,20 +197,20 @@
               "name": "New: Gorehowl",
               "texts": [
                 {
-                  "text": "After Garrosh uses Groundbreaker, three additional waves are created sequentially from the edge of the original area. Each wave deals 81 damage and stuns enemies for 0.5 seconds.",
+                  "text": "After Garrosh uses <modified, abilities,  basic, 0>, three additional waves are created sequentially from the edge of the original area. Each wave deals 81 damage and stuns enemies for 0.5 seconds.",
                   "subtexts": [
                     "Additional waves are affected by groundbreaking tactics size increase but WILL pull the enemies.",
                     "Imagine something  close to the Sonya Seismic Slam"
                   ]
                 }
               ],
-              "developerCommentary": "I wanted to empower groundbreaker somehow and this, this is good. I really like the concept of Angry Garrosh simply destroying the ground angry as he is and it also feels like an level 20 talent.",
+              "developerCommentary": "I wanted to empower <modified, abilities,  basic, 0> somehow and this, this is good. I really like the concept of Angry Garrosh simply destroying the ground angry as he is and it also feels like an level 20 talent.",
               "likes": 0,
               "likedBy": {}
             },
             {
               "change_id": "garrosh_13",
-              "name": "Inner rage",
+              "name": "<vanilla, talents, 20, 3>",
               "texts": [
                 {
                   "text": "Removed"

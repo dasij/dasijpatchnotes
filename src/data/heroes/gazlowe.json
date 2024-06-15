@@ -48,25 +48,25 @@
             },
             {
               "change_id": "gazlowe_3",
-              "name": "One Man Wrecking Crew",
+              "name": "<vanilla, talents,  1, 2>",
               "texts": [
                 {
                   "text": "removed"
                 }
               ],
-              "developerCommentary": "As a competitor to Big Game Hunter this talent serves less purposes for the auto attack build as putting more turrets it's both more beneficial and cooler for Gazlowe than just hitting harder",
+              "developerCommentary": "As a competitor to <vanilla, talents,  1, 1> this talent serves less purposes for the auto attack build as putting more turrets it's both more beneficial and cooler for Gazlowe than just hitting harder",
               "likes": 0,
               "likedBy": {}
             },
             {
               "change_id": "gazlowe_4",
-              "name": "Big Game Hunter",
+              "name": "<vanilla, talents,  1, 1>",
               "texts": [
                 {
-                  "text": "Additional functionality: Destroying a turret with Reduce, Reuse, Recycle gives Gazlowe 15% movement speed for 2 seconds"
+                  "text": "Additional functionality: Destroying a turret with <modified, abilities,  trait, 0> gives Gazlowe 15% movement speed for 2 seconds"
                 }
               ],
-              "developerCommentary": "The auto attack is a build more focused on solo laners and it requires Gazlowe to hit heroes. The problem with that relies on Gazlowe's methods to reach enemies or crowd control them. His bomb is hard to hit, and the movement speed on basic attacks comes only on level 16, with no mobility, he has hard times going for the enemies. The only reliable source for him to for the auto attacks safely and early is the slow he gets when hitting with Master Blaster talent. So the objective here is to bring up the tools for him to go for this auto attack build faster by making a synergy with the extra scrap and making it a more high skill ceiling talent.",
+              "developerCommentary": "The auto attack is a build more focused on solo laners and it requires Gazlowe to hit heroes. The problem with that relies on Gazlowe's methods to reach enemies or crowd control them. His <modified, abilities, basic, 2> is hard to hit, and the movement speed on basic attacks comes only on level 16, with no mobility, he has hard times going for the enemies. The only reliable source for him to for the auto attacks safely and early is the slow he gets when hitting with <vanilla, talents,  7, 2>. So the objective here is to bring up the tools for him to go for this auto attack build faster by making a synergy with the extra scrap and making it a more high skill ceiling talent.",
               "likes": 0,
               "likedBy": {}
             }
@@ -77,25 +77,25 @@
           "changes": [
             {
               "change_id": "gazlowe_5",
-              "name": "EZ-PZ Dimensional Ripper",
+              "name": "<vanilla, talents,  4, 2>",
               "texts": [
                 {
-                  "text": "Changed functionality: Destroying a turret with Reduce, Reuse, Recycle reduces nearby enemy heroes' damage by 20% and increases allied heroes' armor by 10 for 4 seconds. Gazlowe will receive a shield that absorbs 100 damage for each hero affected for 2.5 seconds"
+                  "text": "Changed functionality: Destroying a turret with <modified, abilities,  trait, 0> reduces nearby enemy heroes' damage by 20% and increases allied heroes' armor by 10 for 4 seconds. Gazlowe will receive a shield that absorbs 100 damage for each hero affected for 2.5 seconds"
                 }
               ],
-              "developerCommentary": "EZ-PZ Dimensional Ripper and Rock It Sock It kindas fight for the same spot of utility, one being more turret focused and the other being a more eazy to pick talent but it kinda undermines build variety with 2 talents covering the same topic. For that instance both talents also works in a way too simple that >IN MY OPINION< could be more valued in a higher skill ceiling talent that also doesn't too complex. The objective here is to make that talent viable both as a 4-man and a solo laner while showing that skill expression that i talked about as the enemy hero damage reduction would work better in 1v1's and the armor would work better when close to your team.",
+              "developerCommentary": "<vanilla, talents,  4, 2> and <vanilla, talents,  4, 0> kindas fight for the same spot of utility, one being more turret focused and the other being a more eazy to pick talent but it kinda undermines build variety with 2 talents covering the same topic. For that instance both talents also works in a way too simple that >IN MY OPINION< could be more valued in a higher skill ceiling talent that also doesn't too complex. The objective here is to make that talent viable both as a 4-man and a solo laner while showing that skill expression that i talked about as the enemy hero damage reduction would work better in 1v1's and the armor would work better when close to your team.",
               "likes": 0,
               "likedBy": {}
             },
             {
               "change_id": "gazlowe_6",
-              "name": "Rock It Sock It",
+              "name": "<vanilla, talents,  4, 0>",
               "texts": [
                 {
                   "text": "Removed"
                 }
               ],
-              "developerCommentary": "I mixed this talent with EZ-PZ Dimensional Ripper",
+              "developerCommentary": "I mixed this talent with <vanilla, talents,  4, 2>",
               "likes": 0,
               "likedBy": {}
             },
@@ -116,13 +116,13 @@
             },
             {
               "change_id": "gazlowe_8",
-              "name": "Hyperfocus Coils",
+              "name": "<vanilla, talents,  4, 1>",
               "texts": [
                 {
-                  "text": "Changed functionality: Heroes hit with Deth Lazor are affected by Zap for 3 seconds, dealing 40 damage per second to enemy heroes close to them. Hitting the same enemy hero with Deth Lazor and Xplodium Charge within 3 seconds makes Gazlowe zap all his Rock-It! Turrets to deal damage to the enemies. Gazlowe is healed for 100% of all Zap damage"
+                  "text": "Changed functionality: Heroes hit with <modified, abilities,  basic, 1> are affected by Zap for 3 seconds, dealing 40 damage per second to enemy heroes close to them. Hitting the same enemy hero with <modified, abilities,  basic, 1> and <modified, abilities, basic, 2> within 3 seconds makes Gazlowe zap all his <modified, abilities,  basic, 0> to deal damage to the enemies. Gazlowe is healed for 100% of all Zap damage"
                 }
               ],
-              "developerCommentary": "Hyperfocus Coils original effects serves his purpose for the mage talent build BUT it's not only about serving the purpose that makes HOTS talents cool but also how they affect your gameplay, straight number buffs are not necessarily game changers and I FELT that on this. The changes here are made to make the original purpose stay..damage+healing on the Deth Lazor but also adding more interactions and effects that would make the player play potential increase",
+              "developerCommentary": "<vanilla, talents,  4, 1> original effects serves his purpose for the mage talent build BUT it's not only about serving the purpose that makes HOTS talents cool but also how they affect your gameplay, straight number buffs are not necessarily game changers and I FELT that on this. The changes here are made to make the original purpose stay..damage+healing on the <modified, abilities,  basic, 1> but also adding more interactions and effects that would make the player play potential increase",
               "likes": 0,
               "likedBy": {}
             }
@@ -133,16 +133,16 @@
           "changes": [
             {
               "change_id": "gazlowe_9",
-              "name": "Cardboard Assassin(active)",
+              "name": "New: Cardboard Assassin(active)",
               "texts": [
                 {
                   "text": "Activate to place a Cardboard Assassin decoy unit that have 1000 health and act as a heroic unit for 10 seconds."
                 },
                 {
-                  "text": "If you hit Cardboard Assassin with Deth Lazor, it becomes Zapped and deals 40 damage per second and heals 100% of the damage to enemy heroes and taunts them for 0.5 seconds. After 3 seconds, it explodes and get destroyed. (Cooldown: 10 seconds)"
+                  "text": "If you hit Cardboard Assassin with <modified, abilities,  basic, 1>, it becomes Zapped and deals 40 damage per second and heals 100% of the damage to enemy heroes and taunts them for 0.5 seconds. After 3 seconds, it explodes and get destroyed. (Cooldown: 10 seconds)"
                 },
                 {
-                  "text": "Passive: Deth Lazor cooldown is reduced by 2 seconds"
+                  "text": "Passive: <modified, abilities,  basic, 1> cooldown is reduced by 2 seconds"
                 }
               ],
               "developerCommentary": "CardBoard Assassin is made with the intention to increase the skill expression of gazlowe while also mainting the roleplay of builder fantasy",
@@ -151,13 +151,13 @@
             },
             {
               "change_id": "gazlowe_10",
-              "name": "Overload",
+              "name": "<vanilla, talents,  7, 1>",
               "texts": [
                 {
                   "text": "Moved to level 13"
                 }
               ],
-              "developerCommentary": "With the new Cardboard Assassin Overload would start to be undervalued",
+              "developerCommentary": "With the new Cardboard Assassin <vanilla, talents,  7, 1> would start to be undervalued",
               "likes": 0,
               "likedBy": {}
             }
@@ -168,19 +168,19 @@
           "changes": [
             {
               "change_id": "gazlowe_11",
-              "name": "Robo-Goblin",
+              "name": "<vanilla, abilities, heroic, 0>",
               "texts": [
                 {
                   "text": "Basic attacks stack now deal 60 damage over 5 seconds, but stack up to 9 times."
                 },
                 {
-                  "text": "Additional functionality:  Rock-It! Turrets now explode dealing 135 damage to enemies when they are destroyed"
+                  "text": "Additional functionality:  <modified, abilities,  basic, 0> now explode dealing 135 damage to enemies when they are destroyed"
                 },
                 {
                   "text": "additional functionality: Increase max scrap limit by 6 and increase scrap regeneration speed by 50%"
                 }
               ],
-              "developerCommentary": "Robo-Goblin ain't a big game changer compared to Grav-o-Bomb for your build to be picked and not effective as much BUT with the additional power the talents i created/modified i believe that making it have a increased synergy with Rock-it! Turret would make it A GAME CHANGER for some builds.",
+              "developerCommentary": "<vanilla, abilities, heroic, 0> ain't a big game changer compared to Grav-o-Bomb for your build to be picked and not effective as much BUT with the additional power the talents i created/modified i believe that making it have a increased synergy with <modified, abilities,  basic, 0> would make it A GAME CHANGER for some builds.",
               "likes": 0,
               "likedBy": {}
             }
@@ -191,37 +191,37 @@
           "changes": [
             {
               "change_id": "gazlowe_12",
-              "name": "Overcharged Capacitors",
+              "name": "<vanilla, talents,  13, 2>",
               "texts": [
                 {
                   "text": "Removed"
                 }
               ],
-              "developerCommentary": "Increase the ability damage is part of the Grav-O-Bomb 3000 effect and further increasing it's spell power on a counter intuitive way of auto attacking ain't the best solution for my gameplay vision. I understand that this talent was made for mage players to value more their turrets but there are another ways that i would prefer to",
+              "developerCommentary": "Increase the ability damage is part of the <vanilla, abilities, heroic, 1> effect and further increasing it's spell power on a counter intuitive way of auto attacking ain't the best solution for my gameplay vision. I understand that this talent was made for mage players to value more their turrets but there are another ways that i would prefer to",
               "likes": 0,
               "likedBy": {}
             },
             {
               "change_id": "gazlowe_13",
-              "name": "Overload",
+              "name": "<vanilla, talents,  7, 1>",
               "texts": [
                 {
-                  "text": "Changed functionality: Deth Lazor can now be recast during its channeling up to three times. Each recast will increase the channel time by 0.65 seconds, the area by 100% of its base area, and the damage by 75% of the base damage"
+                  "text": "Changed functionality: <modified, abilities,  basic, 1> can now be recast during its channeling up to three times. Each recast will increase the channel time by 0.65 seconds, the area by 100% of its base area, and the damage by 75% of the base damage"
                 },
                 {
                   "text": "moved from level 7"
                 }
               ],
-              "developerCommentary": "Overload on level 13 is an option to replace Overcharged Capacitors while also making Gazlowe more prone to creative plays. The ideia of increasing Deth Lazor casting better suit what i envision of player control instead of the original effect of non-stop reseting.",
+              "developerCommentary": "<vanilla, talents,  7, 1> on level 13 is an option to replace <vanilla, talents,  13, 2> while also making Gazlowe more prone to creative plays. The ideia of increasing <modified, abilities,  basic, 1> casting better suit what i envision of player control instead of the original effect of non-stop reseting.",
               "likes": 0,
               "likedBy": {}
             },
             {
               "change_id": "gazlowe_14",
-              "name": "Positive Reinforcement",
+              "name": "<vanilla, talents,  13, 0>",
               "texts": [
                 {
-                  "text": "Additional functionality: Dealing Basic Attack damage extends the duration of Rock-It! Turrets by 0.75 seconds"
+                  "text": "Additional functionality: Dealing Basic Attack damage extends the duration of <modified, abilities,  basic, 0> by 0.75 seconds"
                 }
               ],
               "developerCommentary": "I always felt that this talent effects belongs to an AA build as it rewards more the Gazlowe players that risk themselves more for the basic attacks",
@@ -235,28 +235,28 @@
           "changes": [
             {
               "change_id": "gazlowe_17",
-              "name": "Overklock",
+              "name": "<vanilla, talents,  16, 2>",
               "texts": [
                 {
-                  "text": "No changes"
+                  "text": "Movement speed bonus is now stacking"
                 }
               ],
-              "developerCommentary": "I just want to note that the movement speed you get from Big Game Hunter needs to stack with that talent granting an effective 30% movespeed bonus if used correctly",
+              "developerCommentary": "I just want to note that the movement speed you get from <modified, talents,  1, 1> needs to stack with that talent granting an effective 30% movespeed bonus if used correctly",
               "likes": 0,
               "likedBy": {}
             },
             {
               "change_id": "gazlowe_18",
-              "name": "Firin' Mah Lazorz",
+              "name": "<vanilla, talents,  16, 0>",
               "texts": [
                 {
-                  "text": "Changed functionality:  Rock-It! Turrets every 5 seconds will charge a lazor making it next shoot deal 125 damage"
+                  "text": "Changed functionality:  <modified, abilities,  basic, 0> every 5 seconds will charge a lazor making it next shoot deal 125 damage"
                 },
                 {
-                  "text": "(Active) L-A-Z-O-R: The next time you cast a Deth Lazor will make all your Rock-it! Turrets shoot a lazor(30 seconds cooldown)"
+                  "text": "(Active) L-A-Z-O-R: The next time you cast a <modified, abilities,  basic, 1> will make all your <modified, abilities,  basic, 0> shoot a lazor(30 seconds cooldown)"
                 }
               ],
-              "developerCommentary": "Changing Firin' Mah Lazors to be more consistent and reliable",
+              "developerCommentary": "Changing <vanilla, talents,  16, 0> to be more consistent and reliable",
               "likes": 0,
               "likedBy": {}
             }
@@ -267,7 +267,7 @@
           "changes": [
             {
               "change_id": "gazlowe_19",
-              "name": "Mecha lord",
+              "name": "<vanilla, talents,  20, 0>",
               "texts": [
                 {
                   "text": "Changed functionality: Basic Attacks increase Gazlowe's Armor by 5 for 5 seconds, up to a maximum of 45."
@@ -279,7 +279,7 @@
                   ]
                 }
               ],
-              "developerCommentary": "Mecha Lord doesn't encourages basic attacks build enough neither it can compete with It's Raining Scrap on the build, so, you don't need to try to compete with it. Gazlowe as a tinkerer should have a happy time as a builder. For instance i don't even mine it being a copy cat of Gyrocopter homing missile because it suits SO WELL gazlowe",
+              "developerCommentary": "<vanilla, talents,  20, 0> doesn't encourages basic attacks build enough neither it can compete with <vanilla, talents,  20, 2> on the build, so, you don't need to try to compete with it. Gazlowe as a tinkerer should have a happy time as a builder. For instance i don't even mine it being a copy cat of Gyrocopter homing missile because it suits SO WELL gazlowe",
               "likes": 0,
               "likedBy": {}
             }

@@ -10,10 +10,10 @@
       "general": [
         {
           "change_id": "deckard_1",
-          "change": "Horadric Cube (W)",
+          "change": "<vanilla, abilities,  basic, 1>",
           "texts": [
             {
-              "text": "Additional functionality: Horadric cube will now roulette between 7 gems sequentially each time it's cast, each gem will have a different effect.",
+              "text": "Additional functionality: <vanilla, abilities,  basic, 1> will now roulette between 7 gems sequentially each time it's cast, each gem will have a different effect.",
               "subtexts": [
                 "Sapphire: Slow enemy heroes by 40% for 2 seconds",
                 "Amethyst: Increase cast speed by 25%",
@@ -37,13 +37,13 @@
           "changes": [
             {
               "change_id": "deckard_2",
-              "name": "Scroll of Identify",
+              "name": "<vanilla, talents, 1, 0>",
               "texts": [
                 {
-                  "text": "Changed functionality: Quest: Hitting an enemy Hero with Scroll of Sealing permanently increases its damage by 2",
+                  "text": "Changed functionality: Quest: Hitting an enemy Hero with <modified, abilities,  basic, 2> permanently increases its damage by 2",
                   "subtexts": [
-                    "Reward 15 hits: Scroll of sealing will also apply gems from the roulette and reveal hit heroes by 6 seconds",
-                    "Reward 30 hits: Scroll of sealing now deal 500% extra damage to summons"
+                    "Reward 15 hits: <modified, abilities,  basic, 2> will also apply gems from the roulette and reveal hit heroes by 6 seconds",
+                    "Reward 30 hits: <modified, abilities,  basic, 2> now deal 500% extra damage to summons"
                   ]
                 }
               ],
@@ -53,7 +53,7 @@
             },
             {
               "change_id": "deckard_3",
-              "name": "Scroll of town portal",
+              "name": "New: Scroll of town portal",
               "texts": [
                 {
                   "text": "Empowers Deckard Cain hearthstone by creating a portal on the the halls of the storm and original hearthstone location that allied heros can teleport from both positions. The portal lasts 6 seconds and will vanish after 3 uses.",
@@ -69,7 +69,7 @@
             },
             {
               "change_id": "deckard_4",
-              "name": "Field study",
+              "name": "<vanilla, talents, 1, 1>",
               "texts": [
                 {
                   "text": "removed"
@@ -81,10 +81,10 @@
             },
             {
               "change_id": "deckard_5",
-              "name": "Sapphire renamed to Polished Sapphire",
+              "name": "<vanilla, talents, 1, 2> renamed to Polished Sapphire",
               "texts": [
                 {
-                  "text": "Reformulated: Activate to lock Sapphire on the roulette and increase the damage of the next Horadric Cube by 100% and its slow from 10% to 30%."
+                  "text": "Reformulated: Activate to lock Sapphire on the roulette and increase the damage of the next <modified, abilities,  basic, 1> by 100% and its slow from 10% to 30%."
                 }
               ],
               "developerCommentary": "It's the same effect just updated for the roullete",
@@ -98,13 +98,13 @@
           "changes": [
             {
               "change_id": "deckard_6",
-              "name": "Rejuvenation Potion changed to Mana potion",
+              "name": "<vanilla, talents, 4, 1> changed to Mana potion",
               "texts": [
                 {
                   "text": "Won't heal anymore and the mana healed is increased to 35"
                 },
                 {
-                  "text": "Additional functionality: Whenever an ally is healed by a healing potion, they gain 10% spell power for 3 seconds (Non-stacking)"
+                  "text": "Additional functionality: Whenever an ally is healed by a <modified, abilities,  basic, 0>, they gain 10% spell power for 3 seconds (Non-stacking)"
                 }
               ],
               "developerCommentary": "I dislike the conflict between picking Ruby and Rejuvesnation potion for maximizing the healing output so i prefer giving mana potion a completely different approach going for mages.",
@@ -113,10 +113,10 @@
             },
             {
               "change_id": "deckard_7",
-              "name": "Ruby renamed to Polished Ruby",
+              "name": "<vanilla, talents, 4, 2> renamed to Polished Ruby",
               "texts": [
                 {
-                  "text": "Reformulated: Activate to lock Ruby on the roulette and increase the damage of the next Horadric Cube by 100% and it spawns 3 Lesser Healing Potions instead of 1 from each enemy Hero hit, healing allied Heroes for 250 when picked up. Lesser Healing Potions last for 10 seconds."
+                  "text": "Reformulated: Activate to lock Ruby on the roulette and increase the damage of the next <modified, abilities,  basic, 1> by 100% and it spawns 3 Lesser <modified, abilities,  basic, 0>s instead of 1 from each enemy Hero hit, healing allied Heroes for 250 when picked up. Lesser <modified, abilities,  basic, 0>s last for 10 seconds."
                 }
               ],
               "developerCommentary": "It's the same effect just updated for the roullete",
@@ -130,10 +130,10 @@
           "changes": [
             {
               "change_id": "deckard_8",
-              "name": "Emerald renamed to Polished Emerald",
+              "name": "<vanilla, talents, 7, 2> renamed to Polished Emerald",
               "texts": [
                 {
-                  "text": "Reformulated: Activate to lock Emerald on the roulette and make the next Horadric Cube reduce healing received by 75% instead of 25% for 4 seconds."
+                  "text": "Reformulated: Activate to lock Emerald on the roulette and make the next <modified, abilities,  basic, 1> reduce healing received by 75% instead of 25% for 4 seconds."
                 }
               ],
               "developerCommentary": "It's the same effect just updated for the roullete",
@@ -147,7 +147,7 @@
           "changes": [
             {
               "change_id": "deckard_9",
-              "name": "Lorenado",
+              "name": "<vanilla, abilities, heroic, 1>",
               "texts": [
                 {
                   "text": "Additional functionality: Will also apply the gem effect from the roulette."
@@ -164,10 +164,10 @@
           "changes": [
             {
               "change_id": "deckard_10",
-              "name": "Hotbar",
+              "name": "New: Hotbar",
               "texts": [
                 {
-                  "text": "Whenever an ally is healed by a healing potion 0.5 seconds after it's cast grants 15 armor and 15% movement speed for 2 seconds"
+                  "text": "Whenever an ally is healed by a <modified, abilities,  basic, 0> 0.5 seconds after it's cast grants 15 armor and 22.5% movement speed for 2 seconds"
                 }
               ],
               "developerCommentary": "Hitting deckard potions right on the target is a hard task and only rewarded by the shield talent but not necessarily you need to hit it on time and for me a talent that reward consistent insta heal is fun.",
@@ -176,7 +176,7 @@
             },
             {
               "change_id": "deckard_11",
-              "name": "Potion of revival",
+              "name": "<vanilla, talents, 13, 1>",
               "texts": [
                 {
                   "text": "removed"
@@ -193,10 +193,10 @@
           "changes": [
             {
               "change_id": "deckard_12",
-              "name": "Bottomless flask",
+              "name": "<vanilla, talents, 20, 2>",
               "texts": [
                 {
-                  "text": "Additional functionality: Hitting enemy heros with Scroll of Sealing and horadric cube recharges the potions 0.75 second faster."
+                  "text": "Additional functionality: Hitting enemy heros with <modified, abilities,  basic, 2> and <modified, abilities,  basic, 1> recharges the potions 0.75 second faster."
                 }
               ],
               "developerCommentary": "With the baseline lorenado buff i also wanted to insert diamond gems in the game and saw a perfect opportunity to do it with lorenado.",
@@ -205,10 +205,10 @@
             },
             {
               "change_id": "deckard_13",
-              "name": "Perfect Gems",
+              "name": "<vanilla, talents, 20, 3>",
               "texts": [
                 {
-                  "text": "Changed functionality: Horadric cube will now cast 3 times at the target position with 0.5 delay between casts, each time applying the following gem on the roullete."
+                  "text": "Changed functionality: <modified, abilities,  basic, 1> will now cast 3 times at the target position with 0.5 delay between casts, each time applying the following gem on the roullete."
                 }
               ],
               "developerCommentary": "All the gems rework i made was just a path for that. You can use a polished gem version with that.",

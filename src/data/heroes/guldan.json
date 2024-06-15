@@ -10,28 +10,28 @@
       "general": [
         {
           "change_id": "guldan_21",
-          "change": "Drain life (W)",
+          "change": "<vanilla, abilities, basic, 1>",
           "texts": [
             {
               "text": "Increase cast range by 25%"
             }
           ],
-          "developerCommentary": "Gul'dan drain life currently has a problem..depending on how you build Gul'dan drain life becomes your priority skill by far or the useless one and with the other changes i propose on the drain life aspect one thing is prevalent..Without the extra cast range there's almost no incentive to use it.",
+          "developerCommentary": "Gul'dan <vanilla, abilities, basic, 1> currently has a problem..depending on how you build Gul'dan <vanilla, abilities, basic, 1> becomes your priority skill by far or the useless one and with the other changes i propose on the <vanilla, abilities, basic, 1> aspect one thing is prevalent..Without the extra cast range there's almost no incentive to use it.",
           "likes": 0,
           "likedBy": {}
         }
       ],
-      "developerCommentary": "I like Gul'dan's gameplay and how he has developed in various aspects, but just because I like something doesn't mean it's solid. Currently, he faces two serious problems: one where one of his ultimates is basically losing a talent by picking it, and the other is that his talents have been molded into a funnel shape. What I mean is that there is little room for variability in Gul'dan's talents, especially if you choose to go for the drain life build. What I initially thought could be something simple, I realized how difficult it is to change his talents without altering his entire structure and completely changing how Gul'dan should choose his talents, since the talents themselves are not necessarily bad or uncreative and with that i will probally kill some builds and i will instead make it a more all-rounded mage to preserve something i really like on Heroes of the Storm talent tree system and that's the possibility of mixing builds.",
+      "developerCommentary": "I like Gul'dan's gameplay and how he has developed in various aspects, but just because I like something doesn't mean it's solid. Currently, he faces two serious problems: one where one of his ultimates is basically losing a talent by picking it, and the other is that his talents have been molded into a funnel shape. What I mean is that there is little room for variability in Gul'dan's talents, especially if you choose to go for the <vanilla, abilities, basic, 1> build. What I initially thought could be something simple, I realized how difficult it is to change his talents without altering his entire structure and completely changing how Gul'dan should choose his talents, since the talents themselves are not necessarily bad or uncreative and with that i will probally kill some builds and i will instead make it a more all-rounded mage to preserve something i really like on Heroes of the Storm talent tree system and that's the possibility of mixing builds.",
       "sections": [
         {
           "name": "Level 1",
           "changes": [
             {
               "change_id": "guldan_1",
-              "name": "Chaotic Energy",
+              "name": "<vanilla, talents, 1, 1>",
               "texts": [
                 {
-                  "text": "Changed functionality: Drain life reduces the target self-heal and regeneration effects by 75% while it's active.",
+                  "text": "Changed functionality: <modified, abilities, basic, 1> reduces the target self-heal and regeneration effects by 75% while it's active.",
                   "subtexts": [
                     "For complete context, it won't reduce healing from other heroes. For example Dehaka essence or adaptation healing will be cut but receiving healing from a Healer will work normally."
                   ]
@@ -43,13 +43,13 @@
             },
             {
               "change_id": "guldan_2",
-              "name": "Pursuit of flame",
+              "name": "<vanilla, talents, 1, 0>",
               "texts": [
                 {
-                  "text": "Additional functionality: Hitting Corruption affected targets with fel flame restores Gul'dan life by 22.5 this bonus is increased to 90 on heroes"
+                  "text": "Additional functionality: Hitting <modified, abilities, basic, 2> affected targets with <modified, abilities, basic, 0> restores Gul'dan life by 22.5 this bonus is increased to 90 on heroes"
                 }
               ],
-              "developerCommentary": "Corruption is a high cost skill that Gul'dan players should take a little more care to use BUT i wanted to increase interactions between corruption and the rest of the Kit. Also i wanted to provide some 'more' to the pursuit of flame as it's not very popular for being a little dull",
+              "developerCommentary": "<modified, abilities, basic, 2> is a high cost skill that Gul'dan players should take a little more care to use BUT i wanted to increase interactions between <modified, abilities, basic, 2> and the rest of the Kit. Also i wanted to provide some 'more' to the pursuit of flame as it's not very popular for being a little dull",
               "likes": 0,
               "likedBy": {}
             },
@@ -71,13 +71,13 @@
 
             {
               "change_id": "guldan_4",
-              "name": "Echoed corruption",
+              "name": "<vanilla, talents, 1, 2>",
               "texts": [
                 {
                   "text": "Moved to level 20"
                 }
               ],
-              "developerCommentary": "With how i want to bring the level one talents there's not much space for Echoed Corruption here",
+              "developerCommentary": "With how i want to bring the level one talents there's not much space for Echoed <modified, abilities, basic, 2> here",
               "likes": 0,
               "likedBy": {}
             }
@@ -88,25 +88,25 @@
           "changes": [
             {
               "change_id": "guldan_6",
-              "name": "Harvest life",
+              "name": "<vanilla, talents, 13, 1>",
               "texts": [
                 {
                   "text": "Moved from level 13"
                 }
               ],
-              "developerCommentary": "I want to make players choose one drain life bonus instead of building drain life, one of the things that make harvest life is strong is the combination with curse of exhaustion",
+              "developerCommentary": "I want to make players choose one <modified, abilities, basic, 1> bonus instead of building <modified, abilities, basic, 1>, one of the things that make <vanilla, talents, 13, 1> is strong is the combination with <vanilla, talents, 7, 1>",
               "likes": 0,
               "likedBy": {}
             },
             {
               "change_id": "guldan_7",
-              "name": "Curse of exhaustion",
+              "name": "<vanilla, talents, 7, 1>",
               "texts": [
                 {
                   "text": "Moved from level 7"
                 }
               ],
-              "developerCommentary": "I want to make players choose one drain life bonus instead of building drain life",
+              "developerCommentary": "I want to make players choose one <modified, abilities, basic, 1> bonus instead of building <modified, abilities, basic, 1>",
               "likes": 0,
               "likedBy": {}
             },
@@ -115,7 +115,7 @@
               "name": "New talent: Drain power",
               "texts": [
                 {
-                  "text": "Drain life will steal 7.5% spell power per second if used on corruption affected enemies, Gul'dan will retain the spell power for 4 seconds after stop draining"
+                  "text": "<modified, abilities, basic, 1> will steal 7.5% spell power per second if used on <modified, abilities, basic, 2> affected enemies, Gul'dan will retain the spell power for 4 seconds after stop draining"
                 }
               ],
               "developerCommentary": "Gul'dan is well known for drain vital essence and i think that can be transferred to spell power",
@@ -124,13 +124,13 @@
             },
             {
               "change_id": "guldan_9",
-              "name": "Health funnel, Improved life tap, consume souls",
+              "name": "<vanilla, talents, 4, 0>, <vanilla, talents, 4, 1>, <vanilla, talents, 4, 2>",
               "texts": [
                 {
                   "text": "Removed"
                 }
               ],
-              "developerCommentary": "I mixed it with Darkness Within to bring true usability for it and i also want to bring drain life talents all to this tier",
+              "developerCommentary": "I mixed it with <vanilla, talents, 16, 2> to bring true usability for it and i also want to bring <modified, abilities, basic, 1> talents all to this tier",
               "likes": 0,
               "likedBy": {}
             }
@@ -141,7 +141,7 @@
           "changes": [
             {
               "change_id": "guldan_10",
-              "name": "Cursed of exhaustion",
+              "name": "<vanilla, talents, 7, 1>",
               "texts": [
                 {
                   "text": "Moved to level 4"
@@ -159,7 +159,7 @@
                   "text": "Moved from level 16"
                 },
                 {
-                  "text": "Changed functionality: Dealing 600 (+4% per level) damage to enemy Heroes causes the next cast of Life Tap to cost no Health and increases the mana restored to 60%."
+                  "text": "Changed functionality: Dealing 600 (+4% per level) damage to enemy Heroes causes the next cast of <modified, abilities, trait, 0> to cost no Health and increases the mana restored to 60%."
                 }
               ],
               "developerCommentary": "I want Hungry for power and Drain power to be the only ways to obtain more spellpower so instead i am bringing this talent for a sustain.",
@@ -173,17 +173,17 @@
           "changes": [
             {
               "change_id": "guldan_12",
-              "name": "Rain of destruction",
+              "name": "<vanilla, abilities, heroic, 1>",
               "texts": [
                 {
-                  "text": "Rain of destruction will now start at a 3.0 radius and will be gradually increasing it up to 9 on the 5 second mark. Has 50% reduced damage against structures now",
+                  "text": "<vanilla, abilities, heroic, 1> will now start at a 3.0 radius and will be gradually increasing it up to 9 on the 5 second mark. Has 50% reduced damage against structures now",
                   "subtexts": [
                     "This won't change the meteor spawn rate it will just concentrate the damage at the beginning at a smaller area.",
                     "Muradin thunderclap has 3.0 radius."
                   ]
                 }
               ],
-              "developerCommentary": "My initial idea was to make Rain of destruction have a smaller radius since the beginning and make it have charges but that would make it too similar on Jaina Blizzard and after thinking a little RoD greatest problem was the uncertainty of it's effect as it one of the few skills that are affected by luck on Heroes of the storm. End result was not go away from the similarity to Blizzard but make it on a unique way.",
+              "developerCommentary": "My initial idea was to make <vanilla, abilities, heroic, 1> have a smaller radius since the beginning and make it have charges but that would make it too similar on Jaina Blizzard and after thinking a little RoD greatest problem was the uncertainty of it's effect as it one of the few skills that are affected by luck on Heroes of the storm. End result was not go away from the similarity to Blizzard but make it on a unique way.",
               "likes": 0,
               "likedBy": {}
             }
@@ -194,7 +194,7 @@
           "changes": [
             {
               "change_id": "guldan_13",
-              "name": "Dark Bargain",
+              "name": "<vanilla, talents, 13, 2>",
               "texts": [
                 {
                   "text": "Changed functionality: Activate to consume a enemy or allied hero body to absorb their maximum health points, the extra health granted will decay over 15 seconds",
@@ -212,13 +212,13 @@
             },
             {
               "change_id": "guldan_14",
-              "name": "Harvest life",
+              "name": "<vanilla, talents, 13, 1>",
               "texts": [
                 {
                   "text": "Moved to level 4"
                 }
               ],
-              "developerCommentary": "You alredy saw my deeds and also, i dislike healthstone and harvest life on the same tier as they achieve the same goal with the only difference that drain life was gatekeeped by picking other talents",
+              "developerCommentary": "You alredy saw my deeds and also, i dislike healthstone and harvest life on the same tier as they achieve the same goal with the only difference that <modified, abilities, basic, 1> was gatekeeped by picking other talents",
               "likes": 0,
               "likedBy": {}
             }
@@ -229,37 +229,37 @@
           "changes": [
             {
               "change_id": "guldan_15",
-              "name": "Drain hope",
+              "name": "New: Drain hope",
               "texts": [
                 {
-                  "text": "Activate to channel for 1.5 second, and then instantly teleport and cast drain life on all enemies in range.",
+                  "text": "Activate to channel for 1.5 second, and then instantly teleport and cast <modified, abilities, basic, 1> on all enemies in range.",
                   "subtexts": [
                     "7.0 range | Same as Malfurion 20 astral Communion"
                   ]
                 },
                 {
-                  "text": "Passive: Enemies that take full Drain life take additional 8% damage on the end"
+                  "text": "Passive: Enemies that take full <modified, abilities, basic, 1> take additional 8% damage on the end"
                 }
               ],
-              "developerCommentary": "Inspired by Fiddlesticks ultimate i wanted to create some way to make a ultra power move with drain life and make the Chupacabra build a little different.",
+              "developerCommentary": "Inspired by Fiddlesticks ultimate i wanted to create some way to make a ultra power move with <modified, abilities, basic, 1> and make the Chupacabra build a little different.",
               "likes": 0,
               "likedBy": {}
             },
             {
               "change_id": "guldan_16",
-              "name": "Darkness within",
+              "name": "<vanilla, talents, 16, 2>",
               "texts": [
                 {
                   "text": "Moved to level 7"
                 }
               ],
-              "developerCommentary": "You alredy saw my deeds but i always felt that was a little strange a talent that had little appeal on gameplay variability compared to the other talents appear on level 16. Rampant Hellfire requires consistent gameplay and Ruinous Affliction timed Corruptions but Darkness Within just require damaging to provide damage FOR THAT TIER i kinda dislike the bladness.",
+              "developerCommentary": "You alredy saw my deeds but i always felt that was a little strange a talent that had little appeal on gameplay variability compared to the other talents appear on level 16. <vanilla, talents, 16, 0> requires consistent gameplay and Ruinous Affliction timed <modified, abilities, basic, 2>s but Darkness Within just require damaging to provide damage FOR THAT TIER i kinda dislike the bladness.",
               "likes": 0,
               "likedBy": {}
             },
             {
               "change_id": "guldan_19",
-              "name": "Echoed corruption",
+              "name": "<vanilla, talents, 1, 2>",
               "texts": [
                 {
                   "text": "Moved from level 1"
@@ -274,13 +274,13 @@
             },
             {
               "change_id": "guldan_20",
-              "name": "Ruinous Affliction",
+              "name": "<vanilla, talents, 16, 1>",
               "texts": [
                 {
                   "text": "Moved to level 20"
                 }
               ],
-              "developerCommentary": "We are adding a little buff to him and pushing echoed corruption to level 16 to better balance things",
+              "developerCommentary": "We are adding a little buff to him and pushing echoed <modified, abilities, basic, 2> to level 16 to better balance things",
               "likes": 0,
               "likedBy": {}
             }
@@ -291,13 +291,13 @@
           "changes": [
             {
               "change_id": "guldan_18",
-              "name": "Ruinous Affliction",
+              "name": "<vanilla, talents, 16, 1>",
               "texts": [
                 {
                   "text": "Moved from level 16"
                 },
                 {
-                  "text": "Additional functionality: Enemy heroes hit by corruption are marked by Gul'dan envy, stealing all healing received by 40% for 6 seconds.",
+                  "text": "Additional functionality: Enemy heroes hit by <modified, abilities, basic, 2> are marked by Gul'dan envy, stealing all healing received by 40% for 6 seconds.",
                   "subtexts": [
                     "Receiving extra stacks resets the duration",
                     " This is not reduced healing effect is literally healing stealing"

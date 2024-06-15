@@ -15,13 +15,13 @@
           "changes": [
             {
               "change_id": "chromie_1",
-              "name": "Chronic conditions",
+              "name": "<vanilla, talents, 4, 0>",
               "texts": [
                 {
                   "text": "Changed bonus: Allied movespeed bonus is stacking."
                 }
               ],
-              "developerCommentary": "Chronic conditions is a talent that lacks only a little spice to make it cool and for me is to make it to increase the movespeed further on any situation be it Lucio wall ride or the mount.",
+              "developerCommentary": "<vanilla, talents, 4, 0> is a talent that lacks only a little spice to make it cool and for me is to make it to increase the movespeed further on any situation be it Lucio wall ride or the mount.",
               "likes": 0,
               "likedBy": {}
             }
@@ -44,7 +44,7 @@
             },
             {
               "change_id": "chromie_3",
-              "name": "A proper greeting",
+              "name": "<vanilla, talents, 7, 2>",
               "texts": [
                 {
                   "text": "Removed"
@@ -61,7 +61,7 @@
           "changes": [
             {
               "change_id": "chromie_4",
-              "name": "Temporal Loop",
+              "name": "<vanilla, abilities, heroic, 1>",
               "texts": [
                 {
                   "text": "Temporal friendship(active): Choose an Allied Hero. After 4 seconds, they are teleported back to the location where Temporal friendshipp was cast on them on the exact same state ( Including health points and basic abilities cooldowns )."
@@ -84,7 +84,7 @@
           "changes": [
             {
               "change_id": "chromie_5",
-              "name": "Here and There",
+              "name": "<vanilla, talents, 13, 1>",
               "texts": [
                 {
                   "text": "New functionality:There and there(active): Activate to swap with an active Time Trap",
@@ -101,7 +101,7 @@
             },
             {
               "change_id": "chromie_6",
-              "name": "Gnome speed ahead",
+              "name": "<vanilla, talents, 13, 0>",
               "texts": [
                 {
                   "text": "New bonus: Chromie now also receive the effect after leaving ANY stasis effect"
@@ -118,19 +118,19 @@
           "changes": [
             {
               "change_id": "chromie_7",
-              "name": "Fast forward",
+              "name": "<vanilla, talents, 16, 1>",
               "texts": [
                 {
                   "text": "New bonus: Increase projectile speed by 15% and max range by 15%"
                 }
               ],
-              "developerCommentary": "I want to make Fast Forward serve a different purpose than Shifting Sands on the concept of being a Damage focused concept, i want to make fast forward a 'sniper' skill so you can play safer but not damaging as much",
+              "developerCommentary": "I want to make <vanilla, talents, 16, 1> serve a different purpose than <vanilla, talents, 16, 0> on the concept of being a Damage focused concept, i want to make fast forward a 'sniper' skill so you can play safer but not damaging as much",
               "likes": 0,
               "likedBy": {}
             },
             {
               "change_id": "chromie_8",
-              "name": "Quantum Overdrive",
+              "name": "<vanilla, talents, 16, 2>",
               "texts": [
                 {
                   "text": "Changed functionality: Creates a zone that will speed every allied non-heroic unit time by 100% and slow every enemy non-heroic unit time by 75% for 8 seconds",
@@ -154,13 +154,13 @@
           "changes": [
             {
               "change_id": "chromie_9",
-              "name": "Unraveling",
+              "name": "<vanilla, talents, 20, 0>",
               "texts": [
                 {
                   "text": "Changed functionality: Will now cast an additional Speeding sands area on Chromie cast position, this area will instead speed up allied heroes by 10% every 0.25 second, up to 50%. The speed effect will persist for 0.75 seconds after leaving the area"
                 }
               ],
-              "developerCommentary": "Making a slow upgrade on the level of Slowing Sands stronger is not an optimal choice as it could be extremely disruptive for the gameplay so instead we are using it with the concept of speed for allied heros as it also goes under the 'time' concept.",
+              "developerCommentary": "Making a slow upgrade on the level of <new, abilities, heroic, 0> stronger is not an optimal choice as it could be extremely disruptive for the gameplay so instead we are using it with the concept of speed for allied heros as it also goes under the 'time' concept.",
               "likes": 0,
               "likedBy": {}
             },
@@ -179,7 +179,7 @@
             },
             {
               "change_id": "chromie_11",
-              "name": "Stuck in a loop",
+              "name": "<vanilla, talents, 20, 1>",
               "texts": [
                 {
                   "text": "Additional functionality: Temporal Friendship now also restores the allied hero heroic ability cooldown."
@@ -191,7 +191,7 @@
             },
             {
               "change_id": "chromie_12",
-              "name": "Blessing of the bronze",
+              "name": "<vanilla, talents, 20, 3>",
               "texts": [
                 {
                   "text": "Removed."
