@@ -194,19 +194,25 @@ input:checked+.slider:before {
     display: none;
 }
 
-.version-icon {
-    width: 16px;
-    height: 16px;
-    margin-left: 5px;
-    vertical-align: middle;
-}
+
+
+
 
 .vanilla-text {
-    border-bottom: rgb(33,150,243, 0.4) 1px solid;
-    
+    color: rgb(33, 150, 243);
 }
 
 .modified-text {
-    border-bottom: rgba(255, 0, 0, 0.4) 1px inset;
+    color: rgb(209, 119, 119);
+    
 }
 
+.inline-image {
+    width: 20px !important;
+    height: 20px !important;
+    border: black 1px solid;
+    display: inline;
+    vertical-align:text-bottom;
+    
+
+}

@@ -13,13 +13,16 @@
           "change": "Draft",
           "texts": [
             {
-              "text": "We are changing ranked play bans to 1 ban per player before drafting. All bans are made within a period of 30 seconds. Bans can overlap, similar to how bans work in League of Legends."
+              "text": "We are changing ranked play bans to 1 ban per player before drafting. All bans are made within a period of 30 seconds. Bans can overlap, similar to how bans work in League of Legends.",
+              "subtexts": [
+                "A case discussed was the possibility of having all tanks banned in a match but first consider that we have 13 characters that can play the Tank role which is the role with least possible heroes AND now consider that IN FACT 10 bans on tanks that don't overlap need to happen. And don't forget that the bans are for both teams and they would have less tank options."
+              ]
             },
             {
               "text": "Changing the current pick order to 1L-2R-2L-2R-2L-1R (L: Left team, R: Right team)."
             }
           ],
-          "developerCommentary": "We are not going to have a good ban section in Heroes of the Storm as players could think differently during the planning stage and bans might not target the correct hero. Therefore, the general approach tested by League of Legends seems to be a good solution for this case, making it easier for everyone to provide their opinion.",
+          "developerCommentary": "We are not going to have a good ban section in Heroes of the Storm as players could think differently during the planning stage and bans might not target the correct hero. Therefore, the general approach tested by League of Legends seems to be a good solution for this case, making it easier for everyone to provide their opinion. ",
           "likes": 0,
           "likedBy": {}
         },
@@ -48,18 +51,6 @@
           "likedBy": {}
         },
         {
-          "change_id": "storm_league_4",
-          "change": "Elo Reset",
-          "texts": [
-            {
-              "text": "Reset every account MMR to Bronze 5 and every new account will start at Bronze 5 without needing to make placements."
-            }
-          ],
-          "developerCommentary": "Heroes of the Storm MMR snowballed very hard in the game, causing many players to play under the wrong ELO. This happens mostly in minor regions like South America, where I play. Sometimes I encounter Diamond or Master players who perform significantly worse than Gold players. This issue is exacerbated by the ranked reset boosting many accounts' MMR. There are few options to restore ranked integrity, and I also want to make life difficult for smurfs [I am a smurf hater, no cap].",
-          "likes": 0,
-          "likedBy": {}
-        },
-        {
           "change_id": "storm_league_5",
           "change": "New seasons",
           "texts": [
@@ -74,6 +65,30 @@
             }
           ],
           "developerCommentary": "This change reflects my perspective on MMR points. I see placement matches in every game as somewhat useless, serving only to create hype under the premise that you could achieve a higher ELO. I believe that ranked systems should be more consistent than hyped, and for that reason, having a system that always works the same and has no mystery integrates a better integrity system.",
+          "likes": 0,
+          "likedBy": {}
+        },
+        {
+          "change_id": "storm_league_6",
+          "change": "Elo decay limit",
+          "texts": [
+            {
+              "text": "Elo will decay will be changed based on you current elo up to lower elos.",
+              "subtexts:": [
+                "Reducing extra grace period days from grandmaster/master to 3 days",
+                "Reducing inactive days before decay from grandmaster to 7",
+                "Reducing inactive days before decay from master to 10",
+                "Reducing inactive days before decay from diamond to 15",
+                "Reducing Diamond extra grace period days to 7",
+                "Platinum will start decaying on 25 days, 10 days extra grace periods",
+                "Gold will start decaying on 35 days, 15 days extra grace periods"
+              ]
+            },
+            {
+              "text": "Elo decay will be more agressive on higher the elo"
+            }
+          ],
+          "developerCommentary": "I want to make it harder to be on greater ranks to not play or either hold a great amount of smurfs.",
           "likes": 0,
           "likedBy": {}
         }

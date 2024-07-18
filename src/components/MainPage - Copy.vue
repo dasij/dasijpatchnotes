@@ -2,7 +2,7 @@
   <div class="main-page">
     <div class="content-wrapper">
       <div v-if="isMainRoute" class="welcome-title-container">
-        <h1 class="welcome-title">WELCOME TO DASIJ PATCH NOTES</h1>
+        <h1 class="welcome-title">WELCOME TO DASIJ'S PATCH NOTES</h1>
       </div>
       <div v-if="isMainRoute" class="explanation-section px-4 sm:px-6 lg:px-8">
         <p class="text-lg sm:text-xl lg:text-2xl max-w-3xl mx-auto">Here you will find patch notes based on my

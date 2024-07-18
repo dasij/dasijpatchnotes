@@ -96,9 +96,14 @@
       </div>
 
       <div v-if="tooltipAbility" ref="tooltipAbilityElement" class="tooltip">
-        <p class="text-sm font-semibold" style="color: #0099ff;">
-          {{ tooltipAbilityType === 'modified' ? 'Modified Version' : 'Vanilla Version' }}</p>
-        <h3 class="text-xl font-semibold" style="color: #0099ff;">{{ tooltipAbility.name }}</h3>
+        <p class="text-sm font-semibold" :class="tooltipAbilityType === 'modified' ? 'modified-text' : 'vanilla-text'">
+          {{ tooltipAbilityType === 'modified' ? 'Modified Version' : 'Vanilla Version' }}
+        </p>
+        <div class="flex items-center mb-2">
+          <img :src="require(`@/assets/talents/${heroName}/${tooltipAbility.image}`)" alt="ability image"
+            class="tooltip-image">
+          <h3 class="text-xl font-semibold ml-2" style="color: #0099ff;">{{ tooltipAbility.name }}</h3>
+        </div>
         <div class="flex items-center text-xs mb-2">
           <div v-if="tooltipAbility.cooldown" class="mr-2">
             <span class="font-semibold">Cooldown:</span> <span v-html="formatText(tooltipAbility.cooldown)"></span>
@@ -396,26 +401,34 @@ export default {
       }
     },
 
+
     convertTextPlaceholders(text) {
       if (!text) return ''; // Return an empty string if text is undefined or null
       return text.replace(/<([^,]+),\s*([^,]+),\s*([^,]+),\s*(\d+)>/g, (match, type, section, category, index) => {
         const item = this.findAbilityOrTalent(type, section, category, parseInt(index, 10));
         if (item) {
           const className = type === 'modified' ? 'modified-text' : 'vanilla-text';
-          return `<span class="ability-tooltip ${className}" 
-          data-type="${type}" 
-          data-section="${section}" 
-          data-category="${category}" 
-          data-index="${index}" 
-          data-tooltip="${item.name}" 
-          @mouseover="showTooltipAbility('${type}', '${section}', '${category}', ${index}, $event)"
-          @mouseleave="hideTooltipAbility()">
+          const imagePath = require(`@/assets/talents/${this.heroName}/${item.image}`);
+          return `          <img src="${imagePath}" alt="${item.name}" class="inline-image" />
+          <span class="ability-tooltip ${className}" 
+      data-type="${type}" 
+      data-section="${section}" 
+      data-category="${category}" 
+      data-index="${index}" 
+      data-tooltip="${item.name}" 
+      @mouseover="showTooltipAbility('${type}', '${section}', '${category}', ${index}, $event)"
+      @mouseleave="hideTooltipAbility()">
+        <span class="tooltip-content">
+
           ${item.name}
-        </span>`;
+        </span>
+      </span>`;
         }
         return match;
       });
     },
+
+
 
     showTooltipAbility(type, section, category, index, event) {
       this.tooltipAbility = this.findAbilityOrTalent(type, section, category, index);
@@ -855,15 +868,17 @@ export default {
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 
-
 .tooltip {
+  max-width: 400px;
+  width: auto;
   position: absolute;
-  background-color: #000;
-  color: #fff;
+  z-index: 10;
+  background-color: black;
+  color: white;
   padding: 10px;
   border-radius: 5px;
-  z-index: 10;
-  width: 200px;
+  border: 1px solid purple;
+  display: none;
   top: 50%;
   left: 100%;
   transform: translateY(-50%);
@@ -976,6 +991,18 @@ button {
   margin-left: 5px;
   vertical-align: middle;
 }
+
+.tooltip-image {
+  width: 64px;
+  /* Ajuste o tamanho conforme necessário */
+  height: 64px;
+  /* Ajuste o tamanho conforme necessário */
+  object-fit: cover;
+  border-radius: 8px;
+  /* Adicione bordas arredondadas se desejar */
+}
+
+
 
 
 

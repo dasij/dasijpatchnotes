@@ -64,9 +64,11 @@
       }
     ],
     "trait": {
-      "name": "Wall Ride (Trait)",
-      "description": "Lúcio can skate along walls to bypass obstacles and gain a speed boost.",
-      "image": "storm_ui_icon_lucio_wallride.png"
+      "name": "Push Off (T)",
+      "description": "While moving alongside terrain, activate to slide towards a targeted location. Enemies hit take 100 damage and are Slowed by 75% for 1 second.",
+      "image": "lucio_accelerando.png",
+      "abilityChanged": false,
+      "cooldown": "20s"
     }
   },
 

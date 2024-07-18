@@ -47,7 +47,7 @@
           "changes": [
             {
               "change_id": "muradin_3",
-              "name": "NEW: Empowered <modified, abilities, basic, 0>",
+              "name": "NEW: Empowered Storm Bolt",
               "texts": [
                 {
                   "text": "Activate to empower the next <modified, abilities, basic, 0> making it stuns and damage enemies on a small area around the target and at the maximum range",
@@ -86,7 +86,7 @@
                   "text": "Won't reduce <modified, abilities, basic, 2> cooldown anymore"
                 },
                 {
-                  "text": "While <vanilla, abilities, heroic, 0> is active reduce the duration of Stuns, Slows, and Roots against Muradin by 50%. <modified, abilities, basic, 2> grants unstoppable while leaping"
+                  "text": "While <modified, abilities, heroic, 0> is active reduce the duration of Stuns, Slows, and Roots against Muradin by 50%. <modified, abilities, basic, 2> grants unstoppable while leaping"
                 }
               ],
               "developerCommentary": "For making the new Flying Dwarf talent",

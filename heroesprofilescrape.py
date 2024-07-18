@@ -158,13 +158,14 @@ def scrape_hero_talents(hero_name):
 
     # Create the second JSON file with the specified format
     hero_json_data = {
-        "id": 1,
+        "id": 999,
         "name": hero_name.upper(),
         "role": "",  # Replace with actual role if available
         "image": f"heroes_portraits/{hero_name}.webp",
+        "show": "false",
         "patchNotes": [
             {
-                "id": 1,
+                "id": 999,
                 "title": "",
                 "general": [
                     {
@@ -287,10 +288,11 @@ def scrape_hero_talents(hero_name):
                         ]
                     },
                     {
-                        "change_id": "heroname_number",
+                        
                         "name": "Level 20",
                         "changes": [
                             {
+                                "change_id": "heroname_number",
                                 "name": "",
                                 "texts": [
                                     {
@@ -317,5 +319,5 @@ def scrape_hero_talents(hero_name):
         json.dump(hero_json_data, file, indent=2)
         
 # Example usage
-hero_name = "thrall"  # This can be dynamically changed
+hero_name = "artanis"  # This can be dynamically changed
 scrape_hero_talents(hero_name)

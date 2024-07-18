@@ -10,7 +10,7 @@
       "general": [
         {
           "change_id": "rexxar_1",
-          "change": "Spirit Swoop",
+          "change": "<vanilla, abilities, basic, 0>",
           "texts": [
             {
               "text": "No longer slows enemies."
@@ -20,22 +20,22 @@
             },
             {
               "subtexts": [
-                "Spirit Swoop cooldown only starts when it returns to Rexxar.",
+                "<vanilla, abilities, basic, 0> cooldown only starts when it returns to Rexxar.",
                 "The vision radius is 10 | Timerwalker's Pursuit Chromie vision is 10",
                 "Will only divebomb enemies on vision radius, if there's no enemy on vision radius won't divebomb anyone and will just return to Rexxar"
               ]
             }
           ],
-          "developerCommentary": "Spirit Swoop is currently a simple skillshot that slows and damages enemies in a straight line, underutilizing the concept of Spirit, a bird dedicated to scouting. Inspired by Beastmaster from Dota 2, I wanted to give Spirit a better role while increasing Rexxar's decision-making without creating a new active ability.",
+          "developerCommentary": "<vanilla, abilities, basic, 0> is currently a simple skillshot that slows and damages enemies in a straight line, underutilizing the concept of Spirit, a bird dedicated to scouting. Inspired by Beastmaster from Dota 2, I wanted to give Spirit a better role while increasing Rexxar's decision-making without creating a new active ability.",
           "likes": 0,
           "likedBy": {}
         },
         {
           "change_id": "rexxar_2",
-          "change": "Misha, Focus!",
+          "change": "<vanilla, abilities, trait, 0>",
           "texts": [
             {
-              "text": "Additional functionality: Misha Independence (active): Switch between Misha's automatic and manual modes. In automatic mode, Misha, Focus! changes to Offensive and Defensive behaviors. In Offensive Mode, Misha targets any enemy hero within leash range. In Defensive Mode, Misha focuses on enemies close to Rexxar."
+              "text": "Additional functionality: Misha Independence (active): Switch between Misha's automatic and manual modes. In automatic mode, <vanilla, abilities, trait, 0> changes to Offensive and Defensive behaviors. In Offensive Mode, Misha targets any enemy hero within leash range. In Defensive Mode, Misha focuses on enemies close to Rexxar."
             }
           ],
           "developerCommentary": "While I aimed to increase Rexxar's skill floor, I find it acceptable to create a more casual-friendly version of Rexxar, even if it performs slightly worse compared to manual mode.",
@@ -53,16 +53,16 @@
               "name": "New: Meat Mending",
               "texts": [
                 {
-                  "text": "Empowers Misha's next basic attack, reducing its target's healing received by 75% for 1.25 seconds when Mend Pet is used."
+                  "text": "Empowers Misha's next basic attack, reducing its target's healing received by 75% for 1.25 seconds when <modified, abilities, basic, 2> is used."
                 }
               ],
-              "developerCommentary": "One of the many changes I want for Rexxar is to give more strategic uses for Mend Pet, encouraging players to hold the skill and use it in different ways.",
+              "developerCommentary": "One of the many changes I want for Rexxar is to give more strategic uses for <modified, abilities, basic, 2>, encouraging players to hold the skill and use it in different ways.",
               "likes": 0,
               "likedBy": {}
             },
             {
               "change_id": "rexxar_4",
-              "name": "Animal Husbandry",
+              "name": "<vanilla, talents, 4, 3>",
               "texts": [
                 {
                   "text": "Moved from level 4."
@@ -74,19 +74,19 @@
                   "text": "Max stacks are capped at 500, increasing by 100 every level."
                 }
               ],
-              "developerCommentary": "Animal Husbandry should be a commitment from level 1, showcasing the player's dedication and spreading defensive talents across Rexxar's skill tree.",
+              "developerCommentary": "<modified, talents, 1, 1> should be a commitment from level 1, showcasing the player's dedication and spreading defensive talents across Rexxar's skill tree.",
               "likes": 0,
               "likedBy": {}
             },
             {
               "change_id": "rexxar_5",
-              "name": "Thrill of the Hunt",
+              "name": "<vanilla, talents, 16, 0>",
               "texts": [
                 {
                   "text": "Moved from level 16."
                 },
                 {
-                  "text": "Changed functionality: Rexxar's basic attacks increase Misha's movement speed by 25%. If Misha gets close to Rexxar after stunning a target with Misha, Charge!, Rexxar gains 20% movement speed for 4 seconds."
+                  "text": "Changed functionality: Rexxar's basic attacks increase Misha's movement speed by 25%. If Misha gets close to Rexxar after stunning a target with <modified, abilities, basic, 1>, Rexxar gains 20% movement speed for 4 seconds."
                 }
               ],
               "developerCommentary": "At level 1, I want to make it easier to mix defensive and offensive talents, with Thrill of the Hunt empowering a different playstyle.",
@@ -95,19 +95,19 @@
             },
             {
               "change_id": "rexxar_6",
-              "name": "Flare, Easy Prey",
+              "name": "<vanilla, talents, 1, 2>, <vanilla, talents, 1, 1>",
               "texts": [
                 {
                   "text": "Removed."
                 }
               ],
-              "developerCommentary": "With the Spirit Swoop changes, Flare is no longer needed as it would overlap. Easy Prey covers a role that Rexxar shouldn't take.",
+              "developerCommentary": "With the <modified, abilities, basic, 0> changes, Flare is no longer needed as it would overlap. <vanilla, talents, 1, 1> covers a role that Rexxar shouldn't take.",
               "likes": 0,
               "likedBy": {}
             },
             {
               "change_id": "rexxar_7",
-              "name": "Bird of Prey",
+              "name": "<vanilla, talents, 1, 0>",
               "texts": [
                 {
                   "text": "Moved to level 4."
@@ -124,13 +124,13 @@
           "changes": [
             {
               "change_id": "rexxar_8",
-              "name": "Bird of Prey",
+              "name": "<vanilla, talents, 1, 0>",
               "texts": [
                 {
-                  "text": "Additional functionality: Spirit Swoop vision will stay for 3 seconds after Spirit comes back."
+                  "text": "Additional functionality: <modified, abilities, basic, 0> vision will stay for 3 seconds after Spirit comes back."
                 },
                 {
-                  "text": "Additional functionality: If Spirit Swoop hits no targets on the initial cast reduces it's cooldown by 4 seconds and refunds mana."
+                  "text": "Additional functionality: If <modified, abilities, basic, 0> hits no targets on the initial cast reduces it's cooldown by 4 seconds and refunds mana."
                 },
                 {
                   "text": "Moved from level 1."
@@ -142,7 +142,7 @@
             },
             {
               "change_id": "rexxar_9",
-              "name": "Hungry Bear renamed to Hungry Animals",
+              "name": "<vanilla, talents, 4, 0> renamed to Hungry Animals",
               "texts": [
                 {
                   "text": "Additional functionality: Misha now kills enemy troops instantly with basic attacks and recovers 2.25% health."
@@ -173,7 +173,7 @@
 
             {
               "change_id": "rexxar_12",
-              "name": "Hunter Gatherer, Grizzled Fortitude",
+              "name": "<vanilla, talents, 4, 1>, <vanilla, talents, 4, 2>",
               "texts": [
                 {
                   "text": "Removed."
@@ -185,7 +185,7 @@
             },
             {
               "change_id": "rexxar_13",
-              "name": "Animal Husbandry",
+              "name": "<vanilla, talents, 4, 3>",
               "texts": [
                 {
                   "text": "Moved to level 1."
@@ -202,19 +202,19 @@
           "changes": [
             {
               "change_id": "rexxar_14",
-              "name": "Crippling Talons",
+              "name": "<vanilla, talents, 7, 0>",
               "texts": [
                 {
                   "text": "Changed functionality: Spirit divebomb's slow is now increased to 60% and doesn't decay anymore."
                 }
               ],
-              "developerCommentary": "Changing Crippling Talons to still be an effective slowing skill but more inclined to the new Spirit Swoop mechanics.",
+              "developerCommentary": "Changing Crippling Talons to still be an effective slowing skill but more inclined to the new <modified, abilities, basic, 0> mechanics.",
               "likes": 0,
               "likedBy": {}
             },
             {
               "change_id": "rexxar_15",
-              "name": "Bestial Wrath",
+              "name": "<vanilla, talents, 10, 0>",
               "texts": [
                 {
                   "text": "Moved from level 10."
@@ -223,7 +223,7 @@
                   "text": "Changed functionality: (Passive) Misha's basic attacks against enemy heroes grant a stacking 25% increased attack damage bonus for 4 seconds, up to a maximum of 300%."
                 }
               ],
-              "developerCommentary": "I don't dislike the effects of Bestial Wrath, but I found it too simple and not worth a high cooldown active for dynamic purposes. Instead, I wanted to make it similar to Tyrande's Darnassian Archery and put it on level 7 to increase how you want to optimize your build, damage|utility|control talents for level 7.",
+              "developerCommentary": "I don't dislike the effects of <vanilla, talents, 10, 0>, but I found it too simple and not worth a high cooldown active for dynamic purposes. Instead, I wanted to make it similar to Tyrande's Darnassian Archery and put it on level 7 to increase how you want to optimize your build, damage|utility|control talents for level 7.",
               "likes": 0,
               "likedBy": {}
             }
@@ -234,7 +234,7 @@
           "changes": [
             {
               "change_id": "rexxar_16",
-              "name": "Bestial Wrath",
+              "name": "<vanilla, talents, 10, 0>",
               "texts": [
                 {
                   "text": "Moved to level 7."
@@ -249,7 +249,7 @@
               "name": "New: Animal companions",
               "texts": [
                 {
-                  "text": "Rexxar calls Huffer his boar companion to aid him in battle. Huffer will have 1200 HP and 5 attack range and will be controlled by Focus, Huffer!, a skill command that works similarly to Misha, Focus!. After engaging in combat with heroes for atleast 5 seconds Huffer will have increased 40% attack speed and 25% movement speed. This bonus is lost if Huffer doesn't hit heroes for 3 seconds.",
+                  "text": "Rexxar calls Huffer his boar companion to aid him in battle. Huffer will have 1200 HP and 5 attack range and will be controlled by Focus, Huffer!, a skill command that works similarly to <modified, abilities, trait, 0>. After engaging in combat with heroes for atleast 5 seconds Huffer will have increased 40% attack speed and 25% movement speed. This bonus is lost if Huffer doesn't hit heroes for 3 seconds.",
                   "subtexts": [
                     "Huffer will work similar as Misha, giving exp to the enemy team on kill and having the same respawn time."
                   ]
@@ -269,16 +269,16 @@
           "changes": [
             {
               "change_id": "rexxar_18",
-              "name": "Wildfire Bear",
+              "name": "<vanilla, talents, 13, 2>",
               "texts": [
                 {
                   "text": "Additional functionality: Increases Misha's size by 20%."
                 },
                 {
-                  "text": "While under Mend Pet effect, increases Wildfire Bear damage by 100%."
+                  "text": "While under <modified, abilities, basic, 2> effect, increases <modified, talents, 13, 0> damage by 100%."
                 }
               ],
-              "developerCommentary": "Initially, I wanted to remove Wildfire Bear, but now I see an opportunity to bring two things I wanted: a talent that increases Misha's size for better body blocking and also increases Mend Pet interactions.",
+              "developerCommentary": "Initially, I wanted to remove <vanilla, talents, 13, 2>, but now I see an opportunity to bring two things I wanted: a talent that increases Misha's size for better body blocking and also increases <modified, abilities, basic, 2> interactions.",
               "likes": 0,
               "likedBy": {}
             }
@@ -289,7 +289,7 @@
           "changes": [
             {
               "change_id": "rexxar_19",
-              "name": "Primal Intimidation renamed to Ambush",
+              "name": "<vanilla, talents, 16, 1> renamed to Ambush",
               "texts": [
                 {
                   "text": "Entering bushes grants Rexxar or his pets invisibility for 3 seconds.",
@@ -305,7 +305,7 @@
               "name": "New: Beast Roar",
               "texts": [
                 {
-                  "text": "Knocks back enemies around Misha by a significant distance when Mend Pet is used."
+                  "text": "Knocks back enemies around Misha by a significant distance when <modified, abilities, basic, 2> is used."
                 },
                 {
                   "text": "The radius is supposed to be 3.5, a little smaller than E.T.C face melt"
@@ -317,7 +317,7 @@
             },
             {
               "change_id": "rexxar_21",
-              "name": "Thrill of the Hunt",
+              "name": "<vanilla, talents, 16, 0>",
               "texts": [
                 {
                   "text": "Moved to level 1."
@@ -379,13 +379,13 @@
             },
             {
               "change_id": "rexxar_25",
-              "name": "Frenzy of Kalimdor, Hardened Skin, Spirit Bond",
+              "name": "<vanilla, talents, 20, 0>, <vanilla, talents, 20, 2>, <vanilla, talents, 20, 3>",
               "texts": [
                 {
                   "text": "Removed."
                 }
               ],
-              "developerCommentary": "I dislike having generic talents in builds and will probably hold this line of thinking until the end. Spirit Bond is a Bestial Wrath upgrade that I don't see any use for right now.",
+              "developerCommentary": "I dislike having generic talents in builds and will probably hold this line of thinking until the end. <vanilla, talents, 20, 0> is a <vanilla, abilities, heroic, 0> upgrade that I don't see any use for right now.",
               "likes": 0,
               "likedBy": {}
             }

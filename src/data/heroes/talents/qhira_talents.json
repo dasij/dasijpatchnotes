@@ -50,7 +50,7 @@
       }
     ],
     "trait": {
-      "name": "Grappling Hook (Trait)",
+      "name": "Grappling Hook (T)",
       "description": "Throw a grappling hook that attaches to terrain. Reactivate to pull yourself to the hooked location.",
       "passives": [
         "{highlight}Qhira gains an extra charge of grappling hook every 3 takedowns up to 5 times.{/highlight} ",

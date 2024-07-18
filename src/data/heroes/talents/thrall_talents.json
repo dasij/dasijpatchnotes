@@ -182,7 +182,7 @@
   ],
   "20": [
     {
-      "name": "Worldbreaker",
+      "name": "Shattering Worlds",
       "description": "{highlight}Sundering now travels the planet until hits the starting point leaving behind an impassable rift, blocking unit movement. After 2.5 seconds the rift starts to be destroyed.{/highlight}",
       "image": "thrall_sundering.png",
       "talentChanged": true

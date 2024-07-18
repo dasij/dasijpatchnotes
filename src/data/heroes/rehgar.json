@@ -1,0 +1,413 @@
+{
+  "id": 18,
+  "name": "REHGAR",
+  "role": "Healer",
+  "image": "heroes_portraits/rehgar.webp",
+  "patchNotes": [
+    {
+      "id": 18,
+      "title": "Talent rework",
+      "general": [
+        {
+          "change_id": "rehgar_9",
+          "change": "<vanilla, abilities, trait, 0>",
+          "texts": [
+            {
+              "text": "Moved to level 1.",
+              "subtexts": ["Rehgar will pick trait at level 1"]
+            }
+          ],
+          "developerCommentary": "I want to bring Purge as a talent to better be able to make more decisions on how i can control the trait and bring diversity on the utility section",
+          "likes": 0,
+          "likedBy": {}
+        }
+      ],
+      "developerCommentary": "I want to change Rehgar from someone focused on a healer focused hero to an utility healer similar to Kharazim",
+      "sections": [
+        {
+          "name": "Level 1",
+          "changes": [
+            {
+              "change_id": "rehgar_1",
+              "name": "<vanilla, abilities, trait, 0>",
+              "texts": [
+                {
+                  "text": "When used on an allied Hero, make them Unstoppable for 0.5 seconds. When used on an enemy Hero, Slow them by 80%, decaying over 2 seconds.",
+                  "subtexts": ["Cooldown: 60 seconds"]
+                }
+              ],
+              "developerCommentary": "As mentioned on general i want to make it one of many options for utility shaman",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "rehgar_2",
+              "name": "New: Spirit link",
+              "texts": [
+                {
+                  "text": "Use on an allied hero to share 25% of the damage received for 4 seconds",
+                  "subtexts": ["Cooldown: 25 seconds"]
+                }
+              ],
+              "developerCommentary": "A classic one from shamans that i don't think many heroes could share the same mechanic",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "rehgar_3",
+              "name": "<vanilla, abilities, heroic, 1>",
+              "texts": [
+                {
+                  "text": "Changed functionality: Grants an allied Hero 40% Attack Speed and 35% Movement Speed and causes them to heal for 30% of the Basic Attack damage to their primary target. Lasts for 4 seconds.",
+                  "subtexts": ["Cooldown: 30 seconds"]
+                },
+                {
+                  "text": "Moved from level 10"
+                }
+              ],
+              "developerCommentary": "Bloodlust can't be leveled up as a Strong ultimate without it being either kinda meh or absurdly strong on my vision for that i would prefer to make a baseline skill that can also increase the utility Rehgar could give to the team",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "rehgar_21",
+              "name": "<vanilla, talents, 1, 0>, <vanilla, talents, 1, 1>",
+              "texts": [
+                {
+                  "text": "removed"
+                }
+              ],
+              "developerCommentary": "I want to change how rehgar talents perform and the simplest way i can say it is that those talents are not necessary the way i am handling the talents now",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "rehgar_22",
+              "name": "<vanilla, talents, 1, 2>",
+              "texts": [
+                {
+                  "text": "Moved to level 13"
+                }
+              ],
+              "developerCommentary": "Mixing some wolf talents in one",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 4",
+          "changes": [
+            {
+              "change_id": "rehgar_10",
+              "name": "New: Bloodshield",
+              "texts": [
+                {
+                  "text": "Rehgar will receive <modified, talents, 1, 2> when casting <modified, abilities, basic, 1>"
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "rehgar_13",
+              "name": "New: Bind shield",
+              "texts": [
+                {
+                  "text": "Rehgar elemental totems will receive <modified, abilities, basic, 1>"
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "rehgar_23",
+              "name": "<vanilla, talents, 4, 0>, <vanilla, talents, 4, 2>",
+              "texts": [
+                {
+                  "text": "Removed"
+                }
+              ],
+              "developerCommentary": "I want to reduce healing talents on Rehgar and increase utility talents for the vision of a utility healer",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 7",
+          "changes": [
+            {
+              "change_id": "rehgar_4",
+              "name": "<vanilla, talents, 13, 2> renamed to Water totem",
+              "texts": [
+                {
+                  "text": "Changed functionality: Reactivate <vanilla, abilities, basic, 2> to create a water totem that every 2 seconds, will cast a untalented Chain Heal at the nearest allied Hero with the lowest Health. This Chain Heal heals for 35% of its normal amount. Also increase allied heros healing received by 25%",
+                  "subtexts": [
+                    "Totem has 180 health | <vanilla, abilities, basic, 2> has 260 health",
+                    "Totem has 6.5 radius | <vanilla, abilities, basic, 2> has 3.5 radius and 5.25 with <vanilla, talents, 1, 1>",
+                    "2.5 range | <vanilla, abilities, basic, 2> has 4.0 range and <vanilla, talents, 7, 0> increase the range to 5.75",
+                    "It starts perfoming the effect"
+                  ]
+                },
+                {
+                  "text": "Moved from level 13"
+                }
+              ],
+              "developerCommentary": "I wanted to change the totems for them to become closer to the elemental style that normally shamans represent and with i used the reactivation on the totem to make it perform close to the original source but making different things and also the water totem is one of three talents but is inteded to boost the healing ",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "rehgar_5",
+              "name": "<vanilla, talents, 7, 0> renamed to Fire totem",
+              "texts": [
+                {
+                  "text": "Changed functionality: Reactivate <vanilla, abilities, basic, 2> to create a fire totem that will debuff enemies on area every 2 seconds reducing their Attack speed and spell power by 25% for 2 seconds. lasts 6 seconds",
+                  "subtexts": [
+                    "Totem has 260 health | <vanilla, abilities, basic, 2> has 260 health",
+                    "Totem has 4 radius | <vanilla, abilities, basic, 2> has 3.5 radius and 5.25 with <vanilla, talents, 1, 1>",
+                    "7.0 range | <vanilla, abilities, basic, 2> has 4.0 range and <vanilla, talents, 7, 0> increase the range to 5.75",
+                    "It starts perfoming the effect"
+                  ]
+                }
+              ],
+              "developerCommentary": "Renaming the talent and making it closer to what he was but being another totem means it won't have the slow",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "rehgar_6",
+              "name": "Air totem",
+              "texts": [
+                {
+                  "text": "Reactivate <vanilla, abilities, basic, 2> to create a air totem that every 2 seconds, will pull the closest enemy hero nearby.",
+                  "subtexts": [
+                    "Totem has 390 health | <vanilla, abilities, basic, 2> has 260 health",
+                    "Totem has 2.5 radius | <vanilla, abilities, basic, 2> has 3.5 radius and 5.25 with <vanilla, talents, 1, 1>",
+                    "10.0 range | <vanilla, abilities, basic, 2> has 4.0 range and <vanilla, talents, 7, 0> increase the range to 5.75",
+                    "It starts perfoming the effect"
+                  ]
+                }
+              ],
+              "developerCommentary": "This is supposed to be the controller option. It was first intended to be a knockback similar to emerald wind but it would be too small and harder to make effective. One target is enough.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "rehgar_24",
+              "name": "<vanilla, talents, 7, 1>, <vanilla, talents, 7, 2>",
+              "texts": [
+                {
+                  "text": "removed"
+                }
+              ],
+              "developerCommentary": "<vanilla, talents, 7, 1> with the changes implemented on the level 1 talents it becomes problematic to sustain something like this talent and <vanilla, talents, 7, 2> is being removed due to how i want to handle the gameplay of Rehgar",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 10",
+          "changes": [
+            {
+              "change_id": "rehgar_8",
+              "name": "<vanilla, abilities, heroic, 1>",
+              "texts": [
+                {
+                  "text": "moved to level 1"
+                }
+              ],
+              "developerCommentary": "As seen on level 1, the plans are to make bloodlust more reliable",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "rehgar_12",
+              "name": "New: Shamanic ritual",
+              "texts": [
+                {
+                  "text": "Creates a totem that will cast you current trait effect on all valid hero targets after 1 second. The effect will be recast after 4 seconds.",
+                  "subtexts": [
+                    "Radius is 9 | Blaze combustion is 6",
+                    "Cast range is 2.0 | Earthbind totem cast range is 4.0",
+                    "Cooldown: 70 seconds",
+                    "The totem is visual only"
+                  ]
+                }
+              ],
+              "developerCommentary": "The idea here is to empower possibilities with Rehgar on the buff/debuff scenario and by making area bloodlust still be possible.",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 13",
+          "changes": [
+            {
+              "change_id": "rehgar_7",
+              "name": "<vanilla, talents, 13, 0> renamed to Spirit waves",
+              "texts": [
+                {
+                  "text": "Changed functionality: <vanilla, abilities, basic, 0> will grant allied heroes unkillable for 1 second and will have it number of bounces increased by 2"
+                }
+              ],
+              "developerCommentary": "As i said before i want to reduce the Rehgar potentital as a pure healer and upping the potential as a utility healer",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "rehgar_19",
+              "name": "<vanilla, talents, 13, 1>",
+              "texts": [
+                {
+                  "text": "Additional bonus: If the shield is destroyed it renews the <vanilla, abilities, basic, 1> duration and increase it's size by 25%"
+                }
+              ],
+              "developerCommentary": "Earth shield is alredy a good talent but it's hard to buff it for numerical reasons so i am bringing it a IF so it could be eazier changed",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "rehgar_20",
+              "name": "<vanilla, talents, 1, 2>",
+              "texts": [
+                {
+                  "text": "Changed functionality: Ghost Wolf's Movement Speed bonus is increased to 30%. Ghost Wolf attacks against Heroes deal an additional 4% of the target's maximum Health and casts Lightning Shield on Rehgar."
+                },
+                {
+                  "text": "moved from 1"
+                }
+              ],
+              "developerCommentary": "This is the habilitation card for every Rehgar maniacs outthere that wants to perform the hunt",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "rehgar_25",
+              "name": "<vanilla, talents, 13, 2>",
+              "texts": [
+                {
+                  "text": "moved from 7"
+                }
+              ],
+              "developerCommentary": "Reworked it on the <modified, talents, 7, 0>",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 16",
+          "changes": [
+            {
+              "change_id": "rehgar_18",
+              "name": "New: Wind heal",
+              "texts": [
+                {
+                  "text": "<vanilla, abilities, basic, 0> empowers the next allied hero basic attacks making it hit twice."
+                }
+              ],
+              "developerCommentary": "Taking inspiration on the windfury segment from Shamans from WoW but making it perform different from what Thrall Windfury is",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "rehgar_26",
+              "name": "<vanilla, talents, 16, 2>",
+              "texts": [
+                {
+                  "text": "removed"
+                }
+              ],
+              "developerCommentary": "Mixed it on the <modified, talents, 13, 2>",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "change_id": "rehgar_11",
+          "name": "Level 20",
+          "changes": [
+            {
+              "change_id": "rehgar_17",
+              "name": "<vanilla, talents, 20, 0>",
+              "texts": [
+                {
+                  "text": "Changed functionality: Ancestral Healing is cast a second time on the same target after 2.5 seconds and both healings are now a Perfect Heal meaning it can't be reduced.",
+                  "subtexts": [
+                    "This means even Ana grenade can't cut the healing anymore"
+                  ]
+                }
+              ],
+              "developerCommentary": "Farseer's Bleesing is one of the strongest game ultimate upgrades by a long distance with the teamfight comeback potential BUT it's hard to balance as Rehgar alredy have a strong Base Kit. What i want to implement with this change is to make that more about making it optimal on certain situations rather than an all around pick.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "rehgar_16",
+              "name": "New: Shamanic Master Training",
+              "texts": [
+                {
+                  "text": "Increase the totem range by 35% and increase the number of reactivations to 2",
+                  "subtexts": [
+                    "Current radius is 9.0 i want to increase it to 12 but i don't know how to math"
+                  ]
+                }
+              ],
+              "developerCommentary": "I found this to be enough to be a fair upgrade ult that could be extremely powerful in some situations or even for specific traits",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "rehgar_14",
+              "name": "New: Totemic Mastery",
+              "texts": [
+                {
+                  "text": "Your elemental totems will now last indefinitely and will have 100% increased health points. You will also be able to use all the elemental totems",
+                  "subtexts": [
+                    "Elemental totems are the <modified, abilities, basic, 2> , <modified, talents, 7, 0> , <modified, talents, 7, 1> and <modified, talents, 7, 2>",
+                    "The other two totems you didn't pick on level 7 now will be new actives for Rehgar. So if you picked <modified, talents, 7, 1> it will be bound as an reactivate skill but the other two totems will be new actives within 15 seconds cooldown each."
+                  ]
+                }
+              ],
+              "developerCommentary": "One of the things shamans are famous for are the usage of totems so i wanted to expand that futher beyong on a way that could be skill expression.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "rehgar_15",
+              "name": "<vanilla, talents, 20, 3>",
+              "texts": [
+                {
+                  "text": "Changed functionality: When there's no nearby allied heroes close to Rehgar he receives 30 armor, increased 25% basic attack damage and spell power.  Passive: Receives cleanse when for 0.5 seconds when entering and exiting ghost form.",
+                  "subtexts": ["Radius: 9"]
+                }
+              ],
+              "developerCommentary": "Rehgar was on of the best arena fighters out there and i see arenas as omega 1v1 situations.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "rehgar_27",
+              "name": "<vanilla, talents, 20, 1>, <vanilla, talents, 20, 2>",
+              "texts": [
+                {
+                  "text": "removed"
+                }
+              ],
+              "developerCommentary": "With the changes made on bloostlust you wouldn't be able to pick the ult upgrade anymore and also Elemental conduit does not provide much for Rehgar gameplay on a lore perspective neither on gameplay feeling",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

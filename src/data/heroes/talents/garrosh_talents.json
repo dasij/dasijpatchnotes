@@ -168,7 +168,7 @@
     },
     {
       "name": "Body Check",
-      "description": "{highlight}Activate to deal 111 (+4% per level) damage to a target enemy and Slow them by 35% for 3 seconds. Enemy Heroes hit will be applied exhaustion and won't be able to use movement abilities for 3 seconds.{/highlight}",
+      "description": "Activate to deal 111 (+4% per level) damage to a target. {highlight}If used on an enemy that used dashes within the last 3 seconds will cause 400% more damage and stuns the target for 0.25 seconds while reducing it's cooldown to 4 seconds.{/highlight}",
       "image": "garrosh_slam.png",
       "talentChanged": true,
       "cooldown": "20s"

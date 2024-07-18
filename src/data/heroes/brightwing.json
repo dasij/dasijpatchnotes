@@ -1,0 +1,414 @@
+{
+  "id": 19,
+  "name": "BRIGHTWING",
+  "role": "Healer",
+  "image": "heroes_portraits/brightwing.webp",
+  "show": "falses",
+  "patchNotes": [
+    {
+      "id": 19,
+      "title": "Hero and talent rework ",
+      "general": [
+        {
+          "change_id": "brighwing_2",
+          "change": "<vanilla, abilities, basic, 0>",
+          "texts": [
+            {
+              "text": "The Soothing Mist recast by hitting an enemy hero on the center is empowered with extra 15 spell armor for 2.5 seconds"
+            }
+          ],
+          "developerCommentary": "I always liked the concept of receiving bonuses for hitting the center and i want to mix it with the anti-magic concept Brightwing has",
+          "likes": 0,
+          "likedBy": {}
+        },
+        {
+          "change_id": "brighwing_1",
+          "change": "<vanilla, abilities, basic, 1>",
+          "texts": [
+            {
+              "text": "Won't reduce target movement speed anymore."
+            }
+          ],
+          "developerCommentary": "Polymorph is one of the few skills on the game that i consider to be extremely toxic. That's come from the fact that it's a ranged point and click pseudo stun for a good amount of time and not a hard one for her to hit within the skill distance, the idea here is to make it more doable by removing the speed penalty",
+          "likes": 0,
+          "likedBy": {}
+        },
+        {
+          "change_id": "brighwing_3",
+          "change": "<vanilla, abilities, basic, 2>",
+          "texts": [
+            {
+              "text": "removed"
+            }
+          ],
+          "developerCommentary": "I want to implement the same buffs from that skill on other ways that allow me to better control the price of using the skill on the wrong time",
+          "likes": 0,
+          "likedBy": {}
+        },
+        {
+          "change_id": "brighwing_5",
+          "change": "<vanilla, abilities, heroic, 0>",
+          "texts": [
+            {
+              "text": "Will now be Brightwing new E basic ability"
+            },
+            {
+              "text": "Modify: Can only be cast on allied heros"
+            },
+            {
+              "text": "Allied heros receive 15% move speed for 3 seconds"
+            }
+          ],
+          "developerCommentary": "Blink Heal is something i would say that makes great part of the Fun Brightwing outplays i see and gives her the most control on her gameplay and i always felt it SHOULD be comboed with <vanilla, abilities, heroic, 1> even tho it would be extremely strong and with that in mind in also making it only be able to teleport on heroes so it better balance itself",
+          "likes": 0,
+          "likedBy": {}
+        },
+        {
+          "change_id": "brighwing_4",
+          "change": "<vanilla, abilities, trait, 0>",
+          "texts": [
+            {
+              "text": "Removed the active cleanse"
+            }
+          ],
+          "developerCommentary": "The decision here is to not let Brightwing become overtuned naturally this happens specially with the <vanilla, abilities, heroic, 0> being a baseline skill.",
+          "likes": 0,
+          "likedBy": {}
+        },
+
+        {
+          "change_id": "brighwing_6",
+          "change": "<vanilla, abilities, basic, 3>",
+          "texts": [
+            {
+              "text": "Additional functionality: Reduces the cooldown by 0.35 with nearby enemy minion death"
+            }
+          ],
+          "developerCommentary": "<vanilla, talents, 1, 1> is almost a baseline talent for Brightwing by giving her so much flexibility that increase her presence and flexibility to play. I think that's great and i want that to perform a base for what she is supposed to do even tho i think the original numbers were a kinda busted",
+          "likes": 0,
+          "likedBy": {}
+        }
+      ],
+      "developerCommentary": "I dislike brightwing when i come to the nexus to play against her. So i made her more dislakable for me to play against because she is doing a good job. Apart from that i tried to shape Brightwing on my vision of how i could increase her skill floor at the same time i gave her more tools.",
+      "sections": [
+        {
+          "name": "Level 1",
+          "changes": [
+            {
+              "change_id": "brighwing_26",
+              "name": "<vanilla, talents, 1, 1>",
+              "texts": [
+                {
+                  "text": "No longer reduces cooldowns of <vanilla, abilities, basic, 3>"
+                },
+                {
+                  "text": "Additional functionality: Grants both <vanilla, abilities, basic, 3> target and brightwing a 335 shield for 4 seconds"
+                }
+              ],
+              "developerCommentary": "By bringing the cooldown reduction baseline now this talent was changed to be the ultimate save atalent",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "brighwing_25",
+              "name": "<vanilla, talents, 7, 1>",
+              "texts": [
+                {
+                  "text": "Changed functionality: Reduces <modified, abilities, basic, 3> cooldown by 30 on takedowns and refresh <modified, abilities, basic, 2> charges"
+                },
+                {
+                  "text": "Moved from level 7"
+                }
+              ],
+              "developerCommentary": "This is for all my Brightwing fellows that love to destroy a happy 1v1 on the solo lane. I kinda hate you guys but i think it's part of yours kit to be such a nuisance being able to secure kills and fastily return to the team.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "brighwing_24",
+              "name": "<vanilla, talents, 1, 2>",
+              "texts": [
+                {
+                  "text": "Additional functionality: Refreshs <modified, abilities, basic, 3> cooldown when you capture a camp with atleast one bribed unit",
+                  "subtexts": [
+                    "This is supposed to stack with other character bribes, if a Vikings bribe the mercenary and Brightwing captures it the skill will reset"
+                  ]
+                }
+              ],
+              "developerCommentary": "The objective is to make <modified, talents, 1, 2> not only a fun pick but also a competitive one",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "brighwing_23",
+              "name": "<vanilla, talents, 1, 0>",
+              "texts": [
+                {
+                  "text": "Removed"
+                }
+              ],
+              "developerCommentary": "Simply put i don't like any talent that reduces <modified, abilities, basic, 1> cooldown. It's a strong skill with point click usage on a ranged hero",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 4",
+          "changes": [
+            {
+              "change_id": "brighwing_22",
+              "name": "NEW: Blink speed",
+              "texts": [
+                {
+                  "text": "Increase <modified, abilities, basic, 2> target movement speed by 20%"
+                }
+              ],
+              "developerCommentary": "By removing <vanilla, abilities, basic, 2> some of her cool parts would've be left behind so i am bringing them back like making someone a super sonic speed player",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "brighwing_21",
+              "name": "NEW: Magic Play",
+              "texts": [
+                {
+                  "text": "Changed functionality: <vanilla, abilities, heroic, 0> will increase the target magic resistence to 75 for 0.5 seconds"
+                }
+              ],
+              "developerCommentary": "By removing <vanilla, abilities, basic, 2> some of her cool parts would've be left behind so i am bringing them back like making someone almost immune to magic. But in this case i want to reward better timing with higher numbers",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "brighwing_20",
+              "name": "<vanilla, talents, 4, 1>, ",
+              "texts": [
+                {
+                  "text": "Removed"
+                }
+              ],
+              "developerCommentary": "With the removal of the slow from <modified, abilities, basic, 1> i see no space for it and i also don't want to bring the slow back",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "brighwing_17",
+              "name": "<vanilla, talents, 4, 0>",
+              "texts": [
+                {
+                  "text": "Moved to level 7"
+                }
+              ],
+              "developerCommentary": "Changing this tier for being more utility-support based",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 7",
+          "changes": [
+            {
+              "change_id": "brighwing_18",
+              "name": "NEW: Faerie shift",
+              "texts": [
+                {
+                  "text": "Brightwing can reactivate <modified, abilities, basic, 0> to teleport to the projectile current location",
+                  "subtexts": [
+                    "You will be able to use up to 0.25 seconds after the magic hits"
+                  ]
+                }
+              ],
+              "developerCommentary": "Providing more tools for that <modified, abilities, heroic, 1> ultra playmaking youtuber HOTS wtf moments clip",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "brighwing_27",
+              "name": "<vanilla, talents, 4, 0>",
+              "texts": [
+                {
+                  "text": "Moved from level 4"
+                }
+              ],
+              "developerCommentary": "Making this tier based on <modified, abilities, basic, 0>",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "brighwing_19",
+              "name": "<vanilla, talents, 7, 0>",
+              "texts": [
+                {
+                  "text": "Increased the slow to 30% and the center portion to 60%"
+                }
+              ],
+              "developerCommentary": "With the removal of slow from <modified, abilities, basic, 1> i see an opportunity to bring more value to this talent",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 10",
+          "changes": [
+            {
+              "change_id": "brighwing_11",
+              "name": "NEW: Deflect Magic",
+              "texts": [
+                {
+                  "text": "Changed functionality: Brightwing stops and starts to absorb all magic damage and effects taken during the next 0.6 seconds after that redirects all magic damage and status effects backs to their casters and cleanses negatives effects.",
+                  "subtexts": [
+                    "Cooldown: 30 seconds",
+                    "Garrosh Wrecking ball or other disruption type skills won't have the disruption part returned as it won't counted as status effects",
+                    "Stitches gorge won't count"
+                  ]
+                }
+              ],
+              "developerCommentary": "One of the highlights of faerie dragons is the power to either absorb and redirect magic, i wanted to bring it to life ",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "brighwing_7",
+              "name": "<vanilla, talents, 10, 1>",
+              "texts": [
+                {
+                  "text": "Moved to her basic ability (E) slot"
+                }
+              ],
+              "developerCommentary": "Yes",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 13",
+          "changes": [
+            {
+              "change_id": "brighwing_15",
+              "name": "<vanilla, talents, 16, 1>",
+              "texts": [
+                {
+                  "text": "Changed functionality: Brightwing can use <modified, abilities, basic, 2> on enemy heroes affected by <modified, abilities, basic, 1> decreasing its armor by 25 for by the duration and dealing 5% of the enemy max health as damage."
+                },
+                {
+                  "text": "Moved from level 16."
+                }
+              ],
+              "developerCommentary": "To a skill that reduces the target armor on a point click ranged stun i think it needs some more interaction and so my objective is to bring that to the table.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "brighwing_14",
+              "name": "NEW: Emergency Mist",
+              "texts": [
+                {
+                  "text": "Activate to remove all Stun, Root, Slow, and Silence effects from nearby allied Heroes.",
+                  "subtexts": [
+                    "cooldown is 45 seconds",
+                    "It works exactly how it worked on the Trait with the only exception that it doesn't proc another <modified, abilities, trait, 0> only the cleanse"
+                  ]
+                }
+              ],
+              "developerCommentary": "I want to bring Brightwing old cleanse as an talent because i liked how different her cleanse worked but also make it to be a choice with other two strong talents to compete with",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "brighwing_13",
+              "name": "NEW: Faerie heal",
+              "texts": [
+                {
+                  "text": "Activate to absorb 10% of all magic damage on a large radius for 5 seconds, after that heals all allied hero units for the same value",
+                  "subtexts": [
+                    "cooldown: 45 seconds",
+                    "The radius is 7 | Blaze combustion is 6",
+                    "this include allied hero damage"
+                  ]
+                }
+              ],
+              "developerCommentary": "Wanted to highlight more the faerie dragons power to absorb magic",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 16",
+          "changes": [
+            {
+              "change_id": "brighwing_16",
+              "name": "NEW: Mass Polymorph",
+              "texts": [
+                {
+                  "text": "Activate to empower <modified, abilities, basic, 1> and affect all enemy heroes around the primary target for the same duration",
+                  "subtexts": ["Cooldown: 60 seconds", "Area will be 3.0"]
+                }
+              ],
+              "developerCommentary": "I just like the idea of polymorphing a bunch of targets with some exceptions and i find it funny to think on the interactions.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "brighwing_8",
+              "name": "<vanilla, talents, 16, 1>",
+              "texts": [
+                {
+                  "text": "Moved to level 13"
+                }
+              ],
+              "developerCommentary": "By changing it's functionality i think it's more doable to bring her to level 13",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 20",
+          "changes": [
+            {
+              "change_id": "brighwing_9",
+              "name": "NEW: Innate magic control",
+              "texts": [
+                {
+                  "text": "<modified, abilities, heroic, 0> cooldown is refreshed after using <modified, abilities, basic, 3>"
+                }
+              ],
+              "developerCommentary": "It's hard to buff that skill without it becoming toxic, so i made it toxic but on a way i like it and i think it's doable to hate it.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "brighwing_10",
+              "name": "Speedy Dragon",
+              "texts": [
+                {
+                  "text": "Additional functionality: Allow Brightwing to use <modified, abilities, basic, 2> on allied non-heroic units"
+                }
+              ],
+              "developerCommentary": "I wanted to make it more interesting as i changed the <modified, abilities, basic, 2> for better balancing",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "brighwing_12",
+              "name": "Faerie protector",
+              "texts": [
+                {
+                  "text": "Removed"
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

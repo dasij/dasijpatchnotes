@@ -165,13 +165,13 @@
                   "text": "Moved from level 1."
                 },
                 {
-                  "text": "Body Check won't reduce heal received anymore instead it will apply exhaustion that prevent enemy heros from using dash abilities for 3 seconds."
+                  "text": "Changed functionality: Activate to deal 111 (+4% per level) damage to a target. If used on an enemy that used dash related mechanics within the last 3 seconds will cause 400% more damage and stuns the target for 0.25 seconds while reducing it's cooldown to 4 seconds."
                 },
                 {
                   "text": "Cooldown increased to 20 seconds."
                 }
               ],
-              "developerCommentary": "Garrosh is a character that suffers a lot against mobility characters and this talent itself still not make it eazy for Garrosh to deal with this weaklings BUT turns him into a menace if he gets in range and making the kill eazy.",
+              "developerCommentary": "Garrosh is a character that suffers a lot against mobility characters and this talent itself still not make it eazy for Garrosh to deal with this weaklings BUT turns him into a menace if he gets in range and making the kill eazy. After reading some feedback on reddit i came in the Illidan situation as the original version was supposed to be exhaustion i changed it to still be related to dashes but damage focused.",
               "likes": 0,
               "likedBy": {}
             },

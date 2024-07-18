@@ -1,0 +1,382 @@
+{
+  "id": 19,
+  "name": "AURIEL",
+  "role": "Healer",
+  "image": "heroes_portraits/auriel.webp",
+  "show": "falses",
+  "patchNotes": [
+    {
+      "id": 19,
+      "title": "Mini-hero rework and talent rework",
+      "general": [
+        {
+          "change_id": "auriel_14",
+          "change": "<vanilla, abilities, basic, 0>",
+          "texts": [
+            {
+              "text": "additional functionality: ❢ Quest: Every time <vanilla, abilities, basic, 0> hits a Hero in the center, increase the center damage by 2, up to 50. ❢ Reward: After hitting 30 Heroes, Hitting allied heros with <vanilla, abilities, basic, 0> center increase the damage by 180."
+            }
+          ],
+          "developerCommentary": "",
+          "likes": 0,
+          "likedBy": {}
+        },
+        {
+          "change_id": "auriel_15",
+          "change": "<vanilla, abilities, basic, 1>",
+          "texts": [
+            {
+              "text": "additional functionality: Hearthstone and respawning fills up the entire energy bar"
+            }
+          ],
+          "developerCommentary": "One of the few things i don't like about Auriel is how she can be both a extremely realiable healer or the opposite. This changes i consider to be more Quality of Life for you to always count on Auriel.",
+          "likes": 0,
+          "likedBy": {}
+        }
+      ],
+      "developerCommentary": "The objective here is to bring some modernization on the current Auriel gamestyle increase a little more the interactions with Bestow hope and give some touches that represent her a little better as the Angel of Hope",
+      "sections": [
+        {
+          "name": "Level 1",
+          "changes": [
+            {
+              "change_id": "auriel_11",
+              "name": "<vanilla, talents, 1, 0> renamed to Al'maiesh touch",
+              "texts": [
+                {
+                  "text": "Changed functionality: Hitting allied heros with <modified, abilities, basic, 0> center increase their movespeed by 30% for 2 seconds and fills Auriel energy bar by 10%"
+                }
+              ],
+              "developerCommentary": "As far i understand Al'maiesh is a tool that can be used as a weapon but can also be used to energize and give clarity to allies that enters in contact. For a talent named increase clarity this would make sense for allied heros wise and also when i think about that WHIP effect i remember about that https://wiki.teamfortress.com/wiki/Disciplinary_Action",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "auriel_17",
+              "name": "<vanilla, talents, 1, 1>",
+              "texts": [
+                {
+                  "text": "Changed functionality: Enemies hit by the outer area of <modified, abilities, basic, 0> are pushed slightly toward the center. Passive: Increase it's size by 15%"
+                }
+              ],
+              "developerCommentary": "I mixed the current effect with <vanilla, talents, 13, 0> and changed it to bring the other talents from <modified, abilities, basic, 0> that  better perform on general situations",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "auriel_16",
+              "name": "<vanilla, talents, 13, 0>",
+              "texts": [
+                {
+                  "text": "Additional Functionality: Also reduces the cooldown by 2 seconds with each hero hit on the center"
+                },
+                {
+                  "text": "Blind is reduced to 1.5 seconds"
+                },
+                {
+                  "text": "moved from level 13"
+                }
+              ],
+              "developerCommentary": "I like the idea of using <modified, abilities, basic, 0> to blind enemies hit it's a good option for situational talents",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "auriel_21",
+              "name": "<Vanilla, talents, 1, 2>",
+              "texts": [
+                {
+                  "text": "moved to level 7"
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 4",
+          "changes": [
+            {
+              "change_id": "auriel_12",
+              "name": "<vanilla, talents, 4, 0> renamed to Detainment STRIKE",
+              "texts": [
+                {
+                  "text": "Changed functionality: <vanilla, abilities, basic, 2> primary target collides with other enemy heros stunning and dealing damage to both on contact."
+                }
+              ],
+              "developerCommentary": "Pinball effect. With all seriousness this is to increase Auriel flexibility on open maps",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "auriel_13",
+              "name": "New Talent: Angiris Trial",
+              "texts": [
+                {
+                  "text": "After hitting a target with <vanilla, abilities, basic, 2> you can reactivate within 1 second to pull the target to Auriel.",
+                  "subtexts": [
+                    "This will place the target on a distance of 1 from Auriel"
+                  ]
+                }
+              ],
+              "developerCommentary": "Making it a 2º option for open scenarios and also making it possible to make Detainment Strike an ever useful tool",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 7",
+          "changes": [
+            {
+              "change_id": "auriel_8",
+              "name": "New: Changing Hope",
+              "texts": [
+                {
+                  "text": "When Auriel uses <modified, abilities, trait, 0> on an ally in Heroes of the Storm, the converted damage from that ally to other heroes is increased by 65% and to non-heroes by 30% for the first 2 seconds. Once Auriel changes the target of <modified, abilities, trait, 0> the previous bearer will have a 10 seconds cooldown of this effect",
+                  "subtexts": [
+                    "Example: If auriel puts the mark on Valla for the first 2 seconds she will grant that extra energy and after 2 seconds the effect will work as normal. After changing the target from Valla to a Hogger the effect will enter on cooldown to be reactivated on Valla again. So only after 10 seconds of taking the selection off from Valla you can reactivate it again",
+                    "If Auriel rapidly changes target with the <modified, abilities, trait, 0> it will also count for the effect and will enter on cooldown."
+                  ]
+                }
+              ],
+              "developerCommentary": "I want to benefit somehow an Auriel Gameplay focused on changing the target she is using <modified, abilities, trait, 0> but more so changing it between the entire team rather than going back to the Carry",
+              "likes": 0,
+              "likedBy": {}
+            },
+
+            {
+              "change_id": "auriel_3",
+              "name": "<Vanilla, talents, 1, 2>",
+              "texts": [
+                {
+                  "text": "Additional functionality: Damaging 2 heroes with <modified, abilities, basic, 1> refunds 40% of the energy"
+                },
+                {
+                  "text": "moved from level 1"
+                }
+              ],
+              "developerCommentary": "This tier should be about energy control so i am changing that to be a plus",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "auriel_22",
+              "name": "<vanilla, talents, 7, 0>",
+              "texts": [
+                {
+                  "text": "removed"
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "auriel_23",
+              "name": "<vanilla, talents, 7, 2>",
+              "texts": [
+                {
+                  "text": "moved to level 13"
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 10",
+          "changes": [
+            {
+              "change_id": "auriel_26",
+              "name": "<vanilla, abilities, heroic, 1>",
+              "texts": [
+                {
+                  "text": "Additional functionality: Allied heros can click directly on the <vanilla, abilities, heroic, 1> to make it explode earlier."
+                }
+              ],
+              "developerCommentary": "I want to add more options for interactions between 'forced' allied hero interactions on a healthier way and also revisit some.",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 13",
+          "changes": [
+            {
+              "change_id": "auriel_25",
+              "name": "NEW: Patient Angel",
+              "texts": [
+                {
+                  "text": "After 3 seconds within max energy your next <modified, abilities, basic, 1> grants 50% shield based on the healed amount that decays over 6 seconds."
+                }
+              ],
+              "developerCommentary": "One thing Auriel is known for is her patience and i wanted to add a talent on that perspective",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "auriel_10",
+              "name": "New talent: Hope Strike(?)",
+              "texts": [
+                {
+                  "text": "Activate to Pull the first allied hero it hits on a straight line.",
+                  "subtexts": [
+                    "Detainment Strike range is 6.0 | Hope Strike is 9.0 | Anduin Leap of Faith is 10.0",
+                    "The pull will work similar to Anduin Leap of Faith when hitting the target but won't cleanse the target while they are travelling, stuns and knockback after starting the animation will cancel the effect",
+                    "Cooldown: 20 seconds"
+                  ]
+                }
+              ],
+              "developerCommentary": "It would make sense for Auriel to use Al'maiesh as a saving tool that suits her character.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "auriel_9",
+              "name": "<vanilla, talents, 7, 2>",
+              "texts": [
+                {
+                  "text": "Changed functionality: Basic attacks reduces basic abilities cooldowns by 0.5 seconds"
+                }
+              ],
+              "developerCommentary": "I wanted to add something that relates to the basic attacks grants from the old effect with a selfish touch but that would require exposing yourself.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "auriel_19",
+              "name": "<Vanilla, talents, 13, 0>",
+              "texts": [
+                {
+                  "text": "Moved to level 1"
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "auriel_20",
+              "name": "<Vanilla, talents, 13, 1>, <Vanilla, talents, 13, 2>",
+              "texts": [
+                {
+                  "text": "removed"
+                }
+              ],
+              "developerCommentary": "<Vanilla, talents, 13, 1> was added baseline on a quest and <Vanilla, talents, 13, 2> would be a little awkward with the new detainment STRIKE talent",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 16",
+          "changes": [
+            {
+              "change_id": "auriel_24",
+              "name": "NEW: Hope to everyone",
+              "texts": [
+                {
+                  "text": "Auriel shares all stat bonuses within the <modified, abilities, trait, 0> bearer",
+                  "subtexts": [
+                    "This means Auriel will receive all the bonuses from a Nano Boost but won't receive healing grante from Dehaka Essence for example and on the same topic she would receive all the bonus health regeneration granted from the Dehaka essence Mission",
+                    "This is not buff stacking, if Auriel and the bearer are receiving the same Buff then only 1 instance will be counted. For example Varian Banners",
+                    "That sharing comes from both directions, if someone buff Auriel the bearer will receive the bonus and vice-versa"
+                  ]
+                }
+              ],
+              "developerCommentary": "I think that could lead to new ways of playing Auriel with extra utility heros or hyper carries. Imagine for example that a Auriel would share the bonus movement speed granted by Valla passive or Cho'gall passive and drafting correctly could lead to some cool insanities made with Auriel",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "auriel_6",
+              "name": "<vanilla, talents, 16, 0>",
+              "texts": [
+                {
+                  "text": "moved to level 20"
+                }
+              ],
+              "developerCommentary": "I have plans",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 20",
+          "changes": [
+            {
+              "change_id": "auriel_5",
+              "name": "<vanilla, talents, 20, 0> renamed to Hope never die",
+              "texts": [
+                {
+                  "text": "Changed functionality: After 5 seconds of ressurecting the primary target will perform another <modified, abilities, heroic, 0> on area 5 seconds after on the initial target position",
+                  "subtexts": [
+                    "The radius will be 5.0 | Blaze combustion is 6.0",
+                    "Example: If auriel <modified, abilities, heroic, 0> a Muradin..a second area <modified, abilities, heroic, 0> will be used on the position Muradin was ressurected bringing back all dead heroes close to that position.",
+                    "Auriel can <modified, abilities, heroic, 0> herself with the area <modified, abilities, heroic, 0>."
+                  ]
+                }
+              ],
+              "developerCommentary": "<vanilla, abilities, heroic, 0> is a hard skill to balance as it can eazily change the tides of battle, that's show in the Dota buyback, league of legends Akshan passive or either Hots with some Cho'gall gameplays. With that in mind i pursued something that could be broken as a level 20 but not necessarily eazy to perform so the OPness of the Ressurection could be justified.",
+              "likes": 0,
+              "likedBy": {}
+            },
+
+            {
+              "change_id": "auriel_7",
+              "name": "<vanilla, talents, 20, 1>",
+              "texts": [
+                {
+                  "text": "Changed functionality: Upon expiration <modified, abilities, heroic, 1> will knockback enemies nearby and every hero hit will reduce it's cooldown by 17 seconds",
+                  "subtexts": [
+                    "Knockback speed 16.5 same as Lucio Soundwave",
+                    "Knockback duration 0.35, Lucio Soundwave is 0.25"
+                  ]
+                }
+              ],
+              "developerCommentary": "Instead of making a armor ultimate i want to make it dynamic by being a reliable Skill of protection on level 20 but more focused for Ranged heroes as the knockback could bother some melees in certain situations.The plan behind the 17 seconds is to be close to a full 60 seconds with 3 enemy heroes hit but not to reset the ultimate.",
+              "likes": 0,
+              "likedBy": {}
+            },
+
+            {
+              "change_id": "auriel_4",
+              "name": "<vanilla, talents, 16, 0>",
+              "texts": [
+                {
+                  "text": "Changed functionality: Auriel energy can now overcharge but all energy that goes beyond the limit will decay in under 4 seconds"
+                },
+                {
+                  "text": "moved from level 16"
+                }
+              ],
+              "developerCommentary": "Reservoir of Hope at the same time of being a fan favorite is also my worst nightmare when playing Auriel and that lies on the fact of being a late-game quest with infinite stacking rather than being a fast quest similar to Thrall Thunderstorm. With that in my mind i want to bring something similar and pushing it to level 20 as it get's a lot strong depending on the situation",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "auriel_18",
+              "name": "<vanilla, talents, 20, 2>",
+              "texts": [
+                {
+                  "text": "Removed"
+                }
+              ],
+              "developerCommentary": "After much thinking i just came to the conclusion that Flight does not provide enough to be on the tree.",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

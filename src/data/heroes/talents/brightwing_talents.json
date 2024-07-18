@@ -1,0 +1,214 @@
+{
+  "abilities": {
+    "basic": [
+      {
+        "name": "Arcane Flare (Q)",
+        "description": "Shoot a flare dealing 75 damage to enemies hit, and an additional 105 damage to enemies in the center. If a Hero is hit by the center, Soothing Mist's passive healing instantly activates {highlight}giving extra 15 spell armor for 3 seconds to allied heros{/highlight}.",
+        "image": "brightwing_arcaneflare.png",
+        "abilityChanged": true,
+        "manaCost": "35 Mana",
+        "cooldown": "6s"
+      },
+      {
+        "name": "Polymorph (W)",
+        "description": "Polymorph a target for 1.5 seconds, Slowing their Movement Speed by 30% and Silencing them. Targets are not able to attack while Polymorphed.",
+        "image": "brightwing_polymorph.png",
+        "abilityChanged": false,
+        "manaCost": "50 Mana",
+        "cooldown": "12s"
+      },
+      {
+        "name": "Blink Heal (E)",
+        "description": "Teleport to a nearby allied hero. When teleporting to a Hero, heal them for 200. Stores up to 2 charges. {highlight}Allied heroes receive 15% move speed for 3 seconds.{/highlight}",
+        "image": "brightwing_blinkheal.png",
+        "abilityChanged": true,
+        "manaCost": "40 Mana",
+        "cooldown": "9s"
+      },
+      {
+        "name": "Hyper Shift (Z)",
+        "description": "After 2 seconds, teleport to an allied Hero and heal them for 25% of their maximum Health. {highlight} Reduces the cooldown by 0.35 with nearby enemy minion death {/highlight}",
+        "image": "brightwing_hypershift.png",
+        "abilityChanged": true,
+        "cooldown": "40s"
+      }
+    ],
+    "heroic": [
+      {
+        "name": "Counter-Magic (R)",
+        "description": "{highlight}Brightwing stops and starts to absorb magic, redirecting the next direct magic spell taken effects in the next second directly to its caster with increased effects by 50%.{/highlight}",
+        "image": "brightwing_counter_magic.webp",
+        "abilityChanged": true,
+        "manaCost": "40 Mana",
+        "cooldown": "30s"
+      },
+      {
+        "name": "Emerald Wind (R)",
+        "description": "After 0.5 seconds, create an expanding nova of wind, dealing 225 damage and pushing enemies away.",
+        "image": "brightwing_emeraldwind.png",
+        "abilityChanged": false,
+        "manaCost": "90 Mana",
+        "cooldown": "50s"
+      }
+    ],
+    "trait": {
+      "name": "Soothing Mist (T)",
+      "description": "Brightwing heals nearby allied Heroes for 110 every 4 seconds",
+      "image": "brightwing_soothingmist.png",
+      "abilityChanged": true,
+      "cooldown": "75s"
+    }
+  },
+  "1": [
+    {
+      "name": "Peekaboo!",
+      "description": "{highlight}Reduces Hyper Shift cooldown by 30 on takedowns and refresh Blink Heal charges.{/highlight}",
+      "image": "brightwing_hypershift.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Hyper Shift",
+      "description": "Increase Phase Shift's healing by an additional 6% of the target's maximum Health. {highlight} Grants both target and brightwing a 335 shield for 4 seconds. {/highlight}",
+      "image": "brightwing_hypershift.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Pixie Charm",
+      "description": "Activate to consume 20 stacks of Bribe to instantly defeat an uncaptured non-Elite Mercenary.Passive: Gain 1 stack of Bribe when a nearby enemy Minion dies, and 5 stacks when hitting an enemy Hero with Arcane Flare's center. Maximum 80 stacks. ",
+      "passives": [
+        "{highlight} Refreshs Hyper Shift cooldown when you capture a camp{/highlight}"
+      ],
+      "image": "talent_bribe.png",
+      "talentChanged": true
+    }
+  ],
+  "4": [
+    {
+      "name": "Blink Speed",
+      "description": "{highlight}Increase Blink Heal target movement speed by 20%.{/highlight}",
+      "image": "brightwing_blinkheal.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Magic Play",
+      "description": "{highlight}Blink Heal will increase the target magic resistence to 75 for 0.5 seconds{/highlight}",
+      "image": "brightwing_blinkheal.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Magic Spit",
+      "description": "Increase Basic Attack range by 1.1. Basic Attacks against Heroes reduce the cooldown of Soothing Mist by 4 seconds.",
+      "image": "talent_autoattack_cooldown.png",
+      "talentChanged": false
+    }
+  ],
+  "7": [
+    {
+      "name": "Sticky Flare",
+      "description": "Enemy Heroes hit by Arcane Flare have their Movement Speed Slowed by {highlight}30%{/highlight} decaying for 3 seconds. Increase the Slow to {highlight}60%{/highlight} if they are hit by the center portion.",
+      "image": "brightwing_arcaneflare.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Dream Shot",
+      "description": "Increase Arcane Flare's range by 50%. Hitting a Hero with Arcane Flare's center reduces its cooldown to 2 seconds.",
+      "image": "brightwing_arcaneflare.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Faerie Shift",
+      "description": "{highlight}Brightwing can reactivate Arcane Flare to teleport to the projectile current location{/highlight}",
+      "image": "brightwing_arcaneflare.png",
+      "talentChanged": true
+    }
+  ],
+  "10": [
+    {
+      "name": "Deflect Magic",
+      "description": "{highlight}Brightwing stops and starts to absorb magic, redirecting the next direct magic spell taken effects in the next second directly to its caster with increased effects by 50%.{/highlight}",
+      "image": "brightwing_counter_magic.webp",
+      "talentChanged": true,
+      "manaCost": "40 Mana",
+      "cooldown": "30s"
+    },
+    {
+      "name": "Emerald Wind",
+      "description": "After 0.5 seconds, create an expanding nova of wind, dealing 225 damage and pushing enemies away.",
+      "image": "brightwing_emeraldwind.png",
+      "talentChanged": false,
+      "manaCost": "90 Mana",
+      "cooldown": "50s"
+    }
+  ],
+  "13": [
+    {
+      "name": "Critericize",
+      "description": "{highlight}Brightwing can use Blink Heal on enemy heroes affected by Polymorph decreasing its armor by 25 by the duration and dealing 5% of the enemy max health as damage.{/highlight}",
+      "image": "brightwing_blinkheal.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Emergency Mist",
+      "description": "{highlight}Activate to remove all Stun, Root, Slow, and Silence effects from nearby allied Heroes.{/highlight}",
+      "cooldown": "45s",
+      "image": "brightwing_soothingmist.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Faerie Heal",
+      "description": "{highlight}Activate to absorb 10% of all magic damage on a large radius for 5 seconds, after that heals all allied hero units for the same value.{/highlight}",
+      "cooldown": "45s",
+      "image": "brightwing_soothingmist.png",
+      "talentChanged": true
+    }
+  ],
+  "16": [
+    {
+      "name": "Hush!",
+      "description": "Enemy Heroes hit by the center of Arcane Flare are Silenced for 1 second and deal 25% less damage for 3 seconds.",
+      "image": "brightwing_arcaneflare.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Mass Polymorph",
+      "description": "{highlight}Activate to empower Polymorph and affect all enemy heroes around the primary target for the same duration.{/highlight}",
+      "image": "brightwing_polymorph.png",
+      "talentChanged": true,
+      "cooldown": "60s"
+    },
+    {
+      "name": "Phase Out",
+      "description": "Activate to place Brightwing in Stasis for 0.75 seconds.",
+      "image": "brightwing_stasis.png",
+      "talentChanged": false,
+      "cooldown": "20s"
+    }
+  ],
+  "20": [
+    {
+      "name": "Innate Magic Control",
+      "description": "{highlight}cooldown is refreshed after using Hyper Shift.{/highlight}",
+      "image": "brightwing_counter_magic.webp",
+      "talentChanged": true
+    },
+    {
+      "name": "Intensive Winds",
+      "description": "Permanently reduce Emerald Wind's cooldown to 5 seconds.",
+      "image": "brightwing_emeraldwind.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Speedy Dragon",
+      "description": "Permanently gain 20% Movement Speed. Reduce Phase Shift's cast time by 1 second.{highlight}Allow Brightwing to use Blink Heal on allied non-heroic units.{/highlight}",
+      "image": "brightwing_hypershift.png",
+      "talentChanged": true
+    },
+
+    {
+      "name": "Invisible Friends",
+      "description": "Blink Heal grants Stealth to Brightwing and her Heroic targets for 9 seconds, and they are Unrevealable for the first 0.5 seconds. While Stealthed by Invisible Friends, Heroes heal for 25 health per second.Remaining stationary for at least 1.5 seconds while Stealthed grants Invisible.",
+      "image": "brightwing_blinkheal.png",
+      "talentChanged": false
+    }
+  ]
+}

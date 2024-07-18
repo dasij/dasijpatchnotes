@@ -50,7 +50,7 @@
                   "text": "Removed"
                 }
               ],
-              "developerCommentary": "This talent level alredy has other two damaging talents and besides i dislike that generic concept for Chromie",
+              "developerCommentary": "This talent level already has other two damaging talents and besides i dislike that generic concept for Chromie",
               "likes": 0,
               "likedBy": {}
             }
@@ -64,13 +64,15 @@
               "name": "<vanilla, abilities, heroic, 1>",
               "texts": [
                 {
-                  "text": "Temporal friendship(active): Choose an Allied Hero. After 4 seconds, they are teleported back to the location where Temporal friendshipp was cast on them on the exact same state ( Including health points and basic abilities cooldowns )."
+                  "text": "Temporal friendship(active): Choose an area, the first Allied hero that interact with that area after 4 seconds, they are teleported back to the location where Temporal friendshipp was first insteracted with on the exact same state ( Including health points and basic abilities cooldowns )."
                 },
                 {
-                  "text": "Temporal Friendship shares cooldown with Temporal Loop."
-                },
-                {
-                  "text": "Temporal Friendship DOES NOT have the 500% cooldown reduction effect while loop is being cast."
+                  "subtexts": [
+                    "Temporal Friendship shares cooldown with Temporal Loop.",
+                    "Temporal Friendship DOES NOT have the 500% cooldown reduction effect while loop is being cast.",
+                    "Initially it was supposed to be a forced interaction but after some reddit discussion people really dislike being on forced interactions. I myself don't dislike that BUT there's not much to win forcing that",
+                    "That area will last 3 seconds and if not used will refund Chromie's cooldown and mana"
+                  ]
                 }
               ],
               "developerCommentary": "I always found an interesting idea the concept of using temporal loop on allied heros, it could be a long one it could be a shorter one buffed BUT one that i found the concept funny is the cooldown one, you could temporal loop a garrosh so he throws people and he is ready to throw it again or do it on a azmodan for double BALLS",

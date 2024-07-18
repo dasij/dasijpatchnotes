@@ -210,7 +210,7 @@
           "changes": [
             {
               "change_id": "thrall_3",
-              "name": "<new, talents, 20, 0>",
+              "name": "<new, talents, 20, 0> renamed to Shattering Worlds",
               "texts": [
                 {
                   "text": "Changed functionality: Sundering now travels the planet until hits the starting point leaving behind an impassable rift, blocking unit movement. After 2.5 seconds the rift starts to be destroyed.",
@@ -231,7 +231,7 @@
                 {
                   "text": "<modified, abilities, basic, 2> basic attacks casts a Chain of Lighting at the target.",
                   "subtexts": [
-                    "It will work with Thunderstorm but remember, hitting the same hero target will reset the mission progress"
+                    "It will work with <modified, talents, 16, 1> but remember, hitting the same hero target will reset the mission progress"
                   ]
                 }
               ],

@@ -136,11 +136,9 @@ export default {
   },
   computed: {
     filteredHeroes() {
-      if (this.selectedRole === 'All') {
-        return this.heroes;
-      } else {
-        return this.heroes.filter(hero => hero.role === this.selectedRole);
-      }
+      return this.heroes.filter(hero => {
+        return hero.show !== "false" && (this.selectedRole === 'All' || hero.role === this.selectedRole);
+      });
     },
   },
   methods: {
@@ -161,6 +159,7 @@ export default {
           name: heroData.name,
           image: heroData.image,
           role: heroData.role,
+          show: heroData.show,
         };
       })
     );

@@ -1,0 +1,213 @@
+{
+  "abilities": {
+    "basic": [
+      {
+        "name": "Chain Heal (Q)",
+        "description": "Heal an ally with a wave of healing for 260 Health. The wave then bounces 2 times to nearby allies within 7 range, restoring 260 Health to them.",
+        "image": "rehgar_chainheal.png",
+        "abilityChanged": false,
+        "manaCost": "60 Mana",
+        "cooldown": "8s"
+      },
+      {
+        "name": "Lightning Shield (W)",
+        "description": "Imbue an ally with lightning dealing 64 damage a second to nearby enemies. Each enemy hit restores 2 Mana to Rehgar. Lasts 5 seconds.",
+        "image": "rehgar_lightningshield.png",
+        "abilityChanged": false,
+        "manaCost": "50 Mana",
+        "cooldown": "8s"
+      },
+      {
+        "name": "Earthbind Totem (E)",
+        "description": "Create a totem that Slows nearby enemies by 35%. The totem has 260 Health and lasts for 6 seconds.",
+        "image": "rehgar_earthbindtotem.png",
+        "abilityChanged": false,
+        "manaCost": "50 Mana",
+        "cooldown": "15s"
+      }
+    ],
+    "heroic": [
+      {
+        "name": "Ancestral Healing (R)",
+        "description": "After 1 second, heal an allied Hero for 1180 Health.",
+        "image": "rehgar_ancestralhealing.png",
+        "abilityChanged": false,
+        "manaCost": "80 Mana",
+        "cooldown": "100s"
+      },
+      {
+        "name": "Shamanic ritual",
+        "description": "{highlight}Creates a totem that will cast you current trait effect on all valid hero targets after 1 second. The effect will be recast after 4 seconds.{/highlight}",
+        "image": "rehgar_shamanmastertraining.webp",
+        "abilityChanged": true,
+        "manaCost": "70 Mana",
+        "cooldown": "70s"
+      }
+    ],
+    "trait": {
+      "name": "Shamanic mastery",
+      "description": "{highlight}Picked on level 1{/highlight}",
+      "image": "rehgar_purge.png",
+      "abilityChanged": true,
+      "cooldown": "60s"
+    }
+  },
+  "1": [
+    {
+      "name": "Purge (T)",
+      "description": "When used on an allied Hero, make them Unstoppable for 0.5 seconds. When used on an enemy Hero, Slow them by 80%, decaying over 2 seconds.",
+      "image": "rehgar_purge.png",
+      "talentChanged": true,
+      "cooldown": "60s"
+    },
+    {
+      "name": "Spirit link  (T)",
+      "description": "{highlight}Use on an allied hero to share 25% of the damage received for 4 seconds.{/highlight}",
+      "image": "rehgar_spiritlink.webp",
+      "talentChanged": true,
+      "cooldown": "25s"
+    },
+    {
+      "name": "Bloodlust (T)",
+      "description": "{highlight}Grants an allied Hero{/highlight} 40% Attack Speed and 35% Movement Speed and causes them to heal for 30% of the Basic Attack damage to their primary target. Lasts for 4 seconds.",
+      "image": "rehgar_bloodlust.png",
+      "talentChanged": true,
+      "cooldown": "30s"
+    }
+  ],
+  "4": [
+    {
+      "name": "Bloodlust Empowerment",
+      "description": "{highlight}Rehgar will receive Bloodlust when casting Lightning Shield.{/highlight}",
+      "image": "rehgar_lightningshield.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Electric Charge",
+      "description": "The bearer of Lightning Shield Heals for 20% of the damage it deals to enemy Heroes, doubled if the bearer is Rehgar.While Lightning Shield is damaging an enemy, its bearer gains 10% increased Movement Speed.",
+      "image": "rehgar_lightningshield.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Elemental Totem Empowerment",
+      "description": "{highlight}Rehgar elemental totems will receive Lightning Shield.{/highlight}",
+      "image": "rehgar_lightningshield.png",
+      "talentChanged": true
+    }
+  ],
+  "7": [
+    {
+      "name": "Water Totem",
+      "description": "{highlight}Reactivate earthbind totem to create a water totem that every 2 seconds, will cast Chain Heal at the nearest allied Hero with the lowest Health. This Chain Heal heals for 35% of its normal amount. Also increase allied heros healing received by 25%.{/highlight}",
+      "image": "rehgar_earthbindtotem.png",
+      "talentChanged": true,
+      "health": "180",
+      "radius": "6.5",
+      "range": "2.5"
+    },
+    {
+      "name": "Fire Totem",
+      "description": "{highlight}Reactivate earthbind totem to create a fire totem that will debuff enemies on area every 2 seconds reducing their Attack speed and spell power by 25% for 2 seconds. lasts 6 seconds{/highlight}.",
+      "image": "rehgar_earthbindtotem.png",
+      "talentChanged": true,
+      "health": "260",
+      "radius": "4",
+      "range": "7.0"
+    },
+    {
+      "name": "Air Totem",
+      "description": "{highlight}Reactivate earthbind totem to create a air totem that every 2 seconds, will pull the closes enemy hero nearby.{/highlight}",
+      "image": "rehgar_earthbindtotem.png",
+      "talentChanged": true,
+      "health": "390",
+      "radius": "2",
+      "range": "10.0"
+    }
+  ],
+  "10": [
+    {
+      "name": "Ancestral Healing",
+      "description": "After 1 second, heal an allied Hero for 1180 Health.",
+      "image": "rehgar_ancestralhealing.png",
+      "talentChanged": false,
+      "manaCost": "80 Mana",
+      "cooldown": "100s"
+    },
+    {
+      "name": "Shamanic ritual",
+      "description": "{highlight}Creates a totem that will cast you current trait effect on all valid hero targets after 1 second. The effect will be recast after 4 seconds.{/highlight}",
+      "image": "rehgar_shamanmastertraining.webp",
+      "talentChanged": true,
+      "radius": "9",
+      "castRange": "2.0",
+      "manaCost": "70 Mana",
+      "cooldown": "70s"
+    }
+  ],
+  "13": [
+    {
+      "name": "Spirit waves",
+      "description": "{highlight}Chain Heal will grant allied heroes unkillable for 1 second and will have its number of bounces increased by 2.{/highlight}",
+      "image": "rehgar_chainheal.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Earth Shield",
+      "description": "Lightning Shield gives Heroes a Shield that absorbs damage equal to 14% of their maximum Health for 3 seconds. {highlight}If the shield is destroyed it renews the Lightning Shield duration and increases its size by 25%.{/highlight}",
+      "image": "rehgar_lightningshield.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Feral Heart",
+      "description": "{highlight}Ghost Wolf's Movement Speed bonus is increased to 30%. Ghost Wolf attacks against Heroes deal an additional 4% of the target's maximum Health and casts Lightning Shield on Rehgar.{/highlight}",
+      "image": "rehgar_ghostwolf.png",
+      "talentChanged": true
+    }
+  ],
+  "16": [
+    {
+      "name": "Rising Storm",
+      "description": "Every time a Lighting Shield damages an enemy Hero, increase its damage by 10%. Stacks up to 15 times.Passive: Increase the duration of Lightning Shield by 3 seconds.",
+      "image": "rehgar_lightningshield.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Earthgrasp Totem",
+      "description": "When Earthbind Totem is first cast, it deals 115 damage and Slows nearby enemies by 90% for 1 second.",
+      "image": "rehgar_earthbindtotem.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Wind heal",
+      "description": "Chain Heal empowers the next allied hero basic attacks making it hit twice.",
+      "image": "rehgar_chainheal.png",
+      "talentChanged": true
+    }
+  ],
+  "20": [
+    {
+      "name": "Farseer's Blessing",
+      "description": "{highlight}Ancestral Healing is cast a second time on the same target after 2.5 seconds and both healings are now a Perfect Heal meaning it can't be reduced.{/highlight}",
+      "image": "rehgar_ancestralhealing.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Shamanic Master Training",
+      "description": "{highlight}Increase the totem range by 35% and increase the number of reactivations to 2.{/highlight}",
+      "image": "rehgar_shamanmastertraining.webp",
+      "talentChanged": true
+    },
+    {
+      "name": "Totemic Mastery",
+      "description": "{highlight}Your elemental totems will now last indefinitely and will have 100% increased health points. You will also be able to use all the elemental totems.{/highlight}",
+      "image": "rehgar_earthbindtotem.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Pit Fighter",
+      "description": "{highlight}When there's no nearby allied heroes close to Rehgar he receives 30 armor, increased 25% basic attack damage and spell power.{/highlight}",
+      "image": "rehgar.png",
+      "talentChanged": true
+    }
+  ]
+}

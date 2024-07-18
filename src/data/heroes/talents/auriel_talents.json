@@ -1,0 +1,199 @@
+{
+  "abilities": {
+    "basic": [
+      {
+        "name": "Sacred Sweep (Q)",
+        "description": "Sweep the area with sacred power, dealing 40 damage to enemies and an additional 160 damage to enemies caught in the center.  ",
+        "passives": [
+          "❢ Quest: {highlight}Every time Sacred Sweep hits a Hero in the center, increase the center damage by 2, up to 50.{/highlight}",
+          "❢ Rewards: {highlight}After hitting 30 Heroes, Hitting allied heros with <vanilla, abilities, basic, 0> center increase the damage by 180.{/highlight}"
+        ],
+        "image": "auriel_angelicsweep.png",
+        "abilityChanged": true,
+        "cooldown": "8s"
+      },
+      {
+        "name": "Ray of Heaven (W)",
+        "description": "Consume Auriel's stored energy and heal allied Heroes in the area for the amount of energy consumed.",
+        "image": "auriel_rayofheaven.png",
+        "abilityChanged": false,
+        "cooldown": "4s"
+      },
+      {
+        "name": "Detainment Strike (E)",
+        "description": "Deal 55 damage to the first enemy Hero hit and knock them back. If they collide with terrain, they are also stunned for 1.25 seconds and take an additional 165 damage.",
+        "image": "auriel_restrainingblow.png",
+        "abilityChanged": false,
+        "cooldown": "12s"
+      }
+    ],
+    "heroic": [
+      {
+        "name": "Resurrect (R)",
+        "description": "Channel on the spirit of a dead ally for 1 second. After a 5 second delay, they are brought back to life with 100% of their maximum Health at the location where they died.Auriel can use this ability while dead to resurrect herself.",
+        "image": "auriel_resurrect.png",
+        "abilityChanged": false,
+        "cooldown": "100s"
+      },
+      {
+        "name": "Crystal Aegis (R)",
+        "description": "Place an allied Hero into Stasis for 2 seconds. Upon expiration, Crystal Aegis deals 255 damage to all nearby enemies.",
+        "image": "auriel_ribboncocoon.png",
+        "abilityChanged": false,
+        "cooldown": "60s"
+      }
+    ],
+    "trait": {
+      "name": "Bestow Hope (T)",
+      "description": "Passive: 60% of the damage Auriel deals to Heroes and 20% dealt to non-Heroes is stored as energy.Bestow an allied Hero with Hope.  While they remain near Auriel, 30% of their damage to Heroes and 10% of their damage to non-Heroes is converted to energy. Auriel can only have Bestow Hope on 1 ally at a time.Auriel can store up to 475 energy.",
+      "image": "auriel_bestowhope.png",
+      "abilityChanged": false,
+      "cooldown": "2s"
+    }
+  },
+  "1": [
+    {
+      "name": "Al'maiesh touch",
+      "description": "{highlight}Hitting allied heros with Sacred Sweep (Q) center increase their movespeed by 30% for 2 seconds and fills Auriel energy bar by 10%{/highlight}",
+      "image": "auriel_angelicsweep.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Righteous Assault",
+      "description": "{highlight}Enemies hit by the outer area of Sacred Sweep (Q) are pushed slightly toward the center. {/highlight}",
+      "passives": ["{highlight} Increase it's size by 15%{/highlight}"],
+      "image": "auriel_angelicsweep_b.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Blinding Flash",
+      "description": "Enemies hit by the center area of Sacred Sweep are blinded for {highlight}1.5{/highlight} seconds {highlight} and reduces the cooldown of Sacred Sweep by 2 seconds {/highlight}",
+      "image": "auriel_angelicsweep.png",
+      "talentChanged": true
+    }
+  ],
+  "4": [
+    {
+      "name": "Detainment STRIKE",
+      "description": "{highlight}Detainment Strike (E) primary target collides with other enemy heros stunning and dealing damage to both on contact.{/highlight}",
+      "image": "auriel_restrainingblow.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Angiris Trial",
+      "description": "{highlight}After hitting a target with Detainment Strike (E) you can reactivate within 1 second to pull the target to Auriel. This will place the target on a distance of 1 from Auriel{/highlight}",
+      "image": "auriel_restrainingblow.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Repeated Offense",
+      "description": "Enemies hit by Detainment Strike are knocked back 25% farther.Quest: Every time Detainment Strike stuns a Hero, increase the stun damage by 10, up to 60.Reward: After stunning 6 Heroes, increase this damage bonus to 250.",
+      "image": "auriel_restrainingblow_a.png",
+      "talentChanged": false
+    }
+  ],
+  "7": [
+    {
+      "name": "Changing Hope",
+      "description": "{highlight}When Auriel uses Bestow Hope (T) on an ally in Heroes of the Storm, the converted damage from that ally to other heroes is increased by 65% and to non-heroes by 30% for the first 2 seconds. Once Auriel changes the target of Bestow Hope (T) the previous bearer will have a 10 seconds cooldown of this effect{/highlight}",
+      "image": "auriel_bestowhope.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Searing Light",
+      "description": "Ray of Heaven also deals damage to enemies in the area equal to 30% of the energy consumed. {highlight}Damaging 2 heroes with Ray of Heaven (W) refunds 40% of the energy{/highlight}",
+      "image": "auriel_rayofheaven.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Empathic Link",
+      "description": "Auriel stores 25% of damage taken by allies with Bestow Hope.",
+      "image": "auriel_bestowhope.png",
+      "talentChanged": false
+    }
+  ],
+  "10": [
+    {
+      "name": "Resurrect",
+      "description": "Channel on the spirit of a dead ally for 1 second. After a 5 second delay, they are brought back to life with 100% of their maximum Health at the location where they died.Auriel can use this ability while dead to resurrect herself.",
+      "image": "auriel_resurrect.png",
+      "talentChanged": false,
+      "cooldown": "100s"
+    },
+    {
+      "name": "Crystal Aegis",
+      "description": "Place an allied Hero into Stasis for 2 seconds. Upon expiration, Crystal Aegis deals 255 damage to all nearby enemies.",
+      "image": "auriel_ribboncocoon.png",
+      "talentChanged": false,
+      "cooldown": "60s"
+    }
+  ],
+  "13": [
+    {
+      "name": "Patient Angel",
+      "description": "{highlight}After 3 seconds within max energy your next Ray of Heaven (W) grants 50% shield based on the healed amount that decays over 6 seconds.{/highlight}",
+      "image": "auriel_rayofheaven.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Hope Strike",
+      "description": "{highlight}Activate to Pull the first allied hero it hits on a straight line. {/highlight}",
+      "cooldown": "20 seconds",
+      "image": "auriel_restrainingblow.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Energized Cord",
+      "description": "{highlight}Basic attacks reduces basic abilities cooldowns by 0.5 seconds{/highlight}",
+      "image": "auriel_bestowhope.png",
+      "talentChanged": true
+    }
+  ],
+  "16": [
+    {
+      "name": "Hope to everyone",
+      "description": "{highlight}Auriel shares all stat bonuses within the Bestow Hope (T) bearer. {/highlight}",
+      "image": "auriel_bestowhope.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Will of Heaven",
+      "description": "Allies with Bestow Hope gain 20% Attack Speed.Passive: Auriel gains 10% increased Basic Attack Damage.",
+      "image": "auriel_bestowhope.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Wrath of Heaven",
+      "description": "Allies with Bestow Hope gain 10% Spell Power.Enemy Heroes hit by the center area of Sacred Sweep or the terrain collision of Detainment Strike have their Spell Armor reduced by 10 for 3 seconds.",
+      "image": "auriel_bestowhope_a.png",
+      "talentChanged": false
+    }
+  ],
+  "20": [
+    {
+      "name": "Angel of Hope",
+      "description": "{highlight}After 5 seconds of ressurecting the primary target will perform another Resurrect (R) on area 5 seconds after on the initial target position.{/highlight}",
+      "image": "auriel_resurrect.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Diamond Resolve",
+      "description": "{highlight}Upon expiration Crystal Aegis (R) will knockback enemies nearby and every hero hit will reduce it's cooldown by 17 seconds. {/highlight}",
+      "image": "auriel_ribboncocoon.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Reservoir of Hope",
+      "description": "{highlight}Auriel energy can now overcharge but all energy that goes beyond the limit will decay in under 4 seconds{/highlight}",
+      "image": "auriel_rayofheaven.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Shield of Hope",
+      "description": "Activate to grant all nearby allied Heroes a shield for 3 seconds equal to 50% of the amount of Health they are missing.",
+      "image": "auriel_shieldofhope.png",
+      "talentChanged": false,
+      "cooldown": "60s"
+    }
+  ]
+}

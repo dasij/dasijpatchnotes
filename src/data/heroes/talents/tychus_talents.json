@@ -143,7 +143,8 @@
     },
     {
       "name": "OverExtend",
-      "description": "{highlight} After expiring Overkill does an extra hit reducing every enemy hero hit physical armor by 50 for 3 seconds. {/highlight} ",
+      "description": "{highlight}After expiring overkill does an extra hit applying a decaying slow on every enemy hero of 75% for 2.5 seconds. {/highlight} ",
+      "passives": ["Reduces minigun cooldown by 4 seconds"],
       "image": "tychus_overkill.png",
       "talentChanged": true
     },
