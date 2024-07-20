@@ -176,7 +176,7 @@
                   "text": "Changed functionality: <vanilla, abilities, heroic, 0> will increase the target magic resistence to 75 for 0.5 seconds"
                 }
               ],
-              "developerCommentary": "By removing <vanilla, abilities, basic, 2> some of her cool parts would've be left behind so i am bringing them back like making someone almost immune to magic. But in this case i want to reward better timing with higher numbers",
+              "developerCommentary": "By removing <vanilla, abilities, basic, 2> some of her cool parts would've be left behind so i am bringing them back like making someone almost immune to magic. But in this case i want to reward better timing with higher numbers.",
               "likes": 0,
               "likedBy": {}
             },
@@ -261,7 +261,7 @@
                   "text": "Changed functionality: Brightwing stops and starts to absorb all magic damage and effects taken during the next 0.6 seconds after that redirects all magic damage and status effects backs to their casters and cleanses negatives effects.",
                   "subtexts": [
                     "Cooldown: 30 seconds",
-                    "Garrosh Wrecking ball or other disruption type skills won't have the disruption part returned as it won't counted as status effects",
+                    "Garrosh Wrecking ball or other disruption type skills won't have the disruption part returned as it won't be counted as status effects",
                     "Stitches gorge won't count"
                   ]
                 }
@@ -272,7 +272,7 @@
             },
             {
               "change_id": "brighwing_7",
-              "name": "<vanilla, talents, 10, 1>",
+              "name": "<vanilla, talents, 10, 0>",
               "texts": [
                 {
                   "text": "Moved to her basic ability (E) slot"
@@ -323,7 +323,7 @@
               "name": "NEW: Faerie heal",
               "texts": [
                 {
-                  "text": "Activate to absorb 10% of all magic damage on a large radius for 5 seconds, after that heals all allied hero units for the same value",
+                  "text": "Activate to absorb 10% of all magic damage on a large radius around Brightwing for 5 seconds, after that heals all allied hero units for the same value",
                   "subtexts": [
                     "cooldown: 45 seconds",
                     "The radius is 7 | Blaze combustion is 6",

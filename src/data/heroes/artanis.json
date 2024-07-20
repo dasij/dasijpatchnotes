@@ -1,0 +1,318 @@
+{
+  "id": 20,
+  "name": "ARTANIS",
+  "role": "Bruiser",
+  "image": "heroes_portraits/artanis.webp",
+  "show": "falses",
+  "patchNotes": [
+    {
+      "id": 20,
+      "title": "Hero mini-rework and talents rework",
+      "general": [
+        {
+          "change_id": "artanis_1",
+          "change": "<vanilla, abilities, basic, 1>",
+          "texts": [
+            {
+              "text": "Additional functionality: Reactivate during <vanilla, abilities, basic, 0> to charge a short distance on the target direction, if it collides with an enemy perform the hit sequence",
+              "subtexts": [
+                "3.5 range the same as the base Range",
+                "Phases through walls if it's casted inside one",
+                "If it's cast inside a unit or structure will automatically be placed on the closest valid position to double hit it"
+              ]
+            }
+          ],
+          "developerCommentary": "I like both <vanilla, abilities, basic, 1> and <vanilla, abilities, basic, 0> but with some old kits being more dash and mobility centered Artanis itself got his kit a little old in that sense. I want to hold the current principles but add more control to the Player so the same won't feel overwhelmed for the lack of option. Besides i am trying to make my loved hero be able to escape ganks without needing to resort on trying a 2v1 situation...please delete tracer. But talking for real, he is one of the few solo laners that has a deprecated way of escaping ganks.",
+          "likes": 0,
+          "likedBy": {}
+        },
+        {
+          "change_id": "artanis_13",
+          "change": "<vanilla, abilities, basic, 2>",
+          "texts": [
+            {
+              "text": "Unstoppable will now be granted during the swap time and 0.25 after it",
+              "subtexts": [
+                "Cancelling mid swap will make the unstoppable effect worn off earlier"
+              ]
+            }
+          ],
+          "developerCommentary": "I like both <vanilla, abilities, basic, 1> and <vanilla, abilities, basic, 0> but with some old kits being more dash and mobility centered Artanis itself got his kit a little old in that sense. I want to hold the current principles but add more control to the Player so the same won't feel overwhelmed for the lack of option. Besides i am trying to make my loved hero be able to escape ganks without needing to resort on trying a 2v1 situation...please delete tracer. But talking for real, he is one of the few solo laners that has a deprecated way of escaping ganks.",
+          "likes": 0,
+          "likedBy": {}
+        },
+        {
+          "change_id": "artanis_9",
+          "change": "New active: Charge blades",
+          "texts": [
+            {
+              "text": "Will occupy a (?) slot"
+            },
+            {
+              "text": "Artanis dashes a fixed distance in the direction of the target enemy. Upon impact will strike the enemy with two basic attacks(Shares cooldown and talent effects with <vanilla, abilities, basic, 1>)",
+              "subtexts": [
+                "2 cast range Artanis basic attack has 1.25 range",
+                "3.5 distance dash the equivalent of <vanilla, abilities, basic, 1> distance",
+                "Point and click skill",
+                "It will work similar to Yasuo Sweeping Blade from League of Legends"
+              ]
+            }
+          ],
+          "developerCommentary": "Within the same argumento on reactivating <vanilla, abilities, basic, 1> on <vanilla, abilities, basic, 0> , i want to make Artanis tools of mobility a reality.",
+          "likes": 0,
+          "likedBy": {}
+        }
+      ],
+      "developerCommentary": "",
+      "sections": [
+        {
+          "name": "Level 1",
+          "changes": [
+            {
+              "change_id": "artanis_2",
+              "name": "<vanilla, talents, 1, 0> renamed to Zealot Parry",
+              "texts": [
+                {
+                  "text": "Changed functionality: When Artanis activates <modified, abilities, basic, 1> he negates basic attacks damage for 1.25 seconds. 20% of the damage negated will be added to you next <modified, abilities, basic, 0> first dash "
+                }
+              ],
+              "developerCommentary": "I want to make Parry a real thing.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "artanis_3",
+              "name": "<vanilla, talents, 1, 1>",
+              "texts": [
+                {
+                  "text": "Additional functionality: Resets cooldown and refunds mana if the target was killed by <modified, abilities, basic, 1>, ",
+                  "subtexts": ["Has a 0.35 extra time to count the kill."]
+                }
+              ],
+              "developerCommentary": "This is one of the two only talents that improve Artanis PVE aspects directly. I just see a chance here to make it a fun experience with the new <modified, abilities, basic, 3>",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "artanis_4",
+              "name": "<vanilla, talents, 1, 2>",
+              "texts": [
+                {
+                  "text": "Changed functionality: Hitting an enemy Hero with <modified, abilities, basic, 1> reduces it's cooldown by 4 and grant a stacking 8% increased Attack Damage bonus for 4 seconds. Can only occur once every 7 seconds per Hero."
+                }
+              ],
+              "developerCommentary": "I dislike how in general infinite quests incentivize players to play and especially on Artanis aspects it just make players goddamn maniacs and with that in mind i want players to be maniacs but without the pressure of losing the ding value",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 4",
+          "changes": [
+            {
+              "change_id": "artanis_10",
+              "name": "<vanilla, talents, 4, 0>",
+              "texts": [
+                {
+                  "text": "removed"
+                }
+              ],
+              "developerCommentary": "For me Artanis has enough defensive talents to be tweaked with",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "artanis_20",
+              "name": "<vanilla, talents, 4, 2>",
+              "texts": [
+                {
+                  "text": "Additional functionality: Grant 20% of the Shield Overload's Shields to nearby allied heros"
+                }
+              ],
+              "developerCommentary": "By watching some campaign maps again i forgot that Artanis had a skill that he could use to heal allied heroes and shield them. I want to bring that aspect back while make it a viable talent for other reasons when close to <vanilla, talents, 13, 3>",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "artanis_12",
+              "name": "<vanilla, talents, 13, 3>",
+              "texts": [
+                {
+                  "text": "Moved from level 13"
+                },
+                {
+                  "text": "Reduced to 35 spell armor"
+                }
+              ],
+              "developerCommentary": "I want to handle level 4 as the Shield level and giving a little nerf for being an earlier contender",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 7",
+          "changes": [
+            {
+              "change_id": "artanis_21",
+              "name": "<vanilla, talents, 7, 1>",
+              "texts": [
+                {
+                  "text": "Additional functionality: Refreshs cooldown if hit the target with Twin Blades within 2 seconds."
+                }
+              ],
+              "developerCommentary": "By removing <vanilla, talents , 13, 2> i wanted to hold the way of how some Artanis players were close swap maniacs and with the new <modified, talents, 1, 2> works i think it will be a great combo",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "artanis_22",
+              "name": "NEW: Shield Force",
+              "texts": [
+                {
+                  "text": "Activate to destroy your current Shield and deal damage 50% of the value as damage to enemies nearby and knock back them",
+                  "subtexts": [
+                    "Cooldows: 20",
+                    "Radius 3.0 same from Dehaka Luker Strain",
+                    "Knockback duration: 0.25 same from Dehaka Luker Strain",
+                    "Knockback speed: 10 same from Dehaka Luker Strain"
+                  ]
+                }
+              ],
+              "developerCommentary": "This is a talent i always wanted Artanis to have i really dunno about how the numbers would work specially with how the <modified, talents, 4, 2> works",
+              "likes": 0,
+              "likedBy": {}
+            },
+
+            {
+              "change_id": "artanis_16",
+              "name": "<vanilla, talents, 13, 1>",
+              "texts": [
+                {
+                  "text": " Moved from level 13"
+                }
+              ],
+              "developerCommentary": "I want to make this talent a contender with a lot of big DPS talents and better control what you pick at level 13",
+              "likes": 0,
+              "likedBy": {}
+            },
+
+            {
+              "change_id": "artanis_23",
+              "name": "<vanilla, talents, 7, 0>",
+              "texts": [
+                {
+                  "text": "Moved to level 13"
+                }
+              ],
+              "developerCommentary": "Making level 13 the <modified, abilities, basic, 0> level",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "artanis_17",
+              "name": "<vanilla, talents, 7, 2>",
+              "texts": [
+                {
+                  "text": "Removed"
+                }
+              ],
+              "developerCommentary": "Too generic",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 13",
+          "changes": [
+            {
+              "change_id": "artanis_14",
+              "name": "<vanilla, talents, 13, 0>",
+              "texts": [
+                {
+                  "text": "Changed functionality: Reduces <modified, abilities, basic, 0> mana cost to 25. Hitting 3 enemy heroes with the first dash from <modified, abilities, basic, 0> reduces its cooldown to 0.3 . <modified, abilities, basic, 0> can be cast while on <modified, abilities, basic, 0> "
+                }
+              ],
+              "developerCommentary": "This talent is intended to cause nauseas on Artanis players with the number of <modified, abilities, basic, 0> you will be able to perform",
+              "likes": 0,
+              "likedBy": {}
+            },
+
+            {
+              "change_id": "artanis_18",
+              "name": " NEW: Aiur reinforcements ",
+              "texts": [
+                {
+                  "text": " For each enemy hero hit by <modified, abilities, basic, 0> reduces Artanis Heroic cooldown by 5%"
+                }
+              ],
+              "developerCommentary": "I didn't want to upgrade ultimates because i feel them are strong but at the same time i kinda wanted. So this is a indirect ultimate buff for the possibility of taking a nano boost and performing two lasers.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "artanis_6",
+              "name": "<vanilla, talents, 13, 1>",
+              "texts": [
+                {
+                  "text": " Moved to level 13"
+                }
+              ],
+              "developerCommentary": "Making level 13 a <modified, abilities, basic, 0> level",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "artanis_15",
+              "name": "<vanilla, talents, 13, 2>",
+              "texts": [
+                {
+                  "text": "Removed"
+                }
+              ],
+              "developerCommentary": "I kinda mixed the effects with <modified, talents, 7, 1>",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 16",
+          "changes": [
+            {
+              "change_id": "artanis_7",
+              "name": "<vanilla, talents, 16, 2>",
+              "texts": [
+                {
+                  "text": "Removed"
+                }
+              ],
+              "developerCommentary": "Too generic",
+              "likes": 0,
+              "likedBy": {}
+            },
+
+            {
+              "change_id": "artanis_11",
+              "name": "NEW: Force of the Prism",
+              "texts": [
+                {
+                  "text": "When <modified, abilities, basic, 2> Reaches maximum range it splits into three <modified, abilities, basic, 2>s and travels extra 25% range. Artanis Won't swap with targets pulled that way",
+                  "subtexts": [
+                    "The extra range is 1.875.",
+                    "The other two prisms will be create at a 45º angle difference, one to the left and another to the right"
+                  ]
+                }
+              ],
+              "developerCommentary": "I was on a fight to decide between this or Longshot, a inspired reddit talent that made <modified, abilities, basic, 2> have a longer range and increased travel speed, i choose this because i think this could make great wtf moments",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

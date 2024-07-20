@@ -11,9 +11,9 @@
       },
       {
         "name": "Polymorph (W)",
-        "description": "Polymorph a target for 1.5 seconds, Slowing their Movement Speed by 30% and Silencing them. Targets are not able to attack while Polymorphed.",
+        "description": "Polymorph a target for 1.5 seconds, Silencing them. Targets are not able to attack while Polymorphed.",
         "image": "brightwing_polymorph.png",
-        "abilityChanged": false,
+        "abilityChanged": true,
         "manaCost": "50 Mana",
         "cooldown": "12s"
       },
@@ -76,7 +76,7 @@
       "name": "Pixie Charm",
       "description": "Activate to consume 20 stacks of Bribe to instantly defeat an uncaptured non-Elite Mercenary.Passive: Gain 1 stack of Bribe when a nearby enemy Minion dies, and 5 stacks when hitting an enemy Hero with Arcane Flare's center. Maximum 80 stacks. ",
       "passives": [
-        "{highlight} Refreshs Hyper Shift cooldown when you capture a camp{/highlight}"
+        "{highlight} Refreshs Hyper Shift cooldown when you capture a camp with one bribed unit{/highlight}"
       ],
       "image": "talent_bribe.png",
       "talentChanged": true
@@ -156,7 +156,7 @@
     },
     {
       "name": "Faerie Heal",
-      "description": "{highlight}Activate to absorb 10% of all magic damage on a large radius for 5 seconds, after that heals all allied hero units for the same value.{/highlight}",
+      "description": "{highlight}Activate to absorb 10% of all magic damage on a large radius around Brightwing for 5 seconds, after that heals all allied hero units for the same value.{/highlight}",
       "cooldown": "45s",
       "image": "brightwing_soothingmist.png",
       "talentChanged": true
@@ -187,7 +187,7 @@
   "20": [
     {
       "name": "Innate Magic Control",
-      "description": "{highlight}cooldown is refreshed after using Hyper Shift.{/highlight}",
+      "description": "{highlight}Cooldown is refreshed after using Hyper Shift.{/highlight}",
       "image": "brightwing_counter_magic.webp",
       "talentChanged": true
     },

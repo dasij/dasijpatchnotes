@@ -1,0 +1,205 @@
+{
+  "abilities": {
+    "basic": [
+      {
+        "name": "Blade Dash (Q)",
+        "description": "Dash forward and deal 63 damage to enemies, then return and deal 171 damage. Every enemy hit reduces the cooldown on Shield Overload by 1 second, and Heroes by 2 seconds.",
+        "image": "artanis_powerstrikes.png",
+        "abilityChanged": false,
+        "manaCost": "50 Mana",
+        "cooldown": "10s"
+      },
+      {
+        "name": "Twin Blades (W)",
+        "description": "Artanis's next Basic Attack immediately causes him to charge a short distance and strike the enemy 2 times.",
+        "image": "artanis_doubleslash_on.png",
+        "abilityChanged": false,
+        "manaCost": "20 Mana",
+        "cooldown": "4s"
+      },
+      {
+        "name": "Phase Prism (E)",
+        "description": "Fire a Phase Prism that deals 66 damage to the first Hero hit and swaps Artanis's position with theirs. Hitting a Hero also grants Artanis Unstoppable for 1.5 seconds. Can be used during Blade Dash.",
+        "image": "artanis_repositionmatrix.png",
+        "abilityChanged": false,
+        "manaCost": "50 Mana",
+        "cooldown": "12s"
+      }
+    ],
+    "heroic": [
+      {
+        "name": "Suppression Pulse (R)",
+        "description": "Fire a large area pulse from the Spear of Adun, dealing 114 damage and Blinding enemies for 4 seconds. Unlimited range.",
+        "image": "artanis_disruptionweb.png",
+        "abilityChanged": false,
+        "manaCost": "40 Mana",
+        "cooldown": "50s"
+      },
+      {
+        "name": "Purifier Beam (R)",
+        "description": "Target an enemy Hero with an orbital beam from the Spear of Adun, dealing 184 damage per second for 8 seconds. The beam will chase the target as they move.  Unlimited range.",
+        "image": "artanis_purifierbeam.png",
+        "abilityChanged": false,
+        "manaCost": "65 Mana",
+        "cooldown": "70s"
+      }
+    ],
+    "trait": {
+      "name": "Shield Overload (T)",
+      "description": "After taking damage while below 75% Health, Artanis gains a 365 Shield for 5 seconds. Basic Attacks lower the cooldown of Shield Overload by 4 seconds.",
+      "image": "artanis_shieldoverload.png",
+      "abilityChanged": false,
+      "cooldown": "24s"
+    }
+  },
+  "1": [
+    {
+      "name": "Reactive Parry",
+      "description": "Damaging enemy Heroes with Twin Blades or Blade Dash grants Artanis 50 Physical Armor against the next enemy Hero Basic Attack, reducing its damage by 50%.Stores up to 2 charges.",
+      "image": "artanis_doubleslash_on.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Amateur Opponent",
+      "description": "Twin Blades attacks deal 150% bonus damage to non-Heroes.",
+      "image": "artanis_doubleslash_var1.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Protector Of Aiur",
+      "description": "Quest: Basic Attacks against enemy Heroes increase Artanis's Attack damage by 0.1%.  Takedowns grant 1% bonus damage.",
+      "image": "talent_autoattack_damage.png",
+      "talentChanged": false
+    }
+  ],
+  "4": [
+    {
+      "name": "Psionic Synergy",
+      "description": "Hitting an enemy Hero with Phase Prism grants 30 Armor for 5 seconds.",
+      "image": "artanis_repositionmatrix.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Shield Battery",
+      "description": "Shield Overload's cooldown recharges 125% faster while its Shield is active. Passive: Reduce Shield Overload's cooldown by 4 seconds.",
+      "image": "artanis_shieldoverload.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Shield Surge",
+      "description": "Increases Shield Overload's Shields by 80% while below 25% Health.",
+      "image": "artanis_shieldoverload_a.png",
+      "talentChanged": false
+    }
+  ],
+  "7": [
+    {
+      "name": "Solarite Reaper",
+      "description": "Increases the damage of the first dash of Blade Dash by 175%.",
+      "image": "artanis_powerstrikes.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Chrono Surge",
+      "description": "Hitting an enemy Hero with Phase Prism grants 40% bonus Attack Speed for 5 seconds and Slows the enemy's Movement Speed by 30% for 4 seconds.{/highlight}",
+      "image": "artanis_repositionmatrix.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Final Cut",
+      "description": "After using an Ability, your next Basic Attack within 6 seconds deals 40% additional damage. While under 25% Health, this damage bonus is increased to 60%.",
+      "image": "talent_autoattack_damage.png",
+      "talentChanged": false
+    }
+  ],
+  "10": [
+    {
+      "name": "Suppression Pulse",
+      "description": "Fire a large area pulse from the Spear of Adun, dealing 114 damage and Blinding enemies for 4 seconds. Unlimited range.",
+      "image": "artanis_disruptionweb.png",
+      "talentChanged": false,
+      "manaCost": "40 Mana",
+      "cooldown": "50s"
+    },
+    {
+      "name": "Purifier Beam",
+      "description": "Target an enemy Hero with an orbital beam from the Spear of Adun, dealing 184 damage per second for 8 seconds. The beam will chase the target as they move.  Unlimited range.",
+      "image": "artanis_purifierbeam.png",
+      "talentChanged": false,
+      "manaCost": "65 Mana",
+      "cooldown": "70s"
+    }
+  ],
+  "13": [
+    {
+      "name": "Templar's Zeal",
+      "description": "Reduce the Mana cost of Blade Dash from 50 to 25. Each time that Shield Overload activates, reduce the cooldown of Blade Dash by 6 seconds.",
+      "image": "artanis_powerstrikes.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Triple Strike",
+      "description": "Increases Twin Blades's number of Basic Attacks to 3, but increase its cooldown by 1 second.",
+      "image": "artanis_doubleslash_on.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Graviton Vortex",
+      "description": "Reduce the Mana cost of Phase Prism from 50 to 25. Hitting an enemy Hero with Basic Attacks or Blade Dash reduces the cooldown of Phase Prism by 2 seconds.",
+      "image": "artanis_repositionmatrix.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Phase Bulwark",
+      "description": "Shield Overload grants 50 Spell Armor while active and for 2 seconds after it expires.",
+      "image": "artanis_shieldoverload.png",
+      "talentChanged": false
+    }
+  ],
+  "16": [
+    {
+      "name": "Titan Killer",
+      "description": "Basic Attacks against Heroes deal bonus damage equal to 0.5% of the target's maximum Health in damage, increased to 1.5% when empowered by Twin Blades.",
+      "image": "artanis_doubleslash_on.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Force of Will",
+      "description": "Casting Basic Abilities reduces the cooldown of Shield Overload by 5 seconds.",
+      "image": "artanis_shieldoverload.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Blades of a Templar",
+      "description": "Increase Attack Speed by 20%. Basic Attacks Slow by 20% for 1.25 seconds.",
+      "image": "talent_autoattack_slow.png",
+      "talentChanged": false
+    }
+  ],
+  "20": [
+    {
+      "name": "Orbital Bombardment",
+      "description": "Suppression Pulse gains an additional charge.  There is a 10 second cooldown between uses.",
+      "image": "artanis_disruptionweb.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Target Purified",
+      "description": "Increase the speed of Purifier Beam by 15%. If the target of Purifier Beam dies, it automatically recasts on the nearest visible enemy Hero.",
+      "image": "artanis_purifierbeam.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Zealot Charge",
+      "description": "Increase Twin Blades' charge distance by 75%.",
+      "image": "artanis_doubleslash_on.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Plasma Burn",
+      "description": "While Shield Overload is active, deal 70 damage per second to nearby enemies.",
+      "image": "artanis_shieldoverload.png",
+      "talentChanged": false
+    }
+  ]
+}
