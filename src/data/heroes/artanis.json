@@ -14,7 +14,7 @@
           "change": "<vanilla, abilities, basic, 1>",
           "texts": [
             {
-              "text": "Additional functionality: Reactivate during <vanilla, abilities, basic, 0> to charge a short distance on the target direction, if it collides with an enemy perform the hit sequence",
+              "text": "Additional functionality: Activate during <vanilla, abilities, basic, 0> to charge a short distance on the target direction, if it collides with an enemy perform the hit sequence",
               "subtexts": [
                 "3.5 range the same as the base Range",
                 "Phases through walls if it's casted inside one",
@@ -31,13 +31,13 @@
           "change": "<vanilla, abilities, basic, 2>",
           "texts": [
             {
-              "text": "Unstoppable will now be granted during the swap time and 0.25 after it",
+              "text": "Unstoppable will now be granted during the swap time and 0.5 after it",
               "subtexts": [
                 "Cancelling mid swap will make the unstoppable effect worn off earlier"
               ]
             }
           ],
-          "developerCommentary": "I like both <vanilla, abilities, basic, 1> and <vanilla, abilities, basic, 0> but with some old kits being more dash and mobility centered Artanis itself got his kit a little old in that sense. I want to hold the current principles but add more control to the Player so the same won't feel overwhelmed for the lack of option. Besides i am trying to make my loved hero be able to escape ganks without needing to resort on trying a 2v1 situation...please delete tracer. But talking for real, he is one of the few solo laners that has a deprecated way of escaping ganks.",
+          "developerCommentary": "With some changes i made to Artanis this talent would need a little rebalance",
           "likes": 0,
           "likedBy": {}
         },
@@ -51,7 +51,7 @@
             {
               "text": "Artanis dashes a fixed distance in the direction of the target enemy. Upon impact will strike the enemy with two basic attacks(Shares cooldown and talent effects with <vanilla, abilities, basic, 1>)",
               "subtexts": [
-                "2 cast range Artanis basic attack has 1.25 range",
+                "3.5 cast range Artanis basic attack has 1.25 range",
                 "3.5 distance dash the equivalent of <vanilla, abilities, basic, 1> distance",
                 "Point and click skill",
                 "It will work similar to Yasuo Sweeping Blade from League of Legends"

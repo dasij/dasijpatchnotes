@@ -1,0 +1,307 @@
+{
+  "id": 21,
+  "name": "JUNKRAT",
+  "role": "Ranged Assassin",
+  "image": "heroes_portraits/junkrat.webp",
+  "show": "falses",
+  "patchNotes": [
+    {
+      "id": 21,
+      "title": "Talents Rework and hero mini-rework",
+      "general": [
+        {
+          "change_id": "junkrat_8",
+          "change": "Frag Launcher",
+          "texts": [
+            {
+              "text": "Additional functionality: Hitting a Hero with Frag Launcher increases its damage by 0.1%, up to 40%."
+            }
+          ],
+          "developerCommentary": "The original quest is a long one and i prefer it to be here and controlled instead of a talent. It also opens a slot for a more unique talent and from my perspective it becomes more natural.",
+          "likes": 0,
+          "likedBy": {}
+        },
+        {
+          "change_id": "junkrat_2",
+          "change": "Steel trap",
+          "texts": [
+            {
+              "text": "Cooldown reduced from 15 to 9"
+            },
+            {
+              "text": "Traps now have 400 health but can only be damage after armed",
+              "subtexts": [
+                "It's the equivalent health as Chromie's Time Trap",
+                "Will be a Summon type"
+              ]
+            }
+          ],
+          "developerCommentary": "Junkrat has a complete, useful and impactful kit. Having safety tools, good poke, good burst ultimates and even with all the only thing that comes to me a toxic trait is the fact he has summon crowd control traps that can't be destroyed, such a complete character has one of the best zoning roots of the games and it's a COMPLETE nightmare for melee user, they should be but not impossible to deal without cleanses. ",
+          "likes": 0,
+          "likedBy": {}
+        },
+        {
+          "change_id": "junkrat_1",
+          "change": "Frag mode(?)",
+          "texts": [
+            {
+              "text": "Activate to make your next Frag Grenade fire a continuous burst consuming all current charges.",
+              "subtexts": ["Cooldown: 30 seconds"]
+            }
+          ],
+          "developerCommentary": "Always felt that Burst Fire was a talent that looked like a QoL",
+          "likes": 0,
+          "likedBy": {}
+        }
+      ],
+      "developerCommentary": "Junkrat is a fun and complete character BUT the problem lies on how complete he is, for a mage character he has everything on a level that make it a super pick. It's very hard to break that without changing something on core level like making it have mana or changing how one of his skills works. Here i try to control the power of his crowd control mechanics by changing how Steel Traps can be dealt and also making their talents harder to abuse and not make a melee character life truly miserable. Besides that i tried to bring on some new things for the other aspects.",
+      "sections": [
+        {
+          "name": "Level 1",
+          "changes": [
+            {
+              "change_id": "junkrat_3",
+              "name": "Tricky Shuffles",
+              "texts": [
+                {
+                  "text": "Changed functionality: For each charge remaining on Frag Launcher Junkrat receives 7.5% increased basic attack damage. If there's no charges remaining receives 15% movement speed ",
+                  "subtexts": [""]
+                }
+              ],
+              "developerCommentary": "The only intent here is to make that a more flexible talent based on the situation you want to sticky yourself in and not make it worse with Endless Nades",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "junkrat_19",
+              "name": "Blow' 'em Up!",
+              "texts": [
+                {
+                  "text": "Junkrat Frag Grenades and Basic Attacks stacks powder on enemy heros for 6 seconds, hitting an enemy hero with concussion mine explodes the marks and deals 124 damage for each mark consumed"
+                }
+              ],
+              "developerCommentary": "I wanted to make something related to the previous effect but that won't conflict directly on the way the other talents would deal damage. Making it not a DPS or either a POKE talent but rather a burst one that makes sense with the name",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 4",
+          "changes": [
+            {
+              "change_id": "junkrat_5",
+              "name": "Taste for explosions",
+              "texts": [
+                {
+                  "text": "Removed"
+                }
+              ],
+              "developerCommentary": "Made into a baseline quest",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "junkrat_6",
+              "name": "BOOM POW",
+              "texts": [
+                {
+                  "text": "Moved to level 20"
+                }
+              ],
+              "developerCommentary": "Want to bring level 4 as a utility level",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "junkrat_",
+              "name": "I Hate Waiting!",
+              "texts": [
+                {
+                  "text": "Moved from level 20"
+                },
+                {
+                  "text": "Changed functionality: Every 60 seconds after using Hearthstone Junkrat will ride his Rocket Ride Mount, which grants 100% increased Movement Speed."
+                }
+              ],
+              "developerCommentary": "Made it into a weaker version to input it on level 4 as an utility talent, the reason why is because i feel like this talent belong to weaker tiers but as a competitor with other important talents that could change entirely how Junkrat act.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "junkrat_4",
+              "name": "Dirty Trickster",
+              "texts": [
+                {
+                  "text": "Moved from level 7"
+                }
+              ],
+              "developerCommentary": "Making this tier about Concussion mines and bringing to level 4 as a utility tier",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 7",
+          "changes": [
+            {
+              "change_id": "junkrat_9",
+              "name": "Ripper Air",
+              "texts": [
+                {
+                  "text": "Moved from level 13"
+                }
+              ],
+              "developerCommentary": "Bringing it to a concussion mine talent tier",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "junkrat_10",
+              "name": "NEW: More Powder!",
+              "texts": [
+                {
+                  "text": "Enemies that are affected by Steel Trap and Concussion mine within 2 seconds one from the other take 6% maximum health damage",
+                  "subtexts": [
+                    "If an enemy is affected by 2 Steel Traps and one concussion mine within 2 seconds it will only proc one time. It will work similar to a mark that is consumed when done right with 1 only mark being able to be active at the time"
+                  ]
+                }
+              ],
+              "developerCommentary": "Bringing an offensive option for the concussion mine talent tier that suits very well the situation that makes every tank wants to ban Junkrat. The famous trap mine combo.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "junkrat_11",
+              "name": "Sticky Wickets",
+              "texts": [
+                {
+                  "text": "Moved to level 13"
+                }
+              ],
+              "developerCommentary": "Changing it to the trap talent tier",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 13",
+          "changes": [
+            {
+              "change_id": "junkrat_17",
+              "name": "Big as",
+              "texts": [
+                {
+                  "text": "Additional functionality: Steel Trap can't be destroyed anymore"
+                }
+              ],
+              "developerCommentary": "With the changes on Steel Trap this seems a perfect opportunity to increase this talent value differently from the other.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "junkrat_7",
+              "name": "Sticky Wickets",
+              "texts": [
+                {
+                  "text": "Moved from level 7"
+                }
+              ],
+              "developerCommentary": "Bringing it to this level so you need to make a choice on how you want to upgrade your trap",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "junkrat_16",
+              "name": "Bombs Away",
+              "texts": [
+                {
+                  "text": "moved to level 16"
+                }
+              ],
+              "developerCommentary": "Level 13 will become a trap talent level.",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 16",
+          "changes": [
+            {
+              "change_id": "junkrat_15",
+              "name": "Burst Fire",
+              "texts": [
+                {
+                  "text": "Removed"
+                }
+              ],
+              "developerCommentary": "Made into a QoL change for Frag Launcher.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "junkrat_18",
+              "name": "Bombs Away",
+              "texts": [
+                {
+                  "text": "moved from level 13"
+                }
+              ],
+              "developerCommentary": "I honestly think with some of the changes made it can be a contender on level 16 it just need to be numeric adjusted if necessary.",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 20",
+          "changes": [
+            {
+              "change_id": "junkrat_14",
+              "name": "Puckish Scamp",
+              "texts": [
+                {
+                  "text": "Changed functionality: If Rocket Ride kills a enemy hero with the explosion after 0.5 seconds Junkrat will launch himself in the air and after 3.75 seconds perform another explosion",
+                  "subtexts": [
+                    "This can be reseted any number of times on one go"
+                  ]
+                }
+              ],
+              "developerCommentary": "I would argue that Puckish Scamp is one of the few times a hero can perform their two ultimates BUT this doesn't necessarily mean it's worth it. What i want to bring here is make it worth it not necessarily by being strong but being hehehe junkrat goes BOOM",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "junkrat_13",
+              "name": "I Hate Waiting!",
+              "texts": [
+                {
+                  "text": "Moved to level 4"
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "junkrat_12",
+              "name": "BOOM POW",
+              "texts": [
+                {
+                  "text": "Changed functionality: Reduces Concussion Mine cooldown to 5 seconds, holds 3 charges and enemies will be knocked back 35% further.",
+                  "subtexts": ["Cooldown between charges will be 0.5 seconds"]
+                }
+              ],
+              "developerCommentary": "I was thinkering on how i could enable Junkrat to perform the double concussion he is able on Overwatch game but also doesn't make it a rip-off of <vanilla, talents, 13, 1> and that was the pog solution i came, it's simple but gets the same result and lets the players perform more.",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
