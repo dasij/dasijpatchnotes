@@ -1,0 +1,203 @@
+{
+  "abilities": {
+    "basic": [
+      {
+        "name": "Desperate Plea (Q)",
+        "description": "Heal an allied Hero for 140 and gain Desperation for 4 seconds.Desperation increases Desperate Plea's Mana cost by 40, and stacks up to 3 times.Current Mana Cost: 40",
+        "image": "whitemane_desperate_plea.png",
+        "abilityChanged": false,
+        "manaCost": "40 Mana",
+        "cooldown": "1s"
+      },
+      {
+        "name": "Inquisition (W)",
+        "description": "Channel on an enemy Hero for up to 3 seconds, dealing 50 damage every 0.5 seconds and Slowing them by 30%. Removes a stack of Desperation.Shares a cooldown with Clemency.",
+        "image": "whitemane_inquisition.png",
+        "abilityChanged": false,
+        "cooldown": "12s"
+      },
+      {
+        "name": "Searing Lash (E)",
+        "description": "After 0.5 seconds, smite enemies in a straight line for 82 damage.If the first strike hits an enemy Hero, a second strike will occur after a short delay.",
+        "image": "whitemane_searing_lash.png",
+        "abilityChanged": false,
+        "cooldown": "6s"
+      },
+      {
+        "name": "Clemency (?)",
+        "description": "Activate to cast Inquisition on an allied Hero, healing them for up to 329 over 3 seconds while Channeling. Removes a stack of DesperationShares a cooldown with Inquisition.",
+        "image": "whitemane_clemency.png",
+        "abilityChanged": false,
+        "cooldown": "12s"
+      }
+    ],
+    "heroic": [
+      {
+        "name": "Scarlet Aegis (R)",
+        "description": "Bolster the spirits of nearby allied Heroes, healing them for 300 and granting them 40 Armor for 4 seconds.",
+        "image": "whitemane_scarlet_aegis.png",
+        "abilityChanged": false,
+        "cooldown": "60s"
+      },
+      {
+        "name": "Divine Reckoning (R)",
+        "description": "After 1 second, consecrate an area for 4 seconds, dealing 50 damage every 0.5 seconds to enemies inside. 25% of the damage dealt to Heroes is returned as Mana.",
+        "image": "whitemane_divine_reckoning.png",
+        "abilityChanged": false,
+        "cooldown": "75s"
+      }
+    ],
+    "trait": {
+      "name": "Fanatical Power (T)",
+      "description": "Activate to gain 25% Spell Power and lose 25 Armor for 5 seconds.",
+      "image": "whitemane_fanatical_power.png",
+      "abilityChanged": false,
+      "cooldown": "40s"
+    }
+  },
+  "1": [
+    {
+      "name": "Pity the Frail",
+      "description": "For every Hero hit with Searing Lash, lower the cooldown of Inquisition by 1.5 seconds. Allies below 30% Health receive 25% more healing from Whitemane.",
+      "image": "whitemane_inquisition_lash.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Righteous Flame",
+      "description": "Searing Lash deals 25% more damage to enemies. If the second strike hits an enemy Hero, they take an additional 25% damage and Whitemane gains 40% Attack Speed for 3 seconds.",
+      "image": "whitemane_lash.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Inquisitor's Prayer",
+      "description": "Quest: Hit Heroes with Searing Lash.Reward: Each Hero hit grants 3 permanent Health and 2 permanent Mana. Heroes hit with the second strike count as 2 hits.",
+      "image": "whitemane_lash_alt_1.png",
+      "talentChanged": false
+    }
+  ],
+  "4": [
+    {
+      "name": "Unwavering Faith",
+      "description": "Increase Whitemane's Basic Attack range by 1.1. Whitemane gains 20% increased Basic Attack damage for each active Zeal buff.",
+      "image": "whitemane_desperation.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Martyrdom",
+      "description": "Desperate Plea's healing is increased by 30%. Increase this by an additional 10% for each active Zeal.",
+      "image": "whitemane_desperation_alt_1.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Indulgence",
+      "description": "Gain 5% Movement Speed. Increase this by an additional 5% for each active Zeal.",
+      "image": "whitemane_zeal.png",
+      "talentChanged": false
+    }
+  ],
+  "7": [
+    {
+      "name": "Zealous Spirit",
+      "description": "Upon reaching 2 stacks of Desperation, Whitemane gains Zeal.",
+      "image": "whitemane_desperation.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Saintly Greatstaff",
+      "description": "Enemy Heroes hit by Searing Lash are marked for 3 seconds. Basic Attacks against them deal an additional 55 Spell damage and remove the mark.",
+      "image": "whitemane_lash.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Intercession",
+      "description": "Activate to make an ally Unstoppable for 1 second.",
+      "image": "whitemane_intercession.png",
+      "talentChanged": false,
+      "cooldown": "45s"
+    }
+  ],
+  "10": [
+    {
+      "name": "Scarlet Aegis",
+      "description": "Bolster the spirits of nearby allied Heroes, healing them for 300 and granting them 40 Armor for 4 seconds.",
+      "image": "whitemane_aegis.png",
+      "talentChanged": false,
+      "cooldown": "60s"
+    },
+    {
+      "name": "Divine Reckoning",
+      "description": "After 1 second, consecrate an area for 4 seconds, dealing 50 damage every 0.5 seconds to enemies inside. 25% of the damage dealt to Heroes is returned as Mana.",
+      "image": "whitemane_reckoning.png",
+      "talentChanged": false,
+      "cooldown": "75s"
+    }
+  ],
+  "13": [
+    {
+      "name": "Subjugation",
+      "description": "Inquisition reduces all damage the target deals by 50%.",
+      "image": "whitemane_inquisition.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Lashing Out",
+      "description": "If Searing Lash's second strike hits an enemy Hero, reduce its cooldown to 1 second.",
+      "image": "whitemane_lash.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Scarlet Wrath",
+      "description": "Basic Attacks against Heroes increase the duration of all active Zeals by 0.75 seconds and lower the cooldown of Zeals activation by 4 seconds.",
+      "image": "whitemane_zeal.png",
+      "talentChanged": false
+    }
+  ],
+  "16": [
+    {
+      "name": "Radiance",
+      "description": "Reaching 3 stacks of Desperation heals for 175 and reapplies Zeal to allies with Zeal.",
+      "image": "whitemane_desperation.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Shared Punishment",
+      "description": "Upon casting, Inquisition can chain to an additional enemy Hero near its target, dealing 50 damage every 0.5 seconds. Affected enemies lose 10 Armor.",
+      "image": "whitemane_inquisition.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Harsh Discipline",
+      "description": "Hitting a Hero with Searing Lash while they are being targeted by Inquisition Roots them for 1.5 seconds.Passive: Reduce Inquisition's cooldown by 2 seconds.",
+      "image": "whitemane_lash.png",
+      "talentChanged": false
+    }
+  ],
+  "20": [
+    {
+      "name": "Scarlet Crusade",
+      "description": "Scarlet Aegis heals for 50% more and makes affected allies Unstoppable for 2 seconds.",
+      "image": "whitemane_aegis.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Judgment Day",
+      "description": "Divine Reckoning deals 50% more damage and pulls enemies to its center the first time it hits them.",
+      "image": "whitemane_reckoning.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Guiding Light",
+      "description": "Activate to cast a permanent Zeal on an allied Hero that costs no Mana and doesn't grant Desperation. Only one can be active at a time and has global cast range.",
+      "image": "whitemane_zeal.png",
+      "talentChanged": false,
+      "cooldown": "30s"
+    },
+    {
+      "name": "Purge the Wicked",
+      "description": "Activate to blast an enemy Hero with holy fire, reducing their Armor by 25 and dealing 300 damage over 4 seconds.",
+      "image": "whitemane_purge.png",
+      "talentChanged": false,
+      "cooldown": "40s"
+    }
+  ]
+}

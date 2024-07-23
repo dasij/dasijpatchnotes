@@ -1,12 +1,12 @@
 {
-  "id": 19,
+  "id": 9,
   "name": "AURIEL",
   "role": "Healer",
   "image": "heroes_portraits/auriel.webp",
   "show": "falses",
   "patchNotes": [
     {
-      "id": 19,
+      "id": 9,
       "title": "Mini-hero rework and talent rework",
       "general": [
         {

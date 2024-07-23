@@ -1,11 +1,11 @@
 {
-  "id": 7,
+  "id": 16,
   "name": "CHROMIE",
   "role": "Ranged Assassin",
   "image": "heroes_portraits/chromie.webp",
   "patchNotes": [
     {
-      "id": 7,
+      "id": 16,
       "title": "Small hero and talents rework",
       "general": [],
       "developerCommentary": "Chromie ain't on a bad spot right now BUT i want to give her some more interactive talents based on the time premise.",

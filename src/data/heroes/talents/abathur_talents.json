@@ -1,0 +1,200 @@
+{
+  "abilities": {
+    "basic": [
+      {
+        "name": "Symbiote (Q)",
+        "description": "Spawn and attach a Symbiote to a target ally or Structure. While active, Abathur controls the Symbiote, gaining access to new Abilities. The Symbiote is able to gain XP from nearby enemy deaths.",
+        "image": "abathur_symbiote.png",
+        "abilityChanged": false,
+        "cooldown": "4s"
+      },
+      {
+        "name": "Toxic Nest (W)",
+        "description": "Spawn a mine that becomes active after a short time. Deals 153 damage and reveals the enemy for 4 seconds. Lasts 90 seconds.Stores up to 3 charges.",
+        "image": "abathur_toxic_nest.png",
+        "abilityChanged": false,
+        "cooldown": "10s"
+      }
+    ],
+    "heroic": [
+      {
+        "name": "Ultimate Evolution (R)",
+        "description": "Clone target allied Hero and control it for 20 seconds. Abathur has perfected the clone, granting it 20% Spell Power, 20% bonus Attack Damage, and 10% bonus Movement Speed. Cannot use their Heroic Ability.",
+        "image": "abathur_ultimate_evolution.png",
+        "abilityChanged": false,
+        "cooldown": "70s"
+      },
+      {
+        "name": "Evolve Monstrosity (R)",
+        "description": "Turn an allied Minion or Locust into a Monstrosity. When enemy Minions near the Monstrosity die, it gains 2% Health and 2% Basic Attack damage, stacking up to 40 times.  The Monstrosity can be healed by Carapace and has the ability to Burrow to a visible location every 80 seconds.Using Symbiote on the Monstrosity allows Abathur to control it, in addition to Symbiote's normal benefits.  This Ability can be reactivated to automatically cast Symbiote on his Monstrosity.",
+        "image": "abathur_evolve_monstrosity.png",
+        "abilityChanged": false,
+        "cooldown": "90s"
+      }
+    ],
+    "trait": {
+      "name": "Locust Strain (T)",
+      "description": "Spawns a Locust to attack down the nearest lane every 15 seconds. Locusts last for 16 seconds, have 350 health and deal 46 damage with each Basic Attack, dealing 25% bonus damage to enemy Structures.",
+      "image": "abathur_locust_strain.png",
+      "abilityChanged": false,
+      "cooldown": "15s"
+    }
+  },
+  "1": [
+    {
+      "name": "Pressurized Glands",
+      "description": "Increases the range of Symbiote's Spike Burst by 25% and decreases the cooldown by 1 second.",
+      "image": "abathur_spikeburst.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Envenomed Nest",
+      "description": "Toxic Nests deal 75% more damage over 3 seconds and reduce the Armor of enemy Heroes hit by 10 for 4 seconds.",
+      "image": "abathur_toxicnest.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Reinforced Carapace",
+      "description": "Increase the Shield amount of Carapace by 40%.",
+      "image": "abathur_carapace.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Survival Instincts",
+      "description": "Increases Locust's Health by 100% and damage by 60%.",
+      "image": "abathur_spawnlocust.png",
+      "talentChanged": false
+    }
+  ],
+  "4": [
+    {
+      "name": "Adrenal Overload",
+      "description": "Heroic Symbiote hosts gain 25% increased Attack Speed.",
+      "image": "abathur_symbiote.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Needlespine",
+      "description": "Increases the damage and range of Symbiote's Stab by 20%.",
+      "image": "abathur_stab.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Prolific Dispersal",
+      "description": "Increase the duration of Toxic Nests by 45 seconds, reduce its cooldown by 2 seconds, and add 2 additional charges.",
+      "image": "abathur_toxicnest.png",
+      "talentChanged": false
+    }
+  ],
+  "7": [
+    {
+      "name": "Vile Nest",
+      "description": "Toxic Nests Slow enemy Movement Speed by 40% for 2.5 seconds.",
+      "image": "abathur_toxicnest.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Networked Carapace",
+      "description": "Using Symbiote's Carapace also applies an untalented Carapace Shield to all nearby allied Heroes, Minions, and Mercenaries.",
+      "image": "abathur_carapace.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Calldown: MULE",
+      "description": "Activate to calldown a Mule that repairs Structures, one at a time, near target point for 40 seconds, healing for 90 Health every 1 second.",
+      "image": "talent_mule.png",
+      "talentChanged": false,
+      "cooldown": "60s"
+    }
+  ],
+  "10": [
+    {
+      "name": "Ultimate Evolution",
+      "description": "Clone target allied Hero and control it for 20 seconds. Abathur has perfected the clone, granting it 20% Spell Power, 20% bonus Attack Damage, and 10% bonus Movement Speed. Cannot use their Heroic Ability.",
+      "image": "abathur_ultimateevolution.png",
+      "talentChanged": false,
+      "cooldown": "70s"
+    },
+    {
+      "name": "Evolve Monstrosity",
+      "description": "Turn an allied Minion or Locust into a Monstrosity. When enemy Minions near the Monstrosity die, it gains 2% Health and 2% Basic Attack damage, stacking up to 40 times.  The Monstrosity can be healed by Carapace and has the ability to Burrow to a visible location every 80 seconds.Using Symbiote on the Monstrosity allows Abathur to control it, in addition to Symbiote's normal benefits.  This Ability can be reactivated to automatically cast Symbiote on his Monstrosity.",
+      "image": "abathur_evolvemonstrosity.png",
+      "talentChanged": false,
+      "cooldown": "90s"
+    }
+  ],
+  "13": [
+    {
+      "name": "Spatial Efficiency",
+      "description": "Symbiote's Stab gains 1 additional charge and its cooldown is reduced by .5 seconds.",
+      "image": "abathur_stab.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Soma Transference",
+      "description": "Symbiote's Spike Burst heals the host for 64 Health per enemy Hero hit.",
+      "image": "abathur_spikeburst.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Bombard Strain",
+      "description": "Locust's Basic Attacks become a long-range siege attack and their duration is increased by 75%.",
+      "image": "abathur_spawnlocust.png",
+      "talentChanged": false
+    }
+  ],
+  "16": [
+    {
+      "name": "Envenomed Spikes",
+      "description": "Abathur's Symbiote's Spike Burst also Slows enemy Movement Speed by 40% for 2 seconds.",
+      "image": "abathur_spikeburst.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Adrenaline Boost",
+      "description": "Symbiote's Carapace increases the Movement Speed of the target by 40% for 3.5 seconds.",
+      "image": "abathur_carapace.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Volatile Mutation",
+      "description": "Ultimate Evolution clones and Monstrosities deal 137 damage to nearby enemies every 3 seconds and when they die. Enemy Heroes hit heal the clone or Monstrosity for 100% of the damage dealt.",
+      "image": "abathur_volatilemutation.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Locust Brood",
+      "description": "Activate to spawn 3 Locusts at a nearby location.",
+      "image": "abathur_spawnlocust.png",
+      "talentChanged": false,
+      "cooldown": "45s"
+    }
+  ],
+  "20": [
+    {
+      "name": "Evolutionary Link",
+      "description": "Increase the duration of Ultimate Evolution by 50%.  As long as the Ultimate Evolution is alive, the original target of the clone gains a Shield equal to 35% of their maximum Health.  Refreshes every 5 seconds.",
+      "image": "abathur_ultimateevolution.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Evolution Complete",
+      "description": "Increase Monstrosity's Basic Attack damage by 100%.",
+      "image": "abathur_evolvemonstrosity.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Hivemind",
+      "description": "Symbiote creates an additional Symbiote on a nearby allied Hero.  This Symbiote mimics the commands of the first, but does half damage and Shielding.",
+      "image": "abathur_symbiote.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Locust Nest",
+      "description": "Activate to create a nest that periodically spawns Locusts. Only one Locust Nest can be active at a time.",
+      "image": "abathur_locustnest.png",
+      "talentChanged": false,
+      "cooldown": "45s"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "id": 19,
+  "name": "DIABLO",
+  "role": "Tank",
+  "image": "heroes_portraits/diablo.webp",
+  "show": "false",
+  "patchNotes": [
+    {
+      "id": 19,
+      "title": "",
+      "general": [
+        {
+          "change_id": "diablo_",
+          "change": "",
+          "texts": [
+            {
+              "text": ""
+            }
+          ],
+          "developerCommentary": "",
+          "likes": 0,
+          "likedBy": {}
+        }
+      ],
+      "developerCommentary": "",
+      "sections": [
+        {
+          "name": "Level 1",
+          "changes": [
+            {
+              "change_id": "diablo_",
+              "name": "",
+              "texts": [
+                {
+                  "text": "",
+                  "subtexts": [""]
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 4",
+          "changes": [
+            {
+              "change_id": "diablo_",
+              "name": "",
+              "texts": [
+                {
+                  "text": "",
+                  "subtexts": [""]
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 7",
+          "changes": [
+            {
+              "change_id": "diablo_",
+              "name": "",
+              "texts": [
+                {
+                  "text": "",
+                  "subtexts": [""]
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 10",
+          "changes": [
+            {
+              "change_id": "diablo_",
+              "name": "",
+              "texts": [
+                {
+                  "text": "",
+                  "subtexts": [""]
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 13",
+          "changes": [
+            {
+              "change_id": "diablo_",
+              "name": "",
+              "texts": [
+                {
+                  "text": "",
+                  "subtexts": [""]
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 16",
+          "changes": [
+            {
+              "change_id": "diablo_",
+              "name": "",
+              "texts": [
+                {
+                  "text": "",
+                  "subtexts": [""]
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 20",
+          "changes": [
+            {
+              "change_id": "diablo_",
+              "name": "",
+              "texts": [
+                {
+                  "text": "",
+                  "subtexts": [""]
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

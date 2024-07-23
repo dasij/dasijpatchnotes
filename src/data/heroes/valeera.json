@@ -1,0 +1,156 @@
+{
+  "id": 79,
+  "name": "VALEERA",
+  "role": "Melee Assassin",
+  "image": "heroes_portraits/valeera.webp",
+  "show": "false",
+  "patchNotes": [
+    {
+      "id": 79,
+      "title": "",
+      "general": [
+        {
+          "change_id": "valeera_",
+          "change": "",
+          "texts": [
+            {
+              "text": ""
+            }
+          ],
+          "developerCommentary": "",
+          "likes": 0,
+          "likedBy": {}
+        }
+      ],
+      "developerCommentary": "",
+      "sections": [
+        {
+          "name": "Level 1",
+          "changes": [
+            {
+              "change_id": "valeera_",
+              "name": "",
+              "texts": [
+                {
+                  "text": "",
+                  "subtexts": [""]
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 4",
+          "changes": [
+            {
+              "change_id": "valeera_",
+              "name": "",
+              "texts": [
+                {
+                  "text": "",
+                  "subtexts": [""]
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 7",
+          "changes": [
+            {
+              "change_id": "valeera_",
+              "name": "",
+              "texts": [
+                {
+                  "text": "",
+                  "subtexts": [""]
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 10",
+          "changes": [
+            {
+              "change_id": "valeera_",
+              "name": "",
+              "texts": [
+                {
+                  "text": "",
+                  "subtexts": [""]
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 13",
+          "changes": [
+            {
+              "change_id": "valeera_",
+              "name": "",
+              "texts": [
+                {
+                  "text": "",
+                  "subtexts": [""]
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 16",
+          "changes": [
+            {
+              "change_id": "valeera_",
+              "name": "",
+              "texts": [
+                {
+                  "text": "",
+                  "subtexts": [""]
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 20",
+          "changes": [
+            {
+              "change_id": "valeera_",
+              "name": "",
+              "texts": [
+                {
+                  "text": "",
+                  "subtexts": [""]
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

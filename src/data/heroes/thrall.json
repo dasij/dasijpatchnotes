@@ -1,11 +1,11 @@
 {
-  "id": 15,
+  "id": 73,
   "name": "THRALL",
   "role": "Melee Assassin",
   "image": "heroes_portraits/thrall.webp",
   "patchNotes": [
     {
-      "id": 15,
+      "id": 73,
       "title": "Talent rework",
       "general": [
         {

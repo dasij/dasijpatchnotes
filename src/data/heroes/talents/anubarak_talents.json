@@ -1,0 +1,200 @@
+{
+  "abilities": {
+    "basic": [
+      {
+        "name": "Impale (Q)",
+        "description": "Deals 90 damage. Stuns for 1 second.",
+        "image": "anubarak_impale.png",
+        "abilityChanged": false,
+        "manaCost": "65 Mana",
+        "cooldown": "12s"
+      },
+      {
+        "name": "Harden Carapace (W)",
+        "description": "Gain a Shield that grants 40 Spell Armor and absorbs 340 damage over 3 seconds.",
+        "image": "anubarak_harden_carapace.png",
+        "abilityChanged": false,
+        "manaCost": "25 Mana",
+        "cooldown": "7s"
+      },
+      {
+        "name": "Burrow Charge (E)",
+        "description": "Burrow to the target location, dealing 91 damage and briefly stunning enemies in a small area upon surfacing, slowing them by 25% for 2.5 seconds.Burrow Charge can be reactivated to surface early.",
+        "image": "anubarak_burrow_charge.png",
+        "abilityChanged": false,
+        "manaCost": "65 Mana",
+        "cooldown": "14s"
+      }
+    ],
+    "heroic": [
+      {
+        "name": "Locust Swarm (R)",
+        "description": "Deal 68 damage per second to nearby enemies. Each enemy damaged restores 24 Health. Lasts 6 seconds.",
+        "image": "anubarak_locust_swarm.png",
+        "abilityChanged": false,
+        "manaCost": "75 Mana",
+        "cooldown": "100s"
+      },
+      {
+        "name": "Cocoon (R)",
+        "description": "Wraps target enemy Hero in a cocoon, rendering them unable to act or be targeted for 7 seconds. Allies of the Hero can attack the cocoon to break it and free them early.",
+        "image": "anubarak_cocoon.png",
+        "abilityChanged": false,
+        "manaCost": "70 Mana",
+        "cooldown": "70s"
+      }
+    ],
+    "trait": {
+      "name": "Scarab Host (T)",
+      "description": " Using an Ability spawns a Beetle which lasts for 8 seconds, attacking nearby enemies for 20 damage.",
+      "image": "anubarak_scarab_host.png",
+      "abilityChanged": false
+    }
+  },
+  "1": [
+    {
+      "name": "Nerubian Armor",
+      "description": "Increase Hardened Carapace's Spell Armor by 25.",
+      "image": "anubarak_hardencarapace_var1.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Legion of Beetles",
+      "description": "Beetles have 30 Spell Armor. Automatically spawn a Beetle every 12 seconds. Can be toggled on and off.",
+      "image": "anubarak_scarabhost.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Regeneration Master",
+      "description": "Quest: Gathering a Regeneration Globe increases your Health Regeneration by 1 per second, up to 30. Reward: After gathering 30 Regeneration Globes, you also gain 500 Health.",
+      "image": "talent_regenerationmaster.png",
+      "talentChanged": false
+    }
+  ],
+  "4": [
+    {
+      "name": "Bed of Barbs",
+      "description": "Create a bed of spikes along Impale's path that slows enemies by 25% and deals 21 damage per second.  Spikes persist for 3.5 seconds.",
+      "image": "anubarak_impale.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Shed Exoskeleton",
+      "description": "Harden Carapace grants 30% increased Movement Speed for 3 seconds.",
+      "image": "anubarak_hardencarapace_var1.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Underking",
+      "description": "Increases Burrow Charge range by 20% and damage by 100%.",
+      "image": "anubarak_burrowcharge.png",
+      "talentChanged": false
+    }
+  ],
+  "7": [
+    {
+      "name": "Chitinous Plating",
+      "description": "While Harden Carapace is active, taking damage from enemy Abilities reduces its cooldown by 1 second, up to 3 seconds.",
+      "image": "anubarak_hardencarapace_var1.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Subterranean Shield",
+      "description": "Burrow Charge also grants a 400 point Shield for 5 seconds.",
+      "image": "anubarak_burrowcharge.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Leeching Scarabs",
+      "description": "Beetles gain 30% bonus attack damage and they heal Anub'arak for 50% of their damage with each attack if he is nearby.",
+      "image": "anubarak_scarabhost.png",
+      "talentChanged": false
+    }
+  ],
+  "10": [
+    {
+      "name": "Locust Swarm",
+      "description": "Deal 68 damage per second to nearby enemies. Each enemy damaged restores 24 Health. Lasts 6 seconds.",
+      "image": "anubarak_locustswarm.png",
+      "talentChanged": false,
+      "manaCost": "75 Mana",
+      "cooldown": "100s"
+    },
+    {
+      "name": "Cocoon",
+      "description": "Wraps target enemy Hero in a cocoon, rendering them unable to act or be targeted for 7 seconds. Allies of the Hero can attack the cocoon to break it and free them early.",
+      "image": "anubarak_webblast.png",
+      "talentChanged": false,
+      "manaCost": "70 Mana",
+      "cooldown": "70s"
+    }
+  ],
+  "13": [
+    {
+      "name": "Urticating Spines",
+      "description": "Casting Harden Carapace will also deal 90 damage to nearby enemies. Deals double damage against Heroes.",
+      "image": "anubarak_hardencarapace_var1.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Burning Beetles",
+      "description": "Deal 21 damage per second to nearby enemies. Beetles deal 6 damage per second to nearby enemies.",
+      "image": "talent_burningrage.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Acid Drenched Mandibles",
+      "description": "Attacking a Hero that is slowed, rooted, or stunned increases Anub'arak's Basic Attack damage by 80% for 4 seconds.",
+      "image": "talent_autoattack_damage.png",
+      "talentChanged": false
+    }
+  ],
+  "16": [
+    {
+      "name": "Epicenter",
+      "description": "Increases Burrow Charge impact area by 60% and lowers the cooldown by 1 second for each Hero hit.",
+      "image": "anubarak_burrowcharge.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Debilitation",
+      "description": "Enemy Heroes hit by Burrow Charge or Impale have their Spell Power reduced by 50% for 4 seconds.",
+      "image": "anubarak_combo_q_e.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Beetle, Juiced",
+      "description": "Passive: Beetles gain 30% increased health.Every 4th Basic Attack spawns a Beetle.",
+      "image": "anubarak_scarabhost.png",
+      "talentChanged": false
+    }
+  ],
+  "20": [
+    {
+      "name": "Hive Master",
+      "description": "Gain a permanent Vampire Locust that attacks a nearby enemy every 3 seconds. The Vampire Locust deals 165 damage and returns to heal Anub'arak for 80 health.",
+      "image": "anubarak_locustswarm.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Cryptweave",
+      "description": "Staying near the Cocoon allows Anub'arak to extend the duration by up to 6 seconds per Cocoon. Upon exiting the Cocoon, enemies take 60 damage over 4 seconds. This damage is increased by 100% for each second that they were inside.",
+      "image": "anubarak_webblast.png",
+      "talentChanged": false
+    },
+    {
+      "name": "The Traitor King",
+      "description": "Gain 10% bonus maximum Health and 20 Spell Armor.Activate to gain 75 Armor for 4 seconds.",
+      "image": "draft_portrait_anubarak.png",
+      "talentChanged": false,
+      "cooldown": "60s"
+    },
+    {
+      "name": "Rewind",
+      "description": "Activate to reset the cooldowns of your Basic Abilities.",
+      "image": "talent_rewind.png",
+      "talentChanged": false,
+      "cooldown": "60s"
+    }
+  ]
+}

@@ -1,11 +1,11 @@
 {
-  "id": 2,
+  "id": 44,
   "name": "LUCIO",
   "role": "Healer",
   "image": "heroes_portraits/lucio.webp",
   "patchNotes": [
     {
-      "id": 2,
+      "id": 44,
       "title": "Talent mini-rework",
       "developerCommentary": "Lucio sits on a pretty good spot right now in my vision on gameplay standards.What i aim here is just to strengthen his place as a speedster healer",
       "general": [

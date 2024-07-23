@@ -1,0 +1,199 @@
+{
+  "abilities": {
+    "basic": [
+      {
+        "name": "El'druin's Might (Q)",
+        "description": "Throw El'druin to the target area, dealing 110 damage to nearby enemies and Slowing them by 25% for 2.5 seconds. It can be reactivated within 5 seconds to teleport Tyrael to El'druin and Slow nearby enemies again.",
+        "image": "tyrael_eldruins_might.png",
+        "abilityChanged": false,
+        "manaCost": "45 Mana",
+        "cooldown": "12s"
+      },
+      {
+        "name": "Righteousness (W)",
+        "description": "Shields Tyrael for 336 damage and nearby allied Heroes and Minions for 40% as much for 4 seconds.",
+        "image": "tyrael_righteousness.png",
+        "abilityChanged": false,
+        "manaCost": "45 Mana",
+        "cooldown": "9s"
+      },
+      {
+        "name": "Smite (E)",
+        "description": "Rake target area for 150 damage. Allies moving through the targeted area gain 25% increased Movement Speed for 2 seconds.",
+        "image": "tyrael_smite.png",
+        "abilityChanged": false,
+        "manaCost": "45 Mana",
+        "cooldown": "6s"
+      }
+    ],
+    "heroic": [
+      {
+        "name": "Judgment (R)",
+        "description": "After 0.75 seconds, charge an enemy Hero, dealing 150 damage and Stunning them for 1.5 seconds. Nearby enemies are knocked away and take 75 damage.",
+        "image": "tyrael_judgment.png",
+        "abilityChanged": false,
+        "manaCost": "80 Mana",
+        "cooldown": "70s"
+      },
+      {
+        "name": "Sanctification (R)",
+        "description": "After 0.5 seconds create a field of holy energy that makes allied Heroes Invulnerable. Lasts 3 seconds.",
+        "image": "tyrael_sanctification.png",
+        "abilityChanged": false,
+        "manaCost": "75 Mana",
+        "cooldown": "90s"
+      }
+    ],
+    "trait": {
+      "name": "Archangel's Wrath (T)",
+      "description": " Upon dying, become Invulnerable and gain 20% Movement Speed for 4 seconds. Upon expiration, explode, dealing 450 damage and reducing Tyrael's death timer by 10% per enemy Hero hit.Archangel's Wrath reduces nearby enemy Heroes' damage by 50% while active and for 3 seconds when it expires.",
+      "image": "tyrael_archangels_wrath.png",
+      "abilityChanged": false
+    }
+  },
+  "1": [
+    {
+      "name": "Salvation",
+      "description": "Increase the Shield amount Tyrael gains from Righteousness by 40% and heal Tyrael for 140 Health if his Shield is destroyed. Does not increase the Shield amount gained by allies.",
+      "image": "tyrael_righteousness.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Justice for All",
+      "description": "Increase the Shield applied to allies by Righteousness to 80% of the Shield gained by Tyrael.",
+      "image": "tyrael_righteousness_var1.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Ardent Restoration",
+      "description": "Dealing damage to a Hero heals Tyrael for 20 Health over 5 seconds. Dealing damage resets this timer, and the heal amount stacks up to 10 times.Quest: Every Regeneration Globe gathered increases this heal amount by 1%.",
+      "image": "talent_regenerationmaster.png",
+      "talentChanged": false
+    }
+  ],
+  "4": [
+    {
+      "name": "Stalwart Angel",
+      "description": "Gain 25 Armor while El'druin's Might is active, and for 3 seconds after teleporting.",
+      "image": "tyrael_eldruinsmight_a.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Bound by Law",
+      "description": "Heroes hit by El'druin's Might heal Tyrael for 3% of his maximum Health. Tyrael's Basic Attacks against enemies Slowed by El'druin's Might increase the Slow duration by 1 second, up to 4 seconds.",
+      "image": "tyrael_eldruinsmight_b.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Divine Vigor",
+      "description": "If Smite hits an enemy, Tyrael's Basic Attacks within the next 4 seconds heal for 70% of the damage dealt.",
+      "image": "tyrael_smite.png",
+      "talentChanged": false
+    }
+  ],
+  "7": [
+    {
+      "name": "Reciprocate",
+      "description": "When Tyrael's Shield from Righteousness expires or is destroyed, it deals 190 damage to nearby enemies.",
+      "image": "tyrael_righteousness.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Purge Evil",
+      "description": "Each enemy Hero hit by Smite increases Tyrael's Basic Attack damage by 60% for 4 seconds.",
+      "image": "tyrael_smite.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Swift Retribution",
+      "description": "Smite grants 20% more Movement Speed and also grants 25% Attack Speed for 2 seconds.",
+      "image": "tyrael_smite_a.png",
+      "talentChanged": false
+    }
+  ],
+  "10": [
+    {
+      "name": "Judgment",
+      "description": "After 0.75 seconds, charge an enemy Hero, dealing 150 damage and Stunning them for 1.5 seconds. Nearby enemies are knocked away and take 75 damage.",
+      "image": "tyrael_judgement.png",
+      "talentChanged": false,
+      "manaCost": "80 Mana",
+      "cooldown": "70s"
+    },
+    {
+      "name": "Sanctification",
+      "description": "After 0.5 seconds create a field of holy energy that makes allied Heroes Invulnerable. Lasts 3 seconds.",
+      "image": "tyrael_sanctification.png",
+      "talentChanged": false,
+      "manaCost": "75 Mana",
+      "cooldown": "90s"
+    }
+  ],
+  "13": [
+    {
+      "name": "Sword of Justice",
+      "description": "Upon teleporting using El'druin's Might, El'druin swaps places with Tyrael, and El'druin's Might can be reactivated to teleport an additional time.",
+      "image": "tyrael_eldruinsmight_a.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Holy Ground",
+      "description": "Create a ring for 3 seconds that blocks enemies from entering the area teleported to using El'druin's Might.",
+      "image": "tyrael_eldruinsmight_b.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Law and Order",
+      "description": "Each enemy Hero hit by Smite reduces the cooldown of Righteousness by 1 second. Each allied Hero Shielded by Righteousness increases the damage of the next Smite by 35%.",
+      "image": "tyrael_zealous_conviction.png",
+      "talentChanged": false
+    }
+  ],
+  "16": [
+    {
+      "name": "Horadric Reforging",
+      "description": "Tyrael's Basic Attacks reduce the cooldown of El'druin's Might by 2 seconds.",
+      "image": "talent_autoattack_cooldown.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Burning Halo",
+      "description": "Both Tyrael and El'druin deal 18 damage per second to nearby enemies. Teleporting increases this damage from Tyrael by 150% for 2 seconds.",
+      "image": "talent_burningrage.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Smite the Wicked",
+      "description": "While El'druin's Might is active, and for 2 seconds after teleporting, Smite's cooldown recharges 125% faster.",
+      "image": "tyrael_smite.png",
+      "talentChanged": false
+    }
+  ],
+  "20": [
+    {
+      "name": "Angel of Justice",
+      "description": "Increases the cast range of Judgment by 50%, and reduces the cooldown by 40 seconds.",
+      "image": "tyrael_judgement.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Holy Arena",
+      "description": "Increase the duration of Sanctification by 1 second and increase the damage of allies inside by 25%.",
+      "image": "tyrael_sanctification.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Seal of El'druin",
+      "description": "Using a Basic Ability grants 50% Attack Speed for 3 seconds.",
+      "image": "talent_autoattack_speed.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Defense of the Angels",
+      "description": "Activate to gain 50 Armor for 3 seconds.Each time Tyrael damages an enemy Hero with a Basic Attack or Basic Ability, increase the duration of this Armor bonus by 0.5 seconds.",
+      "image": "talent_hardenedshield.png",
+      "talentChanged": false,
+      "cooldown": "60s"
+    }
+  ]
+}

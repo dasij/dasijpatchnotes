@@ -1,0 +1,197 @@
+{
+  "abilities": {
+    "basic": [
+      {
+        "name": "Ancient Spear (Q)",
+        "description": "Throw out a spear that pulls Sonya to the first enemy hit, dealing 173 damage and briefly stunning them. If this hits an enemy, generate 40 Fury.",
+        "image": "sonya_ancient_spear.png",
+        "abilityChanged": false,
+        "cooldown": "13s"
+      },
+      {
+        "name": "Seismic Slam (W)",
+        "description": "Deals 176 damage to the target enemy, and 44 to enemies behind the target.",
+        "image": "sonya_seismic_slam.png",
+        "abilityChanged": false,
+        "manaCost": "25 Mana",
+        "cooldown": "1s"
+      },
+      {
+        "name": "Whirlwind (E)",
+        "description": "Deals 138 damage a second to nearby enemies for 3 seconds, healing for 25% of damage dealt. Healing tripled versus Heroes.",
+        "image": "sonya_whirlwind.png",
+        "abilityChanged": false,
+        "manaCost": "40 Mana",
+        "cooldown": "5s"
+      }
+    ],
+    "heroic": [
+      {
+        "name": "Leap (R)",
+        "description": "Leap into the air, dealing 135 damage to nearby enemies, and stunning them for 1.25 seconds.",
+        "image": "sonya_leap.png",
+        "abilityChanged": false,
+        "cooldown": "60s"
+      },
+      {
+        "name": "Wrath of the Berserker (R)",
+        "description": "Increase damage dealt by 40%. Reduce the duration of Stuns, Roots, and Slows against Sonya by 50%. Lasts 15 seconds, and extends by 1 second for every 10 Fury gained.",
+        "image": "sonya_wrath_of_the_berserker.png",
+        "abilityChanged": false,
+        "cooldown": "60s"
+      }
+    ],
+    "trait": {
+      "name": "Fury (T)",
+      "description": " Use Fury instead of Mana, which is gained by taking damage or dealing Basic Attack damage. Using a Basic or Heroic Ability grants 10% Movement Speed for 4 seconds.",
+      "image": "sonya_fury.png",
+      "abilityChanged": false
+    }
+  },
+  "1": [
+    {
+      "name": "Furious Blow",
+      "description": "Every 4th cast of Seismic Slam deals 40% more damage to the primary target and costs no Fury.",
+      "image": "sonya_seismicslam.png",
+      "talentChanged": false
+    },
+    {
+      "name": "War Paint",
+      "description": "Sonya's Basic Attacks heal for 30% of the damage dealt.",
+      "image": "talent_autoattack_heal.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Tough As Nails",
+      "description": "Every 16 seconds, gain 60 Physical Armor against the next enemy Hero Basic Attack, reducing the damage taken by 60%.Stores up to 3 charges. Charges refresh 200% faster while Fury's Movement Speed bonus is active.",
+      "image": "talent_block.png",
+      "talentChanged": false
+    }
+  ],
+  "4": [
+    {
+      "name": "Shattered Ground",
+      "description": "Increase Seismic Slam's splash damage by 250%. Targeting a Hero with Seismic Slam further increases its splash damage by 250%, while targeting other enemies increases the length of its splash by 66%.",
+      "image": "sonya_seismicslam.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Hurricane",
+      "description": "Reduce the cooldown of Whirlwind by 2 seconds. Casting Whirlwind removes all Slows and Roots from Sonya.",
+      "image": "sonya_whirlwind.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Shot Of Fury",
+      "description": "Activate to gain 50 Fury. Usable while Whirlwinding.Passive: After casting Seismic Slam, your next Basic Attack deals 40% more damage.",
+      "image": "sonya_fury.png",
+      "talentChanged": false,
+      "cooldown": "40s"
+    }
+  ],
+  "7": [
+    {
+      "name": "Poisoned Spear",
+      "description": "Ancient Spear deals an additional 100% damage over 6 seconds.",
+      "image": "sonya_ancientspear.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Life Funnel",
+      "description": "Increases the healing of Whirlwind to 35% of damage dealt.",
+      "image": "sonya_whirlwind.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Battle Rage",
+      "description": "Activate to instantly restore 10% of Sonya's maximum Health. Stores up to 2 charges. Usable while Whirlwinding.Passive: Sonya deals 25% more damage to Mercenaries.",
+      "image": "talent_mercenarylord.png",
+      "talentChanged": false,
+      "cooldown": "30s"
+    }
+  ],
+  "10": [
+    {
+      "name": "Leap",
+      "description": "Leap into the air, dealing 135 damage to nearby enemies, and stunning them for 1.25 seconds.",
+      "image": "sonya_leap.png",
+      "talentChanged": false,
+      "cooldown": "60s"
+    },
+    {
+      "name": "Wrath of the Berserker",
+      "description": "Increase damage dealt by 40%. Reduce the duration of Stuns, Roots, and Slows against Sonya by 50%. Lasts 15 seconds, and extends by 1 second for every 10 Fury gained.",
+      "image": "sonya_wrathoftheberserker.png",
+      "talentChanged": false,
+      "cooldown": "60s"
+    }
+  ],
+  "13": [
+    {
+      "name": "Mystical Spear",
+      "description": "Ancient Spear always pulls Sonya to the target location even if it doesn't hit an enemy. When used this way, Ancient Spear's cooldown is reduced by 5 seconds.",
+      "image": "sonya_ancientspear.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Ruthless",
+      "description": "Whirlwind deals an additional 50 damage per second to Heroes below 50% Health. Does not generate additional healing.",
+      "image": "sonya_whirlwind.png",
+      "talentChanged": false
+    },
+    {
+      "name": "No Escape",
+      "description": "Increases the Movement Speed bonus from using Basic and Heroic Abilities to 20%.",
+      "image": "sonya_fury.png",
+      "talentChanged": false
+    }
+  ],
+  "16": [
+    {
+      "name": "Giant Slammer",
+      "description": "Basic Attacks and Seismic Slam deal an additional 1.5% of Heroes' maximum Health as damage and heal Sonya for 60% of the damage dealt.",
+      "image": "sonya_seismicslam.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Rampage",
+      "description": "Increase Basic Attack damage by 25%. Basic Attacks reduce the cooldown of Ancient Spear by 1.5 seconds.",
+      "image": "talent_autoattack_cooldown.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Nerves of Steel",
+      "description": "Activate to gain 25% of your maximum Health as a Shield for 3 seconds. Usable while Whirlwinding.",
+      "image": "sonya_nervesofsteel.png",
+      "talentChanged": false,
+      "cooldown": "60s"
+    }
+  ],
+  "20": [
+    {
+      "name": "Arreat Crater",
+      "description": "Leap leaves behind an impassable crater for 5 seconds.  Reduces Leap's cooldown by 20 seconds.",
+      "image": "sonya_leap.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Striding Giant",
+      "description": "Wrath of the Berserker increases maximum Health by 10% and grants Striding Giant, which can be activated to become Unstoppable for 2 seconds. 30 second cooldown.",
+      "image": "sonya_wrathoftheberserker.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Composite Spear",
+      "description": "Increases Ancient Spear's range by 50%. Hitting an enemy Hero with Ancient Spear grants 25 Armor for 4 seconds.",
+      "image": "sonya_ancientspear.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Ignore Pain",
+      "description": "Activate to gain 60 Armor for 4 seconds, taking 60% less damage. Usable while Whirlwinding.",
+      "image": "sonya_ignorepain.png",
+      "talentChanged": false,
+      "cooldown": "60s"
+    }
+  ]
+}

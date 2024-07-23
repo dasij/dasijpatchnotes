@@ -1,11 +1,11 @@
 {
-  "id": 6,
+  "id": 63,
   "name": "REXXAR",
   "role": "Bruiser",
   "image": "heroes_portraits/rexxar.webp",
   "patchNotes": [
     {
-      "id": 6,
+      "id": 63,
       "title": "Hero Rework",
       "general": [
         {

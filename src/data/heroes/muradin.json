@@ -1,11 +1,11 @@
 {
-  "id": 12,
+  "id": 53,
   "name": "MURADIN",
   "role": "Tank",
   "image": "heroes_portraits/muradin.webp",
   "patchNotes": [
     {
-      "id": 12,
+      "id": 53,
       "title": "Talent rework",
       "general": [],
       "developerCommentary": "Muradin does not need much changes, he is simples and mostly well designed. My plan here is just to polish some talents that are either too generic or underpicked",

@@ -1,0 +1,200 @@
+{
+  "abilities": {
+    "basic": [
+      {
+        "name": "Healing Pathogen (Q)",
+        "description": "Infest an allied Hero with a Healing Pathogen that heals the target for 222 Health over 4.5 seconds. Healing Pathogens can spread to a nearby allied Hero every 0.75 seconds.Each cast of Healing Pathogen can only spread to each allied Hero 1 time.",
+        "image": "stukov_healing_pathogen.png",
+        "abilityChanged": false,
+        "manaCost": "40 Mana",
+        "cooldown": "10s"
+      },
+      {
+        "name": "Weighted Pustule (W)",
+        "description": "Hurl a pustule that impacts all enemy Heroes in its path, dealing 20 damage and Slowing by 5%, increasing to 50% over 3 seconds. Deals an additional 88 damage upon expiring or being removed.",
+        "image": "stukov_weighted_pustule.png",
+        "abilityChanged": false,
+        "manaCost": "50 Mana",
+        "cooldown": "10s"
+      },
+      {
+        "name": "Lurking Arm (E)",
+        "description": "Channel at a target location, creating an area that deals 136 damage per second to non-Structure enemies and Silences them. Deals 50% reduced damage to non-Heroes.Does not cost Mana while Channeling, and lasts until canceled or interrupted.",
+        "image": "stukov_lurking_arm.png",
+        "abilityChanged": false,
+        "manaCost": "60 Mana",
+        "cooldown": "10s"
+      }
+    ],
+    "heroic": [
+      {
+        "name": "Flailing Swipe (R)",
+        "description": "Swipe 3 times in front of Stukov over 1.75 seconds, dealing 48 damage to enemies hit and knocking them away. Each swipe is larger than the previous.",
+        "image": "stukov_flailing_swipe.png",
+        "abilityChanged": false,
+        "manaCost": "60 Mana",
+        "cooldown": "60s"
+      },
+      {
+        "name": "Massive Shove (R)",
+        "description": "Extend Stukov's arm. If it hits an enemy Hero, they are rapidly shoved until they collide with terrain, dealing 190 damage and Stunning them for 0.5 seconds. Stukov gains 50 Armor while shoving an enemy.",
+        "image": "stukov_massive_shove.png",
+        "abilityChanged": false,
+        "manaCost": "50 Mana",
+        "cooldown": "20s"
+      }
+    ],
+    "trait": {
+      "name": "Bio-Kill Switch (T)",
+      "description": "Activate to detonate all of Stukov's Viruses. Each Healing Pathogen heals its target for 435 Health, and each Weighted Pustule does 100 damage and Slows its target by 70% for 2 seconds.Can be cast while Channeling Lurking Arm.",
+      "image": "stukov_bio_kill_switch.png",
+      "abilityChanged": false,
+      "cooldown": "16s"
+    }
+  },
+  "1": [
+    {
+      "name": "Fetid Touch",
+      "description": "Basic Attacks become ranged and Slow enemies by 20% for 1.5 seconds, but deal 35% less damage. This effect can be toggled.Quest: Hit Heroes with Weighted Pustule.Reward: After hitting 15 Heroes, reduce the cooldown of Weighted Pustule by 5 seconds and remove its Mana cost.",
+      "image": "stukov_weightedpustule.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Low Blow",
+      "description": "Lurking Arm deals 100% more damage to enemy Heroes below 50% Health and persists for 1 second after it is canceled.",
+      "image": "stukov_lurkingarm.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Reactive Ballistospores",
+      "description": "While below 50% Health, the cooldown of Bio-Kill Switch refreshes 100% faster. Activate to instantly spread a Weighted Pustule to all nearby enemy Heroes and reset the cooldown of Bio-Kill Switch.This effect has a 75 second cooldown.",
+      "image": "stukov_bio-killswitch.png",
+      "talentChanged": false,
+      "cooldown": "75s"
+    }
+  ],
+  "4": [
+    {
+      "name": "One Good Spread...",
+      "description": "After a Healing Pathogen infests 3 targets, restore 10 Mana and reduce the cooldown of Healing Pathogen by 2 seconds.",
+      "image": "stukov_healingpathogen.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Biotic Armor",
+      "description": "Healing Pathogen grants 10 Physical Armor to targets while active on them. Detonating Bio-Kill Switch increases this bonus to 50 for 2.5 seconds.",
+      "image": "stukov_healingpathogen_a.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Vigorous Reuptake",
+      "description": "Bio-Kill Switch heals for 30% more when detonating 3 or more Healing Pathogens.",
+      "image": "stukov_bio-killswitch.png",
+      "talentChanged": false
+    }
+  ],
+  "7": [
+    {
+      "name": "The Long Pitch",
+      "description": "Increase the range of Weighted Pustule by 50%. Detonating 2 or more Weighted Pustules causes Stukov's Bio-Kill Switch and Basic Ability cooldowns to recharge 100% faster for 4 seconds.",
+      "image": "stukov_weightedpustule.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Growing Infestation",
+      "description": "Lurking Arm's area expands by 50% over 2.5 seconds, but it cannot be Channeled for longer than 3 seconds.",
+      "image": "stukov_lurkingarm.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Targeted Excision",
+      "description": "Detonating exactly 1 Weighted Pustule (but any number of Healing Pathogens) with Bio-Kill Switch reduces the cooldown of Bio-Kill Switch to 7 seconds and other Basic Abilities by 1.5 seconds.",
+      "image": "stukov_bio-killswitch.png",
+      "talentChanged": false
+    }
+  ],
+  "10": [
+    {
+      "name": "Flailing Swipe",
+      "description": "Swipe 3 times in front of Stukov over 1.75 seconds, dealing 48 damage to enemies hit and knocking them away. Each swipe is larger than the previous.",
+      "image": "stukov_flailingswipe.png",
+      "talentChanged": false,
+      "manaCost": "60 Mana",
+      "cooldown": "60s"
+    },
+    {
+      "name": "Massive Shove",
+      "description": "Extend Stukov's arm. If it hits an enemy Hero, they are rapidly shoved until they collide with terrain, dealing 190 damage and Stunning them for 0.5 seconds. Stukov gains 50 Armor while shoving an enemy.",
+      "image": "stukov_massiveshove.png",
+      "talentChanged": false,
+      "manaCost": "50 Mana",
+      "cooldown": "20s"
+    }
+  ],
+  "13": [
+    {
+      "name": "It Hungers",
+      "description": "Increase the range of Lurking Arm by 30%. If Lurking Arm damages enemy Heroes 8 times, its cooldown is reset and its Mana cost is refunded.",
+      "image": "stukov_lurkingarm.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Virulent Reaction",
+      "description": "Detonating a Weighted Pustule on an enemy who is inside of Lurking Arm Roots them for 1.5 seconds.",
+      "image": "stukov_lurkingarm_a.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Poppin' Pustules",
+      "description": "Detonating Weighted Pustule with Bio-Kill Switch within 1.5 seconds of its expiration increases its damage by 150% and applies its damage and Slow in an area. Enemy Heroes hit have a Weighted Pustule applied to them.",
+      "image": "stukov_bio-killswitch.png",
+      "talentChanged": false
+    }
+  ],
+  "16": [
+    {
+      "name": "Superstrain",
+      "description": "Whenever an ally with Healing Pathogen is Stunned or Rooted, they are instantly healed for 300 Health.",
+      "image": "stukov_healingpathogen.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Universal Carrier",
+      "description": "Healing Pathogen can continually spread through Stukov, but its healing is reduced by 25%.",
+      "image": "stukov_healingpathogen_a.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Pox Populi",
+      "description": "Bio-Kill Switch no longer removes Healing Pathogen but instead sets its duration to 3 seconds.",
+      "image": "stukov_bio-killswitch.png",
+      "talentChanged": false
+    }
+  ],
+  "20": [
+    {
+      "name": "Controlled Chaos",
+      "description": "Flailing Swipe gains 2 additional charges, but each use only swings 1 time, at maximum range.  Additionally, its cooldown is decreased to 25 seconds, and its Mana cost is reduced from 60 to 25.",
+      "image": "stukov_flailingswipe.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Push Comes To Shove",
+      "description": "Massive Shove Slows its target by 50% for 4 seconds upon colliding with terrain. If Massive Shove pushes a target for more than 1.25 seconds, its cooldown is reduced by 15 seconds.",
+      "image": "stukov_massiveshove.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Top Off",
+      "description": "Healing Pathogen's heal over time is increased by 30% while its target is above 60% Health.",
+      "image": "stukov_healingpathogen.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Bio-Explosion Switch",
+      "description": "Bio-Kill Switch now also detonates Lurking Arm, dealing 230 damage, applying a Weighted Pustule, and Silencing enemy Heroes inside for 2.5 seconds.",
+      "image": "stukov_bio-killswitch.png",
+      "talentChanged": false
+    }
+  ]
+}

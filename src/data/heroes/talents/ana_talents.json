@@ -1,0 +1,200 @@
+{
+  "abilities": {
+    "basic": [
+      {
+        "name": "Healing Dart (Q)",
+        "description": "Fire a dart which heals the first allied Hero hit for 195 Health. Does not affect full Health Heroes.",
+        "image": "ana_healing_dart.png",
+        "abilityChanged": false,
+        "manaCost": "10 Mana",
+        "cooldown": "2s"
+      },
+      {
+        "name": "Biotic Grenade (W)",
+        "description": "Toss a grenade at the target area. Allied Heroes hit are healed for 152 Health and receive 25% increased healing from Ana for 4 seconds. Enemies hit take 60 damage and receive 100% less healing for 1.75 seconds.",
+        "image": "ana_biotic_grenade.png",
+        "abilityChanged": false,
+        "manaCost": "50 Mana",
+        "cooldown": "16s"
+      },
+      {
+        "name": "Sleep Dart (E)",
+        "description": "Fire a dart that puts the first enemy Hero hit to Sleep, Stunning them for 3 seconds. Sleep's effects end instantly if the target takes damage after the first 0.5 seconds.Cannot be used on Vehicles.",
+        "image": "ana_sleep_dart.png",
+        "abilityChanged": false,
+        "manaCost": "50 Mana",
+        "cooldown": "14s"
+      }
+    ],
+    "heroic": [
+      {
+        "name": "Nano Boost (R)",
+        "description": "Instantly boost an allied Hero, restoring 200 Mana. For the next 8 seconds, they gain 30% Spell Power and their Basic Ability cooldowns recharge 150% faster.Cannot be used on Ana.",
+        "image": "ana_nano_boost.png",
+        "abilityChanged": false,
+        "manaCost": "60 Mana",
+        "cooldown": "70s"
+      },
+      {
+        "name": "Eye of Horus (R)",
+        "description": "Assume a sniping position, gaining the ability to fire up to 6 specialized rounds with unlimited range. Rounds pierce allied and enemy Heroes but collide with enemy Structures in their path. Allies are healed for 225 and enemies are damaged for 135. Deals 50% less damage to Structures.Ana is unable to move while Eye of Horus is active.",
+        "image": "ana_eye_of_horus.png",
+        "abilityChanged": false,
+        "manaCost": "45 Mana",
+        "cooldown": "60s"
+      }
+    ],
+    "trait": {
+      "name": "Shrike (T)",
+      "description": " Basic Attacks apply a Dose to enemies, dealing 40 damage over 5 seconds, plus additional damage equal to the current number of stacks on the target, stacking up to 5 times. Every 0.5 seconds, Ana is healed for 60% of the damage dealt by Shrike.Aim Down SightsActivating Shrike reduces your Movement Speed by 25%, but increases the Range of Healing Dart and Sleep Dart by 25% while also allowing them to pierce one Hero. Lasts until canceled.",
+      "image": "ana_shrike.png",
+      "abilityChanged": false
+    }
+  },
+  "1": [
+    {
+      "name": "Contact Healing",
+      "description": "Hitting Heroes with Biotic Grenade increases its damage and healing by 30% per Hero hit.",
+      "image": "ana_biotic_grenade.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Slumber Shells",
+      "description": "Reduce the cooldown of Sleep Dart by 2 seconds. Upon waking, enemy Heroes are Slowed by 25% for 3 seconds.",
+      "image": "ana_sleep_dart.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Vampiric Rounds",
+      "description": "Quest: Stack 5 Doses on an enemy Hero or Basic Attack a Hero with 5 Doses.Reward: Stack 5 Doses to increase Shrike's healing by 1%.Reward: Basic Attack a Hero with 5 Doses to increase Shrike's healing by 0.25%.",
+      "image": "ana_shrike.png",
+      "talentChanged": false
+    }
+  ],
+  "4": [
+    {
+      "name": "Biotic Enhancements",
+      "description": "Increase the bonus healing duration of Biotic Grenade by 50% and reduce its cooldown by 3 seconds.",
+      "image": "ana_biotic_grenade.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Overdose",
+      "description": "Sleep Dart applies 4 Doses.  While Aim Down Sights is active, Sleep Dart pierces all enemy Heroes.",
+      "image": "ana_sleep_dart.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Debilitating Dart",
+      "description": "Fire a dart which Slows the Movement Speed and reduces the damage dealt by the first enemy Hero it hits by 50% for 4 seconds. If no Heroes are hit, reduce this cooldown by 8 seconds.",
+      "image": "ana_debilitatingdart.png",
+      "talentChanged": false,
+      "cooldown": "20s"
+    }
+  ],
+  "7": [
+    {
+      "name": "Anti-Healer",
+      "description": "Increase the area of Biotic Grenade by 25% and the duration of the healing reduction by 0.75 seconds.",
+      "image": "ana_biotic_grenade.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Night Terrors",
+      "description": "Gain 25% Movement Speed for 2 seconds for every Hero hit by Sleep Dart. Upon waking, enemy Heroes take 8% of their Maximum Health in damage.",
+      "image": "ana_sleep_dart.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Mind-Numbing Agent",
+      "description": "Every Dose a Hero has reduces their Spell Power by 10%.",
+      "image": "ana_shrike.png",
+      "talentChanged": false
+    }
+  ],
+  "10": [
+    {
+      "name": "Nano Boost",
+      "description": "Instantly boost an allied Hero, restoring 200 Mana. For the next 8 seconds, they gain 30% Spell Power and their Basic Ability cooldowns recharge 150% faster.Cannot be used on Ana.",
+      "image": "ana_nano_bost.png",
+      "talentChanged": false,
+      "manaCost": "60 Mana",
+      "cooldown": "70s"
+    },
+    {
+      "name": "Eye of Horus",
+      "description": "Assume a sniping position, gaining the ability to fire up to 6 specialized rounds with unlimited range. Rounds pierce allied and enemy Heroes but collide with enemy Structures in their path. Allies are healed for 225 and enemies are damaged for 135. Deals 50% less damage to Structures.Ana is unable to move while Eye of Horus is active.",
+      "image": "ana_overwatch.png",
+      "talentChanged": false,
+      "manaCost": "45 Mana",
+      "cooldown": "60s"
+    }
+  ],
+  "13": [
+    {
+      "name": "Speed Serum",
+      "description": "Healing Dart grants 25% Movement Speed to affected Heroes for 2 seconds.",
+      "image": "ana_healing_dart.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Purifying Darts",
+      "description": "Healing Dart removes Roots and Slows from the target, and heals for 20% more when doing so.",
+      "image": "ana_healing_dart_a.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Smelling Salts",
+      "description": "Healing Dart removes Stuns from the target, and grants them 50 Armor for 2 seconds when doing so.",
+      "image": "ana_healing_dart_b.png",
+      "talentChanged": false
+    }
+  ],
+  "16": [
+    {
+      "name": "Sharpshooter",
+      "description": "Healing Dart's healing is increased by 5% if it heals a Hero, up to 50%. At maximum bonus, further increase its healing by 35%. This bonus is reset if Healing Dart fails to hit a Hero.",
+      "image": "ana_healing_dart.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Concentrated Doses",
+      "description": "Increase Healing Dart's healing by 12% for each Dose active on enemy Heroes.",
+      "image": "ana_healing_dart_a.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Active Reload",
+      "description": "Activate to instantly gain 3 charges of Healing Dart.",
+      "image": "ana_healing_dart_b.png",
+      "talentChanged": false,
+      "cooldown": "0s"
+    }
+  ],
+  "20": [
+    {
+      "name": "Nano Infusion",
+      "description": "Allies affected by Nano Boost heal for 50% of Spell Damage dealt.",
+      "image": "ana_nano_bost.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Deadeye",
+      "description": "Increase Eye Of Horus' healing and damage by 5% for every Hero hit. This bonus resets after all shots have been fired.",
+      "image": "ana_overwatch.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Armored Stance",
+      "description": "Increase Shrike's damage by 50%. While Aim Down Sights is active, gain 25 Armor.",
+      "image": "ana_aim_down_sights.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Dynamic Optics",
+      "description": "Basic Attacks increase Attack Speed by 10% for 3 seconds, up to 100%. While Aim Down Sights is active, increase your Basic Attack Range by 4.",
+      "image": "ana_aim_down_sights_a.png",
+      "talentChanged": false
+    }
+  ]
+}

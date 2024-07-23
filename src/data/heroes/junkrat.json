@@ -1,12 +1,12 @@
 {
-  "id": 21,
+  "id": 35,
   "name": "JUNKRAT",
   "role": "Ranged Assassin",
   "image": "heroes_portraits/junkrat.webp",
   "show": "falses",
   "patchNotes": [
     {
-      "id": 21,
+      "id": 35,
       "title": "Talents Rework and hero mini-rework",
       "general": [
         {

@@ -1,0 +1,199 @@
+{
+  "abilities": {
+    "basic": [
+      {
+        "name": "Hammerang (Q)",
+        "description": "Throw out a Hammer that returns to Falstad, dealing 80 damage and Slowing enemies hit by 25% for 2 seconds. Reactive to explode the Hammer, dealing 95 damage to nearby enemies.",
+        "image": "falstad_hammerang.png",
+        "abilityChanged": false,
+        "manaCost": "60 Mana",
+        "cooldown": "10s"
+      },
+      {
+        "name": "Lightning Rod (W)",
+        "description": "Deal 107 damage to an enemy, and an additional 75 damage per second for 4 seconds while close to the target. Deals 100% increased damage to Minions and Mercenaries.",
+        "image": "falstad_lightning_rod.png",
+        "abilityChanged": false,
+        "manaCost": "60 Mana",
+        "cooldown": "13s"
+      },
+      {
+        "name": "Barrel Roll (E)",
+        "description": "Dashes forward and grants a 171 point Shield for 3 seconds.",
+        "image": "falstad_barrel_roll.png",
+        "abilityChanged": false,
+        "manaCost": "70 Mana",
+        "cooldown": "13s"
+      }
+    ],
+    "heroic": [
+      {
+        "name": "Hinterland Blast (R)",
+        "description": "After 1 second, deal 475 damage to enemies within a long line. The cooldown is reduced by 30 seconds for every enemy Hero hit.",
+        "image": "falstad_hinterland_blast.png",
+        "abilityChanged": false,
+        "manaCost": "80 Mana",
+        "cooldown": "120s"
+      },
+      {
+        "name": "Mighty Gust (R)",
+        "description": "Push enemies away, and slow their Movement Speed by 40% decaying over 4 seconds.",
+        "image": "falstad_mighty_gust.png",
+        "abilityChanged": false,
+        "manaCost": "70 Mana",
+        "cooldown": "60s"
+      }
+    ],
+    "trait": {
+      "name": "Tailwind (T)",
+      "description": " Gain 15% increased Movement Speed after not taking damage for 5 seconds.",
+      "image": "falstad_tailwind.png",
+      "abilityChanged": false
+    }
+  },
+  "1": [
+    {
+      "name": "Gathering Storm",
+      "description": "Quest: Every time Hammerang hits a Hero increase its damage by 0.5% and refund 6 Mana.Reward: After hitting 30 Heroes with Hammerang, increase its damage by 15%.",
+      "image": "falstad_hammerang.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Dishonorable Discharge",
+      "description": "Reduce Lightning Rod's cooldown by 2 seconds.Quest: After 3 Lightning Rod strikes, subsequent strikes on enemy Heroes increases its damage by 1%, up to 75%.Reward: After 30 subsequent strikes, further reduce Lightning Rod's cooldown by 2 seconds.Reward: After 75 subsequent strikes, Takedowns reset Lightning Rod's cooldown.",
+      "image": "falstad_lightningrod.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Frequent Flyer",
+      "description": "Activate Frequent Flyer to gain 40% Attack Speed and Tailwind for 4 seconds.Quest: Minion kills grant 0.2 Basic Attack Damage. Hero Takedowns grant 0.5 Basic Attack Damage.",
+      "image": "falstad_tailwind_a.png",
+      "talentChanged": false,
+      "cooldown": "45s"
+    }
+  ],
+  "4": [
+    {
+      "name": "Static Shield",
+      "description": "Lightning Rod strikes grant a Shield equal to 4% of Falstad's maximum Health, up to 28%, for 4 seconds.",
+      "image": "falstad_lightningrod.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Updraft",
+      "description": "Increases Barrel Roll's range by 40% and Shield amount by 70%, and its Shield now lasts indefinitely.",
+      "image": "falstad_barrelroll.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Hammer Gains",
+      "description": "Basic Attacks heal for 20% of the damage dealt to the primary target.",
+      "image": "talent_autoattack_heal.png",
+      "talentChanged": false
+    }
+  ],
+  "7": [
+    {
+      "name": "Secret Weapon",
+      "description": "Increases Hammerang's range by 30% and Basic Attacks deal 75% bonus damage while Hammerang is in flight.",
+      "image": "falstad_hammerang.png",
+      "talentChanged": false
+    },
+    {
+      "name": "BOOMerang",
+      "description": "Hammerang's explosion deals 100% additional damage, and hitting enemy Heroes reduces their Spell Armor by 15 for 3 seconds.",
+      "image": "falstad_hammerang_a.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Charged Up",
+      "description": "Increases the number of Lightning Rod strikes by 2 and its range by 25%.",
+      "image": "falstad_lightningrod.png",
+      "talentChanged": false
+    }
+  ],
+  "10": [
+    {
+      "name": "Hinterland Blast",
+      "description": "After 1 second, deal 475 damage to enemies within a long line. The cooldown is reduced by 30 seconds for every enemy Hero hit.",
+      "image": "falstad_hinterlandblast.png",
+      "talentChanged": false,
+      "manaCost": "80 Mana",
+      "cooldown": "120s"
+    },
+    {
+      "name": "Mighty Gust",
+      "description": "Push enemies away, and slow their Movement Speed by 40% decaying over 4 seconds.",
+      "image": "falstad_mightygust.png",
+      "talentChanged": false,
+      "manaCost": "70 Mana",
+      "cooldown": "60s"
+    }
+  ],
+  "13": [
+    {
+      "name": "Thunderstrikes",
+      "description": "Lightning Rod deals 25% more damage each subsequent strike.",
+      "image": "falstad_lightningrod.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Flow Rider",
+      "description": "While Tailwind is active, Falstad's Basic Abilities recharge 100% faster.",
+      "image": "falstad_tailwind.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Sustained Winds",
+      "description": "Basic Attacks against enemy Heroes deal bonus damage equal to 1.5% of the Hero's maximum Health, increased to 2% while Tailwind is active.",
+      "image": "falstad_tailwind_a.png",
+      "talentChanged": false
+    }
+  ],
+  "16": [
+    {
+      "name": "Crippling Hammer",
+      "description": "Increase Hammerang's Slow from 25% to 50%, and Hammerang's explosion also Slows.",
+      "image": "falstad_hammerang.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Aerie Gusts",
+      "description": "Reduces the activation time for Tailwind from 5 to 3 seconds, and increases the Movement Speed bonus from 15% to 25%.",
+      "image": "falstad_tailwind.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Afterburner",
+      "description": "Barrel Roll increases Movement Speed by 60%, decaying over 3 seconds.",
+      "image": "falstad_barrelroll.png",
+      "talentChanged": false
+    }
+  ],
+  "20": [
+    {
+      "name": "Call of the Wildhammer",
+      "description": "Hinterland Blast has double the range and deals 25% more damage.",
+      "image": "falstad_hinterlandblast.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Wind Tunnel",
+      "description": "Mighty Gust creates a wind tunnel for 4 seconds. Enemies caught in the tunnel will periodically be pushed back.",
+      "image": "falstad_mightygust.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Nexus Frenzy",
+      "description": "Increases Attack Speed by 20% and Attack Range by 1.1.",
+      "image": "talent_autoattack_range.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Epic Mount",
+      "description": "Reduce the cooldown of Flight by 50 seconds, reduce the cast time before flying to 0.5 seconds, and increase the speed by 50%.",
+      "image": "falstad_epicmount.png",
+      "talentChanged": false
+    }
+  ]
+}

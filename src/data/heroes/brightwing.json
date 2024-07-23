@@ -1,12 +1,12 @@
 {
-  "id": 19,
+  "id": 12,
   "name": "BRIGHTWING",
   "role": "Healer",
   "image": "heroes_portraits/brightwing.webp",
   "show": "falses",
   "patchNotes": [
     {
-      "id": 19,
+      "id": 12,
       "title": "Hero and talent rework ",
       "general": [
         {

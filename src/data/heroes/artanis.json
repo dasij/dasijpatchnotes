@@ -1,12 +1,12 @@
 {
-  "id": 20,
+  "id": 7,
   "name": "ARTANIS",
   "role": "Bruiser",
   "image": "heroes_portraits/artanis.webp",
   "show": "falses",
   "patchNotes": [
     {
-      "id": 20,
+      "id": 7,
       "title": "Hero mini-rework and talents rework",
       "general": [
         {

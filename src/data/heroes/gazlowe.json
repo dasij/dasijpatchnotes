@@ -1,11 +1,11 @@
 {
-  "id": 1,
+  "id": 26,
   "name": "GAZLOWE",
   "role": "Bruiser",
   "image": "heroes_portraits/gazlowe.webp",
   "patchNotes": [
     {
-      "id": 1,
+      "id": 26,
       "title": "Talent rework",
       "general": [
         {

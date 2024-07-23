@@ -1,0 +1,203 @@
+{
+  "abilities": {
+    "basic": [
+      {
+        "name": "Flame Stream (Q)",
+        "description": "Fire two streams that deal 76 damage to enemies hit, and an additional 120 damage to enemies hit by both streams. Flame Stream Ignites Oil Spills it comes in contact with.",
+        "image": "blaze_flame_stream.png",
+        "abilityChanged": false,
+        "manaCost": "30 Mana",
+        "cooldown": "4s"
+      },
+      {
+        "name": "Oil Spill (W)",
+        "description": "Vector TargetingDispense a slick of oil that lasts for 5 seconds and Slows enemies that come in contact with it by 50%.Oil Spills are Ignited for 2.5 seconds when hit by Flame Stream. Ignited Oil Spills no longer Slow enemies, but instead deal 16 damage to them every 0.3 seconds. Additionally, Blaze is healed for 49 Health every 0.3 seconds while standing in Ignited Oil Spills.Stores up to 2 charges.",
+        "image": "blaze_oil_spill.png",
+        "abilityChanged": false,
+        "manaCost": "50 Mana",
+        "cooldown": "12s"
+      },
+      {
+        "name": "Jet Propulsion (E)",
+        "description": "After 0.375 seconds, charge forward. Colliding with an enemy Hero deals 52 damage to all nearby enemy Heroes and Stuns them for 1.25 seconds.",
+        "image": "blaze_jet_propulsion.png",
+        "abilityChanged": false,
+        "manaCost": "45 Mana",
+        "cooldown": "10s"
+      }
+    ],
+    "heroic": [
+      {
+        "name": "Bunker Drop (R)",
+        "description": "After 0.5 seconds, deploy and enter a Bunker with 1435 Health. Blaze and his allies can enter and exit the Bunker at will. While in the Bunker, occupants gain access to Flamethrower, dealing 170 damage to enemies in a line. Exiting the Bunker grants 25 Armor for 2 seconds. Bunkers last 10 seconds, or until destroyed.",
+        "image": "blaze_bunker_drop.png",
+        "abilityChanged": false,
+        "manaCost": "70 Mana",
+        "cooldown": "70s"
+      },
+      {
+        "name": "Combustion (R)",
+        "description": "Channel for up to 2.6 seconds. Upon ending, Slow nearby enemies by 60% and deal 55 damage to them every 0.5 seconds. Combustion's Slow and damage over time duration is extended the longer Blaze Channels, from 1 second up to 5 seconds.Blaze's Movement Speed is reduced by 40% while Channeling.",
+        "image": "blaze_combustion.png",
+        "abilityChanged": false,
+        "manaCost": "70 Mana",
+        "cooldown": "80s"
+      }
+    ],
+    "trait": {
+      "name": "Pyromania (T)",
+      "description": "Gain 40 Armor and deal 40 damage to nearby enemies every 0.5 seconds for 4 seconds.Each Hero hit by Flame Stream reduces Pyromania's cooldown by 4 seconds.",
+      "image": "blaze_pyromania.png",
+      "abilityChanged": false,
+      "cooldown": "90s"
+    }
+  },
+  "1": [
+    {
+      "name": "Adrenaline Stimpack",
+      "description": "Passive: While over 80% Health, gain 25% bonus Attack Speed and 10% bonus Movement Speed.Activate to gain 100% Attack Speed and 25% Movement Speed for 5 seconds.",
+      "image": "blaze_stim_2.png",
+      "talentChanged": false,
+      "cooldown": "30s"
+    },
+    {
+      "name": "Endurance Stimpack",
+      "description": "Activate to gain a Shield that absorbs 590 damage over 5 seconds.When taking damage while below 30% maximum Health, Endurance Stimpack will automatically be cast if it is not on cooldown.",
+      "image": "blaze_stim_1.png",
+      "talentChanged": false,
+      "cooldown": "30s"
+    },
+    {
+      "name": "Neural Stimpack",
+      "description": "Activate to gain 40 Mana and cause Basic Ability cooldowns to recharge 100% faster for 5 seconds.",
+      "image": "blaze_stim_3.png",
+      "talentChanged": false,
+      "cooldown": "30s"
+    },
+    {
+      "name": "New Habits",
+      "description": "Collecting Regeneration Globes reduces the cooldown of Pyromania by 6 seconds.Quest: Collect 15 Regeneration Globes.Reward: Pyromania grants Unstoppable for 2 seconds.",
+      "image": "blaze_new_habits.png",
+      "talentChanged": false
+    }
+  ],
+  "4": [
+    {
+      "name": "Oil Dispersal",
+      "description": "Increase Oil Spill's area by 20%. Each enemy Hero hit by Flame Stream reduces the cooldown of Oil Spill by 0.75 seconds and refunds 5 Mana.",
+      "image": "blaze_oil.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Meltdown",
+      "description": "Hitting an enemy Hero with Pyromania reduces their damage dealt by 8% for 2.5 seconds, up to 40%.",
+      "image": "blaze_pyromania.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Incinerator Gauntlets",
+      "description": "Increase Basic Attack area by 15%, and Basic Attack damage to Minions, Mercenaries, and Monsters by 50%.",
+      "image": "talent_autoattack_building.png",
+      "talentChanged": false
+    }
+  ],
+  "7": [
+    {
+      "name": "Suppressive Fire",
+      "description": "Each stream of Flame Stream reduces the Spell Power of Heroes hit by 25% for 4 seconds, up to 50%.",
+      "image": "blaze_flame.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Nanomachine Coating",
+      "description": "Enemies standing in Oil Spills and Ignited Oil Spills have their Attack Speed reduced by 50% for 3 seconds.",
+      "image": "blaze_oil.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Fuel Leak",
+      "description": "Jet Propulsion creates Oil Spills along Blaze's path. If Jet Propulsion impacts an enemy Hero, an additional Oil Spill is created underneath them.",
+      "image": "blaze_jet.png",
+      "talentChanged": false
+    }
+  ],
+  "10": [
+    {
+      "name": "Bunker Drop",
+      "description": "After 0.5 seconds, deploy and enter a Bunker with 1435 Health. Blaze and his allies can enter and exit the Bunker at will. While in the Bunker, occupants gain access to Flamethrower, dealing 170 damage to enemies in a line. Exiting the Bunker grants 25 Armor for 2 seconds. Bunkers last 10 seconds, or until destroyed.",
+      "image": "blaze_bunker.png",
+      "talentChanged": false,
+      "manaCost": "70 Mana",
+      "cooldown": "70s"
+    },
+    {
+      "name": "Combustion",
+      "description": "Channel for up to 2.6 seconds. Upon ending, Slow nearby enemies by 60% and deal 55 damage to them every 0.5 seconds. Combustion's Slow and damage over time duration is extended the longer Blaze Channels, from 1 second up to 5 seconds.Blaze's Movement Speed is reduced by 40% while Channeling.",
+      "image": "blaze_combustion.png",
+      "talentChanged": false,
+      "manaCost": "70 Mana",
+      "cooldown": "80s"
+    }
+  ],
+  "13": [
+    {
+      "name": "Grill and Kill",
+      "description": "Increase Ignited Oil Spill damage by 45%.Quest: Damage enemy Heroes with Ignited Oil Spills 30 times.Reward: Increase Oil Spill's Ignite duration by 2.5 seconds.",
+      "image": "blaze_oil.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Adhesive Petroleum",
+      "description": "Enemies standing in Oil Spill when it is Ignited are Slowed by 40% and take 35% more Basic Attack damage from Blaze for 3 seconds. Additionally, Basic Attack splashes Ignite Oil Spills.",
+      "image": "blaze_oil_b.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Collision Course",
+      "description": "Jet Propulsion's collision deals 275 damage to the first enemy Hero hit.",
+      "image": "blaze_jet.png",
+      "talentChanged": false
+    }
+  ],
+  "16": [
+    {
+      "name": "Thermal Protection",
+      "description": "Each enemy hit by Jet Propulsion grants 10 Armor for 3 seconds and reduces its cooldown by 1.25 seconds.",
+      "image": "blaze_jet.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Heat Treatment",
+      "description": "Heal for 75% of the damage dealt by Pyromania.",
+      "image": "blaze_pyromania.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Juggernaut Plating",
+      "description": "Activate to gain 50 Spell Armor for 3 seconds. Upon expiration, gain a Shield equal to 125% of the Spell Damage taken while Juggernaut Plating was active.",
+      "image": "blaze_vanadium_plating.png",
+      "talentChanged": false,
+      "cooldown": "30s"
+    }
+  ],
+  "20": [
+    {
+      "name": "Fortified Bunker",
+      "description": "Occupants can cast Oil Spill from Bunker Drop every 6 seconds. Additionally, Bunker Drop's Armor bonus upon exiting is increased by 25, and its duration by 1 second.",
+      "image": "blaze_bunker.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Flash Fire",
+      "description": "While Channeling Combustion, Blaze's Movement Speed is no longer reduced, and nearby enemies are Slowed by 60%.",
+      "image": "blaze_combustion.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Burn Notice",
+      "description": "Basic Attacks Slow enemies by 5% and deal an additional 18 damage over 2.5 seconds. Stacks up to 5 times.",
+      "image": "talent_autoattack_slow.png",
+      "talentChanged": false
+    }
+  ]
+}

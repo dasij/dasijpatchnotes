@@ -1,0 +1,210 @@
+{
+  "abilities": {
+    "basic": [
+      {
+        "name": "Radiant Dash (Q)",
+        "description": "Jump to an allied or enemy unit. Enemies are immediately hit with a Basic Attack.Stores up to 2 charges.",
+        "image": "kharazim_radiant_dash.png",
+        "abilityChanged": false,
+        "manaCost": "25 Mana",
+        "cooldown": "12s"
+      },
+      {
+        "name": "Breath of Heaven (W)",
+        "description": "Heal nearby Heroes for 285 and give them 15% Movement Speed for 3 seconds.",
+        "image": "kharazim_breath_of_heaven.png",
+        "abilityChanged": false,
+        "manaCost": "65 Mana",
+        "cooldown": "10s"
+      },
+      {
+        "name": "Deadly Reach (E)",
+        "description": "Kharazim's next Basic Attack increases his Attack Speed and Attack Range by 100% for 2 seconds.",
+        "image": "kharazim_deadly_reach.png",
+        "abilityChanged": false,
+        "manaCost": "45 Mana",
+        "cooldown": "10s"
+      }
+    ],
+    "heroic": [
+      {
+        "name": "Divine Palm (R)",
+        "description": "Protect an allied Hero from death, causing them to be healed for 1200 if they take fatal damage in the next 3 seconds.",
+        "image": "kharazim_divine_palm.png",
+        "abilityChanged": false,
+        "manaCost": "50 Mana",
+        "cooldown": "50s"
+      },
+      {
+        "name": "Seven-Sided Strike (R)",
+        "description": "Become Invulnerable and strike 7 times over 2 seconds. Each strike hits the highest Health nearby Hero for 7% of their maximum Health.",
+        "image": "kharazim_seven_sided_strike.png",
+        "abilityChanged": false,
+        "manaCost": "77 Mana",
+        "cooldown": "50s"
+      }
+    ],
+    "trait": {
+      "name": "Pick Your Trait (T)",
+      "description": " Choose between Transcendence, Iron Fists, and Insight from the Talents panel.",
+      "image": "kharazim_pick_your_trait.png",
+      "abilityChanged": false
+    }
+  },
+  "1": [
+    {
+      "name": "Transcendence",
+      "description": "Every 3rd Basic Attack heals the lowest nearby allied Hero for 104 and gives 25% increased Move Speed for 2.5 seconds.",
+      "image": "monk_trait_transcendence.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Iron Fists",
+      "description": "Every 3rd Basic Attack deals 110% bonus damage and gives 25% increased Move Speed for 2.5 seconds.",
+      "image": "monk_trait_ironfist.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Insight",
+      "description": "Quest: Every 3rd Basic Attack restores 14 Mana, grants a stack of Insight, and gives 25% increased Movement Speed for 2.5 seconds.Reward: Upon getting 100 stacks of Insight, every 3rd attack also reduces Basic Ability cooldowns by 1.75 seconds.",
+      "image": "monk_trait_insight.png",
+      "talentChanged": false
+    }
+  ],
+  "4": [
+    {
+      "name": "Spirit Ally",
+      "description": "Place a Spirit Ally that heals allied Heroes in a large area around it for 2% of their maximum Health every second. Has 150 Health and lasts 10 seconds. Kharazim can Radiant Dash to Spirit Allies.",
+      "image": "monk_allyspirit.png",
+      "talentChanged": false,
+      "cooldown": "45s"
+    },
+    {
+      "name": "Earth Ally",
+      "description": "Place an Earth Ally that grants nearby allied Heroes 50 Physical Armor against Heroic Basic Attacks, reducing damage taken by 50%. Has 400 Health and lasts 10 seconds.  Kharazim can Radiant Dash to Earth Allies.",
+      "image": "monk_allyearth.png",
+      "talentChanged": false,
+      "cooldown": "45s"
+    },
+    {
+      "name": "Air Ally",
+      "description": "Place an Air Ally that gives allied Heroes 15% Spell Power, grants vision, and reveals a large area around it. Has 200 Health and lasts 10 seconds. Kharazim can Radiant Dash to Air Allies.",
+      "image": "monk_allyair.png",
+      "talentChanged": false,
+      "cooldown": "30s"
+    }
+  ],
+  "7": [
+    {
+      "name": "Blinding Speed",
+      "description": "Decreases Radiant Dash's cooldown by 2 seconds and increases the maximum number of charges by 1.",
+      "image": "monk_dash.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Heavenly Zeal",
+      "description": "Increases Breath of Heaven's Movement Speed bonus to 30%.  Radiant Dashing to an ally increases the healing they receive from Breath of Heaven by 50% for 3.5 seconds.",
+      "image": "monk_breath0fheaven.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Blazing Fists",
+      "description": "Increase the duration of Deadly Reach by 100%.  Every 3rd Basic Attack reduces the cooldown of Deadly Reach by 0.75 seconds.",
+      "image": "monk_deadlyreach.png",
+      "talentChanged": false
+    }
+  ],
+  "10": [
+    {
+      "name": "Divine Palm",
+      "description": "Protect an allied Hero from death, causing them to be healed for 1200 if they take fatal damage in the next 3 seconds.",
+      "image": "monk_divinepalm.png",
+      "talentChanged": false,
+      "manaCost": "50 Mana",
+      "cooldown": "50s"
+    },
+    {
+      "name": "Seven-Sided Strike",
+      "description": "Become Invulnerable and strike 7 times over 2 seconds. Each strike hits the highest Health nearby Hero for 7% of their maximum Health.",
+      "image": "monk_sevensidedstrike.png",
+      "talentChanged": false,
+      "manaCost": "77 Mana",
+      "cooldown": "50s"
+    }
+  ],
+  "13": [
+    {
+      "name": "Quicksilver",
+      "description": "Radiant Dashing to an ally gives Kharazim and the target 30% bonus Movement Speed for 3 seconds.",
+      "image": "monk_dash.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Spell Shield",
+      "description": "Every 30 seconds, gain 50 Spell Armor against the next enemy Ability and subsequent Abilities for 3 seconds, reducing the damage taken by 50%.Can be toggled to allow or prevent this talent from triggering automatically.",
+      "image": "talent_spellshield.png",
+      "talentChanged": false,
+      "cooldown": "1s"
+    },
+    {
+      "name": "Sixth Sense",
+      "description": "While Stunned or Rooted, gain 75 Physical Armor against Hero Basic Attacks for 4 seconds, reducing their damage by 75%.",
+      "image": "talent_relentless.png",
+      "talentChanged": false
+    }
+  ],
+  "16": [
+    {
+      "name": "Cleansing Touch",
+      "description": "Radiant Dashing to an ally makes them Unstoppable for 1 second.",
+      "image": "monk_dash.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Way of the Hundred Fists",
+      "description": "Radiant Dashing to an enemy launches a rapid volley of 6 Basic Attacks dealing 45% damage each.",
+      "image": "monk_dash_a.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Echo of Heaven",
+      "description": "Breath of Heaven heals 75% of its normal amount, but heals a second time 3 seconds later.",
+      "image": "monk_breath0fheaven.png",
+      "talentChanged": false
+    }
+  ],
+  "20": [
+    {
+      "name": "Peaceful Repose",
+      "description": "Divine Palm's healing amount is increased by 75% and its cooldown is set to 5 seconds if the Hero does not die.",
+      "image": "monk_divinepalm.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Transgression",
+      "description": "Seven-Sided Strike hits 4 additional times.",
+      "image": "monk_sevensidedstrike.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Fists of Legend",
+      "description": "Gain 50% of the benefit from both level 1  talents that were not chosen.",
+      "image": "kharazim_fistoflegend.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Storm Shield",
+      "description": "Activate to give all nearby allied Heroes a Shield for 20% of their max Health for 3 seconds.",
+      "image": "talent_stormshield.png",
+      "talentChanged": false,
+      "cooldown": "45s"
+    },
+    {
+      "name": "Epiphany",
+      "description": "Activate to restore 33% of Kharazim's maximum Mana and refill 2 charges of Radiant Dash.",
+      "image": "kharazim_epiphany.png",
+      "talentChanged": false,
+      "cooldown": "60s"
+    }
+  ]
+}

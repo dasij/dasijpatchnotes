@@ -1,0 +1,208 @@
+{
+  "abilities": {
+    "basic": [
+      {
+        "name": "Flash Heal (Q)",
+        "description": "Cast for 0.75 seconds to heal an allied Hero for 280.",
+        "image": "anduin_flash_heal.png",
+        "abilityChanged": false,
+        "manaCost": "20 Mana",
+        "cooldown": "5s"
+      },
+      {
+        "name": "Divine Star (W)",
+        "description": "Send light that deals 140 damage to enemies and then returns to Anduin, healing allied Heroes for 130 in a wider path. Healing increases by 25% per enemy Hero hit.",
+        "image": "anduin_divine_star.png",
+        "abilityChanged": false,
+        "manaCost": "50 Mana",
+        "cooldown": "10s"
+      },
+      {
+        "name": "Chastise (E)",
+        "description": "Shove a swell of light forward, dealing 175 damage to the first enemy Hero hit and Rooting them for 1.25 seconds.",
+        "image": "anduin_chastise.png",
+        "abilityChanged": false,
+        "manaCost": "40 Mana",
+        "cooldown": "9s"
+      }
+    ],
+    "heroic": [
+      {
+        "name": "Holy Word: Salvation (R)",
+        "description": "After 0.5 seconds, Channel to invoke the Light for 3 seconds. While nearby, allied Heroes heal for up to 30% of their max Health and are Protected.",
+        "image": "anduin_holy_word_salvation.png",
+        "abilityChanged": false,
+        "manaCost": "70 Mana",
+        "cooldown": "80s"
+      },
+      {
+        "name": "Lightbomb (R)",
+        "description": "Imbue an allied Hero with the Light. After 1.5 seconds, it explodes, dealing 150 damage to enemies and Stunning them for 1.25 seconds.The target gains a Shield that absorbs 165 damage per enemy Hero hit. Lasts for 5 seconds.",
+        "image": "anduin_light_bomb.png",
+        "abilityChanged": false,
+        "manaCost": "70 Mana",
+        "cooldown": "60s"
+      }
+    ],
+    "trait": {
+      "name": "Leap of Faith (T)",
+      "description": "Faith instantly pulls an allied Hero to Anduin's location, granting them Unstoppable while they travel.Pursued By GraceBasic Attacks against enemy Heroes heal the lowest Health allied Hero near Anduin for 32.",
+      "image": "anduin_leap_of_faith.png",
+      "abilityChanged": false,
+      "cooldown": "70s"
+    }
+  },
+  "1": [
+    {
+      "name": "Evenhanded Blessings",
+      "description": "If Flash Heal is cast on a different target from its last, increase its healing by 15% and refund 40% of its cooldown.",
+      "image": "anduin_flash_heal.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Power Word: Shield",
+      "description": "While Divine Star is traveling out, allies in its path gain a Shield that absorbs 128 damage for 4 seconds.If Divine Star hits an enemy Hero, Anduin gains a Shield that absorbs 185 damage for 4 seconds.",
+      "image": "anduin_divine_star.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Lightwell",
+      "description": "Summon a Lightwell that periodically heals a nearby allied Hero for 50. The well only fades after healing 15 times or when recast.This cooldown is reduced by 1 second each time Anduin heals an allied Hero.",
+      "image": "anduin_lightwell.png",
+      "talentChanged": false,
+      "cooldown": "75s"
+    }
+  ],
+  "4": [
+    {
+      "name": "Moral Compass",
+      "description": "Divine Star fires Basic Attacks at Heroes close to its apex.Passive: Increase Attack Range by 1.1.",
+      "image": "anduin_divine_star.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Surge of Light",
+      "description": "Basic Attacks reduce the cooldown of Chastise by 0.75 seconds. Basic Attacks against Heroes Rooted by Chastise launch an additional Basic Attack and restore 25 Mana.",
+      "image": "anduin_chastise.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Piercing Light",
+      "description": "Chastise pierces to hit an additional Hero.Quest: Hitting two Heroes with a single Chastise permanently increases Spell Power by 1, to a maximum of 10.",
+      "image": "anduin_chastise_a.png",
+      "talentChanged": false
+    }
+  ],
+  "7": [
+    {
+      "name": "Binding Heal",
+      "description": "Casting Flash Heal on an ally heals Anduin for 135.",
+      "image": "anduin_flash_heal.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Blessed Recovery",
+      "description": "If Anduin loses more than 8% of his maximum Health at once, recover 15% Health over 3 seconds. This effect has a 10 second cooldown.Current Health required: 133",
+      "image": "anduin_blessed_recovery.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Desperate Prayer",
+      "description": "Activate to instantly heal an allied Hero for 375, but kneel for 2 seconds, unable to act.",
+      "image": "anduin_desperate_prayer.png",
+      "talentChanged": false,
+      "cooldown": "35s"
+    }
+  ],
+  "10": [
+    {
+      "name": "Holy Word: Salvation",
+      "description": "After 0.5 seconds, Channel to invoke the Light for 3 seconds. While nearby, allied Heroes heal for up to 30% of their max Health and are Protected.",
+      "image": "anduin_holy_word_salvation.png",
+      "talentChanged": false,
+      "manaCost": "70 Mana",
+      "cooldown": "80s"
+    },
+    {
+      "name": "Lightbomb",
+      "description": "Imbue an allied Hero with the Light. After 1.5 seconds, it explodes, dealing 150 damage to enemies and Stunning them for 1.25 seconds.The target gains a Shield that absorbs 165 damage per enemy Hero hit. Lasts for 5 seconds.",
+      "image": "anduin_light_bomb.png",
+      "talentChanged": false,
+      "manaCost": "70 Mana",
+      "cooldown": "60s"
+    }
+  ],
+  "13": [
+    {
+      "name": "Speed of the Pious",
+      "description": "While Divine Star is traveling, gain 30% Movement Speed.  Each allied Hero healed by Divine Star on its return to Anduin reduces its cooldown by 1 second.",
+      "image": "anduin_divine_star.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Push Forward!",
+      "description": "Damaging an enemy Hero increases Movement Speed by 2.5% and the amount healed by Pursued By Grace by 5% for 6 seconds. These effects stack up to 8 times.",
+      "image": "anduin_varians_legacy.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Enchant Boots - Lion's Speed",
+      "description": "Gain 5% Movement Speed. This bonus is quadrupled while Leap of Faith's cooldown is available. Allies pulled by Leap of Faith are healed for 280 over 4 seconds.",
+      "image": "anduin_leap_of_faith.png",
+      "talentChanged": false
+    }
+  ],
+  "16": [
+    {
+      "name": "Renew",
+      "description": "Flash Heal heals an additional 180 over 6 seconds. The duration of this heal is refreshed each time Anduin hits an enemy Hero with a Basic Attack.",
+      "image": "anduin_flash_heal.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Holy Nova",
+      "description": "After Anduin catches Divine Star, it explodes, healing nearby allied Heroes for 105 and damaging enemies for 150.",
+      "image": "anduin_divine_star.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Glyph of Faith",
+      "description": "Leap of Faith gains a 2nd charge.",
+      "image": "anduin_leap_of_faith.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Inner Focus",
+      "description": "Activate to reset the cooldown of Flash Heal and its next cast heals for 25% more.Damaging enemy Heroes reduces this cooldown by 1 second.",
+      "image": "anduin_inner_focus.png",
+      "talentChanged": false,
+      "cooldown": "20s"
+    }
+  ],
+  "20": [
+    {
+      "name": "Light of Stormwind",
+      "description": "Holy Word: Salvation grants allied Heroes Invulnerability instead of Protected. This does not affect Anduin. Channeling Holy Word: Salvation for its full duration reduces its cooldown by -61 seconds.",
+      "image": "anduin_holy_word_salvation.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Inner Fire",
+      "description": "The target of Light Bomb gains 40% Move Speed and 50 Armor for 3 seconds.",
+      "image": "anduin_light_bomb.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Censure",
+      "description": "Chastise Stuns for 0.75 seconds and its Root duration is increased by 0.5 seconds.",
+      "image": "anduin_chastise.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Varian's Legacy",
+      "description": "Basic Attacks burn enemies for 87 damage over 3 seconds and Anduin heals for 50% of the damage dealt.",
+      "image": "anduin_varians_legacy.png",
+      "talentChanged": false
+    }
+  ]
+}

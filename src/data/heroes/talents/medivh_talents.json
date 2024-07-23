@@ -1,0 +1,209 @@
+{
+  "abilities": {
+    "basic": [
+      {
+        "name": "Arcane Rift (Q)",
+        "description": "Launch a rift that deals 170 damage to enemies in its path. If an enemy Hero is hit, reduce its cooldown by 5 seconds and refund 50 Mana.Quest: Hit 40 enemy Heroes with Arcane Rift without dying.Reward: Permanently increase the damage dealt by 75 and cooldown reduction for hitting a Hero by 1 second.",
+        "image": "medivh_arcane_rift.png",
+        "abilityChanged": false,
+        "manaCost": "50 Mana",
+        "cooldown": "7s"
+      },
+      {
+        "name": "Force of Will (W)",
+        "description": "Protect an allied Hero from all damage for 1.5 seconds.  Upon expiration, Force of Will heals the target for 20% of the damage it absorbed.",
+        "image": "medivh_force_of_will.png",
+        "abilityChanged": false,
+        "manaCost": "60 Mana",
+        "cooldown": "9s"
+      },
+      {
+        "name": "Portal (E)",
+        "description": "Create a set of portals between Medivh and the target location, allowing allies to teleport between both. The portals last 6 seconds.",
+        "image": "medivh_portal.png",
+        "abilityChanged": false,
+        "manaCost": "65 Mana",
+        "cooldown": "16s"
+      }
+    ],
+    "heroic": [
+      {
+        "name": "Poly Bomb (R)",
+        "description": "Polymorph an enemy Hero for 2 seconds, Silencing them and making them unable to attack. On expiration, Poly Bomb spreads to other nearby enemy Heroes.",
+        "image": "medivh_poly_bomb.png",
+        "abilityChanged": false,
+        "manaCost": "75 Mana",
+        "cooldown": "40s"
+      },
+      {
+        "name": "Ley Line Seal (R)",
+        "description": "After 0.5 seconds, unleash a wave of energy that places enemy Heroes in Time Stop for 3 seconds.",
+        "image": "medivh_ley_line_seal.png",
+        "abilityChanged": false,
+        "manaCost": "75 Mana",
+        "cooldown": "80s"
+      }
+    ],
+    "trait": {
+      "name": "Raven Form (T)",
+      "description": " Instead of mounting, Medivh can transform into a raven, increasing Movement Speed by 20%. While transformed, Medivh can see and fly over all terrain and is immune to all effects.",
+      "image": "medivh_raven_form.png",
+      "abilityChanged": false
+    }
+  },
+  "1": [
+    {
+      "name": "Winds of Celerity",
+      "description": "Increases Raven Form's Movement Speed bonus by 50%.",
+      "image": "medivh_ravenform.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Raven\u2019s Intellect",
+      "description": "Raven Form increases Medivh's Mana and Health Regeneration by 75%.",
+      "image": "medivh_ravenform_b.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Portal Mastery",
+      "description": "Medivh can manually place both Portal locations and it no longer breaks Raven Form. Activate Medivh's Trait to cancel an unlinked Portal.",
+      "image": "medivh_portal.png",
+      "talentChanged": false,
+      "manaCost": "65 Mana",
+      "cooldown": "16s"
+    }
+  ],
+  "4": [
+    {
+      "name": "Mage Armor",
+      "description": "The first time an ally uses a Portal, they gain 40 Armor for 5 seconds, reducing their damage taken by 40%.",
+      "image": "medivh_portal.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Raven Familiar",
+      "description": "A Raven Familiar joins allies each time they use a Portal. The Raven will dive at the ally's next Basic Attack against a Hero within 5 seconds, dealing 114 damage and Slowing them by 30% for 2.5 seconds.",
+      "image": "medivh_portal_a.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Dust of Appearance",
+      "description": "Activate to greatly increase sight range for 5 seconds and reveal enemy Heroes in the area for 8 seconds. Does not cancel Raven Form.Passive: Increase Medivh's sight range while in Raven Form by 25%.",
+      "image": "medivh_dustofappearance.png",
+      "talentChanged": false,
+      "cooldown": "45s"
+    }
+  ],
+  "7": [
+    {
+      "name": "Mystic Assault",
+      "description": "If Arcane Rift hits an enemy Hero, Medivh's next Basic Attack within 6 seconds deals 50% more damage and heals for 50% of the damage dealt.",
+      "image": "medivh_arcanemissile.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Arcane Explosion",
+      "description": "When Force of Will expires, it deals 80 damage to nearby enemies, plus 50% of the damage it prevented, up to 315 additional damage.",
+      "image": "medivh_forceofwill.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Force of Magic",
+      "description": "Preventing at least 268 damage with a single cast of Force of Will grants 30% Spell Power for 15 seconds. Stacks up to 2 times.",
+      "image": "medivh_forceofwill_a.png",
+      "talentChanged": false
+    }
+  ],
+  "10": [
+    {
+      "name": "Poly Bomb",
+      "description": "Polymorph an enemy Hero for 2 seconds, Silencing them and making them unable to attack. On expiration, Poly Bomb spreads to other nearby enemy Heroes.",
+      "image": "medivh_polybomb.png",
+      "talentChanged": false,
+      "manaCost": "75 Mana",
+      "cooldown": "40s"
+    },
+    {
+      "name": "Ley Line Seal",
+      "description": "After 0.5 seconds, unleash a wave of energy that places enemy Heroes in Time Stop for 3 seconds.",
+      "image": "medivh_leylineblast.png",
+      "talentChanged": false,
+      "manaCost": "75 Mana",
+      "cooldown": "80s"
+    }
+  ],
+  "13": [
+    {
+      "name": "Circle of Protection",
+      "description": "Force of Will also applies to allies near the target, but its cooldown is increased by 2 seconds.",
+      "image": "medivh_forceofwill.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Enduring Will",
+      "description": "Preventing at least 268 damage with Force of Will reduces its cooldown to 4 seconds.",
+      "image": "medivh_forceofwill_a.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Reabsorption",
+      "description": "Increase the amount of healing from Force of Will to 70% of the damage it absorbed.",
+      "image": "medivh_forceofwill_b.png",
+      "talentChanged": false
+    }
+  ],
+  "16": [
+    {
+      "name": "Arcane Charge",
+      "description": "When Arcane Rift damages an enemy Hero, the next Arcane Rift deals 15% more damage.",
+      "image": "medivh_arcanemissile.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Temporal Flux",
+      "description": "Basic Attacks reduce Medivh's Heroic Ability cooldown by 3%. Each enemy Hero hit by Arcane Rift reduces Medivh's Heroic Ability cooldown by -9%.",
+      "image": "medivh_arcanemissile_a.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Stable Portal",
+      "description": "Decrease Portal cooldown by 25% and increase Portal duration by 50%.",
+      "image": "medivh_portal.png",
+      "talentChanged": false
+    }
+  ],
+  "20": [
+    {
+      "name": "Glyph Of Poly Bomb",
+      "description": "Poly Bomb explodes 1 second sooner and the spread radius is increased by 25%.",
+      "image": "medivh_polybomb.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Medivh Cheats!",
+      "description": "Increase the duration of the Time Stop by 33% and gain the ability to redirect the wave once while it's active.",
+      "image": "medivh_leylineblast.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Guardian of Tirisfal",
+      "description": "Minions and Catapults hit by Arcane Rift are instantly killed.",
+      "image": "medivh_arcanemissile.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Arcane Brilliance",
+      "description": "Activate to instantly restore 200 mana to all nearby allied Heroes and grant them 15% Spell Power for 10 seconds.",
+      "image": "jaina_arcaneintellect.png",
+      "talentChanged": false,
+      "cooldown": "60s"
+    },
+    {
+      "name": "Dust of Disappearance",
+      "description": "Stealth an allied Hero for 40 seconds, they are Unrevealable for the first 0.5 seconds. Remaining stationary for at least 1.5 seconds while Stealthed grants Invisible.Stores up to 2 charges.",
+      "image": "medivh_invisibility.png",
+      "talentChanged": false,
+      "cooldown": "10s"
+    }
+  ]
+}

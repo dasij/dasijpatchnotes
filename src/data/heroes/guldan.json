@@ -1,11 +1,11 @@
 {
-  "id": 13,
+  "id": 29,
   "name": "GULDAN",
   "role": "Ranged Assassin",
   "image": "heroes_portraits/guldan.webp",
   "patchNotes": [
     {
-      "id": 13,
+      "id": 29,
       "title": "Talent Rework",
       "general": [
         {

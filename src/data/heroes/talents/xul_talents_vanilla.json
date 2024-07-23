@@ -1,0 +1,206 @@
+{
+  "abilities": {
+    "basic": [
+      {
+        "name": "Spectral Scythe (Q)",
+        "description": "Summon a scythe that travels to Xul after 1 second, dealing 190 damage to enemies and spawning a Skeletal Warrior when hitting enemy Heroes.  These do not count towards Xul's Raise Skeleton maximum.",
+        "image": "xul_spectral_scythe.png",
+        "abilityChanged": false,
+        "manaCost": "55 Mana",
+        "cooldown": "8s"
+      },
+      {
+        "name": "Cursed Strikes (W)",
+        "description": "Xul's Basic Attacks deal damage in a wide area and reduce the Attack Speed of Heroes and Summons by 40% for 2 seconds. Lasts 4 seconds once triggered.",
+        "image": "xul_cursed_strikes.png",
+        "abilityChanged": false,
+        "manaCost": "50 Mana",
+        "cooldown": "16s"
+      },
+      {
+        "name": "Bone Prison (E)",
+        "description": "After a 2 second delay, deal 80 damage and Root the target enemy Hero for 1.75 seconds.  All nearby Skeletal Warriors will fixate on the target for their duration.",
+        "image": "xul_bone_prison.png",
+        "abilityChanged": false,
+        "manaCost": "70 Mana",
+        "cooldown": "10s"
+      },
+      {
+        "name": "Bone Armor (?)",
+        "description": "Activate to gain a Shield equal to 25% of Xul's maximum Health for 3 seconds.",
+        "image": "xul_bone_armor.png",
+        "abilityChanged": false,
+        "cooldown": "30s"
+      }
+    ],
+    "heroic": [
+      {
+        "name": "Poison Nova (R)",
+        "description": "After 0.5 seconds, release poisonous missiles that deal 630 damage to all enemies hit over 10 seconds.",
+        "image": "xul_poison_nova.png",
+        "abilityChanged": false,
+        "manaCost": "100 Mana",
+        "cooldown": "90s"
+      },
+      {
+        "name": "Skeletal Mages (R)",
+        "description": "Vector TargetingSummon 4 Frost Mages in a line that attack nearby enemies for 47 damage a second and Slow them by 30% for 2 seconds. Last up to 15 seconds.",
+        "image": "xul_skeletal_mages.png",
+        "abilityChanged": false,
+        "manaCost": "80 Mana",
+        "cooldown": "90s"
+      }
+    ],
+    "trait": {
+      "name": "Raise Skeleton (T)",
+      "description": " When a nearby enemy Minion dies, it becomes a Skeletal Warrior with 240 Health that attacks for 21 damage and lasts up to 12 seconds. Upon death, Skeletal Warriors deal 40 damage to nearby enemies.  Up to 3 Skeletal Warriors can be active at once when spawned in this way.",
+      "image": "xul_raise_skeleton.png",
+      "abilityChanged": false
+    }
+  },
+  "1": [
+    {
+      "name": "Backlash",
+      "description": "When Bone Armor expires, nearby enemy Heroes take damage equal to 12% of their maximum Health.",
+      "image": "necromancer_bonearmor_b.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Shackler",
+      "description": "While Bone Armor is active, nearby enemies are Slowed by 35% for 1 second. Basic Attacks against Heroes that are Stunned, Rooted, or Slowed reduce the cooldown of Bone Armor by 2 seconds.",
+      "image": "necromancer_bonearmor_c.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Shade",
+      "description": "While Bone Armor is active, Xul evades all Basic Attacks, but increases the cooldown of Bone Armor by 10 seconds.",
+      "image": "necromancer_bonearmor.png",
+      "talentChanged": false
+    }
+  ],
+  "4": [
+    {
+      "name": "Reaper's Toll",
+      "description": "Reduce the cooldown of Spectral Scythe by 2 seconds and its Mana cost by 15.",
+      "image": "necromancer_reap.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Grim Scythe",
+      "description": "Increase Xul's Basic Attack damage by 15%.  Each enemy hit by Cursed Strikes reduces its cooldown by 1 second, up to 12 seconds.",
+      "image": "necromancer_cursedstrikes_off.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Jailors",
+      "description": "Bone Prison spawns 2 Skeletal Warriors.  These do not count towards Xul's Raise Skeleton maximum.Quest: Spawn 80 Skeletal Warriors.Reward: While fixating on an enemy, Skeletal Warriors gain 25% Movement and Attack Speed.",
+      "image": "necromancer_raiseskeleton.png",
+      "talentChanged": false
+    }
+  ],
+  "7": [
+    {
+      "name": "Harvest Vitality",
+      "description": "Cursed Strikes heals for 70% of the damage dealt to Heroes.",
+      "image": "necromancer_cursedstrikes_off.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Trag'Oul's Essence",
+      "description": "Every time a Skeletal Warrior attacks an enemy, restore 0.5% of Xul's maximum Health and 0.2% of his maximum Mana.",
+      "image": "necromancer_raiseskeleton.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Wall Of Bones",
+      "description": "Increase the Shield amount of Bone Armor to 35% of Xul's maximum Health, and Xul gains 20 Spell Armor for its duration.",
+      "image": "necromancer_bonearmor.png",
+      "talentChanged": false
+    }
+  ],
+  "10": [
+    {
+      "name": "Poison Nova",
+      "description": "After 0.5 seconds, release poisonous missiles that deal 630 damage to all enemies hit over 10 seconds.",
+      "image": "necromancer_poisonnova.png",
+      "talentChanged": false,
+      "manaCost": "100 Mana",
+      "cooldown": "90s"
+    },
+    {
+      "name": "Skeletal Mages",
+      "description": "Vector TargetingSummon 4 Frost Mages in a line that attack nearby enemies for 47 damage a second and Slow them by 30% for 2 seconds. Last up to 15 seconds.",
+      "image": "necromancer_skeletalmages.png",
+      "talentChanged": false,
+      "manaCost": "80 Mana",
+      "cooldown": "90s"
+    }
+  ],
+  "13": [
+    {
+      "name": "Echoes of Death",
+      "description": "Spectral Scythe spawns 2 additional scythes next to the first after 1.5 seconds, dealing 40% damage.",
+      "image": "necromancer_reap.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Rapid Harvest",
+      "description": "Gain 5% Attack Speed for 3 seconds each time Cursed Strikes hits an enemy, up to 75%.",
+      "image": "necromancer_cursedstrikes_off.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Amplify Damage",
+      "description": "Increase the Root duration of Bone Prison by 0.25 seconds.  Enemies Rooted by Bone Prison lose 25 Armor for 2 seconds.",
+      "image": "necromancer_boneprison.png",
+      "talentChanged": false
+    }
+  ],
+  "16": [
+    {
+      "name": "Decrepify",
+      "description": "Enemy Heroes that are damaged by Spectral Scythe or Skeletal Warriors are Slowed by 30% for 2.5 seconds.",
+      "image": "necromancer_reap.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Weaken",
+      "description": "Enemy Heroes who are damaged by Cursed Strikes or Skeletal Warriors deal 35% less damage for 3 seconds.",
+      "image": "necromancer_cursedstrikes_off.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Bone Spear",
+      "description": "Deal 230 damage to enemies in a line.",
+      "image": "necromancer_bonespear.png",
+      "talentChanged": false,
+      "cooldown": "12s"
+    }
+  ],
+  "20": [
+    {
+      "name": "Andariel's Visage",
+      "description": "Poison Nova heals for 50% of the damage dealt and its duration is increased by 50%.",
+      "image": "necromancer_poisonnova.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Cold Hand of Death",
+      "description": "Increase the Slow of Frost Mages by 20%.  Every 5th Spectral Scythe that hits enemy Heroes spawns a Frost Mage instead of a Skeletal Warrior at their location.",
+      "image": "necromancer_skeletalmages.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Mortal Wound",
+      "description": "Enemy Heroes hit by Spectral Scythe receive 75% less healing for 4 seconds.",
+      "image": "necromancer_reap.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Kalan's Edict",
+      "description": "Each time Skeletal Warriors deal damage, reduce the cooldown of Bone Armor and Xul's Heroic Ability by 1.5%.",
+      "image": "necromancer_raiseskeleton.png",
+      "talentChanged": false
+    }
+  ]
+}

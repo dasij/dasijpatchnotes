@@ -1,0 +1,188 @@
+{
+  "abilities": {
+    "basic": [
+      {
+        "name": "Blink (Q)",
+        "description": "Dash towards an area. Stores up to 3 charges.",
+        "image": "tracer_blink.png",
+        "abilityChanged": false,
+        "cooldown": "9s"
+      },
+      {
+        "name": "Melee (W)",
+        "description": "Deal 220 damage to a nearby enemy, prioritizing Heroes. Gain 5% Pulse Bomb charge when using Melee against an enemy, and 10% against Heroes.",
+        "image": "tracer_melee.png",
+        "abilityChanged": false,
+        "cooldown": "8s"
+      },
+      {
+        "name": "Recall (E)",
+        "description": "After 1.25 seconds, Tracer returns to the position she was at 2 seconds prior to casting, refilling her ammo, and removing all negative status effects from herself.",
+        "image": "tracer_recall.png",
+        "abilityChanged": false,
+        "cooldown": "20s"
+      }
+    ],
+    "heroic": [
+      {
+        "name": "Pulse Bomb (R)",
+        "description": " Fire a short range bomb that can attach to an enemy if it hits them. The bomb explodes after 2 seconds dealing 298 damage to them and 149 damage to other nearby enemies.This ability is slowly charged over time by dealing damage to enemies with Basic Attacks and Melee.",
+        "image": "tracer_pulse_bomb.png",
+        "abilityChanged": false
+      }
+    ],
+    "trait": {
+      "name": "Reload (T)",
+      "description": "Tracer can Basic Attack while moving, and after attacking 10 times she needs to reload over 0.75 seconds. Tracer can manually reload early by activating Reload.Basic Attacks heal Tracer for 10% of the damage dealt.",
+      "image": "tracer_reload.png",
+      "abilityChanged": false,
+      "cooldown": "1s"
+    }
+  },
+  "1": [
+    {
+      "name": "One-Two Punch",
+      "description": "Reduce the cooldown of Melee by 1 second and it gains an additional charge.",
+      "image": "tracer_melee.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Parting Gift",
+      "description": "Recall leaves behind 6 bombs that deal 240 damage each to different targets. Heroes hit with these bombs are slowed by 50% for 0.75 seconds and grant 7% Pulse Bomb charge.",
+      "image": "tracer_combo_e_r.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Tracer Rounds",
+      "description": "Increase Basic Attack range by 10%. Basic Attacks against Heroes reveal a small area around them for 3 seconds.",
+      "image": "tracer_reload.png",
+      "talentChanged": false
+    }
+  ],
+  "4": [
+    {
+      "name": "Leeching Rounds",
+      "description": "Increase the healing from Basic Attacks by up to 200%, based on the amount of health Tracer is missing.",
+      "image": "tracer_reload.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Pulse Generator",
+      "description": "Successfully sticking a Pulse Bomb to an enemy Hero heals Tracer for 18% of her maximum Health over 1.5 seconds and refunds a charge of Blink.",
+      "image": "tracer_combo_q_r.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Is That a Health Pack?!",
+      "description": "Collecting a Regeneration Globe instantly heals Tracer for 10% of her maximum Health and reduces the cooldown of Healing Fountain by 15 seconds.Drinking from a Healing Fountain instantly heals for 20% of Tracer's maximum Health.",
+      "image": "tracer_medpack.png",
+      "talentChanged": false
+    }
+  ],
+  "7": [
+    {
+      "name": "Sleight of Hand",
+      "description": "Reduces Reload time by 50%. This equals 20% more damage per second.",
+      "image": "tracer_reload.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Focus Fire",
+      "description": "If an entire ammo magazine is unloaded on an enemy, the last bullet will deal 80 bonus damage.  This is equal to 35% of the total magazine.",
+      "image": "tracer_reload_b.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Locked and Loaded",
+      "description": "Reactivate Reload within the last 50% of its cast time to increase Tracer's Basic Attack damage by 40% for that magazine.",
+      "image": "tracer_reload_c.png",
+      "talentChanged": false
+    }
+  ],
+  "10": [
+    {
+      "name": "Sticky Bomb",
+      "description": "Increases Pulse Bomb's radius by 50% and enemies hit are Slowed by 70% for 3 seconds.",
+      "image": "tracer_pulsebomb.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Quantum Spike",
+      "description": "Pulse Bomb deals an additional 6% of maximum Health as damage to Heroes.",
+      "image": "tracer_pulsebomb_b.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Pulse Rounds",
+      "description": "Increases Pulse Bomb's range and charge rate from Basic Attacks against Heroes by 100%.",
+      "image": "tracer_pulsebomb_c.png",
+      "talentChanged": false
+    }
+  ],
+  "13": [
+    {
+      "name": "Untouchable",
+      "description": "Passive: After Blinking, gain 20% Movement Speed for 1.25 seconds.Quest: Takedowns increase Tracer's Basic Attack damage by 5%, up to 25%. These bonuses are lost on death.",
+      "image": "tracer_combo_q_trait.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Jumper",
+      "description": "Passive: When Blink has no charges remaining, its cooldown refreshes 150% faster.Casting Blink grants Tracer a Shield equal to 6.5% of her maximum Health for 3 seconds. This Shield stacks up to 3 times.",
+      "image": "tracer_blink.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Telefrag",
+      "description": "Passive: Basic Attacks against enemy Heroes reduce the cooldown of Recall by 0.1875 seconds.When Tracer arrives at her Recall location she becomes Unkillable for 1 second and nearby enemies take 175 damage and are knocked back.",
+      "image": "tracer_recall.png",
+      "talentChanged": false
+    }
+  ],
+  "16": [
+    {
+      "name": "Bullet Spray",
+      "description": "Increases the radius of Melee by 30%, and causes it to damage all enemies in range.",
+      "image": "tracer_melee.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Heavy Handed",
+      "description": "Heroes hit by Melee have their Armor reduced by 15 for 4 seconds.",
+      "image": "tracer_melee_b.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Ricochet",
+      "description": "Tracer's Basic Attacks have a 60% chance to hit another nearby enemy, prioritizing Heroes.",
+      "image": "tracer_reload.png",
+      "talentChanged": false
+    }
+  ],
+  "20": [
+    {
+      "name": "Chrono Triggers",
+      "description": "Casting Blink causes Basic Attacks to not consume ammo for 1 second.",
+      "image": "tracer_combo_q_trait.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Get Stuffed!",
+      "description": "Increases Melee's Pulse Bomb charge against Heroes from 10% to 20%. Hitting an enemy with Melee who is stuck with a Pulse Bomb causes the bomb to instantly explode and knock the target away.",
+      "image": "tracer_melee.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Total Recall",
+      "description": "Recall heals Tracer equal to the amount of Health she lost during that time.",
+      "image": "tracer_recall.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Composition B",
+      "description": "Successfully sticking a Pulse Bomb to an enemy Hero also drops another one at their feet that deals 50% damage and explodes slightly earlier.",
+      "image": "tracer_pulsebomb.png",
+      "talentChanged": false
+    }
+  ]
+}

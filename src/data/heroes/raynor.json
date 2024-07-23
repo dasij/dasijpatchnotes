@@ -1,11 +1,11 @@
 {
-  "id": 9,
+  "id": 61,
   "name": "RAYNOR",
   "role": "Ranged Assassin",
   "image": "heroes_portraits/raynor.webp",
   "patchNotes": [
     {
-      "id": 9,
+      "id": 60,
       "title": "Hero mini-rework and talent rework",
       "general": [
         {

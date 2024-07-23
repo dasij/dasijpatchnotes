@@ -1,11 +1,11 @@
 {
-  "id": 8,
+  "id": 65,
   "name": "SGT-HAMMER",
   "role": "Ranged Assassin",
   "image": "heroes_portraits/sgt-hammer.webp",
   "patchNotes": [
     {
-      "id": 8,
+      "id": 65,
       "title": "Mini-hero rework and talent rework",
       "general": [
         {

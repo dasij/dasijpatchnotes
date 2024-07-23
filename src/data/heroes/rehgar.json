@@ -1,11 +1,11 @@
 {
-  "id": 18,
+  "id": 62,
   "name": "REHGAR",
   "role": "Healer",
   "image": "heroes_portraits/rehgar.webp",
   "patchNotes": [
     {
-      "id": 18,
+      "id": 62,
       "title": "Talent rework",
       "general": [
         {

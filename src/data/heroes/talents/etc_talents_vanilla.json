@@ -1,0 +1,207 @@
+{
+  "abilities": {
+    "basic": [
+      {
+        "name": "Powerslide (Q)",
+        "description": "Slide to a location dealing 105 damage and Stunning enemies hit for 1.25 seconds.",
+        "image": "etc_powerslide.png",
+        "abilityChanged": false,
+        "manaCost": "60 Mana",
+        "cooldown": "12s"
+      },
+      {
+        "name": "Face Melt (W)",
+        "description": "Deals 68 damage to nearby enemies, knocking them back.",
+        "image": "etc_face_melt.png",
+        "abilityChanged": false,
+        "manaCost": "55 Mana",
+        "cooldown": "12s"
+      },
+      {
+        "name": "Guitar Solo (E)",
+        "description": "Regenerate 66 Health per second for 4 seconds.",
+        "image": "etc_guitar_solo.png",
+        "abilityChanged": false,
+        "manaCost": "40 Mana",
+        "cooldown": "9s"
+      }
+    ],
+    "heroic": [
+      {
+        "name": "Mosh Pit (R)",
+        "description": "After 0.75 seconds, channel to stun nearby enemies for 4 seconds.",
+        "image": "etc_mosh_pit.png",
+        "abilityChanged": false,
+        "manaCost": "100 Mana",
+        "cooldown": "120s"
+      },
+      {
+        "name": "Stage Dive (R)",
+        "description": "Leap to target location, landing after 2.75 seconds, dealing 330 damage to enemies in the area, and slowing them by 50% for 4 seconds.",
+        "image": "etc_stage_dive.png",
+        "abilityChanged": false,
+        "manaCost": "70 Mana",
+        "cooldown": "75s"
+      }
+    ],
+    "trait": {
+      "name": "Rockstar (T)",
+      "description": " Using a Basic Ability grants 20 Armor for 2 seconds. Heroic Abilities grant 60 Armor.",
+      "image": "etc_rockstar.png",
+      "abilityChanged": false
+    }
+  },
+  "1": [
+    {
+      "name": "Guitar Hero",
+      "description": "While Guitar Solo is active, E.T.C. heals for 60% of his damage dealt by Basic Attacks.  Basic Attacks increase the duration of Guitar Solo by 0.5 seconds.",
+      "image": "etc_guitarsolo.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Prog Rock",
+      "description": "Quest: Gathering a Regeneration Globe permanently increases the healing per second of Guitar Solo by 5, to a maximum of 100Reward: After gathering 20 Regeneration Globes, Guitar Solo also heals nearby allied Heroes for 50 Health every second while it is active.",
+      "image": "etc_guitarsolo_a.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Block Party",
+      "description": "Using a Basic or Heroic ability also gives nearby allied Heroes a stack of Block, granting 75 Physical Armor against the next Hero Basic Attack for 8 seconds, reducing the damage taken by 75%. Maximum 2 stacks of Block.",
+      "image": "etc_rockstar.png",
+      "talentChanged": false
+    }
+  ],
+  "4": [
+    {
+      "name": "Crowd Surfer",
+      "description": "Allows Powerslide to travel over walls and terrain. If no enemies are hit, reduce the cooldown by 7 seconds and refund the Mana cost.",
+      "image": "etc_powerslide.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Loud Speakers",
+      "description": "Increases Face Melt range and knockback by 50%.",
+      "image": "etc_facemelt.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Speed Metal",
+      "description": "Using a Basic or Heroic ability also gives nearby allied Heroes 20% Movement Speed for 2.5 seconds.",
+      "image": "etc_speedmetal.png",
+      "talentChanged": false
+    }
+  ],
+  "7": [
+    {
+      "name": "Pinball Wizard",
+      "description": "Face Melt does 300% more damage to enemies recently affected by Powerslide.",
+      "image": "etc_facemelt.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Hammer-on",
+      "description": "While Guitar Solo is active your Basic Attacks deal 35% more damage.",
+      "image": "etc_guitarsolo.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Echo Pedal",
+      "description": "Using a Basic or Heroic Ability releases two pulses of 18 damage.  This deals 200% bonus damage to Minions, Mercenaries, and Monsters. The first occurs instantly, the second occurs 2 seconds later.",
+      "image": "etc_echopedal.png",
+      "talentChanged": false
+    }
+  ],
+  "10": [
+    {
+      "name": "Mosh Pit",
+      "description": "After 0.75 seconds, channel to stun nearby enemies for 4 seconds.",
+      "image": "etc_moshpit.png",
+      "talentChanged": false,
+      "manaCost": "100 Mana",
+      "cooldown": "120s"
+    },
+    {
+      "name": "Stage Dive",
+      "description": "Leap to target location, landing after 2.75 seconds, dealing 330 damage to enemies in the area, and slowing them by 50% for 4 seconds.",
+      "image": "etc_stagedive.png",
+      "talentChanged": false,
+      "manaCost": "70 Mana",
+      "cooldown": "75s"
+    }
+  ],
+  "13": [
+    {
+      "name": "Mic Check",
+      "description": "Hitting at least 2 targets with Face Melt reduces its cooldown by 6 seconds.",
+      "image": "etc_facemelt.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Encore",
+      "description": "Face Melt leaves an Amp behind, which will knock enemies away again 2 seconds later.Passive: Each enemy Hero hit by Face Melt or the Amp reduces your Heroic Ability cooldown by 5%.",
+      "image": "etc_facemelt_a.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Face Smelt",
+      "description": "Face Melt slows enemies by 50% fading over 2 seconds.",
+      "image": "etc_facemelt_b.png",
+      "talentChanged": false
+    }
+  ],
+  "16": [
+    {
+      "name": "Show Stopper",
+      "description": "After using Powerslide, gain 35 Armor for 4 seconds, reducing all damage taken by 35%.",
+      "image": "etc_powerslide.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Aggressive Shredding",
+      "description": "E.T.C.'s Basic Attacks reduce the cooldown of Guitar Solo by 0.75 seconds.",
+      "image": "etc_guitarsolo.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Imposing Presence",
+      "description": "Activate to reduce the Attack Speed by 50% and Movement Speed by 20% of nearby Heroes and Summons for 2.5 seconds.Passive: Heroes and Summons that attack your Hero have their Attack Speed Slowed by 20% for 2.5 seconds.",
+      "image": "talent_imposingpresence.png",
+      "talentChanged": false,
+      "cooldown": "20s"
+    }
+  ],
+  "20": [
+    {
+      "name": "Tour Bus",
+      "description": "Channeling Mosh Pit refreshes Powerslide's cooldown, and it can be cast to increase Mosh Pit's duration by 2 seconds.",
+      "image": "etc_moshpit.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Crowd Pleaser",
+      "description": "Stage Dive's impact area is 50% bigger, and its Slow is increased by 30%.",
+      "image": "etc_stagedive.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Death Metal",
+      "description": "Upon dying, a ghost uses Mosh Pit at E.T.C's location.",
+      "image": "etc_moshpit_a.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Storm Shield",
+      "description": "Activate to give all nearby allied Heroes a Shield for 20% of their max Health for 3 seconds.",
+      "image": "talent_stormshield.png",
+      "talentChanged": false,
+      "cooldown": "45s"
+    },
+    {
+      "name": "Bolt of the Storm",
+      "description": "Activate to teleport to a nearby location.",
+      "image": "talent_boltofthestorm.png",
+      "talentChanged": false,
+      "cooldown": "70s"
+    }
+  ]
+}

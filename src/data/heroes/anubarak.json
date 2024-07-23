@@ -1,0 +1,156 @@
+{
+  "id": 6,
+  "name": "ANUBARAK",
+  "role": "Tank",
+  "image": "heroes_portraits/anubarak.webp",
+  "show": "false",
+  "patchNotes": [
+    {
+      "id": 6,
+      "title": "",
+      "general": [
+        {
+          "change_id": "anubarak_",
+          "change": "",
+          "texts": [
+            {
+              "text": ""
+            }
+          ],
+          "developerCommentary": "",
+          "likes": 0,
+          "likedBy": {}
+        }
+      ],
+      "developerCommentary": "",
+      "sections": [
+        {
+          "name": "Level 1",
+          "changes": [
+            {
+              "change_id": "anubarak_",
+              "name": "",
+              "texts": [
+                {
+                  "text": "",
+                  "subtexts": [""]
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 4",
+          "changes": [
+            {
+              "change_id": "anubarak_",
+              "name": "",
+              "texts": [
+                {
+                  "text": "",
+                  "subtexts": [""]
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 7",
+          "changes": [
+            {
+              "change_id": "anubarak_",
+              "name": "",
+              "texts": [
+                {
+                  "text": "",
+                  "subtexts": [""]
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 10",
+          "changes": [
+            {
+              "change_id": "anubarak_",
+              "name": "",
+              "texts": [
+                {
+                  "text": "",
+                  "subtexts": [""]
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 13",
+          "changes": [
+            {
+              "change_id": "anubarak_",
+              "name": "",
+              "texts": [
+                {
+                  "text": "",
+                  "subtexts": [""]
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 16",
+          "changes": [
+            {
+              "change_id": "anubarak_",
+              "name": "",
+              "texts": [
+                {
+                  "text": "",
+                  "subtexts": [""]
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 20",
+          "changes": [
+            {
+              "change_id": "anubarak_",
+              "name": "",
+              "texts": [
+                {
+                  "text": "",
+                  "subtexts": [""]
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

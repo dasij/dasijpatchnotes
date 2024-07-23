@@ -1,11 +1,11 @@
 {
-  "id": 10,
+  "id": 17,
   "name": "DECKARD",
   "role": "Healer",
   "image": "heroes_portraits/deckard.webp",
   "patchNotes": [
     {
-      "id": 10,
+      "id": 17,
       "title": "Hero and Talents rework",
       "general": [
         {

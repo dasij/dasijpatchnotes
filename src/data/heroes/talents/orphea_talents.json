@@ -1,0 +1,202 @@
+{
+  "abilities": {
+    "basic": [
+      {
+        "name": "Shadow Waltz (Q)",
+        "description": "After 0.5 seconds, deal 165 damage to enemies in a line. Hitting a Hero with Shadow Waltz sets its cooldown to 2 seconds, refunds 35 Mana, and causes Orphea to dash a short distance upon moving.",
+        "image": "orphea_shadow_waltz.png",
+        "abilityChanged": false,
+        "manaCost": "35 Mana",
+        "cooldown": "5s"
+      },
+      {
+        "name": "Chomp (W)",
+        "description": "After 0.625 seconds, deal 305 damage to nearby enemies in front of Orphea.",
+        "image": "orphea_chomp.png",
+        "abilityChanged": false,
+        "manaCost": "60 Mana",
+        "cooldown": "10s"
+      },
+      {
+        "name": "Dread (E)",
+        "description": "Release a wave of dread that deals 85 damage to enemies hit.  Dread erupts 0.75 seconds after reaching the end of its path, dealing 175 damage. Enemies hit by Dread's wave or eruption are Slowed by 25% for 2 seconds.",
+        "image": "orphea_dread.png",
+        "abilityChanged": false,
+        "manaCost": "50 Mana",
+        "cooldown": "14s"
+      }
+    ],
+    "heroic": [
+      {
+        "name": "Eternal Feast (R)",
+        "description": "After 1.5 seconds, deal 210 damage in an area. Eternal Feast repeats every 1 second as long as it hits an enemy Hero.",
+        "image": "orphea_eternal_feast.png",
+        "abilityChanged": false,
+        "manaCost": "75 Mana",
+        "cooldown": "50s"
+      },
+      {
+        "name": "Crushing Jaws (R)",
+        "description": "After 1.25 seconds, pull enemies in an area towards the center, dealing 250 damage and Stunning them for 0.5 seconds.",
+        "image": "orphea_crushing_jaws.png",
+        "abilityChanged": false,
+        "manaCost": "75 Mana",
+        "cooldown": "70s"
+      }
+    ],
+    "trait": {
+      "name": "Overflowing Chaos (T)",
+      "description": " Hitting an enemy Hero with a Basic Ability grants 1 Chaos. Chaos can stack up to 3 times.While Orphea has Chaos, her Basic Attacks against Heroes consume all Chaos, dealing 50% increased damage per stack, and healing for 100% of the damage dealt.",
+      "image": "orphea_overflowing_chaos.png",
+      "abilityChanged": false
+    }
+  },
+  "1": [
+    {
+      "name": "En Pointe",
+      "description": "Shadow Waltz deals an increased 90% damage to enemies hit by its end and grants 1 additional Chaos.",
+      "image": "orphea_q.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Growing Nightmare",
+      "description": "Increase Dread's damage by 50%.  Quest: Hit 3 enemy Heroes with a single cast of Dread's eruption.Reward: Permanently increase Dread's eruption damage by 50% and increase the Slow amount of Dread's eruption by 15%.",
+      "image": "orphea_e.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Ancestral Strength",
+      "description": "Non-Heroic Abilities deal 15% more damage to Stunned, Rooted, Silenced or Slowed enemies. Enemy Heroes who are hit with Overflowing Chaos are Slowed by 20% for 2.5 seconds.",
+      "image": "orphea_trait.png",
+      "talentChanged": false
+    }
+  ],
+  "4": [
+    {
+      "name": "Allegrissimo",
+      "description": "Reduce the cooldown of Shadow Waltz by 1 second.Hitting Heroes with the end of Shadow Waltz sets its cooldown to 0.75 seconds.",
+      "image": "orphea_q.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Backbiter",
+      "description": "If Chomp hits a Hero, Orphea immediately dashes a short distance backwards.Passive: Gain 15% maximum Health.",
+      "image": "orphea_w.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Chaotic Assault",
+      "description": "Basic Attacks against enemy Heroes while having 3 stacks of Chaos deal an additional 75% bonus damage.",
+      "image": "orphea_trait.png",
+      "talentChanged": false
+    }
+  ],
+  "7": [
+    {
+      "name": "Insatiable",
+      "description": "Hitting a Hero with Chomp sets its cooldown to 2 seconds.",
+      "image": "orphea_w.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Ravenous Hunger",
+      "description": "Quest: Minions that die within 1.5 seconds of being hit by Chomp permanently increase its damage by 2 and heal Orphea for 60. Heroes that die increase its damage by 40 and heal Orphea for 25% of her maximum Health.",
+      "image": "orphea_w_2.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Mind Devourer",
+      "description": "Quest: Hitting Heroes with Dread increases its damage by 5, up to 150.Reward: After hitting 30 Heroes, hitting an enemy Hero with Dread's eruption sets its cooldown to 6 seconds and refunds 50 Mana.",
+      "image": "orphea_e.png",
+      "talentChanged": false
+    }
+  ],
+  "10": [
+    {
+      "name": "Eternal Feast",
+      "description": "After 1.5 seconds, deal 210 damage in an area. Eternal Feast repeats every 1 second as long as it hits an enemy Hero.",
+      "image": "orphea_ult_darkfall.png",
+      "talentChanged": false,
+      "manaCost": "75 Mana",
+      "cooldown": "50s"
+    },
+    {
+      "name": "Crushing Jaws",
+      "description": "After 1.25 seconds, pull enemies in an area towards the center, dealing 250 damage and Stunning them for 0.5 seconds.",
+      "image": "orphea_ult_thrasher.png",
+      "talentChanged": false,
+      "manaCost": "75 Mana",
+      "cooldown": "70s"
+    }
+  ],
+  "13": [
+    {
+      "name": "Determination",
+      "description": "After dashing with Shadow Waltz, Orphea gains 50 Spell Armor against the next enemy Ability, stacking up to 2 times. While Orphea has Determination, her Physical damage is increased by 15%.",
+      "image": "orphea_q.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Abyssal Symbiosis",
+      "description": "Hitting a Hero with Chomp instantly grants Orphea maximum Chaos and a 170 Shield for 3 seconds.",
+      "image": "orphea_w.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Invasive Miasma",
+      "description": "Activate to deal 150 damage to all nearby enemies after 2 seconds. For each Hero hit, heal for 182 and gain 1 Chaos.",
+      "image": "orphea_trait.png",
+      "talentChanged": false,
+      "cooldown": "10s"
+    }
+  ],
+  "16": [
+    {
+      "name": "Bond of Anguish",
+      "description": "Shadow Waltz deals bonus damage to Heroes equal to 3% of their maximum Health, healing Orphea for 50% of damage dealt.",
+      "image": "orphea_q.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Dead Magic",
+      "description": "Basic Attacks that consume Chaos ignore Armor and deal 90 Spell Damage to the target and all enemies around them.",
+      "image": "orphea_trait.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Lurking Terror",
+      "description": "After Dread erupts and for 2 seconds after, activate to cast Chomp from the eruption area. Enemy Heroes hit by this Chomp are Slowed by 70% for 1.5 seconds.",
+      "image": "orphea_e_terror.png",
+      "talentChanged": false,
+      "manaCost": "60 Mana",
+      "cooldown": "10s"
+    }
+  ],
+  "20": [
+    {
+      "name": "Monster Within",
+      "description": "Eternal Feast grants 1 Chaos each time it hits a Hero. While Eternal Feast is active and for 5 seconds afterwards, Orphea's Basic Abilities recharge 150% faster.",
+      "image": "orphea_ult_darkfall.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Engulfing Oblivion",
+      "description": "Crushing Jaws reduces the Armor of Heroes hit by 50 for 3 seconds. Takedowns set its cooldown to 5 seconds.",
+      "image": "orphea_ult_thrasher.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Eldritch Conduit",
+      "description": "Each Chaos consumed increases Orphea's Spell Power by 3%, up to 30%. After reaching the maximum bonus, the Spell Power is increased by an additional 30%. Lasts 10 seconds.",
+      "image": "orphea_trait.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Final Toccata",
+      "description": "Activate to instantly reset the cooldown of Shadow Waltz. For the next 5 seconds, dashing with Shadow Waltz resets its cooldown and increases the duration of Final Toccata by 1 second.",
+      "image": "orphea_reset.png",
+      "talentChanged": false,
+      "cooldown": "20s"
+    }
+  ]
+}

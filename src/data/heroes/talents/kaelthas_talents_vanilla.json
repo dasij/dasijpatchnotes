@@ -1,0 +1,198 @@
+{
+  "abilities": {
+    "basic": [
+      {
+        "name": "Flamestrike (Q)",
+        "description": "After 1 second, deal 345 damage in an area. Verdant Spheres increases the radius by 50%.",
+        "image": "kaelthas_flamestrike.png",
+        "abilityChanged": false,
+        "manaCost": "70 Mana",
+        "cooldown": "7s"
+      },
+      {
+        "name": "Living Bomb (W)",
+        "description": "Deal 126 damage over 3 seconds to an enemy, then they explode dealing 215 damage to all nearby enemies.  Other Heroes damaged by this explosion are also affected by Living Bomb, though the secondary explosions cannot spread.Verdant Spheres makes this Ability cost no Mana and have no cooldown.",
+        "image": "kaelthas_living_bomb.png",
+        "abilityChanged": false,
+        "manaCost": "50 Mana",
+        "cooldown": "10s"
+      },
+      {
+        "name": "Gravity Lapse (E)",
+        "description": "Stun the first enemy hit for 1 second. Verdant Spheres causes Gravity Lapse to stun the first 3 enemies hit and increases the stun duration by 50%.",
+        "image": "kaelthas_gravity_lapse.png",
+        "abilityChanged": false,
+        "manaCost": "90 Mana",
+        "cooldown": "12s"
+      }
+    ],
+    "heroic": [
+      {
+        "name": "Phoenix (R)",
+        "description": "Launch a Phoenix to an area, dealing 84 damage to enemies along the way. The Phoenix persists for 7 seconds, attacking enemies for 84 damage and splashing for 42 damage.",
+        "image": "kaelthas_phoenix.png",
+        "abilityChanged": false,
+        "manaCost": "80 Mana",
+        "cooldown": "60s"
+      },
+      {
+        "name": "Pyroblast (R)",
+        "description": "After 1.5 seconds, cast a slow-moving fireball that deals 810 damage to an enemy Hero and 405 damage to enemies nearby.",
+        "image": "kaelthas_pyroblast.png",
+        "abilityChanged": false,
+        "manaCost": "80 Mana",
+        "cooldown": "100s"
+      }
+    ],
+    "trait": {
+      "name": "Verdant Spheres (T)",
+      "description": " Activate to make Kael'thas's next Basic Ability more powerful.",
+      "image": "kaelthas_verdant_spheres.png",
+      "abilityChanged": false
+    }
+  },
+  "1": [
+    {
+      "name": "Convection",
+      "description": "Quest: Damaging an enemy Hero with Flamestrike increase its damage by 5, up to 100. This bonus is lost on death.Reward: After hitting 20 enemy Heroes, increase Flamestrike damage by an additional 100 and no longer lose any bonuses on death.",
+      "image": "kaelthas_flamestrike.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Fel Infusion",
+      "description": "Increases Kael'thas's Spell Power by 4%. Kael'thas heals for 94 Health when activating Verdant Spheres.",
+      "image": "kaelthas_verdantspheres.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Mana Addict",
+      "description": "Quest: Gathering a Regeneration Globe increases Kael'thas's maximum Mana by 15.Reward: After gathering 20 Globes, Kael'thas can activate Arcane Barrier to gain a Shield equal to 100% of his maximum Mana for 4 seconds. 45 second cooldown.",
+      "image": "kaelthas_manaaddict.png",
+      "talentChanged": false
+    }
+  ],
+  "4": [
+    {
+      "name": "Nether Wind",
+      "description": "Increases Gravity Lapse's range by 30%. When Gravity Lapse hits an enemy Hero, refund 80 Mana.",
+      "image": "kaelthas_gravitylapse.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Energy Roil",
+      "description": "Reduce the Mana cost of Gravity Lapse by 70.  If Gravity Lapse hits a Hero, reduce its cooldown by 8 seconds.",
+      "image": "kaelthas_gravitylapse_a.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Mana Tap",
+      "description": "Activating Verdant Spheres restores 5% of Kael'thas's maximum Mana.",
+      "image": "kaelthas_verdantspheres.png",
+      "talentChanged": false
+    }
+  ],
+  "7": [
+    {
+      "name": "Burned Flesh",
+      "description": "When Flamestrike damages 2 or more Heroes, they take additional damage equal to 8% of their maximum Health.",
+      "image": "kaelthas_flamestrike.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Sun King's Fury",
+      "description": "Living Bombs that spread to enemy Heroes deal 35% more damage.",
+      "image": "kaelthas_livingbomb.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Sunfire Enchantment",
+      "description": "Activating Verdant Spheres causes Kael'thas's next 2 Basic Attacks to instead deal 115 Spell Damage.  If both of these Attacks hit enemy Heroes, gain 15% Spell Power for 10 seconds.",
+      "image": "kaelthas_verdantspheres.png",
+      "talentChanged": false
+    }
+  ],
+  "10": [
+    {
+      "name": "Phoenix",
+      "description": "Launch a Phoenix to an area, dealing 84 damage to enemies along the way. The Phoenix persists for 7 seconds, attacking enemies for 84 damage and splashing for 42 damage.",
+      "image": "kaelthas_phoenix.png",
+      "talentChanged": false,
+      "manaCost": "80 Mana",
+      "cooldown": "60s"
+    },
+    {
+      "name": "Pyroblast",
+      "description": "After 1.5 seconds, cast a slow-moving fireball that deals 810 damage to an enemy Hero and 405 damage to enemies nearby.",
+      "image": "kaelthas_pyroblast.png",
+      "talentChanged": false,
+      "manaCost": "80 Mana",
+      "cooldown": "100s"
+    }
+  ],
+  "13": [
+    {
+      "name": "Pyromaniac",
+      "description": "Each time Living Bomb deals periodic damage, Kael'thas's Basic Ability cooldowns are reduced by 0.5 seconds.",
+      "image": "kaelthas_livingbomb.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Backdraft",
+      "description": "Living Bomb's explosion slows enemy Movement Speed by 30% for 2 seconds.",
+      "image": "kaelthas_livingbomb_var1.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Fission Bomb",
+      "description": "Increases Living Bomb's explosion radius by 20%.",
+      "image": "kaelthas_livingbomb_b.png",
+      "talentChanged": false
+    }
+  ],
+  "16": [
+    {
+      "name": "Fury of the Sunwell",
+      "description": "Flamestrike will explode a second time 1.5 seconds later.",
+      "image": "kaelthas_flamestrike.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Ignite",
+      "description": "Flamestrikes apply Living Bomb to the enemy Hero closest to its center who is not currently affected by Living Bomb.",
+      "image": "kaelthas_livingbomb.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Twin Spheres",
+      "description": "Verdant Spheres gains a second charge.Passive: Kael'thas benefits from all of his level 7 talents.",
+      "image": "kaelthas_verdantspheres.png",
+      "talentChanged": false
+    }
+  ],
+  "20": [
+    {
+      "name": "Rebirth",
+      "description": "Increases Phoenix duration by 100%. While alive, the Phoenix may be ordered to move to a different location.",
+      "image": "kaelthas_phoenix.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Presence Of Mind",
+      "description": "Increases Pyroblast's explosion radius by 50%. Heroes that are hit by Flamestrike or have Living Bomb spread to them reduce the cooldown of Pyroblast by 10 seconds.",
+      "image": "kaelthas_pyroblast.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Master of Flames",
+      "description": "Living Bomb's spread from explosions can now also spread Living Bomb.",
+      "image": "kaelthas_livingbomb.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Flamethrower",
+      "description": "Increases the cast range of Flamestrike by 40%. If Flamestrike hits 2 or more Heroes, its cooldown is reduced by 4 seconds.",
+      "image": "kaelthas_flamestrike.png",
+      "talentChanged": false
+    }
+  ]
+}

@@ -1,11 +1,11 @@
 {
-  "id": 11,
+  "id": 25,
   "name": "GARROSH",
   "role": "Tank",
   "image": "heroes_portraits/garrosh.webp",
   "patchNotes": [
     {
-      "id": 11,
+      "id": 25,
       "title": "Talent Rework",
       "general": [
         {

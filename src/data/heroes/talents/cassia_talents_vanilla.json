@@ -1,0 +1,200 @@
+{
+  "abilities": {
+    "basic": [
+      {
+        "name": "Lightning Fury (Q)",
+        "description": "Hurl a lightning javelin that deals 158 damage to the first enemy hit and splits into two lightning bolts that deal 158 damage to enemies in their path.",
+        "image": "cassia_lightning_fury.png",
+        "abilityChanged": false,
+        "manaCost": "20 Mana",
+        "cooldown": "5s"
+      },
+      {
+        "name": "Blinding Light (W)",
+        "description": "After 0.5 seconds, deal 50 damage and Blind enemies in the target area for 2 seconds.Passive: Cassia deals 15% increased damage to Blinded targets.",
+        "image": "cassia_blinding_light.png",
+        "abilityChanged": false,
+        "manaCost": "50 Mana",
+        "cooldown": "15s"
+      },
+      {
+        "name": "Fend (E)",
+        "description": "Charge at an enemy, and upon arriving Channel for up to 1.5 seconds, dealing 64 damage to enemies in front of Cassia every 0.25 seconds. Deals 50% reduced damage to non-Heroes. Avoidance remains charged while Channeling.",
+        "image": "cassia_fend.png",
+        "abilityChanged": false,
+        "manaCost": "50 Mana",
+        "cooldown": "10s"
+      }
+    ],
+    "heroic": [
+      {
+        "name": "Ball Lightning (R)",
+        "description": "Throw a ball of lightning at an enemy Hero that bounces up to 6 times between nearby enemy Heroes and Cassia, dealing 180 damage to enemies hit.",
+        "image": "cassia_ball_lightning.png",
+        "abilityChanged": false,
+        "manaCost": "60 Mana",
+        "cooldown": "60s"
+      },
+      {
+        "name": "Valkyrie (R)",
+        "description": "Summon a Valkyrie that rushes to Cassia after 0.75 seconds, pulling the first enemy Hero hit, dealing 225 damage and Stunning them for 0.5 seconds at the end of her path. The Valkyrie knocks back all other enemy Heroes in her way.",
+        "image": "cassia_valkyrie.png",
+        "abilityChanged": false,
+        "manaCost": "60 Mana",
+        "cooldown": "60s"
+      }
+    ],
+    "trait": {
+      "name": "Avoidance (T)",
+      "description": " While moving, Cassia gradually gains up to 30 Armor over 3 seconds. After being stationary for 0.75 seconds, the Armor is rapidly lost over .5 seconds. Avoidance remains charged while Fending.",
+      "image": "cassia_avoidance.png",
+      "abilityChanged": false
+    }
+  },
+  "1": [
+    {
+      "name": "Thunderstroke",
+      "description": "Increase the damage of Lightning Fury by 15.Quest: Lightning Fury's damage is increased by 1.5 every time it hits a Hero.",
+      "image": "cassia_lightningfury.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Impale",
+      "description": "Increase Fend's cast range and area of effect by 25%. It deals an additional 50% damage to enemies below 50% Health.",
+      "image": "cassia_fend.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Charged Strikes",
+      "description": "Gain 15% Attack Speed. Every 3rd Basic Attack deals 20% bonus damage and bounces to nearby enemy Heroes.",
+      "image": "cassia_new_chargedstrikes.png",
+      "talentChanged": false
+    }
+  ],
+  "4": [
+    {
+      "name": "Plate of the Whale",
+      "description": "Regenerate 6 Health per second while Avoidance is active. If fully charged, gain an additional 12 Health per second.",
+      "image": "cassia_avoidance_b.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Ring of the Leech",
+      "description": "Basic Attacks against your primary target heal for 20% of their damage. If an enemy is Blinded, this also affects Lightning Fury and Fend.",
+      "image": "cassia_ringoftheleech.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Inner Light",
+      "description": "Activate to heal for 25% of your maximum Health over 5 seconds. Enemy Heroes hit with Lightning Fury lower the cooldown of this ability by 10 seconds.",
+      "image": "cassia_innerlight.png",
+      "talentChanged": false,
+      "cooldown": "70s"
+    }
+  ],
+  "7": [
+    {
+      "name": "Grounding Rod",
+      "description": "Enemies hit by Lightning Fury or Fend are Slowed by 20% for 2 seconds.",
+      "image": "cassia_combo_q_e.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Seraph's Hymn",
+      "description": "Basic Attacks against your primary enemy Hero grant 10 Mana and reduce the cooldown of Blinding Light by 2 seconds.Passive: Increase the passive damage bonus of Blinding Light from 15% to 30%.",
+      "image": "cassia_blindinglight.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Surge of Light",
+      "description": "After taking 650 damage with Avoidance active, Cassia can activate Avoidance to deal 220 damage to enemies around her.",
+      "image": "cassia_avoidance_b.png",
+      "talentChanged": false
+    }
+  ],
+  "10": [
+    {
+      "name": "Ball Lightning",
+      "description": "Throw a ball of lightning at an enemy Hero that bounces up to 6 times between nearby enemy Heroes and Cassia, dealing 180 damage to enemies hit.",
+      "image": "cassia_balllightning.png",
+      "talentChanged": false,
+      "manaCost": "60 Mana",
+      "cooldown": "60s"
+    },
+    {
+      "name": "Valkyrie",
+      "description": "Summon a Valkyrie that rushes to Cassia after 0.75 seconds, pulling the first enemy Hero hit, dealing 225 damage and Stunning them for 0.5 seconds at the end of her path. The Valkyrie knocks back all other enemy Heroes in her way.",
+      "image": "cassia_valkrie.png",
+      "talentChanged": false,
+      "manaCost": "60 Mana",
+      "cooldown": "60s"
+    }
+  ],
+  "13": [
+    {
+      "name": "War Matron",
+      "description": "Cassia becomes Protected while Channeling Fend and for an additional 1 second if the Channel is completed.",
+      "image": "cassia_fend.png",
+      "talentChanged": false
+    },
+    {
+      "name": "War Traveler",
+      "description": "Gain 5% Movement Speed. While Avoidance is fully charged, gain an additional 10% Movement Speed and Mounting is instant.",
+      "image": "cassia_avoidance_b.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Gloves Of Alacrity",
+      "description": "Gain 1 Basic Attack range. While Avoidance is fully charged, gain an additional 1 Basic Attack range.",
+      "image": "cassia_new_gloves.png",
+      "talentChanged": false
+    }
+  ],
+  "16": [
+    {
+      "name": "Power Strike",
+      "description": "Lightning Fury pierces but only splits on Heroes. Enemy Heroes hit reduce its cooldown by 1 second and become marked for 15 seconds. Upon reaching 3 marks, remove them and cast a Blinding Light at their feet.",
+      "image": "cassia_combo_q_w.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Static Electricity",
+      "description": "Gain 2 additional charges of Lightning Fury. Fend's impact launches a lightning bolt towards each nearby enemy Hero.",
+      "image": "cassia_combo_q_e.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Martial Law",
+      "description": "Basic Attacks against enemy Heroes deal bonus damage equal to 1% of their maximum Health. Increase this to 3% if they are Stunned, Rooted, Slowed, or Blinded.",
+      "image": "talent_autoattack_searing.png",
+      "talentChanged": false
+    }
+  ],
+  "20": [
+    {
+      "name": "Infinite Lightning",
+      "description": "Ball Lightning can now bounce indefinitely. Every bounce reduces its cooldown by 5 seconds.",
+      "image": "cassia_balllightning.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Imprisoning Light",
+      "description": "Upon impaling an enemy Hero, they are Blinded for 5 seconds and Cassia's Valkyrie creates a wave of light that deals 200 damage to nearby enemies. This wave Silences and Roots them for 3 seconds.",
+      "image": "cassia_valkrie.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Titan's Revenge",
+      "description": "Cassia's Basic Attacks now ignore Armor and while Avoidance is fully charged, they deal an additional 20% bonus damage.",
+      "image": "cassia_avoidance_b.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Rockstopper",
+      "description": "Activate to fully charge Avoidance and increase its Armor value to 60 for 4 seconds.  Losing Avoidance removes this bonus.",
+      "image": "cassia_avoidance.png",
+      "talentChanged": false,
+      "cooldown": "30s"
+    }
+  ]
+}

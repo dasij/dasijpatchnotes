@@ -1,0 +1,212 @@
+{
+  "abilities": {
+    "basic": [
+      {
+        "name": "Particle Grenade (Q)",
+        "description": "Launch a particle grenade that deals 75 damage to enemies within the area. Deals 50% damage to Structures.Stores up to 4 charges.",
+        "image": "zarya_particle_grenade.png",
+        "abilityChanged": false,
+        "cooldown": "8s"
+      },
+      {
+        "name": "Personal Barrier (W)",
+        "description": "Gain a Shield that absorbs 560 damage for 3 seconds.",
+        "image": "zarya_personal_barrier.png",
+        "abilityChanged": false,
+        "cooldown": "10s"
+      },
+      {
+        "name": "Shield Ally (E)",
+        "description": "Grants an allied Hero a Shield that absorbs 420 damage for 3 seconds.",
+        "image": "zarya_shield_ally.png",
+        "abilityChanged": false,
+        "cooldown": "12s"
+      }
+    ],
+    "heroic": [
+      {
+        "name": "Graviton Surge (R)",
+        "description": "Launch a gravity bomb that detonates after 1 second and draws enemy Heroes toward the center for 2.5 seconds. Affected Heroes take 30 damage a second.",
+        "image": "zarya_graviton_surge.png",
+        "abilityChanged": false,
+        "cooldown": "60s"
+      },
+      {
+        "name": "Expulsion Zone (R)",
+        "description": "Launch a gravity bomb that deals 124 damage and creates an expulsion zone for 3.5 seconds. Enemies who enter the affected area are knocked back and have their Movement Speed reduced by 50% for 1 second.",
+        "image": "zarya_expulsion_zone.png",
+        "abilityChanged": false,
+        "cooldown": "45s"
+      }
+    ],
+    "trait": {
+      "name": "Energy (T)",
+      "description": " Each time Zarya's Personal Barrier or Shield Ally absorbs 9 damage, her Energy is increased by 1. Each point of Energy increases Zarya's damage by 2%. After 0.5 seconds, Energy decays by 3 per second.",
+      "image": "zarya_energy.png",
+      "abilityChanged": false
+    }
+  },
+  "1": [
+    {
+      "name": "Demolitions Expert",
+      "description": "Quest: For every 5 enemy Heroes hit by Particle Grenade, its recharge rate lowers by 0.4375 seconds, up to 3.5 seconds.Reward: Once Particle Grenade has hit 40 enemy Heroes, its radius is increased by 15%.",
+      "image": "zarya_particlegrenade.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Together We Are Strong",
+      "description": "For 3 seconds after gaining Shield Ally, every 5.35 damage done by the bearer contributes 1 Energy to Zarya, up to 40 Energy per Shield.",
+      "image": "zarya_shieldally.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Feel the Heat",
+      "description": "Zarya's Basic Attack deals 50% additional damage to enemies in melee range. While above 40 Energy, Zarya's Basic Attack size is increased by 35%.",
+      "image": "talent_autoattack_damage.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Maximum Charge",
+      "description": "Regen Globes now instantly grant 20 Energy.Quest: Spend 150 seconds at or above 50 Energy.Reward: Gain an additional 20 maximum Energy.",
+      "image": "zarya_energy.png",
+      "talentChanged": false
+    }
+  ],
+  "4": [
+    {
+      "name": "I Am the Strongest",
+      "description": "Personal Barrier absorbs an additional 140 damage. Passive: Damage absorbed by Zarya's Shields contributes 20% more Energy.",
+      "image": "zarya_personalbarrier.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Give Me Twenty",
+      "description": "Quest: Regeneration Globes increase Shield Ally absorb amount by 15, up to 300 permanently. Reward: After collecting 20 Regen Globes, permanently reduce the cooldown of Shield Ally by 2 seconds.",
+      "image": "zarya_shieldally.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Speed Barrier",
+      "description": "Shield Ally increases the allied Hero's Movement Speed by 50% for the duration.",
+      "image": "zarya_shieldally_a.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Defensive Shielding",
+      "description": "Upon expiration or breaking, Personal Barrier and Shield Ally grant 75 Physical Armor against the next 2 Hero Basic Attacks for 6 seconds, reducing the damage taken by 75%.",
+      "image": "zarya_pumped.png",
+      "talentChanged": false
+    }
+  ],
+  "7": [
+    {
+      "name": "Pinpoint Accuracy",
+      "description": "Particle Grenade deals 30 more damage and Slows Movement Speed by 25% for 2 seconds to enemies hit by the center of the blast.",
+      "image": "zarya_particlegrenade.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Deep Burn",
+      "description": "Hitting a Hero with Particle Grenade causes Basic Attacks against them to generate 2 Energy. Lasts 3 seconds.",
+      "image": "zarya_particlegrenade_a.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Explosive Barrier",
+      "description": "Upon expiration or breaking, Personal Barrier explodes, dealing 110 damage to nearby enemies.",
+      "image": "zarya_personalbarrier.png",
+      "talentChanged": false
+    }
+  ],
+  "10": [
+    {
+      "name": "Graviton Surge",
+      "description": "Launch a gravity bomb that detonates after 1 second and draws enemy Heroes toward the center for 2.5 seconds. Affected Heroes take 30 damage a second.",
+      "image": "zarya_gravitonsurge.png",
+      "talentChanged": false,
+      "cooldown": "60s"
+    },
+    {
+      "name": "Expulsion Zone",
+      "description": "Launch a gravity bomb that deals 124 damage and creates an expulsion zone for 3.5 seconds. Enemies who enter the affected area are knocked back and have their Movement Speed reduced by 50% for 1 second.",
+      "image": "zarya_expulsionzone.png",
+      "talentChanged": false,
+      "cooldown": "45s"
+    }
+  ],
+  "13": [
+    {
+      "name": "Unstoppable Competitor",
+      "description": "Personal Barrier makes Zarya Unstoppable for up to 2 seconds.",
+      "image": "zarya_personalbarrier.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Spell Barrier",
+      "description": "Upon expiration or breaking, Personal Barrier grants Zarya 75 Spell Armor for 3 Seconds, reducing the damage taken from Abilities by 75%.",
+      "image": "zarya_personalbarrier_a.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Endurance Training",
+      "description": "While at or above 75 Energy, Zarya gains 20 Armor, reducing all damage taken by 20%.",
+      "image": "zarya_energy.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Pain is Temporary",
+      "description": "Activate to consume all Energy and gain a Shield that absorbs 0.5% of Zarya's maximum Health per Energy consumed and lasts for 3 seconds. Zarya may only have one personal Shield active on herself at a time.",
+      "image": "zarya_painistemporary.png",
+      "talentChanged": false,
+      "manaCost": "1 Mana",
+      "cooldown": "30s"
+    }
+  ],
+  "16": [
+    {
+      "name": "Cleansing Shield",
+      "description": "Causes Shield Ally to remove all disabling effects and reduces its cooldown by 3 seconds.",
+      "image": "zarya_shieldally.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Gain Train",
+      "description": "Shield Ally now grants an untalented Shield to a nearby ally upon impact.",
+      "image": "zarya_shieldally_a.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Born in Battle",
+      "description": "While at or above 75 Energy, Zarya's cooldowns regenerate 25% faster.",
+      "image": "zarya_energy.png",
+      "talentChanged": false
+    }
+  ],
+  "20": [
+    {
+      "name": "Gravity Kills",
+      "description": "Increases Graviton Surge's duration by 1 second and it Silences Heroes caught in its area.",
+      "image": "zarya_gravitonsurge.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Clear Out",
+      "description": "Reduce Expulsion Zone's cooldown by 25 seconds and increase its duration by 1.5 seconds.",
+      "image": "zarya_expulsionzone.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Grenadier",
+      "description": "All Particle Grenade charges are returned at once.",
+      "image": "zarya_particlegrenade.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Unyielding Defender",
+      "description": "Activate to reset the cooldown of Personal Barrier and Shield Ally.",
+      "image": "zarya_unyieldingdefender.png",
+      "talentChanged": false,
+      "cooldown": "60s"
+    }
+  ]
+}

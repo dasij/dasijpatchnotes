@@ -1,12 +1,12 @@
 {
-  "id": 22,
+  "id": 27,
   "name": "GENJI",
   "role": "Ranged Assassin",
   "image": "heroes_portraits/genji.webp",
   "show": "falses",
   "patchNotes": [
     {
-      "id": 22,
+      "id": 27,
       "title": "Talent overhaul and Hero Changes",
       "general": [
         {

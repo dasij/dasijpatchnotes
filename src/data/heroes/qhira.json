@@ -1,11 +1,11 @@
 {
-  "id": 3,
+  "id": 59,
   "name": "QHIRA",
   "role": "Melee Assassin",
   "image": "heroes_portraits/qhira.webp",
   "patchNotes": [
     {
-      "id": 3,
+      "id": 59,
       "title": "Talent rework",
       "developerCommentary": "Right now Qhira is one melee assassin that has a kit focused only on fighting without any clear wave and even with that she's also not the strongest fighter. My objective here will be to bring Qhira fight potential to the maximum while i give her little options for PvE as i want her to be an PvP focused character and for that i will give her tools to maximize the Spiderman potential",
       "general": [
