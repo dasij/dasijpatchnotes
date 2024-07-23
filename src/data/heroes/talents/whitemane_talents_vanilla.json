@@ -4,7 +4,7 @@
       {
         "name": "Desperate Plea (Q)",
         "description": "Heal an allied Hero for 140 and gain Desperation for 4 seconds.Desperation increases Desperate Plea's Mana cost by 40, and stacks up to 3 times.Current Mana Cost: 40",
-        "image": "whitemane_desperateplea.png",
+        "image": "whitemane_desperation.png",
         "abilityChanged": false,
         "manaCost": "40 Mana",
         "cooldown": "1s"
@@ -19,14 +19,14 @@
       {
         "name": "Searing Lash (E)",
         "description": "After 0.5 seconds, smite enemies in a straight line for 82 damage.If the first strike hits an enemy Hero, a second strike will occur after a short delay.",
-        "image": "whitemane_searinglash.png",
+        "image": "whitemane_lash.png",
         "abilityChanged": false,
         "cooldown": "6s"
       },
       {
         "name": "Clemency (?)",
         "description": "Activate to cast Inquisition on an allied Hero, healing them for up to 329 over 3 seconds while Channeling. Removes a stack of DesperationShares a cooldown with Inquisition.",
-        "image": "whitemane_clemency.png",
+        "image": "whitemane_clemency.webp",
         "abilityChanged": false,
         "cooldown": "12s"
       }
@@ -35,14 +35,14 @@
       {
         "name": "Scarlet Aegis (R)",
         "description": "Bolster the spirits of nearby allied Heroes, healing them for 300 and granting them 40 Armor for 4 seconds.",
-        "image": "whitemane_scarletaegis.png",
+        "image": "whitemane_aegis.png",
         "abilityChanged": false,
         "cooldown": "60s"
       },
       {
         "name": "Divine Reckoning (R)",
         "description": "After 1 second, consecrate an area for 4 seconds, dealing 50 damage every 0.5 seconds to enemies inside. 25% of the damage dealt to Heroes is returned as Mana.",
-        "image": "whitemane_divinereckoning.png",
+        "image": "whitemane_reckoning.png",
         "abilityChanged": false,
         "cooldown": "75s"
       }
@@ -50,7 +50,7 @@
     "trait": {
       "name": "Fanatical Power (T)",
       "description": "Activate to gain 25% Spell Power and lose 25 Armor for 5 seconds.",
-      "image": "whitemane_fanaticalpower.png",
+      "image": "whitemane_zeal.png",
       "abilityChanged": false,
       "cooldown": "40s"
     }

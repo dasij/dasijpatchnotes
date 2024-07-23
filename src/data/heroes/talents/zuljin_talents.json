@@ -28,7 +28,7 @@
       {
         "name": "Amani Rage (?)",
         "description": "Activate to cause Zul'jin to instantly lose 50% of his current Health and heal for that amount over 10 seconds.",
-        "image": "zuljin_amanirage.png",
+        "image": "zuljin_davoodooshuffle.png",
         "abilityChanged": false,
         "cooldown": "30s"
       }
@@ -37,7 +37,7 @@
       {
         "name": "Taz'dingo! (R)",
         "description": "For the next 4 seconds, Zul'jin is Unkillable, and cannot be reduced to less than 1 Health. Taz'dingo!",
-        "image": "zuljin_tazdingo!.png",
+        "image": "zuljin_tazdingo.png",
         "abilityChanged": false,
         "manaCost": "75 Mana",
         "cooldown": "90s"
@@ -54,7 +54,7 @@
     "trait": {
       "name": "Berserker (T)",
       "description": " Activate to increase Basic Attack damage by 25% but consume 2% maximum Health per attack.Passive: Zul'jin attacks 1% faster for every 1% of maximum Health missing.You Want Axe?Quest: Every 5 Basic Attacks against Heroes permanently increases Basic Attack damage by 1.Reward: After attacking Heroes 75 times, Basic Attack range is increased by 1.1.Reward: After attacking Heroes 150 times, Twin Cleave now revolves twice.",
-      "image": "zuljin_berserker.png",
+      "image": "zuljin_berzerker.png",
       "abilityChanged": false
     }
   },

@@ -28,7 +28,7 @@
       {
         "name": "Helping Hand (?)",
         "description": "Activate to use Hook that can hit allied Heroes. Hitting an allied Hero this way reduces the cooldown of Hook by 8 seconds.After reaching level 13, Helping Hand's range is increased by 40%.",
-        "image": "stitches_helpinghand.png",
+        "image": "stitches_helpinghand.webp",
         "abilityChanged": false,
         "manaCost": "75 Mana",
         "cooldown": "16s"
@@ -46,7 +46,7 @@
       {
         "name": "Gorge (R)",
         "description": "Consume an enemy Hero, trapping them for 4 seconds. When Gorge ends, the enemy Hero takes 274 damage. The trapped Hero cannot move or act and doesn't take damage from other sources.",
-        "image": "stitches_gorge.png",
+        "image": "stitches_cannibalize.png",
         "abilityChanged": false,
         "manaCost": "70 Mana",
         "cooldown": "65s"
@@ -55,7 +55,7 @@
     "trait": {
       "name": "Shambling Horror (T)",
       "description": "Activate to spread Vile Gas in a large area every second and prevent your Movement Speed from being reduced below 110% for 4 seconds.Vile GasHitting enemies with Basic Attacks or the inner area of Slam afflicts them with Vile Gas, dealing an additional 36 damage over 4 seconds. Deals 150% more damage to Minions, Mercenaries, and Monsters.",
-      "image": "stitches_shamblinghorror.png",
+      "image": "stitches_acidcloud.png",
       "abilityChanged": false,
       "cooldown": "60s"
     }

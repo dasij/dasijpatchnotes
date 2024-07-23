@@ -192,7 +192,7 @@
               "name": "<vanilla, talents, 16, 2>",
               "texts": [
                 {
-                  "text": "Additional functionality: Grants 0.25 seconds of stealth for each stack."
+                  "text": "Additional functionality: Grants 0.25 seconds of unrevealable stealth for each stack."
                 }
               ],
               "developerCommentary": "I want to give this talent an appeal without buffing the damage as it leads to conflicts with <modified, talents, 16, 1> as a stat damage competitor with that in mind i want to make it pickable for another reason.",

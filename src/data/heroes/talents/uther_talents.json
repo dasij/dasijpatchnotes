@@ -47,7 +47,7 @@
     "trait": {
       "name": "Devotion",
       "description": " Uther's Basic Abilities grant 25 Armor to allied Heroes, and 15 to Uther, for 2 seconds.Eternal VanguardUpon dying, Uther becomes an Invulnerable spirit for up to 8 seconds. While in spirit form, Uther can heal allies with Flash of Light for 230.",
-      "image": "uther_devotion.png",
+      "image": "uther_eternaldevotion.png",
       "abilityChanged": false
     }
   },

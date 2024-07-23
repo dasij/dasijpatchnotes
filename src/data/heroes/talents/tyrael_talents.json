@@ -4,7 +4,7 @@
       {
         "name": "El'druin's Might (Q)",
         "description": "Throw El'druin to the target area, dealing 110 damage to nearby enemies and Slowing them by 25% for 2.5 seconds. It can be reactivated within 5 seconds to teleport Tyrael to El'druin and Slow nearby enemies again.",
-        "image": "tyrael_eldruinsmight.png",
+        "image": "tyrael_eldruinsmight_a.png",
         "abilityChanged": false,
         "manaCost": "45 Mana",
         "cooldown": "12s"
@@ -47,7 +47,7 @@
     "trait": {
       "name": "Archangel's Wrath (T)",
       "description": " Upon dying, become Invulnerable and gain 20% Movement Speed for 4 seconds. Upon expiration, explode, dealing 450 damage and reducing Tyrael's death timer by 10% per enemy Hero hit.Archangel's Wrath reduces nearby enemy Heroes' damage by 50% while active and for 3 seconds when it expires.",
-      "image": "tyrael_archangelswrath.png",
+      "image": "tyrael_archangelswrath.webp",
       "abilityChanged": false
     }
   },
@@ -115,7 +115,7 @@
     {
       "name": "Judgment",
       "description": "After 0.75 seconds, charge an enemy Hero, dealing 150 damage and Stunning them for 1.5 seconds. Nearby enemies are knocked away and take 75 damage.",
-      "image": "tyrael_judgement.png",
+      "image": "tyrael_judgment.png",
       "talentChanged": false,
       "manaCost": "80 Mana",
       "cooldown": "70s"
@@ -173,7 +173,7 @@
     {
       "name": "Angel of Justice",
       "description": "Increases the cast range of Judgment by 50%, and reduces the cooldown by 40 seconds.",
-      "image": "tyrael_judgement.png",
+      "image": "tyrael_judgment.png",
       "talentChanged": false
     },
     {

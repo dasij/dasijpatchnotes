@@ -54,7 +54,7 @@
   },
   "1": [
     {
-      "name": "{highlight}Cyber Agility{/highlight}",
+      "name": "Cyber Agility",
       "description": "{highlight}While mounted increase the range of Cyber Agility by 70%{/highlight}. Using Cyber Agility grants 50 Spell Armor for {highlight}3{/highlight} seconds.",
       "image": "genji_cyberagility.png",
       "talentChanged": true,
@@ -166,7 +166,7 @@
     },
     {
       "name": "Steady Blade",
-      "description": "Each enemy Hero hit by Swift Strike increases the damage of the next Swift Strike by 30%. This bonus stacks up to 3 times. <highlight> Grants 0.25 seconds of stealth for each stack on the end of the dash. </highlight>",
+      "description": "Each enemy Hero hit by Swift Strike increases the damage of the next Swift Strike by 30%. This bonus stacks up to 3 times. {highlight} Grants 0.25 seconds of unrevealable stealth for each stack. {/highlight}",
       "image": "genji_swiftstrike_a.png",
       "talentChanged": true
     }

@@ -47,7 +47,7 @@
     "trait": {
       "name": "Bio-Kill Switch (T)",
       "description": "Activate to detonate all of Stukov's Viruses. Each Healing Pathogen heals its target for 435 Health, and each Weighted Pustule does 100 damage and Slows its target by 70% for 2 seconds.Can be cast while Channeling Lurking Arm.",
-      "image": "stukov_biokillswitch.png",
+      "image": "stukov_bio-killswitch.png",
       "abilityChanged": false,
       "cooldown": "16s"
     }

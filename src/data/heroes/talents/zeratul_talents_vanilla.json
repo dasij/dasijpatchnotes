@@ -37,7 +37,7 @@
       {
         "name": "Might Of The Nerazim (R)",
         "description": "Activate to cast an untalented version of Zeratul's most recently used Basic Ability, dealing 50% less damage.Passive: After using an Ability, Zeratul's next Basic Attack within 6 seconds deals 30% more damage.",
-        "image": "zeratul_mightofthenerazim.png",
+        "image": "zeratul_mightofnerazim.png",
         "abilityChanged": false,
         "manaCost": "30 Mana",
         "cooldown": "20s"
@@ -54,7 +54,7 @@
     "trait": {
       "name": "Permanent Cloak (T)",
       "description": " Gain Stealth when out of combat for 3 seconds. Taking damage, attacking, using Abilities, or Channeling ends Stealth. Remaining stationary for at least 1.5 seconds while Stealthed grants Invisible.",
-      "image": "zeratul_permanentcloak.png",
+      "image": "zeratul_cloak.png",
       "abilityChanged": false
     }
   },
