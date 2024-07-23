@@ -18,7 +18,7 @@
       {
         "name": "Safety Bubble (E)",
         "description": "Becomes Invulnerable for 2 seconds. While active, Murky cannot attack or use abilities.",
-        "image": "murky_safety_bubble.png",
+        "image": "murky_safetybubble.png",
         "abilityChanged": false,
         "cooldown": "14s"
       }
@@ -27,14 +27,14 @@
       {
         "name": "March of the Murlocs (R)",
         "description": "After 0.75 seconds, Murky commands a legion of Murlocs to march in a target direction, each one leaping onto the first enemy Hero or Structure they find. Each Murloc deals 125 damage and slows its target by 15% for 5 seconds. Murlocs deal 50% damage to Structures.",
-        "image": "murky_march_of_the_murlocs.png",
+        "image": "murky_marchofthemurlocs.png",
         "abilityChanged": false,
         "cooldown": "110s"
       },
       {
         "name": "Octo-Grab (R)",
         "description": "Murky becomes Unstoppable and Stuns target enemy Hero for 3 seconds while he hits them for 1 damage a second.",
-        "image": "murky_octo_grab.png",
+        "image": "murky_octograb.png",
         "abilityChanged": false,
         "cooldown": "50s"
       }
@@ -42,7 +42,7 @@
     "trait": {
       "name": "Spawn Egg (T)",
       "description": "Place an Egg at target location, revealing the nearby area. Upon dying, Murky respawns at the Egg after 8 seconds. Murky only grants 25% of a real Hero's experience upon dying.If Murky's Egg is killed, he is revealed to enemies for 15 seconds, and Spawn Egg is placed on cooldown.",
-      "image": "murky_spawn_egg.png",
+      "image": "murky_egghunt.png",
       "abilityChanged": false,
       "cooldown": "15s"
     }

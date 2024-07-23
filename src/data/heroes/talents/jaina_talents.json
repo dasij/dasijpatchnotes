@@ -20,7 +20,7 @@
       {
         "name": "Cone of Cold (E)",
         "description": "Deal 220 damage and Chill targets.",
-        "image": "jaina_cone_of_cold.png",
+        "image": "jaina_coneofcold.png",
         "abilityChanged": false,
         "manaCost": "40 Mana",
         "cooldown": "10s"
@@ -30,7 +30,7 @@
       {
         "name": "Ring of Frost (R)",
         "description": "After a 1.5 second delay, create a Ring of Frost in an area that deals 310 damage and Roots enemies for 3 seconds. The ring persists for 3 seconds afterward, Chilling any enemies who touch it.",
-        "image": "jaina_ring_of_frost.png",
+        "image": "jaina_ringoffrost.png",
         "abilityChanged": false,
         "manaCost": "70 Mana",
         "cooldown": "70s"
@@ -38,7 +38,7 @@
       {
         "name": "Summon Water Elemental (R)",
         "description": "Summon a Water Elemental at target location. The Water Elemental's Basic Attacks deal 62 damage, splash for 25% damage and Chill. The Ability can be reactivated to retarget the Water Elemental.  Lasts 20 seconds.",
-        "image": "jaina_summon_water_elemental.png",
+        "image": "jaina_summonwaterelemental.png",
         "abilityChanged": false,
         "manaCost": "60 Mana",
         "cooldown": "60s"

@@ -4,7 +4,7 @@
       {
         "name": "Holy Light (Q)",
         "description": "Heal target allied Hero for 362 Health. When used on a target other than Uther, also heal Uther for 181 Health.",
-        "image": "uther_holy_light.png",
+        "image": "uther_holylight.png",
         "abilityChanged": false,
         "manaCost": "80 Mana",
         "cooldown": "12s"
@@ -12,7 +12,7 @@
       {
         "name": "Holy Radiance (W)",
         "description": "Heal all allied Heroes and Minions in a line for 194 Health, dealing 177 damage to enemies.",
-        "image": "uther_holy_radiance.png",
+        "image": "uther_holyradiance.png",
         "abilityChanged": false,
         "manaCost": "55 Mana",
         "cooldown": "10s"
@@ -20,7 +20,7 @@
       {
         "name": "Hammer of Justice (E)",
         "description": "Deal 109 damage and Stun the target for 1 second.",
-        "image": "uther_hammer_of_justice.png",
+        "image": "uther_hammerofjustice.png",
         "abilityChanged": false,
         "manaCost": "40 Mana",
         "cooldown": "10s"
@@ -30,7 +30,7 @@
       {
         "name": "Divine Shield (R)",
         "description": "Make an allied Hero Invulnerable and increase their Movement Speed by 20% for 3 seconds.",
-        "image": "uther_divine_shield.png",
+        "image": "uther_divineshield.png",
         "abilityChanged": false,
         "manaCost": "80 Mana",
         "cooldown": "90s"
@@ -38,7 +38,7 @@
       {
         "name": "Divine Storm (R)",
         "description": "Deal 170 damage and Stun nearby enemies for 1.75 seconds.",
-        "image": "uther_divine_storm.png",
+        "image": "uther_divinestorm.png",
         "abilityChanged": false,
         "manaCost": "80 Mana",
         "cooldown": "80s"

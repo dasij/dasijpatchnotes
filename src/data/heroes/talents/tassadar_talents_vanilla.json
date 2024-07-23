@@ -4,7 +4,7 @@
       {
         "name": "Shock Ray (Q)",
         "description": "Channel a beam of Psionic energy, dealing 280 damage and Slowing enemies in a line by 30% for 2 seconds.",
-        "image": "tassadar_shock_ray.png",
+        "image": "tassadar_shockray.png",
         "abilityChanged": false,
         "manaCost": "55 Mana",
         "cooldown": "7s"
@@ -12,7 +12,7 @@
       {
         "name": "Psionic Storm (W)",
         "description": "Create a Psionic Storm at the targeted location for 3 seconds. While in a storm, enemies take 38 damage every 0.5 seconds, increasing by 20% for each consecutive instance of damage, up to 100%.",
-        "image": "tassadar_psionic_storm.png",
+        "image": "tassadar_psionicstorm.png",
         "abilityChanged": false,
         "manaCost": "60 Mana",
         "cooldown": "8s"
@@ -20,7 +20,7 @@
       {
         "name": "Force Wall (E)",
         "description": "After a 0.5 second delay, create a wall that blocks all units from moving through it for 2 seconds.",
-        "image": "tassadar_force_wall.png",
+        "image": "tassadar_forcewall.png",
         "abilityChanged": false,
         "manaCost": "65 Mana",
         "cooldown": "18s"
@@ -38,7 +38,7 @@
       {
         "name": "Black Hole (R)",
         "description": "After a 0.5 second cast, create a Black Hole that travels in a long line. Enemy Heroes within the Black Hole's area are quickly pulled towards its center. Touching the center deals 310 damage and Stuns the target for 1.25 seconds.",
-        "image": "tassadar_black_hole.png",
+        "image": "tassadar_blackhole.png",
         "abilityChanged": false,
         "manaCost": "60 Mana",
         "cooldown": "60s"
@@ -47,7 +47,7 @@
     "trait": {
       "name": "Resonance Beam (T)",
       "description": " Tassadar's Basic Attack is a Channeled beam that Slows by 15%. While Channeling, your Basic Attack damage and Mana regeneration increases by 25% a second, to a maximum of 100%. While at full charge, gain an extra 3 Mana every second.This bonus is lost after 6 seconds of not Channeling.",
-      "image": "tassadar_resonance_beam.png",
+      "image": "tassadar_resonancebeam.png",
       "abilityChanged": false
     }
   },

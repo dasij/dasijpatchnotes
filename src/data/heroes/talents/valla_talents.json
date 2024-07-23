@@ -4,7 +4,7 @@
       {
         "name": "Hungering Arrow (Q)",
         "description": "Fire an arrow that deals 140 damage to the first target hit, then seeks up to 2 additional enemies, prioritizing Heroes, dealing 80 damage. Can hit an enemy multiple times.",
-        "image": "valla_hungering_arrow.png",
+        "image": "valla_hungeringarrow.png",
         "abilityChanged": false,
         "manaCost": "60 Mana",
         "cooldown": "10s"
@@ -38,7 +38,7 @@
       {
         "name": "Rain of Vengeance (R)",
         "description": "Launch a wave of Shadow Beasts that deals 250 damage and Stuns enemies in the target area for 0.5 seconds.Stores up to 2 charges.",
-        "image": "valla_rain_of_vengeance.png",
+        "image": "valla_rainofvengeance.png",
         "abilityChanged": false,
         "manaCost": "50 Mana",
         "cooldown": "50s"

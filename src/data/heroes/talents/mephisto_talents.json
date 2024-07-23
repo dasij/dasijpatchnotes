@@ -4,7 +4,7 @@
       {
         "name": "Skull Missile (Q)",
         "description": "Conjure a skull that travels in the target direction after 0.625 seconds, dealing 127 damage to enemies hit and Slowing Heroes hit by 25% for 2 seconds.",
-        "image": "mephisto_skull_missile.png",
+        "image": "mephisto_skull.png",
         "abilityChanged": false,
         "manaCost": "20 Mana",
         "cooldown": "8s"
@@ -12,7 +12,7 @@
       {
         "name": "Lightning Nova (W)",
         "description": "A ring of lightning appears around Mephisto for 2.5 seconds. Enemies within the ring take 43 damage every 0.25 seconds.Each time a cast of Lightning Nova hits a Hero, its damage is increased by 3%, up to 30%.",
-        "image": "mephisto_lightning_nova.png",
+        "image": "mephisto_lightning.png",
         "abilityChanged": false,
         "manaCost": "50 Mana",
         "cooldown": "14s"
@@ -20,7 +20,7 @@
       {
         "name": "Shade of Mephisto (E)",
         "description": "Teleport to a location, dealing 78 damage to nearby enemies and leaving behind a Shade of Mephisto at Mephisto's original location. After 2.5 seconds, Mephisto is teleported back to the Shade's location.",
-        "image": "mephisto_shade_of_mephisto.png",
+        "image": "mephisto_shade.png",
         "abilityChanged": false,
         "manaCost": "35 Mana",
         "cooldown": "18s"
@@ -30,7 +30,7 @@
       {
         "name": "Consume Souls (R)",
         "description": "Channel for 2.5 seconds, revealing all enemy Heroes. After the Channel completes, all enemy Heroes take 357 damage and are Slowed by 25% for 2.5 seconds.",
-        "image": "mephisto_consume_souls.png",
+        "image": "mephisto_souls.png",
         "abilityChanged": false,
         "manaCost": "80 Mana",
         "cooldown": "120s"
@@ -38,7 +38,7 @@
       {
         "name": "Durance of Hate (R)",
         "description": "After 1 second, unleash a wave of evil spirits that Root the first enemy Hero hit for 2.5 seconds and deal 250 damage to them over the same duration.Durance of Hate spreads outwards from its initial target, Rooting and damaging additional nearby enemy Heroes.",
-        "image": "mephisto_durance_of_hate.png",
+        "image": "mephisto_durance.png",
         "abilityChanged": false,
         "manaCost": "50 Mana",
         "cooldown": "50s"
@@ -47,7 +47,7 @@
     "trait": {
       "name": "Lord Of Hatred (T)",
       "description": " Hitting enemy Heroes with Basic Abilities reduces Mephisto's Basic Ability cooldowns.Skull Missile and Shade of Mephisto grant 1.5 seconds of cooldown reduction per Hero hit, and Lightning Nova grants 0.3 seconds per Hero hit.",
-      "image": "mephisto_lord_of_hatred.png",
+      "image": "mephisto_hatred.png",
       "abilityChanged": false
     }
   },

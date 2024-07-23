@@ -8,9 +8,21 @@ import re
 def hero_name_with_underscore(hero_name):
     return f"{hero_name.lower()}_"
 
-def normalize_name(name):
+def normalize_name(name, remove_underscores=False):
     """Normalize the name to match the image file naming convention."""
-    return name.lower().replace(" ", "_").replace("(", "").replace(")", "").replace("'", "").replace(".", "").replace("-", "_")
+    normalized = name.lower().replace("(", "").replace(")", "").replace("'", "").replace(".", "")
+    if remove_underscores:
+        normalized = normalized.replace(" ", "").replace("-", "")
+    else:
+        normalized = normalized.replace(" ", "_").replace("-", "_")
+    return normalized
+
+def normalize_ability_name(hero_name, ability_name):
+    """Normalize the ability name without underscores."""
+    return f"{hero_name.lower()}_{normalize_name(ability_name, remove_underscores=True)}"
+
+
+
 
 def clean_description(description):
     """Remove unwanted Unicode characters from the description."""
@@ -111,7 +123,7 @@ def scrape_hero_data(hero_name):
                 description = clean_description(description)
                 description, mana_cost, cooldown = extract_mana_and_cooldown(stats_text + " " + description)
                 name_without_parentheses = name.split(" (")[0]
-                normalized_name = normalize_name(f"{hero_name}_{name_without_parentheses}")
+                normalized_name = normalize_ability_name(hero_name, name_without_parentheses)
                 image_name = f"{normalized_name}.png"
 
                 ability_data = {
@@ -130,6 +142,7 @@ def scrape_hero_data(hero_name):
                     abilities_data[ability_type] = ability_data
                 else:
                     abilities_data[ability_type].append(ability_data)
+
 
     scrape_abilities("abilities-list js-abilities-regular", "basic")
     scrape_abilities("abilities-list js-abilities-heroic", "heroic")
@@ -221,9 +234,9 @@ def scrape_and_save_hero_data(hero_name):
 
 
 heroes = [
-    "Hogger", 
-    "Deathwing"
+    "Gall"
 ]
+
 
 
 # Example usage

@@ -12,7 +12,7 @@
       {
         "name": "Harden Carapace (W)",
         "description": "Gain a Shield that grants 40 Spell Armor and absorbs 340 damage over 3 seconds.",
-        "image": "anubarak_harden_carapace.png",
+        "image": "anubarak_hardencarapace_var1.png",
         "abilityChanged": false,
         "manaCost": "25 Mana",
         "cooldown": "7s"
@@ -20,7 +20,7 @@
       {
         "name": "Burrow Charge (E)",
         "description": "Burrow to the target location, dealing 91 damage and briefly stunning enemies in a small area upon surfacing, slowing them by 25% for 2.5 seconds.Burrow Charge can be reactivated to surface early.",
-        "image": "anubarak_burrow_charge.png",
+        "image": "anubarak_burrowcharge.png",
         "abilityChanged": false,
         "manaCost": "65 Mana",
         "cooldown": "14s"
@@ -30,7 +30,7 @@
       {
         "name": "Locust Swarm (R)",
         "description": "Deal 68 damage per second to nearby enemies. Each enemy damaged restores 24 Health. Lasts 6 seconds.",
-        "image": "anubarak_locust_swarm.png",
+        "image": "anubarak_locustswarm.png",
         "abilityChanged": false,
         "manaCost": "75 Mana",
         "cooldown": "100s"
@@ -38,7 +38,7 @@
       {
         "name": "Cocoon (R)",
         "description": "Wraps target enemy Hero in a cocoon, rendering them unable to act or be targeted for 7 seconds. Allies of the Hero can attack the cocoon to break it and free them early.",
-        "image": "anubarak_cocoon.png",
+        "image": "anubarak_webblast.png",
         "abilityChanged": false,
         "manaCost": "70 Mana",
         "cooldown": "70s"
@@ -47,7 +47,7 @@
     "trait": {
       "name": "Scarab Host (T)",
       "description": " Using an Ability spawns a Beetle which lasts for 8 seconds, attacking nearby enemies for 20 damage.",
-      "image": "anubarak_scarab_host.png",
+      "image": "anubarak_scarabhost.png",
       "abilityChanged": false
     }
   },

@@ -4,7 +4,7 @@
       {
         "name": "Radiant Dash (Q)",
         "description": "Jump to an allied or enemy unit. Enemies are immediately hit with a Basic Attack.Stores up to 2 charges.",
-        "image": "kharazim_radiant_dash.png",
+        "image": "monk_dash.png",
         "abilityChanged": false,
         "manaCost": "25 Mana",
         "cooldown": "12s"
@@ -12,7 +12,7 @@
       {
         "name": "Breath of Heaven (W)",
         "description": "Heal nearby Heroes for 285 and give them 15% Movement Speed for 3 seconds.",
-        "image": "kharazim_breath_of_heaven.png",
+        "image": "monk_breathofheaven.png",
         "abilityChanged": false,
         "manaCost": "65 Mana",
         "cooldown": "10s"
@@ -20,7 +20,7 @@
       {
         "name": "Deadly Reach (E)",
         "description": "Kharazim's next Basic Attack increases his Attack Speed and Attack Range by 100% for 2 seconds.",
-        "image": "kharazim_deadly_reach.png",
+        "image": "monk_deadlyreach.png",
         "abilityChanged": false,
         "manaCost": "45 Mana",
         "cooldown": "10s"
@@ -30,7 +30,7 @@
       {
         "name": "Divine Palm (R)",
         "description": "Protect an allied Hero from death, causing them to be healed for 1200 if they take fatal damage in the next 3 seconds.",
-        "image": "kharazim_divine_palm.png",
+        "image": "monk_divinepalm.png",
         "abilityChanged": false,
         "manaCost": "50 Mana",
         "cooldown": "50s"
@@ -38,7 +38,7 @@
       {
         "name": "Seven-Sided Strike (R)",
         "description": "Become Invulnerable and strike 7 times over 2 seconds. Each strike hits the highest Health nearby Hero for 7% of their maximum Health.",
-        "image": "kharazim_seven_sided_strike.png",
+        "image": "monk_sevensidedstrike.png",
         "abilityChanged": false,
         "manaCost": "77 Mana",
         "cooldown": "50s"
@@ -47,7 +47,7 @@
     "trait": {
       "name": "Pick Your Trait (T)",
       "description": " Choose between Transcendence, Iron Fists, and Insight from the Talents panel.",
-      "image": "kharazim_pick_your_trait.png",
+      "image": "kharazim_fistoflegend.png",
       "abilityChanged": false
     }
   },
@@ -104,7 +104,7 @@
     {
       "name": "Heavenly Zeal",
       "description": "Increases Breath of Heaven's Movement Speed bonus to 30%.  Radiant Dashing to an ally increases the healing they receive from Breath of Heaven by 50% for 3.5 seconds.",
-      "image": "monk_breath0fheaven.png",
+      "image": "monk_breathofheaven.png",
       "talentChanged": false
     },
     {
@@ -169,7 +169,7 @@
     {
       "name": "Echo of Heaven",
       "description": "Breath of Heaven heals 75% of its normal amount, but heals a second time 3 seconds later.",
-      "image": "monk_breath0fheaven.png",
+      "image": "monk_breathofheaven.png",
       "talentChanged": false
     }
   ],

@@ -4,7 +4,7 @@
       {
         "name": "Storm Bow (Q)",
         "description": "Activate to charge an arrow that deals 291 damage to the first enemy hit. Storm Bow's range increases the longer it is Channeled.",
-        "image": "hanzo_storm_bow.png",
+        "image": "hanzo_stormbow.png",
         "abilityChanged": false,
         "manaCost": "20 Mana",
         "cooldown": "4s"
@@ -12,7 +12,7 @@
       {
         "name": "Scatter Arrow (W)",
         "description": "Fire an arrow that deals 88 to the first enemy Hero hit. Scatter Arrow can collide with terrain and Structures, splitting into 5 arrows that travel extra distance, ricochet up to 4 additional times, and deal 88 damage each to the first enemy hit.",
-        "image": "hanzo_scatter_arrow.png",
+        "image": "hanzo_scatterarrow.png",
         "abilityChanged": false,
         "manaCost": "50 Mana",
         "cooldown": "8s"
@@ -20,7 +20,7 @@
       {
         "name": "Sonic Arrow (E)",
         "description": "Fire an arrow that grants vision in a large area for 5 seconds. Enemies inside are revealed for 1 second. If Sonic Arrow lands directly on an enemy, it deals 165 damage to them and follows them as they move.",
-        "image": "hanzo_sonic_arrow.png",
+        "image": "hanzo_sonicarrow.png",
         "abilityChanged": false,
         "manaCost": "50 Mana",
         "cooldown": "20s"
@@ -38,7 +38,7 @@
       {
         "name": "Dragon's Arrow (R)",
         "description": "Fire a missile that travels across the battleground. Explodes upon hitting an enemy Hero, dealing 130 damage to all nearby enemies and Stunning them for 0.5 seconds.After traveling a medium distance, the damage is increased to 260 and the Stun duration to 1.25 seconds.After traveling a long distance, the damage is increased to 390 and the Stun duration to 2 seconds.",
-        "image": "hanzo_dragons_arrow.png",
+        "image": "hanzo_thedragonsarrow.png",
         "abilityChanged": false,
         "manaCost": "90 Mana",
         "cooldown": "70s"
@@ -47,7 +47,7 @@
     "trait": {
       "name": "Natural Agility (T)",
       "description": "Jump over unpathable terrain or Structures, up to a maximum range.",
-      "image": "hanzo_natural_agility.png",
+      "image": "hanzo_wallvault.png",
       "abilityChanged": false,
       "cooldown": "25s"
     }

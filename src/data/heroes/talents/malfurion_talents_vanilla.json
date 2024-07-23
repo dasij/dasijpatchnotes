@@ -20,7 +20,7 @@
       {
         "name": "Entangling Roots (E)",
         "description": "Root enemy Heroes in an area for 1.25 seconds, and deal 117 damage over the duration. Affected area grows over 3 seconds.",
-        "image": "malfurion_entangling_roots.png",
+        "image": "malfurion_entanglingroots.png",
         "abilityChanged": false,
         "manaCost": "65 Mana",
         "cooldown": "12s"
@@ -38,7 +38,7 @@
       {
         "name": "Twilight Dream (R)",
         "description": "After 0.5 seconds, deal 310 damage in a large area around Malfurion, Silencing enemies making them unable to use Abilities for 3 seconds.",
-        "image": "malfurion_twilight_dream.png",
+        "image": "malfurion_twilightdream.png",
         "abilityChanged": false,
         "manaCost": "100 Mana",
         "cooldown": "90s"
@@ -88,7 +88,7 @@
     {
       "name": "Shan'do's Clarity",
       "description": "Gain a second charge of Innervate. Its cooldown recharges 25% faster per ally affected by Regrowth.",
-      "image": "malfurion_innerrvate.png",
+      "image": "malfurion_innervate.png",
       "talentChanged": false
     }
   ],
@@ -147,7 +147,7 @@
     {
       "name": "Revitalize",
       "description": "Using Innervate also grants Malfurion 15% of his max Mana and causes his Basic Ability cooldowns to refresh 50% faster for 5 seconds.",
-      "image": "malfurion_innerrvate.png",
+      "image": "malfurion_innervate.png",
       "talentChanged": false
     }
   ],

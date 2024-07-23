@@ -27,7 +27,7 @@
       {
         "name": "Pulse Bomb (R)",
         "description": " Fire a short range bomb that can attach to an enemy if it hits them. The bomb explodes after 2 seconds dealing 298 damage to them and 149 damage to other nearby enemies.This ability is slowly charged over time by dealing damage to enemies with Basic Attacks and Melee.",
-        "image": "tracer_pulse_bomb.png",
+        "image": "tracer_pulsebomb.png",
         "abilityChanged": false
       }
     ],

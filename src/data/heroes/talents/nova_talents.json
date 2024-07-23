@@ -12,7 +12,7 @@
       {
         "name": "Pinning Shot (W)",
         "description": "Deal 100 damage to an enemy and Slow them by 40% for 2.25 seconds.",
-        "image": "nova_pinning_shot.png",
+        "image": "nova_pinningshot.png",
         "abilityChanged": false,
         "manaCost": "65 Mana",
         "cooldown": "12s"
@@ -20,7 +20,7 @@
       {
         "name": "Holo Decoy (E)",
         "description": "Create a Decoy for 5 seconds with 100% of Nova's current Health that attacks enemies, dealing 10% of Nova's base damage. Whenever a Decoy takes damage, it deals that amount of damage to itself, effectively doubling the damage it takes.Using this Ability does not break Stealth.",
-        "image": "nova_holo_decoy.png",
+        "image": "nova_holodecoy.png",
         "abilityChanged": false,
         "manaCost": "50 Mana",
         "cooldown": "15s"
@@ -28,7 +28,7 @@
       {
         "name": "Ghost Protocol (?)",
         "description": "Activate to instantly grant Stealth to Nova and spawn a Holo Decoy at her location. Nova is Unrevealable for the first 0.5 seconds when Stealthed by Ghost Protocol.",
-        "image": "nova_ghost_protocol.png",
+        "image": "nova_personalcloaking.png",
         "abilityChanged": false,
         "cooldown": "60s"
       }
@@ -37,7 +37,7 @@
       {
         "name": "Triple Tap (R)",
         "description": "Locks in on the target Hero, then fires 3 shots that hit the first Hero or Structure they come in contact with for 372 damage each.",
-        "image": "nova_triple_tap.png",
+        "image": "nova_tripletap.png",
         "abilityChanged": false,
         "manaCost": "100 Mana",
         "cooldown": "100s"
@@ -45,7 +45,7 @@
       {
         "name": "Precision Strike (R)",
         "description": "After a 1.5 second delay, deals 435 damage to enemies within an area. Unlimited range.",
-        "image": "nova_precision_strike.png",
+        "image": "nova_orbitalstrike.png",
         "abilityChanged": false,
         "manaCost": "100 Mana",
         "cooldown": "50s"
@@ -54,7 +54,7 @@
     "trait": {
       "name": "Permanent Cloak (T)",
       "description": " Gain Stealth when out of combat for 3 seconds. Taking damage, attacking, using Abilities, or Channeling ends Stealth. Remaining stationary for at least 1.5 seconds while Stealthed grants Invisible.Passive: Gain 15% Movement Speed while Stealthed.",
-      "image": "nova_permanent_cloak.png",
+      "image": "nova_personalcloaking.png",
       "abilityChanged": false
     }
   },

@@ -4,7 +4,7 @@
       {
         "name": "Snow Blind (Q)",
         "description": "Throw a snowball that hits all enemies in an area. Enemies hit take 70 damage, are Slowed by 35%, and are Blinded for 1.75 seconds.",
-        "image": "mei_snow_blind.png",
+        "image": "mei_q_snowblind.png",
         "abilityChanged": false,
         "manaCost": "35 Mana",
         "cooldown": "10s"
@@ -12,7 +12,7 @@
       {
         "name": "Blizzard (W)",
         "description": "Command Snowball to create a Blizzard at the target location for 2 seconds. Enemies within the blizzard take 13 damage every 0.25 seconds and are Slowed by 7%, stacking up to 35%. When the Blizzard ends, enemies within its area take an additional 75 damage and are Stunned for 1.25 seconds.",
-        "image": "mei_blizzard.png",
+        "image": "mei_w_blizzard.png",
         "abilityChanged": false,
         "manaCost": "70 Mana",
         "cooldown": "14s"
@@ -20,7 +20,7 @@
       {
         "name": "Icing (E)",
         "description": "Slide quickly in the targeted direction. When this effect ends, enemies near Mei are knocked back, take 52 damage, and are Slowed by 80%, rapidly decaying over 1.5 seconds.Can be canceled during sliding.",
-        "image": "mei_icing.png",
+        "image": "mei_e1_slide.png",
         "abilityChanged": false,
         "manaCost": "70 Mana",
         "cooldown": "14s"
@@ -30,7 +30,7 @@
       {
         "name": "Avalanche (R)",
         "description": "After 0.5 seconds, roll a massive snowball that consumes enemy Heroes in its path. At the end of its path, the snowball crumbles, releasing the consumed Heroes, dealing 220 damage and Stunning them for 0.5 seconds per Hero consumed.",
-        "image": "mei_avalanche.png",
+        "image": "mei_r1_avalanche.png",
         "abilityChanged": false,
         "manaCost": "80 Mana",
         "cooldown": "90s"
@@ -38,7 +38,7 @@
       {
         "name": "Ice Wall (R)",
         "description": "Vector TargetingAfter a 0.75 second delay, create an impassable wall that traps enemy Heroes hit for 2.5 seconds. When the wall expires, trapped Heroes are Slowed by 75%, decaying over 3 seconds.",
-        "image": "mei_ice_wall.png",
+        "image": "mei_r2_icewall.png",
         "abilityChanged": false,
         "manaCost": "50 Mana",
         "cooldown": "60s"
@@ -47,7 +47,7 @@
     "trait": {
       "name": "Cryo-Freeze (T)",
       "description": "Become encased in ice for 3 seconds, gaining a rapidly decaying Shield that absorbs up to 1104 damage. While active, this Shield grants Unstoppable and restores up to 35% of Mei's maximum Health.",
-      "image": "mei_cryo_freeze.png",
+      "image": "mei_trait.png",
       "abilityChanged": false,
       "cooldown": "40s"
     }

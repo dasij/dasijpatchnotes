@@ -4,21 +4,21 @@
       {
         "name": "Particle Grenade (Q)",
         "description": "Launch a particle grenade that deals 75 damage to enemies within the area. Deals 50% damage to Structures.Stores up to 4 charges.",
-        "image": "zarya_particle_grenade.png",
+        "image": "zarya_particlegrenade.png",
         "abilityChanged": false,
         "cooldown": "8s"
       },
       {
         "name": "Personal Barrier (W)",
         "description": "Gain a Shield that absorbs 560 damage for 3 seconds.",
-        "image": "zarya_personal_barrier.png",
+        "image": "zarya_personalbarrier.png",
         "abilityChanged": false,
         "cooldown": "10s"
       },
       {
         "name": "Shield Ally (E)",
         "description": "Grants an allied Hero a Shield that absorbs 420 damage for 3 seconds.",
-        "image": "zarya_shield_ally.png",
+        "image": "zarya_shieldally.png",
         "abilityChanged": false,
         "cooldown": "12s"
       }
@@ -27,14 +27,14 @@
       {
         "name": "Graviton Surge (R)",
         "description": "Launch a gravity bomb that detonates after 1 second and draws enemy Heroes toward the center for 2.5 seconds. Affected Heroes take 30 damage a second.",
-        "image": "zarya_graviton_surge.png",
+        "image": "zarya_gravitonsurge.png",
         "abilityChanged": false,
         "cooldown": "60s"
       },
       {
         "name": "Expulsion Zone (R)",
         "description": "Launch a gravity bomb that deals 124 damage and creates an expulsion zone for 3.5 seconds. Enemies who enter the affected area are knocked back and have their Movement Speed reduced by 50% for 1 second.",
-        "image": "zarya_expulsion_zone.png",
+        "image": "zarya_expulsionzone.png",
         "abilityChanged": false,
         "cooldown": "45s"
       }

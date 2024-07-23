@@ -12,7 +12,7 @@
       {
         "name": "Dark Swarm (W)",
         "description": "Deal 52 damage every 0.5 seconds to nearby enemies for 3.5 seconds. While active, you are able to move through units. Can be cast during Drag and Burrow.",
-        "image": "dehaka_dark_swarm.png",
+        "image": "dehaka_trample.png",
         "abilityChanged": false,
         "manaCost": "50 Mana",
         "cooldown": "10s"
@@ -47,7 +47,7 @@
     "trait": {
       "name": "Essence Collection (T)",
       "description": " Heal Dehaka for a small amount per stored Essence over 5 seconds. Can be cast during Drag and Burrow.Passive: Gain 10 Essence from Takedowns and 2 Essence from nearby Minions dying. Maximum of 50 Essence.",
-      "image": "dehaka_essence_collection.png",
+      "image": "dehaka_essencecollection.png",
       "abilityChanged": false
     }
   },

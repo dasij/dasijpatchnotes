@@ -4,7 +4,7 @@
       {
         "name": "Corpse Spiders (Q)",
         "description": "Hurl a jar of spiders that deals 50 damage. If it hits at least one enemy, create 3 Corpse Spiders that attack for 38 damage. Spiders last for 4 seconds.",
-        "image": "nazeebo_corpse_spiders.png",
+        "image": "nazeebo_corpsespider.png",
         "abilityChanged": false,
         "manaCost": "40 Mana",
         "cooldown": "8s"
@@ -12,7 +12,7 @@
       {
         "name": "Zombie Wall (W)",
         "description": "After 1 second, create a ring of Zombies surrounding the target area that deal 28 damage and last for 3 seconds.",
-        "image": "nazeebo_zombie_wall.png",
+        "image": "nazeebo_zombiewall.png",
         "abilityChanged": false,
         "manaCost": "70 Mana",
         "cooldown": "14s"
@@ -20,7 +20,7 @@
       {
         "name": "Plague of Toads (E)",
         "description": "Create a wave of 3 Toads that explode on contact, dealing 126 damage over 6 seconds. This effect stacks.Stores up to 2 charges.",
-        "image": "nazeebo_plague_of_toads.png",
+        "image": "nazeebo_plagueoftoads.png",
         "abilityChanged": false,
         "manaCost": "30 Mana",
         "cooldown": "8s"
@@ -38,7 +38,7 @@
       {
         "name": "Ravenous Spirit (R)",
         "description": "Channel a Ravenous Spirit that deals 230 damage per second. Cannot move while channeling. Lasts for 8 seconds.",
-        "image": "nazeebo_ravenous_spirit.png",
+        "image": "nazeebo_ravenousspirit.png",
         "abilityChanged": false,
         "manaCost": "100 Mana",
         "cooldown": "90s"
@@ -47,7 +47,7 @@
     "trait": {
       "name": "Voodoo Ritual (T)",
       "description": " Nazeebo's Basic Attacks and Abilities poison Non-Heroic enemies, causing them to take 67 additional damage over 6 seconds. Quest: If a Minion dies while poisoned by Voodoo Ritual, Nazeebo permanently gains 6 Health and 1 Mana.",
-      "image": "nazeebo_voodoo_ritual.png",
+      "image": "nazeebo_voodooritual.png",
       "abilityChanged": false
     }
   },

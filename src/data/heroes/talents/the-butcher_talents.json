@@ -4,7 +4,7 @@
       {
         "name": "Hamstring (Q)",
         "description": "Deal 110 damage and slow enemies by 50% fading over 2 seconds.  The Butcher's next Basic Attack will strike immediately.",
-        "image": "the_butcher_hamstring.png",
+        "image": "the-butcher_hamstring.png",
         "abilityChanged": false,
         "manaCost": "40 Mana",
         "cooldown": "4s"
@@ -12,7 +12,7 @@
       {
         "name": "Butcher's Brand (W)",
         "description": "Deal 37 damage to an enemy and Brand them for 4 seconds. The Butcher's Basic Attacks against the Branded target heal him for 75% of the damage done.Basic Attacks against Branded Heroes heal for double and extend the duration of the Brand by 0.5 seconds.",
-        "image": "the_butcher_butchers_brand.png",
+        "image": "the-butcher_butchersbrand.png",
         "abilityChanged": false,
         "manaCost": "60 Mana",
         "cooldown": "14s"
@@ -20,7 +20,7 @@
       {
         "name": "Ruthless Onslaught (E)",
         "description": "Charge at an enemy, becoming Unstoppable and gaining Movement Speed. If The Butcher reaches the target, they are stunned for 1 second and take 119 damage.",
-        "image": "the_butcher_ruthless_onslaught.png",
+        "image": "the-butcher_ruthlessonslaught.png",
         "abilityChanged": false,
         "manaCost": "50 Mana",
         "cooldown": "15s"
@@ -30,7 +30,7 @@
       {
         "name": "Furnace Blast (R)",
         "description": "After a 3 second delay, fire explodes around The Butcher dealing 500 damage to enemies.Can be cast while using Ruthless Onslaught.",
-        "image": "the_butcher_furnace_blast.png",
+        "image": "the-butcher_furnaceblast.png",
         "abilityChanged": false,
         "manaCost": "75 Mana",
         "cooldown": "60s"
@@ -38,7 +38,7 @@
       {
         "name": "Lamb to the Slaughter (R)",
         "description": "Throw a hitching post that attaches to the nearest enemy Hero after a 1 second delay. This deals 171 damage and causes the enemy to be chained to the post and Silenced for 3 seconds.",
-        "image": "the_butcher_lamb_to_the_slaughter.png",
+        "image": "the-butcher_lambtotheslaughter.png",
         "abilityChanged": false,
         "manaCost": "75 Mana",
         "cooldown": "90s"
@@ -47,7 +47,7 @@
     "trait": {
       "name": "Fresh Meat (T)",
       "description": " Upon dying, nearby enemy Minions drop 1 Fresh Meat and enemy Heroes drop 20 Fresh Meat. Fresh Meat can be picked up to gain 0.5 Attack Damage per Meat. The Butcher loses 15 Fresh Meat upon dying.Quest: Collect 200 Fresh Meat.Reward: Gain an additional 125 Attack Damage and 25% increased Attack Speed. Heroes continue to drop 10 Fresh Meat, Minions no longer drop Fresh Meat, and Fresh Meat is no longer lost on death.",
-      "image": "the_butcher_fresh_meat.png",
+      "image": "the-butcher_freshmeat.png",
       "abilityChanged": false
     }
   },

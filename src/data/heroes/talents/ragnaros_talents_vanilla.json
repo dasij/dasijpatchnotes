@@ -4,7 +4,7 @@
       {
         "name": "Empower Sulfuras (Q)",
         "description": "Ragnaros's next Basic Attack is instant, dealing 191 Ability damage in an area, and heals for 20% of the damage dealt. Healing doubled versus Heroes.Molten Core: Molten SwingStun and damage nearby enemies.",
-        "image": "ragnaros_empower_sulfuras.png",
+        "image": "ragnaros_empowersulfuras.png",
         "abilityChanged": false,
         "manaCost": "25 Mana",
         "cooldown": "4s"
@@ -12,7 +12,7 @@
       {
         "name": "Living Meteor (W)",
         "description": "Vector TargetingSummon a meteor at the target point that deals 68 damage, then rolls in the target direction dealing 272 damage per second for 1.75 seconds.Molten Core: Meteor ShowerDrop a line of meteor impacts.",
-        "image": "ragnaros_living_meteor.png",
+        "image": "ragnaros_livingmeteor.png",
         "abilityChanged": false,
         "manaCost": "60 Mana",
         "cooldown": "12s"
@@ -20,7 +20,7 @@
       {
         "name": "Blast Wave (E)",
         "description": "Ignite Ragnaros or an ally, granting 25% Movement Speed for 1.5 seconds before exploding dealing 104 damage to nearby enemies.Molten Core: Explosive RuneCause a delayed explosion in a large area.",
-        "image": "ragnaros_blast_wave.png",
+        "image": "ragnaros_blastwave.png",
         "abilityChanged": false,
         "manaCost": "50 Mana",
         "cooldown": "9s"
@@ -30,7 +30,7 @@
       {
         "name": "Sulfuras Smash (R)",
         "description": "Hurl Sulfuras at the target area, landing after 0.75 seconds, dealing 250 damage. Enemies in the center take 594 damage instead and are Stunned for 0.5 seconds.",
-        "image": "ragnaros_sulfuras_smash.png",
+        "image": "ragnaros_sulfurassmash.png",
         "abilityChanged": false,
         "manaCost": "70 Mana",
         "cooldown": "60s"
@@ -38,7 +38,7 @@
       {
         "name": "Lava Wave (R)",
         "description": "Release a wave of lava from Ragnaros's Core that travels down the targeted lane, dealing 240 damage per second to non-Structure enemies in its path and instantly killing enemy Minions. Damage increased by 100% versus Heroes.",
-        "image": "ragnaros_lava_wave.png",
+        "image": "ragnaros_lavawave.png",
         "abilityChanged": false,
         "manaCost": "80 Mana",
         "cooldown": "120s"
@@ -47,7 +47,7 @@
     "trait": {
       "name": "Molten Core (T)",
       "description": "Channel on an allied or destroyed Fort or Keep to replace it with Ragnaros's ultimate form, temporarily gaining new Abilities, having 3996 Health that burns away over 18 seconds.Ragnaros returns to his normal form upon losing all Health in Molten Core.",
-      "image": "ragnaros_molten_core.png",
+      "image": "ragnaros_moltencore.png",
       "abilityChanged": false,
       "cooldown": "120s"
     }

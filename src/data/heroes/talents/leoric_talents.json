@@ -4,7 +4,7 @@
       {
         "name": "Skeletal Swing (Q)",
         "description": "Leoric swings his mace, dealing 150 damage and Slowing enemies by 40% for 2.5 seconds. If an enemy Hero is hit, refund 50% of the cooldown and Mana cost. Deals 75% additional damage to Minions. Peasants!",
-        "image": "leoric_skeletal_swing.png",
+        "image": "leoric_skeletalswing.png",
         "abilityChanged": false,
         "manaCost": "70 Mana",
         "cooldown": "12s"
@@ -12,7 +12,7 @@
       {
         "name": "Drain Hope (W)",
         "description": "Grab an enemy Hero's soul, dealing up to 20% of their maximum Health as damage and healing Leoric for up to 20% of his maximum Health while he is nearby, over 4 seconds. Leoric's Movement Speed is reduced by 20% while this is active.",
-        "image": "leoric_drain_hope.png",
+        "image": "leoric_drainhope.png",
         "abilityChanged": false,
         "manaCost": "60 Mana",
         "cooldown": "10s"
@@ -20,7 +20,7 @@
       {
         "name": "Wraith Walk (E)",
         "description": "Leoric separates from his body, becoming Unstoppable and gaining Movement Speed accelerating up to 50% over 2.5 seconds. When Wraith Walk ends or is canceled, his body jumps to his wraith.",
-        "image": "leoric_wraith_walk.png",
+        "image": "leoric_wraithwalk.png",
         "abilityChanged": false,
         "manaCost": "50 Mana",
         "cooldown": "14s"
@@ -38,7 +38,7 @@
       {
         "name": "March of the Black King (R)",
         "description": "Leoric becomes Unstoppable and walks forward, swinging his mace 3 times. Enemies hit take 250 damage, and Heroes hit heal Leoric for 12% of his maximum Health.",
-        "image": "leoric_march_of_the_black_king.png",
+        "image": "leoric_r2.png",
         "abilityChanged": false,
         "manaCost": "75 Mana",
         "cooldown": "50s"
@@ -47,7 +47,7 @@
     "trait": {
       "name": "Undying (T)",
       "description": " Leoric becomes a ghost when he dies, and resurrects upon reaching full Health. Leoric deals no damage while dead.Wrath Of The Bone KingLeoric's first two Basic Attacks cleave for 100% damage, and his third Basic Attack deals 225% damage to a single target.",
-      "image": "leoric_undying.png",
+      "image": "leoric_trait.png",
       "abilityChanged": false
     }
   },

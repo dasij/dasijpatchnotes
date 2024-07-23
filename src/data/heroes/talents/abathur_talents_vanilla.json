@@ -11,7 +11,7 @@
       {
         "name": "Toxic Nest (W)",
         "description": "Spawn a mine that becomes active after a short time. Deals 153 damage and reveals the enemy for 4 seconds. Lasts 90 seconds.Stores up to 3 charges.",
-        "image": "abathur_toxic_nest.png",
+        "image": "abathur_toxicnest.png",
         "abilityChanged": false,
         "cooldown": "10s"
       }
@@ -20,14 +20,14 @@
       {
         "name": "Ultimate Evolution (R)",
         "description": "Clone target allied Hero and control it for 20 seconds. Abathur has perfected the clone, granting it 20% Spell Power, 20% bonus Attack Damage, and 10% bonus Movement Speed. Cannot use their Heroic Ability.",
-        "image": "abathur_ultimate_evolution.png",
+        "image": "abathur_ultimateevolution.png",
         "abilityChanged": false,
         "cooldown": "70s"
       },
       {
         "name": "Evolve Monstrosity (R)",
         "description": "Turn an allied Minion or Locust into a Monstrosity. When enemy Minions near the Monstrosity die, it gains 2% Health and 2% Basic Attack damage, stacking up to 40 times.  The Monstrosity can be healed by Carapace and has the ability to Burrow to a visible location every 80 seconds.Using Symbiote on the Monstrosity allows Abathur to control it, in addition to Symbiote's normal benefits.  This Ability can be reactivated to automatically cast Symbiote on his Monstrosity.",
-        "image": "abathur_evolve_monstrosity.png",
+        "image": "abathur_evolvemonstrosity.png",
         "abilityChanged": false,
         "cooldown": "90s"
       }
@@ -35,7 +35,7 @@
     "trait": {
       "name": "Locust Strain (T)",
       "description": "Spawns a Locust to attack down the nearest lane every 15 seconds. Locusts last for 16 seconds, have 350 health and deal 46 damage with each Basic Attack, dealing 25% bonus damage to enemy Structures.",
-      "image": "abathur_locust_strain.png",
+      "image": "abathur_spawnlocust.png",
       "abilityChanged": false,
       "cooldown": "15s"
     }

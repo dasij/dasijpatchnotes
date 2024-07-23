@@ -4,7 +4,7 @@
       {
         "name": "Gilnean Cocktail (Q)",
         "description": "Hurl a flask that deals 55 damage to the first enemy hit and explodes for 220 damage to enemies in a cone behind them.Worgen: Razor SwipeSwipe forward, damaging enemies hit.",
-        "image": "greymane_gilnean_cocktail.png",
+        "image": "greymane_qattack.png",
         "abilityChanged": false,
         "manaCost": "55 Mana",
         "cooldown": "9s"
@@ -12,7 +12,7 @@
       {
         "name": "Inner Beast (W)",
         "description": "Gain 50% Attack Speed for 3 seconds. Basic Attacks refresh this duration, and reduce the cooldown of Inner Beast by 0.5 seconds.",
-        "image": "greymane_inner_beast.png",
+        "image": "greymane_beastfocus.png",
         "abilityChanged": false,
         "manaCost": "70 Mana",
         "cooldown": "20s"
@@ -30,7 +30,7 @@
       {
         "name": "Go for the Throat (R)",
         "description": "Leap at an enemy Hero and shapeshift into a Worgen, slashing for 355 damage. If this kills them, the Ability can be used a second time within 10 seconds for free.",
-        "image": "greymane_go_for_the_throat.png",
+        "image": "greymane_goforthethroat.png",
         "abilityChanged": false,
         "manaCost": "90 Mana",
         "cooldown": "80s"
@@ -38,7 +38,7 @@
       {
         "name": "Cursed Bullet (R)",
         "description": "Greymane shapeshifts into a Human and fires a bullet that hits the first enemy Hero in its path, dealing 35% of their current Health in damage.Does not affect Vehicles.",
-        "image": "greymane_cursed_bullet.png",
+        "image": "greymane_snapshot.png",
         "abilityChanged": false,
         "manaCost": "50 Mana",
         "cooldown": "30s"
@@ -47,7 +47,7 @@
     "trait": {
       "name": "Curse of the Worgen (T)",
       "description": " Greymane can use certain Abilities to shapeshift between a Human and a Worgen.While Human, Greymane's Basic Attacks are ranged.While Worgen, Greymane gains 10 Armor, and his Basic Attacks become melee but deal 40% more damage.",
-      "image": "greymane_curse_of_the_worgen.png",
+      "image": "greymane_curseoftheworgen.png",
       "abilityChanged": false
     }
   },

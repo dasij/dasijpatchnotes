@@ -3,9 +3,9 @@
     "basic": [
       {
         "name": "Overkill (Q)",
-        "description": "Deal 552 damage to the target and 276 damage to nearby targets over 4 seconds. Reactivate to select a new target. Can move and use Abilities while Channeling. {highlight}Overkill is also affected by Minigun.{/highlight}",
+        "description": "Deal 552 damage to the target and 276 damage to nearby targets over 4 seconds. Reactivate to select a new target.  Can move and use Abilities while Channeling.",
         "image": "tychus_overkill.png",
-        "abilityChanged": true,
+        "abilityChanged": false,
         "manaCost": "60 Mana",
         "cooldown": "12s"
       },
@@ -37,27 +37,27 @@
       },
       {
         "name": "Drakken Laser Drill (R)",
-        "description": "{highlight}Tychus calls a the Drakken Laser on the Halls of the Storm, targetting the closest enemy unit to Tychus dealing 142(+4% per level) damage every second, it will change target every 3 seconds or instantly if the target dies. Activating Drakken Laser empowers it selecting a target and after 2 seconds Drakken Laser will fire a heavy damage continuous damage laser on the target position and initially stunning targets for 0.5 seconds that lasts 3 seconds. {/highlight}",
-        "image": "tychus_drakkinlaserdrill.png",
-        "abilityChanged": true,
+        "description": "Call down a Laser Drill to attack nearby enemies, dealing 142 damage every second. Reactivate to assign a new target. Lasts 22 seconds.",
+        "image": "tychus_drakkenlaserdrill.png",
+        "abilityChanged": false,
         "manaCost": "100 Mana",
-        "cooldown": "70s"
+        "cooldown": "100s"
       }
     ],
     "trait": {
       "name": "Minigun (T)",
-      "description": "Activate to have Basic Attacks against Heroes deal bonus damage equal to 2.5% of their maximum Health. Lasts 3 seconds. {highlight}You can reactive minigun to start it earlier.{/highlight}",
+      "description": "Activate to have Basic Attacks against Heroes deal bonus damage equal to 2.5% of their maximum Health. Lasts 3 seconds.",
       "image": "tychus_minigun.png",
-      "abilityChanged": true,
+      "abilityChanged": false,
       "cooldown": "12s"
     }
   },
   "1": [
     {
-      "name": "Stun and Gun",
-      "description": "{highlight}At the end of Run and Gun, enemies in front of Tychus will be stunned for 0.75 seconds and will have their physical armor reduced by 40 for 2 seconds, as Tychus hits them with the butt of his minigun.{/highlight}",
-      "image": "tychus_runandgun.png",
-      "talentChanged": true
+      "name": "Quarterback",
+      "description": "Increases Frag Grenade's damage by 10% and its range by 50%.",
+      "image": "tychus_fraggrenade.png",
+      "talentChanged": false
     },
     {
       "name": "Dash",
@@ -67,9 +67,9 @@
     },
     {
       "name": "Press the Advantage",
-      "description": "Increase Tychus's Basic Attack range by 1. {highlight}Hitting the same target will increase Tychus attack speed by 2% for each basic attack he hits it. Bonus reset every time he hits another target.{/highlight}",
+      "description": "Increase Tychus's Basic Attack range by 1.",
       "image": "talent_autoattack_range.png",
-      "talentChanged": true
+      "talentChanged": false
     }
   ],
   "4": [
@@ -83,16 +83,13 @@
       "name": "The Bigger They Are...",
       "description": "Increase the damage bonus to 4% while enemy Heroes are above 30% Health, but Minigun no longer has any effect on targets below 30%.",
       "image": "tychus_minigun_a.png",
-      "talentChanged": true,
-      "passives": [
-        "{highlight}Reduces the cooldown of Minigun by 4 seconds after using Run and Gun{/highlight}"
-      ]
+      "talentChanged": false
     },
     {
-      "name": "That's the Stuff!",
-      "description": "Minigun heals Tychus for 100% of the bonus damage dealt after it expires.",
-      "image": "tychus_minigun.png",
-      "talentChanged": true
+      "name": "Master Assassin",
+      "description": "Passive: Increase Tychus's Attack Speed by 10%. Reward: After getting 15 Takedowns, Tychus's Attack Speed is increased by an additional 15%.",
+      "image": "talent_autoattack_speed.png",
+      "talentChanged": false
     }
   ],
   "7": [
@@ -103,17 +100,16 @@
       "talentChanged": false
     },
     {
-      "name": "KD9a Implosion Core",
-      "description": "{highlight}Tychus grenade will pull targets to it's center now.{/highlight} ",
-      "passives": ["{highlight}Increase explosion radius by 15%.{/highlight}"],
-      "image": "tychus_fraggrenade.png",
-      "talentChanged": true
+      "name": "Combat Tactician",
+      "description": "Reduce the cooldown of Minigun by 4 seconds. Reduce the cooldown of Minigun by an additional 4 seconds after using Run and Gun.",
+      "image": "tychus_minigun.png",
+      "talentChanged": false
     },
     {
-      "name": "Quarterback",
-      "description": "Increases Frag Grenade's range by 50%. {highlight}Reduces armor of enemy heros hit by 15 for 3 seconds.{/highlight}",
-      "image": "tychus_fraggrenade.png",
-      "talentChanged": true
+      "name": "Relentless Soldier",
+      "description": "Being Stunned or Rooted grants 30 Armor for 3 seconds, reducing damage taken by 30%.",
+      "image": "talent_relentless.png",
+      "talentChanged": false
     }
   ],
   "10": [
@@ -127,44 +123,44 @@
     },
     {
       "name": "Drakken Laser Drill",
-      "description": "{highlight}The Drakken Laser Drill now spawns at the Halls of the Storm and targets the closest enemy unit to Tychus, dealing 142 (+4% per level) damage per second. It will switch targets every 3 seconds or instantly if the current target dies. Activating the Drakken Laser Drill allows you to select a target. After 2 seconds, the laser will fire a high-damage continuous beam at the target's position, stunning enemies for 0.5 seconds and dealing damage over 3 seconds. {/highlight}",
+      "description": "Call down a Laser Drill to attack nearby enemies, dealing 142 damage every second. Reactivate to assign a new target. Lasts 22 seconds.",
       "image": "tychus_drakkinlaserdrill.png",
-      "talentChanged": true,
+      "talentChanged": false,
       "manaCost": "100 Mana",
-      "cooldown": "70s"
+      "cooldown": "100s"
     }
   ],
   "13": [
     {
-      "name": "Armor Piercing Rounds",
-      "description": "Each time Overkill hits an enemy, its damage against them is increased by 15%, stacking up to 60% bonus damage.",
+      "name": "Spray 'n' Pray",
+      "description": "Overkill Slows enemy Movement Speed by 25% and its range is increased by 25%.",
       "image": "tychus_overkill.png",
-      "talentChanged": true
+      "talentChanged": false
     },
     {
-      "name": "OverExtend",
-      "description": "{highlight}After expiring overkill does an extra hit applying a decaying slow on every enemy hero of 75% for 2.5 seconds. {/highlight} ",
-      "passives": ["Reduces minigun cooldown by 4 seconds"],
-      "image": "tychus_overkill.png",
-      "talentChanged": true
+      "name": "That's the Stuff!",
+      "description": "Minigun heals Tychus for 100% of the bonus damage dealt after it expires.",
+      "image": "tychus_minigun.png",
+      "talentChanged": false
     },
     {
-      "name": "Can do this all day",
-      "description": "Reduce Overkill's cooldown by 5 seconds {highlight} if you finish casting Overkill{/highlight}. While Channeling Overkill, Tychus gains 40 Armor. ",
-      "image": "tychus_overkill.png",
-      "talentChanged": true
+      "name": "Neosteel Coating",
+      "description": "Activate to gain 75 Spell Armor for 4 seconds, reducing Ability Damage taken by 75%.",
+      "image": "upgrade-terran-neosteelframe.png",
+      "talentChanged": false,
+      "cooldown": "30s"
     }
   ],
   "16": [
     {
-      "name": "Spray 'n' Pray",
-      "description": "Overkill Slows enemy Movement Speed by 25% and its range is increased by 25%.",
+      "name": "Armor Piercing Rounds",
+      "description": "Each time Overkill hits an enemy, its damage against them is increased by 15%, stacking up to 60% bonus damage.",
       "image": "tychus_overkill.png",
-      "talentChanged": true
+      "talentChanged": false
     },
     {
       "name": "Titan Grenade",
-      "description": "Frag Grenade deals bonus damage to Heroes equal to 5% of their maximum Health. Each enemy Hero hit by Frag Grenade reduces its cooldown by 1 second.",
+      "description": "Frag Grenade deals bonus damage to Heroes equal to 5% of their maximum Health.  Each enemy Hero hit by Frag Grenade reduces its cooldown by 1 second.",
       "image": "tychus_fraggrenade.png",
       "talentChanged": false
     },
@@ -184,21 +180,21 @@
     },
     {
       "name": "Focusing Diodes",
-      "description": "{highlight}Focusing Heroes will deal extra 3% damage to health per second.{/highlight}",
+      "description": "Increases the range of the Drakken Laser Drill by 50%.  Deals increasing damage the longer it remains on a single target, up to 100% extra damage.",
       "image": "tychus_drakkinlaserdrill.png",
-      "talentChanged": true
-    },
-    {
-      "name": "Bob and Weave",
-      "description": "Run and Gun and Odin's Thrusters gain 2 additional charges and reduces Run and Gun's Mana cost from 50 to 25. After using Run and Gun, increase Tychus's Basic Attack range by 1.5 for 4 seconds.",
-      "image": "tychus_runandgun.png",
       "talentChanged": false
     },
     {
-      "name": "Stepping rock",
-      "description": "{highlight}Tychus grenade will bounce 2 times, exploding on each one of the bounces{/highlight}",
-      "image": "tychus_fraggrenade.png",
-      "talentChanged": true
+      "name": "Can Do This All Day",
+      "description": "Reduce Overkill's cooldown by 5 seconds.  While Channeling Overkill, Tychus gains 40 Armor.",
+      "image": "tychus_overkill.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Bob and Weave",
+      "description": "Run and Gun and Odin's Thrusters gain 2 additional charges and reduces Run and Gun's Mana cost from 50 to 25.  After using Run and Gun, increase Tychus's Basic Attack range by 1.5 for 4 seconds.",
+      "image": "tychus_runandgun.png",
+      "talentChanged": false
     }
   ]
 }

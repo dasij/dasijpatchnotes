@@ -28,7 +28,7 @@
       {
         "name": "Helping Hand (?)",
         "description": "Activate to use Hook that can hit allied Heroes. Hitting an allied Hero this way reduces the cooldown of Hook by 8 seconds.After reaching level 13, Helping Hand's range is increased by 40%.",
-        "image": "stitches_helping_hand.png",
+        "image": "stitches_helpinghand.png",
         "abilityChanged": false,
         "manaCost": "75 Mana",
         "cooldown": "16s"
@@ -38,7 +38,7 @@
       {
         "name": "Putrid Bile (R)",
         "description": "Emit bile that deals 37 damage per second to enemies within, Slowing them by 35% for 1.5 seconds. Gain 20% Movement Speed while emitting bile. Lasts 8 seconds.",
-        "image": "stitches_putrid_bile.png",
+        "image": "stitches_putridbile.png",
         "abilityChanged": false,
         "manaCost": "75 Mana",
         "cooldown": "75s"
@@ -55,7 +55,7 @@
     "trait": {
       "name": "Shambling Horror (T)",
       "description": "Activate to spread Vile Gas in a large area every second and prevent your Movement Speed from being reduced below 110% for 4 seconds.Vile GasHitting enemies with Basic Attacks or the inner area of Slam afflicts them with Vile Gas, dealing an additional 36 damage over 4 seconds. Deals 150% more damage to Minions, Mercenaries, and Monsters.",
-      "image": "stitches_shambling_horror.png",
+      "image": "stitches_shamblinghorror.png",
       "abilityChanged": false,
       "cooldown": "60s"
     }

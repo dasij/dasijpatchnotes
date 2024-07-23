@@ -11,7 +11,7 @@
       {
         "name": "Incinerate (W)",
         "description": "After 0.75 seconds, Deathwing flaps his wings, dealing 65 damage to nearby enemies.World Breaker: Lava BurstCreate a lava pool that damages and Slows",
-        "image": "deathwing_incinerate.png",
+        "image": "deathwing_incinerate.webp",
         "abilityChanged": false,
         "manaCost": "20 Mana",
         "cooldown": "4s"
@@ -19,7 +19,7 @@
       {
         "name": "Onslaught (E)",
         "description": "After 0.5 seconds, Deathwing lunges in a direction dealing 38 damage to enemies and Slowing them by 35% for 2 seconds. Deathwing bites enemies at the end of the lunge, dealing an additional 72 damage.World Breaker: Earth ShatterDamage and Stun enemies in two lines",
-        "image": "deathwing_onslaught.png",
+        "image": "deathwing_onslaught.webp",
         "abilityChanged": false,
         "manaCost": "20 Mana",
         "cooldown": "5s"

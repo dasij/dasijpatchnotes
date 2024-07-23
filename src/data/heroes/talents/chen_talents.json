@@ -4,7 +4,7 @@
       {
         "name": "Flying Kick (Q)",
         "description": "Kick through target enemy, dealing 120 damage.",
-        "image": "chen_flying_kick.png",
+        "image": "chen_flyingkick.png",
         "abilityChanged": false,
         "manaCost": "10 Mana",
         "cooldown": "5s"
@@ -12,7 +12,7 @@
       {
         "name": "Keg Smash (W)",
         "description": "Deal 50 damage and soak enemies in Brew for 3 seconds, Slowing them by 10%. After 1.25 seconds, the Slow is increased to 40%.After being used, this ability becomes Breath of Fire.Breath of FireDeal damage and Ignite Brew-soaked enemies.",
-        "image": "chen_keg_smash.png",
+        "image": "chen_kegsmash.png",
         "abilityChanged": false,
         "manaCost": "30 Mana",
         "cooldown": "5s"
@@ -29,14 +29,14 @@
       {
         "name": "Wandering Keg (R)",
         "description": "Roll around inside an Unstoppable barrel with 70% increased Movement Speed and 25 Armor, dealing 59 damage to enemies in the way and knocking them back. Lasts for 5 seconds.",
-        "image": "chen_wandering_keg.png",
+        "image": "chen_wanderingkeg.png",
         "abilityChanged": false,
         "cooldown": "50s"
       },
       {
         "name": "Storm, Earth, Fire (R)",
         "description": "After 1 second, Chen splits into three elemental spirits for 12 seconds, each with 70% of Chen's maximum Health and a unique Ability.  The last spirit Ability that is cast is empowered. If all three spirits are killed, Chen will die as well.Storm can grant the spirits a Shield. Earth can leap to an area and Slow enemies. Fire can grant the spirits Attack Speed, damage.",
-        "image": "chen_storm,_earth,_fire.png",
+        "image": "chen_stormearthfire.png",
         "abilityChanged": false,
         "cooldown": "120s"
       }
@@ -44,7 +44,7 @@
     "trait": {
       "name": "Fortifying Brew (T)",
       "description": "Chen drinks from his keg, gaining 50 Brew and 180 temporary Shields per second, up to a maximum of 540 while drinking. Shields persist for 4 seconds after he stops drinking.",
-      "image": "chen_fortifying_brew.png",
+      "image": "chen_fortifyingbrew.png",
       "abilityChanged": false,
       "cooldown": "7s"
     }

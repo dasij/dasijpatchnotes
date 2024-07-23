@@ -4,7 +4,7 @@
       {
         "name": "Celestial Charge (Q)",
         "description": "Lunge towards a targeted direction and stab, dealing 35 damage. If an enemy Hero is hit, Channel to Stun for 1 second and deal 80 additional damage when it fully finishes.",
-        "image": "imperius_celestial_charge.png",
+        "image": "imperius_q.png",
         "abilityChanged": false,
         "manaCost": "40 Mana",
         "cooldown": "10s"
@@ -12,7 +12,7 @@
       {
         "name": "Solarion's Fire (W)",
         "description": "Release a fiery wave that deals 110 damage. Enemies hit by the center take 50% bonus damage and are Slowed by 40% for 3 seconds.",
-        "image": "imperius_solarions_fire.png",
+        "image": "imperius_w.png",
         "abilityChanged": false,
         "manaCost": "50 Mana",
         "cooldown": "8s"
@@ -20,7 +20,7 @@
       {
         "name": "Molten Armor (E)",
         "description": "Shroud Imperius in flames for 3 seconds, striking a nearby enemy for 19 damage every 0.25 seconds. Imperius heals for 50% of the damage dealt, increased to 100% against Heroes.",
-        "image": "imperius_molten_armor.png",
+        "image": "imperius_e.png",
         "abilityChanged": false,
         "manaCost": "75 Mana",
         "cooldown": "12s"
@@ -30,7 +30,7 @@
       {
         "name": "Angelic Armaments (R)",
         "description": "Summon a ring of blazing swords that grants 850 Shield for 3 seconds.If the Shield lasts the full duration, this ability can be reactivated within 5 seconds to launch 6 swords toward an area, each dealing 140 damage to the first enemy hit.",
-        "image": "imperius_angelic_armaments.png",
+        "image": "imperius_r1.png",
         "abilityChanged": false,
         "manaCost": "70 Mana",
         "cooldown": "70s"
@@ -38,7 +38,7 @@
       {
         "name": "Wrath of the Angiris (R)",
         "description": "After 0.75 seconds, charge in the target direction, lifting the first enemy Hero hit into the Heavens. While in the air, Imperius can steer the landing location by moving.After 2 seconds, slam the target into the ground, dealing 375 damage and Stunning them for 1 second.",
-        "image": "imperius_wrath_of_the_angiris.png",
+        "image": "imperius_r2.png",
         "abilityChanged": false,
         "manaCost": "80 Mana",
         "cooldown": "80s"
@@ -47,7 +47,7 @@
     "trait": {
       "name": "Valorous Brand (T)",
       "description": " Each Basic Ability marks enemy Heroes hit for 10 seconds. Basic Attacks consume the target's marks, dealing 20% bonus damage per mark and healing for 75 per mark.",
-      "image": "imperius_valorous_brand.png",
+      "image": "imperius_trait.png",
       "abilityChanged": false
     }
   },

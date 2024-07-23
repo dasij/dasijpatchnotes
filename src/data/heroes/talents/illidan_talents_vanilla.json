@@ -11,7 +11,7 @@
       {
         "name": "Sweeping Strike (W)",
         "description": "Dash towards target point, dealing 119 damage to enemies along the way. Hitting an enemy increases Illidan's Basic Attack damage by 35% for 3 seconds.",
-        "image": "illidan_sweeping_strike.png",
+        "image": "illidan_sweepingstrike.png",
         "abilityChanged": false,
         "cooldown": "8s"
       },
@@ -34,7 +34,7 @@
       {
         "name": "The Hunt (R)",
         "description": "Charge to target unit, dealing 251 damage on impact and stunning for 1 second.",
-        "image": "illidan_the_hunt.png",
+        "image": "illidan_thehunt.png",
         "abilityChanged": false,
         "cooldown": "100s"
       }
@@ -42,7 +42,7 @@
     "trait": {
       "name": "Betrayer's Thirst (T)",
       "description": " Basic Attacks heal for 30% of damage dealt and reduce Ability cooldowns by 1 second.",
-      "image": "illidan_betrayers_thirst.png",
+      "image": "illidan_betrayersthirst.png",
       "abilityChanged": false
     }
   },

@@ -4,7 +4,7 @@
       {
         "name": "Baneling Barrage (Q)",
         "description": "Launch 2 Banelings that deal 80 damage to enemies they hit.Stores up to 2 charges.",
-        "image": "zagara_baneling_barrage.png",
+        "image": "zagara_banelingbarrage.png",
         "abilityChanged": false,
         "manaCost": "15 Mana",
         "cooldown": "4s"
@@ -12,7 +12,7 @@
       {
         "name": "Hunter Killer (W)",
         "description": "Summon a Hydralisk to attack a single target, dealing 71 damage per second. Lasts 8 seconds.",
-        "image": "zagara_hunter_killer.png",
+        "image": "zagara_hunterkiller.png",
         "abilityChanged": false,
         "manaCost": "75 Mana",
         "cooldown": "16s"
@@ -20,7 +20,7 @@
       {
         "name": "Infested Drop (E)",
         "description": "Bombard target area with a Zerg Drop Pod for 140 damage. The pod spawns 2 Roachlings that deal 30 damage per second and last for 8 seconds.",
-        "image": "zagara_infested_drop.png",
+        "image": "zagara_infesteddrop.png",
         "abilityChanged": false,
         "manaCost": "50 Mana",
         "cooldown": "12s"
@@ -30,7 +30,7 @@
       {
         "name": "Devouring Maw (R)",
         "description": "Summon a Devouring Maw that devours enemies for 4 seconds. Devoured enemies cannot fight and take 94 damage per second.Usable on Unstoppable enemies.",
-        "image": "zagara_devouring_maw.png",
+        "image": "zagara_devouringmaw.png",
         "abilityChanged": false,
         "manaCost": "70 Mana",
         "cooldown": "80s"
@@ -38,7 +38,7 @@
       {
         "name": "Nydus Network (R)",
         "description": "Summon a Nydus Worm on Creep anywhere that Zagara has vision. Zagara can enter a Nydus Worm and travel to any other Nydus Worm by right-clicking near it. While inside a Nydus Worm, Zagara regenerates 10% Health and Mana per second.Stores up to 2 charges. Maximum of 4 Nydus Worms at a time.Passive: Creep spreads 15% farther. Passive: While on Creep, each Basic Attack reduces all of Zagara's cooldowns by 0.4 seconds.",
-        "image": "zagara_nydus_network.png",
+        "image": "zagara_nydusnetwork.png",
         "abilityChanged": false,
         "manaCost": "50 Mana",
         "cooldown": "120s"
@@ -47,7 +47,7 @@
     "trait": {
       "name": "Creep Tumor (T)",
       "description": "Lay a Creep Tumor that generates Creep. While on Creep, Zagara moves 20% faster and her summons move 30% faster. Tumors last 240 seconds and reveal the surrounding area while active.Stores up to 3 charges.",
-      "image": "zagara_creep_tumor.png",
+      "image": "zagara_creeptumor.png",
       "abilityChanged": false,
       "cooldown": "18s"
     }

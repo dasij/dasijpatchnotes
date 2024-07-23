@@ -4,21 +4,21 @@
       {
         "name": "Staggering Blow (Q)",
         "description": "Swing your chain in a wide arc, dealing 140 damage to enemies hit and knocking them away. If an enemy hits terrain, deal an additional 150 damage, Stun for 0.75 seconds, and gain 15 Rage.",
-        "image": "hogger_staggering_blow.png",
+        "image": "hogger_q.png",
         "abilityChanged": false,
         "cooldown": "12s"
       },
       {
         "name": "Ez-Thro Dynamite (W)",
         "description": "Toss a bundle of Dynamite with a 1.5 second fuse. Upon detonation, enemies take 180 damage and are Slowed by 30% for 2 seconds. The Dynamite instantly detonates when landing on an enemy Hero granting Hogger 10 Rage.",
-        "image": "hogger_ez_thro_dynamite.png",
+        "image": "hogger_w.png",
         "abilityChanged": false,
         "cooldown": "8s"
       },
       {
         "name": "Hogg Wild (E)",
         "description": "After 0.25 seconds, become Unstoppable and uncontrollably spin towards the target direction, ricocheting off terrain. Ricocheting off terrain refreshes the duration.Every 0.125 seconds, deal 44 damage to nearby non-Structure enemies. Damage against Heroes is increased by .5% for each point of Rage.",
-        "image": "hogger_hogg_wild.png",
+        "image": "hogger_e.png",
         "abilityChanged": false,
         "cooldown": "14s"
       },
@@ -33,14 +33,14 @@
       {
         "name": "Hoardapult (R)",
         "description": "Launch an empowered Loot Hoard with Hogger attached, dealing 100 damage and Slowing enemies by 50% for 2 seconds.Hoardapult's Loot Hoard lasts for up to 20 seconds, decaying rapidly while not nearby. Every 10 seconds Hogger can take a chunk of Meat from the Loot Hoard.",
-        "image": "hogger_hoardapult.png",
+        "image": "hogger_r1.png",
         "abilityChanged": false,
         "cooldown": "60s"
       },
       {
         "name": "Shockwave (R)",
         "description": "After 0.5 seconds, slam the ground, sending out a shockwave that travels in a long line. Enemies hit by the initial slam take 335 damage and are Stunned for 1.5 seconds. Enemies only hit by the shockwave take 230 damage and are Stunned for 0.75 seconds.",
-        "image": "hogger_shockwave.png",
+        "image": "hogger_r2.png",
         "abilityChanged": false,
         "cooldown": "70s"
       }
@@ -48,7 +48,7 @@
     "trait": {
       "name": "Loot Hoard (T)",
       "description": "Toss a pile of junk onto the battlefield, dealing 102 damage in an area, knocking enemies away, and acting as terrain for up to 5 seconds.When the Loot Hoard expires or is destroyed, a chunk of Meat falls out that can be picked up to restore 3% of maximum Health every second for 4 seconds.Reactivate to destroy Loot Hoard.",
-      "image": "hogger_loot_hoard.png",
+      "image": "hogger_trait.png",
       "abilityChanged": false,
       "cooldown": "20s"
     }

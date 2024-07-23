@@ -12,7 +12,7 @@
       {
         "name": "Face Melt (W)",
         "description": "Deals 68 damage to nearby enemies, knocking them back.",
-        "image": "etc_face_melt.png",
+        "image": "etc_facemelt.png",
         "abilityChanged": false,
         "manaCost": "55 Mana",
         "cooldown": "12s"
@@ -20,7 +20,7 @@
       {
         "name": "Guitar Solo (E)",
         "description": "Regenerate 66 Health per second for 4 seconds.",
-        "image": "etc_guitar_solo.png",
+        "image": "etc_guitarsolo.png",
         "abilityChanged": false,
         "manaCost": "40 Mana",
         "cooldown": "9s"
@@ -30,7 +30,7 @@
       {
         "name": "Mosh Pit (R)",
         "description": "After 0.75 seconds, channel to stun nearby enemies for 4 seconds.",
-        "image": "etc_mosh_pit.png",
+        "image": "etc_moshpit.png",
         "abilityChanged": false,
         "manaCost": "100 Mana",
         "cooldown": "120s"
@@ -38,7 +38,7 @@
       {
         "name": "Stage Dive (R)",
         "description": "Leap to target location, landing after 2.75 seconds, dealing 330 damage to enemies in the area, and slowing them by 50% for 4 seconds.",
-        "image": "etc_stage_dive.png",
+        "image": "etc_stagedive.png",
         "abilityChanged": false,
         "manaCost": "70 Mana",
         "cooldown": "75s"

@@ -1,74 +1,44 @@
 {
-  "id": 75,
+  "id": 999,
   "name": "TYCHUS",
-  "role": "Ranged Assassin",
+  "role": "",
   "image": "heroes_portraits/tychus.webp",
+  "show": "false",
   "patchNotes": [
     {
-      "id": 75,
-      "title": "Hero changes and Talent Rework",
+      "id": 999,
+      "title": "",
       "general": [
         {
-          "change_id": "tychus_1",
-          "change": "<vanilla, abilities, trait, 0>",
+          "change_id": "tychus_",
+          "change": "",
           "texts": [
             {
-              "text": "Additional functionality: You can reactive < vanilla, abilities, trait, 0> to activate it earlier"
-            },
-            {
-              "text": "Additional functionality: < vanilla , abilities, basic, 0> is also affected by Minigun with 50% of the effect",
-              "subtexts": [
-                "Everyone hit is affected by the <modified, abilities, trait, 0>",
-                "Using <vanilla, abilities, basic, 0> DOESN'T activate the <modified, abilities, trait, 0> effect you need to manually activate it or basic attack someone"
-              ]
+              "text": ""
             }
           ],
-          "developerCommentary": "This is a change both for QoL on the situations you press <modified, abilities, trait, 0> and can't hit a hero so <modified, abilities, trait, 0> trait is activated and you can't do anything and also to combo with the new <modified, abilities, basic, 0> Mechanic better. The new <modified, abilities, basic, 0> interaction is worse on single targets but better on area damage as the <modified, abilities, basic, 0> stacks less hits(3.0second) in comparison of the basic attacks(4.0second) but with the advantage of hitting on area.",
+          "developerCommentary": "",
           "likes": 0,
           "likedBy": {}
         }
       ],
-      "developerCommentary": "I like Tychus but some talents of it's build are into a funnel shape so for my vision i made adjustments on those talents to prevent that making it that you can pick any talent for any build and also changing how Drakkin works so it's more reliable.",
+      "developerCommentary": "",
       "sections": [
         {
           "name": "Level 1",
           "changes": [
             {
-              "change_id": "tychus_2",
-              "name": "New talent: Stun and Gun",
+              "change_id": "tychus_",
+              "name": "",
               "texts": [
                 {
-                  "text": "At the end of <vanilla, abilities, basic, 2>, enemies in front of Tychus will be stunned for 0.75 seconds and will have their physical armor reduced by 40 for 2 seconds, as Tychus hits them with the butt of his <modified, abilities, trait, 0>.",
+                  "text": "",
                   "subtexts": [
-                    "Range: 1.5 on a 45º radius. It should perform as an very small arc"
+                    ""
                   ]
                 }
               ],
-              "developerCommentary": "This is a talent to better benefit Tychus players who go for ambushing the solo laner instead of following the tank, it can also be used for that but only for extreme agressive gameplay",
-              "likes": 0,
-              "likedBy": {}
-            },
-            {
-              "change_id": "tychus_3",
-              "name": "<vanilla, talents, 1, 0>",
-              "texts": [
-                {
-                  "text": "Moved to level 7"
-                }
-              ],
-              "developerCommentary": "One of the big problems is that this talent is too good and too much fun so i changed it for a only <modified, abilities, basic, 1> tier for better control on how you want to handle <modified, abilities, basic, 1> talents",
-              "likes": 0,
-              "likedBy": {}
-            },
-            {
-              "change_id": "tychus_4",
-              "name": "<vanilla, talents, 1, 2>",
-              "texts": [
-                {
-                  "text": "Additional bonus: Hitting the same target will increase Tychus attack speed by 2% for each basic attack he hits it. Bonus reset every time he hits another target."
-                }
-              ],
-              "developerCommentary": "It's not bad as it is but has more potential to have some kind of niche",
+              "developerCommentary": "",
               "likes": 0,
               "likedBy": {}
             }
@@ -78,38 +48,17 @@
           "name": "Level 4",
           "changes": [
             {
-              "change_id": "tychus_5",
-              "name": "<vanilla, talents, 4, 2>",
+              "change_id": "tychus_",
+              "name": "",
               "texts": [
                 {
-                  "text": "removed"
+                  "text": "",
+                  "subtexts": [
+                    ""
+                  ]
                 }
               ],
-              "developerCommentary": "The only sole reason for that to be picked is to increase the <vanilla, abilities, heroic, 0> attack speed and for that i think there's better options to be explored on that tier and i would prefer that talent to be more stylish ",
-              "likes": 0,
-              "likedBy": {}
-            },
-            {
-              "change_id": "tychus_6",
-              "name": "<vanilla, talents, 4, 1>",
-              "texts": [
-                {
-                  "text": "Additional bonus: Reduces the cooldown of <modified, abilities, trait, 0> by 4 seconds after using <modified, abilities, basic, 2>"
-                }
-              ],
-              "developerCommentary": "This is a hard talent to either nerf or buff on numerical reasons i feel like mixing it with <vanilla, talents, 7, 1> could help it to better balance it.",
-              "likes": 0,
-              "likedBy": {}
-            },
-            {
-              "change_id": "tychus_7",
-              "name": "<vanilla, talents, 13, 1>",
-              "texts": [
-                {
-                  "text": "Moved from level 13"
-                }
-              ],
-              "developerCommentary": "The biggest reason to <vanilla, talents, 13, 1> is to make the player choose on how he wants the minigun to behave for the entire game, choose between killing a target, extended duration or self-healing.",
+              "developerCommentary": "",
               "likes": 0,
               "likedBy": {}
             }
@@ -119,59 +68,17 @@
           "name": "Level 7",
           "changes": [
             {
-              "change_id": "tychus_8",
-              "name": "<vanilla, talents, 7, 2>",
+              "change_id": "tychus_",
+              "name": "",
               "texts": [
                 {
-                  "text": "Removed"
+                  "text": "",
+                  "subtexts": [
+                    ""
+                  ]
                 }
               ],
-              "developerCommentary": "It's not bad it's about a choice i am making to change how the level 7 tier works.",
-              "likes": 0,
-              "likedBy": {}
-            },
-            {
-              "change_id": "tychus_9",
-              "name": "New Talent: KD9a Implosion Core",
-              "texts": [
-                {
-                  "text": "Tychus <modified, abilities, basic, 1> will pull targets to it's center now."
-                },
-                {
-                  "text": "Increase explosion radius by 15%."
-                }
-              ],
-              "developerCommentary": "Based on Tychus from Sc2 it could give another type of utility for Tychus",
-              "likes": 0,
-              "likedBy": {}
-            },
-            {
-              "change_id": "tychus_10",
-              "name": "<vanilla, talents, 1, 0>",
-              "texts": [
-                {
-                  "text": "Moved from level 1"
-                },
-                {
-                  "text": "Won't increase damage anymore"
-                },
-                {
-                  "text": "Reduces armor of enemy heros hit by 15 for 3 seconds"
-                }
-              ],
-              "developerCommentary": "Bringing that talent to level 7 means it would directly compete with damage with melting point so instead im changing it for something similar but that provide another use",
-              "likes": 0,
-              "likedBy": {}
-            },
-            {
-              "change_id": "tychus_11",
-              "name": "<vanilla, talents, 7, 1>",
-              "texts": [
-                {
-                  "text": "Removed"
-                }
-              ],
-              "developerCommentary": "By mixing it with <vanilla, talents, 4, 1> and with the way i am changing the talent tree i see no reason to that exist",
+              "developerCommentary": "",
               "likes": 0,
               "likedBy": {}
             }
@@ -181,22 +88,17 @@
           "name": "Level 10",
           "changes": [
             {
-              "change_id": "tychus_12",
-              "name": "<vanilla, abilities, heroic, 1>",
+              "change_id": "tychus_",
+              "name": "",
               "texts": [
                 {
-                  "text": "Changed functionality: The <vanilla, abilities, heroic, 1> now spawns at the Halls of the Storm and targets the closest enemy unit to Tychus, dealing 142 (+4% per level) damage per second. It will switch targets every 3 seconds or instantly if the current target dies. Activating the <modified, abilities, heroic, 1> allows you to select a target. After 2 seconds, the laser will fire a high-damage continuous beam at the target's position, stunning enemies for 0.5 seconds and dealing damage over 3 seconds.",
+                  "text": "",
                   "subtexts": [
-                    "The laser activation will not follow the target but will stay on the target position after it start BEAMING.",
-                    "The Activated beam radius is 2.0 | Sgt.Hammer Napalm strike radius is 2.0",
-                    "The laser range is global but it will ALWAYS target the closest visible enemy target to Tychus doesn't matter if its a hero or troop but will always prefer the closest hero on a 10 range from Tychus.",
-                    "The laser will only START focusing on visible targets but won't leave the current target no matter what happens.",
-                    "It takes 0.5 seconds to change target",
-                    "Cooldown 70 seconds to empower"
+                    ""
                   ]
                 }
               ],
-              "developerCommentary": "One problem i have with the current <vanilla, abilities, heroic, 1> is the fighting summonable aspect that can't be changed if it has a fixed duration but i like the idea of Drakken because it's a very important mission that Tychus takes care. For that i want to bring it closer to how it works in game and that means being global BUT i will remove the natural retargetting aspect for not start a Toxic global constant damage ultimate. And also for to better enhance the lore aspect <vanilla, abilities, heroic, 1> is global",
+              "developerCommentary": "",
               "likes": 0,
               "likedBy": {}
             }
@@ -206,132 +108,57 @@
           "name": "Level 13",
           "changes": [
             {
-              "change_id": "tychus_13",
-              "name": "<vanilla, talents, 16, 0>",
+              "change_id": "tychus_",
+              "name": "",
               "texts": [
                 {
-                  "text": "Moved from level 16"
+                  "text": "",
+                  "subtexts": [
+                    ""
+                  ]
                 }
               ],
-              "developerCommentary": "As a talent i consider less important for synergy with any talent from <modified, abilities, basic, 0> builds i bring it here so i can make this tier the <modified, abilities, basic, 0> Talent tree choice and put <vanilla, talents, 13, 0> as the big choice on 16",
-              "likes": 0,
-              "likedBy": {}
-            },
-            {
-              "change_id": "tychus_14",
-              "name": "<vanilla, talents, 13, 0>",
-              "texts": [
-                {
-                  "text": "Moved to level 16"
-                }
-              ],
-              "developerCommentary": "This talent is the most important if you want to focus on a <modified, abilities, basic, 0> build because it gives everything extra you would want AND i am putting it on 16 as a very important choice to make.",
-              "likes": 0,
-              "likedBy": {}
-            },
-            {
-              "change_id": "tychus_15",
-              "name": "<vanilla, talents, 20, 2>",
-              "texts": [
-                {
-                  "text": "Moved from level 20"
-                },
-                {
-                  "text": "Cooldown reduction is now reduced by 5 if Tychus complete <modified, abilities, basic, 0> instead of flat bonus"
-                }
-              ],
-              "developerCommentary": "Nerfing it a little to better suit level 13 and bringing it here as the new defensive talent.",
-              "likes": 0,
-              "likedBy": {}
-            },
-            {
-              "change_id": "tychus_16",
-              "name": "<vanilla, talents, 13, 2>",
-              "texts": [
-                {
-                  "text": "Removed"
-                }
-              ],
-              "developerCommentary": "Again, it's not a bad talent BUT i am changing how that talent tier works and with the Can do this all day i think it would overlap",
-              "likes": 0,
-              "likedBy": {}
-            },
-            {
-              "change_id": "tychus_23",
-              "name": "New talent:OverExtend",
-              "texts": [
-                {
-                  "text": "After expiring <modified, abilities, basic, 0> does an extra hit applying a decaying slow on every enemy hero of 75% for 2.5 seconds."
-                },
-                {
-                  "text": "Passive: Reduce minigun cooldown by 4 seconds."
-                }
-              ],
-              "developerCommentary": "Something that i want to make is a talent that could make <modified, abilities, basic, 0> feel a little different somehow and that's a solution a liked. For better targetting melee targets without the need from the <modified, talents, 1, 0> new talent but on with a good synergy with it.",
+              "developerCommentary": "",
               "likes": 0,
               "likedBy": {}
             }
           ]
         },
-
         {
           "name": "Level 16",
           "changes": [
             {
-              "change_id": "tychus_17",
-              "name": "<vanilla, talents, 16, 0>",
+              "change_id": "tychus_",
+              "name": "",
               "texts": [
                 {
-                  "text": "Moved to level 13"
+                  "text": "",
+                  "subtexts": [
+                    ""
+                  ]
                 }
               ],
-              "developerCommentary": "It was changed to level 13 because it ain't the most necessary talent for the <modified, abilities, basic, 0> build and i am changing level 13 to be it.",
+              "developerCommentary": "",
               "likes": 0,
               "likedBy": {}
             }
           ]
         },
         {
-          "change_id": "tychus_19",
           "name": "Level 20",
           "changes": [
             {
-              "change_id": "tychus_20",
-              "name": "<vanilla, talents, 20, 2>",
+              "change_id": "tychus_",
+              "name": "",
               "texts": [
                 {
-                  "text": "Moved to level 13"
-                }
-              ],
-              "developerCommentary": "Not a bad talent but not strong enough to be here. It could be rebalanced with unstopabble or better bonuses but for me it would be <modified, abilities, basic, 0>",
-              "likes": 0,
-              "likedBy": {}
-            },
-            {
-              "change_id": "tychus_21",
-              "name": "<vanilla, talents, 20, 1>",
-              "texts": [
-                {
-                  "text": "Changing functionality: When focusing Heroes it will deal extra 3% damage to health per second."
-                }
-              ],
-              "developerCommentary": "On all seriousness i think that's enough to be a good pick by niching it for better usage against tanks",
-              "likes": 0,
-              "likedBy": {}
-            },
-            {
-              "change_id": "tychus_22",
-              "name": "New Talent: Stepping rock",
-              "texts": [
-                {
-                  "text": "Tychus <modified, abilities, basic, 1> will bounce 2 times, exploding on each one of the bounces",
+                  "text": "",
                   "subtexts": [
-                    " I don't know how measure that but it should be enough to bounce and explode with atleast 1 range between each bounce if you pick the talent that pull enemies.",
-                    "This sums 3 explosions"
+                    ""
                   ]
                 }
               ],
-              "developerCommentary": "What can i saw it just sounds fun",
+              "developerCommentary": "",
               "likes": 0,
               "likedBy": {}
             }

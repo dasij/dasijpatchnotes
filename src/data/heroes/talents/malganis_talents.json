@@ -4,7 +4,7 @@
       {
         "name": "Fel Claws (Q)",
         "description": "Violently slash in the chosen direction, dealing 66 damage to enemies.Reactivate to slash up to 2 more times. The third slash Stuns enemies for 0.75 seconds.",
-        "image": "malganis_fel_claws.png",
+        "image": "malganis_fel_1.png",
         "abilityChanged": false,
         "manaCost": "45 Mana",
         "cooldown": "8s"
@@ -12,7 +12,7 @@
       {
         "name": "Necrotic Embrace (W)",
         "description": "Desecrate the air, dealing 110 damage to nearby enemies and gaining 25 Armor for 3 seconds.",
-        "image": "malganis_necrotic_embrace.png",
+        "image": "malganis_necrotic.png",
         "abilityChanged": false,
         "manaCost": "35 Mana",
         "cooldown": "8s"
@@ -20,7 +20,7 @@
       {
         "name": "Night Rush (E)",
         "description": "After 0.75 seconds, gain 50% Movement Speed for 2 seconds. While active, Mal'Ganis can move through enemy Heroes and put them to Sleep for 2.5 seconds.",
-        "image": "malganis_night_rush.png",
+        "image": "malganis_nightrush.png",
         "abilityChanged": false,
         "manaCost": "70 Mana",
         "cooldown": "14s"
@@ -30,7 +30,7 @@
       {
         "name": "Carrion Swarm (R)",
         "description": "After 1 second, disperse into an Invulnerable swarm of bats for 3 seconds, dealing 120 damage per second to enemies.Vampiric Touch heals for 75% of Carrion Swarm's damage to Heroes.",
-        "image": "malganis_carrion_swarm.png",
+        "image": "malganis_ult_swarm.png",
         "abilityChanged": false,
         "manaCost": "70 Mana",
         "cooldown": "100s"
@@ -38,7 +38,7 @@
       {
         "name": "Dark Conversion (R)",
         "description": "Channel on an enemy Hero for 0.75 seconds, then swap Health percentages with the target over 3 seconds.",
-        "image": "malganis_dark_conversion.png",
+        "image": "malganis_ult_conversion.png",
         "abilityChanged": false,
         "manaCost": "60 Mana",
         "cooldown": "60s"
@@ -47,7 +47,7 @@
     "trait": {
       "name": "Vampiric Touch (T)",
       "description": " Mal'Ganis heals for 45% of damage dealt to enemy Heroes and 10% of damage dealt to non-Heroes.",
-      "image": "malganis_vampiric_touch.png",
+      "image": "malganis_trait.png",
       "abilityChanged": false
     }
   },

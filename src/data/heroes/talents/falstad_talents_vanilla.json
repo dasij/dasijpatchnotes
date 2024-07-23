@@ -12,7 +12,7 @@
       {
         "name": "Lightning Rod (W)",
         "description": "Deal 107 damage to an enemy, and an additional 75 damage per second for 4 seconds while close to the target. Deals 100% increased damage to Minions and Mercenaries.",
-        "image": "falstad_lightning_rod.png",
+        "image": "falstad_lightningrod.png",
         "abilityChanged": false,
         "manaCost": "60 Mana",
         "cooldown": "13s"
@@ -20,7 +20,7 @@
       {
         "name": "Barrel Roll (E)",
         "description": "Dashes forward and grants a 171 point Shield for 3 seconds.",
-        "image": "falstad_barrel_roll.png",
+        "image": "falstad_barrelroll.png",
         "abilityChanged": false,
         "manaCost": "70 Mana",
         "cooldown": "13s"
@@ -30,7 +30,7 @@
       {
         "name": "Hinterland Blast (R)",
         "description": "After 1 second, deal 475 damage to enemies within a long line. The cooldown is reduced by 30 seconds for every enemy Hero hit.",
-        "image": "falstad_hinterland_blast.png",
+        "image": "falstad_hinterlandblast.png",
         "abilityChanged": false,
         "manaCost": "80 Mana",
         "cooldown": "120s"
@@ -38,7 +38,7 @@
       {
         "name": "Mighty Gust (R)",
         "description": "Push enemies away, and slow their Movement Speed by 40% decaying over 4 seconds.",
-        "image": "falstad_mighty_gust.png",
+        "image": "falstad_mightygust.png",
         "abilityChanged": false,
         "manaCost": "70 Mana",
         "cooldown": "60s"

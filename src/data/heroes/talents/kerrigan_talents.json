@@ -12,7 +12,7 @@
       {
         "name": "Impaling Blades (W)",
         "description": "After 1.25 seconds, deal 165 damage to enemies within the target area, Stunning them for 1 second.",
-        "image": "kerrigan_impaling_blades.png",
+        "image": "kerrigan_impalingblades.png",
         "abilityChanged": false,
         "manaCost": "80 Mana",
         "cooldown": "12s"
@@ -20,7 +20,7 @@
       {
         "name": "Primal Grasp (E)",
         "description": "Pulls enemies within the target area towards Kerrigan, dealing 25 damage. After 2.5 seconds, an explosion occurs around Kerrigan, dealing 195 damage to nearby enemies.",
-        "image": "kerrigan_primal_grasp.png",
+        "image": "kerrigan_primalgrasp.png",
         "abilityChanged": false,
         "manaCost": "65 Mana",
         "cooldown": "10s"
@@ -38,7 +38,7 @@
       {
         "name": "Summon Ultralisk (R)",
         "description": "After 0.5 seconds, summon an Ultralisk that rushes forward upon spawning, dealing 250 damage to the first enemy Hero hit and Stunning them for 0.5 seconds.The Ultralisk's Basic Attacks deal 50% of their damage in an area around their target. Reactivate to retarget the Ultralisk.",
-        "image": "kerrigan_summon_ultralisk.png",
+        "image": "kerrigan_ultralisk.png",
         "abilityChanged": false,
         "manaCost": "75 Mana",
         "cooldown": "80s"

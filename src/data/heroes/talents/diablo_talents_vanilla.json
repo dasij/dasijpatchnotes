@@ -4,7 +4,7 @@
       {
         "name": "Shadow Charge (Q)",
         "description": "Charge an enemy, knocking them back, dealing 40 damage and gaining 15% Movement Speed for 2 seconds. If the enemy hits terrain, they are Stunned for 1 second and take an additional 130 damage.",
-        "image": "diablo_shadow_charge.png",
+        "image": "diablo_shadowcharge_var1.png",
         "abilityChanged": false,
         "manaCost": "65 Mana",
         "cooldown": "12s"
@@ -12,7 +12,7 @@
       {
         "name": "Fire Stomp (W)",
         "description": "Unleashes fire waves toward the targeted area that deal 12 damage each. Once they reach maximum range they return, dealing an additional 36 damage. Diablo heals for 130% of the damage dealt to Heroes.",
-        "image": "diablo_fire_stomp.png",
+        "image": "diablo_firestomp.png",
         "abilityChanged": false,
         "manaCost": "35 Mana",
         "cooldown": "8s"
@@ -20,7 +20,7 @@
       {
         "name": "Overpower (E)",
         "description": "Grabs the target and slams it behind Diablo, dealing 73 damage and Stunning for 0.25 seconds.",
-        "image": "diablo_overpower.png",
+        "image": "diablo_overpower_var1.png",
         "abilityChanged": false,
         "manaCost": "35 Mana",
         "cooldown": "12s"
@@ -38,7 +38,7 @@
       {
         "name": "Lightning Breath (R)",
         "description": "After 0.5 seconds, become Unstoppable and Channel for up to 4 seconds, dealing 50 damage every 0.25 seconds to enemies in front of Diablo. Enemies affected are Slowed by 4% for 2 seconds, up to 40%. Lightning Breath's direction changes with your mouse cursor position.",
-        "image": "diablo_lightning_breath.png",
+        "image": "diablo_lightningbreath.png",
         "abilityChanged": false,
         "manaCost": "80 Mana",
         "cooldown": "90s"
@@ -47,7 +47,7 @@
     "trait": {
       "name": "Black Soulstone (T)",
       "description": " Repeatable Quest: Gain 10 Souls per Hero killed and 1 Soul per Minion, up to 100. For each Soul, gain 0.3% maximum Health. If Diablo has 100 Souls upon dying, he will resurrect in 5 seconds but lose 100 Souls.After reaching level 10, Diablo only consumes 75 Souls when resurrecting.",
-      "image": "diablo_black_soulstone.png",
+      "image": "diablo_blacksoulstone_var1.png",
       "abilityChanged": false
     }
   },

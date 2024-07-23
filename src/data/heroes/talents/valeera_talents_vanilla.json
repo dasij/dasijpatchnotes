@@ -4,7 +4,7 @@
       {
         "name": "Sinister Strike (Q)",
         "description": "Dash forward, hitting all enemies in a line for 110 damage. If Sinister Strike hits a Hero, Valeera stops dashing immediately and the cooldown is reduced to 1 second.Awards 1 Combo Point.Stealth: AmbushHeavily damage an enemy and reduce their Armor.",
-        "image": "valeera_sinister_strike.png",
+        "image": "valeera_sinisterstrike.png",
         "abilityChanged": false,
         "manaCost": "25 Mana",
         "cooldown": "5s"
@@ -12,7 +12,7 @@
       {
         "name": "Blade Flurry (W)",
         "description": "Deal 130 damage in an area around Valeera. Awards 1 Combo Point per enemy Hero hit.Stealth: Cheap ShotStun, Blind, and damage an enemy.",
-        "image": "valeera_blade_flurry.png",
+        "image": "valeera_bladeflurry.png",
         "abilityChanged": false,
         "manaCost": "40 Mana",
         "cooldown": "4s"
@@ -30,14 +30,14 @@
       {
         "name": "Smoke Bomb (R)",
         "description": "Create a cloud of smoke. While in the smoke, Valeera is Unrevealable, can pass through other units, and gains 60 Armor, reducing damage taken by 60%. Valeera can continue to attack and use abilities without being revealed. Lasts 5 seconds.Using this Ability does not break Stealth.",
-        "image": "valeera_smoke_bomb.png",
+        "image": "valeera_smokebomb.png",
         "abilityChanged": false,
         "cooldown": "60s"
       },
       {
         "name": "Cloak of Shadows (R)",
         "description": "Valeera is enveloped in a Cloak of Shadows, which immediately removes all damage over time effects from her. For 1.5 seconds, she becomes Unstoppable and gains 75 Spell Armor, reducing Ability Damage taken by 75%.Using this Ability does not break Stealth.",
-        "image": "valeera_cloak_of_shadows.png",
+        "image": "valeera_cloakofshadows.png",
         "abilityChanged": false,
         "cooldown": "15s"
       }

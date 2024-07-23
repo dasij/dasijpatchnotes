@@ -11,20 +11,20 @@
       {
         "name": "Defense Matrix (W)",
         "description": "Project a defensive field in the target direction for 3 seconds, reducing the damage dealt by enemy Heroes inside it by 50%.Activate again to change the angle of projection.Damage dealt to the Mech from enemies within Defense Matrix still grants the same amount of Self-Destruct Charge.",
-        "image": "dva_defense_matrix.png",
+        "image": "dva_defensematrix.png",
         "abilityChanged": false,
         "cooldown": "12s"
       },
       {
         "name": "Self-Destruct (E)",
         "description": " Eject from the Mech, setting it to self-destruct after 4 seconds. Deals 400 to 1100 damage in a large area, depending on distance from center. Deals 50% damage against Structures.Gain 1% Charge for every 2 seconds spent Basic Attacking, and 25% Charge per 100% of Mech Health lost.",
-        "image": "dva_self_destruct.png",
+        "image": "dva_selfdestruct.png",
         "abilityChanged": false
       },
       {
         "name": "Big Shot (R)",
         "description": "Deal 150 damage to all enemies in a line. Heroes hit have their Movement Speed Slowed by 25% for 1.5 seconds. The cooldown of Call Mech is reduced by 5 seconds for each enemy Hero hit.Requires Pilot Mode.",
-        "image": "dva_big_shot.png",
+        "image": "dva_bigshot.png",
         "abilityChanged": false,
         "cooldown": "6s"
       }
@@ -33,14 +33,14 @@
       {
         "name": "Bunny Hop (R)",
         "description": "D.Va's Mech becomes Unstoppable and stomps every 0.5 seconds, dealing 70 damage in a large area. Every 4th consecutive hit on a Hero deals 100% more damage and Stuns them for 0.5 seconds.Lasts for 4 seconds.Requires Mech Mode.",
-        "image": "dva_bunny_hop.png",
+        "image": "dva_bunnyhop.png",
         "abilityChanged": false,
         "cooldown": "70s"
       },
       {
         "name": "Micro Missiles (R)",
         "description": "After .375 seconds, Channel to launch a volley of 12 missiles in a target direction. Each missile impacts the first enemy in its path, dealing 40 damage in a small area and Slowing by 30% for 2 seconds.Stores 2 charges with a 5 second cooldown between each use.Requires Mech Mode.",
-        "image": "dva_micro_missiles.png",
+        "image": "dva_micromissiles.png",
         "abilityChanged": false,
         "cooldown": "20s"
       }
@@ -48,7 +48,7 @@
     "trait": {
       "name": "Mech Mode (T)",
       "description": " When D.Va's Mech dies, she is ejected out after 0.75 seconds and can continue to fight. D.Va's Mech only awards 50% of a normal Hero's experience upon dying.Fusion CannonsD.Va's Mech Basic Attacks deal 22 damage in a large area every 0.25 seconds. Deals 40% bonus damage against enemies very close to the Mech.",
-      "image": "dva_mech_mode.png",
+      "image": "dva_mechmode.png",
       "abilityChanged": false
     }
   },

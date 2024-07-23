@@ -4,7 +4,7 @@
       {
         "name": "Arcane Rift (Q)",
         "description": "Launch a rift that deals 170 damage to enemies in its path. If an enemy Hero is hit, reduce its cooldown by 5 seconds and refund 50 Mana.Quest: Hit 40 enemy Heroes with Arcane Rift without dying.Reward: Permanently increase the damage dealt by 75 and cooldown reduction for hitting a Hero by 1 second.",
-        "image": "medivh_arcane_rift.png",
+        "image": "medivh_arcanemissile.png",
         "abilityChanged": false,
         "manaCost": "50 Mana",
         "cooldown": "7s"
@@ -12,7 +12,7 @@
       {
         "name": "Force of Will (W)",
         "description": "Protect an allied Hero from all damage for 1.5 seconds.  Upon expiration, Force of Will heals the target for 20% of the damage it absorbed.",
-        "image": "medivh_force_of_will.png",
+        "image": "medivh_forceofwill.png",
         "abilityChanged": false,
         "manaCost": "60 Mana",
         "cooldown": "9s"
@@ -30,7 +30,7 @@
       {
         "name": "Poly Bomb (R)",
         "description": "Polymorph an enemy Hero for 2 seconds, Silencing them and making them unable to attack. On expiration, Poly Bomb spreads to other nearby enemy Heroes.",
-        "image": "medivh_poly_bomb.png",
+        "image": "medivh_polybomb.png",
         "abilityChanged": false,
         "manaCost": "75 Mana",
         "cooldown": "40s"
@@ -38,7 +38,7 @@
       {
         "name": "Ley Line Seal (R)",
         "description": "After 0.5 seconds, unleash a wave of energy that places enemy Heroes in Time Stop for 3 seconds.",
-        "image": "medivh_ley_line_seal.png",
+        "image": "medivh_leylineblast.png",
         "abilityChanged": false,
         "manaCost": "75 Mana",
         "cooldown": "80s"
@@ -47,7 +47,7 @@
     "trait": {
       "name": "Raven Form (T)",
       "description": " Instead of mounting, Medivh can transform into a raven, increasing Movement Speed by 20%. While transformed, Medivh can see and fly over all terrain and is immune to all effects.",
-      "image": "medivh_raven_form.png",
+      "image": "medivh_ravenform.png",
       "abilityChanged": false
     }
   },

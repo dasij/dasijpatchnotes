@@ -4,7 +4,7 @@
       {
         "name": "Withering Fire (Q)",
         "description": "Shoot the closest enemy up to 5 times over 1.5 seconds for 39 damage, prioritizing Heroes. Cooldown is reset on getting a Takedown.",
-        "image": "sylvanas_withering_fire.png",
+        "image": "sylvanas_witheringfire.png",
         "abilityChanged": false,
         "manaCost": "25 Mana",
         "cooldown": "8s"
@@ -12,7 +12,7 @@
       {
         "name": "Shadow Dagger (W)",
         "description": "Throw a dagger at a target enemy that deals 30 damage and an additional 150 damage over 2.5 seconds. Damage dealt by Sylvanas to the initial target spreads Shadow Dagger to all nearby enemies.",
-        "image": "sylvanas_shadow_dagger.png",
+        "image": "sylvanas_shadowdagger.png",
         "abilityChanged": false,
         "manaCost": "50 Mana",
         "cooldown": "11s"
@@ -20,7 +20,7 @@
       {
         "name": "Haunting Wave (E)",
         "description": "Send forth a wave of banshees dealing 114 damage to all targets. Reactivate to teleport to the banshees' location.",
-        "image": "sylvanas_haunting_wave.png",
+        "image": "sylvanas_hauntingwave.png",
         "abilityChanged": false,
         "manaCost": "75 Mana",
         "cooldown": "11s"
@@ -30,7 +30,7 @@
       {
         "name": "Wailing Arrow (R)",
         "description": "Shoot an arrow that can be reactivated to deal 228 damage and Silence enemies in an area for 2.5 seconds. The arrow detonates automatically if it reaches maximum range.",
-        "image": "sylvanas_wailing_arrow.png",
+        "image": "sylvanas_wailingarrow.png",
         "abilityChanged": false,
         "manaCost": "100 Mana",
         "cooldown": "90s"
@@ -38,7 +38,7 @@
       {
         "name": "Mind Control (R)",
         "description": "After 0.25 seconds, fire a missile that Mind Controls the first enemy Hero hit. Heroes hit are Silenced, Slowed by 30%, have 3 stacks of Banshee's Curse applied to them, and are forced to walk towards Sylvanas for 1.75 seconds.",
-        "image": "sylvanas_mind_control.png",
+        "image": "sylvanas_mindcontrol.png",
         "abilityChanged": false,
         "manaCost": "50 Mana",
         "cooldown": "40s"
@@ -47,7 +47,7 @@
     "trait": {
       "name": "Black Arrows (T)",
       "description": "Activate to cause all Basic Attacks and Abilities to Stun Minions, non-Elite Mercenaries, and Structures for 3 seconds. Lasts for 10 seconds.  Banshee's CurseBasic Attacks infect enemies with Banshee's Curse for 3 seconds, stacking up to 3 times. Deal 25% more damage to enemies with 3 stacks.",
-      "image": "sylvanas_black_arrows.png",
+      "image": "sylvanas_blackarrows.png",
       "abilityChanged": false,
       "cooldown": "40s"
     }

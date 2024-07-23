@@ -4,7 +4,7 @@
       {
         "name": "Soul Rip (Q)",
         "description": "Extract the souls of nearby enemies afflicted by Reaper's Mark, dealing 100 damage and healing Malthael for 25 per target hit. Heroic targets heal Malthael for an additional 4% of the Hero's maximum Health.",
-        "image": "malthael_soul_rip.png",
+        "image": "malthael_soulrip.png",
         "abilityChanged": false,
         "manaCost": "25 Mana",
         "cooldown": "2s"
@@ -12,7 +12,7 @@
       {
         "name": "Wraith Strike (W)",
         "description": "Instantly teleport through an enemy afflicted by Reaper's Mark, dealing 59 damage and refreshing Reaper's Mark.",
-        "image": "malthael_wraith_strike.png",
+        "image": "malthael_wraithstrike.png",
         "abilityChanged": false,
         "manaCost": "30 Mana",
         "cooldown": "5s"
@@ -20,7 +20,7 @@
       {
         "name": "Death Shroud (E)",
         "description": "After 0.25 seconds, unleash a wave of dark mist that applies Reaper's Mark to enemies it hits.",
-        "image": "malthael_death_shroud.png",
+        "image": "malthael_deathshroud.png",
         "abilityChanged": false,
         "manaCost": "50 Mana",
         "cooldown": "8s"
@@ -30,7 +30,7 @@
       {
         "name": "Tormented Souls (R)",
         "description": "Unleash a torrent of souls, continually applying Reaper's Mark to nearby enemies for 4 seconds.  When Tormented Souls is cast and when it expires, reset the cooldown of Wraith Strike.",
-        "image": "malthael_tormented_souls.png",
+        "image": "malthael_tormentedsoul.png",
         "abilityChanged": false,
         "manaCost": "20 Mana",
         "cooldown": "60s"
@@ -38,7 +38,7 @@
       {
         "name": "Last Rites (R)",
         "description": "Apply a death sentence to an enemy Hero that, after 2 seconds, deals damage equal to 50% of their missing Health.Quest: Enemies killed between the application of Last Rites and within 1.5 seconds of it dealing damage permanently reduce its cooldown by 5 seconds, to a minimum of 20 seconds.",
-        "image": "malthael_last_rites.png",
+        "image": "malthael_lastrites.png",
         "abilityChanged": false,
         "manaCost": "100 Mana",
         "cooldown": "70s"
@@ -47,7 +47,7 @@
     "trait": {
       "name": "Reaper's Mark (T)",
       "description": " Basic Attacks cleave in an area in front of Malthael and afflict non-Structure targets with Reaper's Mark for 4 seconds.  Marked enemies are revealed and take damage equal to 2% of their maximum Health every 1 second.",
-      "image": "malthael_reapers_mark.png",
+      "image": "malthael_reapersmark.png",
       "abilityChanged": false
     }
   },

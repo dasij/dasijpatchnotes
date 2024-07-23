@@ -12,14 +12,14 @@
       {
         "name": "Righteous Hammer (W)",
         "description": "Swing Yrel's hammer, dealing 38 damage to enemies in front of her and knocking them away.Charging up this Ability increases its knockback distance, and damage up to 125. Enemies hit at maximum charge are Stunned for 0.75 seconds.",
-        "image": "yrel_righteous_hammer.png",
+        "image": "yrel_righteoushammer.png",
         "abilityChanged": false,
         "cooldown": "6s"
       },
       {
         "name": "Avenging Wrath (E)",
         "description": "Leap to a location, dealing 225 damage to enemies in an area and Slowing them by 50% for 1 second.Charging up this Ability increases its range.",
-        "image": "yrel_avenging_wrath.png",
+        "image": "yrel_avengingwrath.png",
         "abilityChanged": false,
         "cooldown": "6s"
       }
@@ -28,7 +28,7 @@
       {
         "name": "Ardent Defender (R)",
         "description": "Surround Yrel in a barrier for 3 seconds, absorbing all damage taken and healing her for 50% of the damage received.",
-        "image": "yrel_ardent_defender.png",
+        "image": "yrel_ardentdefender.png",
         "abilityChanged": false,
         "manaCost": "80 Mana",
         "cooldown": "120s"
@@ -36,7 +36,7 @@
       {
         "name": "Sacred Ground (R)",
         "description": "Yrel sanctifies the ground around her, gaining 50 Armor until she leaves the area.",
-        "image": "yrel_sacred_ground.png",
+        "image": "yrel_sacredground.png",
         "abilityChanged": false,
         "cooldown": "25s"
       }
@@ -44,7 +44,7 @@
     "trait": {
       "name": "Divine Purpose (T)",
       "description": "Activate to instantly charge Yrel's next Basic Ability at no mana cost. Divine Purpose's cooldown is reset when Yrel casts a Heroic ability.Passive: Yrel's Basic Abilities charge up over 1.5 seconds, increasing in effectiveness, but reducing Yrel's Movement Speed by 25%.",
-      "image": "yrel_divine_purpose.png",
+      "image": "yrel_divinepurpose.png",
       "abilityChanged": false,
       "cooldown": "8s"
     }

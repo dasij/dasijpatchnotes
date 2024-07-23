@@ -4,7 +4,7 @@
       {
         "name": "Shadow Waltz (Q)",
         "description": "After 0.5 seconds, deal 165 damage to enemies in a line. Hitting a Hero with Shadow Waltz sets its cooldown to 2 seconds, refunds 35 Mana, and causes Orphea to dash a short distance upon moving.",
-        "image": "orphea_shadow_waltz.png",
+        "image": "orphea_q.png",
         "abilityChanged": false,
         "manaCost": "35 Mana",
         "cooldown": "5s"
@@ -12,7 +12,7 @@
       {
         "name": "Chomp (W)",
         "description": "After 0.625 seconds, deal 305 damage to nearby enemies in front of Orphea.",
-        "image": "orphea_chomp.png",
+        "image": "orphea_w.png",
         "abilityChanged": false,
         "manaCost": "60 Mana",
         "cooldown": "10s"
@@ -20,7 +20,7 @@
       {
         "name": "Dread (E)",
         "description": "Release a wave of dread that deals 85 damage to enemies hit.  Dread erupts 0.75 seconds after reaching the end of its path, dealing 175 damage. Enemies hit by Dread's wave or eruption are Slowed by 25% for 2 seconds.",
-        "image": "orphea_dread.png",
+        "image": "orphea_e.png",
         "abilityChanged": false,
         "manaCost": "50 Mana",
         "cooldown": "14s"
@@ -30,7 +30,7 @@
       {
         "name": "Eternal Feast (R)",
         "description": "After 1.5 seconds, deal 210 damage in an area. Eternal Feast repeats every 1 second as long as it hits an enemy Hero.",
-        "image": "orphea_eternal_feast.png",
+        "image": "orphea_ult_darkfall.png",
         "abilityChanged": false,
         "manaCost": "75 Mana",
         "cooldown": "50s"
@@ -38,7 +38,7 @@
       {
         "name": "Crushing Jaws (R)",
         "description": "After 1.25 seconds, pull enemies in an area towards the center, dealing 250 damage and Stunning them for 0.5 seconds.",
-        "image": "orphea_crushing_jaws.png",
+        "image": "orphea_ult_thrasher.png",
         "abilityChanged": false,
         "manaCost": "75 Mana",
         "cooldown": "70s"
@@ -47,7 +47,7 @@
     "trait": {
       "name": "Overflowing Chaos (T)",
       "description": " Hitting an enemy Hero with a Basic Ability grants 1 Chaos. Chaos can stack up to 3 times.While Orphea has Chaos, her Basic Attacks against Heroes consume all Chaos, dealing 50% increased damage per stack, and healing for 100% of the damage dealt.",
-      "image": "orphea_overflowing_chaos.png",
+      "image": "orphea_trait.png",
       "abilityChanged": false
     }
   },

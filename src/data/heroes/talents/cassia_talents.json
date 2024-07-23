@@ -4,7 +4,7 @@
       {
         "name": "Lightning Fury (Q)",
         "description": "Hurl a lightning javelin that deals 158 damage to the first enemy hit and splits into two lightning bolts that deal 158 damage to enemies in their path.",
-        "image": "cassia_lightning_fury.png",
+        "image": "cassia_lightningfury.png",
         "abilityChanged": false,
         "manaCost": "20 Mana",
         "cooldown": "5s"
@@ -12,7 +12,7 @@
       {
         "name": "Blinding Light (W)",
         "description": "After 0.5 seconds, deal 50 damage and Blind enemies in the target area for 2 seconds.Passive: Cassia deals 15% increased damage to Blinded targets.",
-        "image": "cassia_blinding_light.png",
+        "image": "cassia_blindinglight.png",
         "abilityChanged": false,
         "manaCost": "50 Mana",
         "cooldown": "15s"
@@ -30,7 +30,7 @@
       {
         "name": "Ball Lightning (R)",
         "description": "Throw a ball of lightning at an enemy Hero that bounces up to 6 times between nearby enemy Heroes and Cassia, dealing 180 damage to enemies hit.",
-        "image": "cassia_ball_lightning.png",
+        "image": "cassia_balllightning.png",
         "abilityChanged": false,
         "manaCost": "60 Mana",
         "cooldown": "60s"
@@ -124,7 +124,7 @@
     {
       "name": "Valkyrie",
       "description": "Summon a Valkyrie that rushes to Cassia after 0.75 seconds, pulling the first enemy Hero hit, dealing 225 damage and Stunning them for 0.5 seconds at the end of her path. The Valkyrie knocks back all other enemy Heroes in her way.",
-      "image": "cassia_valkrie.png",
+      "image": "cassia_valkyrie.png",
       "talentChanged": false,
       "manaCost": "60 Mana",
       "cooldown": "60s"
@@ -180,7 +180,7 @@
     {
       "name": "Imprisoning Light",
       "description": "Upon impaling an enemy Hero, they are Blinded for 5 seconds and Cassia's Valkyrie creates a wave of light that deals 200 damage to nearby enemies. This wave Silences and Roots them for 3 seconds.",
-      "image": "cassia_valkrie.png",
+      "image": "cassia_valkyrie.png",
       "talentChanged": false
     },
     {

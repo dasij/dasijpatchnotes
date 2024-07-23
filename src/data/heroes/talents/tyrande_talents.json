@@ -4,7 +4,7 @@
       {
         "name": "Light of Elune (Q)",
         "description": "Heal an ally Hero for 270. Light of Elune's cooldown is reduced by 1.5 seconds every time Tyrande hits an enemy with a Basic Attack or damages an enemy Hero.Stores up to 2 charges. Cooldown replenishes all charges at the same time.",
-        "image": "tyrande_light_of_elune.png",
+        "image": "tyrande_lightofelune.png",
         "abilityChanged": false,
         "manaCost": "15 Mana",
         "cooldown": "16s"
@@ -20,7 +20,7 @@
       {
         "name": "Lunar Flare (E)",
         "description": "After 0.75 seconds, deal 150 damage and Stun enemies in the target area for 0.75 seconds.",
-        "image": "tyrande_lunar_flare.png",
+        "image": "tyrande_lunarflare.png",
         "abilityChanged": false,
         "manaCost": "60 Mana",
         "cooldown": "13s"
@@ -47,7 +47,7 @@
     "trait": {
       "name": "Hunter's Mark (T)",
       "description": "Reveal a non-Structure enemy and reduce their Armor by 15 for 4 seconds.Passive: Tyrande's Basic Attacks heal her for 1% of her maximum Health, doubled against targets with Hunter's Mark.",
-      "image": "tyrande_hunters_mark.png",
+      "image": "tyrande_huntersmark.png",
       "abilityChanged": false,
       "cooldown": "20s"
     }

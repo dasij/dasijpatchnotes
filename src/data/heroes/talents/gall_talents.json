@@ -11,14 +11,14 @@
       {
         "name": "Dread Orb (W)",
         "description": "Throw a bomb that will bounce three times, dealing 126 damage to enemies.",
-        "image": "gall_dread_orb.png",
+        "image": "gall_chaoscollision.png",
         "abilityChanged": false,
         "cooldown": "6s"
       },
       {
         "name": "Runic Blast (E)",
         "description": "Detonate Cho's Rune Bomb, dealing 210 damage around it.",
-        "image": "gall_runic_blast.png",
+        "image": "gall_detonaterunes.png",
         "abilityChanged": false,
         "cooldown": "1s"
       }
@@ -27,14 +27,14 @@
       {
         "name": "Shadow Bolt Volley (R)",
         "description": "After 1 second, unleash 20 Shadow Bolts over 4 seconds, each dealing 87 damage to the first target hit. The bolts fire towards your mouse.",
-        "image": "gall_shadow_bolt_volley.png",
+        "image": "gall_shadowboltvolley.png",
         "abilityChanged": false,
         "cooldown": "60s"
       },
       {
         "name": "Twisting Nether (R)",
         "description": "After 1 second, nearby enemies are slowed by 50% while Gall channels, up to 5 seconds. Activate to deal 353 damage.",
-        "image": "gall_twisting_nether.png",
+        "image": "gall_twistingnether_a.png",
         "abilityChanged": false,
         "cooldown": "80s"
       }
@@ -42,7 +42,7 @@
     "trait": {
       "name": "Ogre Rage (T)",
       "description": "Activate to increase Gall's damage by 25%, but reduce Cho's Armor by 25.Passive: Gall is permanently immune to Stun and Silence effects.",
-      "image": "gall_ogre_rage.png",
+      "image": "gall_ogrerage.png",
       "abilityChanged": false,
       "cooldown": "5s"
     }

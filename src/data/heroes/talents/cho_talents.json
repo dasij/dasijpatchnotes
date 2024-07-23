@@ -4,21 +4,21 @@
       {
         "name": "Surging Fist (Q)",
         "description": "Activate to begin charging Surging Fist. Activate again to dash forward, knocking aside enemies and dealing 46 damage. The dash range increases by up to 250%, depending on how long it is charged.",
-        "image": "cho_surging_fist.png",
+        "image": "cho_moltensurge_a.png",
         "abilityChanged": false,
         "cooldown": "12s"
       },
       {
         "name": "Consuming Blaze (W)",
         "description": "Ignite nearby enemies, dealing 150 damage over 5 seconds. Basic Attacking burning enemies re-Ignites them. Cho is healed for 40 when an enemy is Ignited.",
-        "image": "cho_consuming_blaze.png",
+        "image": "cho_consumingflame.png",
         "abilityChanged": false,
         "cooldown": "12s"
       },
       {
         "name": "Rune Bomb (E)",
         "description": "Roll a bomb dealing 91 damage to enemies in its path. Gall can use Runic Blast to detonate it to deal 210 damage in an area.",
-        "image": "cho_rune_bomb.png",
+        "image": "cho_runebomb.png",
         "abilityChanged": false,
         "cooldown": "8s"
       }
@@ -27,7 +27,7 @@
       {
         "name": "Hammer of Twilight (R)",
         "description": "Activate to swing the Hammer of Twilight, dealing 150 damage, pushing enemies away, and Stunning them for 0.75 seconds.Passive: Cho's Basic Attacks deal 100% increased damage.",
-        "image": "cho_hammer_of_twilight.png",
+        "image": "cho_hammeroftwilight.png",
         "abilityChanged": false,
         "cooldown": "15s"
       },
@@ -42,7 +42,7 @@
     "trait": {
       "name": "Ogre Hide (T)",
       "description": "Activate to gain 25 Armor, but reduce Gall's damage by 25%.",
-      "image": "cho_ogre_hide.png",
+      "image": "cho_ogrehide.png",
       "abilityChanged": false,
       "cooldown": "5s"
     }

@@ -38,7 +38,7 @@
       {
         "name": "Eye of Horus (R)",
         "description": "Assume a sniping position, gaining the ability to fire up to 6 specialized rounds with unlimited range. Rounds pierce allied and enemy Heroes but collide with enemy Structures in their path. Allies are healed for 225 and enemies are damaged for 135. Deals 50% less damage to Structures.Ana is unable to move while Eye of Horus is active.",
-        "image": "ana_eye_of_horus.png",
+        "image": "ana_overwatch.png",
         "abilityChanged": false,
         "manaCost": "45 Mana",
         "cooldown": "60s"
@@ -116,7 +116,7 @@
     {
       "name": "Nano Boost",
       "description": "Instantly boost an allied Hero, restoring 200 Mana. For the next 8 seconds, they gain 30% Spell Power and their Basic Ability cooldowns recharge 150% faster.Cannot be used on Ana.",
-      "image": "ana_nano_bost.png",
+      "image": "ana_nano_boost.png",
       "talentChanged": false,
       "manaCost": "60 Mana",
       "cooldown": "70s"
@@ -175,7 +175,7 @@
     {
       "name": "Nano Infusion",
       "description": "Allies affected by Nano Boost heal for 50% of Spell Damage dealt.",
-      "image": "ana_nano_bost.png",
+      "image": "ana_nano_boost.png",
       "talentChanged": false
     },
     {

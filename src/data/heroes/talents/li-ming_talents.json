@@ -4,7 +4,7 @@
       {
         "name": "Magic Missiles (Q)",
         "description": "Fire three missiles toward an area, each dealing 147 damage to the first enemy hit. These missiles do 50% damage to Structures.",
-        "image": "li_ming_magic_missiles.png",
+        "image": "wizard_magicmissiles.png",
         "abilityChanged": false,
         "manaCost": "20 Mana",
         "cooldown": "3s"
@@ -12,7 +12,7 @@
       {
         "name": "Arcane Orb (W)",
         "description": "Fire an Orb that powers up as it travels, dealing 135 damage to the first enemy hit. Damage is increased the further it travels, up to 270 more damage.",
-        "image": "li_ming_arcane_orb.png",
+        "image": "wizard_arcaneorb.png",
         "abilityChanged": false,
         "manaCost": "40 Mana",
         "cooldown": "8s"
@@ -20,7 +20,7 @@
       {
         "name": "Teleport (E)",
         "description": "Teleport a short distance instantly.",
-        "image": "li_ming_teleport.png",
+        "image": "wizard_teleport.png",
         "abilityChanged": false,
         "manaCost": "30 Mana",
         "cooldown": "5s"
@@ -30,7 +30,7 @@
       {
         "name": "Disintegrate (R)",
         "description": "Channel a powerful beam, dealing 480 damage over 2.6 seconds to enemies while they are in it. The direction of the beam changes with your mouse cursor position.",
-        "image": "li_ming_disintegrate.png",
+        "image": "wizard_disintegrate.png",
         "abilityChanged": false,
         "manaCost": "80 Mana",
         "cooldown": "20s"
@@ -38,7 +38,7 @@
       {
         "name": "Wave of Force (R)",
         "description": "Knock away all enemies from an area and deal 160 damage.",
-        "image": "li_ming_wave_of_force.png",
+        "image": "wizard_waveofforce.png",
         "abilityChanged": false,
         "manaCost": "80 Mana",
         "cooldown": "30s"
@@ -47,7 +47,7 @@
     "trait": {
       "name": "Critical Mass (T)",
       "description": " Getting a Takedown will refresh the cooldown on all of Li-Ming's Abilities.",
-      "image": "li_ming_critical_mass.png",
+      "image": "wizard_criticalmass.png",
       "abilityChanged": false
     }
   },

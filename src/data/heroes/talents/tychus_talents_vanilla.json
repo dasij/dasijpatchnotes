@@ -38,7 +38,7 @@
       {
         "name": "Drakken Laser Drill (R)",
         "description": "Call down a Laser Drill to attack nearby enemies, dealing 142 damage every second. Reactivate to assign a new target. Lasts 22 seconds.",
-        "image": "tychus_drakkinlaserdrill.png",
+        "image": "tychus_drakkenlaserdrill.png",
         "abilityChanged": false,
         "manaCost": "100 Mana",
         "cooldown": "100s"

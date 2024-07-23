@@ -4,7 +4,7 @@
       {
         "name": "Noxious Blossom (Q)",
         "description": "After 0.5 seconds, cause an area to explode with pollen dealing 160 damage.",
-        "image": "lunara_noxious_blossom.png",
+        "image": "lunara_pollencloud.png",
         "abilityChanged": false,
         "manaCost": "60 Mana",
         "cooldown": "8s"
@@ -12,7 +12,7 @@
       {
         "name": "Crippling Spores (W)",
         "description": "Enemies currently afflicted by Nature's Toxin have its duration increased by 3 seconds and are Slowed by 40% decaying over 3 seconds.",
-        "image": "lunara_crippling_spores.png",
+        "image": "lunara_fullbloom.png",
         "abilityChanged": false,
         "manaCost": "50 Mana",
         "cooldown": "10s"
@@ -27,7 +27,7 @@
       {
         "name": "Relocate Wisp (E)",
         "description": "Moves the Wisp to a new location.",
-        "image": "lunara_relocate_wisp.png",
+        "image": "lunara_wisp.png",
         "abilityChanged": false,
         "cooldown": "1s"
       }
@@ -36,7 +36,7 @@
       {
         "name": "Thornwood Vine (R)",
         "description": "Send forth vines that deal 184 damage to all enemies in a line.Stores up to 3 charges.",
-        "image": "lunara_thornwood_vine.png",
+        "image": "lunara_wildspear.png",
         "abilityChanged": false,
         "manaCost": "35 Mana",
         "cooldown": "15s"
@@ -44,7 +44,7 @@
       {
         "name": "Leaping Strike (R)",
         "description": "Leap over an enemy, Slowing them by 80% for 0.35 seconds and dealing 271 damage.Stores up to 2 charges.",
-        "image": "lunara_leaping_strike.png",
+        "image": "lunara_boundlessstride.png",
         "abilityChanged": false,
         "manaCost": "50 Mana",
         "cooldown": "20s"
@@ -53,7 +53,7 @@
     "trait": {
       "name": "Nature's Toxin (T)",
       "description": " Lunara's Basic Attacks and damaging Abilities poison their target, dealing 33 damage a second for 3 seconds. Every additional application increases the duration by 3 seconds, up to a maximum of 9 seconds.",
-      "image": "lunara_natures_toxin.png",
+      "image": "lunara_stiflingblossom.png",
       "abilityChanged": false
     }
   },

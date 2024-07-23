@@ -4,7 +4,7 @@
       {
         "name": "Flame Stream (Q)",
         "description": "Fire two streams that deal 76 damage to enemies hit, and an additional 120 damage to enemies hit by both streams. Flame Stream Ignites Oil Spills it comes in contact with.",
-        "image": "blaze_flame_stream.png",
+        "image": "blaze_flame.png",
         "abilityChanged": false,
         "manaCost": "30 Mana",
         "cooldown": "4s"
@@ -12,7 +12,7 @@
       {
         "name": "Oil Spill (W)",
         "description": "Vector TargetingDispense a slick of oil that lasts for 5 seconds and Slows enemies that come in contact with it by 50%.Oil Spills are Ignited for 2.5 seconds when hit by Flame Stream. Ignited Oil Spills no longer Slow enemies, but instead deal 16 damage to them every 0.3 seconds. Additionally, Blaze is healed for 49 Health every 0.3 seconds while standing in Ignited Oil Spills.Stores up to 2 charges.",
-        "image": "blaze_oil_spill.png",
+        "image": "blaze_oil.png",
         "abilityChanged": false,
         "manaCost": "50 Mana",
         "cooldown": "12s"
@@ -20,7 +20,7 @@
       {
         "name": "Jet Propulsion (E)",
         "description": "After 0.375 seconds, charge forward. Colliding with an enemy Hero deals 52 damage to all nearby enemy Heroes and Stuns them for 1.25 seconds.",
-        "image": "blaze_jet_propulsion.png",
+        "image": "blaze_jet.png",
         "abilityChanged": false,
         "manaCost": "45 Mana",
         "cooldown": "10s"
@@ -30,7 +30,7 @@
       {
         "name": "Bunker Drop (R)",
         "description": "After 0.5 seconds, deploy and enter a Bunker with 1435 Health. Blaze and his allies can enter and exit the Bunker at will. While in the Bunker, occupants gain access to Flamethrower, dealing 170 damage to enemies in a line. Exiting the Bunker grants 25 Armor for 2 seconds. Bunkers last 10 seconds, or until destroyed.",
-        "image": "blaze_bunker_drop.png",
+        "image": "blaze_bunker.png",
         "abilityChanged": false,
         "manaCost": "70 Mana",
         "cooldown": "70s"

@@ -4,7 +4,7 @@
       {
         "name": "Fan of Knives (Q)",
         "description": "Deal 152 damage to enemies in a crescent area.Hitting at least 2 enemy Heroes with Fan of Knives reduces its cooldown to 0.5 seconds, and refunds its Mana cost.",
-        "image": "maiev_fan_of_knives.png",
+        "image": "maiev_knives.png",
         "abilityChanged": false,
         "manaCost": "30 Mana",
         "cooldown": "4s"
@@ -12,7 +12,7 @@
       {
         "name": "Umbral Bind (W)",
         "description": "Maiev's next Basic Attack cleaves and applies a tether to enemy Heroes hit for 2.5 seconds. If a tethered Hero moves too far from Maiev, they are pulled toward her, dealing 110 damage and breaking the tether.",
-        "image": "maiev_umbral_bind.png",
+        "image": "maiev_umbra_1.png",
         "abilityChanged": false,
         "manaCost": "55 Mana",
         "cooldown": "14s"
@@ -20,7 +20,7 @@
       {
         "name": "Spirit of Vengeance (E)",
         "description": "Send a shadow of Maiev outward that will return to its cast location, dealing 150 damage to enemies along both paths. If an enemy Hero is hit, reduce the cooldown by 4 seconds.",
-        "image": "maiev_spirit_of_vengeance.png",
+        "image": "maiev_rush_1.png",
         "abilityChanged": false,
         "manaCost": "50 Mana",
         "cooldown": "13s"
@@ -30,7 +30,7 @@
       {
         "name": "Containment Disc (R)",
         "description": "Throw a glaive in the target direction. If an enemy Hero is hit, Containment Disc can be reactivated to remove their vision and Time Stop them for 4 seconds. Leaving Containment Silences the enemy Hero for 1.5 seconds.Containment Disc automatically activates 6 seconds after hitting a Hero.",
-        "image": "maiev_containment_disc.png",
+        "image": "maiev_heroic_1_a.png",
         "abilityChanged": false,
         "manaCost": "50 Mana",
         "cooldown": "40s"
@@ -38,7 +38,7 @@
       {
         "name": "Warden's Cage (R)",
         "description": "Summon 8 Warden Avatars as a cage around Maiev. After 1.5 seconds, enemy Heroes that come in contact with an Avatar consume it and are knocked to the center of the cage. Warden Avatars last 5 seconds.",
-        "image": "maiev_wardens_cage.png",
+        "image": "maiev_heroic_2.png",
         "abilityChanged": false,
         "manaCost": "80 Mana",
         "cooldown": "100s"
@@ -47,7 +47,7 @@
     "trait": {
       "name": "Vault of the Wardens (T)",
       "description": "Leap into the air, becoming Immune to all hostile effects for 0.75 seconds.After reaching Level 20, Vault of the Wardens gains an additional charge.",
-      "image": "maiev_vault_of_the_wardens.png",
+      "image": "maiev_vaultofthewardens.webp",
       "abilityChanged": false,
       "cooldown": "13s"
     }

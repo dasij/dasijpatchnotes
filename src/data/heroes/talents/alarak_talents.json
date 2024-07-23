@@ -4,7 +4,7 @@
       {
         "name": "Discord Strike (Q)",
         "description": "After a 0.5 second delay, enemies in front of Alarak take 165 damage and are silenced for 1.5 seconds.",
-        "image": "alarak_discord_strike.png",
+        "image": "alarak_discordstrike.png",
         "abilityChanged": false,
         "manaCost": "55 Mana",
         "cooldown": "8s"
@@ -20,7 +20,7 @@
       {
         "name": "Lightning Surge (E)",
         "description": "Deal 62 damage to an enemy and an additional 100% damage to enemies between Alarak and the target. Restore 70 health for each Hero hit.",
-        "image": "alarak_lightning_surge.png",
+        "image": "alarak_lightningsurge.png",
         "abilityChanged": false,
         "manaCost": "25 Mana",
         "cooldown": "6s"
@@ -30,14 +30,14 @@
       {
         "name": "Deadly Charge (R)",
         "description": "After channeling, Alarak charges forward dealing 200 damage to all enemies in his path. Distance is increased based on the amount of time channeled, up to 1.5 seconds.Issuing a Move order while this is channeling will cancel it at no cost. Taking damage will interrupt the channeling.",
-        "image": "alarak_deadly_charge.png",
+        "image": "alarak_recklesscharge.png",
         "abilityChanged": false,
         "cooldown": "45s"
       },
       {
         "name": "Counter-Strike (R)",
         "description": "Alarak targets an area and channels for 1 second, becoming Protected and Unstoppable. After, if he took damage from an enemy Hero, he sends a shockwave that deals 275 damage.",
-        "image": "alarak_counter_strike.png",
+        "image": "alarak_counterstrike.png",
         "abilityChanged": false,
         "manaCost": "50 Mana",
         "cooldown": "30s"

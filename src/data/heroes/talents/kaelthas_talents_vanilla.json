@@ -12,7 +12,7 @@
       {
         "name": "Living Bomb (W)",
         "description": "Deal 126 damage over 3 seconds to an enemy, then they explode dealing 215 damage to all nearby enemies.  Other Heroes damaged by this explosion are also affected by Living Bomb, though the secondary explosions cannot spread.Verdant Spheres makes this Ability cost no Mana and have no cooldown.",
-        "image": "kaelthas_living_bomb.png",
+        "image": "kaelthas_livingbomb.png",
         "abilityChanged": false,
         "manaCost": "50 Mana",
         "cooldown": "10s"
@@ -20,7 +20,7 @@
       {
         "name": "Gravity Lapse (E)",
         "description": "Stun the first enemy hit for 1 second. Verdant Spheres causes Gravity Lapse to stun the first 3 enemies hit and increases the stun duration by 50%.",
-        "image": "kaelthas_gravity_lapse.png",
+        "image": "kaelthas_gravitylapse.png",
         "abilityChanged": false,
         "manaCost": "90 Mana",
         "cooldown": "12s"
@@ -47,7 +47,7 @@
     "trait": {
       "name": "Verdant Spheres (T)",
       "description": " Activate to make Kael'thas's next Basic Ability more powerful.",
-      "image": "kaelthas_verdant_spheres.png",
+      "image": "kaelthas_verdantspheres.png",
       "abilityChanged": false
     }
   },
