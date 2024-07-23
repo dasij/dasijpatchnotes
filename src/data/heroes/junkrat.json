@@ -11,10 +11,10 @@
       "general": [
         {
           "change_id": "junkrat_8",
-          "change": "Frag Launcher",
+          "change": "<vanilla, abilities, basic, 0>",
           "texts": [
             {
-              "text": "Additional functionality: Hitting a Hero with Frag Launcher increases its damage by 0.1%, up to 40%."
+              "text": "Additional functionality: Hitting a Hero with <vanilla, abilities, basic 0> increases its damage by 0.1%, up to 40%."
             }
           ],
           "developerCommentary": "The original quest is a long one and i prefer it to be here and controlled instead of a talent. It also opens a slot for a more unique talent and from my perspective it becomes more natural.",
@@ -23,7 +23,7 @@
         },
         {
           "change_id": "junkrat_2",
-          "change": "Steel trap",
+          "change": "<vanilla, abilities, basic, 2>",
           "texts": [
             {
               "text": "Cooldown reduced from 15 to 9"
@@ -54,17 +54,17 @@
           "likedBy": {}
         }
       ],
-      "developerCommentary": "Junkrat is a fun and complete character BUT the problem lies on how complete he is, for a mage character he has everything on a level that make it a super pick. It's very hard to break that without changing something on core level like making it have mana or changing how one of his skills works. Here i try to control the power of his crowd control mechanics by changing how Steel Traps can be dealt and also making their talents harder to abuse and not make a melee character life truly miserable. Besides that i tried to bring on some new things for the other aspects.",
+      "developerCommentary": "Junkrat is a fun and complete character BUT the problem lies on how complete he is, for a mage character he has everything on a level that make it a super pick. It's very hard to break that without changing something on core level like making it have mana or changing how one of his skills works. Here i try to control the power of his crowd control mechanics by changing how <basic, abilities, basic, 2>s can be dealt and also making their talents harder to abuse and not make a melee character life truly miserable. Besides that i tried to bring on some new things for the other aspects.",
       "sections": [
         {
           "name": "Level 1",
           "changes": [
             {
               "change_id": "junkrat_3",
-              "name": "Tricky Shuffles",
+              "name": "<vanilla, talents, 1, 0>",
               "texts": [
                 {
-                  "text": "Changed functionality: For each charge remaining on Frag Launcher Junkrat receives 7.5% increased basic attack damage. If there's no charges remaining receives 15% movement speed ",
+                  "text": "Changed functionality: For each charge remaining on <modified, abilities, basic, 0> Junkrat receives 7.5% increased basic attack damage. If there's no charges remaining receives 15% movement speed ",
                   "subtexts": [""]
                 }
               ],
@@ -74,10 +74,10 @@
             },
             {
               "change_id": "junkrat_19",
-              "name": "Blow' 'em Up!",
+              "name": "<vanilla, talents, 1, 2>",
               "texts": [
                 {
-                  "text": "Junkrat Frag Grenades and Basic Attacks stacks powder on enemy heros for 6 seconds, hitting an enemy hero with concussion mine explodes the marks and deals 124 damage for each mark consumed"
+                  "text": "Junkrat Frag Grenades and Basic Attacks stacks powder on enemy heros for 6 seconds, hitting an enemy hero with <modified, abilities, basic, 1> explodes the marks and deals 124 damage for each mark consumed"
                 }
               ],
               "developerCommentary": "I wanted to make something related to the previous effect but that won't conflict directly on the way the other talents would deal damage. Making it not a DPS or either a POKE talent but rather a burst one that makes sense with the name",
@@ -91,7 +91,7 @@
           "changes": [
             {
               "change_id": "junkrat_5",
-              "name": "Taste for explosions",
+              "name": "<vanilla, talents, 4, 0>",
               "texts": [
                 {
                   "text": "Removed"
@@ -103,7 +103,7 @@
             },
             {
               "change_id": "junkrat_6",
-              "name": "BOOM POW",
+              "name": "<vanilla, talents, 4, 1>",
               "texts": [
                 {
                   "text": "Moved to level 20"
@@ -115,7 +115,7 @@
             },
             {
               "change_id": "junkrat_",
-              "name": "I Hate Waiting!",
+              "name": "<vanilla, talents, 20, 3>",
               "texts": [
                 {
                   "text": "Moved from level 20"
@@ -130,13 +130,13 @@
             },
             {
               "change_id": "junkrat_4",
-              "name": "Dirty Trickster",
+              "name": "<vanilla, talents, 7, 2>",
               "texts": [
                 {
                   "text": "Moved from level 7"
                 }
               ],
-              "developerCommentary": "Making this tier about Concussion mines and bringing to level 4 as a utility tier",
+              "developerCommentary": "Making this tier about <modified, abilities, basic, 1>s and bringing to level 4 as a utility tier",
               "likes": 0,
               "likedBy": {}
             }
@@ -147,13 +147,13 @@
           "changes": [
             {
               "change_id": "junkrat_9",
-              "name": "Ripper Air",
+              "name": "<vanilla, talents, 13, 1>",
               "texts": [
                 {
                   "text": "Moved from level 13"
                 }
               ],
-              "developerCommentary": "Bringing it to a concussion mine talent tier",
+              "developerCommentary": "Bringing it to a <modified, abilities, basic, 1> talent tier",
               "likes": 0,
               "likedBy": {}
             },
@@ -162,19 +162,19 @@
               "name": "NEW: More Powder!",
               "texts": [
                 {
-                  "text": "Enemies that are affected by Steel Trap and Concussion mine within 2 seconds one from the other take 6% maximum health damage",
+                  "text": "Enemies that are affected by <modified, abilities, basic, 2> and <modified, abilities, basic, 1> within 2 seconds one from the other take 6% maximum health damage",
                   "subtexts": [
-                    "If an enemy is affected by 2 Steel Traps and one concussion mine within 2 seconds it will only proc one time. It will work similar to a mark that is consumed when done right with 1 only mark being able to be active at the time"
+                    "If an enemy is affected by 2 <modified, abilities, basic, 2>s and one <modified, abilities, basic, 1> within 2 seconds it will only proc one time. It will work similar to a mark that is consumed when done right with 1 only mark being able to be active at the time"
                   ]
                 }
               ],
-              "developerCommentary": "Bringing an offensive option for the concussion mine talent tier that suits very well the situation that makes every tank wants to ban Junkrat. The famous trap mine combo.",
+              "developerCommentary": "Bringing an offensive option for the <modified, abilities, basic, 1> talent tier that suits very well the situation that makes every tank wants to ban Junkrat. The famous trap mine combo.",
               "likes": 0,
               "likedBy": {}
             },
             {
               "change_id": "junkrat_11",
-              "name": "Sticky Wickets",
+              "name": "<vanilla, talents, 7, 1>",
               "texts": [
                 {
                   "text": "Moved to level 13"
@@ -191,19 +191,19 @@
           "changes": [
             {
               "change_id": "junkrat_17",
-              "name": "Big as",
+              "name": "<vanilla, talents, 13, 3>",
               "texts": [
                 {
-                  "text": "Additional functionality: Steel Trap can't be destroyed anymore"
+                  "text": "Additional functionality: <modified, abilities, basic, 2> can't be destroyed anymore"
                 }
               ],
-              "developerCommentary": "With the changes on Steel Trap this seems a perfect opportunity to increase this talent value differently from the other.",
+              "developerCommentary": "With the changes on <modified, abilities, basic, 2> this seems a perfect opportunity to increase this talent value differently from the other.",
               "likes": 0,
               "likedBy": {}
             },
             {
               "change_id": "junkrat_7",
-              "name": "Sticky Wickets",
+              "name": "<vanilla, talents, 7, 1>",
               "texts": [
                 {
                   "text": "Moved from level 7"
@@ -215,7 +215,7 @@
             },
             {
               "change_id": "junkrat_16",
-              "name": "Bombs Away",
+              "name": "<vanilla, talents, 13, 0>",
               "texts": [
                 {
                   "text": "moved to level 16"
@@ -232,19 +232,19 @@
           "changes": [
             {
               "change_id": "junkrat_15",
-              "name": "Burst Fire",
+              "name": "<vanilla, talents, 16, 0>",
               "texts": [
                 {
                   "text": "Removed"
                 }
               ],
-              "developerCommentary": "Made into a QoL change for Frag Launcher.",
+              "developerCommentary": "Made into a QoL change for <modified, abilities, basic, 0>.",
               "likes": 0,
               "likedBy": {}
             },
             {
               "change_id": "junkrat_18",
-              "name": "Bombs Away",
+              "name": "<vanilla, talents, 13, 0>",
               "texts": [
                 {
                   "text": "moved from level 13"
@@ -261,10 +261,10 @@
           "changes": [
             {
               "change_id": "junkrat_14",
-              "name": "Puckish Scamp",
+              "name": "<vanilla, talents, 20, 1>",
               "texts": [
                 {
-                  "text": "Changed functionality: If Rocket Ride kills a enemy hero with the explosion after 0.5 seconds Junkrat will launch himself in the air and after 3.75 seconds perform another explosion",
+                  "text": "Changed functionality: If <modified, abilities, heroic, 1> kills a enemy hero with the explosion after 0.5 seconds Junkrat will launch himself in the air and after 3.75 seconds perform another explosion",
                   "subtexts": [
                     "This can be reseted any number of times on one go"
                   ]
@@ -276,7 +276,7 @@
             },
             {
               "change_id": "junkrat_13",
-              "name": "I Hate Waiting!",
+              "name": "<vanilla, talents, 20, 3>",
               "texts": [
                 {
                   "text": "Moved to level 4"
@@ -288,10 +288,10 @@
             },
             {
               "change_id": "junkrat_12",
-              "name": "BOOM POW",
+              "name": "<vanilla, talents, 4, 1>",
               "texts": [
                 {
-                  "text": "Changed functionality: Reduces Concussion Mine cooldown to 5 seconds, holds 3 charges and enemies will be knocked back 35% further.",
+                  "text": "Changed functionality: Reduces <modified, abilities, basic, 1> cooldown to 5 seconds, holds 3 charges and enemies will be knocked back 35% further.",
                   "subtexts": ["Cooldown between charges will be 0.5 seconds"]
                 }
               ],

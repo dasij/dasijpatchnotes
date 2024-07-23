@@ -232,7 +232,7 @@
               "name": "<vanilla, talents, 13, 0>",
               "texts": [
                 {
-                  "text": "Changed functionality: Reduces <modified, abilities, basic, 0> mana cost to 25. Hitting 3 enemy heroes with the first dash from <modified, abilities, basic, 0> reduces its cooldown to 0.3 . <modified, abilities, basic, 0> can be cast while on <modified, abilities, basic, 0> "
+                  "text": "Changed functionality: Reduces <modified, abilities, basic, 0> mana cost to 25. Hitting enemy heroes with <modified, abilities, basic, 0> reduces its cooldown by 3.5 seconds . <modified, abilities, basic, 0> can be cast while on <modified, abilities, basic, 0> "
                 }
               ],
               "developerCommentary": "This talent is intended to cause nauseas on Artanis players with the number of <modified, abilities, basic, 0> you will be able to perform",

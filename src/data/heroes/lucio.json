@@ -6,7 +6,7 @@
   "patchNotes": [
     {
       "id": 2,
-      "title": "Talent rework",
+      "title": "Talent mini-rework",
       "developerCommentary": "Lucio sits on a pretty good spot right now in my vision on gameplay standards.What i aim here is just to strengthen his place as a speedster healer",
       "general": [
         {
@@ -152,7 +152,7 @@
                   "text": "Moved from level 16"
                 },
                 {
-                  "text": "additional functionality: Recasting <modified, abilities, basic, 3> makes Lucio dance for 2 seconds increasing <modified, abilities, basic, 3> duration! by the same duration. Wall ride movement speed bonus won't decrease during the dance"
+                  "text": "additional functionality: Recasting <modified, abilities, basic, 3> makes Lucio dance for 2 seconds increasing <modified, abilities, basic, 3> duration! by the same duration. Wall ride movement speed bonus won't decrease during the dance instead"
                 }
               ],
               "developerCommentary": "Just adding a new functionality considering that we bring it up to level 20 and also consider that you can now extend Lucio <modified, abilities, basic, 3> and besides that get the level 16 that gives % health so it can't be buffed as much",
