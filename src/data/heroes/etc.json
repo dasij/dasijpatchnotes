@@ -3,40 +3,70 @@
   "name": "ETC",
   "role": "Tank",
   "image": "heroes_portraits/etc.webp",
-  "show": "false",
+  "show": "falses",
   "patchNotes": [
     {
       "id": 21,
-      "title": "",
+      "title": "Talent Rework and Hero small changes",
       "general": [
         {
-          "change_id": "etc_",
-          "change": "",
+          "change_id": "etc_0",
+          "change": "Base",
           "texts": [
             {
-              "text": ""
+              "text": "When allied heroes nearby dance while E.T.C. is dancing, he gains 100% increased cooldown reduction."
+            },
+            {
+              "text": "Write 'Storm, earth and Fire' to start playing the music to close heros and write a message on the game chat to all players 'E.T.C. is ROCKING'.",
+              "subtexts": ["10 seconds cooldown"]
             }
           ],
-          "developerCommentary": "",
+          "developerCommentary": "This changes are for roleplay reasons..truly",
+          "likes": 0,
+          "likedBy": {}
+        },
+        {
+          "change_id": "etc_1",
+          "change": "<vanilla, abilities, basic, 1>",
+          "texts": [
+            {
+              "text": "Increase size and knockback by 50%"
+            },
+            {
+              "text": "Increase mana cost from 55 to 80"
+            }
+          ],
+          "developerCommentary": "<vanilla, talents, 4, 1> is a problematic talent it makes <modified, abilities, basic, 1> extremely FUN but at the same time allows E.T.C. to truly play his role as a tank correctly. <vanilla, talents, 4, 0> and <vanilla, talents, 4, 2> are both strong and fun but <vanilla, talents, 4, 1> can't be truly beaten and will always be priority except for those who cheese him as a Solo Laner.",
           "likes": 0,
           "likedBy": {}
         }
       ],
-      "developerCommentary": "",
+      "developerCommentary": "E.T.C. is one of the best complete Tank kits on the games but has suffered a lot with nerfs that made him go from top tier tank to have a lower presence in the game. My objective here is not to bring him to the top again but rather change some aspects that i see as problematic on his talents interactions as further changes be numeric adjusted.",
       "sections": [
         {
           "name": "Level 1",
           "changes": [
             {
-              "change_id": "etc_",
-              "name": "",
+              "change_id": "etc_2",
+              "name": "<vanilla, talents, 1, 0>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Moved to level 4"
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "I want to buff that talent while making it a option to pick it with <vanilla, talents, 1, 1> to combo",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "etc_3",
+              "name": "<vanilla, talents, 4, 2>",
+              "texts": [
+                {
+                  "text": "Moved from level 4"
+                }
+              ],
+              "developerCommentary": "Here Speed Metal will have the possibility to combo with <vanilla, talents, 4, 0> and also be an option of area based utility by competing with other two similar talents",
               "likes": 0,
               "likedBy": {}
             }
@@ -46,15 +76,53 @@
           "name": "Level 4",
           "changes": [
             {
-              "change_id": "etc_",
-              "name": "",
+              "change_id": "etc_4",
+              "name": "<vanilla, talents, 1, 0>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Moved from level 1"
+                },
+                {
+                  "text": "Additional functionality: Deals 35% more basic attack damage while <modified, abilities, basic, 2> is active"
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "Buffing the talent to make it self-sufficient and adjust numbers after so i can change <vanilla, talents, 7, 1> and evade direct vertical combos. Even if <vanilla, talents, 1, 1> is a combo it's a weaker link that doesn't necessarily makes you pick both.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "etc_5",
+              "name": "NEW: <modified, talents, 4, 2>",
+              "texts": [
+                {
+                  "text": "Enemy heroes hit by E.T.C. basic attacks have their damage by 15% for 1.25 seconds and E.T.C. restores 6 mana"
+                }
+              ],
+              "developerCommentary": "I really wanted to make an alternative for basic attack E.T.C. focused on utility",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "etc_6",
+              "name": "<vanilla, talents, 4, 2>",
+              "texts": [
+                {
+                  "text": "Moved to level 1"
+                }
+              ],
+              "developerCommentary": "Bringing Speed Metal to make that a tier for picking out which area passive you want to focus on",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "etc_7",
+              "name": "<vanilla, talents, 4, 1>",
+              "texts": [
+                {
+                  "text": "Removed"
+                }
+              ],
+              "developerCommentary": "Mixed into baseline",
               "likes": 0,
               "likedBy": {}
             }
@@ -64,33 +132,14 @@
           "name": "Level 7",
           "changes": [
             {
-              "change_id": "etc_",
-              "name": "",
+              "change_id": "etc_8",
+              "name": "<vanilla, talents, 7, 1> renamed to <modified, talents, 7, 1>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Changed functionality: <modified, abilities, trait, 0> empowers E.T.C. next basic attack making it reduces the target armor by 15 for 1.5 seconds."
                 }
               ],
-              "developerCommentary": "",
-              "likes": 0,
-              "likedBy": {}
-            }
-          ]
-        },
-        {
-          "name": "Level 10",
-          "changes": [
-            {
-              "change_id": "etc_",
-              "name": "",
-              "texts": [
-                {
-                  "text": "",
-                  "subtexts": [""]
-                }
-              ],
-              "developerCommentary": "",
+              "developerCommentary": "With the current effect being mixed on <modified, talents, 4, 1> my objective was to make something related to basic attacks but without the worry of making it an obligatory complement but rather one option on combos.",
               "likes": 0,
               "likedBy": {}
             }
@@ -100,15 +149,26 @@
           "name": "Level 13",
           "changes": [
             {
-              "change_id": "etc_",
-              "name": "",
+              "change_id": "etc_9",
+              "name": "<vanilla, talents, 13, 2>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Additional functionality: <modified, abilities, basic, 1> deal 250 extra damage against shields and summons"
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "I focusing this talent to a niche.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "etc_10",
+              "name": "<vanilla, talents, 13, 0>",
+              "texts": [
+                {
+                  "text": "Additional functionality: Refunds 55 mana when hitting 2 targets"
+                }
+              ],
+              "developerCommentary": "With the buff+nerf to <modified, abilities, basic, 1> this talent would be indirected nerfed and would undermine the utility of that talent by making E.T.C extremely mana hungry.",
               "likes": 0,
               "likedBy": {}
             }
@@ -118,15 +178,31 @@
           "name": "Level 16",
           "changes": [
             {
-              "change_id": "etc_",
-              "name": "",
+              "change_id": "etc_11",
+              "name": "<vanilla, talents, 16, 2> renamed to <modified, talents, 16, 2>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Changed functionality: While using PowerSlide you can use <modified, abilities, basic, 1> but it will instead pull enemies towards you."
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "You will able to finally not miss your <vanilla, abilities, heroic, 0> on Lucio players. Thus i was thinkering about the talents and found this ideia to be extremely funny",
+              "likes": 0,
+              "likedBy": {}
+            },
+
+            {
+              "change_id": "etc_12",
+              "name": "<vanilla, talents, 16, 1> renamed to <modified, talents, 16, 1>",
+              "texts": [
+                {
+                  "text": "Changed functionality: Activate to Throw a mic on the target position and after 2 seconds E.T.C. will teleport to that MIC. Can be teleported casting Mosh Pit",
+                  "subtexts": [
+                    "7.2 range | <vanilla, talents, 20, 4> is 7.2 range",
+                    "Cooldown: 40 seconds"
+                  ]
+                }
+              ],
+              "developerCommentary": "I wanted to make an alternative version of <vanilla, talents, 20, 4> specially related to Mosh Pit usage and found this to be fun to imagine.",
               "likes": 0,
               "likedBy": {}
             }
@@ -136,15 +212,39 @@
           "name": "Level 20",
           "changes": [
             {
-              "change_id": "etc_",
-              "name": "",
+              "change_id": "etc_13",
+              "name": "<vanilla, talents, 20, 2>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Additional functionality: Each enemy hero affected by <vanilla, talents, 20, 2> decreases E.T.C. respawn time by 2 second each second."
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "<vanilla, talents, 20, 2> is fun and make a lot of POG moments but in the end is not something you could rely on and sometimes you could even <vanilla, talents, 20, 2> 5 players but your entire team is dead SO for that reason i am bringing a buff so <vanilla, talents, 20, 2> would never be useless only if it everyone",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "etc_14",
+              "name": "NEW: <modified, talents, 20, 3>",
+              "texts": [
+                {
+                  "text": "Activate to make your next <modified, abilities, basic, 1> knockback enemies 75% farther",
+                  "subtexts": ["Cooldown: 35 seconds"]
+                }
+              ],
+              "developerCommentary": "It's extremely ROCK AND ROLL to increase the volume.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "etc_15",
+              "name": "<vanilla, talents, 20, 3>, <vanilla, talents, 20, 4>",
+              "texts": [
+                {
+                  "text": "Removed"
+                }
+              ],
+              "developerCommentary": "Both of these talents come from a generic setup. I am reworking all talents to serve mostly my taste and i see those generic talents ones that undervalues the character roleplay",
               "likes": 0,
               "likedBy": {}
             }

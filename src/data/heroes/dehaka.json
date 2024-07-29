@@ -3,40 +3,57 @@
   "name": "DEHAKA",
   "role": "Bruiser",
   "image": "heroes_portraits/dehaka.webp",
-  "show": "false",
+  "show": "falses",
   "patchNotes": [
     {
       "id": 18,
-      "title": "",
+      "title": "Talent rework and small-hero rework",
       "general": [
         {
-          "change_id": "dehaka_",
-          "change": "",
+          "change_id": "dehaka_0",
+          "change": "Brushstalker",
           "texts": [
             {
-              "text": ""
+              "text": "If Dehaka uses Brushstalker and the cooldown is bug reset a message on the game chat will say 'I failed to adapt'",
+              "subtexts": ["Cooldown 5 seconds"]
             }
           ],
-          "developerCommentary": "",
+          "developerCommentary": "There's currently a bug that when Dehaka uses Brushstalker on a bush on his own hitbox he will perform the Brushstalker but will have his cooldown reset so instead of fixing it im going for a joke",
           "likes": 0,
           "likedBy": {}
         }
       ],
-      "developerCommentary": "",
+      "developerCommentary": "Dehaka is a pretty solid character BUT that doesn't mean it brings to the table all the things of how Dehaka should feel based on the experience from Sc2 specially when we compare of how Dehaka acts as a commander on the PvE mode. My main goals is here is to bring off some of the vertical talent builds if possible and bringing some of the Kaiju aspect got from the PvE mode.",
       "sections": [
         {
           "name": "Level 1",
           "changes": [
             {
-              "change_id": "dehaka_",
-              "name": "",
+              "change_id": "dehaka_1",
+              "name": "New: <modified, talents, 1, 0>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Quest: Collect essence. Reward:Dehaka gets 0.5% bigger for every 50 essence collected up to 25%",
+                  "subtexts": [
+                    "This will increase his size, basic attack range, skills radius and range by that amount",
+                    "This will count even exceeding essences",
+                    "This will increase Dehaka Hitbox (1.0) to be the same as Deathwing (1.25)"
+                  ]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "The objective here is mean't to be Kaiju based similar to how he is portrayed on the coop missions from SC2",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "dehaka_2",
+              "name": "<vanilla, talents, 1, 0>",
+              "texts": [
+                {
+                  "text": "Removed"
+                }
+              ],
+              "developerCommentary": "I mixed it's effects on other Dark Swarm talents to prevent vertical builds and priorize variety",
               "likes": 0,
               "likedBy": {}
             }
@@ -46,15 +63,14 @@
           "name": "Level 4",
           "changes": [
             {
-              "change_id": "dehaka_",
-              "name": "",
+              "change_id": "dehaka_3",
+              "name": "<vanilla, talents, 4, 1>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Additional functionality: Exceeding essence will be automatically used by Dehaka"
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "I wanted to make it more competitive with the other talents but on other way without going for numerical changes",
               "likes": 0,
               "likedBy": {}
             }
@@ -64,15 +80,36 @@
           "name": "Level 7",
           "changes": [
             {
-              "change_id": "dehaka_",
-              "name": "",
+              "change_id": "dehaka_4",
+              "name": "<vanilla, talents, 7, 1> renamed to <modified, talents, 7, 1>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Changed functionality: Drag against troops or non-boss mercenaries will turn them unkillable during the drag duration and will grab enemies around the target",
+                  "subtexts": [
+                    "The unkillable is to the enemy unit to prevent extremely hard setups for this talent with it dying",
+                    "Radius is 2.5 | <vanilla, abilities, basic, 1, muradin> is 3.0"
+                  ]
+                },
+                {
+                  "text": "After that duration it will instantly kill the primary target"
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "I wanted to make a playmaking tool for Drag but didn't want it to be eazily abused so i made a level 7 spike for that type of talent mixing two talents i wanted to create.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "dehaka_5",
+              "name": "<vanilla, talents, 7, 2>",
+              "texts": [
+                {
+                  "text": "Additional functionality: Every time Dark Swarm hits an enemy hero it also extends Brushstalker duration by 0.5 second if it's active",
+                  "subtexts": [
+                    "Only increase the duration one time per damage tick"
+                  ]
+                }
+              ],
+              "developerCommentary": "This change is made to make 2º option talent for picking <vanilla, talents, 13, 0> without the need of <vanilla, talents, 1, 2>",
               "likes": 0,
               "likedBy": {}
             }
@@ -82,15 +119,29 @@
           "name": "Level 10",
           "changes": [
             {
-              "change_id": "dehaka_",
-              "name": "",
+              "change_id": "dehaka_18",
+              "name": "<vanilla, talents, 10, 1>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "moved to level 16"
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "For me this feels like a strong talent rather than a ultimate and that's the most important WHY i am changing it",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "dehaka_6",
+              "name": "NEW: Intimidating Roar",
+              "texts": [
+                {
+                  "text": "After 0.75 second Dehaka terrifies nearby enemies, reducing their movement speed by 75%  for 3 seconds.",
+                  "subtexts": [
+                    "Radius is 7.0 | <vanilla, abilities, heroic, 1, blaze> is 6.5"
+                  ]
+                }
+              ],
+              "developerCommentary": "After seeing the Kaiju effect on Starcraft 2 i feel it as a MUST HAVE for Dehaka",
               "likes": 0,
               "likedBy": {}
             }
@@ -100,15 +151,26 @@
           "name": "Level 13",
           "changes": [
             {
-              "change_id": "dehaka_",
-              "name": "",
+              "change_id": "dehaka_7",
+              "name": "<vanilla, talents, 13, 2>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Additional functionality: Basic Attacks also slow by 0.4% for 1 second per Essence"
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "Buffing it a little to make it more competitive with <vanilla, talents, 13, 0> while also covering the removal of <vanilla, talents, 20, 2>",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "dehaka_8",
+              "name": "<vanilla, talents, 13, 1>",
+              "texts": [
+                {
+                  "text": "Additional functionality: Dehaka receive 25 spell armor while Dark Swarm is active and also extends it's duration by 0.2 with every enemy hero hit."
+                }
+              ],
+              "developerCommentary": "With the removal of <vanilla, talents, 1, 0> and changes to <vanilla, talents, 10, 1> i am buffing changing that talent to cover it.",
               "likes": 0,
               "likedBy": {}
             }
@@ -118,15 +180,56 @@
           "name": "Level 16",
           "changes": [
             {
-              "change_id": "dehaka_",
-              "name": "",
+              "change_id": "dehaka_9",
+              "name": "<vanilla, talents, 16, 0>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Removed"
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "With the new <modified, talents, 1, 0> talent on level 1 this is not necessary anymore",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "dehaka_10",
+              "name": "<vanilla, talents, 10, 1>",
+              "texts": [
+                {
+                  "text": "Moved from level 10."
+                },
+                {
+                  "text": "Reduced healing from 100% to 75%"
+                }
+              ],
+              "developerCommentary": "Bringing it to 16 as a powerhouse of utility choices",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "dehaka_11",
+              "name": "<vanilla, talents, 20, 3>",
+              "texts": [
+                {
+                  "text": "Moved from level 20."
+                },
+                {
+                  "text": "Brushstalker cooldown reduction reduced from 50 to 35"
+                }
+              ],
+              "developerCommentary": "Made level 20 a place where how you want to customize your kaiju so there's no place for a talent like this",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "dehaka_12",
+              "name": "<vanilla, talents, 16, 2>",
+              "texts": [
+                {
+                  "text": "Removed."
+                }
+              ],
+              "developerCommentary": "by bringing <modified, talents, 16, 2> to level 16 this doesn't feel necessary anymore",
               "likes": 0,
               "likedBy": {}
             }
@@ -136,15 +239,70 @@
           "name": "Level 20",
           "changes": [
             {
-              "change_id": "dehaka_",
-              "name": "",
+              "change_id": "dehaka_13",
+              "name": "NEW: <modified, talents, 20, 1>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Intimidating Roar will reduce enemy heroes armor by 25."
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "The area is enormous and that effect is strong combined with such a strong slow",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "dehaka_14",
+              "name": "NEW: <modified, talents, 20, 2>",
+              "texts": [
+                {
+                  "text": "Leap to target location after 0.5 seconds, dealing 246 damage to enemies on landing also stunning them for 0.25.",
+                  "subtexts": [
+                    "Same characteristics as <vanilla, talents, 10, 0, sonya> but with 50 seconds cooldown"
+                  ]
+                }
+              ],
+              "developerCommentary": "Even tho we could argue that it overlaps with <vanilla, talents, 10, 0, sonya> it's not something that would bother that much as it's not an ultimate powerhouse",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "dehaka_15",
+              "name": "NEW: <modified, talents, 20, 3>",
+              "texts": [
+                {
+                  "text": "Dehaka's fiery breath scorches the earth, creating a scorching area, dealing 50 damage every 0.5 seconds and reducing 50% healing on the area.The area lasts 4 seconds.",
+                  "subtexts": [
+                    "Cooldown: 20 seconds",
+                    "Vector skill similar to <vanilla, abilities, heroic, 1, probius>",
+                    "Width 3.0 and Height 8.0 | <vanilla, abilities, heroic, 1, probius> has Width 1.0 and 8.0 Height"
+                  ]
+                }
+              ],
+              "developerCommentary": "I wanted to bring SC2 Scorching Breath bu",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "dehaka_16",
+              "name": "<vanilla, talents, 20, 3>",
+              "texts": [
+                {
+                  "text": "Moved to 16"
+                }
+              ],
+              "developerCommentary": "Not kaiju contender not level 20 tier",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "dehaka_17",
+              "name": "<vanilla, talents, 20, 2>, <vanilla, talents, 20, 1>",
+              "texts": [
+                {
+                  "text": "Removed"
+                }
+              ],
+              "developerCommentary": "Mixed <vanilla, talents, 20, 2> into <modified, talents, 13, 2> as i never felt that talent were a strong 20 contender and with the removal of <vanilla, talents, 10, 1> from the ultimate pool the <vanilla, talents, 20, 1> has no place anymore",
               "likes": 0,
               "likedBy": {}
             }

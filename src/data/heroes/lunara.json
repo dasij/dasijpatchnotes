@@ -1,44 +1,76 @@
 {
-  "id": 999,
+  "id": 45,
   "name": "LUNARA",
-  "role": "",
+  "role": "Ranged Assassin",
   "image": "heroes_portraits/lunara.webp",
-  "show": "false",
+  "show": "falses",
   "patchNotes": [
     {
-      "id": 999,
-      "title": "",
+      "id": 45,
+      "title": "Talents changes",
       "general": [
         {
-          "change_id": "lunara_",
-          "change": "",
+          "change_id": "lunara_18",
+          "change": "Base",
           "texts": [
             {
-              "text": ""
+              "text": "Typing 'HaHaHa' as Lunara on chat will result on a game message for both teams sayin 'HaHaHa' instead of a player message and will perform a very low laugh SFX to all players from the original VA.",
+              "subtexts": ["5 seconds cooldown"]
             }
           ],
-          "developerCommentary": "",
+          "developerCommentary": "Quadrupede demon",
+          "likes": 0,
+          "likedBy": {}
+        },
+        {
+          "change_id": "lunara_1",
+          "change": "<vanilla, abilities, basic, 0>",
+          "texts": [
+            {
+              "text": "Additional functionality: Increase Radius by 25% when one enemy has three stacks of <vanilla, abilities, trait, 0>."
+            }
+          ],
+          "developerCommentary": "I was trying to figure out how to fit <vanilla, talents, 4, 0> into my modified Lunara builds and after some time I realized that its existence didn't fit as a talent. However, I like its bonuses, so I'm bringing the most important one to Lunara's baseline kit. Besides, I always felt that <vanilla, abilities, basic, 0> was kind of underwhelming as Lunara's only damage skill, not because of its effect but its size. It doesn't feel powerful enough for such a core ability.",
           "likes": 0,
           "likedBy": {}
         }
       ],
-      "developerCommentary": "",
+      "developerCommentary": "One of the few champions on the game that is based on damage over time but the hardest one to get on point..make the poison too strong and it's OP make it weak and it's unusable so that's why the current build META build for Lunara relies on burst build but the casual one still relies on DoT..why is that? because it's fun. What i tried to bring to Lunara is more utility and gameplay centered around her poison stacks.",
       "sections": [
         {
           "name": "Level 1",
           "changes": [
             {
-              "change_id": "lunara_",
-              "name": "",
+              "change_id": "lunara_0",
+              "name": "NEW: Flower of poison",
               "texts": [
                 {
-                  "text": "",
+                  "text": "After staying still for 3 seconds <vanilla, abilities, basic, 2> will apply one stack of <modified, abilities, trait, 0> each second on area, lasts 3 seconds.",
                   "subtexts": [
-                    ""
+                    "Area will be 2 | <vanilla, abilities, basic, 1, muradin> is 3.0",
+                    "The flower should appear visually"
                   ]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "One thing that i always like about the wisps were the power to transform themselves into living structures here i wanted to apply a concept next to it but focused on empowering Lunara toolkit.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "lunara_2",
+              "name": "<vanilla, talent, 1, 2> renamed to Detonate (?)",
+              "texts": [
+                {
+                  "text": "Activate to detonate the closest <modified, abilities, basic, 2> of your mouse. When <modified, abilities, basic, 2> are destroyed or detonated they deal 400 damage to summoned units and 405 shield damage. If Lunara doesn't receive damage or basic attack on the last 2 seconds increase Dryad's Swiftness movement speed bonus by 10%",
+                  "subtexts": [
+                    "400 Health is equal to the <vanilla, abilities, basic, 2, chromie> Health",
+                    "405 Shield is equal to half of <vanilla, abilities, trait, 0, johanna> Health",
+                    "The mouse position recognizer should be global. So if you only have one <modified, abilities, basic, 0> it will detonate it no matter the position",
+                    "Cooldown: 0.5 seconds"
+                  ]
+                }
+              ],
+              "developerCommentary": "Another thing that i always liked about wisps on warcraft 3 were the Detonate skill. Give up the Wisp for a last resort skill, sadly i don't think that taking buffs from other characters or draining mana would fit Heroes of the Storm on that interaction",
               "likes": 0,
               "likedBy": {}
             }
@@ -48,17 +80,44 @@
           "name": "Level 4",
           "changes": [
             {
-              "change_id": "lunara_",
-              "name": "",
+              "change_id": "lunara_3",
+              "name": "<vanilla, talent, 4, 0>",
               "texts": [
                 {
-                  "text": "",
+                  "text": "Removed"
+                }
+              ],
+              "developerCommentary": "It doesn't fit on how i want to build Lunara because of how it intend the player to take this talent to combo with <modified, talents, 16, 0> and you would be losing a talent by not picking it.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "lunara_4",
+              "name": "NEW: Nature Spirits",
+              "texts": [
+                {
+                  "text": "<modified, abilities, basic, 2> will heal allied heros near them by 40 per second. This effect is doubled on bushes",
                   "subtexts": [
-                    ""
+                    "Radius will be 2.5 | <vanilla, abilities, basic, 1, muradin> radius is 3.0"
                   ]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "I wanted to add the effects of Lunara nature connection and show that by make some sort of healing related to nature spirits. Another thing that should be mentioned is that even tho i removed <vanilla, talents, 4, 0> to prevent it to make the player feel obliged to pick <modified, talents, 16, 0> i don't feel that this talent combo is strong enough with <modified, talents, 16, 2> to make the player feel obliged to pick it",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "lunara_5",
+              "name": "<vanilla, talent, 4, 2>",
+              "texts": [
+                {
+                  "text": "Shortened the description to: Heal 9 (+4%/level) per second while an enemy has <modified, abilities, trait, 0>. Additional 19 (+4%/level) per second healing if an enemy Hero has 3 stacks."
+                },
+                {
+                  "text": "Additional functionality: <modified, abilities, trait, 0> revels enemies for its duration"
+                }
+              ],
+              "developerCommentary": "With the changes made to other talents i could see this talent losing some of it's charm. So i bring up an extra removed from level 1 to make this talent a menace.",
               "likes": 0,
               "likedBy": {}
             }
@@ -68,34 +127,23 @@
           "name": "Level 7",
           "changes": [
             {
-              "change_id": "lunara_",
-              "name": "",
+              "change_id": "lunara_6",
+              "name": "<vanilla, talent, 7, 0>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "text": "additional functionality: Increase Lunara Basic Attack Damage by 10% for each current stack of <modified, abilities, trait, 0> active on enemy heroes."
                 }
               ],
               "developerCommentary": "",
               "likes": 0,
               "likedBy": {}
-            }
-          ]
-        },
-        {
-          "name": "Level 10",
-          "changes": [
+            },
             {
-              "change_id": "lunara_",
-              "name": "",
+              "change_id": "lunara_7",
+              "name": "<vanilla, talent, 7, 2> renamed to Sickening Effects",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "text": "Changed functionality: <modified, abilities, basic, 0> creates an area that lasts for 2.5. Enemy heros on that area will have their healing reduced by 20%, this effect will be increased to 50% if they have three stacks of <modified, abilities, trait, 0>"
                 }
               ],
               "developerCommentary": "",
@@ -108,17 +156,56 @@
           "name": "Level 13",
           "changes": [
             {
-              "change_id": "lunara_",
-              "name": "",
+              "change_id": "lunara_8",
+              "name": "<vanilla, talent, 13, 0>",
               "texts": [
                 {
-                  "text": "",
+                  "text": "Removed."
+                }
+              ],
+              "developerCommentary": "With the changes made to <modified, talents, 7, 2> this talent loses some of it's value as both <modified, talents, 16, 1> and <modified, talents, 16, 2> doesn't need that much of cooldown reduction ",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "lunara_9",
+              "name": "<vanilla, talent, 13, 1>",
+              "texts": [
+                {
+                  "text": "Additional functionality: <modified, abilities, basic, 1> cooldown reduced by 2s if cast while two or more Heroes have <modified, abilities, trait, 0>."
+                }
+              ],
+              "developerCommentary": "Mixing it with <modified, talents, 13, 0> with its removal",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "lunara_10",
+              "name": "<vanilla, talent, 13, 2>",
+              "texts": [
+                {
+                  "text": "moved to level 20"
+                }
+              ],
+              "developerCommentary": "Even tho it's close related to Lunara lore as a Dryad i don't think she needs both <vanilla, talents, 13, 3> and <vanilla, talents, 13, 2> on the same tier.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "lunara_11",
+              "name": "NEW: ZWOOP (?)",
+              "texts": [
+                {
+                  "text": "Lunara leaps backward, dodge enemy incoming projectiles and launches a basic attack on three of the furthest enemy units within range",
                   "subtexts": [
-                    ""
+                    "Leap range will be 4.0 <vanilla, abilities, basic, 2, valla> is 5.0",
+                    "Missile speed will be 10 <vanilla, abilities, basic, 2, valla> is 14",
+                    "Lunara will leap backward based on the character facing direction",
+                    "Cooldown: 30 seconds"
                   ]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "This work almost exactly as https://www.dota2.com/hero/enchantress Sproink skill. I am bringing this here as a method to bring Lunara closer to what she was before..an opressive mobile character a thing she kinda lost the spot with additions like Genji.",
               "likes": 0,
               "likedBy": {}
             }
@@ -128,17 +215,44 @@
           "name": "Level 16",
           "changes": [
             {
-              "change_id": "lunara_",
-              "name": "",
+              "change_id": "lunara_12",
+              "name": "<vanilla, talent, 16, 1>",
               "texts": [
                 {
-                  "text": "",
+                  "text": "Removed"
+                }
+              ],
+              "developerCommentary": "I will just straight say that i don't think that the concept of that talent bring something much value to how Lunara plays and with other safety tools she got from my changes i don't think this is necessary anymore",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "lunara_13",
+              "name": "<vanilla, talent, 16, 3>",
+              "texts": [
+                {
+                  "text": "Removed"
+                }
+              ],
+              "developerCommentary": "Lunara has two talents that provide almost the same functionality, this one and <vanilla, talents, 20, 2>. I am removing it and reworking the <vanilla, talents, 20, 2> to provide bonuses from both",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "lunara_14",
+              "name": "NEW: Nature's call",
+              "texts": [
+                {
+                  "text": "When Lunara cast <modified, abilities, basic, 2> it will also summon 3 additional <modified, abilities, basic, 2> that can't be controlled and each one will move to the closest bushes to Lunara.",
                   "subtexts": [
-                    ""
+                    "Multiple <modified, abilities, basic, 2> can be active at the same time.",
+                    "The additional <modified, abilities, basic, 2> won't go to the same bush",
+                    "This <modified, abilities, basic, 2> are affected by Lunara talents",
+                    "They will always move to the center of the Bush"
                   ]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "With the new interactions from level 1 i wanted to make a talent that could provide more utility for the <modified, abilities, basic, 0> and interactions to remember that classic thousand wisps detotaning on your army from warcraft 3.",
               "likes": 0,
               "likedBy": {}
             }
@@ -148,17 +262,51 @@
           "name": "Level 20",
           "changes": [
             {
-              "change_id": "lunara_",
-              "name": "",
+              "change_id": "lunara_15",
+              "name": "<vanilla, talent, 20, 1>",
               "texts": [
                 {
-                  "text": "",
+                  "text": "Changed functionality: Everytime you use on an target that is not affected by <modified, abilities, trait, 0> you receive another charge. <vanilla, talent, 10, 1> now can be used on allies.",
                   "subtexts": [
-                    ""
+                    "You can freely use on your allies as they won't be affected by <modified, abilities, trait, 0>"
                   ]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "<vanilla, talent, 20, 1> is not bad for any means the thing here is to make it one of those talents you are waiting to pick because it's fun changing your game possibilities similar to <vanilla, talents, 20, 2, garrosh>",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "lunara_16",
+              "name": "<vanilla, talent, 20, 2>",
+              "texts": [
+                {
+                  "text": "Bonus damage reduced from 40% to 20%"
+                },
+                {
+                  "text": "Additional functionality: Bonus damage is increased to 60% on slowed targets"
+                },
+                {
+                  "text": "Additional functionality: Increase Dryad's swiftness movement speed bonus by 7.5% for each enemy hero with 3 stacks"
+                }
+              ],
+              "developerCommentary": "I dislike the concept of receiving only a damage boost for <modified, abilities, trait, 0> as a level 20 and with the low pick rate of <vanilla, talents, 20, 3> even tho it's a high winrate one in general i wanted to mix both talents, this could lead to and extremely strong Lunara but for me that's the way for that talent.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "lunara_17",
+              "name": "<vanilla, talent, 13, 2>",
+              "texts": [
+                {
+                  "text": "Moved from level 13"
+                },
+                {
+                  "text": "Changed functionality: Activate to become immune to spell damage for 6 seconds",
+                  "subtexts": ["Cooldown: 60 seconds"]
+                }
+              ],
+              "developerCommentary": "Similar to <vanilla, talents, 20, 3> i want to bring that no zero damage for Lunara as a level 20 tool that is lore related, we could say that this also the level 13 just boosted with power for a level 20.",
               "likes": 0,
               "likedBy": {}
             }

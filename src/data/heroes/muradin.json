@@ -33,7 +33,7 @@
                   "text": "Increase <modified, abilities, basic, 2> armor duration by 2 seconds"
                 },
                 {
-                  "text": "Decrease Second Wind activation time to 1.5 seconds"
+                  "text": "Decrease <vanilla, abilities, trait, 0> activation time to 1.5 seconds"
                 }
               ],
               "developerCommentary": "By enabling a fast use of Second Wind this could enhance Muradin potential for fast trades even more as he could take his bets on an engage and fastly go for another one.",
@@ -53,7 +53,7 @@
                   "text": "Activate to empower the next <modified, abilities, basic, 0> making it stuns and damage enemies on a small area around the target and at the maximum range",
                   "subtexts": [
                     "Cooldown: 60 seconds",
-                    "Radius will be 3.0 | The same as thunder clap"
+                    "Radius will be 3.0 | The same as <modified, abilities, basic, 1>"
                   ]
                 }
               ],
@@ -115,8 +115,8 @@
                     "The first <modified, abilities, basic, 1> will be normal",
                     "The second <modified, abilities, basic, 1> will have extra 50% size and 75% more damage",
                     "The third <modified, abilities, basic, 1> will have extra 100% size and 150% more damage ",
-                    "Final radius is 6.0 | Blaze combustion is 6.5",
-                    "It interacts with all the thunder clap talents"
+                    "Final radius is 6.0 | <vanilla, abilities, heroic, 1, blaze> is 6.5",
+                    "It interacts with all the <modified, abilities, basic, 1> talents"
                   ]
                 },
                 {

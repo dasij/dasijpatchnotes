@@ -3,9 +3,9 @@
     "basic": [
       {
         "name": "Noxious Blossom (Q)",
-        "description": "After 0.5 seconds, cause an area to explode with pollen dealing 160 damage.",
+        "description": "After 0.5 seconds, cause an area to explode with pollen dealing 160 damage. {highlight}Increase Radius by 25% when one enemy has three stacks os Nature Toxin.{/highlight}",
         "image": "lunara_pollencloud.png",
-        "abilityChanged": false,
+        "abilityChanged": true,
         "manaCost": "60 Mana",
         "cooldown": "8s"
       },
@@ -65,24 +65,24 @@
       "talentChanged": false
     },
     {
-      "name": "Natural Perspective",
-      "description": "Nature's Toxin reveals enemies for its duration.",
-      "image": "lunara_stiflingblossom.png",
-      "talentChanged": false
+      "name": "Flower of poison",
+      "description": "{highlight}After staying still for 3 seconds Wisps apply one stack of Nature Toxin each second on area, lasts 3 seconds.{/highlight}",
+      "image": "lunara_wisp.png",
+      "talentChanged": true
     },
     {
-      "name": "Hippity Hop",
-      "description": "After not Basic Attacking or taking damage for 2 seconds, increase the Move Speed bonus of Dryad's Swiftness by 10%.",
-      "image": "lunara_boundlessstride_a.png",
-      "talentChanged": false
+      "name": "Detonate",
+      "description": "{highlight}Activate to detonate the closest Wisp of your mouse. When Wisps are destroyed or detonated they deal 400 damage to summoned units and 405 shield damage. If Lunara doesn't receive damage or basic attack on the last 2 seconds increase Dryad's Swiftness movement speed bonus by 10%{/highlight}",
+      "image": "lunara_wisp.png",
+      "talentChanged": true
     }
   ],
   "4": [
     {
-      "name": "Blossom Swell",
-      "description": "Increases Noxious Blossom's range by 25% and its radius by 20%.  Blossom Swell applies 2 stacks of Nature's Toxin to enemies hit.",
-      "image": "lunara_pollencloud.png",
-      "talentChanged": false
+      "name": "Nature Spirits",
+      "description": "{highlight}Wisps will heal allied heros near them by 40 per second. This effect is doubled on bushes{/highlight}",
+      "image": "lunara_wisp.png",
+      "talentChanged": true
     },
     {
       "name": "Nature's Culling",
@@ -92,9 +92,12 @@
     },
     {
       "name": "Siphoning Toxin",
-      "description": "While at least one enemy is afflicted by Nature's Toxin, heal for 9 per second.  When an enemy Hero has 3 stacks of Nature's Toxin, increase this healing by 19 per second.",
+      "description": "Heal 9 (+4%/level) per second while an enemy has Nature's Toxin. Additional 19 (+4%/level) per second healing if an enemy Hero has 3 stacks.",
       "image": "lunara_stiflingblossom_var1.png",
-      "talentChanged": false
+      "talentChanged": true,
+      "passives": [
+        "{highlight}Nature Toxin reveals enemies for its duration{/highlight}"
+      ]
     }
   ],
   "7": [
@@ -102,7 +105,10 @@
       "name": "Splintered Spear",
       "description": "Using Noxious Blossom causes Lunara's next Basic Attack to hit up to 4 enemies. These extra attacks can apply Nature's Toxin.",
       "image": "lunara_pollencloud.png",
-      "talentChanged": false
+      "talentChanged": true,
+      "passives": [
+        "{highlight}Increase Lunara Basic Attack Damage by 10% for each current stack of Nature Toxin active on enemy heroes.{/highlight}"
+      ]
     },
     {
       "name": "Choking Pollen",
@@ -111,10 +117,10 @@
       "talentChanged": false
     },
     {
-      "name": "Wild Vigor",
-      "description": "Using Crippling Spores increases the damage of Lunara's next 4 Basic Attacks by 70%.",
-      "image": "lunara_fullbloom.png",
-      "talentChanged": false
+      "name": "Sickening Effects",
+      "description": "{highlight}Noxious Blossom creates an area that lasts for 2.5. Enemy heros on that area will have their healing reduced by 20%, this effect will be increased to 50% if they have three stacks of Nature Toxin{/highlight}",
+      "image": "lunara_pollencloud_b.png",
+      "talentChanged": true
     }
   ],
   "10": [
@@ -137,22 +143,13 @@
   ],
   "13": [
     {
-      "name": "Endless Spores",
-      "description": "Casting Crippling Spores while at least 2 Heroes are afflicted by Nature's Toxin reduces the cooldown by 4 seconds.",
-      "image": "lunara_fullbloom.png",
-      "talentChanged": false
-    },
-    {
       "name": "Let Them Wither",
       "description": "Increases Crippling Spores' Slow duration by 1 second and causes it to no longer decay.",
       "image": "lunara_fullbloom_a.png",
-      "talentChanged": false
-    },
-    {
-      "name": "Greater Spell Shield",
-      "description": "Every 30 seconds, gain 75 Spell Armor against the next enemy Ability and subsequent Abilities for 3 seconds, reducing the damage taken by 75%.Can be toggled to allow or prevent this talent from triggering automatically.",
-      "image": "lunara_greaterspellshield.png",
-      "talentChanged": false
+      "talentChanged": true,
+      "passives": [
+        "{highlight}Crippling Spores cooldown reduced by 2s if cast while two or more Heroes have Nature's Toxin.{/highlight}"
+      ]
     },
     {
       "name": "Abolish Magic",
@@ -160,6 +157,13 @@
       "image": "lunara_abolishmagic.png",
       "talentChanged": false,
       "cooldown": "20s"
+    },
+    {
+      "name": "ZWOOP",
+      "description": "{highlight}Lunara leaps backward, dodge enemy incoming projectiles and launches a basic attack on three of the furthest enemy units within range{/highlight}",
+      "image": "lunara_boundlessstride_a.png",
+      "talentChanged": true,
+      "cooldown": "30s"
     }
   ],
   "16": [
@@ -170,22 +174,16 @@
       "talentChanged": false
     },
     {
-      "name": "Star Wood Spear",
-      "description": "Increase Lunara's Basic Attack range by 0.5.  Using Crippling Spores increases Lunara's Basic Attack range by an additional 2.25 for 6 seconds.",
-      "image": "lunara_fullbloom.png",
-      "talentChanged": false
-    },
-    {
       "name": "Invigorating Spores",
       "description": "Crippling Spores grants 30% Attack Speed for 6 seconds.  Basic Attacks against enemy Heroes with 3 stacks of Nature's Toxin deal damage equal to 1.5% of their maximum Health.",
       "image": "lunara_fullbloom_a.png",
       "talentChanged": false
     },
     {
-      "name": "Unfair Advantage",
-      "description": "Nature's Toxin deals 60% more damage to Heroes that are Slowed, Rooted, or Stunned.",
-      "image": "lunara_stiflingblossom.png",
-      "talentChanged": false
+      "name": "Nature's call",
+      "description": "{highlight}When Lunara cast Wisp it will also summon 3 additional wisps that can't be controlled and each one will move to the closest bushes to Lunara.{/highlight}",
+      "image": "lunara_wisp.png",
+      "talentChanged": true
     }
   ],
   "20": [
@@ -197,22 +195,25 @@
     },
     {
       "name": "Boundless Stride",
-      "description": "All Leaping Strike charges are returned every 15 seconds. Leaping Strike can be used on allies.",
+      "description": "{highlight}Everytime you use on an target that is not affected by Nature Toxin you receive another charge. Leaping Strike now can be used on allies.{/highlight}",
       "image": "lunara_boundlessstride.png",
-      "talentChanged": false
+      "talentChanged": true
     },
     {
       "name": "Intensifying Toxin",
-      "description": "At 3 stacks, Nature's Toxin deals 40% more damage.",
+      "description": "At 3 stacks, Nature's Toxin deals {highlight}20%{/highlight} more damage, {highlight}that damage is increased to 60% on slowed targets{/highlight}",
       "image": "lunara_stiflingblossom.png",
-      "talentChanged": false
+      "talentChanged": true,
+      "passives": [
+        "{highlight}Increase Dryad's swiftness movement speed bonus by 7.5% for each enemy hero with 3 stacks{/highlight}"
+      ]
     },
     {
-      "name": "Galloping Gait",
-      "description": "Activate to increase the Movement Speed bonus of Dryad's Swiftness to 80% for 6 seconds.",
-      "image": "lunara_boundlessstride_a.png",
-      "talentChanged": false,
-      "cooldown": "30s"
+      "name": "Greater Spell Shield",
+      "description": "{highlight}Activate to become immune to spell damage for 6 seconds{/highlight}",
+      "image": "lunara_greaterspellshield.png",
+      "talentChanged": true,
+      "cooldown": "60s"
     }
   ]
 }

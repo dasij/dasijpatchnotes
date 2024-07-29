@@ -7,8 +7,22 @@
   "patchNotes": [
     {
       "id": 27,
-      "title": "Talent overhaul and Hero Changes",
+      "title": "Talent changes and small hero changes",
       "general": [
+        {
+          "change_id": "genji_16",
+          "change": "Base",
+          "texts": [
+            {
+              "text": "Writing 'Ryujin no ken wo kurae' on chat will write on chat 'The dragon needs healing' as a game message for both teams",
+              "subtexts": ["5 second cooldown"]
+            }
+          ],
+          "developerCommentary": "I need healing",
+          "likes": 0,
+          "likedBy": {}
+        },
+
         {
           "change_id": "genji_1",
           "change": "<vanilla, abilities, basic, 0>",
@@ -39,9 +53,15 @@
                 },
                 {
                   "text": "Spell armor duration decreased from 4 to 3 seconds"
+                },
+                {
+                  "text": "Spell armor reduced from 50 to 35 seconds"
+                },
+                {
+                  "text": "Dodge cooldown increased from 5 to 8 seconds"
                 }
               ],
-              "developerCommentary": "A individually strong talent but one who became toxic when paired with <vanilla, talents, 1, 1> cooldown reduction. The objective here is to prevent talent combos that reset <vanilla, abilities, trait, 0>>.",
+              "developerCommentary": "A individually strong talent but one who became toxic when paired with <vanilla, talents, 1, 1> cooldown reduction. The objective here is to prevent talent combos that reset <vanilla, abilities, trait, 0>. It's arguable an absurd talent on level 1 on the hands of people which know to play but Genji is also affected by his team as a character that provides almost no PVE help..what i mean is that this talent is fun but will only be abused on high elo lobbies which i don't mind as a rotation killer and also a talent with three different numeric effects can be number nerfed on three differente places.",
               "likes": 0,
               "likedBy": {}
             },
@@ -65,7 +85,7 @@
                   "text": "Changed functionality: <modified, abilities, trait, 0> can be recast two times within a period of 5 seconds. Genji becomes Unstopabble while jumping"
                 }
               ],
-              "developerCommentary": "I wanted to make this talent tier about <modified, abilities, trait, 0> and for that reason my reasoning was to make something that could be more Dragon Blade oriented and Cool ninja stuff as my objective is not just fill Genji gaps but rather give him more funny stuff to do.",
+              "developerCommentary": "I wanted to make this talent tier about <modified, abilities, trait, 0> and for that reason my reasoning was to make something that could be more <vanilla, abilities, heroic, 0> oriented and Cool ninja stuff as my objective is not just fill Genji gaps but rather give him more funny stuff to do.",
               "likes": 0,
               "likedBy": {}
             },
@@ -183,7 +203,7 @@
                   "text": "Hitting an enemy hero with <modified, abilities, basic, 2> increase Genji movement speed by 30% and grants a 360 shield for 3 seconds."
                 }
               ],
-              "developerCommentary": "The objective here is to make a safe option to this tier if you wish to go with a Dragon Blade build on",
+              "developerCommentary": "The objective here is to make a safe option to this tier if you wish to go with a <vanilla, abilities, heroic, 0> build on",
               "likes": 0,
               "likedBy": {}
             },
@@ -221,13 +241,13 @@
               "name": "NEW: Ninja Course",
               "texts": [
                 {
-                  "text": "<modified, abilities, trait, 0> creates a caltrops trap area that lasts 2.5 seconds and deals 65 damage per second on enemies in the area and reduces their armor by 5 for 4 seconds, up to 20",
+                  "text": "<modified, abilities, trait, 0> creates a caltrops trap area where he lands that lasts 2.5 seconds and deals 65 damage per second on enemies in the area and reduces their armor by 5 for 4 seconds, up to 20",
                   "subtexts": [
-                    "Radius is 2 | Malfurion Entangling Roots is 3.0"
+                    "Radius is 2 | <vanilla, abilities, basic, 2, malfurion> is 3.0"
                   ]
                 }
               ],
-              "developerCommentary": "I really wanted to give either give smoke bomb or a caltrops ninja trap because Genji is a ninja and ninja things are cool. I wouldn't give him smoke bomb because i alredy implemented smoke bombs similars on other talents.",
+              "developerCommentary": "I really wanted to give either give smoke bomb or a caltrops ninja trap because Genji is a ninja and ninja things are cool. I wouldn't give him smoke bomb because i alredy implemented smoke bombs similars on <modified, talents, 1, 2> and <modified, talents, 16, 2>.",
               "likes": 0,
               "likedBy": {}
             }

@@ -17,7 +17,7 @@
               "text": "additional functionality: ❢ Quest: Every time <vanilla, abilities, basic, 0> hits a Hero in the center, increase the center damage by 2, up to 50. ❢ Reward: After hitting 30 Heroes, Hitting allied heros with <vanilla, abilities, basic, 0> center increase the damage by 180."
             }
           ],
-          "developerCommentary": "",
+          "developerCommentary": "BRO. we have a unique animation Al'maiesh slap no way we only have it on the quest that is also fun",
           "likes": 0,
           "likedBy": {}
         },
@@ -227,8 +227,8 @@
                 {
                   "text": "Activate to Pull the first allied hero it hits on a straight line.",
                   "subtexts": [
-                    "Detainment Strike range is 6.0 | Hope Strike is 9.0 | Anduin Leap of Faith is 10.0",
-                    "The pull will work similar to Anduin Leap of Faith when hitting the target but won't cleanse the target while they are travelling, stuns and knockback after starting the animation will cancel the effect",
+                    "<modified, abilities, basic, 2> range is 6.0 | Hope Strike is 9.0 | <vanilla, abilities, trait, 0, anduin> is 10.0",
+                    "The pull will work similar to <vanilla, abilities, trait, 0, anduin> when hitting the target but won't cleanse the target while they are travelling, stuns and knockback after starting the animation will cancel the effect",
                     "Cooldown: 20 seconds"
                   ]
                 }
@@ -285,13 +285,13 @@
                 {
                   "text": "Auriel shares all stat bonuses within the <modified, abilities, trait, 0> bearer",
                   "subtexts": [
-                    "This means Auriel will receive all the bonuses from a Nano Boost but won't receive healing grante from Dehaka Essence for example and on the same topic she would receive all the bonus health regeneration granted from the Dehaka essence Mission",
-                    "This is not buff stacking, if Auriel and the bearer are receiving the same Buff then only 1 instance will be counted. For example Varian Banners",
+                    "This means Auriel will receive all the bonuses from a <vanilla, abilities, heroic, 0, ana> but won't receive healing granted from <vanilla, abilities, trait, 0, dehaka> for example and on the same topic she would receive all the bonus health regeneration granted from the <vanilla, talents, 1, 1, dehaka>",
+                    "This is not buff stacking, if Auriel and the bearer are receiving the same Buff then only 1 instance will be counted. For example <vanilla, talents, 16, 0, varian>",
                     "That sharing comes from both directions, if someone buff Auriel the bearer will receive the bonus and vice-versa"
                   ]
                 }
               ],
-              "developerCommentary": "I think that could lead to new ways of playing Auriel with extra utility heros or hyper carries. Imagine for example that a Auriel would share the bonus movement speed granted by Valla passive or Cho'gall passive and drafting correctly could lead to some cool insanities made with Auriel",
+              "developerCommentary": "I think that could lead to new ways of playing Auriel with extra utility heros or hyper carries. Imagine for example that a Auriel would share the bonus movement speed granted by <vanilla, abilities, trait, 0, valla> or <vanilla, abilities, trait, 0, cho> and drafting correctly could lead to some cool insanities made with Auriel",
               "likes": 0,
               "likedBy": {}
             },
@@ -314,12 +314,12 @@
           "changes": [
             {
               "change_id": "auriel_5",
-              "name": "<vanilla, talents, 20, 0> renamed to Hope never die",
+              "name": "<vanilla, talents, 20, 0>",
               "texts": [
                 {
                   "text": "Changed functionality: After 5 seconds of ressurecting the primary target will perform another <modified, abilities, heroic, 0> on area 5 seconds after on the initial target position",
                   "subtexts": [
-                    "The radius will be 5.0 | Blaze combustion is 6.0",
+                    "The radius will be 5.0 | <vanilla, abilities, heroic, 1, blaze> is 6.5",
                     "Example: If auriel <modified, abilities, heroic, 0> a Muradin..a second area <modified, abilities, heroic, 0> will be used on the position Muradin was ressurected bringing back all dead heroes close to that position.",
                     "Auriel can <modified, abilities, heroic, 0> herself with the area <modified, abilities, heroic, 0>."
                   ]
@@ -337,8 +337,8 @@
                 {
                   "text": "Changed functionality: Upon expiration <modified, abilities, heroic, 1> will knockback enemies nearby and every hero hit will reduce it's cooldown by 17 seconds",
                   "subtexts": [
-                    "Knockback speed 16.5 same as Lucio Soundwave",
-                    "Knockback duration 0.35, Lucio Soundwave is 0.25"
+                    "Knockback speed 16.5 same as <vanilla, abilities, basic, 0, lucio>",
+                    "Knockback duration 0.35, <vanilla, abilities, basic, 0, lucio> is 0.25"
                   ]
                 }
               ],

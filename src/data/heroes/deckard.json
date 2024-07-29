@@ -25,7 +25,7 @@
               ]
             }
           ],
-          "developerCommentary": "I always liked the gem effects on deckards level 1,4 and 7 BUT couldn't find a way to make it possible to increase the possibilities on other tiers because i think deckard is a pretty good character BUT still as my vision on the character i wanted that ideia to become live and this is also a way i want to make to incentivize people to look out for the gems by implying a boost instead of a addition to the kit.",
+          "developerCommentary": "I always liked the <vanilla, talents, 1, 2>, <vanilla, talents, 4, 2> and <vanilla, talents, 7, 2> BUT couldn't find a way to make it possible to increase the possibilities on other tiers because i think deckard is a pretty good character BUT still as my vision on the character i wanted that ideia to become live and this is also a way i want to make to incentivize people to look out for the gems by implying a boost instead of a addition to the kit.",
           "likes": 0,
           "likedBy": {}
         }
@@ -107,7 +107,7 @@
                   "text": "Additional functionality: Whenever an ally is healed by a <modified, abilities,  basic, 0>, they gain 10% spell power for 3 seconds (Non-stacking)"
                 }
               ],
-              "developerCommentary": "I dislike the conflict between picking Ruby and Rejuvesnation potion for maximizing the healing output so i prefer giving mana potion a completely different approach going for mages.",
+              "developerCommentary": "I dislike the conflict between picking <vanilla, talents, 4, 2> and <vanilla, talents, 4, 1> for maximizing the healing output so i prefer giving mana potion a completely different approach going for mages.",
               "likes": 0,
               "likedBy": {}
             },
@@ -153,7 +153,7 @@
                   "text": "Additional functionality: Will also apply the gem effect from the roulette."
                 }
               ],
-              "developerCommentary": "Lorenado lacks appeal and one thing that i like about lorenado is fun it gimmick is but i also see picking lots of gem talents a bad option but it shouldn't be so i want to make the lorenado use the new gems mechanic",
+              "developerCommentary": "<vanilla, abilities, heroic, 1> is a lot of fun but i want to improve it competitive aspect by using the new gems mechanic",
               "likes": 0,
               "likedBy": {}
             }
@@ -170,7 +170,7 @@
                   "text": "Whenever an ally is healed by a <modified, abilities,  basic, 0> 0.5 seconds after it's cast grants 15 armor and 22.5% movement speed for 2 seconds"
                 }
               ],
-              "developerCommentary": "Hitting deckard potions right on the target is a hard task and only rewarded by the shield talent but not necessarily you need to hit it on time and for me a talent that reward consistent insta heal is fun.",
+              "developerCommentary": "Hitting <vanilla, abilities,  basic, 0> right on the target is a hard task and only rewarded by the shield talent but not necessarily you need to hit it on time and for me a talent that reward consistent insta heal is fun.",
               "likes": 0,
               "likedBy": {}
             },
@@ -199,7 +199,7 @@
                   "text": "Additional functionality: Hitting enemy heros with <modified, abilities,  basic, 2> and <modified, abilities,  basic, 1> recharges the potions 0.75 second faster."
                 }
               ],
-              "developerCommentary": "With the baseline lorenado buff i also wanted to insert diamond gems in the game and saw a perfect opportunity to do it with lorenado.",
+              "developerCommentary": "With the baseline <modified, abilities, heroic, 1> buff i also wanted to insert diamond gems in the game and saw a perfect opportunity to do it with lorenado.",
               "likes": 0,
               "likedBy": {}
             },

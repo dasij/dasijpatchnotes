@@ -20,7 +20,7 @@
               "text": "Basic attacks against bleeding targets increase the damage by 20% per bleed stack"
             }
           ],
-          "developerCommentary": "I want to further compromisse Qhira with the Bleeding synergy",
+          "developerCommentary": "I want to further compromisse Qhira with the <vanilla, abilities, basic, 1> synergy",
           "likes": 0,
           "likedBy": {}
         },
@@ -84,7 +84,7 @@
                   "text": "Additional functionality: Increase Qhira rotating speed on <modified, abilities, basic, 2> by 200%"
                 }
               ],
-              "developerCommentary": "Esnaring sweep wasn't one of the most attractive talents compared to their counterparts but increasing rotating speed could lead to better interaction with other sweep talents",
+              "developerCommentary": "<vanilla, talents, 4, 1> wasn't one of the most attractive talents compared to their counterparts but increasing rotating speed could lead to better interaction with other sweep talents",
               "likes": 0,
               "likedBy": {}
             },
@@ -186,7 +186,7 @@
                   "text": "Changed functionality: For each second Qhira swings around a target she receives 12 spell armor that will expire 5 seconds after re-activates or stop swinging. Hitting enemy heroes with <modified, abilities, trait, 0> decreases <modified, abilities, basic, 2> cooldown by 3 seconds"
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "I want to change this talent to still benefit the swinging effect but also change how you can deal with that",
               "likes": 0,
               "likedBy": {}
             }
@@ -203,7 +203,7 @@
                   "text": "Decrease <modified, abilities, heroic, 0> are by 1 meter"
                 }
               ],
-              "developerCommentary": "With the changes on the base <modified, abilities, heroic, 0> we need to nerf it because it's truly eazier to perform the wombo wipes we've seen Qhira mains making, this is one of the level 20 talents that could solo win a fight and the extra area would easily make it wipe entire teams without effort. It's the Leoric entomb upgrade treatment",
+              "developerCommentary": "With the changes on the base <modified, abilities, heroic, 0> we need to nerf it because it's truly eazier to perform the wombo wipes we've seen Qhira mains making, this is one of the level 20 talents that could solo win a fight and the extra area would easily make it wipe entire teams without effort. It's the <vanilla, talents, 20, 0, leoric> treatment",
               "likes": 0,
               "likedBy": {}
             },

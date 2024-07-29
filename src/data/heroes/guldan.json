@@ -33,7 +33,7 @@
                 {
                   "text": "Changed functionality: <modified, abilities, basic, 1> reduces the target self-heal and regeneration effects by 75% while it's active.",
                   "subtexts": [
-                    "For complete context, it won't reduce healing from other heroes. For example Dehaka essence or adaptation healing will be cut but receiving healing from a Healer will work normally."
+                    "For complete context, it won't reduce healing from other heroes. For example <vanilla, abilities, trait, 0, dehaka> or <vanilla, abilities, heroic, 1, dehaka> healing will be cut but receiving healing from a Healer will work normally."
                   ]
                 }
               ],
@@ -64,7 +64,7 @@
                   "text": "Reward: If Consume life is fully charged it can be activated while dead to immediately respawn at the Hall of Storms, but must be charged again."
                 }
               ],
-              "developerCommentary": "I wanted to make something related to the Vanilla Dark Bargain effect but i disliked increasing respawn time the way it is..on counterpart the Malthael No One Can Stop Death gives a better control of it",
+              "developerCommentary": "I wanted to make something related to the Vanilla Dark Bargain effect but i disliked increasing respawn time the way it is..on counterpart the <vanilla, talents, 20, 3, malthael> gives a better control of it",
               "likes": 0,
               "likedBy": {}
             },
@@ -179,7 +179,7 @@
                   "text": "<vanilla, abilities, heroic, 1> will now start at a 3.0 radius and will be gradually increasing it up to 9 on the 5 second mark. Has 50% reduced damage against structures now",
                   "subtexts": [
                     "This won't change the meteor spawn rate it will just concentrate the damage at the beginning at a smaller area.",
-                    "Muradin thunderclap has 3.0 radius."
+                    "<vanilla, abilities, basic, 1, muradin> has 3.0 radius."
                   ]
                 }
               ],
@@ -202,7 +202,7 @@
                     "This will consume their maximum health points after death. So if you guldan has 3000hp and kill a maximum souls Diablo that had 8k life by losing his souls lets say he has 6k life now then you will be granted 6k health points. ",
                     "Cooldown: 60 seconds",
                     "1 second cast time",
-                    "This will literally consume de corpse so Auriel Ressurect can't be used on the consumed target"
+                    "This will literally consume the corpse so <vanilla, abilities, heroic, 0, auriel> can't be used on the consumed target"
                   ]
                 }
               ],
@@ -218,7 +218,7 @@
                   "text": "Moved to level 4"
                 }
               ],
-              "developerCommentary": "You alredy saw my deeds and also, i dislike healthstone and harvest life on the same tier as they achieve the same goal with the only difference that <modified, abilities, basic, 1> was gatekeeped by picking other talents",
+              "developerCommentary": "You alredy saw my deeds and also, i dislike <vanilla, talents, 13, 3> and <vanilla, talents, 13, 1> on the same tier as they achieve the same goal with the only difference that <modified, abilities, basic, 1> was gatekeeped by picking other talents",
               "likes": 0,
               "likedBy": {}
             }
@@ -234,7 +234,7 @@
                 {
                   "text": "Activate to channel for 1.5 second, and then instantly teleport and cast <modified, abilities, basic, 1> on all enemies in range.",
                   "subtexts": [
-                    "7.0 range | Same as Malfurion 20 astral Communion"
+                    "7.0 range | Same as <vanilla, talents, 20, 1, malfurion>"
                   ]
                 },
                 {

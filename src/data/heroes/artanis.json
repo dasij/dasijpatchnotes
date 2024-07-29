@@ -174,9 +174,9 @@
                   "text": "Activate to destroy your current Shield and deal damage 50% of the value as damage to enemies nearby and knock back them",
                   "subtexts": [
                     "Cooldows: 20",
-                    "Radius 3.0 same from Dehaka Luker Strain",
-                    "Knockback duration: 0.25 same from Dehaka Luker Strain",
-                    "Knockback speed: 10 same from Dehaka Luker Strain"
+                    "Radius 3.0 same from <vanilla, talents, 4, 0, dehaka>",
+                    "Knockback duration: 0.25 same <vanilla, talents, 4, 0, dehaka>",
+                    "Knockback speed: 10 same from <vanilla, talents, 4, 0, dehaka>"
                   ]
                 }
               ],
@@ -232,7 +232,7 @@
               "name": "<vanilla, talents, 13, 0>",
               "texts": [
                 {
-                  "text": "Changed functionality: Reduces <modified, abilities, basic, 0> mana cost to 25. Hitting enemy heroes with <modified, abilities, basic, 0> reduces its cooldown by 3.5 seconds . <modified, abilities, basic, 0> can be cast while on <modified, abilities, basic, 0> "
+                  "text": "Changed functionality: Reduces <modified, abilities, basic, 0> mana cost to 25. Hitting enemy heroes with <modified, abilities, basic, 0> reduces its cooldown by 3.5 seconds for each hero hit. <modified, abilities, basic, 0> can be cast while on <modified, abilities, basic, 0> "
                 }
               ],
               "developerCommentary": "This talent is intended to cause nauseas on Artanis players with the number of <modified, abilities, basic, 0> you will be able to perform",

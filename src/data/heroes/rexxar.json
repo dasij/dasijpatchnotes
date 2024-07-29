@@ -21,7 +21,7 @@
             {
               "subtexts": [
                 "<vanilla, abilities, basic, 0> cooldown only starts when it returns to Rexxar.",
-                "The vision radius is 10 | Timerwalker's Pursuit Chromie vision is 10",
+                "The vision radius is 10 | <vanilla, talents, 1, 2,chromie> is 10",
                 "Will only divebomb enemies on vision radius, if there's no enemy on vision radius won't divebomb anyone and will just return to Rexxar"
               ]
             }
@@ -101,7 +101,7 @@
                   "text": "Removed."
                 }
               ],
-              "developerCommentary": "With the <modified, abilities, basic, 0> changes, Flare is no longer needed as it would overlap. <vanilla, talents, 1, 1> covers a role that Rexxar shouldn't take.",
+              "developerCommentary": "With the <modified, abilities, basic, 0> changes, <vanilla, talents, 1, 2> is no longer needed as it would overlap. <vanilla, talents, 1, 1> covers a role that Rexxar shouldn't take.",
               "likes": 0,
               "likedBy": {}
             },
@@ -136,7 +136,7 @@
                   "text": "Moved from level 1."
                 }
               ],
-              "developerCommentary": "With the changes to Spirit, this talent is weaker if you wish to use its vision. As a level 4 talent competing with survivability talents bringing the 'flare' survavibility could make it a good choice. ",
+              "developerCommentary": "With the changes to <modified, abilities, basic, 0>, this talent is weaker if you wish to use its vision. As a level 4 talent competing with survivability talents bringing the <vanilla, talents, 1, 2> survavibility could make it a good choice. ",
               "likes": 0,
               "likedBy": {}
             },
@@ -148,10 +148,10 @@
                   "text": "Additional functionality: Misha now kills enemy troops instantly with basic attacks and recovers 2.25% health."
                 },
                 {
-                  "text": "Additional functionality: When Spirit divebombs an enemy hero, it heals Rexxar for 12.5% of his maximum health."
+                  "text": "Additional functionality: When <modified, abilities, basic, 0> divebomb's an enemy hero, it heals Rexxar for 12.5% of his maximum health."
                 }
               ],
-              "developerCommentary": "With the changes to Spirit, it's the perfect opportunity to make this talent a reliable choice.",
+              "developerCommentary": "With the changes to <modified, abilities, basic, 0>, it's the perfect opportunity to make this talent a reliable choice.",
               "likes": 0,
               "likedBy": {}
             },
@@ -205,10 +205,10 @@
               "name": "<vanilla, talents, 7, 0>",
               "texts": [
                 {
-                  "text": "Changed functionality: Spirit divebomb's slow is now increased to 60% and doesn't decay anymore."
+                  "text": "Changed functionality: <modified, abilities, basic, 0> divebomb's slow is now increased to 60% and doesn't decay anymore."
                 }
               ],
-              "developerCommentary": "Changing Crippling Talons to still be an effective slowing skill but more inclined to the new <modified, abilities, basic, 0> mechanics.",
+              "developerCommentary": "Changing <vanilla, talents, 7, 0> to still be an effective slowing skill but more inclined to the new <modified, abilities, basic, 0> mechanics.",
               "likes": 0,
               "likedBy": {}
             },
@@ -223,7 +223,7 @@
                   "text": "Changed functionality: (Passive) Misha's basic attacks against enemy heroes grant a stacking 25% increased attack damage bonus for 4 seconds, up to a maximum of 300%."
                 }
               ],
-              "developerCommentary": "I don't dislike the effects of <vanilla, talents, 10, 0>, but I found it too simple and not worth a high cooldown active for dynamic purposes. Instead, I wanted to make it similar to Tyrande's Darnassian Archery and put it on level 7 to increase how you want to optimize your build, damage|utility|control talents for level 7.",
+              "developerCommentary": "I don't dislike the effects of <vanilla, talents, 10, 0>, but I found it too simple and not worth a high cooldown active for dynamic purposes. Instead, I wanted to make it similar to <vanilla, talents, 16, 2, tyrande> and put it on level 7 to increase how you want to optimize your build, damage|utility|control talents for level 7.",
               "likes": 0,
               "likedBy": {}
             }
@@ -240,7 +240,7 @@
                   "text": "Moved to level 7."
                 }
               ],
-              "developerCommentary": "Heroes of the Storm ultimates generally make the player feel powerful and distinct. Bestial Wrath, in my opinion, does not give that feeling and rather feels like an active talent that could fit either on level 13 or 16.",
+              "developerCommentary": "Heroes of the Storm ultimates generally make the player feel powerful and distinct. <vanilla, talents, 10, 0>, in my opinion, does not give that feeling and rather feels like an active talent that could fit either on level 13 or 16.",
               "likes": 0,
               "likedBy": {}
             },
@@ -308,10 +308,10 @@
                   "text": "Knocks back enemies around Misha by a significant distance when <modified, abilities, basic, 2> is used."
                 },
                 {
-                  "text": "The radius is supposed to be 3.5, a little smaller than E.T.C face melt"
+                  "text": "The radius is supposed to be 3.5, a little smaller than <vanilla, abilities, basic, 1, etc>"
                 }
               ],
-              "developerCommentary": "The knockback is intended to be smaller than Lucio's Soundwave, just enough for Misha to cancel enemy animations.",
+              "developerCommentary": "The knockback effect is intended to be smaller than <vanilla, abilities, basic, 0, lucio>, just enough for Misha to cancel enemy animations.",
               "likes": 0,
               "likedBy": {}
             },
@@ -361,7 +361,7 @@
                   "text": "The stampede area will cover two parallel lines on Rexxar's sides."
                 }
               ],
-              "developerCommentary": "Stampede is a Rexxar classic from the Warcraft 3 era, but it's a challenging ultimate to implement because it works similarly to March of the Murlocs. Changing the area Stampede covers was the best solution to give it a distinct feel while avoiding the randomness similar to Gul'dan's Rain of Chaos.",
+              "developerCommentary": "Stampede is a Rexxar classic from the Warcraft 3 era, but it's a challenging ultimate to implement because it works similarly to <vanilla, abilities, heroic, 0, murky>. Changing the area Stampede covers was the best solution to give it a distinct feel while avoiding the randomness similar to <vanilla, abilities, heroic, 1, guldan>.",
               "likes": 0,
               "likedBy": {}
             },

@@ -11,10 +11,10 @@
       },
       {
         "name": "Face Melt (W)",
-        "description": "Deals 68 damage to nearby enemies, knocking them back.",
+        "description": "Deals 68 damage to nearby enemies, knocking them back. Increase Face Melt size and knockback by 50%",
         "image": "etc_facemelt.png",
-        "abilityChanged": false,
-        "manaCost": "55 Mana",
+        "abilityChanged": true,
+        "manaCost": "{highlight}80 Mana{/highlight}",
         "cooldown": "12s"
       },
       {
@@ -46,17 +46,17 @@
     ],
     "trait": {
       "name": "Rockstar (T)",
-      "description": " Using a Basic Ability grants 20 Armor for 2 seconds. Heroic Abilities grant 60 Armor.",
+      "description": "Using a Basic Ability grants 20 Armor for 2 seconds. Heroic Abilities grant 60 Armor.",
       "image": "etc_rockstar.png",
       "abilityChanged": false
     }
   },
   "1": [
     {
-      "name": "Guitar Hero",
-      "description": "While Guitar Solo is active, E.T.C. heals for 60% of his damage dealt by Basic Attacks.  Basic Attacks increase the duration of Guitar Solo by 0.5 seconds.",
-      "image": "etc_guitarsolo.png",
-      "talentChanged": false
+      "name": "Speed Metal",
+      "description": "Using a Basic or Heroic ability also gives nearby allied Heroes 20% Movement Speed for 2.5 seconds.",
+      "image": "etc_speedmetal.png",
+      "talentChanged": true
     },
     {
       "name": "Prog Rock",
@@ -79,16 +79,16 @@
       "talentChanged": false
     },
     {
-      "name": "Loud Speakers",
-      "description": "Increases Face Melt range and knockback by 50%.",
-      "image": "etc_facemelt.png",
-      "talentChanged": false
+      "name": "Guitar Hero",
+      "description": "While Guitar Solo is active, E.T.C. {highlight}deals 35% more damage{/highlight} and heals for 60% of his damage dealt with Basic Attacks. Basic Attacks increase the duration of Guitar Solo by 0.5 seconds.",
+      "image": "etc_guitarsolo.png",
+      "talentChanged": true
     },
     {
-      "name": "Speed Metal",
-      "description": "Using a Basic or Heroic ability also gives nearby allied Heroes 20% Movement Speed for 2.5 seconds.",
-      "image": "etc_speedmetal.png",
-      "talentChanged": false
+      "name": "Slow Tempo",
+      "description": "{highlight}Enemy heroes hit by E.T.C. basic attacks have their damage reduced by 15% for 1.25 seconds and E.T.C. restores 6 mana{/highlight}",
+      "image": "etc_facemelt.png",
+      "talentChanged": true
     }
   ],
   "7": [
@@ -99,10 +99,10 @@
       "talentChanged": false
     },
     {
-      "name": "Hammer-on",
-      "description": "While Guitar Solo is active your Basic Attacks deal 35% more damage.",
-      "image": "etc_guitarsolo.png",
-      "talentChanged": false
+      "name": "Guitar Smashing",
+      "description": "{highlight}Rockstar empowers E.T.C. next basic attack making it reduces the target armor by 15 for 1.5 seconds.{/highlight}",
+      "image": "etc_rockstar.png",
+      "talentChanged": true
     },
     {
       "name": "Echo Pedal",
@@ -132,9 +132,9 @@
   "13": [
     {
       "name": "Mic Check",
-      "description": "Hitting at least 2 targets with Face Melt reduces its cooldown by 6 seconds.",
+      "description": "Hitting at least 2 targets with Face Melt reduces its cooldown by 6 seconds{highlight} and refunds 55 mana{/highlight}",
       "image": "etc_facemelt.png",
-      "talentChanged": false
+      "talentChanged": true
     },
     {
       "name": "Encore",
@@ -144,9 +144,9 @@
     },
     {
       "name": "Face Smelt",
-      "description": "Face Melt slows enemies by 50% fading over 2 seconds.",
+      "description": "Face Melt slows enemies by 50% fading over 2 seconds {highlight}and deal 350 extra damage against shields and summons{/highlight}",
       "image": "etc_facemelt_b.png",
-      "talentChanged": false
+      "talentChanged": true
     }
   ],
   "16": [
@@ -157,17 +157,17 @@
       "talentChanged": false
     },
     {
-      "name": "Aggressive Shredding",
-      "description": "E.T.C.'s Basic Attacks reduce the cooldown of Guitar Solo by 0.75 seconds.",
-      "image": "etc_guitarsolo.png",
-      "talentChanged": false
+      "name": "Mic Drop",
+      "description": "{highlight}Activate to Throw a mic on the target position and after 2 seconds E.T.C. will teleport to that MIC. Can be teleported casting Mosh Pit.{/highlight}",
+      "cooldown": "40 seconds",
+      "image": "etc_rockstar.png",
+      "talentChanged": true
     },
     {
-      "name": "Imposing Presence",
-      "description": "Activate to reduce the Attack Speed by 50% and Movement Speed by 20% of nearby Heroes and Summons for 2.5 seconds.Passive: Heroes and Summons that attack your Hero have their Attack Speed Slowed by 20% for 2.5 seconds.",
-      "image": "talent_imposingpresence.png",
-      "talentChanged": false,
-      "cooldown": "20s"
+      "name": "Pull off",
+      "description": "{highlight}While using PowerSlide you can use Face Melt but it will instead pull enemies towards you.{/highlight}",
+      "image": "etc_powerslide.png",
+      "talentChanged": true
     }
   ],
   "20": [
@@ -185,23 +185,16 @@
     },
     {
       "name": "Death Metal",
-      "description": "Upon dying, a ghost uses Mosh Pit at E.T.C's location.",
+      "description": "{highlight}Upon dying, a ghost uses Mosh Pit at E.T.C's location. Each enemy hero affected by Death Metal decreases E.T.C. respawn time by 2 second each second.{/highlight}",
       "image": "etc_moshpit_a.png",
-      "talentChanged": false
+      "talentChanged": true
     },
     {
-      "name": "Storm Shield",
-      "description": "Activate to give all nearby allied Heroes a Shield for 20% of their max Health for 3 seconds.",
-      "image": "talent_stormshield.png",
-      "talentChanged": false,
-      "cooldown": "45s"
-    },
-    {
-      "name": "Bolt of the Storm",
-      "description": "Activate to teleport to a nearby location.",
-      "image": "talent_boltofthestorm.png",
-      "talentChanged": false,
-      "cooldown": "70s"
+      "name": "201% Volume",
+      "description": "{highlight}Activate to make your next Face Melt knockback enemies 75% farther{/highlight}",
+      "image": "etc_facemelt.png",
+      "talentChanged": true,
+      "cooldown": "35s"
     }
   ]
 }

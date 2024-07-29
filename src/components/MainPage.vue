@@ -5,12 +5,14 @@
         <h1 class="welcome-title">WELCOME TO DASIJ PATCH NOTES</h1>
       </div>
       <div v-if="isMainRoute" class="explanation-section px-4 sm:px-6 lg:px-8">
-        <p class="text-lg sm:text-xl lg:text-2xl max-w-3xl mx-auto">Here you will find patch notes based on my
-          philosophy, so every change I propose will be based on things I believe are correct for the Heroes of the
-          Storm I envision. I myself can't recreate the feeling that the original developers wanted, and I don't want to
-          either, because I can't and I don't pretend to. My main focus on the changes I propose is based on further
-          diving into the established concept of how the heroes' roles, both in lore and gameplay, prioritize fun rather
-          than full gameplay balance.</p>
+        <p class="text-lg sm:text-xl lg:text-2xl max-w-3xl mx-auto">Here you'll find patch notes based on my personal
+          vision for Heroes of the Storm. These changes prioritize fun over competitive balance, focusing on modifying
+          heroes based on their lore and current gameplay. I'm not one former HOTS dev so don't expect from me
+          the same core values that they craved.<br /><br />
+
+          Importantly, due to lack of data, I can't fine-tune numerical balances.
+          Therefore, the ideas behind the changes are more crucial than specific
+          numerical adjustments. </p>
       </div>
 
       <div class="links-container">

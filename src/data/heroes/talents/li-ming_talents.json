@@ -53,10 +53,19 @@
   },
   "1": [
     {
-      "name": "Force Armor",
-      "description": "When Magic Missiles damages an enemy Hero, gain 50 Spell Armor, reducing the damage taken by the next Ability by 50%. Gain 1 charge per cast and store up to 4 charges.Passive: Li-Ming's Mana regeneration is increased by 100% while below 35% Mana.",
-      "image": "wizard_magicmissiles.png",
-      "talentChanged": false
+      "name": "Prodigy",
+      "description": "",
+      "quest": "{highlight}Get Takedowns{/highlight} ",
+      "rewards": [
+        "{highlight}6 takedowns: Critical Mass restores Li-Ming 10% Maximum Mana.{/highlight}",
+        "{highlight}12 takedowns: Increase arcane Orb's damage for distance traveled by 30%.{/highlight}",
+        "{highlight}18 takedowns: Hitting enemy heroes with 3 magic missiles does extra 87 damage.{/highlight}"
+      ],
+      "passives": [
+        "{highlight}Dying resets takedowns to current checkpoint{/highlight}"
+      ],
+      "image": "wizard_criticalmass.png",
+      "talentChanged": true
     },
     {
       "name": "Aether Walker",
@@ -66,17 +75,17 @@
     },
     {
       "name": "Power Hungry",
-      "description": "Regeneration Globes restore 100% more Mana and grant 10% Spell Power for 20 seconds.",
+      "description": "Regeneration Globes {highlight} and fountains {/highlight} restore 100% more Mana and grant 10% Spell Power for 20 seconds.",
       "image": "talent_powerhungry.png",
-      "talentChanged": false
+      "talentChanged": true
     }
   ],
   "4": [
     {
-      "name": "Charged Blast",
-      "description": "Basic Attacking a target recently hit by a Magic Missile does an extra 87 damage.",
+      "name": "Magic Weapon",
+      "description": "{highlight}Li-Ming's basic attacks deal magic damage and ignore armour. Hitting enemy heroes recently hit by a Magic Missile restores 25 mana{/highlight}",
       "image": "wizard_magicmissiles.png",
-      "talentChanged": false
+      "talentChanged": true
     },
     {
       "name": "Triumvirate",
@@ -93,16 +102,16 @@
   ],
   "7": [
     {
-      "name": "Seeker",
-      "description": "If three Magic Missiles hit the same target, the third one deals an additional 140 damage.",
-      "image": "wizard_magicmissiles.png",
-      "talentChanged": false
+      "name": "Diamond Skin",
+      "description": "Teleport grants a Shield equal to 25% of Li-Ming's maximum Health for 4 seconds.",
+      "image": "wizard_teleport.png",
+      "talentChanged": true
     },
     {
-      "name": "Zei's Vengeance",
-      "description": "Increase Arcane Orb's damage increase for distance traveled by 30%. Additionally, reduce its cooldown by 1 second.",
-      "image": "wizard_arcaneorb.png",
-      "talentChanged": false
+      "name": "Mocking image",
+      "description": "{highlight}Teleport will leave a Li-Ming Decoy with 100% of Li-Ming current health, that decoy will last 1 second. After being destroyed or expiring it will stun close enemy units for 0.5 second{/highlight}",
+      "image": "wizard_teleport.png",
+      "talentChanged": true
     },
     {
       "name": "Calamity",
@@ -137,10 +146,13 @@
       "talentChanged": false
     },
     {
-      "name": "Cannoneer",
-      "description": "When Li-Ming uses an Ability, her next Basic Attack's damage is increased by 75% and deals Spell damage instead of Physical.  Stacks up to 3 times.",
-      "image": "talent_autoattack_damage.png",
-      "talentChanged": false
+      "name": "Seeker",
+      "description": "{highlight}Li-Ming's basic attacks mark enemy heroes. Magic Missiles will follow the marked hero from when they were created.{/highlight}",
+      "image": "wizard_magicmissiles.png",
+      "talentChanged": true,
+      "passives": [
+        "{highlight}Magic Missiles now pierce through non-heroic targets.{/highlight}"
+      ]
     },
     {
       "name": "Glass Cannon",
@@ -150,12 +162,6 @@
     }
   ],
   "16": [
-    {
-      "name": "Fireflies",
-      "description": "Drastically increases Magic Missiles speed. Its cooldown is reduced by 1 second, and its Mana cost is reduced by 5.",
-      "image": "wizard_magicmissiles.png",
-      "talentChanged": false
-    },
     {
       "name": "Mirrorball",
       "description": "Magic Missiles fires an additional 2 missiles, but its Mana cost is increased by 5.",
@@ -169,10 +175,13 @@
       "talentChanged": false
     },
     {
-      "name": "Diamond Skin",
-      "description": "Teleport grants a Shield equal to 25% of Li-Ming's maximum Health for 4 seconds.",
-      "image": "wizard_teleport.png",
-      "talentChanged": false
+      "name": "Force Armor",
+      "description": "{highlight}When Magic Missiles damages an enemy Hero, gain 50 Spell Armor, reducing the damage taken by the next Ability by 50%. Gain 1 charge per cast and store up to 4 charges. {/highlight}",
+      "passives": [
+        "{highlight}Basic attacks creates one Magic Missile on the direction of the target.{/highlight}"
+      ],
+      "image": "wizard_magicmissiles.png",
+      "talentChanged": true
     }
   ],
   "20": [
@@ -196,10 +205,10 @@
     },
     {
       "name": "Archon: Pure Power",
-      "description": "Activate to enter Archon form, allowing Li-Ming to repeatedly use Disintegrate, but be unable to cast other Abilities.",
+      "description": "{highlight}Activate to enter Archon form for 6 seconds, during that time Magic missiles will travel 35% faster and Arcane Orb will pull enemies to the center when hit but Li-Ming will be unable to cast teleport during that time.{/highlight}",
       "image": "wizard_archon.png",
-      "talentChanged": false,
-      "cooldown": "10s"
+      "talentChanged": true,
+      "cooldown": "25s"
     }
   ]
 }

@@ -100,8 +100,7 @@
           {{ tooltipAbilityType === 'modified' ? 'Modified Version' : 'Vanilla Version' }}
         </p>
         <div class="flex items-center mb-2">
-          <img :src="require(`@/assets/talents/${heroName}/${tooltipAbility.image}`)" alt="ability image"
-            class="tooltip-image">
+          <img :src="tooltipAbility.imagePath" alt="ability image" class="tooltip-image">
           <h3 class="text-xl font-semibold ml-2" style="color: #0099ff;">{{ tooltipAbility.name }}</h3>
         </div>
         <div class="flex items-center text-xs mb-2">
@@ -368,7 +367,8 @@ export default {
         const section = target.getAttribute('data-section');
         const category = target.getAttribute('data-category');
         const index = parseInt(target.getAttribute('data-index'), 10);
-        this.showTooltipAbility(type, section, category, index, event);
+        const heroName = target.getAttribute('data-hero');
+        this.showTooltipAbility(type, section, category, index, heroName, event);
       }
     },
 
@@ -387,64 +387,86 @@ export default {
       }
     },
 
-    findAbilityOrTalent(type, section, category, index) {
-      const talentsFileName = type === 'modified' ? `${this.heroName}_talents.json` : `${this.heroName}_talents_vanilla.json`;
+    findAbilityOrTalent(type, section, category, index, heroName) {
+      const targetHero = heroName || this.heroName;
+      const talentsFileName = type === 'modified' ? `${targetHero}_talents.json` : `${targetHero}_talents_vanilla.json`;
       const talentsData = require(`../data/heroes/talents/${talentsFileName}`);
       if (section === 'abilities') {
         if (category === 'trait') {
-          return talentsData.abilities.trait; // Retorna a trait diretamente
+          return talentsData.abilities.trait;
         } else {
           return talentsData.abilities[category][index];
         }
       } else {
         return talentsData[category][index];
       }
-    },
-
+    }
+    ,
 
     convertTextPlaceholders(text) {
-      if (!text) return ''; // Return an empty string if text is undefined or null
-      return text.replace(/<([^,]+),\s*([^,]+),\s*([^,]+),\s*(\d+)>/g, (match, type, section, category, index) => {
-        const item = this.findAbilityOrTalent(type, section, category, parseInt(index, 10));
+      if (!text) return '';
+      return text.replace(/<([^,]+),\s*([^,]+),\s*([^,]+),\s*(\d+)(?:,\s*([^>]+))?>/g, (match, type, section, category, index, heroName) => {
+        const targetHero = heroName || this.heroName;
+        const item = this.findAbilityOrTalent(type, section, category, parseInt(index, 10), targetHero);
         if (item) {
           const className = type === 'modified' ? 'modified-text' : 'vanilla-text';
-          const imagePath = require(`@/assets/talents/${this.heroName}/${item.image}`);
-          return `          <img src="${imagePath}" alt="${item.name}" class="inline-image" />
-          <span class="ability-tooltip ${className}" 
-      data-type="${type}" 
-      data-section="${section}" 
-      data-category="${category}" 
-      data-index="${index}" 
-      data-tooltip="${item.name}" 
-      @mouseover="showTooltipAbility('${type}', '${section}', '${category}', ${index}, $event)"
-      @mouseleave="hideTooltipAbility()">
-        <span class="tooltip-content">
-
-          ${item.name}
-        </span>
-      </span>`;
+          const imagePath = require(`@/assets/talents/${targetHero}/${item.image}`);
+          let heroPrefix = '';
+          if (heroName && heroName !== this.heroName) {
+            // Remove hyphens and capitalize the first letter of each word only for display
+            const displayHeroName = heroName.replace(/-/g, ' ')
+              .split(' ')
+              .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+              .join(' ');
+            heroPrefix = `<span class="hero-prefix">${displayHeroName}'s </span>`;
+          }
+          return `${heroPrefix}<img src="${imagePath}" alt="${item.name}" class="inline-image" />
+        <span class="ability-tooltip ${className}" 
+          data-type="${type}" 
+          data-section="${section}" 
+          data-category="${category}" 
+          data-index="${index}" 
+          data-hero="${targetHero}"
+          data-tooltip="${item.name}" 
+          @mouseover="showTooltipAbility('${type}', '${section}', '${category}', ${index}, '${targetHero}', $event)"
+          @mouseleave="hideTooltipAbility()">
+          <span class="tooltip-content">${item.name}</span>
+        </span>`;
         }
         return match;
       });
-    },
+    }
 
 
 
-    showTooltipAbility(type, section, category, index, event) {
-      this.tooltipAbility = this.findAbilityOrTalent(type, section, category, index);
-      this.tooltipAbilityType = type; // Adicione esta linha para definir o tipo de habilidade
+
+
+    ,
+
+
+
+    showTooltipAbility(type, section, category, index, heroName, event) {
+      const targetHero = heroName || this.heroName;
+      this.tooltipAbility = this.findAbilityOrTalent(type, section, category, index, targetHero);
+      this.tooltipAbilityType = type;
       const tooltipElement = this.$refs.tooltipAbilityElement;
-      if (tooltipElement && event) {
+      if (tooltipElement && event && this.tooltipAbility) {
         const spanElement = event.target;
         const rect = spanElement.getBoundingClientRect();
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
 
         tooltipElement.style.top = `${rect.top + scrollTop}px`;
-        tooltipElement.style.left = `${rect.right + scrollLeft + 10}px`; // 10px de margem à direita
+        tooltipElement.style.left = `${rect.right + scrollLeft + 10}px`;
         tooltipElement.style.display = 'block';
+
+        // Update the image path
+        this.tooltipAbility.imagePath = require(`@/assets/talents/${targetHero}/${this.tooltipAbility.image}`);
       }
-    },
+    }
+
+
+    ,
 
     hideTooltipAbility() {
       this.tooltipAbility = null;
@@ -692,7 +714,8 @@ export default {
           const section = span.getAttribute('data-section');
           const category = span.getAttribute('data-category');
           const index = parseInt(span.getAttribute('data-index'), 10);
-          this.showTooltipAbility(type, section, category, index, event);
+          const heroName = span.getAttribute('data-hero');
+          this.showTooltipAbility(type, section, category, index, heroName, event);
         });
         span.addEventListener('mouseleave', this.hideTooltipAbility);
       });
@@ -715,15 +738,13 @@ export default {
         // Adicionando eventos para os spans gerados dinamicamente
         const abilityTooltips = container.querySelectorAll('.ability-tooltip');
         abilityTooltips.forEach(span => {
-          span.removeEventListener('mouseover', this.handleMouseOver);
-          span.removeEventListener('mouseleave', this.handleMouseLeave);
-
           span.addEventListener('mouseover', (event) => {
             const type = span.getAttribute('data-type');
             const section = span.getAttribute('data-section');
             const category = span.getAttribute('data-category');
             const index = parseInt(span.getAttribute('data-index'), 10);
-            this.showTooltipAbility(type, section, category, index, event);
+            const heroName = span.getAttribute('data-hero');
+            this.showTooltipAbility(type, section, category, index, heroName, event);
           });
           span.addEventListener('mouseleave', this.hideTooltipAbility);
         });

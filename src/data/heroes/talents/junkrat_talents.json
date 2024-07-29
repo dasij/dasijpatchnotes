@@ -17,7 +17,7 @@
       },
       {
         "name": "Steel Trap (E)",
-        "description": "Place a trap on the ground that arms after 2 seconds. Deals 130 damage to the first enemy that walks over it and Roots them for 2 seconds.Limit 1 active trap. {highlight}Traps have 400 health but can only be damaged after armed.{/highlight}",
+        "description": "Place a trap on the ground that arms after <highlight>1.5</highlight> seconds. Deals 130 damage to the first enemy that walks over it and Roots them for 2 seconds.Limit 1 active trap. {highlight}Traps have 400 health but can only be damaged after armed.{/highlight}",
         "image": "junkrat_steel_trap.png",
         "abilityChanged": true,
         "cooldown": "{highlight}9s{/highlight}"
@@ -69,7 +69,7 @@
     {
       "name": "Blow 'Em Up!",
       "description": "{highlight}Junkrat Frag Grenades and Basic Attacks stacks powder on enemy heros for 6 seconds, hitting an enemy hero with concussion mine explodes the marks and deals 124 damage for each mark consumed{/highlight}",
-      "image": "junkrat_trap_mine.png",
+      "image": "junkrat_frag_launcher.png",
       "talentChanged": true
     }
   ],
@@ -132,9 +132,9 @@
   "13": [
     {
       "name": "Sticky Wicket",
-      "description": "Enemy Heroes who are hit by Steel Trap are Silenced for 2 seconds.",
+      "description": "Enemy Heroes who are hit by Steel Trap are Silenced for 2 seconds {highlight} and increase root duration to 2 seconds {/highlight}.",
       "image": "junkrat_steel_trap.png",
-      "talentChanged": false
+      "talentChanged": true
     },
     {
       "name": "Gotta Trap 'Em All!",
@@ -191,7 +191,7 @@
     },
     {
       "name": "BOOM POW",
-      "description": "{highlight}Reduces Concussion Mine cooldown to 5 seconds, holds 3 charges and enemies will be knocked back 35% further.{/highlight}",
+      "description": "{highlight}Reduces Concussion Mine cooldown to 5 seconds, holds 3 charges and enemies will be knocked back 35% further. Enable Junkrat to have 3 concussion mines at the same time.{/highlight}",
       "image": "junkrat_concussion_mine.png",
       "talentChanged": true
     }

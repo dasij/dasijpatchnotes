@@ -54,11 +54,13 @@
   },
   "1": [
     {
-      "name": "Cyber Agility",
-      "description": "{highlight}While mounted increase the range of Cyber Agility by 70%{/highlight}. Using Cyber Agility grants 50 Spell Armor for {highlight}3{/highlight} seconds.",
+      "name": "Cyber Ninja",
+      "description": "{highlight}While mounted increase the range of Cyber Agility by 70%{/highlight}. Using Cyber Agility grants {highlight}35{/highlight} Spell Armor for {highlight}3{/highlight} seconds.",
       "image": "genji_cyberagility.png",
       "talentChanged": true,
-      "passives": ["Genji dodges 1 Heroic Basic Attack every 5 seconds."]
+      "passives": [
+        "Genji dodges 1 Heroic Basic Attack every {highlight}8{/highlight} seconds."
+      ]
     },
     {
       "name": "Swift as the Wind",
@@ -186,7 +188,7 @@
     },
     {
       "name": "Ninja Course",
-      "description": "{highlight}Cyber Agility creates caltrops trap area that lasts 2.5 seconds and deals 65 damage per second on enemies in the area and reduces their armor by 5 for 4 seconds, up to 20{/highlight}",
+      "description": "{highlight}Cyber Agility creates caltrops trap area where he lands that lasts 2.5 seconds and deals 65 damage per second on enemies in the area and reduces their armor by 5 for 4 seconds, up to 20{/highlight}",
       "image": "genji_cyberagility.png",
       "talentChanged": true
     },

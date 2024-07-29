@@ -125,7 +125,7 @@
   "10": [
     {
       "name": "Deflect Magic",
-      "description": "{highlight}Brightwing stops and starts to absorb magic, redirecting the next direct magic spell taken effects in the next second directly to its caster with increased effects by 50%.{/highlight}",
+      "description": "{highlight}Brightwing stops and starts to absorb all magic damage and effects taken during the next 0.6 seconds after that redirects all magic damage and status effects backs to their casters and cleanses her negatives effects.{/highlight}",
       "image": "brightwing_counter_magic.webp",
       "talentChanged": true,
       "manaCost": "40 Mana",

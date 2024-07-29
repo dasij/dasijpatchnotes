@@ -131,7 +131,7 @@
                 {
                   "text": "Additional functionality: Refreshs <modified, abilities, basic, 3> cooldown when you capture a camp with atleast one bribed unit",
                   "subtexts": [
-                    "This is supposed to stack with other character bribes, if a Vikings bribe the mercenary and Brightwing captures it the skill will reset"
+                    "This is supposed to stack with other character bribes, if used <vanilla, talents, 1, 3, the-lost-vikings> and Brightwing captures it the skill will reset"
                   ]
                 }
               ],
@@ -173,7 +173,7 @@
               "name": "NEW: Magic Play",
               "texts": [
                 {
-                  "text": "Changed functionality: <vanilla, abilities, heroic, 0> will increase the target magic resistence to 75 for 0.5 seconds"
+                  "text": "<vanilla, abilities, heroic, 0> will increase the target magic resistence to 75 for 0.5 seconds"
                 }
               ],
               "developerCommentary": "By removing <vanilla, abilities, basic, 2> some of her cool parts would've be left behind so i am bringing them back like making someone almost immune to magic. But in this case i want to reward better timing with higher numbers.",
@@ -258,7 +258,7 @@
               "name": "NEW: Deflect Magic",
               "texts": [
                 {
-                  "text": "Changed functionality: Brightwing stops and starts to absorb all magic damage and effects taken during the next 0.6 seconds after that redirects all magic damage and status effects backs to their casters and cleanses negatives effects.",
+                  "text": "Brightwing stops and starts to absorb all magic damage and effects taken during the next 0.6 seconds after that redirects all magic damage and status effects backs to their casters and cleanses her negatives effects.",
                   "subtexts": [
                     "Cooldown: 30 seconds",
                     "Garrosh Wrecking ball or other disruption type skills won't have the disruption part returned as it won't be counted as status effects",
@@ -326,7 +326,7 @@
                   "text": "Activate to absorb 10% of all magic damage on a large radius around Brightwing for 5 seconds, after that heals all allied hero units for the same value",
                   "subtexts": [
                     "cooldown: 45 seconds",
-                    "The radius is 7 | Blaze combustion is 6",
+                    "The radius is 7.0 | Blaze combustion is 6.5",
                     "this include allied hero damage"
                   ]
                 }
@@ -346,7 +346,10 @@
               "texts": [
                 {
                   "text": "Activate to empower <modified, abilities, basic, 1> and affect all enemy heroes around the primary target for the same duration",
-                  "subtexts": ["Cooldown: 60 seconds", "Area will be 3.0"]
+                  "subtexts": [
+                    "Cooldown: 60 seconds",
+                    "Area will be 3.0 same as <vanilla, abilities, basic, 1, muradin>"
+                  ]
                 }
               ],
               "developerCommentary": "I just like the idea of polymorphing a bunch of targets with some exceptions and i find it funny to think on the interactions.",
@@ -384,7 +387,7 @@
             },
             {
               "change_id": "brighwing_10",
-              "name": "Speedy Dragon",
+              "name": "<vanilla, talents, 20, 2>",
               "texts": [
                 {
                   "text": "Additional functionality: Allow Brightwing to use <modified, abilities, basic, 2> on allied non-heroic units"
@@ -396,13 +399,13 @@
             },
             {
               "change_id": "brighwing_12",
-              "name": "Faerie protector",
+              "name": "<vanilla, talents, 20, 3>",
               "texts": [
                 {
                   "text": "Removed"
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "No more skill to use it",
               "likes": 0,
               "likedBy": {}
             }

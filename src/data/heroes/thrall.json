@@ -115,7 +115,7 @@
                   ]
                 }
               ],
-              "developerCommentary": "This is supposed to be an option when trying to handle high mobile and distant targets and remember that all the level 7 talents can be paired with Tempest Fury from level 16",
+              "developerCommentary": "This is supposed to be an option when trying to handle high mobile and distant targets and remember that all the level 7 talents can be paired with <vanilla, talents, 16, 0>",
               "likes": 0,
               "likedBy": {}
             }
@@ -145,7 +145,7 @@
                   "subtexts": ["Radius is 4.4 same as ETC Block Party"]
                 }
               ],
-              "developerCommentary": "I enjoy the idea of having physical armor talents and i think that fits on Thrall passive",
+              "developerCommentary": "I enjoy the idea of having physical armor talents and i think that fits on <vanilla, abilities, trait, 0>",
               "likes": 0,
               "likedBy": {}
             },
@@ -157,7 +157,7 @@
                   "text": "<modified, abilities, trait, 0> cleanses slows and grants 20 magic resistance for 2 seconds"
                 }
               ],
-              "developerCommentary": "Specific type of cleanses are something that i find cool to see and fitting the fast stacking Thrall passive has it could be a niche pick against heavy slow comps.",
+              "developerCommentary": "Specific type of cleanses are something that i find cool to see and fitting the fast stacking <vanilla, abilities, trait, 0> has it could be a niche pick against heavy slow comps.",
               "likes": 0,
               "likedBy": {}
             },
@@ -213,10 +213,10 @@
               "name": "<new, talents, 20, 0> renamed to Shattering Worlds",
               "texts": [
                 {
-                  "text": "Changed functionality: Sundering now travels the planet until hits the starting point leaving behind an impassable rift, blocking unit movement. After 2.5 seconds the rift starts to be destroyed.",
+                  "text": "Changed functionality: <vanilla, abilities, heroic, 0> now travels the planet until hits the starting point leaving behind an impassable rift, blocking unit movement. After 2.5 seconds the rift starts to be destroyed.",
                   "subtexts": [
-                    "It starts to be destroyed from the initial sundering position it won't destroy the entire Sundering rift at the same speed Sundering travels",
-                    "It will work  similarly as the Orbital BFG from Hammer but will stop at the starting point"
+                    "It starts to be destroyed from the initial sundering position it will destroy the entire <modified, abilities, heroic, 0> rift at the same speed <modified, abilities, heroic, 0> travels",
+                    "It will work  similarly as the <modified, abilities, heroic, 0, sgt-hammer> but will stop at the starting point"
                   ]
                 }
               ],
@@ -229,7 +229,7 @@
               "name": "New Talent:ThunderFury",
               "texts": [
                 {
-                  "text": "<modified, abilities, basic, 2> basic attacks casts a Chain of Lighting at the target.",
+                  "text": "<modified, abilities, basic, 2> basic attacks casts a <modified, abilities, basic, 0> at the target.",
                   "subtexts": [
                     "It will work with <modified, talents, 16, 1> but remember, hitting the same hero target will reset the mission progress"
                   ]
@@ -263,7 +263,7 @@
                   "text": "Removed"
                 }
               ],
-              "developerCommentary": "I dislike the usage of all this generic talents. <vanilla, talents, 20, 2> doesn't really add anything great for Thrall gameplay. <vanilla, talents, 20, 3> only purpose is to make big numbers with Maelstrom Weapon but does not feel like a level 20 talent and finally <vanilla, talents, 20, 4> is strong enough to be at level 20 but won't add much to the table roleplay wise.",
+              "developerCommentary": "I dislike the usage of all this generic talents. <vanilla, talents, 20, 2> doesn't really add anything great for Thrall gameplay. <vanilla, talents, 20, 3> only purpose is to make big numbers with <vanilla, talents, 7, 0> but does not feel like a level 20 talent and finally <vanilla, talents, 20, 4> is strong enough to be at level 20 but won't add much to the table roleplay wise.",
               "likes": 0,
               "likedBy": {}
             }

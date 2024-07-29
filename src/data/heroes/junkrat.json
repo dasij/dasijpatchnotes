@@ -7,7 +7,7 @@
   "patchNotes": [
     {
       "id": 35,
-      "title": "Talents Rework and hero mini-rework",
+      "title": "Talents changes and hero changes",
       "general": [
         {
           "change_id": "junkrat_8",
@@ -29,9 +29,12 @@
               "text": "Cooldown reduced from 15 to 9"
             },
             {
-              "text": "Traps now have 400 health but can only be damage after armed",
+              "text": "Root duration reduced from 2 to 1.5 seconds"
+            },
+            {
+              "text": "Traps now have 600 health but can only be damage after armed",
               "subtexts": [
-                "It's the equivalent health as Chromie's Time Trap",
+                "<vanilla, abilities, basic, 2, chromie> has 400 health",
                 "Will be a Summon type"
               ]
             }
@@ -42,10 +45,10 @@
         },
         {
           "change_id": "junkrat_1",
-          "change": "Frag mode(?)",
+          "change": "NEW: Frag mode(?)",
           "texts": [
             {
-              "text": "Activate to make your next Frag Grenade fire a continuous burst consuming all current charges.",
+              "text": "Activate to make your next <vanilla, abilities, basic, 0> fire a continuous burst consuming all current charges.",
               "subtexts": ["Cooldown: 30 seconds"]
             }
           ],
@@ -64,11 +67,10 @@
               "name": "<vanilla, talents, 1, 0>",
               "texts": [
                 {
-                  "text": "Changed functionality: For each charge remaining on <modified, abilities, basic, 0> Junkrat receives 7.5% increased basic attack damage. If there's no charges remaining receives 15% movement speed ",
-                  "subtexts": [""]
+                  "text": "Changed functionality: For each charge remaining on <modified, abilities, basic, 0> Junkrat receives 7.5% increased basic attack damage. If there's no charges remaining receives 15% movement speed "
                 }
               ],
-              "developerCommentary": "The only intent here is to make that a more flexible talent based on the situation you want to sticky yourself in and not make it worse with Endless Nades",
+              "developerCommentary": "The only intent here is to make that a more flexible talent based on the situation you want to sticky yourself in and not make it worse with <vanilla, talents, 16, 1>",
               "likes": 0,
               "likedBy": {}
             },
@@ -77,7 +79,7 @@
               "name": "<vanilla, talents, 1, 2>",
               "texts": [
                 {
-                  "text": "Junkrat Frag Grenades and Basic Attacks stacks powder on enemy heros for 6 seconds, hitting an enemy hero with <modified, abilities, basic, 1> explodes the marks and deals 124 damage for each mark consumed"
+                  "text": "Junkrat <vanilla, abilities, basic, 0> and Basic Attacks stacks powder on enemy heros for 6 seconds, hitting an enemy hero with <modified, abilities, basic, 1> explodes the marks and deals 124 damage for each mark consumed"
                 }
               ],
               "developerCommentary": "I wanted to make something related to the previous effect but that won't conflict directly on the way the other talents would deal damage. Making it not a DPS or either a POKE talent but rather a burst one that makes sense with the name",
@@ -180,12 +182,13 @@
                   "text": "Moved to level 13"
                 }
               ],
-              "developerCommentary": "Changing it to the trap talent tier",
+              "developerCommentary": "Changing it to the <modified, abilities, basic, 2> talent tier",
               "likes": 0,
               "likedBy": {}
             }
           ]
         },
+
         {
           "name": "Level 13",
           "changes": [
@@ -207,9 +210,12 @@
               "texts": [
                 {
                   "text": "Moved from level 7"
+                },
+                {
+                  "text": "Increase root duration to 2 seconds"
                 }
               ],
-              "developerCommentary": "Bringing it to this level so you need to make a choice on how you want to upgrade your trap",
+              "developerCommentary": "Bringing it to this level so you need to make a choice on how you want to upgrade your <modified, abilities, basic, 2>",
               "likes": 0,
               "likedBy": {}
             },
@@ -221,7 +227,7 @@
                   "text": "moved to level 16"
                 }
               ],
-              "developerCommentary": "Level 13 will become a trap talent level.",
+              "developerCommentary": "Level 13 will become a <modified, abilities, basic, 2> talent level.",
               "likes": 0,
               "likedBy": {}
             }
@@ -270,7 +276,7 @@
                   ]
                 }
               ],
-              "developerCommentary": "I would argue that Puckish Scamp is one of the few times a hero can perform their two ultimates BUT this doesn't necessarily mean it's worth it. What i want to bring here is make it worth it not necessarily by being strong but being hehehe junkrat goes BOOM",
+              "developerCommentary": "I would argue that <vanilla, talents, 20, 1> is one of the few times a hero can perform their two ultimates BUT this doesn't necessarily mean it's worth it. What i want to bring here is make it worth it not necessarily by being strong but being hehehe junkrat goes BOOM",
               "likes": 0,
               "likedBy": {}
             },
@@ -291,7 +297,7 @@
               "name": "<vanilla, talents, 4, 1>",
               "texts": [
                 {
-                  "text": "Changed functionality: Reduces <modified, abilities, basic, 1> cooldown to 5 seconds, holds 3 charges and enemies will be knocked back 35% further.",
+                  "text": "Changed functionality: Reduces <modified, abilities, basic, 1> cooldown to 5 seconds, holds 3 charges and enemies will be knocked back 35% further. Enable Junkrat to have 3 concussion mines at the same time.",
                   "subtexts": ["Cooldown between charges will be 0.5 seconds"]
                 }
               ],

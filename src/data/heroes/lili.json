@@ -168,7 +168,7 @@
                   "text": "removed"
                 }
               ],
-              "developerCommentary": "With how i want the level 4 to focus there's no space for Wind serpent the only thing i could re-use it's the additional cooldown refresh rate on another talent",
+              "developerCommentary": "With how i want the level 4 to focus there's no space for <vanilla, talents, 4, 0> the only thing i could re-use it's the additional cooldown refresh rate on another talent",
               "likes": 0,
               "likedBy": {}
             },
@@ -227,7 +227,7 @@
                   "text": "Increase <vanilla, abilities, basic, 2> range by 20%"
                 }
               ],
-              "developerCommentary": "Now this is a thing i got the idea from the Lucio talent i changed on resetting stacks, this talent always felt kinda weak and i wanted it to be stronger but not about necessarily about the damage and on that way i could say it makes the talent fair holds the nature of having more surging winds hits and could be a good entry for higher skill ceiling talents while not being so hard.",
+              "developerCommentary": "Now this is a thing i got the idea from the <modified, talents, 1, 0, lucio> i changed on resetting stacks, this talent always felt kinda weak and i wanted it to be stronger but not about necessarily about the damage and on that way i could say it makes the talent fair holds the nature of having more surging winds hits and could be a good entry for higher skill ceiling talents while not being so hard.",
               "likes": 0,
               "likedBy": {}
             },
@@ -256,7 +256,7 @@
                   "text": "Changed functionality: Li Li basic attacks againt blinded heroes increases the blind duration by 0.25 and bounces to the closest hero if the hero is also blinded the attack bounces again."
                 }
               ],
-              "developerCommentary": "On this talent i wanted to give a more funny interaction with <modified, talents, 7, 1>..Initially i wanted to reduce it's cooldown by hitting blinded targets but that could become recursive by hitting blind targets you blind them..kinda off..For that instance i wanted to give a bigger meaning on blinding targets by also making it work with other blind synergies like Johanna and Cassia and making the blind stronger overall.",
+              "developerCommentary": "On this talent i wanted to give a more funny interaction with <modified, talents, 7, 1>..Initially i wanted to reduce it's cooldown by hitting blinded targets but that could become recursive by hitting blind targets you blind them..kinda off..For that instance i wanted to give a bigger meaning on blinding targets by also making it work with other blind synergies like <modified, abilities, basic, 2, johanna>  and <modified, abilities, basic, 1, cassia> and making the blind stronger overall.",
               "likes": 0,
               "likedBy": {}
             }
@@ -279,7 +279,7 @@
                   "text": "Moved from level 20"
                 }
               ],
-              "developerCommentary": "Nerfing it would be necessary for the new <vanilla, abilities, basic, 0> not become problematic as more ability refresh rate could become too strong when you can share it with other heroes. Health regeneration bonus could combo with more survavibility which is the main talent effect BUT i really don't know how much bonus health regen would be good as you could also give it to other heroes..imagine sharing health regen with a dehaka on essence build? Character would have 2 seconds of 160 health regen.",
+              "developerCommentary": "Nerfing it would be necessary for the new <vanilla, abilities, basic, 0> not become problematic as more ability refresh rate could become too strong when you can share it with other heroes. Health regeneration bonus could combo with more survavibility which is the main talent effect BUT i really don't know how much bonus health regen would be good as you could also give it to other heroes..imagine sharing health regen with <modified, talents, 1, 1, dehaka>? Character would have 2 seconds of 160 health regen.",
               "likes": 0,
               "likedBy": {}
             },

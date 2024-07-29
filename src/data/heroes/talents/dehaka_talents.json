@@ -36,10 +36,10 @@
         "cooldown": "60s"
       },
       {
-        "name": "Adaptation (R)",
-        "description": "After 4 seconds, heal for 100% of the damage Dehaka took over this period.",
-        "image": "dehaka_adaptation.png",
-        "abilityChanged": false,
+        "name": "Intimidating Roar (R)",
+        "description": "{highlight}After 0.75 second Dehaka terrifies nearby enemies, reducing their movement speed by 75%  for 3 seconds.{/highlight}",
+        "image": "dehaka_intimidating_roar.webp",
+        "abilityChanged": true,
         "manaCost": "70 Mana",
         "cooldown": "60s"
       }
@@ -53,10 +53,14 @@
   },
   "1": [
     {
-      "name": "Enduring Swarm",
-      "description": "Dark Swarm's duration is increased by 0.5 seconds and grants 50 Spell Armor while active.",
-      "image": "dehaka_trample.png",
-      "talentChanged": false
+      "name": "Evolve Mutation",
+      "description": "",
+      "quest": "{highlight}Collect essence. {/highlight}",
+      "rewards": [
+        "{highlight}Dehaka gets 0.5% bigger for every 50 essence collected up to 25%{/highlight}"
+      ],
+      "image": "dehaka_evolve_mutation.webp",
+      "talentChanged": true
     },
     {
       "name": "Tissue Regeneration",
@@ -80,9 +84,9 @@
     },
     {
       "name": "One-Who-Collects",
-      "description": "Increases Essence collected from Minions by 50%. Dark Swarm deals 40% more damage to Mercenaries.",
+      "description": "Increases Essence collected from Minions by 50%. Dark Swarm deals 40% more damage to Mercenaries. {highlight}Exceeding essence will be automatically used by Dehaka{/highlight}",
       "image": "dehaka_essencecollection.png",
-      "talentChanged": false
+      "talentChanged": true
     },
     {
       "name": "Hero Stalker",
@@ -99,16 +103,16 @@
       "talentChanged": false
     },
     {
-      "name": "Paralyzing Enzymes",
-      "description": "Drag Slows enemies by 40% for 2 seconds after it ends.Gambit: When Drag ends, deal an additional 280 damage to the target over 2 seconds. Every death reduces this damage by 40, up to 5 times.",
+      "name": "Devour",
+      "description": "{highlight}Drag against troops or non-boss mercenaries will turn them unkillable during the drag duration and will grab enemies around the target. After that duration it will instantly kill the primary target{/highlight}",
       "image": "dehaka_drag_var1.png",
-      "talentChanged": false
+      "talentChanged": true
     },
     {
       "name": "Symbiosis",
-      "description": "Every time Dark Swarm damages an enemy Hero, reduce its cooldown by 0.4 seconds.",
+      "description": "Every time Dark Swarm damages an enemy Hero, reduce its cooldown by 0.4 seconds. {highlight}Every time Dark Swarm hits an enemy hero it also extends Brushstalker duration by 0.5 second if it's active{/highlight}",
       "image": "dehaka_trample.png",
-      "talentChanged": false
+      "talentChanged": true
     }
   ],
   "10": [
@@ -121,14 +125,15 @@
       "cooldown": "60s"
     },
     {
-      "name": "Adaptation",
-      "description": "After 4 seconds, heal for 100% of the damage Dehaka took over this period.",
-      "image": "dehaka_adaptation.png",
-      "talentChanged": false,
+      "name": "Intimidating Roar",
+      "description": "{highlight}After 0.75 second Dehaka terrifies nearby enemies, reducing their movement speed by 75%  for 3 seconds.{/highlight}",
+      "image": "dehaka_intimidating_roar.webp",
+      "talentChanged": true,
       "manaCost": "70 Mana",
       "cooldown": "60s"
     }
   ],
+
   "13": [
     {
       "name": "Ferocious Stalker",
@@ -138,24 +143,18 @@
     },
     {
       "name": "Primal Swarm",
-      "description": "Dark Swarm causes enemies hit to lose 10 Armor for 0.75 seconds, causing them to take 10% extra damage.",
+      "description": "Dark Swarm causes enemies hit to lose 10 Armor for 0.75 seconds.{highlight}While active, it grants Dehaka 25 Spell Armor and extends its duration by 0.2 seconds per enemy hero hit.{/highlight}",
       "image": "dehaka_trample_a.png",
-      "talentChanged": false
+      "talentChanged": true
     },
     {
       "name": "Primal Rage",
-      "description": "Gain 1.25% increased Attack Damage per Essence stored.",
+      "description": "Gain 1.25% increased Attack Damage {highlight}and 0.4% slow for 1 second on basic attacks{/highlight} per Essence stored. ",
       "image": "dehaka_essencecollection.png",
-      "talentChanged": false
+      "talentChanged": true
     }
   ],
   "16": [
-    {
-      "name": "Elongated Tongue",
-      "description": "Increase Drag range by 20%.",
-      "image": "dehaka_drag.png",
-      "talentChanged": false
-    },
     {
       "name": "Tunneling Claws",
       "description": "Increase movement speed while Burrowing to 125%.",
@@ -163,10 +162,17 @@
       "talentChanged": false
     },
     {
-      "name": "Pack Leader",
-      "description": "Dehaka gains 20 Armor and 15% increased Attack Speed while in a bush and for 5 seconds after leaving.",
+      "name": "Adaptation",
+      "description": "{highlight}After 4 seconds, heal for 50% of the damage Dehaka took over this period.{/highlight}",
+      "cooldown": "60 seconds",
+      "image": "dehaka_adaptation.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Apex Predator",
+      "description": "Reduces Brushstalker's cooldown by {highlight}35{/highlight} seconds and the cast time by 0.5 seconds.",
       "image": "dehaka_brushstalker.png",
-      "talentChanged": false
+      "talentChanged": true
     }
   ],
   "20": [
@@ -177,22 +183,24 @@
       "talentChanged": false
     },
     {
-      "name": "Change Is Survival",
-      "description": "Increases Adaptation healing to 200% of the damage received and reduces the cooldown by 40 seconds.",
-      "image": "dehaka_adaptation.png",
-      "talentChanged": false
+      "name": "Survival Instinct",
+      "description": "{highlight}Intimidating Roar will reduce enemy heroes armor by 25.{/highlight}",
+      "image": "dehaka_intimidating_roar.webp",
+      "talentChanged": true
     },
     {
-      "name": "Essence Claws",
-      "description": "Dehaka's Basic Attacks slow the target by 20% for 1 second. If the target is a Hero, Dehaka gains 5 Essence.",
-      "image": "dehaka_essencecollection.png",
-      "talentChanged": false
+      "name": "Leap",
+      "description": "{highlight}Leap to target location after 0.5 seconds, dealing 246 damage to enemies on landing also stunning them for 0.25.{/highlight}",
+      "cooldown": "50 seconds",
+      "image": "dehaka_leap.webp",
+      "talentChanged": true
     },
     {
-      "name": "Apex Predator",
-      "description": "Reduces Brushstalker's cooldown by 50 seconds and the cast time by 0.5 seconds.",
-      "image": "dehaka_brushstalker.png",
-      "talentChanged": false
+      "name": "Scorching Breath",
+      "description": "{highlight}Dehaka's fiery breath scorches the earth, creating a scorching area, dealing 50 damage every 0.5 seconds and reducing 50% healing on the area.The area lasts 4 seconds.{/highlight}",
+      "cooldown": "20 seconds",
+      "image": "dehaka_scorching_breath.webp",
+      "talentChanged": true
     }
   ]
 }

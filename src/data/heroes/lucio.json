@@ -16,12 +16,12 @@
             {
               "text": "Soundboop(Active): Deal 105 damage to enemies in an area and knock them back. Also knock back allied heroes( Share cooldown with Soundwave(Q) )",
               "subtexts": [
-                "Won't stop knock back allied heros from casting middle knock back and either will cancel any skills being channeled. This means you can boop a active ETC mosh pit or even boop ETC while he is casting the Mosh pit. You can Boop a Garrosh and he will be able to throw middle boop.",
+                "Won't stop knock back allied heros from casting middle knock back and either will cancel any skills being channeled. This means you can boop a active <modified, abilities, heroic, 0, etc> or even boop while he is casting it. <vanilla, abilities, basic, 2, garrosh> will be usable middle boop.",
                 "It's supposed to work with <modified, talents, 4, 0>"
               ]
             }
           ],
-          "developerCommentary": "Increase flexibility plays, Soundbook can work as a pseudo-cleanse depending on the situation AND <modified, abilities, basic, 1> is supposed to work with Subwoofer reward. Similar to Stitches friendly hook that isn't made to be used all the time",
+          "developerCommentary": "Increase flexibility plays, <modified, abilities, basic, 1> can work as a pseudo-cleanse depending on the situation AND its supposed to work with Subwoofer reward. Similar to <vanilla, abilities, basic, 3, stitches> that isn't made to be used all the time",
           "likes": 0,
           "likedBy": {}
         }
@@ -35,7 +35,7 @@
               "name": "<vanilla, talents, 1, 0>",
               "texts": [
                 {
-                  "text": "Changed functionality: Every time Lucio uses <modified, abilities, basic, 2> after 5 seconds without using it <modified, abilities, basic, 2> gains 10% more effectiveness and 7.5% more range and increase Lucio Mana regeneration by 50% up to 4 times. This effect resets after Amp It Up! expires (<modified, abilities, basic, 3> is affected by the buffs too)"
+                  "text": "Changed functionality: Every time Lucio uses <modified, abilities, basic, 2> after 5 seconds without using it <modified, abilities, basic, 2> gains 10% more effectiveness and 7.5% more range and increase Lucio Mana regeneration by 50% up to 4 times. This effect resets after <modified, abilities, basic, 3> expires (<modified, abilities, basic, 3> is affected by the buffs too)"
                 }
               ],
               "developerCommentary": "I want to increase the skill ceiling of this talent and the floor while maintaining it casual friendly. One thing i really wanted is the opportunity to make <modified, abilities, basic, 2> interactive in some sort of quest or effect BUT it's supposed to be something that you can't lock cooldowns(because it dumbs the character too much) and neither make something that you can spam..With that quest in mind i wanted to change to make that idea happen. The why of change here is to make the game more close to my ideas.",
@@ -52,13 +52,13 @@
               "name": "<vanilla, talents, 7, 2>",
               "texts": [
                 {
-                  "text": "Additional functionality: Boombox Pet(active): Place the boombox on an allied hero, the boombox will be dragged by him and will expire after 15 seconds(Shares cooldown with boombox)"
+                  "text": "Additional functionality: Boombox Pet(active): Place the boombox on an allied hero, the boombox will be dragged by him and will expire after 15 seconds(Shares cooldown with <vanilla, talents, 7, 2>)"
                 },
                 {
                   "text": "armor removed"
                 }
               ],
-              "developerCommentary": "Boombox right now is better served as an ward than a spot for receiving Lucio Heal/Speed, boombox is not intuitive on the Lucio playstyle as Deckard Cain potions. With that in mind i want to make boombox stronger by giving Lucio the option to truly buff other characters with his baseline kit during that time.",
+              "developerCommentary": "<vanilla, talents, 7, 2> right now is better served as an ward than a spot for receiving Lucio Heal/Speed, <vanilla, talents, 7, 2> is not intuitive on the Lucio playstyle as Deckard Cain potions. With that in mind i want to make boombox stronger by giving Lucio the option to truly buff other characters with his baseline kit during that time.",
               "likes": 0,
               "likedBy": {}
             }
@@ -78,7 +78,7 @@
                   "text": "Additional functionality: <modified, abilities, heroic, 0> refresh wall slide movement speed bonus to the maximum"
                 }
               ],
-              "developerCommentary": "The concept and functionality of the Sound Barrier is good but the game today is rather fast and so on an shield ultimate is not as strong it could be and with <modified, abilities, heroic, 1> that cleanses targets and prevent good engages while also giving some mobility you question why would you go with Sound Barrier. We could buff the shield until it became OP but i would rather not, we could add passive buffs for other skills..for me the best route is to increase the number of times you can use Sound Barrier while also preventing Lucio Players from losing their momentum while performing good ultimates.",
+              "developerCommentary": "The concept and functionality of the <vanilla, abilities, heroic, 0> is good but the game today is rather fast and so on an shield ultimate is not as strong it could be and with <modified, abilities, heroic, 1> that cleanses targets and prevent good engages while also giving some mobility you question why would you go with Sound Barrier. We could buff the shield until it became OP but i would rather not, we could add passive buffs for other skills..for me the best route is to increase the number of times you can use Sound Barrier while also preventing Lucio Players from losing their momentum while performing good ultimates.",
               "likes": 0,
               "likedBy": {}
             },
@@ -87,7 +87,7 @@
               "name": "<vanilla, abilities, heroic, 1>",
               "texts": [
                 {
-                  "text": "Changed functionality: activate to slide towards a targeted location, any allied hero hit by the slide will healed by 230 and Lucio by 80 both will also be granted unstoppabble by 1 second. Cooldown : 15 seconds(2 charges)(Range 7.0 | For reference Push Off has 7.0 range)"
+                  "text": "Changed functionality: activate to slide towards a targeted location, any allied hero hit by the slide will healed by 230 and Lucio by 80 both will also be granted unstoppabble by 1 second. Cooldown : 15 seconds(2 charges)(Range 7.0 | <vanilla, abilities, trait, 0> has 7.0 range)"
                 }
               ],
               "developerCommentary": "Changing <modified, abilities, heroic, 1> to be an skillshot rather than a point click ability is something i would certainly do for some reasons but the most important one is about feeling, Lucio is a speed car that doesn't want to stop BUT when using High five Lucio clicks a target and moves to it --kissing-- it and the problem lies on the loss of momentum by doing that, it doesn't feel like something a speedster like Lucio would do..why stop. The second reason is to increase options with that ultimate, making it work like an extra Push Off dash could even change it to something more agressive depending on what position you are. Lastly i wanted to go through that route because it makes me feel like something a Lucio player would want..NON STOPPING SPEED",
@@ -167,7 +167,7 @@
                   "text": "removed"
                 }
               ],
-              "developerCommentary": "With the changes within up to eleven and party mix i believe this talent is not necessary anymore and would be redundant/cover the same role of other talents",
+              "developerCommentary": "With the changes within <modified, talents, 20, 3> and <modified, talents, 1, 0> i believe this talent is not necessary anymore and would be redundant/cover the same role of other talents",
               "likes": 0,
               "likedBy": {}
             },
@@ -179,7 +179,7 @@
                   "text": "Reduces <modified, abilities, trait, 0> cooldown to 8 seconds and give it 2 charges(1 second cooldown between charges)"
                 }
               ],
-              "developerCommentary": "For me level 20 should be based on being ultra strong or ultra funny. This talent is supposed to be on the ultra fun vibe but still it's strong as Heavy Casters could make some trouble with the extra charges and supersonic combo",
+              "developerCommentary": "For me level 20 should be based on being ultra strong or ultra funny. This talent is supposed to be on the ultra fun vibe but still it's strong as <modified, talents, 13, 1> could make some trouble with the extra charges and <modified, talents, 4, 2> combo",
               "likes": 0,
               "likedBy": {}
             },

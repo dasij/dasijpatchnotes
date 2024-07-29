@@ -17,7 +17,7 @@
               "subtexts": ["Rehgar will pick trait at level 1"]
             }
           ],
-          "developerCommentary": "I want to bring Purge as a talent to better be able to make more decisions on how i can control the trait and bring diversity on the utility section",
+          "developerCommentary": "I want to bring <vanilla, abilities, trait, 0> as a talent to better be able to make more decisions on how i can control the trait and bring diversity on the utility section",
           "likes": 0,
           "likedBy": {}
         }
@@ -65,7 +65,7 @@
                   "text": "Moved from level 10"
                 }
               ],
-              "developerCommentary": "Bloodlust can't be leveled up as a Strong ultimate without it being either kinda meh or absurdly strong on my vision for that i would prefer to make a baseline skill that can also increase the utility Rehgar could give to the team",
+              "developerCommentary": "<vanilla, abilities, heroic, 1> can't be leveled up as a Strong ultimate without it being either kinda meh or absurdly strong on my vision for that i would prefer to make a baseline skill that can also increase the utility Rehgar could give to the team",
               "likes": 0,
               "likedBy": {}
             },
@@ -106,7 +106,7 @@
                   "text": "Rehgar will receive <modified, talents, 1, 2> when casting <modified, abilities, basic, 1>"
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "This is intended for people who are stressed out and needs to bite the enemies with high intensity",
               "likes": 0,
               "likedBy": {}
             },
@@ -118,7 +118,7 @@
                   "text": "Rehgar elemental totems will receive <modified, abilities, basic, 1>"
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "Bringing the old problematic talent back as i am changing the entire Rehgar",
               "likes": 0,
               "likedBy": {}
             },
@@ -144,7 +144,7 @@
               "name": "<vanilla, talents, 13, 2> renamed to Water totem",
               "texts": [
                 {
-                  "text": "Changed functionality: Reactivate <vanilla, abilities, basic, 2> to create a water totem that every 2 seconds, will cast a untalented Chain Heal at the nearest allied Hero with the lowest Health. This Chain Heal heals for 35% of its normal amount. Also increase allied heros healing received by 25%",
+                  "text": "Changed functionality: Reactivate <vanilla, abilities, basic, 2> to create a water totem that every 2 seconds, will cast a untalented <vanilla, abilities, basic, 0> at the nearest allied Hero with the lowest Health. This <vanilla, abilities, basic, 0> heals for 35% of its normal amount. Also increase allied heros healing received by 25%",
                   "subtexts": [
                     "Totem has 180 health | <vanilla, abilities, basic, 2> has 260 health",
                     "Totem has 6.5 radius | <vanilla, abilities, basic, 2> has 3.5 radius and 5.25 with <vanilla, talents, 1, 1>",
@@ -221,7 +221,7 @@
                   "text": "moved to level 1"
                 }
               ],
-              "developerCommentary": "As seen on level 1, the plans are to make bloodlust more reliable",
+              "developerCommentary": "As seen on level 1, the plans are to make <vanilla, abilities, heroic, 1> more reliable",
               "likes": 0,
               "likedBy": {}
             },
@@ -232,8 +232,8 @@
                 {
                   "text": "Creates a totem that will cast you current trait effect on all valid hero targets after 1 second. The effect will be recast after 4 seconds.",
                   "subtexts": [
-                    "Radius is 9 | Blaze combustion is 6",
-                    "Cast range is 2.0 | Earthbind totem cast range is 4.0",
+                    "Radius is 9 | <vanilla, abilities, heroic, 1, blaze> is 6.5",
+                    "Cast range is 2.0 | <vanilla, abilities, basic, 2> cast range is 4.0",
                     "Cooldown: 70 seconds",
                     "The totem is visual only"
                   ]
@@ -277,7 +277,7 @@
               "name": "<vanilla, talents, 1, 2>",
               "texts": [
                 {
-                  "text": "Changed functionality: Ghost Wolf's Movement Speed bonus is increased to 30%. Ghost Wolf attacks against Heroes deal an additional 4% of the target's maximum Health and casts Lightning Shield on Rehgar."
+                  "text": "Changed functionality: Ghost Wolf's Movement Speed bonus is increased to 30%. Ghost Wolf attacks against Heroes deal an additional 4% of the target's maximum Health and casts <vanilla, abilities, basic, 1> on Rehgar."
                 },
                 {
                   "text": "moved from 1"
@@ -339,13 +339,13 @@
               "name": "<vanilla, talents, 20, 0>",
               "texts": [
                 {
-                  "text": "Changed functionality: Ancestral Healing is cast a second time on the same target after 2.5 seconds and both healings are now a Perfect Heal meaning it can't be reduced.",
+                  "text": "Changed functionality: <vanilla, abilities, heroic, 0> is cast a second time on the same target after 2.5 seconds and both healings are now a Perfect Heal meaning it can't be reduced.",
                   "subtexts": [
                     "This means even Ana grenade can't cut the healing anymore"
                   ]
                 }
               ],
-              "developerCommentary": "Farseer's Bleesing is one of the strongest game ultimate upgrades by a long distance with the teamfight comeback potential BUT it's hard to balance as Rehgar alredy have a strong Base Kit. What i want to implement with this change is to make that more about making it optimal on certain situations rather than an all around pick.",
+              "developerCommentary": "<vanilla, talents, 20, 0> is one of the strongest game ultimate upgrades by a long distance with the teamfight comeback potential BUT it's hard to balance as Rehgar alredy have a strong Base Kit. What i want to implement with this change is to make that more about making it optimal on certain situations rather than an all around pick.",
               "likes": 0,
               "likedBy": {}
             },
@@ -354,7 +354,7 @@
               "name": "New: Shamanic Master Training",
               "texts": [
                 {
-                  "text": "Increase the totem range by 35% and increase the number of reactivations to 2",
+                  "text": "Increase the <modified, abilities, heroic, 1> range by 35% and increase the number of reactivations to 2",
                   "subtexts": [
                     "Current radius is 9.0 i want to increase it to 12 but i don't know how to math"
                   ]

@@ -121,16 +121,15 @@
               "name": "<vanilla, talents, 16, 2> renamed to We all got our choices to make ",
               "texts": [
                 {
-                  "text": "Changed functionality: Activate to make a pistol shoot on a straight line dealing 250 damage to the first enemy hero that it hits applying exhaustion that preventing it from using any dash or similar for the next 4 seconds."
+                  "text": "Changed functionality: Activate to make a pistol shoot on a straight line dealing 250 damage to the first enemy hero that it hits applying exhaustion that preventing it from using any dash or similar for the next 2 seconds.",
+                  "subtexts": [
+                    " Cooldown 30 seconds.",
+                    " Range 8 | <vanilla, abilities, basic, 0> has 9.5 range.",
+                    "Missile speed 24 | <vanilla, abilities, basic, 2, ana> has 24 missile speed"
+                  ]
                 },
                 {
                   "text": " Passive: If <modified, abilities, trait, 0>'s primary target is a hero it receives additional 3% of their maximum health as damage."
-                },
-                {
-                  "text": " Cooldown 30 seconds."
-                },
-                {
-                  "text": " Range 8 ( Penetrating round has 9.5 range )."
                 }
               ],
               "developerCommentary": "I first wanted to add a flashbang grenade for Raynor who would make a similar effect but bringing one of the most iconic moments of SC2 wings of liberty seems a better choice. Gameplay wise this is to be an optional talent against Mobile targets further make Raynor a good counter to them. And why change it from the original? It's because the results are somewhat similar to Rallying cry with the big difference being about killing high life targets but that doesn't mean you couldn't do it alredy with Rallying cry so im making it an more uility based rather than a direct option.",
@@ -147,11 +146,12 @@
               "name": "<vanilla, talents, 20, 0>",
               "texts": [
                 {
-                  "text": "Changed functionality: Activate for <modified, abilities, heroic, 0> to fire the Yamato Cannon at the target location dealing 450 damage after 1.25 seconds."
+                  "text": "Changed functionality: Activate for <modified, abilities, heroic, 0> to fire the Yamato Cannon at the target location dealing 450 damage after 1.25 seconds.",
+                  "subtexts": [
+                    "3.0 radius | <vanilla, abilities, basic, 1, probius> has 3.0 radius"
+                  ]
                 },
-                {
-                  "text": "3.0 radius ( The size of a probius warp rift )"
-                },
+
                 {
                   "text": "20s cooldown"
                 },
@@ -159,7 +159,7 @@
                   "text": "Additionaly if Raynor respawn from a <modified, abilities, basic, 3> he will inspire nearby units"
                 }
               ],
-              "developerCommentary": "<modified, abilities, heroic, 0> by itself doesn't feel strong as we imagine coming from the Starcraft 2 perspective and it further diminishes this effect by using it as a Siege ultimate by having no control of the Yamato Cannon. <vanilla, talents, 20, 0> current effect do not make Hyperion upgrade feel and act powerful but rather incentivize the ultimate spam.",
+              "developerCommentary": "<modified, abilities, heroic, 0> by itself doesn't feel strong as we imagine coming from the Starcraft 2 perspective and it further diminishes this effect by using it as a Siege ultimate by having no control of the Yamato Cannon. <vanilla, talents, 20, 0> current effect do not make <modified, abilities, heroic, 0> upgrade feel and act powerful but rather incentivize the ultimate spam.",
               "likes": 0,
               "likedBy": {}
             },

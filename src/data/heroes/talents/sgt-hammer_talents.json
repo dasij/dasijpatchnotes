@@ -186,7 +186,7 @@
       "talentChanged": false
     },
     {
-      "name": "Advanced spider strike",
+      "name": "Advanced Spider Strike",
       "description": "Napalm Strike's range is increased by 75% {highlight}and deploy 4 spider mines on impact.{/highlight}",
       "passives": [
         "{highlight}Spider mines now decrease 5 armor up to 25 for 4 seconds when hitting enemy heroes{/highlight}"

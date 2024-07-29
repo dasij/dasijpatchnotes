@@ -21,7 +21,7 @@
           "likedBy": {}
         }
       ],
-      "developerCommentary": "That rework will be based on the things that we could use on Sgt. Hammer and build my vision that would benefit the Hammer gameplay. One of the big things i dislike about how hammer is right now is the idea of not moving while under <modified, abilities, trait, 0> even tho we have a talent that let Hammer move and differently from some other talents it gives the same feeling of playing Cassia and not picking the active on level 7 it's like a core talent for your gameplay atleast that's how i feel BUT i like the idea of her having trouble to go with the team because she is naturally slower.",
+      "developerCommentary": "That rework will be based on the things that we could use on Sgt. Hammer and build my vision that would benefit the Hammer gameplay. One of the big things i dislike about how hammer is right now is the idea of not moving while under <modified, abilities, trait, 0> even tho we have a talent that let Hammer move and differently from some other talents it gives the same feeling of not pickins <vanilla, talents, 7, 2, cassia> it's like a core talent for your gameplay atleast that's how i feel BUT i like the idea of her having trouble to go with the team because she is naturally slower.",
       "sections": [
         {
           "name": "Level 1",
@@ -102,7 +102,7 @@
                   "text": "Changed functionality: While under <modified, abilities, trait, 0> if you don't shoot you progressively increase you range up to 3 and basic attack damage up to 200% on a period of 2.5seconds."
                 }
               ],
-              "developerCommentary": "This is to make the graduating range somewhat similar to his old effect but also making a better synergy with the new heat passive",
+              "developerCommentary": "This is to make the <vanilla, talents, 7, 2> somewhat similar to his old effect but also making a better synergy with the new heat passive",
               "likes": 0,
               "likedBy": {}
             },
@@ -178,7 +178,7 @@
                   "text": "Cooldown: 30s"
                 }
               ],
-              "developerCommentary": "I wanted to bring something that could replace Executioner without being directly targeted towards doing more damage but being a more situational one.",
+              "developerCommentary": "I wanted to bring something that could replace <vanilla, talents, 16, 1> without being directly targeted towards doing more damage but being a more situational one.",
               "likes": 0,
               "likedBy": {}
             }
@@ -210,7 +210,7 @@
             },
             {
               "change_id": "sgt-hammer_13",
-              "name": "<vanilla, talents, 20, 1> renamed to Advanced spider strike",
+              "name": "<vanilla, talents, 20, 1> renamed to Advanced Spider Strike",
               "texts": [
                 {
                   "text": "Won't increase the damage anymore"
@@ -222,7 +222,7 @@
                   "text": "Additional functionality: <modified, abilities, basic, 0> now decrease 5 armor up to 25 of enemy heroes hit for 4 seconds"
                 }
               ],
-              "developerCommentary": "<vanilla, talents, 20, 1> serves it purpose but directly competing on damage with <vanilla, talents, 20, 0> and <vanilla, talents, 20, 2> is hard because <vanilla, talents, 20, 1> doesn't feel like an extravagant upgrade compared with those two, we are changing it to better perform with the <modified, abilities, basic, 0> so you can give it a different appeal, if someone don't build mines there's no problem as they can just go for <modified, talents, 20, 3>.",
+              "developerCommentary": "<vanilla, talents, 20, 1> serves it purpose but directly competing on damage with <vanilla, talents, 20, 0> and <vanilla, talents, 20, 2> is hard because <vanilla, talents, 20, 1> doesn't feel like an extravagant upgrade compared with those two, we are changing it to better perform with the <modified, abilities, basic, 0> so you can give it a different appeal, if someone don't build mines there's no problem as they can just go for <modified, talents, 20, 3>. Not intended but the acronym is funny",
               "likes": 0,
               "likedBy": {}
             },
@@ -234,7 +234,7 @@
                   "text": "Removed"
                 }
               ],
-              "developerCommentary": "With the changes made to the Advanced spider strike it's not necessary anymore",
+              "developerCommentary": "With the changes made to the <modified, talents, 20, 1> it's not necessary anymore",
               "likes": 0,
               "likedBy": {}
             }

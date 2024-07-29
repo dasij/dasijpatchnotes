@@ -44,7 +44,7 @@
               "text": "Removed."
             }
           ],
-          "developerCommentary": "<vanilla, abilities, basic, 1> is a skill that predisposes Morales to being a healbot, as it provides additional survivability to another character without the need for precise timing like a cleanse or Medivh's Force of Will. It can be used indiscriminately. I believe it's unhealthy for Morales to have a kit that encourages passive gameplay, which is why I am removing this skill.",
+          "developerCommentary": "<vanilla, abilities, basic, 1> is a skill that predisposes Morales to being a healbot, as it provides additional survivability to another character without the need for precise timing like a <vanilla, abilities, trait, 0, rehgar> or <vanilla, abilities, basic, 1, medivh>. It can be used indiscriminately. I believe it's unhealthy for Morales to have a kit that encourages passive gameplay, which is why I am removing this skill.",
           "likes": 0,
           "likedBy": {}
         },
@@ -80,7 +80,7 @@
           "change": "New: Steroids Charge (R)",
           "texts": [
             {
-              "text": "You start with your ultimate now >> baseline << , similar to the tracer bomb"
+              "text": "Now it's a baseline ultimate, like <vanilla, abilities, heroic, 0, tracer>"
             },
             {
               "text": "Costs 100 energy."
@@ -92,7 +92,7 @@
               "text": "Gains 2 energy for every 125 health healed. Morales loses all energy upon death."
             }
           ],
-          "developerCommentary": "As previously mentioned, I want to bring Morales closer to the gameplay experience of the Medic in TF2. Introducing Steroids as a baseline skill that charges up enhances Morales' engagement in gameplay, focusing on skillful play rather than passive cooldown management. This also distinguishes her from other healers.",
+          "developerCommentary": "As previously mentioned, I want to bring Morales closer to the gameplay experience of the Medic in TF2. Introducing <modified, abilities, heroic, 0> as a baseline skill that charges up enhances Morales' engagement in gameplay, focusing on skillful play rather than passive cooldown management. This also distinguishes her from other healers.",
           "likes": 0,
           "likedBy": {}
         }
@@ -297,7 +297,7 @@
                   "text": "(Active)Call down a <modified, abilities, basic, 1> Dropship at your Hall of Storms for your allies. After 10 seconds, or when a hero enters, the <modified, abilities, basic, 1> will travel to the target location to unload the passenger (Shares cooldown with <modified, abilities, basic, 1> )"
                 }
               ],
-              "developerCommentary": "I had to make the talent as NEW because it was a extended part of the medivac.Changed it to hold only one person and also drop it where Morales wants for increased map control potential.",
+              "developerCommentary": "I had to make the talent as NEW because it was a extended part of the <vanilla, abilities, heroic, 1>.Changed it to hold only one person and also drop it where Morales wants for increased map control potential.",
               "likes": 0,
               "likedBy": {}
             },

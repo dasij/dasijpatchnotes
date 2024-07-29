@@ -1,44 +1,67 @@
 {
-  "id": 999,
+  "id": 41,
   "name": "LI-MING",
-  "role": "",
-  "image": "heroes_portraits/li-ming.webp",
-  "show": "false",
+  "role": "Ranged Assassin",
+  "image": "heroes_portraits/liming.webp",
+  "show": "falses",
   "patchNotes": [
     {
-      "id": 999,
+      "id": 41,
       "title": "",
-      "general": [
-        {
-          "change_id": "li-ming_",
-          "change": "",
-          "texts": [
-            {
-              "text": ""
-            }
-          ],
-          "developerCommentary": "",
-          "likes": 0,
-          "likedBy": {}
-        }
-      ],
-      "developerCommentary": "",
+      "general": [],
+      "developerCommentary": "Li-Ming is one of the those characters from Heroes of the Storm that almost no one will get mad at as she is fair..she was unbalanced on launch but that was it. The objective here is mostly rebuild her talent tree similar on how i am building the other talent trees making characters more all-round and not a complete focus on talents for one type of skill.",
       "sections": [
         {
           "name": "Level 1",
           "changes": [
             {
-              "change_id": "li-ming_",
-              "name": "",
+              "change_id": "li-ming_1",
+              "name": "<modified, talents, 1, 0>",
               "texts": [
                 {
-                  "text": "",
+                  "text": "Changed functionality: Quest: Get Takedowns."
+                },
+                {
+                  "text": "Reward 6 takedowns: <modified, abilities, trait, 0> restores Li-Ming 10% Maximum Mana"
+                },
+                {
+                  "text": "Reward 12 takedowns: Increase <modified, abilities, basic, 1> damage for distance traveled by 30%"
+                },
+                {
+                  "text": "Reward 18 takedowns: Hitting enemy heroes with 3 <modified, abilities, basic, 0> does extra 87 damage"
+                },
+                {
+                  "text": "Dying resets takedowns to current checkpoint",
                   "subtexts": [
-                    ""
+                    "If you die with 5 kills you return to 0 BUT if you die with 11 kills you return to 6"
                   ]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "I wanted to make something different that would feel like <vanilla, talents, 4,0, maiev> power spike but at the same time a feeling of <vanilla, abilities, trait, 0, the-butcher> taking advantage of <vanilla, abilities, trait, 0> nature",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "li-ming_13",
+              "name": "<vanilla, talents, 1, 2>",
+              "texts": [
+                {
+                  "text": "Fountains also grant 100% more mana and 10% spell power"
+                }
+              ],
+              "developerCommentary": "Wanted to strenghten it's interaction for Li-Mings mana as a more fierce competitor on that aspect",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "li-ming_2",
+              "name": "<vanilla, talents, 1, 0>",
+              "texts": [
+                {
+                  "text": "Moved to 16"
+                }
+              ],
+              "developerCommentary": "Wanted to strenghten the talent and make it more unique as a defensive tool for level 16",
               "likes": 0,
               "likedBy": {}
             }
@@ -48,17 +71,14 @@
           "name": "Level 4",
           "changes": [
             {
-              "change_id": "li-ming_",
-              "name": "",
+              "change_id": "li-ming_3",
+              "name": "<vanilla, talents, 4, 0> renamed to <modified, talents, 4, 0>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "text": "Li-Ming's basic attacks deal magic damage and ignore armour. Hitting enemy heroes recently hit by a <modified, abilities, basic, 0> restores 25 mana"
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "Wanted to make a competitor with the other two talents with utility rather than flat stats",
               "likes": 0,
               "likedBy": {}
             }
@@ -68,37 +88,50 @@
           "name": "Level 7",
           "changes": [
             {
-              "change_id": "li-ming_",
-              "name": "",
+              "change_id": "li-ming_4",
+              "name": "<vanilla, talents, 16, 3>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "text": "Moved from level 16"
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "Bringing it to compete as a <vanilla, basic, abilities, 2> talent",
               "likes": 0,
               "likedBy": {}
-            }
-          ]
-        },
-        {
-          "name": "Level 10",
-          "changes": [
+            },
             {
-              "change_id": "li-ming_",
-              "name": "",
+              "change_id": "li-ming_5",
+              "name": "NEW: <modified, talents, 7, 1>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "text": "<modified, abilities, basic, 2> will leave a Li-Ming Decoy with 100% of Li-Ming current health, that decoy will last 1 second. After being destroyed or expiring it will stun close enemy units for 0.5 second"
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "One thing ",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "li-ming_6",
+              "name": "<vanilla, talents, 7, 0>",
+              "texts": [
+                {
+                  "text": "Removed"
+                }
+              ],
+              "developerCommentary": "Im removing it to mix into <modified, talents, 1, 0>",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "li-ming_7",
+              "name": "<vanilla, talents, 7, 1>",
+              "texts": [
+                {
+                  "text": "removed"
+                }
+              ],
+              "developerCommentary": "Mixed it to <modified, talents, 1, 0>",
               "likes": 0,
               "likedBy": {}
             }
@@ -108,17 +141,17 @@
           "name": "Level 13",
           "changes": [
             {
-              "change_id": "li-ming_",
-              "name": "",
+              "change_id": "li-ming_8",
+              "name": "<vanilla, talents, 13, 1> renamed to <modified, talents, 13, 1>",
               "texts": [
                 {
-                  "text": "",
+                  "text": "Changed functionality: Li-Ming's basic attacks mark enemy heroes. <modified, abilities, basic, 0> will follow the marked hero from when they were created. Passive: <modified, abilities, basic, 0> now pierce through non-heroic targets.",
                   "subtexts": [
-                    ""
+                    "The <modified, abilities, basic, 0> guiding effect shouldn't be too strong."
                   ]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "I didn't wish to change Li-Ming's basic attack interaction but instead of trying to compete with <vanilla, talents, 13, 2> as an damage alternative i just made it compete through utility",
               "likes": 0,
               "likedBy": {}
             }
@@ -128,17 +161,42 @@
           "name": "Level 16",
           "changes": [
             {
-              "change_id": "li-ming_",
-              "name": "",
+              "change_id": "li-ming_9",
+              "name": "<vanilla, talents, 16, 3>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "text": "Moved to level 7"
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "Made level 7 into a <modified, abilities, basic, 2>",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "li-ming_10",
+              "name": "<vanilla, talents, 16, 0>",
+              "texts": [
+                {
+                  "text": "Removed"
+                }
+              ],
+              "developerCommentary": "Mixed into <modified, talents, 20, 3>",
+              "likes": 0,
+              "likedBy": {}
+            },
+
+            {
+              "change_id": "li-ming_11",
+              "name": "<modified, talents, 16, 2>",
+              "texts": [
+                {
+                  "text": "Removed current mana passive"
+                },
+                {
+                  "text": "Additional functionality: Basic attacks creates one <modified, abilities, basic, 0> on the direction of the target. "
+                }
+              ],
+              "developerCommentary": "I wanted to bring this talent to this tier to make it an defensive option that differs from the others",
               "likes": 0,
               "likedBy": {}
             }
@@ -148,17 +206,15 @@
           "name": "Level 20",
           "changes": [
             {
-              "change_id": "li-ming_",
-              "name": "",
+              "change_id": "li-ming_12",
+              "name": "<modified, talents, 20, 3>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "text": "Changed functionality: Activate to enter Archon form for 6 seconds, during that time <modified, abilities, basic, 0> will travel 35% faster and <modified, abilities, basic, 1> will pull enemies to the center when hit but Li-Ming will be unable to cast <modified, abilities, basic, 2> during that time .",
+                  "subtexts": ["Cooldown: 25 seconds"]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "I wanted to preserve some of personality of her old Archon but without being too cluncky and also revive Ess of Johan somehow where the problem was too eazy for big reward SO i time limited it and cut the safety options during that time.",
               "likes": 0,
               "likedBy": {}
             }

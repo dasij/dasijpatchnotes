@@ -17,7 +17,7 @@
               "subtexts": [
                 "Cooldown 45 seconds",
                 "Enemies will have vision of Garrosh when he is taunting even if it's on cooldown.",
-                "This is the game taunt button which show mastery button not to be confused with warlord's challenge"
+                "This is the game taunt button which show mastery button not to be confused with <vanilla, abilities,  heroic, 0>"
               ]
             }
           ],
@@ -71,8 +71,9 @@
                   "text": "Garrosh runs in a straigh line, knockbacking enemies that enters on contact with him.",
                   "subtexts": [
                     "Cooldown 45 seconds",
-                    "Range will be 7.0 | Valla Vault has 5.0 range | Dwarf Toss has 8.0 range",
-                    "Missile Speed will be 15 | Valla Vault is 14 | Dwarf toss is 30",
+
+                    "Range will be 7.0 | <vanilla, abilities,  basic, 2, valla> has 5.0 range | <vanilla, abilities,  basic, 2, muradin> has 8.0 range",
+                    "Missile Speed will be 15 | <vanilla, abilities,  basic, 2, valla> is 14 | <vanilla, abilities,  basic, 2, muradin> is 30",
                     "Cast needs to be finished before being to cast skills"
                   ]
                 }
@@ -101,7 +102,7 @@
                   "text": "Removed"
                 }
               ],
-              "developerCommentary": "I see no purpose for In for the kill with the new talent i made for level 1 Brutality as it takes the same effect and Thirsft for battle is really niche and i don't think it fits Garrosh, not the non-heroic killing but the spammable non-heroic style",
+              "developerCommentary": "I see no purpose for <vanilla, talents, 4, 0> with the new talent <modified, talents,  1, 2> as it takes the same effect and <vanilla, talents, 4, 1> is really niche and i don't think it fits Garrosh, not the non-heroic killing but the spammable non-heroic style",
               "likes": 0,
               "likedBy": {}
             }
@@ -145,10 +146,12 @@
               "texts": [
                 {
                   "text": "Changed functionality: Increase Garrosh movement speed by 1% every 4% missing health capping at 15%. This Talent only take effect if there's an visible enemy hero close to Garrosh.",
-                  "subtexts": ["8 radius | Blaze combustion has 6.5 radius"]
+                  "subtexts": [
+                    "8 radius | <vanilla, abilities,  heroic, 1, blaze> has 6.5 radius"
+                  ]
                 }
               ],
-              "developerCommentary": "One thing that i always wanted was a talent to make Garrosh pursuing better especially on a decimate focused build",
+              "developerCommentary": "One thing that i always wanted was a talent to make Garrosh pursuing better especially on a <vanilla, abilities,  heroic, 1> focused build",
               "likes": 0,
               "likedBy": {}
             }
@@ -200,7 +203,7 @@
                   "text": "After Garrosh uses <modified, abilities,  basic, 0>, three additional waves are created sequentially from the edge of the original area. Each wave deals 81 damage and stuns enemies for 0.5 seconds.",
                   "subtexts": [
                     "Additional waves are affected by groundbreaking tactics size increase but WILL pull the enemies.",
-                    "Imagine something  close to the Sonya Seismic Slam"
+                    "Imagine something  close to the <vanilla, abilities,  basic, 1, sonya>"
                   ]
                 }
               ],
