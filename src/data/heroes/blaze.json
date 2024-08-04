@@ -1,42 +1,65 @@
 {
   "id": 11,
   "name": "BLAZE",
-  "role": "",
+  "role": "Tank",
   "image": "heroes_portraits/blaze.webp",
-  "show": "false",
+  "show": "falses",
   "patchNotes": [
     {
       "id": 11,
-      "title": "",
+      "title": "Talent mini-Rework",
       "general": [
         {
-          "change_id": "blaze_",
-          "change": "",
+          "change_id": "blaze_0",
+          "change": "Base",
           "texts": [
             {
-              "text": ""
+              "text": "Basic attacks deal 25% more damage to Minions, Mercenaries and Monsters"
             }
           ],
-          "developerCommentary": "",
+          "developerCommentary": "<vanilla, talents, 4, 2> is extremely popular due to how Blaze works in-game making it a nerf to not pick it..a similar situation with <vanilla, talents, 4, 1, etc>. With this effect being so integrated i wanted to bring it baseline on a weaker effect and make his level 4 more interesting for choice making",
           "likes": 0,
           "likedBy": {}
         }
       ],
-      "developerCommentary": "",
+      "developerCommentary": "Blaze is one of the strongest solo laners in the game since launch both his skills and talents are strong making nearly impossible to remove him from the meta without nerfing him hard as his utility for a solo laner is unmatched as well good clear. The changes i am gonna make are probally gonna make him strong overall as my objective is to increase the talent choice variety.",
       "sections": [
         {
           "name": "Level 1",
           "changes": [
             {
-              "change_id": "blaze_",
-              "name": "",
+              "change_id": "blaze_1",
+              "name": "<vanilla, talents, 1, 1>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Additional functionality: Endurance Stimpack will grant unstopabble while it's active"
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "For me <vanilla, talents, 1, 3> were just competing for the same spot. To make Blaze a more viable Tank, with that approach i think it guarantees more Blaze survavibility as it could cleanse him on harsh situation.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "blaze_2",
+              "name": "<vanilla, talents, 1, 2>",
+              "texts": [
+                {
+                  "text": "Additional functionality: Ignited Oil Spills will also restores Blaze 1 mana each time it hits an enemy if the target is an enemy hero also grants 1% spell power for 4 seconds."
+                }
+              ],
+              "developerCommentary": "Blaze natural habitat is the solo lane or a cheesing tank so <vanilla, talents, 1, 2> always felt kinda underwhelming not on the lack of purpose but power.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "blaze_3",
+              "name": "<vanilla, talents, 1, 3>",
+              "texts": [
+                {
+                  "text": "removed"
+                }
+              ],
+              "developerCommentary": "Mixed it with <modified, talents, 1, 1>",
               "likes": 0,
               "likedBy": {}
             }
@@ -46,51 +69,26 @@
           "name": "Level 4",
           "changes": [
             {
-              "change_id": "blaze_",
-              "name": "",
+              "change_id": "blaze_4",
+              "name": "<vanilla, talents, 4, 1>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Additional functionality: regeneration globes decrease Pyromania cooldown by 4 seconds"
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "With the changes on level 1 for me that tier is gonna have a great competition of talents now and i'm giving a little buff to Meltdown for the lack of Pyromania cooldown lost with the removal of <vanilla, talents, 1, 3>",
               "likes": 0,
               "likedBy": {}
-            }
-          ]
-        },
-        {
-          "name": "Level 7",
-          "changes": [
+            },
             {
-              "change_id": "blaze_",
-              "name": "",
+              "change_id": "blaze_5",
+              "name": "NEW: <modified, talents, 4, 2>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Blaze receives 15% bonus movement speed while standing on a Oil Spill area and increase it's Basic Attack area by 30% while on a Ignited Oil Spill area"
                 }
               ],
-              "developerCommentary": "",
-              "likes": 0,
-              "likedBy": {}
-            }
-          ]
-        },
-        {
-          "name": "Level 10",
-          "changes": [
-            {
-              "change_id": "blaze_",
-              "name": "",
-              "texts": [
-                {
-                  "text": "",
-                  "subtexts": [""]
-                }
-              ],
-              "developerCommentary": "",
+              "developerCommentary": "<vanilla, talents, 13, 1> did something like that before but my objective of making the opposite is to validate better every possible build as movement speed is relevant all around.",
               "likes": 0,
               "likedBy": {}
             }
@@ -100,15 +98,50 @@
           "name": "Level 13",
           "changes": [
             {
-              "change_id": "blaze_",
-              "name": "",
+              "change_id": "blaze_6",
+              "name": "<vanilla, talents, 13, 0>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Changed Functionality: Increase Ignited Oil Spill damage by 45% and increase Oil Spill's Ignite duration by 2.5 seconds. Ignited Oil Spill's bonus damage is increased to 100% to non-heroic units"
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "Mid-Late game quests are kinda awkward when they act like early game quests with no dynamic completion system like <vanilla, talents, 16, 1, thrall>. With that in mind im removing the quest part.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "blaze_7",
+              "name": "<vanilla, talents, 20, 2>",
+              "texts": [
+                {
+                  "text": "Moved from level 20"
+                }
+              ],
+              "developerCommentary": "Bringing Burn Notice to the damage dealing tier as i feel it's not powerful enough for a level 20 and it can be numeric nerfed to fit here if it gets too strong.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "blaze_8",
+              "name": "<vanilla, talents, 13, 2>",
+              "texts": [
+                {
+                  "text": "275 flat damage changed to 10% of target maximum health"
+                }
+              ],
+              "developerCommentary": "A High flat damage means that the stun will work against any enemy hero and can only be countered by armor which is not a very commom ocurrence specially on squishy targets. Stunning a squishy target by itself is alredy a strong feat that could guarantee a kill BUT 275 (which doesn't count the level scaling of 4%) is moreless 10% of a level 18 Hanzo Maximum life(2785). My intent with this change is to make it a more guaranteed tool of damage not being reduced by armor BUT with a more consistent value which undervalues itself against squishies and is more valued against tanks characters. We could round up the numerical values of this talent on the flat damage base but i think this could lead to the talent being underperfoming. But as well RIP Garrosh",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "blaze_9",
+              "name": "<vanilla, talents, 13, 1>",
+              "texts": [
+                {
+                  "text": "Removed"
+                }
+              ],
+              "developerCommentary": "I remixed the idea on <modified, talents, 4, 2>",
               "likes": 0,
               "likedBy": {}
             }
@@ -118,15 +151,17 @@
           "name": "Level 16",
           "changes": [
             {
-              "change_id": "blaze_",
-              "name": "",
+              "change_id": "blaze_10",
+              "name": "<vanilla, talents, 16, 1>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Additional functionality: Damaging enemy heroes with Pyromania reduces it's cooldown by 2 for each hero hit",
+                  "subtexts": [
+                    "Hitting 5 heroes with all ticks of damage will reset Pyromania cooldown"
+                  ]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "<vanilla, talents, 16, 1> will now reign over constant fighting and crazy combustion blazes",
               "likes": 0,
               "likedBy": {}
             }
@@ -136,15 +171,33 @@
           "name": "Level 20",
           "changes": [
             {
-              "change_id": "blaze_",
-              "name": "",
+              "change_id": "blaze_11",
+              "name": "NEW: <modified, talents, 20, 2>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Activate to empower your next Jet Propulsion. Increasing the speed and impact radius greatly",
+                  "subtexts": [
+                    "Cooldown 60 seconds",
+                    "Missile speed will go from 19 to 38",
+                    "Travel duration will be the same, doubling final range with new speed",
+                    "Impact radius will go from 3 to 6.5",
+                    "This mean that the blaze will travel double distance on the same time as a commom <vanilla, abilities, basic, 2>"
+                  ]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "Superman Blaze engage, is there a discussion about the idea? On the numbers we probally have",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "blaze_12",
+              "name": "NEW: <modified, talents, 20, 3>",
+              "texts": [
+                {
+                  "text": "Reduces Flame Stream cooldown to 2 seconds and another 1 second each time Flame Stream does bonus damage to a hero"
+                }
+              ],
+              "developerCommentary": "I find <modified, abilities, basic, 0> extremely satisfying to hit and a level 20 that makes that makes it a plus for me is very nice.",
               "likes": 0,
               "likedBy": {}
             }

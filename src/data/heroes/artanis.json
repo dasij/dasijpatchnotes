@@ -168,7 +168,7 @@
             },
             {
               "change_id": "artanis_22",
-              "name": "NEW: Shield Force",
+              "name": "NEW: <modified, talents, 7, 2>",
               "texts": [
                 {
                   "text": "Activate to destroy your current Shield and deal damage 50% of the value as damage to enemies nearby and knock back them",
@@ -242,7 +242,7 @@
 
             {
               "change_id": "artanis_18",
-              "name": " NEW: Aiur reinforcements ",
+              "name": " NEW: <modified, talents, 13, 2> ",
               "texts": [
                 {
                   "text": " For each enemy hero hit by <modified, abilities, basic, 0> reduces Artanis Heroic cooldown by 5%"
@@ -296,7 +296,7 @@
 
             {
               "change_id": "artanis_11",
-              "name": "NEW: Force of the Prism",
+              "name": "NEW: <modified, talents, 16, 2>",
               "texts": [
                 {
                   "text": "When <modified, abilities, basic, 2> Reaches maximum range it splits into three <modified, abilities, basic, 2>s and travels extra 25% range. Artanis Won't swap with targets pulled that way",

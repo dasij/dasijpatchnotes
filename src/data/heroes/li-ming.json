@@ -16,10 +16,10 @@
           "changes": [
             {
               "change_id": "li-ming_1",
-              "name": "<modified, talents, 1, 0>",
+              "name": "NEW: <modified, talents, 1, 0>",
               "texts": [
                 {
-                  "text": "Changed functionality: Quest: Get Takedowns."
+                  "text": "Quest: Get Takedowns."
                 },
                 {
                   "text": "Reward 6 takedowns: <modified, abilities, trait, 0> restores Li-Ming 10% Maximum Mana"
@@ -95,7 +95,7 @@
                   "text": "Moved from level 16"
                 }
               ],
-              "developerCommentary": "Bringing it to compete as a <vanilla, basic, abilities, 2> talent",
+              "developerCommentary": "Bringing it to compete as a <vanilla, abilities, basic, 2> talent",
               "likes": 0,
               "likedBy": {}
             },
@@ -107,7 +107,7 @@
                   "text": "<modified, abilities, basic, 2> will leave a Li-Ming Decoy with 100% of Li-Ming current health, that decoy will last 1 second. After being destroyed or expiring it will stun close enemy units for 0.5 second"
                 }
               ],
-              "developerCommentary": "One thing ",
+              "developerCommentary": "I was reading her arcane talents on Diablo and this one caught my attention and i found it a fun option to escape",
               "likes": 0,
               "likedBy": {}
             },

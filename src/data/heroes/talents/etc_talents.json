@@ -87,7 +87,7 @@
     {
       "name": "Slow Tempo",
       "description": "{highlight}Enemy heroes hit by E.T.C. basic attacks have their damage reduced by 15% for 1.25 seconds and E.T.C. restores 6 mana{/highlight}",
-      "image": "etc_facemelt.png",
+      "image": "etc_rockstar.png",
       "talentChanged": true
     }
   ],

@@ -14,7 +14,7 @@
           "change": "<vanilla, abilities, basic, 0>",
           "texts": [
             {
-              "text": "additional functionality: ❢ Quest: Every time <vanilla, abilities, basic, 0> hits a Hero in the center, increase the center damage by 2, up to 50. ❢ Reward: After hitting 30 Heroes, Hitting allied heros with <vanilla, abilities, basic, 0> center increase the damage by 180."
+              "text": "additional functionality: ❢ Quest: Every time <vanilla, abilities, basic, 0> hits a Hero in the center, increase the center damage by 2, up to 50. ❢ Reward: After hitting 30 Heroes, Hitting enemy heros with <vanilla, abilities, basic, 0> center increase the damage by 180."
             }
           ],
           "developerCommentary": "BRO. we have a unique animation Al'maiesh slap no way we only have it on the quest that is also fun",
@@ -132,7 +132,7 @@
           "changes": [
             {
               "change_id": "auriel_8",
-              "name": "New: Changing Hope",
+              "name": "New: <modified, talents, 7, 0>",
               "texts": [
                 {
                   "text": "When Auriel uses <modified, abilities, trait, 0> on an ally in Heroes of the Storm, the converted damage from that ally to other heroes is increased by 65% and to non-heroes by 30% for the first 2 seconds. Once Auriel changes the target of <modified, abilities, trait, 0> the previous bearer will have a 10 seconds cooldown of this effect",
@@ -210,7 +210,7 @@
           "changes": [
             {
               "change_id": "auriel_25",
-              "name": "NEW: Patient Angel",
+              "name": "NEW: <modified, talents, 13, 0>",
               "texts": [
                 {
                   "text": "After 3 seconds within max energy your next <modified, abilities, basic, 1> grants 50% shield based on the healed amount that decays over 6 seconds."
@@ -280,7 +280,7 @@
           "changes": [
             {
               "change_id": "auriel_24",
-              "name": "NEW: Hope to everyone",
+              "name": "NEW: <modified, talents, 16, 0>",
               "texts": [
                 {
                   "text": "Auriel shares all stat bonuses within the <modified, abilities, trait, 0> bearer",

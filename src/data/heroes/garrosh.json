@@ -33,7 +33,7 @@
           "changes": [
             {
               "change_id": "garrosh_2",
-              "name": "New: Brutality",
+              "name": "New: <modified, talents, 1, 2>",
               "texts": [
                 {
                   "text": "For every 2% missing maximum health Garrosh receive 3% extra attack speed"
@@ -65,7 +65,7 @@
           "changes": [
             {
               "change_id": "garrosh_4",
-              "name": "New: Bull rush",
+              "name": "New: <modified, talents, 4, 1>",
               "texts": [
                 {
                   "text": "Garrosh runs in a straigh line, knockbacking enemies that enters on contact with him.",
@@ -84,7 +84,7 @@
             },
             {
               "change_id": "garrosh_5",
-              "name": "New: Groundbreaking tactics",
+              "name": "New: <modified, talents, 4, 2>",
               "texts": [
                 {
                   "text": "<modified, abilities,  basic, 0> can now be channeled for up to 2 seconds, increasing the outer area radius up to 40%. If channeled to Maximum enemies will be pulled towards Garrosh instead of stunned"
@@ -197,7 +197,7 @@
           "changes": [
             {
               "change_id": "garrosh_12",
-              "name": "New: Gorehowl",
+              "name": "New: <modified, talents, 20, 3>",
               "texts": [
                 {
                   "text": "After Garrosh uses <modified, abilities,  basic, 0>, three additional waves are created sequentially from the edge of the original area. Each wave deals 81 damage and stuns enemies for 0.5 seconds.",

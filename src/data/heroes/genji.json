@@ -197,7 +197,7 @@
             },
             {
               "change_id": "genji_12",
-              "name": "NEW: Dragon Steel",
+              "name": "NEW: <modified, talents, 16, 0>",
               "texts": [
                 {
                   "text": "Hitting an enemy hero with <modified, abilities, basic, 2> increase Genji movement speed by 30% and grants a 360 shield for 3 seconds."
@@ -238,7 +238,7 @@
             },
             {
               "change_id": "genji_14",
-              "name": "NEW: Ninja Course",
+              "name": "NEW: <modified, talents, 20, 2>",
               "texts": [
                 {
                   "text": "<modified, abilities, trait, 0> creates a caltrops trap area where he lands that lasts 2.5 seconds and deals 65 damage per second on enemies in the area and reduces their armor by 5 for 4 seconds, up to 20",

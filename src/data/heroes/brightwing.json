@@ -158,7 +158,7 @@
           "changes": [
             {
               "change_id": "brighwing_22",
-              "name": "NEW: Blink speed",
+              "name": "NEW: <modified, talents, 4, 0>",
               "texts": [
                 {
                   "text": "Increase <modified, abilities, basic, 2> target movement speed by 20%"
@@ -170,7 +170,7 @@
             },
             {
               "change_id": "brighwing_21",
-              "name": "NEW: Magic Play",
+              "name": "NEW: <modified, talents, 4, 1>",
               "texts": [
                 {
                   "text": "<vanilla, abilities, heroic, 0> will increase the target magic resistence to 75 for 0.5 seconds"
@@ -211,7 +211,7 @@
           "changes": [
             {
               "change_id": "brighwing_18",
-              "name": "NEW: Faerie shift",
+              "name": "NEW: <modified, talents, 7, 2>",
               "texts": [
                 {
                   "text": "Brightwing can reactivate <modified, abilities, basic, 0> to teleport to the projectile current location",
@@ -255,7 +255,7 @@
           "changes": [
             {
               "change_id": "brighwing_11",
-              "name": "NEW: Deflect Magic",
+              "name": "NEW: <modified, talents, 10, 0>",
               "texts": [
                 {
                   "text": "Brightwing stops and starts to absorb all magic damage and effects taken during the next 0.6 seconds after that redirects all magic damage and status effects backs to their casters and cleanses her negatives effects.",
@@ -304,7 +304,7 @@
             },
             {
               "change_id": "brighwing_14",
-              "name": "NEW: Emergency Mist",
+              "name": "NEW: <modified, talents, 13, 1>",
               "texts": [
                 {
                   "text": "Activate to remove all Stun, Root, Slow, and Silence effects from nearby allied Heroes.",
@@ -320,7 +320,7 @@
             },
             {
               "change_id": "brighwing_13",
-              "name": "NEW: Faerie heal",
+              "name": "NEW: <modified, talents, 13, 2>",
               "texts": [
                 {
                   "text": "Activate to absorb 10% of all magic damage on a large radius around Brightwing for 5 seconds, after that heals all allied hero units for the same value",
@@ -342,7 +342,7 @@
           "changes": [
             {
               "change_id": "brighwing_16",
-              "name": "NEW: Mass Polymorph",
+              "name": "NEW: <modified, talents, 16, 1>",
               "texts": [
                 {
                   "text": "Activate to empower <modified, abilities, basic, 1> and affect all enemy heroes around the primary target for the same duration",
@@ -375,7 +375,7 @@
           "changes": [
             {
               "change_id": "brighwing_9",
-              "name": "NEW: Innate magic control",
+              "name": "NEW: <modified, talents, 20, 0>",
               "texts": [
                 {
                   "text": "<modified, abilities, heroic, 0> cooldown is refreshed after using <modified, abilities, basic, 3>"

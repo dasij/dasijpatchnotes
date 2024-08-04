@@ -31,7 +31,7 @@
           "changes": [
             {
               "change_id": "gazlowe_2",
-              "name": "New: MOLL-E Blingtron 5000 Gift(Active)",
+              "name": "New: <modified, talents, 1, 2>",
               "texts": [
                 {
                   "text": "Activate to put a Mailbox that will give a random item after 30 seconds. The item disappears after 60 seconds if not picked up and after 60 seconds if not used. Any hero can get the items (Cooldown 20 seconds):",
@@ -101,7 +101,7 @@
             },
             {
               "change_id": "gazlowe_7",
-              "name": "New: Mekgineer's Mount 5000",
+              "name": "New: <modified, talents, 4, 0>",
               "texts": [
                 {
                   "text": "Gazlowe's mount lets another hero mount together on a mining cart installed by Gazlowe. The allied hero will mount instantly on Gazlowe's cart without resetting their own mount cooldown",
@@ -133,7 +133,7 @@
           "changes": [
             {
               "change_id": "gazlowe_9",
-              "name": "New: Cardboard Assassin(active)",
+              "name": "New: <modified, talents, 7, 1>",
               "texts": [
                 {
                   "text": "Activate to place a Cardboard Assassin decoy unit that have 1000 health and act as a heroic unit for 10 seconds."

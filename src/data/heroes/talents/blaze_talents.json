@@ -62,23 +62,17 @@
     },
     {
       "name": "Endurance Stimpack",
-      "description": "Activate to gain a Shield that absorbs 590 damage over 5 seconds.When taking damage while below 30% maximum Health, Endurance Stimpack will automatically be cast if it is not on cooldown.",
+      "description": "Activate to gain a Shield that absorbs 590 damage over 5 seconds.When taking damage while below 30% maximum Health, Endurance Stimpack will automatically be cast if it is not on cooldown.{highlight} Endurance Stimpack will grant unstopabble while it's active{/highlight}",
       "image": "blaze_stim_1.png",
-      "talentChanged": false,
+      "talentChanged": true,
       "cooldown": "30s"
     },
     {
       "name": "Neural Stimpack",
-      "description": "Activate to gain 40 Mana and cause Basic Ability cooldowns to recharge 100% faster for 5 seconds.",
+      "description": "Activate to gain 40 Mana and cause Basic Ability cooldowns to recharge 100% faster for 5 seconds.{highlight} Ignited Oil Spills will also restores Blaze 1 mana each time it hits an enemy if the target is an enemy hero also grants 1% spell power for 4 seconds.{/highlight}",
       "image": "blaze_stim_3.png",
-      "talentChanged": false,
+      "talentChanged": true,
       "cooldown": "30s"
-    },
-    {
-      "name": "New Habits",
-      "description": "Collecting Regeneration Globes reduces the cooldown of Pyromania by 6 seconds.Quest: Collect 15 Regeneration Globes.Reward: Pyromania grants Unstoppable for 2 seconds.",
-      "image": "blaze_new_habits.png",
-      "talentChanged": false
     }
   ],
   "4": [
@@ -90,15 +84,15 @@
     },
     {
       "name": "Meltdown",
-      "description": "Hitting an enemy Hero with Pyromania reduces their damage dealt by 8% for 2.5 seconds, up to 40%.",
+      "description": "Hitting an enemy Hero with Pyromania reduces their damage dealt by 8% for 2.5 seconds, up to 40%. {highlight}Regeneration globes decrease Pyromania cooldown by 4 seconds{/highlight}",
       "image": "blaze_pyromania.png",
-      "talentChanged": false
+      "talentChanged": true
     },
     {
-      "name": "Incinerator Gauntlets",
-      "description": "Increase Basic Attack area by 15%, and Basic Attack damage to Minions, Mercenaries, and Monsters by 50%.",
-      "image": "talent_autoattack_building.png",
-      "talentChanged": false
+      "name": "Hot Footed",
+      "description": "{highlight}Blaze receives 15% bonus movement speed while standing on a Oil Spill area and increase it's Basic Attack area by 30% while on a Ignited Oil Spill area{/highlight}",
+      "image": "blaze_oil.png",
+      "talentChanged": true
     }
   ],
   "7": [
@@ -142,21 +136,21 @@
   "13": [
     {
       "name": "Grill and Kill",
-      "description": "Increase Ignited Oil Spill damage by 45%.Quest: Damage enemy Heroes with Ignited Oil Spills 30 times.Reward: Increase Oil Spill's Ignite duration by 2.5 seconds.",
+      "description": "{highlight}Increase Ignited Oil Spill damage by 45% and increase Oil Spill's Ignite duration by 2.5 seconds. Ignited Oil Spill's bonus damage is increased to 100% to non-heroic units{/highlight}",
       "image": "blaze_oil.png",
-      "talentChanged": false
+      "talentChanged": true
     },
     {
-      "name": "Adhesive Petroleum",
-      "description": "Enemies standing in Oil Spill when it is Ignited are Slowed by 40% and take 35% more Basic Attack damage from Blaze for 3 seconds. Additionally, Basic Attack splashes Ignite Oil Spills.",
-      "image": "blaze_oil_b.png",
-      "talentChanged": false
+      "name": "Burn Notice",
+      "description": "Basic Attacks Slow enemies by 5% and deal an additional 18 damage over 2.5 seconds. Stacks up to 5 times.",
+      "image": "talent_autoattack_slow.png",
+      "talentChanged": true
     },
     {
       "name": "Collision Course",
-      "description": "Jet Propulsion's collision deals 275 damage to the first enemy Hero hit.",
+      "description": "Jet Propulsion deals {highlight}10% of target maximum health{/highlight}",
       "image": "blaze_jet.png",
-      "talentChanged": false
+      "talentChanged": true
     }
   ],
   "16": [
@@ -168,9 +162,9 @@
     },
     {
       "name": "Heat Treatment",
-      "description": "Heal for 75% of the damage dealt by Pyromania.",
+      "description": "Heal for 75% of the damage dealt by Pyromania.{highlight} Damaging enemy heroes with Pyromania reduces it's cooldown by 2 for each hero hit{/highlight}",
       "image": "blaze_pyromania.png",
-      "talentChanged": false
+      "talentChanged": true
     },
     {
       "name": "Juggernaut Plating",
@@ -194,10 +188,17 @@
       "talentChanged": false
     },
     {
-      "name": "Burn Notice",
-      "description": "Basic Attacks Slow enemies by 5% and deal an additional 18 damage over 2.5 seconds. Stacks up to 5 times.",
-      "image": "talent_autoattack_slow.png",
-      "talentChanged": false
+      "name": "Nitro Propulsion",
+      "description": "{highlight}Activate to empower your next Jet Propulsion. Increasing the speed and impact radius greatly{/highlight}",
+      "image": "blaze_jet.png",
+      "cooldown": "60 seconds",
+      "talentChanged": true
+    },
+    {
+      "name": "You're fired",
+      "description": "{highlight}Reduces Flame Stream cooldown to 2 seconds and another 1 second each time Flame Stream does bonus damage to a hero{/highlight}",
+      "image": "blaze_flame.png",
+      "talentChanged": true
     }
   ]
 }

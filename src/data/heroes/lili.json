@@ -79,7 +79,7 @@
             },
             {
               "change_id": "lili_6",
-              "name": "New: Fast as the feet",
+              "name": "New: <modified, talents, 1, 2>",
               "texts": [
                 {
                   "text": "<vanilla, abilities, trait, 0> increase self and <vanilla, abilities, basic, 1> attack speed by 25%"
@@ -138,7 +138,7 @@
             },
             {
               "change_id": "lili_10",
-              "name": "New: Spill the tea",
+              "name": "New: <modified, talents, 4, 1>",
               "texts": [
                 {
                   "text": "<vanilla, abilities, basic, 0> now heals an area around the hero by 50% applying cups to everyone"
@@ -150,7 +150,7 @@
             },
             {
               "change_id": "lili_11",
-              "name": "New: Tea time",
+              "name": "New: <modified, talents, 4, 2>",
               "texts": [
                 {
                   "text": "Tea table(Active|Toggle): The next <vanilla, abilities, basic, 0> heals all heroes on range(18 seconds)"
@@ -203,7 +203,7 @@
           "changes": [
             {
               "change_id": "lili_15",
-              "name": "New: Don't stop, we need adventure!",
+              "name": "New: <modified, talents, 7, 2>",
               "texts": [
                 {
                   "text": "<vanilla, abilities, basic, 1> now cleanses roots, stuns and silence on cast and expire"
@@ -302,7 +302,7 @@
           "changes": [
             {
               "change_id": "lili_21",
-              "name": "New: Tea bagging",
+              "name": "New: <modified, talents, 20, 3>",
               "texts": [
                 {
                   "text": "Decrease the cups needed for Li Li to collect to 2"

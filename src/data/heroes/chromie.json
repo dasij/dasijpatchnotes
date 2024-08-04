@@ -32,7 +32,7 @@
           "changes": [
             {
               "change_id": "chromie_2",
-              "name": "NEW: It's Skill O'Clock",
+              "name": "NEW: <modified, talents, 7, 2>",
               "texts": [
                 {
                   "text": "Every 12 seconds resets Chromie basic abilities cooldown "
@@ -168,7 +168,7 @@
             },
             {
               "change_id": "chromie_10",
-              "name": "NEW: T-I-M-E TRAP(active)",
+              "name": "NEW: <modified, talents, 20, 3>",
               "texts": [
                 {
                   "text": "Chromie casts a giant time trap in target position that will detonate after 1.50 seconds making every hero in the area be on stasis for 0.75 seconds, this effect will be triggered 3 times sequentially. ",

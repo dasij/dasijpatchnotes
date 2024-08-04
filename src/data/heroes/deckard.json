@@ -53,7 +53,7 @@
             },
             {
               "change_id": "deckard_3",
-              "name": "New: Scroll of town portal",
+              "name": "New: <modified, talents, 1, 1>",
               "texts": [
                 {
                   "text": "Empowers Deckard Cain hearthstone by creating a portal on the the halls of the storm and original hearthstone location that allied heros can teleport from both positions. The portal lasts 6 seconds and will vanish after 3 uses.",
@@ -164,7 +164,7 @@
           "changes": [
             {
               "change_id": "deckard_10",
-              "name": "New: Hotbar",
+              "name": "New: <modified, talents, 13, 1>",
               "texts": [
                 {
                   "text": "Whenever an ally is healed by a <modified, abilities,  basic, 0> 0.5 seconds after it's cast grants 15 armor and 22.5% movement speed for 2 seconds"

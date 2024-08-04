@@ -76,10 +76,10 @@
       "talentChanged": true
     },
     {
-      "name": "MOLL-E Blingtron 5000 Gift(Active)",
+      "name": "MOLL-E Blingtron 5000 Gift",
       "description": "{highlight}Activate to put a Mailbox that will give a random item after 30 seconds. The item disappears after 60 seconds if not picked up and after 2 minutes if not used.{/highlight}",
-      "cooldown": 20,
       "image": "talent1.png",
+      "cooldown": "20 seconds",
       "talentChanged": true
     }
   ],
@@ -87,10 +87,7 @@
     {
       "name": "Mekgineer's Mount 5000",
       "description": "{highlight}Activate to make Gazlowe become unstoppable for 5 seconds. He can't be unmounted by damage while mounted and his mount speed increases to 150%. The effect is lost if Gazlowe dismounts{/highlight}",
-      "passives": [
-        "{highlight}Gazlowe's mount lets another hero mount together on a mining cart installed by Gazlowe. The allied hero will mount instantly on Gazlowe's cart without resetting their own mount cooldown{/highlight}"
-      ],
-      "cooldown": 30,
+      "cooldown": "30 seconds",
       "image": "talent1.png",
       "talentChanged": true
     },
@@ -116,7 +113,7 @@
     {
       "name": "Cardboard Assassin(active)",
       "description": "{highlight}If you hit Cardboard Assassin with Deth Lazor, it becomes Zapped and deals 40 damage per second to enemy heroes and taunts them for 0.5 seconds. After 3 seconds, it explodes.{/highlight}",
-      "cooldown": 10,
+      "cooldown": "10 seconds",
       "passives": [
         "{highlight}Deth Lazor cooldown is reduced by 2 seconds{/highlight}"
       ],

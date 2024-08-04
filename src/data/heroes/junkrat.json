@@ -45,7 +45,7 @@
         },
         {
           "change_id": "junkrat_1",
-          "change": "NEW: Frag mode(?)",
+          "change": "NEW: <modified, abilities, basic, 3>",
           "texts": [
             {
               "text": "Activate to make your next <vanilla, abilities, basic, 0> fire a continuous burst consuming all current charges.",
@@ -161,7 +161,7 @@
             },
             {
               "change_id": "junkrat_10",
-              "name": "NEW: More Powder!",
+              "name": "NEW: <modified, talents, 7, 2>",
               "texts": [
                 {
                   "text": "Enemies that are affected by <modified, abilities, basic, 2> and <modified, abilities, basic, 1> within 2 seconds one from the other take 6% maximum health damage",
