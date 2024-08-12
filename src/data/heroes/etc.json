@@ -95,7 +95,7 @@
               "name": "NEW: <modified, talents, 4, 2>",
               "texts": [
                 {
-                  "text": "Enemy heroes hit by E.T.C. basic attacks have their damage by 15% for 1.25 seconds and E.T.C. restores 6 mana"
+                  "text": "Enemy heroes hit by E.T.C. basic attacks have their damage reduced by 15% for 1.25 seconds and E.T.C. restores 6 mana"
                 }
               ],
               "developerCommentary": "I really wanted to make an alternative for basic attack E.T.C. focused on utility",

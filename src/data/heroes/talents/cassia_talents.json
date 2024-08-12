@@ -3,9 +3,9 @@
     "basic": [
       {
         "name": "Lightning Fury (Q)",
-        "description": "Hurl a lightning javelin that deals 158 damage to the first enemy hit and splits into two lightning bolts that deal 158 damage to enemies in their path.",
+        "description": "Hurl a lightning javelin that deals 158 damage to the first enemy hit and splits into two lightning bolts that deal 158 damage to enemies in their path. {highlight}Quest: Lightning Fury's damage is increased by 1.5 every time it hits a Hero.{/highlight}",
         "image": "cassia_lightningfury.png",
-        "abilityChanged": false,
+        "abilityChanged": true,
         "manaCost": "20 Mana",
         "cooldown": "5s"
       },
@@ -53,63 +53,75 @@
   },
   "1": [
     {
-      "name": "Thunderstroke",
-      "description": "Increase the damage of Lightning Fury by 15.Quest: Lightning Fury's damage is increased by 1.5 every time it hits a Hero.",
-      "image": "cassia_lightningfury.png",
-      "talentChanged": false
-    },
-    {
-      "name": "Impale",
-      "description": "Increase Fend's cast range and area of effect by 25%. It deals an additional 50% damage to enemies below 50% Health.",
+      "name": "Skovo's Pride",
+      "description": "{highlight}Fend now stuns the target for 0.75 seconds. If the target health is below 35% Fend will deal additional damage 50% damage and grant Cassia protected while Channeling{/highlight}",
       "image": "cassia_fend.png",
-      "talentChanged": false
+      "talentChanged": true
     },
     {
-      "name": "Charged Strikes",
-      "description": "Gain 15% Attack Speed. Every 3rd Basic Attack deals 20% bonus damage and bounces to nearby enemy Heroes.",
-      "image": "cassia_new_chargedstrikes.png",
-      "talentChanged": false
+      "name": "Ring of Leech",
+      "description": "{highlight}Fend heals 40% of the damage done the effect is double if the target is blinded.{/highlight}",
+      "passives": [
+        "{highlight} Increase Fend area of effect by 25%{/highlight}"
+      ],
+      "image": "cassia_fend.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Valkyrie's Charge",
+      "description": "{highlight}Increase Fend cast range by 70%. Cassia now travels through terrain while charging{/highlight}",
+      "image": "cassia_fend.png",
+      "talentChanged": true
     }
   ],
   "4": [
     {
-      "name": "Plate of the Whale",
-      "description": "Regenerate 6 Health per second while Avoidance is active. If fully charged, gain an additional 12 Health per second.",
+      "name": "Surge of Light",
+      "description": "After taking 650 damage with Avoidance active, Cassia can activate Avoidance to deal 220 damage to enemies around her.",
       "image": "cassia_avoidance_b.png",
-      "talentChanged": false
+      "talentChanged": true
     },
     {
-      "name": "Ring of the Leech",
-      "description": "Basic Attacks against your primary target heal for 20% of their damage. If an enemy is Blinded, this also affects Lightning Fury and Fend.",
-      "image": "cassia_ringoftheleech.png",
-      "talentChanged": false
+      "name": "Charged Strikes",
+      "description": "Gain 15% Attack Speed. Every 3rd Basic Attack deals 20% bonus damage and bounces to nearby enemy Heroes. {highlight}Each enemy hero hit reduces Cassia cooldowns by 0.3 seconds and restores 10 mana{/highlight}",
+      "image": "cassia_new_chargedstrikes.png",
+      "talentChanged": true
     },
     {
       "name": "Inner Light",
       "description": "Activate to heal for 25% of your maximum Health over 5 seconds. Enemy Heroes hit with Lightning Fury lower the cooldown of this ability by 10 seconds.",
       "image": "cassia_innerlight.png",
-      "talentChanged": false,
-      "cooldown": "70s"
+      "talentChanged": true,
+      "cooldown": "70s",
+      "passives": [
+        "{highlight}Increase Lightning Fury damage by 25% while active{/highlight}"
+      ]
     }
   ],
   "7": [
     {
-      "name": "Grounding Rod",
-      "description": "Enemies hit by Lightning Fury or Fend are Slowed by 20% for 2 seconds.",
-      "image": "cassia_combo_q_e.png",
-      "talentChanged": false
+      "name": "Zerae's boon",
+      "description": "{highlight}After 0.75 a lightning javelin will struck the center of the affected area making enemey heroes disoriented for 1.5 seconds.{/highlight}",
+      "image": "cassia_blindinglight.png",
+      "talentChanged": true
     },
     {
       "name": "Seraph's Hymn",
-      "description": "Basic Attacks against your primary enemy Hero grant 10 Mana and reduce the cooldown of Blinding Light by 2 seconds.Passive: Increase the passive damage bonus of Blinding Light from 15% to 30%.",
+      "description": "{highlight}Blinding Light persists on the area for 1.5 seconds extending any blind duration.{/highlight}",
       "image": "cassia_blindinglight.png",
-      "talentChanged": false
+      "talentChanged": true,
+      "passives": [
+        "Increase the passive damage bonus of Blinding Light from 15% to 30%"
+      ]
     },
     {
-      "name": "Surge of Light",
-      "description": "After taking 650 damage with Avoidance active, Cassia can activate Avoidance to deal 220 damage to enemies around her.",
-      "image": "cassia_avoidance_b.png",
-      "talentChanged": false
+      "name": "Plate of the Whale",
+      "description": "{highlight}Blinding Light grants 20 shield for 3 seconds for every enemy hit this bonus is tripled if it's an hero up to 180.{/highlight}",
+      "image": "cassia_blindinglight.png",
+      "talentChanged": true,
+      "passives": [
+        "Regenerate 6 Health per second while Avoidance is active. If fully charged gain an additional 12 Health per second."
+      ]
     }
   ],
   "10": [
@@ -132,10 +144,10 @@
   ],
   "13": [
     {
-      "name": "War Matron",
-      "description": "Cassia becomes Protected while Channeling Fend and for an additional 1 second if the Channel is completed.",
+      "name": "Athulua's Fury",
+      "description": "{highlight}Fend now knocks back enemies at the end of its channel slowing them for 30% for 2 seconds and deal extra 6% of his maximum health damage if he is blinded.{/highlight}",
       "image": "cassia_fend.png",
-      "talentChanged": false
+      "talentChanged": true
     },
     {
       "name": "War Traveler",
@@ -144,10 +156,11 @@
       "talentChanged": false
     },
     {
-      "name": "Gloves Of Alacrity",
-      "description": "Gain 1 Basic Attack range. While Avoidance is fully charged, gain an additional 1 Basic Attack range.",
-      "image": "cassia_new_gloves.png",
-      "talentChanged": false
+      "name": "Rockstopper",
+      "description": "Activate to fully charge Avoidance and increase its Armor value to {highlight}40{/highlight} for 4 seconds. Losing Avoidance removes this bonus.",
+      "image": "cassia_avoidance.png",
+      "talentChanged": true,
+      "cooldown": "30s"
     }
   ],
   "16": [
@@ -164,10 +177,10 @@
       "talentChanged": false
     },
     {
-      "name": "Martial Law",
-      "description": "Basic Attacks against enemy Heroes deal bonus damage equal to 1% of their maximum Health. Increase this to 3% if they are Stunned, Rooted, Slowed, or Blinded.",
-      "image": "talent_autoattack_searing.png",
-      "talentChanged": false
+      "name": "Gloves of Alacrity",
+      "description": "{highlight}Hitting enemy heroes with Lightning Fury empowers Cassia next basic attack with 3 extra range and extra 6% of their maximum health as damage.{/highlight}",
+      "image": "cassia_new_gloves.png",
+      "talentChanged": true
     }
   ],
   "20": [
@@ -185,16 +198,15 @@
     },
     {
       "name": "Titan's Revenge",
-      "description": "Cassia's Basic Attacks now ignore Armor and while Avoidance is fully charged, they deal an additional 20% bonus damage.",
+      "description": "Cassia's Basic Attacks now ignore Armor{highlight} and empowers the next Lightning Fury increasing its speed and max range by 30%.{/highlight}",
       "image": "cassia_avoidance_b.png",
-      "talentChanged": false
+      "talentChanged": true
     },
     {
-      "name": "Rockstopper",
-      "description": "Activate to fully charge Avoidance and increase its Armor value to 60 for 4 seconds.  Losing Avoidance removes this bonus.",
-      "image": "cassia_avoidance.png",
-      "talentChanged": false,
-      "cooldown": "30s"
+      "name": "War Matron",
+      "description": "{highlight}Receive all level 4 talents.{/highlight}",
+      "image": "cassia_ringoftheleech.png",
+      "talentChanged": true
     }
   ]
 }

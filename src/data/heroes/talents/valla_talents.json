@@ -46,69 +46,74 @@
     ],
     "trait": {
       "name": "Hatred (T)",
-      "description": " Basic Attacks grant a stack of Hatred, up to 10. Each Hatred stack increases Basic Attack damage by 8% and Movement Speed by 1%. Lasts 6 seconds.",
+      "description": "Basic Attacks grant a stack of Hatred, up to 10. Each Hatred stack increases Basic Attack damage by 8% and Movement Speed by 1%. Lasts 6 seconds.{highlight}If there's no allied heroes close to Valla she will receive extra 150% health regeneration {/highlight}",
       "image": "valla_hatred.png",
-      "abilityChanged": false
+      "abilityChanged": true
     }
   },
   "1": [
     {
-      "name": "Puncturing Arrow",
-      "description": "Increase the number of Hungering Arrow bounces by 1.Quest: Hitting an enemy Hero with the initial impact of Hungering Arrow refunds 40 Mana and permanently increases the damage of its initial impact by 6.",
-      "image": "valla_hungeringarrow.png",
-      "talentChanged": false
-    },
-    {
-      "name": "Fire At Will",
-      "description": "Quest: Hitting a Hero with Multishot grants 2 Hatred and permanently increases its damage by 2.Reward: After hitting 20 Heroes with Multishot, increase its damage by 40.",
-      "image": "valla_multishot.png",
-      "talentChanged": false
-    },
-    {
-      "name": "Creed of the Hunter",
-      "description": "Quest: Every 50 Basic Attacks against Heroes increases Hatred's damage bonus per stack by 1%, up to 6%.Gambit: Gain 25% bonus Attack Speed. Every death reduces this bonus by 5%.",
+      "name": "Steady Aim",
+      "description": "{highlight}If there are no enemy heroes within 5 range from Valla she deals extra 10% damage. At 10 maximum stacks of Hatred increase Valla Basic Attack Range by 10%.{/highlight}",
       "image": "valla_hatred.png",
-      "talentChanged": false
+      "talentChanged": true
+    },
+    {
+      "name": "Hot Pursuit",
+      "description": "{highlight}Valla's Hatred reaches maximum stacks on takedown participation. At 10 stacks, additional takedowns grant 5% movement speed and 10% attack speed bonuses to current Hatred stacks until expiration, stacks up to 5 times{/highlight}",
+      "passives": ["{highlight}Skills now reset Hatred duration.{/highlight}"],
+      "image": "valla_hatred.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Fire Support",
+      "description": "{highlight}At 10 stacks of Hatred, Valla's basic attacks explode on impact, dealing 20% of her basic attack damage to nearby enemies. Each enemy hit by these explosions reduces Valla's ability cooldowns by 0.1 seconds.{/highlight}",
+      "passives": [
+        "{highlight}Each stack of Hatred increase Valla mana regeneration by 20%.{/highlight}"
+      ],
+      "image": "valla_hatred.png",
+      "talentChanged": true
     }
   ],
   "4": [
     {
-      "name": "Arsenal",
-      "description": "Increase the range of Multishot by 20%. Multishot also fires 3 grenades that deal 100 damage and refund 25 Mana after hitting enemy Heroes.",
-      "image": "valla_multishot.png",
-      "talentChanged": false
+      "name": "Entangling Shot",
+      "description": "{highlight}Hungering arrow now bounce only 1 time prioritizing other enemy heroes, the bounce speed will be increased by 400%. If it hits a second target it will slightly pull both targets towards the center of the hit.{/highlight}",
+      "image": "valla_hungeringarrow.png",
+      "talentChanged": true
     },
     {
-      "name": "Death Dealer",
-      "description": "Increase Vaults Basic Attack damage bonus from 6% to 15% per stack of Hatred. If this attack kills its victim within 1.5 seconds, the Mana cost and cooldown of Vault are refunded.Passive: Reduce the cooldown of Vault by 5 seconds.",
-      "image": "valla_vault.png",
-      "talentChanged": false
+      "name": "Bolas",
+      "description": "{highlight}Hungering arrow first hit will wrap an explosive bola on the first enemy hit. After 1.25 seconds that bola will explode dealing 140 damage and knockbacking close enemies{/highlight}",
+      "image": "valla_hungeringarrow.png",
+      "talentChanged": true
     },
     {
       "name": "Repeating Arrow",
-      "description": "Vault no longer has a Mana cost. Casting Vault resets the cooldown of Hungering Arrow.",
-      "image": "valla_repeatingarrow.png",
-      "talentChanged": false
+      "description": "Vault no longer has a Mana cost. Casting Vault resets the cooldown of Hungering Arrow. {highlight}Hungering arrow deals 150% extra damage to Mercenaries and Monsters and instantly kill troops.{/highlight}",
+      "image": "valla_hungeringarrow.png",
+      "talentChanged": true
     }
   ],
   "7": [
     {
-      "name": "Monster Hunter",
-      "description": "Hungering Arrow deals 150% additional damage to Minions, Mercenaries, and Monsters.",
-      "image": "valla_hungeringarrow.png",
-      "talentChanged": false
+      "name": "Death Dealer",
+      "description": "Increase Vaults Basic Attack damage bonus from 6% to 15% per stack of Hatred. If this attack kills its victim within 1.5 seconds, the Mana cost and cooldown of Vault are refunded. {highlight}Instantly kill troops{/highlight}",
+      "passives": ["Reduce the cooldown of Vault by 5 seconds."],
+      "image": "valla_vault.png",
+      "talentChanged": true
     },
     {
-      "name": "Frost Shot",
-      "description": "Multishot Slows enemies by 20% for 2.5 seconds. Hungering Arrows deals 25% more damage to Slowed enemies.",
-      "image": "valla_siphoningarrow.png",
-      "talentChanged": false
+      "name": "Smoke Screen",
+      "description": "{highlight}Becomes invisible during Vault and 0.25 seconds after{/highlight}",
+      "image": "valla_vault.png",
+      "talentChanged": true
     },
     {
-      "name": "Hot Pursuit",
-      "description": "Increase the Movement Speed bonus of each stack of Hatred to 2%.",
-      "image": "valla_hatred.png",
-      "talentChanged": false
+      "name": "Caltrops",
+      "description": "{highlight}Drop 3 Caltrops while Vaulting that deal 60 damage and Slow enemies by 20% for 1 second. Enemy hero hits by caltrops decrease Vault cooldown by 3.5 seconds{/highlight}",
+      "image": "valla_vault.png",
+      "talentChanged": true
     }
   ],
   "10": [
@@ -131,10 +136,11 @@
   ],
   "13": [
     {
-      "name": "Siphoning Arrows",
-      "description": "Hitting a Hero with Hungering Arrow heals Valla for 4% of her maximum Health, and Multishot heals for 2%.",
-      "image": "valla_siphoningarrow.png",
-      "talentChanged": false
+      "name": "Evasive fire",
+      "description": "Multishot heals for {highlight}4%{/highlight} of Valla maximum health per enemy hero hit{highlight} and slows them for 25% for 2.5 seconds.{/highlight}",
+      "passives": ["{highlight}Increases Multishot range by 25%{/highlight}"],
+      "image": "valla_multishot.png",
+      "talentChanged": true
     },
     {
       "name": "Tempered by Discipline",
@@ -152,16 +158,16 @@
   ],
   "16": [
     {
-      "name": "Punishment",
-      "description": "While at max Hatred, Multishot's cooldown recharges 50% faster.",
+      "name": "Arsenal",
+      "description": "{highlight}Grenades damage reduce targets armor by 10 for 3 seconds. Multiple grenade hits armor reduction stacks. If Valla hits an close enemy hero with Multishot she will dash a short distance backwards.{/highlight}",
       "image": "valla_multishot.png",
-      "talentChanged": false
+      "talentChanged": true
     },
     {
-      "name": "Seething Hatred",
-      "description": "While at max Hatred, increase all damage dealt by 10%.",
+      "name": "Awaraness",
+      "description": "{highlight}Maintaining maximum Hatred stacks for 5 seconds grants Valla Awareness. When Awareness is active, the next instance of fatal damage is prevented, healing Valla for 30% of her maximum Health, cleansing her from negative effects and making her invisible for 2 seconds.{/highlight}",
       "image": "valla_hatred.png",
-      "talentChanged": false
+      "talentChanged": true
     },
     {
       "name": "Manticore",
@@ -179,21 +185,24 @@
     },
     {
       "name": "Storm of Vengeance",
-      "description": "Basic Attacks against Heroes reduce the cooldown of Rain of Vengeance by 5 seconds.Passive: Each stack of Hatred increases your Attack Speed by 2%. While at max Hatred, gain an additional 30% Attack Speed.",
+      "description": "Basic Attacks against Heroes reduce the cooldown of Rain of Vengeance by 5 seconds.",
+      "passives": [
+        "{highlight}Valla deals 20% additional damage to enemies above 75% health.{/highlight}"
+      ],
       "image": "valla_rainofvengeance.png",
-      "talentChanged": false
+      "talentChanged": true
     },
     {
       "name": "Acrobat",
-      "description": "Gain 2 additional charges of Vault. Drop 3 Caltrops while Vaulting that deal 60 damage and Slow enemies by 40% for 1 second.",
+      "description": "Gain 2 additional charges of Vault.",
       "image": "valla_vault.png",
       "talentChanged": false
     },
     {
-      "name": "Farflight Quiver",
-      "description": "Gain 20% Basic Attack range. While at max Hatred, gain an additional 30% Basic Attack range.",
+      "name": "Vengeance",
+      "description": "{highlight}When an allied Hero is killed, Valla reveals the enemy Hero responsible for 5 seconds. During this time, Valla gains 25% increased attack range and damage against the revealed Hero. She will also be untargeatable to him{/highlight}",
       "image": "valla_hatred.png",
-      "talentChanged": false
+      "talentChanged": true
     }
   ]
 }

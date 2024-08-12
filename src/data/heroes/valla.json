@@ -1,44 +1,82 @@
 {
-  "id": 999,
+  "id": 80,
   "name": "VALLA",
-  "role": "",
+  "role": "Ranged Assassin",
   "image": "heroes_portraits/valla.webp",
-  "show": "false",
+  "show": "true",
   "patchNotes": [
     {
-      "id": 999,
-      "title": "",
+      "id": 80,
+      "title": "Talent Rework",
       "general": [
         {
-          "change_id": "valla_",
-          "change": "",
+          "change_id": "valla_1",
+          "change": "<vanilla, abilities, trait, 0>",
           "texts": [
             {
-              "text": ""
+              "text": "Additional functionality: If Valla there's no allied heros close to Valla she will receive extra 150% health regeneration"
             }
           ],
-          "developerCommentary": "",
+          "developerCommentary": "This is not made with balance purposes but rather the concept of her preference to work alone.",
           "likes": 0,
           "likedBy": {}
         }
       ],
-      "developerCommentary": "",
+      "developerCommentary": "One of the oldest heroes with the most solid kits on HOTS. My goal here is to make Valla more centered around basic attacks as her main damage with greater utility tools.",
       "sections": [
         {
           "name": "Level 1",
           "changes": [
             {
-              "change_id": "valla_",
-              "name": "",
+              "change_id": "valla_2",
+              "name": "<vanilla, talents, 1, 0> renamed to <modified, talents, 1, 0>",
               "texts": [
                 {
-                  "text": "",
+                  "text": "Changed functionality: If there are no enemy heros within 5 range from Valla she deals extra 10% damage."
+                },
+                {
+                  "text": "At 10 maximum stacks of <modified, abilities, trait, 0> increase Valla Basic Attack Range by 10%.",
                   "subtexts": [
-                    ""
+                    "This converts into 0.55 range, Valla attack range will be 5.5 + 0.55 | Tyrande has 6 range"
                   ]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "This is intended to bring changes to <vanilla, talents, 20, 3> AND more interactivity with the bonus range.",
+              "likes": 0,
+              "likedBy": {}
+            },
+
+            {
+              "change_id": "valla_3",
+              "name": "<vanilla, talents, 1, 1> renamed to <modified, talents, 1, 1>",
+              "texts": [
+                {
+                  "text": "Changed functionality: Valla's <modified, abilities, trait, 0> reaches maximum stacks on takedown participation. At 10 stacks, additional takedowns grant 4% movement speed and 10% attack speed bonuses to current <modified, abilities, trait, 0> stacks until expiration, stacks up to 5 times."
+                },
+                {
+                  "text": "Passive: Skills now reset <modified, abilities, trait, 0> duration."
+                }
+              ],
+              "developerCommentary": "<vanilla, talents, 7, 2> always felt good but in this case i am making the choice to change it for a more teamfight based because i just find it more fun.Inspired by Jinx passive 'Get Excited!' from League of Legends.",
+              "likes": 0,
+              "likedBy": {}
+            },
+
+            {
+              "change_id": "valla_4",
+              "name": "<vanilla, talents, 1, 2> renamed to <modified, talents, 1, 2>",
+              "texts": [
+                {
+                  "text": "Changed functionality: At 10 stacks of <modified, abilities, trait, 0> Valla auto attacks will dealing 20% of her basic attack damage and doing damage around the target. For each each enemy hit by this explosions reduce her cooldowns by 0.1 seconds",
+                  "subtexts": [
+                    "Radius will be 2.0 same as <vanilla, talents, 13, 0, the-butcher>"
+                  ]
+                },
+                {
+                  "text": "Passive: Each stack of <modified, abilities, trait, 0> increase Valla mana regeneration by 20%."
+                }
+              ],
+              "developerCommentary": "As mentioned one of my objective is to relate Valla mage path mixed with Auto Attacking.",
               "likes": 0,
               "likedBy": {}
             }
@@ -48,17 +86,59 @@
           "name": "Level 4",
           "changes": [
             {
-              "change_id": "valla_",
-              "name": "",
+              "change_id": "valla_5",
+              "name": "<vanilla, talents, 4, 0> renamed to <modified, talents, 4, 0>",
               "texts": [
                 {
-                  "text": "",
+                  "text": "Changed functionality: <modified, abilities, basic, 0> now bounce only 1 time prioritizing other enemy heroes, the bounce speed will be increased by 400%. If it hits a second target it will slightly pull both targets towards the center of the hit.",
                   "subtexts": [
-                    ""
+                    "Pull duration: 0.21875 that's half of <vanilla, abilities, basic, 2, kelthuzad>",
+                    "Pull speed: 11 that's half of <vanilla, abilities, basic, 2, kelthuzad>"
                   ]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "I always liked the concept of Entangling Shot from Diablo 3 and i want to bring a variety of options on how you want that to perform. I got also inspired by Dota 2 Windranger to upt it here",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "valla_6",
+              "name": "NEW: <modified, talents, 4, 1>",
+              "texts": [
+                {
+                  "text": "<modified, abilities, basic, 0> first hit will wrap an explosive bola on the first enemy hit. After 1.25 seconds that bola will explode dealing 140 damage and knockbacking close enemies",
+                  "subtexts": [
+                    "Radius will be 2.5 | <vanilla, talents, 13, 0, the-butcher> is 2.0",
+                    "Knockback duration: 0.25 same <vanilla, talents, 4, 0, dehaka>",
+                    "Knockback speed: 10 same from <vanilla, talents, 4, 0, dehaka>"
+                  ]
+                }
+              ],
+              "developerCommentary": "This is a variation on <modified, talents, 4, 0> to how you want to control it.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "valla_7",
+              "name": "<vanilla, talents, 4, 2>",
+              "texts": [
+                {
+                  "text": "Additional functionality: <modified, abilities, basic, 0> deals 150% extra damage to Mercenaries and Monsters and instantly kill troops."
+                }
+              ],
+              "developerCommentary": "By removing <vanilla, talents, 1, 0> the value of <vanilla, talents, 4, 2> is decreased and with the intent to prevent the combo talent pick <vanilla, talents, 7, 0> im mixing both",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "valla_8",
+              "name": "<vanilla, talents, 4, 1>",
+              "texts": [
+                {
+                  "text": "Moved to level 7"
+                }
+              ],
+              "developerCommentary": "Bringing that to level 7 as part of the <modified, abilities, basic, 2> tier",
               "likes": 0,
               "likedBy": {}
             }
@@ -68,37 +148,56 @@
           "name": "Level 7",
           "changes": [
             {
-              "change_id": "valla_",
-              "name": "",
+              "change_id": "valla_9",
+              "name": "<vanilla, talents, 4, 1>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "text": "Additional functionality: Now instantly kill troops"
+                },
+                {
+                  "text": "Moved from level 4"
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "Giving it the ability to instantly kill troops to further incentivize troops reset mid-fight",
               "likes": 0,
               "likedBy": {}
-            }
-          ]
-        },
-        {
-          "name": "Level 10",
-          "changes": [
+            },
             {
-              "change_id": "valla_",
-              "name": "",
+              "change_id": "valla_10",
+              "name": "<vanilla, talents, 7, 0> renamed to <modified, talents, 7, 0>",
               "texts": [
                 {
-                  "text": "",
+                  "text": "Changed functionality: Becomes invisible during Vault and 0.25 seconds after"
+                }
+              ],
+              "developerCommentary": "I saw that and i kinda liked as invisible is kinda weaker on Heroes of the Storm i don't see a great problem with that thus Vault being really quick. I tried to compare it with Vayne from League of Legends and Kai'sa so by making that invisible reveable with damage it's little weaker.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "valla_11",
+              "name": "<vanilla, talents, 7, 1> renamed to <modified, talents, 7, 1>",
+              "texts": [
+                {
+                  "text": "Changed functionality: Drop 3 Caltrops while Vaulting that deal 60 damage and Slow enemies by 20% for 1 second. Enemy hero hits by caltrops decrease <modified, abilities, basic, 2> cooldown by 3.5 seconds",
                   "subtexts": [
-                    ""
+                    "Duration will be 6 seconds. <vanilla, talents, 20, 2> is 10 seconds."
                   ]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "A second defensive option for <modified, abilities, basic, 2> intended to bring the talent from level 20 that in my opinion doesn't quite make the effect for a storm tier talent.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "valla_12",
+              "name": "<vanilla, talents, 7, 2>",
+              "texts": [
+                {
+                  "text": "Removed."
+                }
+              ],
+              "developerCommentary": "Changed it to the new <modified, talents, 1, 1>",
               "likes": 0,
               "likedBy": {}
             }
@@ -108,17 +207,17 @@
           "name": "Level 13",
           "changes": [
             {
-              "change_id": "valla_",
-              "name": "",
+              "change_id": "valla_13",
+              "name": "<vanilla, talents, 13, 0> renamed to <modified, talents, 13, 0>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "text": "Changed functionality: <modified, abilities, basic, 1> heals for 4% of Valla maximum health per enemy hero hit and slows them for 25% for 2.5 seconds. "
+                },
+                {
+                  "text": "Increases <modified, abilities, basic, 1> range by 25% "
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "I didn't want to remove <vanilla, talents, 13, 0> complete effect so with that in mind i wanted to bring something to make it differs from the other talents. It will work close to how <vanilla, talents, 4, 1, orphea> works",
               "likes": 0,
               "likedBy": {}
             }
@@ -128,17 +227,39 @@
           "name": "Level 16",
           "changes": [
             {
-              "change_id": "valla_",
-              "name": "",
+              "change_id": "valla_14",
+              "name": "<vanilla, talents, 16, 0> renamed to <modified, talents, 16, 0>",
               "texts": [
                 {
-                  "text": "",
+                  "text": "Additional functionality: Grenades damage reduce targets armor by 10 for 3 seconds. Multiple grenade hits armor reduction stacks",
                   "subtexts": [
-                    ""
+                    "A Hero can be hit by any of the grenades more than once now.",
+                    "Will have the same range even if <modified, talents 13, 0> is not picked"
+                  ]
+                },
+                {
+                  "text": "Additional functionality: If Valla hits an close enemy hero with <modified, abilities, basic, 1> she will dash a short distance backwards.",
+                  "subtexts": [
+                    "Multishot has a 3.0 initial and a 8.75 maximum radius on 50º degrees the effect will activated if an enemy hero is hit between the 3.0 and 4.5 radius.",
+                    "Knockback duration: 0.15 same <vanilla, talents, 4, 0, dehaka>",
+                    "Knockback speed: 35 | <vanilla, talents, 4, 0, dehaka> is 10. The objective is to achieve the same <vanilla, abilities, basic, 1, sgt-hammer> knockback distance on a faster time"
                   ]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "I wanted to make Arsenal self-sufficient",
+              "likes": 0,
+              "likedBy": {}
+            },
+
+            {
+              "change_id": "valla_15",
+              "name": "<vanilla, talents, 16, 1> renamed to <modified, talents, 16, 1>",
+              "texts": [
+                {
+                  "text": "Maintaining maximum <modified, abilities, trait, 0> stacks for 5 seconds grants Valla Awareness. When Awareness is active, the next instance of fatal damage is prevented, healing Valla for 30% of her maximum Health, cleansing her from negative effects and making her invisible for 2 seconds."
+                }
+              ],
+              "developerCommentary": "My intent was to bring it as a revive talent for Valla since it's based on her passive skills from Diablo 3 but i like to make every revive distinct in it's own manners with tha mind i tied her revive to her passive making it a weaker but not necessarily bad.",
               "likes": 0,
               "likedBy": {}
             }
@@ -148,17 +269,43 @@
           "name": "Level 20",
           "changes": [
             {
-              "change_id": "valla_",
-              "name": "",
+              "change_id": "valla_16",
+              "name": "<vanilla, talents, 20, 1>",
               "texts": [
                 {
-                  "text": "",
+                  "text": "Changed Passive: Valla deals 20% additional damage to enemies above 75% health."
+                }
+              ],
+              "developerCommentary": "I wanted to bring the extra attack speed to it's own niche and with that i swapped the attack speed with the Ambush effect from her Diablo 3 passive skills",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "valla_18",
+              "name": "<vanilla, talents, 20, 2>",
+              "texts": [
+                {
+                  "text": "No longer gives caltrops"
+                }
+              ],
+              "developerCommentary": "With the new <modified, abilities, basic, 2> this talent is strong on it's own even without the caltrops",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "valla_17",
+              "name": "<vanilla, talents, 20, 3> renamed to <modified, talents, 20, 3>",
+              "texts": [
+                {
+                  "text": "Changed Functionality: When an allied Hero is killed, Valla reveals the enemy Hero responsible for 5 seconds. During this time, Valla gains 25% increased attack range and damage against the revealed Hero. She will also be untargeatable to him",
                   "subtexts": [
-                    ""
+                    "This effect will only be counted against the hero who had the last hit.",
+                    "If the Boss killed the allied hero Valla will receive the bonus against it",
+                    "This effect stacks, be careful Li-Ming"
                   ]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "There's no secrets here just Vengeance for murky deaths.",
               "likes": 0,
               "likedBy": {}
             }

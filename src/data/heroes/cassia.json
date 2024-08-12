@@ -3,40 +3,79 @@
   "name": "CASSIA",
   "role": "Ranged Assassin",
   "image": "heroes_portraits/cassia.webp",
-  "show": "false",
+  "show": "falses",
   "patchNotes": [
     {
       "id": 13,
-      "title": "",
+      "title": "Talent Rework",
       "general": [
         {
-          "change_id": "cassia_",
-          "change": "",
+          "change_id": "cassia_1",
+          "change": "<vanilla, abilities, basic, 0> ",
           "texts": [
             {
-              "text": ""
+              "text": "Additional functionality: Quest: <modified, abilities, basic, 0> damage is increased by 1.5 every time it hits a Hero."
             }
           ],
-          "developerCommentary": "",
+          "developerCommentary": "This quest is fun. I am bringing it baseline to also help me better build my new Cassia.",
           "likes": 0,
           "likedBy": {}
         }
       ],
-      "developerCommentary": "",
+      "developerCommentary": "Cassia is on a strange place she usually fluctuate between extremely overpowered or weak and that lies on the fact she is one of the few assassins that has self-armor and a consistent one. My objective here is not to be conscious about that balancing creep but rather bring his <modified, abilities, basic, 2> more utility and give her more variety on builds to standard maps",
       "sections": [
         {
           "name": "Level 1",
           "changes": [
             {
-              "change_id": "cassia_",
-              "name": "",
+              "change_id": "cassia_2",
+              "name": "<vanilla, talents, 1, 0> renamed to <modified, talents, 1, 0>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "<modified, abilities, basic, 2> now stuns the target for 0.75 seconds. If the target health is below 35% <modified, abilities, basic, 2> will deal additional damage 50% damage and grant Cassia protected while Channeling."
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "Bringing more variety to <modified, abilities, basic, 2>. This one is intended to be flexible to deal with mobile heroes and a finishing move.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "cassia_3",
+              "name": "<vanilla, talents, 1, 1> renamed to <modified, talents, 1, 1>",
+              "texts": [
+                {
+                  "text": "<modified, abilities, basic, 2> heals 40% of the damage done the effect is double if the target is blinded. Increase <modified, abilities, basic, 2> area of effect by 25%"
+                }
+              ],
+              "developerCommentary": "I am spreading healing focused talents between Cassia talent tree instead of focusing it on level 7. I think this one is a good option if you want to play safe",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "cassia_4",
+              "name": "<modified, talents, 1, 2>",
+              "texts": [
+                {
+                  "text": "Increase <modified, abilities, basic, 2> cast range by 70%. Cassia now travels through terrain while charging",
+                  "subtexts": [
+                    "If Cassia would stop at a terrain the travelling time will be increased until a valid position is found",
+                    "The range goes from 6.0 to 10.2 | <vanilla, abilities, trait, 0, anduin> is 10"
+                  ]
+                }
+              ],
+              "developerCommentary": "This is to elevate your psychopathy",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "cassia_16",
+              "name": "<vanilla, talents, 1, 2>",
+              "texts": [
+                {
+                  "text": "Moved to level 4"
+                }
+              ],
+              "developerCommentary": "With this tree being focused on <modified, abilities, basic, 2> i am bringing it to the powerhouse tier",
               "likes": 0,
               "likedBy": {}
             }
@@ -46,15 +85,56 @@
           "name": "Level 4",
           "changes": [
             {
-              "change_id": "cassia_",
-              "name": "",
+              "change_id": "cassia_5",
+              "name": "<vanilla, talents, 7, 2>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Moved from level 7"
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "This is the strongest talent on Cassia talent tree usually the one that balances Cassia between weak or overpowered. I am bringing it here to make level 4 the powerhouse tier where you select your damage playstyle.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "cassia_6",
+              "name": "<vanilla, talents, 1, 2>",
+              "texts": [
+                {
+                  "text": "Moved from level 1"
+                },
+                {
+                  "text": "additional functionality: Each enemy hero hit reduces Cassia cooldowns by 0.3 seconds and restores 10 mana",
+                  "subtexts": [
+                    "Only the bounce hits on enemy heroes will reduce Cassia cooldowns"
+                  ]
+                }
+              ],
+              "developerCommentary": "This additional buff is to compete as one of the power house on an all around style.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "cassia_7",
+              "name": "<vanilla, talents, 4, 2>",
+              "texts": [
+                {
+                  "text": "Additional functionality: Increase <modified, abilities, basic, 0>  damage by 25% while active"
+                }
+              ],
+              "developerCommentary": "Making Inner Light receive that bonus damage to compete as the more defensive powerhouse option",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "cassia_17",
+              "name": "<vanilla, talents, 4, 0>",
+              "texts": [
+                {
+                  "text": "Moved to level 7"
+                }
+              ],
+              "developerCommentary": "Spreading the healing options",
               "likes": 0,
               "likedBy": {}
             }
@@ -64,33 +144,48 @@
           "name": "Level 7",
           "changes": [
             {
-              "change_id": "cassia_",
-              "name": "",
+              "change_id": "cassia_8",
+              "name": "<vanilla, talents, 7, 0> renamed to <modified, talents, 7, 0>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "After 0.75 a lightning javelin will struck the center of the affected area making enemey heroes disoriented for 1.5 seconds.",
+                  "subtexts": [
+                    "Disoriented works similar to Gul'dan fear but will break the effect if the target takes damage after 0.5 of the effect starts."
+                  ]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "It seems fun. I always first looking to make it as a thunder bolt but sadly Cassia is not Zeus. Disoriented comes from the ideas of the possible effects that a lightning effect could do on an rpg and i wanted to not make stuns and bolts can't make targets sleep.",
               "likes": 0,
               "likedBy": {}
-            }
-          ]
-        },
-        {
-          "name": "Level 10",
-          "changes": [
+            },
             {
-              "change_id": "cassia_",
-              "name": "",
+              "change_id": "cassia_9",
+              "name": "<vanilla, talents, 7, 1>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "<modified, abilities, basic, 1> persists on the area for 1.5 seconds extending any blind duration. Passive: Increase the passive damage bonus of <modified, abilities, basic, 1> from 15% to 30%",
+                  "subtexts": [
+                    "It will still apply the base blind",
+                    "It will extend by stopping any blind status effect timer"
+                  ]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "I like the idea of making it also a zoning tool, the duration needs to be low just to prevent it to be more of a nuisance that it will alredy be.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "cassia_10",
+              "name": "<vanilla, talents, 4, 0>",
+              "texts": [
+                {
+                  "text": "Moved from level 4."
+                },
+                {
+                  "text": "Additional functionality: <modified, abilities, basic, 1> grants 20 shield for 3 seconds for every enemy hit this bonus is tripled if it's an hero up to 180."
+                }
+              ],
+              "developerCommentary": "Making the shield amounts low to balance with the base effect and also the passive armor but still making it effective to mitigate some damage.",
               "likes": 0,
               "likedBy": {}
             }
@@ -100,15 +195,45 @@
           "name": "Level 13",
           "changes": [
             {
-              "change_id": "cassia_",
-              "name": "",
+              "change_id": "cassia_11",
+              "name": "<vanilla, talents, 13, 0> renamed to <modified, talents, 13, 0>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "<modified, abilities, basic, 2> now knocks back enemies at the end of its channel slowing them for 30% for 2 seconds and deal extra 6% of his maximum health damage if he is blinded.",
+                  "subtexts": [
+                    "Knockback duration: 0.25 same <vanilla, abilities, basic, 0, lucio>",
+                    "Knockback speed: 16.5 | same <vanilla, abilities, basic, 0, lucio>"
+                  ]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "There's not much to say besides i found that idea to be cool",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "cassia_12",
+              "name": "<vanilla, talents, 20, 3>",
+              "texts": [
+                {
+                  "text": "Armor reduced from 60 to 40"
+                },
+                {
+                  "text": "Moved from level 20"
+                }
+              ],
+              "developerCommentary": "With the mix of <vanilla, talents, 13, 0> to <vanilla, talents, 1, 0> i am bringing it here to be the new defensive option as well i don't think this talent should belong to level 20 as it doesn't make the player feel powerful even tho it's a good talent.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "cassia_19",
+              "name": "<vanilla, talents, 13, 2>",
+              "texts": [
+                {
+                  "text": "Moved to level 16"
+                }
+              ],
+              "developerCommentary": "I want to make <modified, talents, 13, 1> the only talent about spacing on level 13",
               "likes": 0,
               "likedBy": {}
             }
@@ -118,15 +243,29 @@
           "name": "Level 16",
           "changes": [
             {
-              "change_id": "cassia_",
-              "name": "",
+              "change_id": "cassia_13",
+              "name": "<vanilla, talents, 13, 2>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Moved from level 13"
+                },
+                {
+                  "text": "Changed functionality: Hitting enemy heroes with <modified, abilities, basic, 0>  empowers Cassia next basic attack with 3 extra range and extra 6% of their maximum health as damage."
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "This new effect is to bring more synergy between <vanilla, abilities, basic, 0> between all level 16 talents while still retaining it's essence",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "cassia_20",
+              "name": "<vanilla, talents, 16, 2>",
+              "texts": [
+                {
+                  "text": "Removed."
+                }
+              ],
+              "developerCommentary": "Remade it on the new <modified, talents, 16, 2>",
               "likes": 0,
               "likedBy": {}
             }
@@ -136,15 +275,45 @@
           "name": "Level 20",
           "changes": [
             {
-              "change_id": "cassia_",
-              "name": "",
+              "change_id": "cassia_14",
+              "name": "<vanilla, talents, 20, 2>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Basic attacks won't deal extra damage anymore"
+                },
+                {
+                  "text": "Additional functionality: Basic attacks against heroes empowers the next <modified, abilities, basic, 0>  increasing its speed and max range by 30%.",
+                  "subtexts": [
+                    "Missile speed goes from 16 to 20.8",
+                    "Primary range goes from 11.1 to 14.43"
+                  ]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "The current talent effect is good BUT doesn't feel good for a level 20. What i mean is that usually level 20 talents FEEL strong and different..this adjustament is to bring that FEELING.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "cassia_15",
+              "name": "NEW: <modified, talents, 20, 3>",
+              "texts": [
+                {
+                  "text": "Receive all level 4 talents."
+                }
+              ],
+              "developerCommentary": "The sad thing about this talent is the description is short but the good thing is that this talent is absolutely nuts.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "cassia_18",
+              "name": "<vanilla, talents, 20, 3>",
+              "texts": [
+                {
+                  "text": "Moved to level 13."
+                }
+              ],
+              "developerCommentary": "Going to a more utility focused tier",
               "likes": 0,
               "likedBy": {}
             }

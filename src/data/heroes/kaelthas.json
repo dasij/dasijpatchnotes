@@ -1,44 +1,78 @@
 {
-  "id": 999,
+  "id": 36,
   "name": "KAELTHAS",
-  "role": "",
+  "role": "Ranged Assassin",
   "image": "heroes_portraits/kaelthas.webp",
-  "show": "false",
+  "show": "falses",
   "patchNotes": [
     {
-      "id": 999,
-      "title": "",
+      "id": 36,
+      "title": "Talent rework and hero mini-rework",
       "general": [
         {
-          "change_id": "kaelthas_",
-          "change": "",
+          "change_id": "kaelthas_0",
+          "change": "Base",
           "texts": [
             {
-              "text": ""
+              "text": "Increase Kael'thas maximum mana by 15 everytime he picks a regeneration globe"
             }
           ],
-          "developerCommentary": "",
+          "developerCommentary": "I want to make Kael'thas <vanilla, talents, 1, 2> more present on the character as baseline.",
+          "likes": 0,
+          "likedBy": {}
+        },
+        {
+          "change_id": "kaelthas_1",
+          "change": "<vanilla, abilities, trait, 0>",
+          "texts": [
+            {
+              "text": "Additional functionality: You can reactivate <vanilla, abilities, trait, 0> to instead consume it and restore 7.5% of your maximum mana"
+            }
+          ],
+          "developerCommentary": "I wanted to bring <vanilla, abilities, trait, 0> somehow an interaction for when you don't need the upgraded skill and bringing <vanilla, talents, 4, 2> effect here was a big one",
           "likes": 0,
           "likedBy": {}
         }
       ],
-      "developerCommentary": "",
+      "developerCommentary": "Kael'thas was an extremely strong champion in the early days but got heavily nerfed along the way as a countermeasure for better balance in lower ELO games and casual matches, as he was too disruptive in those. He suffered from being too effective against players who couldn't stay away when affected by Living Bomb. Nowadays, he is not only nerfed, but other champions more easily abuse his weaknesses as a mage, which has a low number of tools to deal with things like dive. For my changes, I will expand his talents, focusing on lore aspects, especially on how he can deal with Mana, as the Sin'dorei story is highly connected to mana addiction and usage.",
       "sections": [
         {
           "name": "Level 1",
           "changes": [
             {
-              "change_id": "kaelthas_",
-              "name": "",
+              "change_id": "kaelthas_2",
+              "name": "<vanilla, talents, 1, 0>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "text": "Additional functionality: Hitting 4 heros with a Flame Strike completes the quest and increases Kael'Thas maximum mana by 100."
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "I was thinking of swapping this quest to something similar to <vanilla, talents, 16, 1, thrall> but i think <vanilla, talents, 4, 0, maiev> will be more beneficial as <vanilla, talents, 1, 0> has a long story of being THAT talent and with the mix of the old <vanilla, talents, 1, 2> on the baseline character it becomes more doable",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "kaelthas_3",
+              "name": "<vanilla, talents, 1, 1> renamed to <modified, talents, 1, 1>",
+              "texts": [
+                {
+                  "text": "Changed functionality: Drops a mana cube that restores allied hero maximum mana by 5% of Kael'thas maximum mana to the first allied hero that enters in contact every time Kael'thas uses an ability or get a regeneration globe. Passive: <modified, abilities, trait, 0> cooldown is decreased by 3",
+                  "subtexts": ["Drops on a 3.0 range radius from Kael'thas"]
+                }
+              ],
+              "developerCommentary": "The mana cube lore was a very interesting bit and with the bringing of <vanilla, talents, 1, 2> as a baselina quest i found that a utility that like that could convey his lore and be strong with other mana hungry heroes like Malfurion",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "kaelthas_4",
+              "name": "<vanilla, talents, 1, 2>",
+              "texts": [
+                {
+                  "text": "Changed functionality: When Kael'thas has more than 80% of his maximum mana he receives 15% extra spell power but have 15% less spell power when his mana is lower than 25%."
+                }
+              ],
+              "developerCommentary": "Wanted to change the name Mana Addict closer to what i understand from the lore where the blood elves get sick with the lack of mana",
               "likes": 0,
               "likedBy": {}
             }
@@ -48,17 +82,31 @@
           "name": "Level 4",
           "changes": [
             {
-              "change_id": "kaelthas_",
-              "name": "",
+              "change_id": "kaelthas_5",
+              "name": "<vanilla, talents, 4, 1> renamed to <modified, talents, 4, 1>",
               "texts": [
                 {
-                  "text": "",
+                  "text": "Changed functionality: Exile enemy heros currently affected by <modified, abilities, basic, 2>  making them unable to be targeted by allied heroes. Also reduces their spell armor by 15 while affected"
+                }
+              ],
+              "developerCommentary": "I wanted to bring the Banish from Warcraft 3 somehow, first i wanted to make the base interaction and also give the power to affect allied heros BUT a commom thing i see people complaining is on forced-allied interactions so i rejected the idea because i do not think it conveys Kael'thas to make anything not forced on it's character fantasy so with that i came to that new debuff idea called EXILED that would be a untargetable but for the enemy team which i think it suits well the idea of banish as other heroes will only interact with yours with spells and we don't need slow it's movement speed as the target is stunned.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "kaelthas_6",
+              "name": "<vanilla, talents, 4, 2> renamed to <modified, talents, 4, 2>",
+              "texts": [
+                {
+                  "text": "Changed functionality: Drain the Mana from an enemy hero over 3 seconds. Draining 8% of the target current mana per second and restoring Kael'thas 8% maximum mana per second and half of his mana value to close heroes.",
                   "subtexts": [
-                    ""
+                    "Range 7.2 | <vanilla, abilities, basic, 1, guldan> range is 6.5",
+                    "Cooldown: 25 seconds",
+                    "Extra mana radius will be 4.0 | <vanilla, abilities, basic, 1, muradin> radius is 3.0"
                   ]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "I wanted to bring Mana drain similar to how it was on Warcraft 3 and make it possible to have a sucking team with Gul'dan and Kael'thas",
               "likes": 0,
               "likedBy": {}
             }
@@ -68,37 +116,15 @@
           "name": "Level 7",
           "changes": [
             {
-              "change_id": "kaelthas_",
-              "name": "",
+              "change_id": "kaelthas_7",
+              "name": "<vanilla, talents, 7, 2> renamed to <modified, talents, 7, 2>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "text": "Kael'thas can activate Arcane Barrier to gain a Shield equal to 100% of his maximum Mana for 4 seconds. Passive: Basic attacks against enemy heros increase Kael'Thas mana by 5 permanently",
+                  "subtexts": ["Cooldown: 45 seconds"]
                 }
               ],
-              "developerCommentary": "",
-              "likes": 0,
-              "likedBy": {}
-            }
-          ]
-        },
-        {
-          "name": "Level 10",
-          "changes": [
-            {
-              "change_id": "kaelthas_",
-              "name": "",
-              "texts": [
-                {
-                  "text": "",
-                  "subtexts": [
-                    ""
-                  ]
-                }
-              ],
-              "developerCommentary": "",
+              "developerCommentary": "With the removal of sunfire enchatmente i saw an opportunity to still have some advantage on basic attacks and bringing Mana Shield here",
               "likes": 0,
               "likedBy": {}
             }
@@ -108,17 +134,20 @@
           "name": "Level 13",
           "changes": [
             {
-              "change_id": "kaelthas_",
-              "name": "",
+              "change_id": "kaelthas_8",
+              "name": "<modified, talents, 13, 1>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "text": "Slow increased from 30% to 99%"
+                },
+                {
+                  "text": "Duration decreased from 2 seconds to 1.0 seconds"
+                },
+                {
+                  "text": "Slow is now decaying"
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "I want to make <vanilla, talents, 13, 1> a setup tool rather than a control talent",
               "likes": 0,
               "likedBy": {}
             }
@@ -128,17 +157,21 @@
           "name": "Level 16",
           "changes": [
             {
-              "change_id": "kaelthas_",
-              "name": "",
+              "change_id": "kaelthas_9",
+              "name": "<vanilla, talents, 16, 2> renamed to <modified, talents, 16, 2>",
               "texts": [
                 {
-                  "text": "",
+                  "text": "Changed functionality: Kael'thas swings his sword Felo'melorn, dealing 126 damage to nearby heroes and shooting a projectile that deals an extra 126 damage to the target hit, thus exploding the target's Living Bomb instantly with a 35% greater radius.",
                   "subtexts": [
-                    ""
+                    "Range 8.0 | <vanilla, abilities, basic, 0, valla> range is 11.0",
+                    "Cooldown: 45 seconds",
+                    "14 Missile Speed | <vanilla, abilities, basic, 0, valla> missile speed is 20.0",
+                    "Close attack radius is 3.0 | <vanilla, abilities, basic, 0, lucio> Radius is 4.5",
+                    "Close attack is 80 degrees | <vanilla, abilities, basic, 0, lucio> Arc is 80 degress"
                   ]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "He had an 1v1 Arthas on melee combat..We need to mention that",
               "likes": 0,
               "likedBy": {}
             }
@@ -148,17 +181,31 @@
           "name": "Level 20",
           "changes": [
             {
-              "change_id": "kaelthas_",
-              "name": "",
+              "change_id": "kaelthas_10",
+              "name": "<vanilla, talents, 20, 0> renamed to <modified, talents, 20, 0>",
               "texts": [
                 {
-                  "text": "",
+                  "text": "Changed functionality: Reactivate <modified, abilities, heroic, 0> with 80 mana cost to reposition it and increase it's duration by 2 seconds and it's attack speed by 20%. You can reposition it up to 10 times",
+                  "subtexts": ["0.5 second cooldown between repositions"]
+                }
+              ],
+              "developerCommentary": "With so many Talents based on Mana and the hard job to make <modified, abilities, heroic, 0> unique with the curret HOTS setup i find it to be perfect case scenario",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "kaelthas_11",
+              "name": "<vanilla, talents, 20, 1>",
+              "texts": [
+                {
+                  "text": "Changed functionality: <modified, abilities, heroic, 1> have the radius increased by 100%. If Kael'thas reactivate <modified, abilities, heroic, 1> while it's active it will instead split create smaller versions of <modified, abilities, heroic, 1> targeting every hero on the radius dealing 65% of the <modified, abilities, heroic, 1> damage.",
                   "subtexts": [
-                    ""
+                    "The smaller versions will have 50% of the original radius",
+                    "The speed of each split <modified, abilities, heroic, 1> will reset as if it was just cast"
                   ]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "Hard to increase the damage and resetting doesn't feel power enough. That's why i bring chaos player inputs",
               "likes": 0,
               "likedBy": {}
             }

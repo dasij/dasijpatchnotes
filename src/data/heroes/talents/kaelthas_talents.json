@@ -46,29 +46,29 @@
     ],
     "trait": {
       "name": "Verdant Spheres (T)",
-      "description": " Activate to make Kael'thas's next Basic Ability more powerful.",
+      "description": "Activate to make Kael'thas's next Basic Ability more powerful. {highlight}You can reactivate Verdant Spheres to consume it and restore 7.5% of your maximum mana{/highlight}",
       "image": "kaelthas_verdantspheres.png",
-      "abilityChanged": false
+      "abilityChanged": true
     }
   },
   "1": [
     {
       "name": "Convection",
-      "description": "Quest: Damaging an enemy Hero with Flamestrike increase its damage by 5, up to 100. This bonus is lost on death.Reward: After hitting 20 enemy Heroes, increase Flamestrike damage by an additional 100 and no longer lose any bonuses on death.",
+      "description": "Quest: Damaging an enemy Hero with Flamestrike increase its damage by 5, up to 100. This bonus is lost on death.Reward: After hitting 20 enemy Heroes, increase Flamestrike damage by an additional 100 and no longer lose any bonuses on death. {highlight}Hitting 4 heros with a Flame Strike completes the quest and increases Kael'Thas maximum mana by 100.{/highlight}",
       "image": "kaelthas_flamestrike.png",
-      "talentChanged": false
+      "talentChanged": true
     },
     {
-      "name": "Fel Infusion",
-      "description": "Increases Kael'thas's Spell Power by 4%. Kael'thas heals for 94 Health when activating Verdant Spheres.",
+      "name": "Mana Cubes",
+      "description": "{highlight}Drops a mana cube that restores allied hero maximum mana by 5% of Kael'thas maximum mana to the first allied hero that enters in contact every time Kael'thas uses an ability or get a regeneration globe. Passive: Verdant Spheres cooldown is decreased by 3{/highlight}",
       "image": "kaelthas_verdantspheres.png",
-      "talentChanged": false
+      "talentChanged": true
     },
     {
       "name": "Mana Addict",
-      "description": "Quest: Gathering a Regeneration Globe increases Kael'thas's maximum Mana by 15.Reward: After gathering 20 Globes, Kael'thas can activate Arcane Barrier to gain a Shield equal to 100% of his maximum Mana for 4 seconds. 45 second cooldown.",
+      "description": "{highlight}When Kael'thas has more than 80% of his maximum mana he receives 15% extra spell power but have 15% less spell power when his mana is lower than 25%.{/highlight}",
       "image": "kaelthas_manaaddict.png",
-      "talentChanged": false
+      "talentChanged": true
     }
   ],
   "4": [
@@ -79,16 +79,17 @@
       "talentChanged": false
     },
     {
-      "name": "Energy Roil",
-      "description": "Reduce the Mana cost of Gravity Lapse by 70.  If Gravity Lapse hits a Hero, reduce its cooldown by 8 seconds.",
+      "name": "Banish Lapse",
+      "description": "{highlight}Exile enemy heros currently affected by Gravity Lapse making them unable to be targeted by allied heroes. Also reduces their spell armor by 15 while affected{/highlight}",
       "image": "kaelthas_gravitylapse_a.png",
-      "talentChanged": false
+      "talentChanged": true
     },
     {
-      "name": "Mana Tap",
-      "description": "Activating Verdant Spheres restores 5% of Kael'thas's maximum Mana.",
-      "image": "kaelthas_verdantspheres.png",
-      "talentChanged": false
+      "name": "Mana Drain",
+      "description": "{highlight}Drain the Mana from an enemy hero over 3 seconds. Draining 8% of the target current mana per second and restoring Kael'thas 8% maximum mana per second and half of his mana value to close heores.{/highlight}",
+      "cooldown": "25 seconds",
+      "image": "manadrain.webp",
+      "talentChanged": true
     }
   ],
   "7": [
@@ -105,10 +106,14 @@
       "talentChanged": false
     },
     {
-      "name": "Sunfire Enchantment",
-      "description": "Activating Verdant Spheres causes Kael'thas's next 2 Basic Attacks to instead deal 115 Spell Damage.  If both of these Attacks hit enemy Heroes, gain 15% Spell Power for 10 seconds.",
-      "image": "kaelthas_verdantspheres.png",
-      "talentChanged": false
+      "name": "Mana Shield",
+      "description": "{highlight}Kael'thas can activate Arcane Barrier to gain a Shield equal to 100% of his maximum Mana for 4 seconds.{/highlight}",
+      "image": "kaelthas_manaaddict.png",
+      "cooldown": "45 seconds",
+      "talentChanged": true,
+      "passives": [
+        "{highlight}Basic attacks against enemy heros increase Kael'Thas magic mana by 5 permanently{/highlight}"
+      ]
     }
   ],
   "10": [
@@ -138,9 +143,9 @@
     },
     {
       "name": "Backdraft",
-      "description": "Living Bomb's explosion slows enemy Movement Speed by 30% for 2 seconds.",
+      "description": "Living Bomb's explosion slows enemy Movement Speed by {highlight}99%{/highlight} for {highlight}1.0 seconds{/highlight}, {highlight}decaying over the duration.{/highlight}",
       "image": "kaelthas_livingbomb_var1.png",
-      "talentChanged": false
+      "talentChanged": true
     },
     {
       "name": "Fission Bomb",
@@ -163,24 +168,25 @@
       "talentChanged": false
     },
     {
-      "name": "Twin Spheres",
-      "description": "Verdant Spheres gains a second charge.Passive: Kael'thas benefits from all of his level 7 talents.",
-      "image": "kaelthas_verdantspheres.png",
-      "talentChanged": false
+      "name": "Felo'Melorn",
+      "description": "{highlight}Kael'thas swings his sword Felo'melorn, dealing 126 damage to nearby heroes and shooting a projectile that deals an extra 126 damage to the target hit, thus exploding the target's Living Bomb instantly with a 35% greater radius.{/highlight}",
+      "cooldown": "45 seconds",
+      "image": "felomelorn.jpg",
+      "talentChanged": true
     }
   ],
   "20": [
     {
-      "name": "Rebirth",
-      "description": "Increases Phoenix duration by 100%. While alive, the Phoenix may be ordered to move to a different location.",
+      "name": "Arcane Phoenix",
+      "description": "{highlight}Reactivate Phoenix with 80 mana cost with 80 mana cost to reposition it and increase it's duration by 2 seconds and it's attack speed by 20%. You can reposition it up to 10 times{/highlight}",
       "image": "kaelthas_phoenix.png",
-      "talentChanged": false
+      "talentChanged": true
     },
     {
       "name": "Presence Of Mind",
-      "description": "Increases Pyroblast's explosion radius by 50%. Heroes that are hit by Flamestrike or have Living Bomb spread to them reduce the cooldown of Pyroblast by 10 seconds.",
+      "description": "{highlight}Pyroblast have the radius increased by 100%. If Kael'thas reactivate Pyroblast while it's active it will instead split create smaller versions of Pyroblast targeting every hero on the radius dealing 65% of the Pyroblast damage.{/highlight}",
       "image": "kaelthas_pyroblast.png",
-      "talentChanged": false
+      "talentChanged": true
     },
     {
       "name": "Master of Flames",

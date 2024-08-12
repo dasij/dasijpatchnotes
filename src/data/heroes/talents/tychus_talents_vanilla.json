@@ -124,7 +124,7 @@
     {
       "name": "Drakken Laser Drill",
       "description": "Call down a Laser Drill to attack nearby enemies, dealing 142 damage every second. Reactivate to assign a new target. Lasts 22 seconds.",
-      "image": "tychus_drakkinlaserdrill.png",
+      "image": "tychus_drakkenlaserdrill.png",
       "talentChanged": false,
       "manaCost": "100 Mana",
       "cooldown": "100s"
@@ -181,7 +181,7 @@
     {
       "name": "Focusing Diodes",
       "description": "Increases the range of the Drakken Laser Drill by 50%.  Deals increasing damage the longer it remains on a single target, up to 100% extra damage.",
-      "image": "tychus_drakkinlaserdrill.png",
+      "image": "tychus_drakkenlaserdrill.png",
       "talentChanged": false
     },
     {
