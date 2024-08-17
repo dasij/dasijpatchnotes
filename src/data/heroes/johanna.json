@@ -1,12 +1,12 @@
 {
-  "id": 999,
+  "id": 35,
   "name": "JOHANNA",
   "role": "",
   "image": "heroes_portraits/johanna.webp",
   "show": "false",
   "patchNotes": [
     {
-      "id": 999,
+      "id": 35,
       "title": "",
       "general": [
         {
@@ -33,9 +33,7 @@
               "texts": [
                 {
                   "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "subtexts": [""]
                 }
               ],
               "developerCommentary": "",
@@ -53,9 +51,7 @@
               "texts": [
                 {
                   "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "subtexts": [""]
                 }
               ],
               "developerCommentary": "",
@@ -73,9 +69,7 @@
               "texts": [
                 {
                   "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "subtexts": [""]
                 }
               ],
               "developerCommentary": "",
@@ -93,9 +87,7 @@
               "texts": [
                 {
                   "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "subtexts": [""]
                 }
               ],
               "developerCommentary": "",
@@ -113,9 +105,7 @@
               "texts": [
                 {
                   "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "subtexts": [""]
                 }
               ],
               "developerCommentary": "",
@@ -133,9 +123,7 @@
               "texts": [
                 {
                   "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "subtexts": [""]
                 }
               ],
               "developerCommentary": "",
@@ -153,9 +141,7 @@
               "texts": [
                 {
                   "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "subtexts": [""]
                 }
               ],
               "developerCommentary": "",

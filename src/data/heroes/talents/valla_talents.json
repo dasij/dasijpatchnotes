@@ -166,6 +166,7 @@
     {
       "name": "Awaraness",
       "description": "{highlight}Maintaining maximum Hatred stacks for 5 seconds grants Valla Awareness. When Awareness is active, the next instance of fatal damage is prevented, healing Valla for 30% of her maximum Health, cleansing her from negative effects and making her invisible for 2 seconds.{/highlight}",
+      "cooldown": "65s",
       "image": "valla_hatred.png",
       "talentChanged": true
     },

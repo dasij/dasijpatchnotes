@@ -54,7 +54,7 @@
   "1": [
     {
       "name": "Skovo's Pride",
-      "description": "{highlight}Fend now stuns the target for 0.75 seconds. If the target health is below 35% Fend will deal additional damage 50% damage and grant Cassia protected while Channeling{/highlight}",
+      "description": "{highlight}Fend now stuns the target for 0.75 seconds. If the target health is below 35% Fend will deal additional 50% damage and grant Cassia protected while Channeling{/highlight}",
       "image": "cassia_fend.png",
       "talentChanged": true
     },
@@ -76,6 +76,29 @@
   ],
   "4": [
     {
+      "name": "Plate of the Whale",
+      "description": "Regenerate 6 Health per second while Avoidance is active. If fully charged gain an additional 12 Health per second.",
+      "image": "cassia_avoidance.png",
+      "talentChanged": false
+    },
+    {
+      "name": "Zerae's boon",
+      "description": "{highlight}After 0.75 of casting Blinding Light a lightning javelin will struck the center of the affected area making enemey heroes disoriented for 1.5 seconds.{/highlight}",
+      "image": "cassia_blindinglight.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Seraph's Hymn",
+      "description": "{highlight}Blinding Light persists on the area for 1.5 seconds extending any blind duration.{/highlight}",
+      "image": "cassia_blindinglight.png",
+      "talentChanged": true,
+      "passives": [
+        "Increase the passive damage bonus of Blinding Light from 15% to 30%"
+      ]
+    }
+  ],
+  "7": [
+    {
       "name": "Surge of Light",
       "description": "After taking 650 damage with Avoidance active, Cassia can activate Avoidance to deal 220 damage to enemies around her.",
       "image": "cassia_avoidance_b.png",
@@ -95,32 +118,6 @@
       "cooldown": "70s",
       "passives": [
         "{highlight}Increase Lightning Fury damage by 25% while active{/highlight}"
-      ]
-    }
-  ],
-  "7": [
-    {
-      "name": "Zerae's boon",
-      "description": "{highlight}After 0.75 a lightning javelin will struck the center of the affected area making enemey heroes disoriented for 1.5 seconds.{/highlight}",
-      "image": "cassia_blindinglight.png",
-      "talentChanged": true
-    },
-    {
-      "name": "Seraph's Hymn",
-      "description": "{highlight}Blinding Light persists on the area for 1.5 seconds extending any blind duration.{/highlight}",
-      "image": "cassia_blindinglight.png",
-      "talentChanged": true,
-      "passives": [
-        "Increase the passive damage bonus of Blinding Light from 15% to 30%"
-      ]
-    },
-    {
-      "name": "Plate of the Whale",
-      "description": "{highlight}Blinding Light grants 20 shield for 3 seconds for every enemy hit this bonus is tripled if it's an hero up to 180.{/highlight}",
-      "image": "cassia_blindinglight.png",
-      "talentChanged": true,
-      "passives": [
-        "Regenerate 6 Health per second while Avoidance is active. If fully charged gain an additional 12 Health per second."
       ]
     }
   ],
@@ -204,7 +201,7 @@
     },
     {
       "name": "War Matron",
-      "description": "{highlight}Receive all level 4 talents.{/highlight}",
+      "description": "{highlight}Receive all level 7 talents.{/highlight}",
       "image": "cassia_ringoftheleech.png",
       "talentChanged": true
     }

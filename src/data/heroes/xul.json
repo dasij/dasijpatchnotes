@@ -1,23 +1,50 @@
 {
-  "id": 999,
+  "id": 83,
   "name": "XUL",
-  "role": "",
+  "role": "Bruiser",
   "image": "heroes_portraits/xul.webp",
-  "show": "false",
+  "show": "falses",
   "patchNotes": [
     {
-      "id": 999,
-      "title": "",
+      "id": 83,
+      "title": "Talent rework",
       "general": [
         {
-          "change_id": "xul_",
-          "change": "",
+          "change_id": "xul_1",
+          "change": "Base",
           "texts": [
             {
-              "text": ""
+              "text": "If Xul writes 'I Sense... Death' he will start seeing ghosts of every unit that have died within the last 8 seconds on a 10 radius."
+            },
+            {
+              "text": "Xul basic attack's with the Dagger deal 25% bonus damage over 3 seconds."
             }
           ],
-          "developerCommentary": "",
+          "developerCommentary": "This is just roleplay to reflect his connection with death and Poison Dagger",
+          "likes": 0,
+          "likedBy": {}
+        },
+        {
+          "change_id": "xul_3",
+          "change": "<vanilla, abilities, basic, 1>",
+          "texts": [
+            {
+              "text": "Additional functionality: Hitting enemy units reduce the cooldown by 0.2 seconds, up to 12 seconds. This bonus is increased to 1 second on enemy heroes."
+            }
+          ],
+          "developerCommentary": "The objective here is to make <modified, abilities, basic, 1> less frustating to use if you don't go for melee talents.",
+          "likes": 0,
+          "likedBy": {}
+        },
+        {
+          "change_id": "xul_2",
+          "change": "<vanilla, abilities, trait, 0>",
+          "texts": [
+            {
+              "text": "Additionarl functionality: Quest: Spawn 80 <vanilla, abilities, trait, 0>.Reward: While fixating on an enemy, <vanilla, abilities, trait, 0> gain 25% Movement and Attack Speed."
+            }
+          ],
+          "developerCommentary": "I am popping talents to deal with summoners on different characters and for this reason i don't want to fear them but rather go further on that concept.",
           "likes": 0,
           "likedBy": {}
         }
@@ -25,40 +52,64 @@
       "developerCommentary": "",
       "sections": [
         {
-          "name": "Level 1",
-          "changes": [
-            {
-              "change_id": "xul_",
-              "name": "",
-              "texts": [
-                {
-                  "text": "",
-                  "subtexts": [
-                    ""
-                  ]
-                }
-              ],
-              "developerCommentary": "",
-              "likes": 0,
-              "likedBy": {}
-            }
-          ]
-        },
-        {
           "name": "Level 4",
           "changes": [
             {
-              "change_id": "xul_",
-              "name": "",
+              "change_id": "xul_4",
+              "name": "<vanilla, talents, 4, 0> renamed to <modified, talents, 4, 0>",
               "texts": [
                 {
-                  "text": "",
+                  "text": "Changed functionality: Instead of summoning multiple <modified, abilities, trait, 0> in an area, Xul now accumulates them into a single, more powerful unit. For each accumulated Skeleton, the unit's stats increase by 50% of the base Skeleton's stats also increasing it's duration by 1 and stacking on-hit effects.",
                   "subtexts": [
-                    ""
+                    "The stats will be health, damage, explosion damage and size",
+                    "The on-hit effects means that if three <modified, abilities, trait, 0> stacked his hit will count as if it hit three times the same target.",
+                    "This will be prioritized before the <modified, abilities, trait, 0> limit so if you summon a 4th skeleton it will first check that talent before destroying a skeleton",
+                    "The check area will be 6.5 same as <vanilla, talents, 10, 1, blaze>",
+                    "Better details: Every time a Skeleton would be born it will first check if there's another skeletal warrior on the area if there is a skeleton alive instead of being summoned he will buff the alive skeletal",
+                    "Example: If Xul kills a minion wave instead of having 7 skeletons(that will be subsequentially killing each of other based on the limit of 3) he will summon 1 big skeleton with 200% more status"
                   ]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "In essence it's a way to bypass the <modified, abilities, trait, 0> summon limit while not making hordes of skeletons",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "xul_5",
+              "name": "<vanilla, talents, 7, 1>",
+              "texts": [
+                {
+                  "text": "Moved from level 7"
+                }
+              ],
+              "developerCommentary": "It's now the <modified, abilities, trait, 0> competition",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "xul_6",
+              "name": "<vanilla, talents, 4, 2>",
+              "texts": [
+                {
+                  "text": "Removed Quest"
+                },
+                {
+                  "text": "Additional functionality: <modified, abilities, trait, 0> hits against enemy heroes slow them by 5% for 3 seconds stacking up to 6 times"
+                }
+              ],
+              "developerCommentary": "With the removal of the quest to better balance all the talents from this level i bring the <vanilla, talents, 16, 0> effect to balance out.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "xul_7",
+              "name": "<vanilla, talents, 4, 1>",
+              "texts": [
+                {
+                  "text": "Removed"
+                }
+              ],
+              "developerCommentary": "Mixed it on other talents",
               "likes": 0,
               "likedBy": {}
             }
@@ -68,37 +119,43 @@
           "name": "Level 7",
           "changes": [
             {
-              "change_id": "xul_",
-              "name": "",
+              "change_id": "xul_8",
+              "name": "<vanilla, talents, 7, 0>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "text": "Additional functionality: Every time Xul is healed he receives 2.5% attack speed for 3 seconds up to 75%"
+                }
+              ],
+              "developerCommentary": "I made the core part of the <modified, abilities, basic, 1> build both on this talent and baseline BUT didn't made it on a commitment.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "xul_9",
+              "name": "<vanilla, talents, 7, 1>",
+              "texts": [
+                {
+                  "text": "Moved to level 4"
                 }
               ],
               "developerCommentary": "",
               "likes": 0,
               "likedBy": {}
-            }
-          ]
-        },
-        {
-          "name": "Level 10",
-          "changes": [
+            },
             {
-              "change_id": "xul_",
-              "name": "",
+              "change_id": "xul_10",
+              "name": "NEW: <modified, talents, 7, 1>",
               "texts": [
                 {
-                  "text": "",
+                  "text": "Additional functionality: <modified, abilities, basic, 2> reduces the target's vision radius by 25% and restricts them to their own vision only for 2.0 seconds.",
                   "subtexts": [
-                    ""
+                    "This effect cannot be cleansed.",
+                    "The affected hero loses access to allied vision but allies can still see through their vision.",
+                    "During this time, the target can only see what's within their own reduced vision radius."
                   ]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "I wanted to change the <vanilla, talents, 13, 2> effect into something different and that's it. I tried to balance the talent the better i could see it between being viable and not being detrimental.",
               "likes": 0,
               "likedBy": {}
             }
@@ -108,14 +165,50 @@
           "name": "Level 13",
           "changes": [
             {
-              "change_id": "xul_",
-              "name": "",
+              "change_id": "xul_11",
+              "name": "<vanilla, talents, 13, 0>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "text": "Additional functionality: Reduces <modified, abilities, basic, 0> cooldown by 2 seconds and mana cost by 15"
+                }
+              ],
+              "developerCommentary": "With the changes of other <modified, abilities, basic, 0> position on the talent tree this talent could get a little stronger",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "xul_19",
+              "name": "<vanilla, talents, 13, 1> renamed to <modified, talents, 13, 1>",
+              "texts": [
+                {
+                  "text": "Changed functionality: Enemy Heroes that are damage by <modified, abilities, basic, 0> have their physical armor reduced by 40 for 3 seconds. Passive: Increase <modified, abilities, basic, 0> size by 25%"
+                }
+              ],
+              "developerCommentary": "I was looking into the Diablo 2 skill tree and i saw lower resistence and decrepify effects and i wanted to go a little closer to its original concept of decrepify but with <modified, talents, 16, 1> damage reduction and some other slow talents i prefer to hold onto only the physical armor reduction.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "xul_12",
+              "name": "<vanilla, talents, 20, 2>",
+              "texts": [
+                {
+                  "text": "Moved from level 20"
+                },
+                {
+                  "text": "Healing reduction reduced to 50%"
+                }
+              ],
+              "developerCommentary": "Bringing this talent to level 13 with a little nerfs. This talent won't be so strong as before without <vanilla, talents, 13, 0> possibility so it's alredy a big nerf.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "xul_13",
+              "name": "<vanilla, talents, 13, 2>",
+              "texts": [
+                {
+                  "text": "Removed"
                 }
               ],
               "developerCommentary": "",
@@ -128,17 +221,29 @@
           "name": "Level 16",
           "changes": [
             {
-              "change_id": "xul_",
-              "name": "",
+              "change_id": "xul_14",
+              "name": "<vanilla, talents, 16, 0> renamed to <modified, talents, 16, 0>",
               "texts": [
                 {
-                  "text": "",
+                  "text": "Additional functionality: Receive all level 4 talents"
+                }
+              ],
+              "developerCommentary": "I saw my <modified, talents, 4, 0> and i wanted to make his super version and that's it.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "xul_15",
+              "name": "<vanilla, talents, 16, 2>",
+              "texts": [
+                {
+                  "text": "Additional functionality: Hitting an enemy hero currently affected by <modified, abilities, basic, 2> will destroy <modified, talents, 16, 2> reducing the target armor by 25 for 2 seconds and rooting close heroes for 1 second.",
                   "subtexts": [
-                    ""
+                    "Root area will be 3.0 same as <vanilla, abilities, basic, 1, muradin>"
                   ]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "I wanted to buff it somehow. Made it more flexible and predictable but stronger.",
               "likes": 0,
               "likedBy": {}
             }
@@ -148,14 +253,46 @@
           "name": "Level 20",
           "changes": [
             {
-              "change_id": "xul_",
-              "name": "",
+              "change_id": "xul_16",
+              "name": "<vanilla, talents, 20, 1>",
               "texts": [
                 {
-                  "text": "",
+                  "text": "Slow increase reduced from 20% to 10%"
+                },
+                {
+                  "text": "Receive all level 13 talents"
+                }
+              ],
+              "developerCommentary": "I wanted to increase the effectiviness of that talent BUT i didn't want to directly buff the current effects as they could become something 'not cool'. With that in mind i want bring those talents from 13 to suit the current effect. If this talent comes to be overpowered i would bring something like <vanilla, talents, 20, 2, kharazim> with the reduced effectiviness of those talents.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "xul_17",
+              "name": "NEW: <modified, talents, 20, 2>",
+              "texts": [
+                {
+                  "text": "Xul creates an area that controls life that lasts 10 seconds. Every allied hero that dies within this area will be reanimated restoring 100% of their maximum health but losing 6.25% of their maximum health every 0.25 seconds while on reanimated state.",
                   "subtexts": [
-                    ""
+                    "Cooldown: 120 seconds",
+                    "The reanimation will take effect after every death effect, so it will only revive Uther after his <vanilla, abilities, trait, 0, uther> expires and will activate his passive again after his reanimated form dies.",
+                    "Area of effect will be 7.0 | <vanilla, abilities, heroic, 1, blaze> is 6.5",
+                    "Their respawn timers will be active while they are reanimated",
+                    "Their soul will only be available after they reanimation ends. This is a interaction with <modified, abilities, heroic, 0, auriel> and <modified, talents, 13, 1, guldan>",
+                    "They will only be reanimated if they die on the area and will be reanimated on the exact same position"
                   ]
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "xul_18",
+              "name": "<vanilla, talents, 20, 2>",
+              "texts": [
+                {
+                  "text": "Moved from level 13"
                 }
               ],
               "developerCommentary": "",

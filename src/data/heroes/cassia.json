@@ -32,7 +32,7 @@
               "name": "<vanilla, talents, 1, 0> renamed to <modified, talents, 1, 0>",
               "texts": [
                 {
-                  "text": "<modified, abilities, basic, 2> now stuns the target for 0.75 seconds. If the target health is below 35% <modified, abilities, basic, 2> will deal additional damage 50% damage and grant Cassia protected while Channeling."
+                  "text": "Changed functionality: <modified, abilities, basic, 2> now stuns the target for 0.75 seconds. If the target health is below 35% <modified, abilities, basic, 2> will deal additional 50% damage and grant Cassia protected while Channeling."
                 }
               ],
               "developerCommentary": "Bringing more variety to <modified, abilities, basic, 2>. This one is intended to be flexible to deal with mobile heroes and a finishing move.",
@@ -44,7 +44,7 @@
               "name": "<vanilla, talents, 1, 1> renamed to <modified, talents, 1, 1>",
               "texts": [
                 {
-                  "text": "<modified, abilities, basic, 2> heals 40% of the damage done the effect is double if the target is blinded. Increase <modified, abilities, basic, 2> area of effect by 25%"
+                  "text": "Changed functionality: <modified, abilities, basic, 2> heals 40% of the damage done the effect is double if the target is blinded. Increase <modified, abilities, basic, 2> area of effect by 25%"
                 }
               ],
               "developerCommentary": "I am spreading healing focused talents between Cassia talent tree instead of focusing it on level 7. I think this one is a good option if you want to play safe",
@@ -53,7 +53,7 @@
             },
             {
               "change_id": "cassia_4",
-              "name": "<modified, talents, 1, 2>",
+              "name": "NEW: <modified, talents, 1, 2>",
               "texts": [
                 {
                   "text": "Increase <modified, abilities, basic, 2> cast range by 70%. Cassia now travels through terrain while charging",
@@ -72,7 +72,7 @@
               "name": "<vanilla, talents, 1, 2>",
               "texts": [
                 {
-                  "text": "Moved to level 4"
+                  "text": "Moved to level 7"
                 }
               ],
               "developerCommentary": "With this tree being focused on <modified, abilities, basic, 2> i am bringing it to the powerhouse tier",
@@ -85,17 +85,57 @@
           "name": "Level 4",
           "changes": [
             {
-              "change_id": "cassia_5",
-              "name": "<vanilla, talents, 7, 2>",
+              "change_id": "cassia_8",
+              "name": "<vanilla, talents, 4, 1> renamed to <modified, talents, 4, 1>",
               "texts": [
                 {
-                  "text": "Moved from level 7"
+                  "text": "Changed functionality: After 0.75 of casting <modified, abilities, basic, 1> a lightning javelin will struck the center of the affected area making enemey heroes disoriented for 1.5 seconds.",
+                  "subtexts": [
+                    "Disoriented works similar to Gul'dan fear but will break the effect if the target takes damage after 0.5 of the effect starts.",
+                    "2.5 radius the <modified, abilities, basic, 1> radius is 3.0"
+                  ]
                 }
               ],
-              "developerCommentary": "This is the strongest talent on Cassia talent tree usually the one that balances Cassia between weak or overpowered. I am bringing it here to make level 4 the powerhouse tier where you select your damage playstyle.",
+              "developerCommentary": "It seems fun. I always first looking to make it as a thunder bolt but sadly Cassia is not Zeus. Disoriented comes from the ideas of the possible effects that a lightning effect could do on an rpg and i wanted to not make stuns and bolts can't make targets sleep.",
               "likes": 0,
               "likedBy": {}
             },
+            {
+              "change_id": "cassia_9",
+              "name": "<vanilla, talents, 7, 1>",
+              "texts": [
+                {
+                  "text": "Moved from level 7"
+                },
+                {
+                  "text": "Changed functionality: <modified, abilities, basic, 1> persists on the area for 1.5 seconds extending any blind duration. Passive: Increase the passive damage bonus of <modified, abilities, basic, 1> from 15% to 30%",
+                  "subtexts": [
+                    "It will still apply the base blind",
+                    "It will extend by stopping any blind status effect timer"
+                  ]
+                }
+              ],
+              "developerCommentary": "I like the idea of making it also a zoning tool, the duration needs to be low just to prevent it to be more of a nuisance that it will alredy be.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "cassia_7",
+              "name": "<vanilla, talents, 4, 2>",
+              "texts": [
+                {
+                  "text": "Moved to level 7"
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 7",
+          "changes": [
             {
               "change_id": "cassia_6",
               "name": "<vanilla, talents, 1, 2>",
@@ -115,9 +155,10 @@
               "likedBy": {}
             },
             {
-              "change_id": "cassia_7",
+              "change_id": "cassia_5",
               "name": "<vanilla, talents, 4, 2>",
               "texts": [
+                { "text": "Moved from level 4" },
                 {
                   "text": "Additional functionality: Increase <modified, abilities, basic, 0>  damage by 25% while active"
                 }
@@ -126,66 +167,12 @@
               "likes": 0,
               "likedBy": {}
             },
-            {
-              "change_id": "cassia_17",
-              "name": "<vanilla, talents, 4, 0>",
-              "texts": [
-                {
-                  "text": "Moved to level 7"
-                }
-              ],
-              "developerCommentary": "Spreading the healing options",
-              "likes": 0,
-              "likedBy": {}
-            }
-          ]
-        },
-        {
-          "name": "Level 7",
-          "changes": [
-            {
-              "change_id": "cassia_8",
-              "name": "<vanilla, talents, 7, 0> renamed to <modified, talents, 7, 0>",
-              "texts": [
-                {
-                  "text": "After 0.75 a lightning javelin will struck the center of the affected area making enemey heroes disoriented for 1.5 seconds.",
-                  "subtexts": [
-                    "Disoriented works similar to Gul'dan fear but will break the effect if the target takes damage after 0.5 of the effect starts."
-                  ]
-                }
-              ],
-              "developerCommentary": "It seems fun. I always first looking to make it as a thunder bolt but sadly Cassia is not Zeus. Disoriented comes from the ideas of the possible effects that a lightning effect could do on an rpg and i wanted to not make stuns and bolts can't make targets sleep.",
-              "likes": 0,
-              "likedBy": {}
-            },
-            {
-              "change_id": "cassia_9",
-              "name": "<vanilla, talents, 7, 1>",
-              "texts": [
-                {
-                  "text": "<modified, abilities, basic, 1> persists on the area for 1.5 seconds extending any blind duration. Passive: Increase the passive damage bonus of <modified, abilities, basic, 1> from 15% to 30%",
-                  "subtexts": [
-                    "It will still apply the base blind",
-                    "It will extend by stopping any blind status effect timer"
-                  ]
-                }
-              ],
-              "developerCommentary": "I like the idea of making it also a zoning tool, the duration needs to be low just to prevent it to be more of a nuisance that it will alredy be.",
-              "likes": 0,
-              "likedBy": {}
-            },
+
             {
               "change_id": "cassia_10",
-              "name": "<vanilla, talents, 4, 0>",
-              "texts": [
-                {
-                  "text": "Moved from level 4."
-                },
-                {
-                  "text": "Additional functionality: <modified, abilities, basic, 1> grants 20 shield for 3 seconds for every enemy hit this bonus is tripled if it's an hero up to 180."
-                }
-              ],
-              "developerCommentary": "Making the shield amounts low to balance with the base effect and also the passive armor but still making it effective to mitigate some damage.",
+              "name": "<vanilla, talents, 7, 1>",
+              "texts": [{ "text": "Moved to level 4" }],
+              "developerCommentary": "",
               "likes": 0,
               "likedBy": {}
             }
@@ -199,7 +186,7 @@
               "name": "<vanilla, talents, 13, 0> renamed to <modified, talents, 13, 0>",
               "texts": [
                 {
-                  "text": "<modified, abilities, basic, 2> now knocks back enemies at the end of its channel slowing them for 30% for 2 seconds and deal extra 6% of his maximum health damage if he is blinded.",
+                  "text": "Changed functionality: <modified, abilities, basic, 2> now knocks back enemies at the end of its channel slowing them for 30% for 2 seconds and deal extra 6% of his maximum health damage if he is blinded.",
                   "subtexts": [
                     "Knockback duration: 0.25 same <vanilla, abilities, basic, 0, lucio>",
                     "Knockback speed: 16.5 | same <vanilla, abilities, basic, 0, lucio>"
@@ -298,7 +285,7 @@
               "name": "NEW: <modified, talents, 20, 3>",
               "texts": [
                 {
-                  "text": "Receive all level 4 talents."
+                  "text": "Receive all level 7 talents."
                 }
               ],
               "developerCommentary": "The sad thing about this talent is the description is short but the good thing is that this talent is absolutely nuts.",

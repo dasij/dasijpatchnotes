@@ -164,7 +164,7 @@
             },
             {
               "change_id": "valla_10",
-              "name": "<vanilla, talents, 7, 0> renamed to <modified, talents, 7, 0>",
+              "name": "<vanilla, talents, 7, 0> renamed to <modified, talents, 7, 1>",
               "texts": [
                 {
                   "text": "Changed functionality: Becomes invisible during Vault and 0.25 seconds after"
@@ -176,7 +176,7 @@
             },
             {
               "change_id": "valla_11",
-              "name": "<vanilla, talents, 7, 1> renamed to <modified, talents, 7, 1>",
+              "name": "<vanilla, talents, 7, 1> renamed to <modified, talents, 7, 2>",
               "texts": [
                 {
                   "text": "Changed functionality: Drop 3 Caltrops while Vaulting that deal 60 damage and Slow enemies by 20% for 1 second. Enemy hero hits by caltrops decrease <modified, abilities, basic, 2> cooldown by 3.5 seconds",
@@ -231,14 +231,14 @@
               "name": "<vanilla, talents, 16, 0> renamed to <modified, talents, 16, 0>",
               "texts": [
                 {
-                  "text": "Additional functionality: Grenades damage reduce targets armor by 10 for 3 seconds. Multiple grenade hits armor reduction stacks",
+                  "text": "Changed functionality: Grenades damage reduce targets armor by 10 for 3 seconds. Multiple grenade hits armor reduction stacks",
                   "subtexts": [
                     "A Hero can be hit by any of the grenades more than once now.",
                     "Will have the same range even if <modified, talents 13, 0> is not picked"
                   ]
                 },
                 {
-                  "text": "Additional functionality: If Valla hits an close enemy hero with <modified, abilities, basic, 1> she will dash a short distance backwards.",
+                  "text": "Changed functionality: If Valla hits an close enemy hero with <modified, abilities, basic, 1> she will dash a short distance backwards.",
                   "subtexts": [
                     "Multishot has a 3.0 initial and a 8.75 maximum radius on 50º degrees the effect will activated if an enemy hero is hit between the 3.0 and 4.5 radius.",
                     "Knockback duration: 0.15 same <vanilla, talents, 4, 0, dehaka>",
@@ -256,7 +256,8 @@
               "name": "<vanilla, talents, 16, 1> renamed to <modified, talents, 16, 1>",
               "texts": [
                 {
-                  "text": "Maintaining maximum <modified, abilities, trait, 0> stacks for 5 seconds grants Valla Awareness. When Awareness is active, the next instance of fatal damage is prevented, healing Valla for 30% of her maximum Health, cleansing her from negative effects and making her invisible for 2 seconds."
+                  "text": "Maintaining maximum <modified, abilities, trait, 0> stacks for 5 seconds grants Valla Awareness. When Awareness is active, the next instance of fatal damage is prevented, healing Valla for 30% of her maximum Health, cleansing her from negative effects and making her invisible for 2 seconds.",
+                  "subtexts": ["cooldown: 65"]
                 }
               ],
               "developerCommentary": "My intent was to bring it as a revive talent for Valla since it's based on her passive skills from Diablo 3 but i like to make every revive distinct in it's own manners with tha mind i tied her revive to her passive making it a weaker but not necessarily bad.",
