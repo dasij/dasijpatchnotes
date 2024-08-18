@@ -1,42 +1,68 @@
 {
   "id": 35,
   "name": "JOHANNA",
-  "role": "",
+  "role": "Tank",
   "image": "heroes_portraits/johanna.webp",
-  "show": "false",
+  "show": "falses",
   "patchNotes": [
     {
       "id": 35,
-      "title": "",
+      "title": "Hero talent rework",
       "general": [
         {
-          "change_id": "johanna_",
-          "change": "",
+          "change_id": "johanna_1",
+          "change": "NEW: Choose apprentice",
           "texts": [
             {
-              "text": ""
+              "text": "Activate to choose an allied hero as an apprentice. This will write a game message 'Johanna choose x as her apprentice'. If your choosen hero receives the MVP screen you will receive 20% extra XP for that match and a game message will write 'X will certainly carry the crusade burden'",
+              "subtexts": [
+                "X will be the hero selected",
+                "This skill must be used on the beginning of the game expiring after the gates open",
+                "You have only 1 charge"
+              ]
             }
           ],
-          "developerCommentary": "",
+          "developerCommentary": "This is for some roleplay. It's mentioned specially on her debut video that she's looking for an apprentice.",
           "likes": 0,
           "likedBy": {}
         }
       ],
-      "developerCommentary": "",
+      "developerCommentary": "Current Johanna is strong and solid. I am changing her for increased build variety specially on Shield Glare and bringing some skill expression talents to her.",
       "sections": [
         {
           "name": "Level 1",
           "changes": [
             {
-              "change_id": "johanna_",
-              "name": "",
+              "change_id": "johanna_2",
+              "name": "<vanilla, talents, 1, 1> renamed to <modified, talents, 1, 1>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "If <modified, abilities, basic, 2> hits an close enemy Hero, Johanna's next Basic Attack gains 0.5 range and stuns the target for 0.6 seconds, plus 0.15 seconds per additional Hero hit by <modified, abilities, basic, 2>.",
+                  "subtexts": [
+                    "Johanna <modified, abilities, basic, 2> radius is 12. The close range would be 2.0",
+                    "The extra stun duration counts for every hit on any range"
+                  ]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "I wanted to bring other ways to perform with Shield Glare, i was looking for both ways to make it more effective at close or long range and i came to that idea.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "johanna_3",
+              "name": "<vanilla, talents, 1, 2> renamed to <modified, talents, 1, 2>",
+              "texts": [
+                {
+                  "text": "<modified, abilities, basic, 2> consecrates the ground increasing allied heroes healing received who stand in the area by 15%. The area lasts 5 seconds",
+                  "subtexts": [
+                    "The area will be the exactly same size of the <modified, abilities, basic, 2>"
+                  ]
+                },
+                {
+                  "text": "Quest: Every 5 Regeneration Globes gathered increase the healing received by 5%"
+                }
+              ],
+              "developerCommentary": "After looking a lot at the crusader skill tree for Diablo 3 i kinda liked the idea of giving her more utility skills to the team ",
               "likes": 0,
               "likedBy": {}
             }
@@ -46,15 +72,44 @@
           "name": "Level 4",
           "changes": [
             {
-              "change_id": "johanna_",
-              "name": "",
+              "change_id": "johanna_4",
+              "name": "<vanilla, talents, 4, 1>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Moved from level 7"
+                },
+                {
+                  "text": "Healing reduction reduced from 35 to 30"
+                },
+                {
+                  "text": "Quest: Hit 4 or more Heroes at the same time with <modified, abilities, basic, 0>"
+                },
+                {
+                  "text": "Reward: Basic attacks against marked targets grants Johanna 1 stack of 40 physical armor block."
                 }
               ],
               "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "johanna_5",
+              "name": "<vanilla, talents, 4, 2> renamed to <modified, talents, 4, 2>",
+              "texts": [
+                {
+                  "text": "Hitting enemy Heroes with <modified, abilities, basic, 0> marks them. Allied heroes basic attacks against marked heroes grants them 20% attack speed for 2 seconds"
+                },
+                {
+                  "text": "Quest: Hit 4 or more Heroes at the same time with <modified, abilities, basic, 0>"
+                },
+                {
+                  "text": "Reward: Johanna basic attacks against marked heroes also heals 1.25% of maximum health of nearby heroes",
+                  "subtexts": [
+                    "Radius will be 6.5 same as <vanilla, talents, 13, 0, uther>"
+                  ]
+                }
+              ],
+              "developerCommentary": "I want my Crusader have the possibility for an utility tank similar to how Tyrael works as it's on the core values on the Diablo 3 being a support frontline.",
               "likes": 0,
               "likedBy": {}
             }
@@ -64,30 +119,30 @@
           "name": "Level 7",
           "changes": [
             {
-              "change_id": "johanna_",
-              "name": "",
+              "change_id": "johanna_6",
+              "name": "NEW: <modified, talents, 7, 0>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Johanna redirects 65% of the damage taken to an allied hero to herself for 2 seconds being unable to act during that time.",
+                  "subtexts": ["Cooldown: 70 seconds"]
                 }
               ],
               "developerCommentary": "",
               "likes": 0,
               "likedBy": {}
-            }
-          ]
-        },
-        {
-          "name": "Level 10",
-          "changes": [
+            },
             {
-              "change_id": "johanna_",
-              "name": "",
+              "change_id": "johanna_7",
+              "name": "<vanilla, talents, 7, 2>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Additional functionality: While unhindered Johanna Mount kills minions on contact instantly."
+                },
+                {
+                  "text": "Changed Passive: While mounted Johanna restores 1% of her maximum health points per seconds increased to 5% while unhindered."
+                },
+                {
+                  "text": "Cooldown increased from 20 to 35."
                 }
               ],
               "developerCommentary": "",
@@ -96,16 +151,32 @@
             }
           ]
         },
+
         {
           "name": "Level 13",
           "changes": [
             {
-              "change_id": "johanna_",
-              "name": "",
+              "change_id": "johanna_8",
+              "name": "<vanilla, talents, 13, 0> renamed to <modified, talents, 13, 0>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Changed functionality: Increase <modified, abilities, basic, 0>'s damage by 50%. If you hit atleast 2 enemy heroes you can reactivate <modified, abilities, basic, 0> dealing 125 damage and knock back enemy heroes. Increase Punish damage against shields by 300%",
+                  "subtexts": [
+                    "Knockback duration: 0.25 same <vanilla, talents, 4, 0, dehaka>",
+                    "Knockback speed: 16.5 it's the same as <vanilla, abilities, basic, 0, dehaka>"
+                  ]
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "johanna_9",
+              "name": "<vanilla, talents, 13, 1>",
+              "texts": [
+                {
+                  "text": "Additional functionality: Holy Fury damage is 300% stronger against Non-heroic units and Shields."
                 }
               ],
               "developerCommentary": "",
@@ -118,12 +189,31 @@
           "name": "Level 16",
           "changes": [
             {
-              "change_id": "johanna_",
-              "name": "",
+              "change_id": "johanna_10",
+              "name": "<vanilla, talents, 16, 0> renamed to <modified, talents, 16, 0>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Won't slow anymore"
+                },
+                {
+                  "text": "Additional functionality: Create an outer area of <modified, abilities, basic, 1>, that area will pull enemy heroes with 200% stronger force and damage",
+                  "subtexts": [
+                    "The outer radius is 1.0. Current <vanilla, abilities, basic, 1> is 5.0 so it will effectively increase the radius to 6.0",
+                    "The pull speed is going to be increased from 19 to 57"
+                  ]
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "johanna_11",
+              "name": "<vanilla, talents, 16, 2> renamed to <modified, talents, 16, 2>",
+              "texts": [
+                {
+                  "text": "Changed functionality: Reduces all basic attack damage received from the direction you are facing by 40% returning the damage to the attacker while reducing 0.4 seconds of Iron Skin's cooldown up to 10 seconds.",
+                  "subtexts": ["The damage is after physical armor blocks"]
                 }
               ],
               "developerCommentary": "",
@@ -136,12 +226,27 @@
           "name": "Level 20",
           "changes": [
             {
-              "change_id": "johanna_",
-              "name": "",
+              "change_id": "johanna_12",
+              "name": "<vanilla, talents, 20, 2>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Additional functionality: Can be activated to grant nearby allied heroes a shield equal to 25% of their maximum Health for 3 seconds setting the cooldown to 60 seconds. Hitting Heroes with <modified, abilities, basic, 2> reduces the cooldown of this ability by 8 seconds."
+                },
+                {
+                  "text": "Reduced cooldown from 120 to 90"
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "johanna_13",
+              "name": "<vanilla, talents, 20, 3> renamed to <modified, talents, 20, 3>",
+              "texts": [
+                {
+                  "text": "Changed functionality: Activate to increase Johanna attack speed by 60% for 6 seconds. Johanna Basic attacks now cleave they also reduce Johanna's Ability cooldowns by 0.5 seconds on every enemy hit.",
+                  "subtexts": ["Same cleave as Malthael of 3.25 radius"]
                 }
               ],
               "developerCommentary": "",

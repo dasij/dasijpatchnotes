@@ -1,6 +1,6 @@
 <template>
   <div class="bg-hots-repeat bg-repeat-y bg-contain bg-center min-h-screen">
-    <div class="container mx-auto py-8">
+    <div class="container mx-auto py-20">
       <nav class="mb-8">
         <button @click="selectTab('patchNotes')" :class="{ 'selected': selectedTab === 'patchNotes' }"
           class="px-14 py-8 text-white font-semibold rounded mr-4 nav-tabs">
