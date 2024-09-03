@@ -4,9 +4,9 @@
       {
         "name": "Sacred Sweep (Q)",
         "description": "Sweep the area with sacred power, dealing 40 damage to enemies and an additional 160 damage to enemies caught in the center.  ",
-        "passives": [
-          "❢ Quest: {highlight}Every time Sacred Sweep hits a Hero in the center, increase the center damage by 2, up to 50.{/highlight}",
-          "❢ Rewards: {highlight}After hitting 30 Heroes, Hitting allied heros with <vanilla, abilities, basic, 0> center increase the damage by 180.{/highlight}"
+        "quest": "{highlight}Every time Sacred Sweep hits a Hero in the center, increase the center damage by 2, up to 50.{/highlight}",
+        "rewards": [
+          "{highlight}After hitting 30 Heroes, Hitting allied heros with <vanilla, abilities, basic, 0> center increase the damage by 180.{/highlight}"
         ],
         "image": "auriel_angelicsweep.png",
         "abilityChanged": true,
@@ -145,7 +145,7 @@
     {
       "name": "Energized Cord",
       "description": "{highlight}Basic attacks reduces basic abilities cooldowns by 0.5 seconds{/highlight}",
-      "image": "auriel_bestowhope.png",
+      "image": "auriel_bestowhope_a.png",
       "talentChanged": true
     }
   ],

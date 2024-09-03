@@ -3,7 +3,8 @@
     "basic": [
       {
         "name": "Lightning Fury (Q)",
-        "description": "Hurl a lightning javelin that deals 158 damage to the first enemy hit and splits into two lightning bolts that deal 158 damage to enemies in their path. {highlight}Quest: Lightning Fury's damage is increased by 1.5 every time it hits a Hero.{/highlight}",
+        "description": "Hurl a lightning javelin that deals 158 damage to the first enemy hit and splits into two lightning bolts that deal 158 damage to enemies in their path. ",
+        "quest": "{highlight}Lightning Fury's damage is increased by 1.5 every time it hits a Hero.{/highlight}",
         "image": "cassia_lightningfury.png",
         "abilityChanged": true,
         "manaCost": "20 Mana",

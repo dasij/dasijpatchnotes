@@ -195,7 +195,7 @@
               "name": "<vanilla, talents, 16, 1> renamed to <modified, talents, 16, 1>",
               "texts": [
                 {
-                  "text": "Changed functionality: Activate to Throw a mic on the target position and after 2 seconds E.T.C. will teleport to that MIC. Can be teleported casting Mosh Pit",
+                  "text": "Changed functionality: Activate to Throw a mic on the target position and after 2 seconds E.T.C. will teleport to that MIC. Can be teleported casting <modified, abilities, heroic, 0>. <modified, talents, 16, 1> teleport timing will be stopped when using <modified, abilities, heroic, 1>",
                   "subtexts": [
                     "7.2 range | <vanilla, talents, 20, 4> is 7.2 range",
                     "Cooldown: 40 seconds"

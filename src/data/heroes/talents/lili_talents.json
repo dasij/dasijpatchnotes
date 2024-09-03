@@ -74,9 +74,9 @@
       "talentChanged": true
     },
     {
-      "name": "Fast as the Feet",
+      "name": "Fur-ocious Serpent",
       "description": "{highlight}Fast Feet increases self and Cloud Serpent's attack speed by 25%{/highlight}",
-      "image": "talent1.png",
+      "image": "storm_ui_icon_lili_fastfeet.png",
       "talentChanged": true
     }
   ],
@@ -88,15 +88,15 @@
       "talentChanged": true
     },
     {
-      "name": "Spill the Tea",
+      "name": "Healing Vapors",
       "description": "{highlight}Healing brew now heals an area around the hero by 50% applying cups to everyone{/highlight}",
-      "image": "talent1.png",
+      "image": "storm_ui_icon_lili_healingbrew.png",
       "talentChanged": true
     },
     {
-      "name": "Tea Time",
+      "name": "Five O'Clock",
       "description": "{highlight}Tea Table (Active|Toggle): The next Healing Brew heals all heroes within range (18 seconds){/highlight}",
-      "image": "talent1.png",
+      "image": "storm_ui_icon_lili_healingbrew.png",
       "talentChanged": true
     }
   ],
@@ -118,7 +118,7 @@
       "passives": [
         "{highlight}Fast feet increase cloud serpent refresh rate an additional 50%{/highlight}"
       ],
-      "image": "talent1.png",
+      "image": "storm_ui_icon_lili_cloudserpent.png",
       "talentChanged": true
     }
   ],

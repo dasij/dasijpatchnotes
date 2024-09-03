@@ -198,7 +198,7 @@
     {
       "name": "Push it to the limit",
       "description": "{highlight}Reduces Push Off cooldown to 8 seconds and give it 2 charges(1 second cooldown between charges){/highlight}",
-      "image": "lucio.png",
+      "image": "storm_ui_icon_lucio_accelerando.png",
       "talentChanged": true
     },
     {

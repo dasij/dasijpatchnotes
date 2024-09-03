@@ -57,7 +57,11 @@
               "texts": [
                 {
                   "text": "Changed functionality: Drops a mana cube that restores allied hero maximum mana by 5% of Kael'thas maximum mana to the first allied hero that enters in contact every time Kael'thas uses an ability or get a regeneration globe. Passive: <modified, abilities, trait, 0> cooldown is decreased by 3",
-                  "subtexts": ["Drops on a 3.0 range radius from Kael'thas"]
+                  "subtexts": [
+                    "Drops on a 3.0 range radius from Kael'thas",
+                    "Each cube lasts 2 seconds",
+                    "Only allied heros can get the cubes"
+                  ]
                 }
               ],
               "developerCommentary": "The mana cube lore was a very interesting bit and with the bringing of <vanilla, talents, 1, 2> as a baselina quest i found that a utility that like that could convey his lore and be strong with other mana hungry heroes like Malfurion",
@@ -102,7 +106,8 @@
                   "subtexts": [
                     "Range 7.2 | <vanilla, abilities, basic, 1, guldan> range is 6.5",
                     "Cooldown: 25 seconds",
-                    "Extra mana radius will be 4.0 | <vanilla, abilities, basic, 1, muradin> radius is 3.0"
+                    "Extra mana radius will be 4.0 | <vanilla, abilities, basic, 1, muradin> radius is 3.0",
+                    "Manaless heroes just don't lose mana but can be drained"
                   ]
                 }
               ],

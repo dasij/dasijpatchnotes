@@ -163,8 +163,8 @@
     },
     {
       "name": "Holy Fury",
-      "description": "Deal 15 damage per second to nearby enemies. Each Hero hit by Condemn increases this damage by 40% for 5 seconds. {highlight}Holy Fury damage is 300% stronger against Non-heroic units.{/highlight}",
-      "image": "talent_burningrage.png",
+      "description": "{highlight}Iron Skin can now be used while stunned or silenced. If used that way increases it's shield by 50% and deal 60 damage in area per second while it's active, increase the damage by 100% against shield and summons.{/highlight}",
+      "image": "johanna_iron_skin.png",
       "talentChanged": true
     },
     {
@@ -217,7 +217,10 @@
     },
     {
       "name": "Akarat's Champion",
-      "description": "{highlight}Activate to increase Johanna attack speed by 60% for 6 seconds. Johanna Basic attacks now cleave they also reduce Johanna's Ability cooldowns by 0.5 seconds on every enemy hit.{/highlight}",
+      "description": "{highlight}Activate to increase Johanna attack speed by 60% for 6 seconds.{/highlight}",
+      "passives": [
+        "{highlight}Johanna Basic attacks now cleave they also reduce Johanna's Ability cooldowns by 0.5 seconds on every enemy hit.{/highlight}"
+      ],
       "cooldown": "60 seconds",
       "image": "akarat.png",
       "talentChanged": true

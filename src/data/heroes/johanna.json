@@ -3,7 +3,7 @@
   "name": "JOHANNA",
   "role": "Tank",
   "image": "heroes_portraits/johanna.webp",
-  "show": "falses",
+
   "patchNotes": [
     {
       "id": 35,
@@ -11,7 +11,7 @@
       "general": [
         {
           "change_id": "johanna_1",
-          "change": "NEW: Choose apprentice",
+          "change": "NEW: <modified, abilities, basic, 3>",
           "texts": [
             {
               "text": "Activate to choose an allied hero as an apprentice. This will write a game message 'Johanna choose x as her apprentice'. If your choosen hero receives the MVP screen you will receive 20% extra XP for that match and a game message will write 'X will certainly carry the crusade burden'",
@@ -27,7 +27,7 @@
           "likedBy": {}
         }
       ],
-      "developerCommentary": "Current Johanna is strong and solid. I am changing her for increased build variety specially on Shield Glare and bringing some skill expression talents to her.",
+      "developerCommentary": "Current Johanna is strong and solid. I am changing her for increased build variety specially on <vanilla, abilities, basic, 2> and bringing some skill expression talents to her.",
       "sections": [
         {
           "name": "Level 1",
@@ -73,7 +73,7 @@
           "changes": [
             {
               "change_id": "johanna_4",
-              "name": "<vanilla, talents, 4, 1>",
+              "name": "<vanilla, talents, 7, 0>",
               "texts": [
                 {
                   "text": "Moved from level 7"
@@ -86,6 +86,18 @@
                 },
                 {
                   "text": "Reward: Basic attacks against marked targets grants Johanna 1 stack of 40 physical armor block."
+                }
+              ],
+              "developerCommentary": "I made this level about <modified, abilities, basic, 0> and i also like the quest from <vanilla, talents, 4, 0> and i see it as something that makes Johanna more fun overall",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "johanna_14",
+              "name": "<vanilla, talents, 4, 1>",
+              "texts": [
+                {
+                  "text": "removed"
                 }
               ],
               "developerCommentary": "",
@@ -124,10 +136,10 @@
               "texts": [
                 {
                   "text": "Johanna redirects 65% of the damage taken to an allied hero to herself for 2 seconds being unable to act during that time.",
-                  "subtexts": ["Cooldown: 70 seconds"]
+                  "subtexts": ["Cooldown: 70 seconds", "Range: 4"]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "I find that skill extremely suitable for the roleplay of a Crusader and besides this skill will be balance through the range of use as it could eazily render an hyper carry immortal.",
               "likes": 0,
               "likedBy": {}
             },
@@ -145,7 +157,7 @@
                   "text": "Cooldown increased from 20 to 35."
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "There's not much to say about it..i just wanted to make a stomping horse.",
               "likes": 0,
               "likedBy": {}
             }
@@ -163,20 +175,20 @@
                   "text": "Changed functionality: Increase <modified, abilities, basic, 0>'s damage by 50%. If you hit atleast 2 enemy heroes you can reactivate <modified, abilities, basic, 0> dealing 125 damage and knock back enemy heroes. Increase Punish damage against shields by 300%",
                   "subtexts": [
                     "Knockback duration: 0.25 same <vanilla, talents, 4, 0, dehaka>",
-                    "Knockback speed: 16.5 it's the same as <vanilla, abilities, basic, 0, dehaka>"
+                    "Knockback speed: 16.5 it's the same as <vanilla, talents, 4, 0, dehaka>"
                   ]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "I wanted to bring somehow the shieldbash without using a direct stun",
               "likes": 0,
               "likedBy": {}
             },
             {
               "change_id": "johanna_9",
-              "name": "<vanilla, talents, 13, 1>",
+              "name": "<vanilla, talents, 13, 1> renamed to <modified, talents, 13, 1>",
               "texts": [
                 {
-                  "text": "Additional functionality: Holy Fury damage is 300% stronger against Non-heroic units and Shields."
+                  "text": "Changed functionality: <modified, abilities, trait, 0> can now be used while stunned or silenced. If used that way increases it's shield by 50% and deal 60 damage in area per second while it's active, increase the damage by 100% against shield and summons."
                 }
               ],
               "developerCommentary": "",
@@ -203,7 +215,7 @@
                   ]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "This was the first skill that i wanted to add to Johanna i wanted to make that skill have another interaction that would make it cool",
               "likes": 0,
               "likedBy": {}
             },
@@ -216,7 +228,7 @@
                   "subtexts": ["The damage is after physical armor blocks"]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "Crusaders are strongly related to thorns and i liked the <vanilla, talents, 1, 1> concept so i leveled him up",
               "likes": 0,
               "likedBy": {}
             }
@@ -236,7 +248,7 @@
                   "text": "Reduced cooldown from 120 to 90"
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "The objective was to make both <vanilla, talents, 20, 2> and <vanilla, talents, 20, 3> one talent but on a flexible way.",
               "likes": 0,
               "likedBy": {}
             },
@@ -245,11 +257,11 @@
               "name": "<vanilla, talents, 20, 3> renamed to <modified, talents, 20, 3>",
               "texts": [
                 {
-                  "text": "Changed functionality: Activate to increase Johanna attack speed by 60% for 6 seconds. Johanna Basic attacks now cleave they also reduce Johanna's Ability cooldowns by 0.5 seconds on every enemy hit.",
+                  "text": "Changed functionality: Activate to increase Johanna attack speed by 60% for 6 seconds. Passive: Johanna Basic attacks now cleave they also reduce Johanna's Ability cooldowns by 0.5 seconds on every enemy hit.",
                   "subtexts": ["Same cleave as Malthael of 3.25 radius"]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "Similar to Bruiseradin i want to make Bruiserhanna a commom thing",
               "likes": 0,
               "likedBy": {}
             }

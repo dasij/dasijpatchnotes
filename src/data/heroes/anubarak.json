@@ -3,37 +3,66 @@
   "name": "ANUBARAK",
   "role": "Tank",
   "image": "heroes_portraits/anubarak.webp",
-  "show": "false",
+  "show": "falses",
   "patchNotes": [
     {
       "id": 6,
-      "title": "",
+      "title": "Hero talent rework",
       "general": [
         {
-          "change_id": "anubarak_",
-          "change": "",
+          "change_id": "anubarak_1",
+          "change": "Base",
           "texts": [
             {
-              "text": ""
+              "text": "If Anub'arak wins a game against where the other team had an Arthas player he will receive 20% bonus experience"
             }
           ],
-          "developerCommentary": "",
+          "developerCommentary": "Roleplay reasons",
           "likes": 0,
           "likedBy": {}
         }
       ],
-      "developerCommentary": "",
+      "developerCommentary": "Anub'arak has a solid kit and can do his job well BUT on my vision he lacks options to diversify his build. His talents are often defined by efficiency and mostly do similar things.",
       "sections": [
         {
           "name": "Level 1",
           "changes": [
             {
-              "change_id": "anubarak_",
-              "name": "",
+              "change_id": "anubarak_2",
+              "name": "<vanilla, talents, 1, 0> renamed to <modified, talents, 1, 0>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Changed functionality: Activate to submerge after 1 second becoming invisible. Reactivate to emerge and knock nearby enemy heroes. Anub'arak won't be able to move while submerge",
+                  "subtexts": [
+                    "Cooldown : 30 seconds",
+                    "The knockback will be the same as <vanilla, talents, 4, 0, dehaka>",
+                    "The emerge will will be instant",
+                    "Anub'arak can be target while submerged and revealed."
+                  ]
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "anubarak_4",
+              "name": "<vanilla, talents, 1, 1>",
+              "texts": [
+                {
+                  "text": "Changed functionality: Enemies that dies within 3 seconds of Anub'arak basic attacks instantly spawn a legion beetle. Anub'arak basic attacks instantly kill troops."
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "anubarak_3",
+              "name": "<vanilla, talents, 1, 2> renamed to <modified, talents, 1, 2>",
+              "texts": [
+                {
+                  "text": "Changed functionality: <modified, abilities, basic, 0> range travel 15% further, enemy heros hit on the extra range will have the stun increased to 1.5 and will reduce <modified, abilities, basic, 0> cooldown by 3 seconds."
                 }
               ],
               "developerCommentary": "",
@@ -46,12 +75,26 @@
           "name": "Level 4",
           "changes": [
             {
-              "change_id": "anubarak_",
-              "name": "",
+              "change_id": "anubarak_5",
+              "name": "<vanilla, talents, 4, 1> renamed to <modified, talents, 4, 1>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Changed functionality: <modified, abilities, basic, 0> reduces 30% spell power of enemy heroes hit for 4 seconds. Basic attacks refresh the duration"
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "anubarak_6",
+              "name": "<vanilla, talents, 4, 2> renamed to <modified, talents, 4, 2>",
+              "texts": [
+                {
+                  "text": "Changed functionality: Using <modified, abilities, basic, 0> within 1.5 seconds of your <modified, abilities, basic, 1> being destroyed or expired slightly pull enemy heroes close to you.",
+                  "subtexts": [
+                    "Same pull force and duration as <vanilla, abilities, basic, 1, johanna>"
+                  ]
                 }
               ],
               "developerCommentary": "",
@@ -64,12 +107,42 @@
           "name": "Level 7",
           "changes": [
             {
-              "change_id": "anubarak_",
-              "name": "",
+              "change_id": "anubarak_9",
+              "name": "<vanilla, talents, 7, 0>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Changed functionality: While <modified, abilities, basic, 1> is active increase Anub'Arak health regeneration by 400%."
+                },
+                {
+                  "text": "Regeneration Globe increases your Health Regeneration by 1.25 per second",
+                  "subtexts": [
+                    "This will count Regeneration globes you got before this talent too."
+                  ]
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "anubarak_8",
+              "name": "<vanilla, talents, 7, 1> renamed to <modified, talents, 7, 1>",
+              "texts": [
+                {
+                  "text": "Changed functionality: Casting Harden Carapace will also deal 90 damage to nearby enemies. Deals double damage against Heroes. <modified, abilities, basic, 1> gives Anub'arak 30% movement speed while it's active."
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            },
+
+            {
+              "change_id": "anubarak_7",
+              "name": "<vanilla, talents, 7, 2> renamed to <modified, talents, 7, 2>",
+              "texts": [
+                {
+                  "text": "Changed functionality: Increase <modified, abilities, basic, 1> spell armor by 25. While Harden Carapace is active, taking damage from enemy Abilities reduces its cooldown by 0.5 second, up to 3 seconds."
                 }
               ],
               "developerCommentary": "",
@@ -82,12 +155,14 @@
           "name": "Level 10",
           "changes": [
             {
-              "change_id": "anubarak_",
-              "name": "",
+              "change_id": "anubarak_10",
+              "name": "<vanilla, talents, 10, 0>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Changed functionality: Passively deal 12 damage per second to nearby enemies and each enemy damaged restores 6 health. Activate to increase by 300% all the effects. Lasts 6 seconds.",
+                  "subtexts": [
+                    "This mean Locust Swarm will work at 25% of it's original power passively including the radius."
+                  ]
                 }
               ],
               "developerCommentary": "",
@@ -100,12 +175,42 @@
           "name": "Level 13",
           "changes": [
             {
-              "change_id": "anubarak_",
-              "name": "",
+              "change_id": "anubarak_11",
+              "name": "<vanilla, talents, 13, 0> renamed to <modified, talents, 13, 0>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Changed functionality: Activate to control your current Legion Beetles. Their duration is increased by 4 seconds",
+                  "subtexts": [
+                    "The activation will be on his passive",
+                    "This will work similar to <vanilla, abilities, trait, 0, rexxar>"
+                  ]
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "anubarak_12",
+              "name": "<vanilla, talents, 13, 1> renamed to <modified, talents, 13, 1>",
+              "texts": [
+                {
+                  "text": "Anub'arak wont damage to close enemies anymore"
+                },
+                {
+                  "text": "Additional functionality: Increase beetles spell armor by 30 and health by 40%"
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "anubarak_13",
+              "name": "<vanilla, talents, 13, 2> renamed to <modified, talents, 13, 2>",
+              "texts": [
+                {
+                  "text": "Changed functionality: Beetles attacks against enemy heroes decrease Anub'arak basic abilities cooldown by 0.2 seconds."
                 }
               ],
               "developerCommentary": "",
@@ -118,15 +223,27 @@
           "name": "Level 16",
           "changes": [
             {
-              "change_id": "anubarak_",
-              "name": "",
+              "change_id": "anubarak_14",
+              "name": "<vanilla, talents, 16, 1> renamed to <modified, talents, 16, 1>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Changed functionality: Activate while in <modified, abilities, basic, 2> Anub'Arak to surface early causing untalented <modified, abilities, basic, 0> to be casted in all directions around Anub'arak",
+                  "subtexts": ["Cooldown 75 seconds"]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "Inspired by Dota 2 Ravage from Tidehunter",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "anubarak_15",
+              "name": "<vanilla, talents, 16, 2> renamed to <modified, talents, 16, 2>",
+              "texts": [
+                {
+                  "text": "Changed functionality: You can recast <modified, abilities, basic, 2> to go back to the initial cast position. <modified, abilities, basic, 2> also grants a 400 point shield for 5 seconds"
+                }
+              ],
+              "developerCommentary": "Similar to <vanilla, talents, 13, 0, tyrael>",
               "likes": 0,
               "likedBy": {}
             }
@@ -136,15 +253,64 @@
           "name": "Level 20",
           "changes": [
             {
-              "change_id": "anubarak_",
-              "name": "",
+              "change_id": "anubarak_16",
+              "name": "<vanilla, talents, 20, 0>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Additional functionality: While the ultimate is active Anub'arak vampire Locust attacks every 0.5 seconds. Every time the Locust deals damage to an enemy hero decrease the ultimate cooldown by 3 seconds."
                 }
               ],
               "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "anubarak_17",
+              "name": "<vanilla, talents, 20, 1>",
+              "texts": [
+                {
+                  "text": "Changed functionality: When Anub'arak uses Cocoon on an enemy hero, it creates a web area around them. Enemies in this area are slowed by 25%. Basic attacks while on the Web area reduces Cocoon cooldown by 4 seconds. The area lasts 8 seconds",
+                  "subtexts": [
+                    "Anub'arak will only become visible on that area if he takes damage and will become invisible again in 0.5 seconds after not taking damage.",
+                    "The radius will be 5.5 | <vanilla, abilities, heroic, 1, blaze> is 6.5"
+                  ]
+                }
+              ],
+              "developerCommentary": "Inspired by Dota 2 Broodmother",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "anubarak_18",
+              "name": "<vanilla, talents, 20, 2> renamed to <modified, talents, 20, 2>",
+              "texts": [
+                {
+                  "text": "Changed functionality: Activate to cast an <modified, abilities, basic, 2> at the given position after 2.5 seconds.",
+                  "subtexts": [
+                    "This is basically Global <modified, abilities, basic, 2>, you have 2.5 seconds cast time and after that you will burrow normally to ANY given position.",
+                    " This is another skill it won't share cooldown with <modified, abilities, basic, 2> but will share talents"
+                  ]
+                }
+              ],
+              "developerCommentary": "I wanted something similar to tunnels to be used on Anub'arak but the concept of portals is taken by Medivh the way i would do it and for that case i didn't feel necessary to make both compete on that.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "anubarak_19",
+              "name": "<vanilla, talents, 20, 3> renamed to <modified, talents, 20, 3>",
+              "texts": [
+                {
+                  "text": "Changed functionality: Activate to create an Cocoon at the target position. One allied heroes can enter on the Cocoon at time, you can hold up and control up to 3 safe spots. ",
+                  "subtexts": [
+                    "This will work similar to Blaze Bunker but Anub'arak will point target at the wanted position within a 6.5 range and create it.",
+                    "Each safe spot will last 8 seconds if someone is on it other wise it will last indefinitely and enemy heroes can hit it to go away faster.",
+                    "The cooldown of each charge will be 30 seconds",
+                    "Cast time between each charge will be 1 second"
+                  ]
+                }
+              ],
+              "developerCommentary": "I wanted <vanilla, abilities, heroic, 1> to be casted on allied heroes but without forced interactions.",
               "likes": 0,
               "likedBy": {}
             }

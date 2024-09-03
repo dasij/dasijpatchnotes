@@ -158,7 +158,7 @@
     },
     {
       "name": "Mic Drop",
-      "description": "{highlight}Activate to Throw a mic on the target position and after 2 seconds E.T.C. will teleport to that MIC. Can be teleported casting Mosh Pit.{/highlight}",
+      "description": "{highlight}Activate to Throw a mic on the target position and after 2 seconds E.T.C. will teleport to that MIC. Can be teleported casting Mosh Pit. Mic Drop teleport timing will be stopped when using Stage Dive{/highlight}",
       "cooldown": "40 seconds",
       "image": "etc_rockstar.png",
       "talentChanged": true

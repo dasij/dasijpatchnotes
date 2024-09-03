@@ -198,7 +198,9 @@
       "description": "Increase the Slow of Frost Mages by {highlight}10%{/highlight}. Every 5th Spectral Scythe that hits enemy Heroes spawns a Frost Mage instead of a Skeletal Warrior at their location.",
       "image": "necromancer_skeletalmages.png",
       "talentChanged": true,
-      "passives": ["{highlight}Receive all level 13 talents{/highlight}"]
+      "passives": [
+        "{highlight}Receive the other two level 13 talents you didn't pick with 50% efficiency.{/highlight}"
+      ]
     },
     {
       "name": "Rathma dominion",

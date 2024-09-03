@@ -77,7 +77,7 @@
         },
         {
           "change_id": "lt-morales_5",
-          "change": "New: Steroids Charge (R)",
+          "change": "New: <modified, abilities, heroic, 0> ",
           "texts": [
             {
               "text": "Now it's a baseline ultimate, like <vanilla, abilities, heroic, 0, tracer>"
@@ -202,7 +202,7 @@
           "changes": [
             {
               "change_id": "lt-morales_12",
-              "name": "New: Kritzroid",
+              "name": "New: <modified, talents, 10, 0>",
               "texts": [
                 {
                   "text": "<modified, abilities, heroic, 0> now makes allied heroes' basic attacks deal an extra 30% damage."
@@ -214,7 +214,7 @@
             },
             {
               "change_id": "lt-morales_13",
-              "name": "New: Caffeineroids",
+              "name": "New: <modified, talents, 10, 1>",
               "texts": [
                 {
                   "text": "Increase <modified, abilities, heroic, 0> movement speed bonus by 25% and makes the target unkillable."
@@ -226,7 +226,7 @@
             },
             {
               "change_id": "lt-morales_14",
-              "name": "New: Get back to the fight-roids",
+              "name": "New: <modified, talents, 10, 2>",
               "texts": [
                 {
                   "text": "Targets receive additional healing equal to 330% of the <modified, abilities, basic, 0>."
@@ -267,7 +267,7 @@
           "changes": [
             {
               "change_id": "lt-morales_17",
-              "name": "New: There's always room for one more",
+              "name": "New: <modified, talents, 13, 0>",
               "texts": [
                 {
                   "text": "<modified, abilities, basic, 1> now takes off 5 seconds after being used and can carry any amount of people."
@@ -279,7 +279,7 @@
             },
             {
               "change_id": "lt-morales_18",
-              "name": "New: Ambulance driving",
+              "name": "New: <modified, talents, 13, 1>",
               "texts": [
                 {
                   "text": "Now <modified, abilities, basic, 1> calls upon Morales after 1 second of channeling, the <modified, abilities, basic, 1> is 150% faster and has the cooldown reduced by half plus instantly taking off as soon as it's used."
@@ -291,7 +291,7 @@
             },
             {
               "change_id": "lt-morales_19",
-              "name": "New: Reinforcements",
+              "name": "New: <modified, talents, 13, 2>",
               "texts": [
                 {
                   "text": "(Active)Call down a <modified, abilities, basic, 1> Dropship at your Hall of Storms for your allies. After 10 seconds, or when a hero enters, the <modified, abilities, basic, 1> will travel to the target location to unload the passenger (Shares cooldown with <modified, abilities, basic, 1> )"
@@ -320,7 +320,7 @@
           "changes": [
             {
               "change_id": "lt-morales_21",
-              "name": "New: MediGrenade",
+              "name": "New: <modified, talents, 16, 2>",
               "texts": [
                 {
                   "text": "Morales' <modified, abilities, basic, 2> now gets bigger the farther it travels, up to 40% extra. On explosion, it also heals allied heroes in the area by 480."
@@ -344,7 +344,7 @@
             },
             {
               "change_id": "lt-morales_23",
-              "name": "First Responder",
+              "name": "<vanilla, talents, 16, 1>",
               "texts": [
                 {
                   "text": "Changed functionality: Morales can overheal targets, granting them an overshield up to 20% of their maximum health that rapidly decays after 5 seconds. Healing resets the shield duration."
@@ -361,7 +361,7 @@
           "changes": [
             {
               "change_id": "lt-morales_24",
-              "name": "New: Focus Morales!",
+              "name": "New: <modified, talents, 20, 1>",
               "texts": [
                 {
                   "text": "When Morales dies, every hero nearby will receive the <modified, abilities, heroic, 0> effects for 4 seconds."
@@ -373,7 +373,7 @@
             },
             {
               "change_id": "lt-morales_25",
-              "name": "New: Healing Beacon",
+              "name": "New: <modified, talents, 20, 2>",
               "texts": [
                 {
                   "text": "Morales drops a beacon with 1200 health for 15 seconds. If Morales redirects her <modified, abilities, basic, 0> to the beacon, all allied heroes within 6.5 range of that beacon will receive the <modified, abilities, basic, 0> and overcharge effects used by Morales.(60 sec de cooldown)"
@@ -385,7 +385,7 @@
             },
             {
               "change_id": "lt-morales_26",
-              "name": "New: I am Ambulance!",
+              "name": "New: <modified, talents, 20, 3>",
               "texts": [
                 {
                   "text": "Activate to increase Morales' movement speed by 125% and grant her unstoppable for 4 seconds.(Cooldown 45 seconds)"

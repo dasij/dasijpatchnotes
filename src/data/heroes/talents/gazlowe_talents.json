@@ -78,7 +78,7 @@
     {
       "name": "MOLL-E Blingtron 5000 Gift",
       "description": "{highlight}Activate to put a Mailbox that will give a random item after 30 seconds. The item disappears after 60 seconds if not picked up and after 2 minutes if not used.{/highlight}",
-      "image": "talent1.png",
+      "image": "Portable_Mailbox.webp",
       "cooldown": "20 seconds",
       "talentChanged": true
     }
@@ -88,7 +88,7 @@
       "name": "Mekgineer's Mount 5000",
       "description": "{highlight}Activate to make Gazlowe become unstoppable for 5 seconds. He can't be unmounted by damage while mounted and his mount speed increases to 150%. The effect is lost if Gazlowe dismounts{/highlight}",
       "cooldown": "30 seconds",
-      "image": "talent1.png",
+      "image": "Ability_mount_rocketmount3.webp",
       "talentChanged": true
     },
     {
@@ -117,7 +117,7 @@
       "passives": [
         "{highlight}Deth Lazor cooldown is reduced by 2 seconds{/highlight}"
       ],
-      "image": "talent1.png",
+      "image": "200014-cardboard-assassin.jpg",
       "talentChanged": true
     },
     {

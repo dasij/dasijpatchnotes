@@ -30,7 +30,7 @@
     ],
     "heroic": [
       {
-        "name": "Steroids Charge (R)",
+        "name": "Combat Stimpack (R)",
         "description": "{highlight}Activate to grant the current Healing Beam target a 50% increase in attack speed and a 10% movement speed bonus for 6 seconds. {/highlight}\n\n{highlight}Redirecting the healing beam leaves the previous target with 0.5 seconds of the effect{/highlight}",
         "manaCost": "{highlight}100 Energy{/highlight}",
         "classes": "text-small text-warning",
@@ -48,7 +48,7 @@
   "1": [
     {
       "name": "Caduceus Feedback",
-      "description": "{highlight}Increases Attack Range by 1.1 and Basic Attacks against Heroes generate 1 Energy.{/highlight}",
+      "description": "Increases Attack Range by 1.1 and Basic Attacks against Heroes generate {highlight}1{/highlight} Energy.",
       "image": "talent_autoattack_mana.png",
       "talentChanged": true
     },
@@ -119,19 +119,19 @@
   ],
   "10": [
     {
-      "name": "Kritzroid",
+      "name": "Koprulu Warfare Booster",
       "description": "{highlight}Steroids charge now makes allied heroes' basic attacks deal an extra 30% damage.{/highlight}",
       "image": "medic_stim.png",
       "talentChanged": true
     },
     {
-      "name": "Caffeineroids",
+      "name": "Terran Übercharge Stimulant",
       "description": "{highlight}Increase Steroids charge movement speed bonus by 25% and makes the target unkillable.{/highlight}",
       "image": "medic_stim.png",
       "talentChanged": true
     },
     {
-      "name": "Get back to the fight-roids",
+      "name": "Battlefield Resuscitation System",
       "description": "{highlight}Targets receive additional healing equal to 330% of the Healing Beam.{/highlight}",
       "image": "medic_stim.png",
       "talentChanged": true
@@ -139,13 +139,13 @@
   ],
   "13": [
     {
-      "name": "There's always room for one more",
+      "name": "Mass Evacuation Protocol",
       "description": "{highlight}Medivac now takes off 5 seconds after being used and can carry any amount of people.{/highlight}",
       "image": "medic_medivacdropship.png",
       "talentChanged": true
     },
     {
-      "name": "Ambulance driving",
+      "name": "Warp-Speed Rescue",
       "description": "{highlight}Now Medivac calls upon Morales after 1 second of channeling, the Medivac is 150% faster and has the cooldown reduced by half plus instantly takes off as soon as it's used.{/highlight}",
       "image": "medic_medivacdropship.png",
       "talentChanged": true
@@ -171,7 +171,7 @@
       "talentChanged": true
     },
     {
-      "name": "Medigrenade",
+      "name": "Healing Shockwave",
       "description": "{highlight}Morales' Displacement Grenade now gets bigger the farther it travels, up to 40% extra. On explosion, it also heals allied heroes in the area by 480.{/highlight}",
       "image": "medic_displacementgrenade.png",
       "talentChanged": true
@@ -194,14 +194,14 @@
       "talentChanged": true
     },
     {
-      "name": "Healing Beacon",
+      "name": "Medi-Relay Beacon",
       "description": "{highlight}Morales drops a beacon with 1200 health for 12 seconds. If Morales redirects her healing beam to the beacon, all allied heroes within 6.5 range of that beacon will receive the Healing Beam and overcharge effects used by Morales.{/highlight}",
       "cooldown": "60s",
       "image": "medic_healingbeam.png",
       "talentChanged": true
     },
     {
-      "name": "I am Ambulance!",
+      "name": "Unstoppable Rescuer",
       "description": "{highlight}Activate to increase Morales' movement speed by 125% and grant her unstoppable for 4 seconds.{/highlight}",
       "passives": [
         "{highlight}Increase her energy generation by 25%.{/highlight}"

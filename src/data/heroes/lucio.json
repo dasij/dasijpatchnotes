@@ -173,7 +173,7 @@
             },
             {
               "change_id": "lucio_10",
-              "name": "New: Push it to the limit",
+              "name": "New: <modified, talents, 20, 2>",
               "texts": [
                 {
                   "text": "Reduces <modified, abilities, trait, 0> cooldown to 8 seconds and give it 2 charges(1 second cooldown between charges)"

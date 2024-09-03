@@ -29,9 +29,9 @@
     "heroic": [
       {
         "name": "Locust Swarm (R)",
-        "description": "Deal 68 damage per second to nearby enemies. Each enemy damaged restores 24 Health. Lasts 6 seconds.",
+        "description": "{highlight}Passively deal 12 damage per second to nearby enemies and each enemy damaged restores 6 health. Activate to increase by 300% all the effects. Lasts 6 seconds.{/highlight}",
         "image": "anubarak_locustswarm.png",
-        "abilityChanged": false,
+        "abilityChanged": true,
         "manaCost": "75 Mana",
         "cooldown": "100s"
       },
@@ -53,22 +53,23 @@
   },
   "1": [
     {
-      "name": "Nerubian Armor",
-      "description": "Increase Hardened Carapace's Spell Armor by 25.",
+      "name": "Azjol-Nerub Subterfuge",
+      "description": "{highlight}Activate to submerge after 1 second, becoming invisible. Reactivate to emerge and knock nearby enemy heroes. Anub'arak won't be able to move while submerge{/highlight}",
       "image": "anubarak_hardencarapace_var1.png",
-      "talentChanged": false
+      "talentChanged": true,
+      "cooldown": "30 seconds"
     },
     {
       "name": "Legion of Beetles",
-      "description": "Beetles have 30 Spell Armor. Automatically spawn a Beetle every 12 seconds. Can be toggled on and off.",
+      "description": "{highlight}Enemies that dies within 3 seconds of Anub'arak basic attacks instantly spawn a legion beetle. Anub'arak basic attacks instantly kill troops.{/highlight}",
       "image": "anubarak_scarabhost.png",
-      "talentChanged": false
+      "talentChanged": true
     },
     {
-      "name": "Regeneration Master",
-      "description": "Quest: Gathering a Regeneration Globe increases your Health Regeneration by 1 per second, up to 30. Reward: After gathering 30 Regeneration Globes, you also gain 500 Health.",
-      "image": "talent_regenerationmaster.png",
-      "talentChanged": false
+      "name": "Crypt Lord's Stinger",
+      "description": "{highlight}Impale range travel 15% further, enemy heros hit on the extra range will have the stun increased to 1.5 and will reduce Impale cooldown by 3 seconds.{/highlight}",
+      "image": "anubarak_impale.png",
+      "talentChanged": true
     }
   ],
   "4": [
@@ -79,44 +80,47 @@
       "talentChanged": false
     },
     {
-      "name": "Shed Exoskeleton",
-      "description": "Harden Carapace grants 30% increased Movement Speed for 3 seconds.",
-      "image": "anubarak_hardencarapace_var1.png",
-      "talentChanged": false
+      "name": "Debilitation",
+      "description": "{highlight}Impale reduces 30% spell power of enemy heroes hit for 4 seconds. Basic attacks refresh the duration{/highlight}",
+      "image": "anubarak_impale.png",
+      "talentChanged": true
     },
     {
-      "name": "Underking",
-      "description": "Increases Burrow Charge range by 20% and damage by 100%.",
-      "image": "anubarak_burrowcharge.png",
-      "talentChanged": false
+      "name": "Nerubian Grasp",
+      "description": "{highlight}Using Impale within 1.5 seconds of your Hardened Carapace being destroyed or expired slightly pull enemy heroes close to you.{/highlight}",
+      "image": "anubarak_impale.png",
+      "talentChanged": true
     }
   ],
   "7": [
     {
       "name": "Chitinous Plating",
-      "description": "While Harden Carapace is active, taking damage from enemy Abilities reduces its cooldown by 1 second, up to 3 seconds.",
+      "description": "{highlight}While Hardened Carapace is active increase Anub'Arak health regeneration by 400%.{/highlight}",
       "image": "anubarak_hardencarapace_var1.png",
-      "talentChanged": false
+      "talentChanged": true,
+      "passives": [
+        "{highlight} Regeneration Globe increases your Health Regeneration by 1.25 per second {/highlight}"
+      ]
     },
     {
-      "name": "Subterranean Shield",
-      "description": "Burrow Charge also grants a 400 point Shield for 5 seconds.",
-      "image": "anubarak_burrowcharge.png",
-      "talentChanged": false
+      "name": "Urticating Spines",
+      "description": "{highlight}Casting Harden Carapace will also deal 90 damage to nearby enemies. Deals double damage against Heroes. Hardened Carapace gives Anub'arak 30% movement speed while it's active.{/highlight}",
+      "image": "anubarak_hardencarapace_var1.png",
+      "talentChanged": true
     },
     {
-      "name": "Leeching Scarabs",
-      "description": "Beetles gain 30% bonus attack damage and they heal Anub'arak for 50% of their damage with each attack if he is nearby.",
-      "image": "anubarak_scarabhost.png",
-      "talentChanged": false
+      "name": "Nerubian Armor",
+      "description": "{highlight}Increase Hardened Carapace spell armor by 25. While Harden Carapace is active, taking damage from enemy Abilities reduces its cooldown by 0.5 second, up to 3 seconds.{/highlight}",
+      "image": "anubarak_hardencarapace_var1.png",
+      "talentChanged": true
     }
   ],
   "10": [
     {
-      "name": "Locust Swarm",
-      "description": "Deal 68 damage per second to nearby enemies. Each enemy damaged restores 24 Health. Lasts 6 seconds.",
+      "name": "Locust Swarm (R)",
+      "description": "{highlight}Passively deal 12 damage per second to nearby enemies and each enemy damaged restores 6 health. Activate to increase by 300% all the effects. Lasts 6 seconds.{/highlight}",
       "image": "anubarak_locustswarm.png",
-      "talentChanged": false,
+      "talentChanged": true,
       "manaCost": "75 Mana",
       "cooldown": "100s"
     },
@@ -131,22 +135,22 @@
   ],
   "13": [
     {
-      "name": "Urticating Spines",
-      "description": "Casting Harden Carapace will also deal 90 damage to nearby enemies. Deals double damage against Heroes.",
-      "image": "anubarak_hardencarapace_var1.png",
-      "talentChanged": false
+      "name": "Hive Mind",
+      "description": "{highlight}Activate to control your current Legion Beetles. Their duration is increased by 4 seconds{/highlight}",
+      "image": "anubarak_scarabhost.png",
+      "talentChanged": true
     },
     {
-      "name": "Burning Beetles",
-      "description": "Deal 21 damage per second to nearby enemies. Beetles deal 6 damage per second to nearby enemies.",
-      "image": "talent_burningrage.png",
-      "talentChanged": false
+      "name": "Beetle, Juiced",
+      "description": "Beetles deal 6 damage per second to nearby enemies. {highlight}Increase beetles spell armor by 30 and health by 40%{/highlight}",
+      "image": "anubarak_scarabhost.png",
+      "talentChanged": true
     },
     {
-      "name": "Acid Drenched Mandibles",
-      "description": "Attacking a Hero that is slowed, rooted, or stunned increases Anub'arak's Basic Attack damage by 80% for 4 seconds.",
-      "image": "talent_autoattack_damage.png",
-      "talentChanged": false
+      "name": "Scarab Lord",
+      "description": "{highlight}Beetles attacks against enemy heroes decrease Anub'arak basic abilities cooldown by 0.2 seconds.{/highlight}",
+      "image": "anubarak_scarabhost.png",
+      "talentChanged": true
     }
   ],
   "16": [
@@ -157,44 +161,44 @@
       "talentChanged": false
     },
     {
-      "name": "Debilitation",
-      "description": "Enemy Heroes hit by Burrow Charge or Impale have their Spell Power reduced by 50% for 4 seconds.",
-      "image": "anubarak_combo_q_e.png",
-      "talentChanged": false
+      "name": "Thorn Burst",
+      "description": "{highlight}Activate while in Burrow Charge to surface early causing untalented impale to be casted in all directions around Anub'arak{/highlight}",
+      "image": "anubarak_burrowcharge.png",
+      "talentChanged": true,
+      "cooldown": "75 seconds"
     },
     {
-      "name": "Beetle, Juiced",
-      "description": "Passive: Beetles gain 30% increased health.Every 4th Basic Attack spawns a Beetle.",
-      "image": "anubarak_scarabhost.png",
-      "talentChanged": false
+      "name": "Subterranean Reversion",
+      "description": "{highlight}You can recast Burrow Charge to the initial cast position. Burrow Charge also grants a 400 point shield for 5 seconds{/highlight}",
+      "image": "anubarak_burrowcharge.png",
+      "talentChanged": true
     }
   ],
   "20": [
     {
       "name": "Hive Master",
-      "description": "Gain a permanent Vampire Locust that attacks a nearby enemy every 3 seconds. The Vampire Locust deals 165 damage and returns to heal Anub'arak for 80 health.",
+      "description": "Gain a permanent Vampire Locust that attacks a nearby enemy every 3 seconds. The Vampire Locust deals 165 damage and returns to heal Anub'arak for 80 health {highlight}and decreasing the ultimate cooldown by 3 seconds. While the ultimate is active Anub'arak vampire Locust attacks every 0.5 seconds.{/highlight}",
       "image": "anubarak_locustswarm.png",
-      "talentChanged": false
+      "talentChanged": true
     },
     {
       "name": "Cryptweave",
-      "description": "Staying near the Cocoon allows Anub'arak to extend the duration by up to 6 seconds per Cocoon. Upon exiting the Cocoon, enemies take 60 damage over 4 seconds. This damage is increased by 100% for each second that they were inside.",
+      "description": "{highlight}When Anub'arak uses Cocoon on an enemy hero, it creates a web area around them. Enemies in this area are slowed by 25%. Basic attacks while on the Web area reduces Cocoon cooldown by 4 seconds. The area lasts 8 seconds{/highlight}",
       "image": "anubarak_webblast.png",
-      "talentChanged": false
+      "talentChanged": true
     },
     {
-      "name": "The Traitor King",
-      "description": "Gain 10% bonus maximum Health and 20 Spell Armor.Activate to gain 75 Armor for 4 seconds.",
-      "image": "draft_portrait_anubarak.png",
-      "talentChanged": false,
-      "cooldown": "60s"
+      "name": "Underking",
+      "description": "{highlight}Activate to cast an Burrow Charge at the given position after 2.5 seconds.{/highlight}",
+      "image": "anubarak_burrowcharge.png",
+      "talentChanged": true
     },
     {
-      "name": "Rewind",
-      "description": "Activate to reset the cooldowns of your Basic Abilities.",
-      "image": "talent_rewind.png",
-      "talentChanged": false,
-      "cooldown": "60s"
+      "name": "Nerubian safe spot",
+      "description": "{highlight}Activate to create an Cocoon at the target position. One allied hero can enter on the Cocoon at time, you can hold up and control up to 3 safe spots.{/highlight}",
+      "image": "anubarak_webblast.png",
+      "talentChanged": true,
+      "cooldown": "30 seconds"
     }
   ]
 }

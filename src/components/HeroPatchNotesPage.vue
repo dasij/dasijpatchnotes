@@ -112,21 +112,30 @@
           </div>
         </div>
         <p class="text-sm" v-html="formatText(tooltipAbility.description)"></p>
-        <div v-if="tooltipAbility.passives && tooltipAbility.passives.length > 0" class="mt-2">
+        <div v-if="tooltipAbility.questText" class="mt-2">
+          <p class="text-sm font-semibold quest-text">❢ Quest:</p>
+          <p class="text-sm" v-html="tooltipAbility.questText"></p>
+        </div>
+        <div v-if="tooltipAbility.rewardsText && tooltipAbility.rewardsText.length > 0" class="mt-2">
+          <p class="text-sm font-semibold reward-text">❢ Rewards:</p>
           <ul>
-            <li v-for="(passive, index) in tooltipAbility.passives" :key="index" class="text-sm text-gray-400"
-              v-html="formatText(passive)">
+            <li v-for="(reward, index) in tooltipAbility.rewardsText" :key="index" class="text-sm" v-html="reward"></li>
+          </ul>
+        </div>
+        <div v-if="tooltipAbility.passivesText && tooltipAbility.passivesText.length > 0" class="mt-2">
+          <p class="text-sm font-semibold passive-text">Passive:</p>
+          <ul>
+            <li v-for="(passive, index) in tooltipAbility.passivesText" :key="index" class="text-sm" v-html="passive">
             </li>
           </ul>
         </div>
       </div>
 
+
       <div v-if="selectedTab === 'talents'" class="mt-8">
         <div class="abilities-container mt-8">
-
           <h2 class="text-2xl font-bold text-white mb-4">Basic Abilities</h2>
           <div class="flex justify-start">
-
             <div v-for="ability in talents.abilities.basic" :key="ability.name" class="ability"
               @mouseover="tooltipAbility = ability" @mouseleave="tooltipAbility = null">
               <div class="hexagon-border" :class="{ 'ability-changed': ability.abilityChanged }">
@@ -146,17 +155,28 @@
                   </div>
                 </div>
                 <p class="text-sm" v-html="formatText(ability.description)"></p>
-                <div v-if="ability.passives && ability.passives.length > 0" class="mt-2">
+                <div v-if="ability.quest" class="mt-2">
+                  <p class="text-sm font-semibold quest-text">❢ Quest:</p>
+                  <p class="text-sm" v-html="formatText(ability.quest)"></p>
+                </div>
+                <div v-if="ability.rewards && ability.rewards.length > 0" class="mt-2">
+                  <p class="text-sm font-semibold reward-text">❢ Reward:</p>
                   <ul>
-                    <li v-for="(passive, index) in ability.passives" :key="index" class="text-sm text-gray-400"
-                      v-html="formatText(passive)">
-                    </li>
+                    <li v-for="(reward, index) in ability.rewards" :key="index" class="text-sm"
+                      v-html="formatText(reward)"></li>
+                  </ul>
+                </div>
+                <div v-if="ability.passives && ability.passives.length > 0" class="mt-2">
+                  <p class="text-sm font-semibold passive-text">Passive:</p>
+                  <ul>
+                    <li v-for="(passive, index) in ability.passives" :key="index" class="text-sm"
+                      v-html="formatText(passive)"></li>
                   </ul>
                 </div>
               </div>
-
             </div>
           </div>
+
           <h2 class="text-2xl font-bold text-white mb-4">Heroic Abilities</h2>
           <div class="flex justify-start">
             <div v-for="ability in talents.abilities.heroic" :key="ability.name" class="ability"
@@ -178,11 +198,22 @@
                   </div>
                 </div>
                 <p class="text-sm" v-html="formatText(ability.description)"></p>
-                <div v-if="ability.passives && ability.passives.length > 0" class="mt-2">
+                <div v-if="ability.quest" class="mt-2">
+                  <p class="text-sm font-semibold quest-text">❢ Quest:</p>
+                  <p class="text-sm" v-html="formatText(ability.quest)"></p>
+                </div>
+                <div v-if="ability.rewards && ability.rewards.length > 0" class="mt-2">
+                  <p class="text-sm font-semibold reward-text">❢ Reward:</p>
                   <ul>
-                    <li v-for="(passive, index) in ability.passives" :key="index" class="text-sm text-gray-400"
-                      v-html="formatText(passive)">
-                    </li>
+                    <li v-for="(reward, index) in ability.rewards" :key="index" class="text-sm"
+                      v-html="formatText(reward)"></li>
+                  </ul>
+                </div>
+                <div v-if="ability.passives && ability.passives.length > 0" class="mt-2">
+                  <p class="text-sm font-semibold passive-text">Passive:</p>
+                  <ul>
+                    <li v-for="(passive, index) in ability.passives" :key="index" class="text-sm"
+                      v-html="formatText(passive)"></li>
                   </ul>
                 </div>
               </div>
@@ -208,17 +239,27 @@
                   </div>
                 </div>
                 <p class="text-sm" v-html="formatText(talents.abilities.trait.description)"></p>
+                <div v-if="talents.abilities.trait.quest" class="mt-2">
+                  <p class="text-sm font-semibold quest-text">❢ Quest:</p>
+                  <p class="text-sm" v-html="formatText(talents.abilities.trait.quest)"></p>
+                </div>
+                <div v-if="talents.abilities.trait.rewards && talents.abilities.trait.rewards.length > 0" class="mt-2">
+                  <p class="text-sm font-semibold reward-text">❢ Reward:</p>
+                  <ul>
+                    <li v-for="(reward, index) in talents.abilities.trait.rewards" :key="index" class="text-sm"
+                      v-html="formatText(reward)"></li>
+                  </ul>
+                </div>
                 <div v-if="talents.abilities.trait.passives && talents.abilities.trait.passives.length > 0"
                   class="mt-2">
+                  <p class="text-sm font-semibold passive-text">Passive:</p>
                   <ul>
                     <li v-for="(passive, index) in talents.abilities.trait.passives" :key="index" class="text-sm">
-                      <span class="font-semibold" style="color: #78da5b;">Passive: </span>
                       <span v-html="formatText(passive)"></span>
                     </li>
                   </ul>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
@@ -264,13 +305,13 @@
                           </div>
                         </div>
                         <p class="text-sm" v-html="formatText(talent.description)"></p>
-                        <div v-if="talent.quest" class="mt-2">
-                          <p class="text-sm" v-html="formatText('Quest: ' + talent.quest)"></p>
+                        <div v-if="talent.quest" class="mt-2 quest-text">
+                          <p class="text-sm" v-html="formatText('❢ Quest: ' + talent.quest)"></p>
                         </div>
                         <div v-if="talent.rewards && talent.rewards.length > 0" class="mt-2">
                           <ul>
-                            <li v-for="(reward, index) in talent.rewards" :key="index" class="text-sm "
-                              v-html="formatText('Reward: ' + reward)"></li>
+                            <li v-for="(reward, index) in talent.rewards" :key="index" class="text-sm reward-text"
+                              v-html="formatText('❢ Reward: ' + reward)"></li>
                           </ul>
                         </div>
                         <div v-if="talent.passives && talent.passives.length > 0" class="mt-2">
@@ -462,8 +503,14 @@ export default {
 
         // Update the image path
         this.tooltipAbility.imagePath = require(`@/assets/talents/${targetHero}/${this.tooltipAbility.image}`);
+
+        // Add quest, rewards, and passives to the tooltip content
+        this.tooltipAbility.questText = this.tooltipAbility.quest ? this.formatText(this.tooltipAbility.quest) : null;
+        this.tooltipAbility.rewardsText = this.tooltipAbility.rewards ? this.tooltipAbility.rewards.map(reward => this.formatText(reward)) : null;
+        this.tooltipAbility.passivesText = this.tooltipAbility.passives ? this.tooltipAbility.passives.map(passive => this.formatText(passive)) : null;
       }
     }
+
 
 
     ,

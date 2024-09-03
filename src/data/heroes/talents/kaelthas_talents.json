@@ -85,7 +85,7 @@
       "talentChanged": true
     },
     {
-      "name": "Mana Drain",
+      "name": "Mana Siphon",
       "description": "{highlight}Drain the Mana from an enemy hero over 3 seconds. Draining 8% of the target current mana per second and restoring Kael'thas 8% maximum mana per second and half of his mana value to close heores.{/highlight}",
       "cooldown": "25 seconds",
       "image": "manadrain.webp",

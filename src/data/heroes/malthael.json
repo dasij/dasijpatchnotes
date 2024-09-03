@@ -1,23 +1,30 @@
 {
   "id": 999,
   "name": "MALTHAEL",
-  "role": "",
+  "role": "Melee Assassin",
   "image": "heroes_portraits/malthael.webp",
-  "show": "false",
+  "show": "falses",
   "patchNotes": [
     {
       "id": 999,
       "title": "",
       "general": [
         {
-          "change_id": "malthael_",
-          "change": "",
+          "change_id": "malthael_1",
+          "change": "Base",
           "texts": [
             {
-              "text": ""
+              "text": "Additional functionality: Malthael can interact with dead bodies destroying their souls",
+              "subtexts": [
+                "This interaction means skills like <modified, abilities, heroic, 0, auriel> and <modified, talents, 13, 1, guldan> can't be used as it will destroy the soul",
+                "the interaction takes 3 seconds"
+              ]
+            },
+            {
+              "text": "Additional functionality: Malthael receive 2% extra experience in the end of the game everytime he participates on a Nephalem takedown and 1% for other humans"
             }
           ],
-          "developerCommentary": "",
+          "developerCommentary": "I want to make him closer to the Aspect of Death role and also make it closer to the lore.",
           "likes": 0,
           "likedBy": {}
         }
@@ -28,13 +35,38 @@
           "name": "Level 1",
           "changes": [
             {
-              "change_id": "malthael_",
-              "name": "",
+              "change_id": "malthael_2",
+              "name": "<vanilla, talents, 1, 0>",
               "texts": [
                 {
-                  "text": "",
+                  "text": "Additional functionality: Instantly kill troops while under <modified, abilities, trait, 0> effect. Setting it's cooldown to 0.25 and refunding mana if a troop was the primary target."
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "malthael_3",
+              "name": "<vanilla, talents, 1, 1>",
+              "texts": [
+                {
+                  "text": "Additional functionality: While mounted increase mana regeneration by 300%."
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "malthael_4",
+              "name": "<vanilla, talents, 1, 2>",
+              "texts": [
+                {
+                  "text": "Additional functionality: Each Time Malthael go through an unit he gains a charge of dodge that lasts 3 seconds.",
                   "subtexts": [
-                    ""
+                    "Can only hold one charge",
+                    "Won't gain charges if he goes through the same unit"
                   ]
                 }
               ],
@@ -48,14 +80,47 @@
           "name": "Level 4",
           "changes": [
             {
-              "change_id": "malthael_",
-              "name": "",
+              "change_id": "malthael_5",
+              "name": "<vanilla, talents, 7, 0>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "text": "Moved from level 7"
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "malthael_6",
+              "name": "<vanilla, talents, 13, 0>",
+              "texts": [
+                {
+                  "text": "Moved from level 13"
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "malthael_7",
+              "name": "<vanilla, talents, 4, 1>",
+              "texts": [
+                {
+                  "text": "Moved to level 7"
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "malthael_8",
+              "name": "<vanilla, talents, 4, 2>",
+              "texts": [
+                {
+                  "text": "Moved to level 7"
                 }
               ],
               "developerCommentary": "",
@@ -68,14 +133,54 @@
           "name": "Level 7",
           "changes": [
             {
-              "change_id": "malthael_",
-              "name": "",
+              "change_id": "malthael_9",
+              "name": "<vanilla, talents, 4, 1>",
               "texts": [
                 {
-                  "text": "",
+                  "text": "Moved from level 4"
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "malthael_10",
+              "name": "<vanilla, talents, 4, 2>",
+              "texts": [
+                {
+                  "text": "Moved from level 4"
+                },
+                {
+                  "text": "Additional functionality: Receive 15 phsyical armor while one enemy hero is affected by <modified, abilities, trait, 0>"
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "malthael_11",
+              "name": "<modified, talents, 7, 2>",
+              "texts": [
+                {
+                  "text": "Activate to fear enemies close to Malthael for 1.25 seconds after 0.25 seconds. Recharges after Enemy heroes affected by <modified, abilities, trait, 0> healed a total of 2000",
                   "subtexts": [
-                    ""
+                    "Radius will be 2 | <vanilla, abilities, basic, 1, muradin> is 3.0",
+                    "Works similar to <vanilla, talents, 4, 2, genji> in terms of cooldown needing to recharge doing X thing."
                   ]
+                }
+              ],
+              "developerCommentary": "I really don't know which number to put on the recharge.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "malthael_12",
+              "name": "<vanilla, talents, 7, 2>",
+              "texts": [
+                {
+                  "text": "Moved to level 13"
                 }
               ],
               "developerCommentary": "",
@@ -88,14 +193,14 @@
           "name": "Level 10",
           "changes": [
             {
-              "change_id": "malthael_",
-              "name": "",
+              "change_id": "malthael_13",
+              "name": "<vanilla, abilities, heroic, 1>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "text": "Quest removed"
+                },
+                {
+                  "text": "Additional functionality: Heal 100% of the damage dealt"
                 }
               ],
               "developerCommentary": "",
@@ -108,14 +213,41 @@
           "name": "Level 13",
           "changes": [
             {
-              "change_id": "malthael_",
-              "name": "",
+              "change_id": "malthael_14",
+              "name": "<vanilla, talents, 7, 2>",
               "texts": [
                 {
-                  "text": "",
+                  "text": "Moved from level 7"
+                },
+                {
+                  "text": "Healing reduction increased from 50% to 75%"
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "malthael_15",
+              "name": "<vanilla, talents, 13, 3>",
+              "texts": [
+                {
+                  "text": "Changed functionality: Activate to after 2 seconds, Steal 15 spell armor from each enemy Hero affliected by <modified, abilities, trait, 0> for 4 seconds.",
                   "subtexts": [
-                    ""
+                    "Stealing will subtract the armor from affect heroes and give it to Malthael."
                   ]
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "malthael_16",
+              "name": "<vanilla, talents, 13, 0>",
+              "texts": [
+                {
+                  "text": "Moved from level 4"
                 }
               ],
               "developerCommentary": "",
@@ -128,13 +260,42 @@
           "name": "Level 16",
           "changes": [
             {
-              "change_id": "malthael_",
-              "name": "",
+              "change_id": "malthael_17",
+              "name": "<vanilla, talents, 16, 0>",
               "texts": [
                 {
-                  "text": "",
+                  "text": "Additional functionality: <modified, abilities, basic, 0> increase the current <modified, abilities, trait, 0> damage by 10% each time it hits the enemy.",
                   "subtexts": [
-                    ""
+                    "The damage will be independent meaning one target could be receiving extra 70% damage from the passive and other could be receiving only 10%."
+                  ]
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "malthael_18",
+              "name": "<vanilla, talents, 16, 1>",
+              "texts": [
+                {
+                  "text": "Additional functionality: Damages and applies <modified, abilities, trait, 0> to enemies around its target."
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "malthael_19",
+              "name": "<vanilla, talents, 16, 2>",
+              "texts": [
+                {
+                  "text": "Additional functionality: Enemy heros that die next to Malthael grants him essence of death. Activate to use a charge of Essence of death decreasing every respawn time by 7% of it's current time for each charge.",
+                  "subtexts": [
+                    "Can hold up to 5 charges",
+                    "This affect enemy heroes",
+                    "The minimum time this will decrease will be 1 second."
                   ]
                 }
               ],
@@ -148,13 +309,60 @@
           "name": "Level 20",
           "changes": [
             {
-              "change_id": "malthael_",
-              "name": "",
+              "change_id": "malthael_20",
+              "name": "<vanilla, talents, 20, 0>",
               "texts": [
                 {
-                  "text": "",
+                  "text": "Additional functionality: <modified, abilities, heroic, 0> steals 1% maximum health of every hero on the area each second. Lasts 4 seconds",
                   "subtexts": [
-                    ""
+                    "The maximum health from given heroes will be decreased and given to Malthael effectively stealing their maximum health",
+                    "The health stolen will be returned in one go to the stolen heroes, if Malthael stole 4%¨maximum health points from a Diablo after 4 seconds all the maximum health will be returned in one go.",
+                    "The maximum health Malthael steals will come healed meaning if he steals 79 maximum health that health will alredy come healed instead of only increased the maximum health point limit.",
+                    "The health returned to enemy heroes won't come back healed. Meaning it will only give back the limit health points."
+                  ]
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "malthael_21",
+              "name": "<vanilla, talents, 20, 1>",
+              "texts": [
+                {
+                  "text": "Changed functionality: Activate while dead to immediately respawn at the Hall of Storms.",
+                  "subtexts": [
+                    "Cooldown: Takedown an enemy hero with <modified, abilities, heroic, 1> within 5 seconds of it being used"
+                  ]
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "malthael_22",
+              "name": "<vanilla, talents, 20, 2>",
+              "texts": [
+                {
+                  "text": "Additional functionality: While on the trail extends it's time up to 2 seconds and makes Malthael unkillable "
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "malthael_23",
+              "name": "<vanilla, talents, 20, 3>",
+              "texts": [
+                {
+                  "text": "Changed functionality: Malthael traverse through terrain and can't be unmounted by damage",
+                  "subtexts": [
+                    "This means Malthael will have no collision with terrain.",
+                    "<vanilla, abilities, basic, 0, diablo> won't be able to stun him anymore and any similar skill that needs terrain to work",
+                    "Malthael fog vision will completely ignore the current object he stand on. Meaning it will count as if that terrain doensn't exist for fog vision block."
                   ]
                 }
               ],

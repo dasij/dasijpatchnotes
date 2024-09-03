@@ -61,6 +61,7 @@
                 {
                   "text": "Changed functionality: Instead of summoning multiple <modified, abilities, trait, 0> in an area, Xul now accumulates them into a single, more powerful unit. For each accumulated Skeleton, the unit's stats increase by 50% of the base Skeleton's stats also increasing it's duration by 1 and stacking on-hit effects.",
                   "subtexts": [
+                    "Accumulated skeletons DOESN'T COUNT to the skeleton limit.",
                     "The stats will be health, damage, explosion damage and size",
                     "The on-hit effects means that if three <modified, abilities, trait, 0> stacked his hit will count as if it hit three times the same target.",
                     "This will be prioritized before the <modified, abilities, trait, 0> limit so if you summon a 4th skeleton it will first check that talent before destroying a skeleton",
@@ -147,7 +148,7 @@
               "name": "NEW: <modified, talents, 7, 1>",
               "texts": [
                 {
-                  "text": "Additional functionality: <modified, abilities, basic, 2> reduces the target's vision radius by 25% and restricts them to their own vision only for 2.0 seconds.",
+                  "text": "Changed functionality: <modified, abilities, basic, 2> reduces the target's vision radius by 25% and restricts them to their own vision only for 2.0 seconds.",
                   "subtexts": [
                     "This effect cannot be cleansed.",
                     "The affected hero loses access to allied vision but allies can still see through their vision.",
@@ -260,7 +261,10 @@
                   "text": "Slow increase reduced from 20% to 10%"
                 },
                 {
-                  "text": "Receive all level 13 talents"
+                  "text": "Receive all the other two level 13 talents you didn't pick with 50% efficiency.",
+                  "subtexts": [
+                    "<modified, talents, 13, 0> will still create two scythes"
+                  ]
                 }
               ],
               "developerCommentary": "I wanted to increase the effectiviness of that talent BUT i didn't want to directly buff the current effects as they could become something 'not cool'. With that in mind i want bring those talents from 13 to suit the current effect. If this talent comes to be overpowered i would bring something like <vanilla, talents, 20, 2, kharazim> with the reduced effectiviness of those talents.",
