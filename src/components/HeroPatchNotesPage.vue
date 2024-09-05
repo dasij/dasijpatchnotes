@@ -1,5 +1,8 @@
 <template>
   <div class="bg-hots-repeat bg-repeat-y bg-contain bg-center min-h-screen">
+
+    <MetaTags :title="pageTitle" :description="pageDescription" :image="pageImage" />
+
     <div class="container mx-auto py-20">
       <nav class="mb-8">
         <button @click="selectTab('patchNotes')" :class="{ 'selected': selectedTab === 'patchNotes' }"
@@ -344,12 +347,29 @@
 
 
 <script>
-import { database, ref, auth, googleProvider, facebookProvider } from '../firebase';
+import { database, auth, ref as firebaseRef, googleProvider, facebookProvider } from '../firebase';
 import { set, get } from 'firebase/database';
 import { signInWithPopup } from 'firebase/auth';
 import axios from 'axios';
+import { defineComponent, ref } from 'vue'
+import MetaTags from './MetaTags.vue'
 
-export default {
+
+export default defineComponent({
+
+  components: {
+    MetaTags
+  },
+
+  setup() {
+    const pageTitle = ref('')
+    const pageDescription = ref('Descrição da Página')
+    const pageImage = ref('')
+
+    return { pageTitle, pageDescription, pageImage }
+  },
+
+
   data() {
     return {
       hero: {},
@@ -386,6 +406,7 @@ export default {
       },
     };
   },
+
 
   computed: {
     heroName() {
@@ -529,6 +550,10 @@ export default {
         this.patchNotes = heroData.patchNotes;
         this.loadTalents(); // Modificado para chamar loadTalents
         this.loadLikes();
+        this.pageTitle = heroData.name; // Assumindo que o nome do herói está em heroData.name
+        this.pageImage = require(`@/assets/${heroData.image}`); // Ajuste o caminho conforme necessário
+        console.log('heroData.name:', heroData.name);
+        console.log('heroData.image:', heroData.image);
       } else {
         console.error('Failed to load hero data');
       }
@@ -543,7 +568,7 @@ export default {
       this.loadTalents();
     },
     loadLikes() {
-      const likesRef = ref(database, `heroes/${this.heroName}/likes`);
+      const likesRef = firebaseRef(database, `heroes/${this.heroName}/likes`);
       get(likesRef).then(snapshot => {
         if (snapshot.exists()) {
           this.likesData = snapshot.val();
@@ -629,7 +654,7 @@ export default {
       }
     },
     saveChanges() {
-      const changesRef = ref(database, `heroes/${this.heroName}/likes`);
+      const changesRef = firebaseRef(database, `heroes/${this.heroName}/likes`);
       const likesToSave = {};
 
       this.patchNotes.forEach(patchNote => {
@@ -652,7 +677,7 @@ export default {
       set(changesRef, likesToSave);
     },
     loadChanges() {
-      const changesRef = ref(database, `heroes/${this.heroName}/patchNotes`);
+      const changesRef = firebaseRef(database, `heroes/${this.heroName}/patchNotes`);
       get(changesRef).then(snapshot => {
         if (snapshot.exists()) {
           this.patchNotes = snapshot.val();
@@ -798,7 +823,7 @@ export default {
       }
     });
   },
-}
+});
 
 </script>
 
