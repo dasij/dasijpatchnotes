@@ -1,10 +1,10 @@
 <template>
-    <span></span>
+    <div v-if="false"></div>
 </template>
 
 <script>
-import { defineComponent, watch } from 'vue'
-import { useRoute } from 'vue-router'
+import { defineComponent } from 'vue'
+import { useMeta } from 'vue-meta'
 
 export default defineComponent({
     name: 'MetaTags',
@@ -14,18 +14,16 @@ export default defineComponent({
         image: String
     },
     setup(props) {
-        const route = useRoute()
-
-        const updateMetaTags = () => {
-            document.title = props.title
-            document.querySelector('meta[property="og:title"]').setAttribute('content', props.title)
-            document.querySelector('meta[property="og:description"]').setAttribute('content', props.description)
-            document.querySelector('meta[property="og:image"]').setAttribute('content', props.image)
-            document.querySelector('meta[property="og:url"]').setAttribute('content', window.location.href)
-        }
-
-        watch(() => route.path, updateMetaTags)
-        updateMetaTags()
+        useMeta(() => ({
+            title: props.title,
+            meta: [
+                { name: 'description', content: props.description },
+                { property: 'og:title', content: props.title },
+                { property: 'og:description', content: props.description },
+                { property: 'og:image', content: props.image },
+                { property: 'og:url', content: window.location.href }
+            ]
+        }))
     }
 })
 </script>

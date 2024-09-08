@@ -363,7 +363,7 @@ export default defineComponent({
 
   setup() {
     const pageTitle = ref('')
-    const pageDescription = ref('Descrição da Página')
+    const pageDescription = ref('')
     const pageImage = ref('')
 
     return { pageTitle, pageDescription, pageImage }
@@ -551,9 +551,8 @@ export default defineComponent({
         this.loadTalents(); // Modificado para chamar loadTalents
         this.loadLikes();
         this.pageTitle = heroData.name; // Assumindo que o nome do herói está em heroData.name
+        this.pageDescription = `Patch notes for ${heroData.name} in Heroes of the Storm`;
         this.pageImage = require(`@/assets/${heroData.image}`); // Ajuste o caminho conforme necessário
-        console.log('heroData.name:', heroData.name);
-        console.log('heroData.image:', heroData.image);
       } else {
         console.error('Failed to load hero data');
       }

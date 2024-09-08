@@ -3,37 +3,81 @@
   "name": "ANDUIN",
   "role": "Healer",
   "image": "heroes_portraits/anduin.webp",
-  "show": "false",
+  "show": "falses",
   "patchNotes": [
     {
       "id": 5,
-      "title": "",
+      "title": "Hero changes and talent rework",
       "general": [
         {
-          "change_id": "anduin_",
-          "change": "",
+          "change_id": "anduin_1",
+          "change": "Leap of Faith (T)",
           "texts": [
             {
-              "text": ""
+              "text": "Leap of Faith active won't cancel any channeling abilities anymore.",
+              "subtexts": [
+                "If you pull an <vanilla, abilities, heroic, 0, etc> he will continue to do it. If you pull an  <vanilla, abilities, heroic, 1, illidan> he will continue to cast it"
+              ]
+            },
+            {
+              "text": "Changed functionality: (CHANGES ONLY TO PURSUED BY GRACE) Damaging an enemy Hero increases Movement Speed by 2.5% and heals by 3.75% for 6 seconds. These effects stack up to 8 times."
             }
           ],
-          "developerCommentary": "",
+          "developerCommentary": "The concept of this change was to change how the speed tier on level 13 would work and also preventing the active to cancel skills to lessen the frustation of players and incentivize some new plays",
           "likes": 0,
           "likedBy": {}
         }
       ],
-      "developerCommentary": "",
+      "developerCommentary": "For me Anduin is a great hero that is cursed a little on how his <vanilla, abilities, trait, 0> works and it's not because the skill itself is bad but it causes a little frustation sometimes with the 'no consent' type of skill. His kit overall is fun but i want to change it to something more inclined to how i would want Anduin to be so here is more like a preference than anything. The truly problematic part of his kit i would say that lies on level 13-16 on how good <vanilla, abilities, trait, 0> talents are AND equally fun",
       "sections": [
         {
           "name": "Level 1",
           "changes": [
             {
-              "change_id": "anduin_",
-              "name": "",
+              "change_id": "anduin_2",
+              "name": "<vanilla, talents, 7, 0>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Moved from level 7"
+                },
+                {
+                  "text": "Additional functionality: Anduin receive 100% attack speed bonus for the next two basic attacks. "
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "anduin_3",
+              "name": "<vanilla, talents, 16, 0>",
+              "texts": [
+                {
+                  "text": "Changed functionality: If Flash Heal is used at a stunned, rooted or silenced target it will be recast after 2 seconds on the same target. If <modified, abilities, trait, 0> cooldown is available the second healing is increased by 100%"
+                }
+              ],
+              "developerCommentary": "Making that talent to have a different usage from the others",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "anduin_4",
+              "name": "<vanilla, talents, 7, 0>",
+              "texts": [
+                {
+                  "text": "Moved to level 7"
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "anduin_5",
+              "name": "<vanilla, talents, 1, 1>",
+              "texts": [
+                {
+                  "text": "Removed"
                 }
               ],
               "developerCommentary": "",
@@ -46,12 +90,38 @@
           "name": "Level 4",
           "changes": [
             {
-              "change_id": "anduin_",
-              "name": "",
+              "change_id": "anduin_6",
+              "name": "NEW: <modified, talents, 4, 0>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Anduin can use <modified, abilities, basic, 0> on a chastized enemy dealing damage instead and launching basic attacks on close enemy heroes",
+                  "subtexts": [
+                    "Radius 2.0 | <vanilla, abilities, basic, 1, muradin> is 3.0"
+                  ]
+                }
+              ],
+              "developerCommentary": "I didn't want to make it too similar to <vanilla, talents, 4, 0, uther> so i made it more situational and powerful",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "anduin_7",
+              "name": "<vanilla, talents, 4, 1>",
+              "texts": [
+                {
+                  "text": "Basic attacks bonus now applies against any root"
+                }
+              ],
+              "developerCommentary": "Instead of going off the board i wanted to make this ",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "anduin_8",
+              "name": "<vanilla, talents, 4, 0>",
+              "texts": [
+                {
+                  "text": "Moved to level 13"
                 }
               ],
               "developerCommentary": "",
@@ -64,30 +134,38 @@
           "name": "Level 7",
           "changes": [
             {
-              "change_id": "anduin_",
-              "name": "",
+              "change_id": "anduin_9",
+              "name": "<vanilla, talents, 1, 2>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Moved from level 1"
                 }
               ],
               "developerCommentary": "",
               "likes": 0,
               "likedBy": {}
-            }
-          ]
-        },
-        {
-          "name": "Level 10",
-          "changes": [
+            },
             {
-              "change_id": "anduin_",
-              "name": "",
+              "change_id": "anduin_10",
+              "name": "<vanilla, talents, 7, 1>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Increases cooldown from 10 seconds to 15 seconds"
+                },
+                {
+                  "text": "During the healing Anduin is immune to Silences and Slows"
+                }
+              ],
+              "developerCommentary": "This is supposed to give Anduin a tool to prevent certain types of engage to suceed against him but not all of them.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "anduin_11",
+              "name": "<vanilla, talents, 7, 0>",
+              "texts": [
+                {
+                  "text": "Moved to level 1"
                 }
               ],
               "developerCommentary": "",
@@ -100,15 +178,62 @@
           "name": "Level 13",
           "changes": [
             {
-              "change_id": "anduin_",
-              "name": "",
+              "change_id": "anduin_12",
+              "name": "<vanilla, talents, 13, 0>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Movement speed bonus is now stacking"
+                },
+                {
+                  "text": "Passive: Basic Attacks against enemies gives 10% movement speed to the closest hero to Anduin for 1 second."
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "Yes, turbo Anduin is real.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "anduin_13",
+              "name": "NEW: Power Word: <modified, talents, 16, 1>",
+              "texts": [
+                {
+                  "text": "The healing done by <modified, abilities, basic, 1> Star and Basic Attacks will be converted on temporary max health that lasts 6 seconds.",
+                  "subtexts": [
+                    "This will also apply bonus from <modified, talents, 16, 0>"
+                  ]
+                },
+                {
+                  "text": "Passive: Basic Attacks against enemy Heroes heal the lowest Health allied Hero near Anduin for 32."
+                }
+              ],
+              "developerCommentary": "The intent here was to buff <vanilla, talents, 1, 1> but also being different",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "anduin_14",
+              "name": "<vanilla, talents, 4, 0>",
+              "texts": [
+                {
+                  "text": "Moved from level 4"
+                },
+                {
+                  "text": "Changed Passive: Basic Attacks burn enemy heroes for 87 damage over 3 seconds and Anduin heals for 50% of the damage dealt."
+                }
+              ],
+              "developerCommentary": "I just find those two very suitable one to the other",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "anduin_14",
+              "name": "<vanilla, talents, 13, 2>",
+              "texts": [
+                {
+                  "text": "removed"
+                }
+              ],
+              "developerCommentary": "As said before i it's a preference change for Anduin and i dislike how strong this combo is naturally for Anduin. ",
               "likes": 0,
               "likedBy": {}
             }
@@ -118,12 +243,38 @@
           "name": "Level 16",
           "changes": [
             {
-              "change_id": "anduin_",
-              "name": "",
+              "change_id": "anduin_15",
+              "name": "<vanilla, talents, 16, 1>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Additional functionality: also explodes at the apex."
+                }
+              ],
+              "developerCommentary": "I like the concept of this talent and i love the interaction the <vanilla, abilities, basic, 1> but i wanted it to be more appealing.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "anduin_16",
+              "name": "<vanilla, talents, 16, 3>",
+              "texts": [
+                {
+                  "text": "Won't increase the healing of <modified, abilities, basic, 0> anymore neither will reset the cooldown"
+                },
+                {
+                  "text": "Additional functionality: Receive all level 1 talents"
+                }
+              ],
+              "developerCommentary": "<vanilla, talents, 16, 3> would have an hard time being balanced on being an super heal without being compared to <vanilla, talents, 10, 0, rehgar> so with the changes on level 1 tier i think it's enough to justify it's existence plus being fun.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "anduin_17",
+              "name": "<vanilla, talents, 16, 0>",
+              "texts": [
+                {
+                  "text": "Moved to level 1"
                 }
               ],
               "developerCommentary": "",
@@ -136,15 +287,17 @@
           "name": "Level 20",
           "changes": [
             {
-              "change_id": "anduin_",
-              "name": "",
+              "change_id": "anduin_18",
+              "name": "<vanilla, talents, 20, 3> renamed to <modified, talents, 20, 3>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Changed functionality: A holy area surrounds Anduin. Every time he basic attacks an enemy hero all allied units within this area are healed by 1% of their maximum health.",
+                  "subtexts": [
+                    "Radius will be 5 | <vanilla, talents, 10, 1, blaze> is 6.5"
+                  ]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "I was reading through all the talents from discipline and holy priest from WoW and this one got my attention. Big fan.",
               "likes": 0,
               "likedBy": {}
             }

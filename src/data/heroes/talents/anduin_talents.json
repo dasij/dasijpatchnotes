@@ -46,9 +46,9 @@
     ],
     "trait": {
       "name": "Leap of Faith (T)",
-      "description": "Faith instantly pulls an allied Hero to Anduin's location, granting them Unstoppable while they travel.Pursued By GraceBasic Attacks against enemy Heroes heal the lowest Health allied Hero near Anduin for 32.",
+      "description": "Faith instantly pulls an allied Hero to Anduin's location, granting them Unstoppable while they travel. {highlight}Damaging an enemy Hero increases Movement Speed by 2.5% and heals by 3.75% for 6 seconds. These effects stack up to 8 times.{/highlight}",
       "image": "anduin_leap_of_faith.png",
-      "abilityChanged": false,
+      "abilityChanged": true,
       "cooldown": "70s"
     }
   },
@@ -60,31 +60,30 @@
       "talentChanged": false
     },
     {
-      "name": "Power Word: Shield",
-      "description": "While Divine Star is traveling out, allies in its path gain a Shield that absorbs 128 damage for 4 seconds.If Divine Star hits an enemy Hero, Anduin gains a Shield that absorbs 185 damage for 4 seconds.",
-      "image": "anduin_divine_star.png",
-      "talentChanged": false
+      "name": "Binding Heal",
+      "description": "{highlight}Casting Flash Heal on an ally heals Anduin for 135. Anduin receive 100% attack speed bonus for the next two basic attacks.{/highlight}",
+      "image": "anduin_flash_heal.png",
+      "talentChanged": true
     },
     {
-      "name": "Lightwell",
-      "description": "Summon a Lightwell that periodically heals a nearby allied Hero for 50. The well only fades after healing 15 times or when recast.This cooldown is reduced by 1 second each time Anduin heals an allied Hero.",
-      "image": "anduin_lightwell.png",
-      "talentChanged": false,
-      "cooldown": "75s"
+      "name": "Renew",
+      "description": "If Flash Heal is used at a stunned, rooted or silenced target it will be recast after 2 seconds on the same target. If Leap of Faith cooldown is available the second healing is increased by 100%",
+      "image": "anduin_flash_heal.png",
+      "talentChanged": true
     }
   ],
   "4": [
     {
-      "name": "Moral Compass",
-      "description": "Divine Star fires Basic Attacks at Heroes close to its apex.Passive: Increase Attack Range by 1.1.",
-      "image": "anduin_divine_star.png",
-      "talentChanged": false
+      "name": "Smite",
+      "description": "Anduin can use Flash Heal on a chastized enemy dealing damage instead and launching basic attacks on close enemy heroes.",
+      "image": "anduin_chastise.png",
+      "talentChanged": true
     },
     {
       "name": "Surge of Light",
-      "description": "Basic Attacks reduce the cooldown of Chastise by 0.75 seconds. Basic Attacks against Heroes Rooted by Chastise launch an additional Basic Attack and restore 25 Mana.",
+      "description": "Basic Attacks reduce the cooldown of Chastise by 0.75 seconds. Basic Attacks against {highlight}rooted heroes{/highlight} launch an additional Basic Attack and restore 25 Mana.",
       "image": "anduin_chastise.png",
-      "talentChanged": false
+      "talentChanged": true
     },
     {
       "name": "Piercing Light",
@@ -95,16 +94,17 @@
   ],
   "7": [
     {
-      "name": "Binding Heal",
-      "description": "Casting Flash Heal on an ally heals Anduin for 135.",
-      "image": "anduin_flash_heal.png",
-      "talentChanged": false
+      "name": "Lightwell",
+      "description": "Summon a Lightwell that periodically heals a nearby allied Hero for 50. The well only fades after healing 15 times or when recast.This cooldown is reduced by 1 second each time Anduin heals an allied Hero.",
+      "image": "anduin_lightwell.png",
+      "talentChanged": true,
+      "cooldown": "75s"
     },
     {
       "name": "Blessed Recovery",
-      "description": "If Anduin loses more than 8% of his maximum Health at once, recover 15% Health over 3 seconds. This effect has a 10 second cooldown.Current Health required: 133",
+      "description": "{highlight}If Anduin loses more than 8% of his maximum Health at once, recover 15% Health over 3 seconds. During the healing Anduin is immune to Silences and Slows. This effect has a 15 second cooldown.Current Health required: 133{/highlight}",
       "image": "anduin_blessed_recovery.png",
-      "talentChanged": false
+      "talentChanged": true
     },
     {
       "name": "Desperate Prayer",
@@ -135,48 +135,52 @@
   "13": [
     {
       "name": "Speed of the Pious",
-      "description": "While Divine Star is traveling, gain 30% Movement Speed.  Each allied Hero healed by Divine Star on its return to Anduin reduces its cooldown by 1 second.",
+      "description": "While Divine Star is traveling, gain 30% {highlight}stacking{/highlight} Movement Speed. Each allied Hero healed by Divine Star on its return to Anduin reduces its cooldown by 1 second. ",
       "image": "anduin_divine_star.png",
-      "talentChanged": false
+      "talentChanged": true,
+      "passives": [
+        "{highlight}Basic Attacks against enemies gives 10% movement speed to the closest hero to Anduin for 1 second.{/highlight}"
+      ]
     },
     {
-      "name": "Push Forward!",
-      "description": "Damaging an enemy Hero increases Movement Speed by 2.5% and the amount healed by Pursued By Grace by 5% for 6 seconds. These effects stack up to 8 times.",
-      "image": "anduin_varians_legacy.png",
-      "talentChanged": false
+      "name": "Power Word: Fortitude",
+      "description": "{highlight}The healing done by Divine Star will be converted on temporary max health that lasts 6 seconds.{/highlight}",
+      "image": "anduin_divine_star.png",
+      "talentChanged": true,
+      "passives": [
+        "{highlight}Basic Attacks against enemy Heroes heal the lowest Health allied Hero near Anduin for 32.{/highlight}"
+      ]
     },
     {
-      "name": "Enchant Boots - Lion's Speed",
-      "description": "Gain 5% Movement Speed. This bonus is quadrupled while Leap of Faith's cooldown is available. Allies pulled by Leap of Faith are healed for 280 over 4 seconds.",
-      "image": "anduin_leap_of_faith.png",
-      "talentChanged": false
+      "name": "Moral Compass",
+      "description": "Divine Star fires Basic Attacks at Heroes close to its apex.Passive: Increase Attack Range by 1.1.",
+      "image": "anduin_divine_star.png",
+      "talentChanged": true,
+      "passives": [
+        "{highlight}Basic Attacks burn enemy heroes for 87 damage over 3 seconds and Anduin heals for 50% of the damage dealt.{/highlight}"
+      ]
     }
   ],
   "16": [
     {
-      "name": "Renew",
-      "description": "Flash Heal heals an additional 180 over 6 seconds. The duration of this heal is refreshed each time Anduin hits an enemy Hero with a Basic Attack.",
-      "image": "anduin_flash_heal.png",
-      "talentChanged": false
+      "name": "Inner Focus",
+      "description": "Activate to reset the cooldown of Flash Heal ",
+      "passives": ["{highlight}Receive all level 1 talents.{/highlight}"],
+      "image": "anduin_inner_focus.png",
+      "talentChanged": true,
+      "cooldown": "20s"
     },
     {
       "name": "Holy Nova",
-      "description": "After Anduin catches Divine Star, it explodes, healing nearby allied Heroes for 105 and damaging enemies for 150.",
+      "description": "{highlight}After Anduin catches Divine Star, it explodes, healing nearby allied Heroes for 105 and damaging enemies for 150. Also explodes at the apex.{/highlight}",
       "image": "anduin_divine_star.png",
-      "talentChanged": false
+      "talentChanged": true
     },
     {
       "name": "Glyph of Faith",
       "description": "Leap of Faith gains a 2nd charge.",
       "image": "anduin_leap_of_faith.png",
       "talentChanged": false
-    },
-    {
-      "name": "Inner Focus",
-      "description": "Activate to reset the cooldown of Flash Heal and its next cast heals for 25% more.Damaging enemy Heroes reduces this cooldown by 1 second.",
-      "image": "anduin_inner_focus.png",
-      "talentChanged": false,
-      "cooldown": "20s"
     }
   ],
   "20": [
@@ -199,10 +203,10 @@
       "talentChanged": false
     },
     {
-      "name": "Varian's Legacy",
-      "description": "Basic Attacks burn enemies for 87 damage over 3 seconds and Anduin heals for 50% of the damage dealt.",
+      "name": "Halo",
+      "description": "{highlight}A holy area surrounds Anduin. Every time he basic attacks an enemy hero all allied units within this area are healed by 1% of their maximum health.{/highlight}",
       "image": "anduin_varians_legacy.png",
-      "talentChanged": false
+      "talentChanged": true
     }
   ]
 }
