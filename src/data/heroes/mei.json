@@ -1,7 +1,7 @@
 {
   "id": 999,
   "name": "MEI",
-  "role": "",
+  "role": "Tank",
   "image": "heroes_portraits/mei.webp",
   "show": "false",
   "patchNotes": [
@@ -11,10 +11,15 @@
       "general": [
         {
           "change_id": "mei_",
-          "change": "",
+          "change": "General",
           "texts": [
             {
-              "text": ""
+              "text": "Activate to switch your basic attack to a short constant freezing blast that you can attack while moving dealing 112.5 damage per second.",
+              "subtexts": [
+                "This attack will deal 150% of the base attack damage.",
+                "It will be 4 attacks per second",
+                "The range will be 2.0"
+              ]
             }
           ],
           "developerCommentary": "",
@@ -29,12 +34,12 @@
           "changes": [
             {
               "change_id": "mei_",
-              "name": "",
+              "name": "Endothermic Blaster",
               "texts": [
                 {
-                  "text": "",
+                  "text": "Increase your basic attack range by 1",
                   "subtexts": [
-                    ""
+                    "This will increase the attack range on both attacks by 1"
                   ]
                 }
               ],
@@ -53,9 +58,7 @@
               "texts": [
                 {
                   "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "subtexts": [""]
                 }
               ],
               "developerCommentary": "",
@@ -73,9 +76,7 @@
               "texts": [
                 {
                   "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "subtexts": [""]
                 }
               ],
               "developerCommentary": "",
@@ -93,9 +94,7 @@
               "texts": [
                 {
                   "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "subtexts": [""]
                 }
               ],
               "developerCommentary": "",
@@ -113,9 +112,7 @@
               "texts": [
                 {
                   "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "subtexts": [""]
                 }
               ],
               "developerCommentary": "",
@@ -133,9 +130,7 @@
               "texts": [
                 {
                   "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "subtexts": [""]
                 }
               ],
               "developerCommentary": "",
@@ -153,9 +148,7 @@
               "texts": [
                 {
                   "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "subtexts": [""]
                 }
               ],
               "developerCommentary": "",

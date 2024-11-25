@@ -91,7 +91,7 @@
               "name": "<vanilla, talents, 4, 2> renamed to <modified, talents, 4, 2>",
               "texts": [
                 {
-                  "text": "Changed functionality: Using <modified, abilities, basic, 0> within 1.5 seconds of your <modified, abilities, basic, 1> being destroyed or expired slightly pull enemy heroes close to you.",
+                  "text": "Changed functionality: Using <modified, abilities, basic, 0> within 1.5 seconds of your <modified, abilities, basic, 1> being destroyed or expired slightly pull enemy heroes close to you that you hit with.",
                   "subtexts": [
                     "Same pull force and duration as <vanilla, abilities, basic, 1, johanna>"
                   ]
@@ -227,7 +227,7 @@
               "name": "<vanilla, talents, 16, 1> renamed to <modified, talents, 16, 1>",
               "texts": [
                 {
-                  "text": "Changed functionality: Activate while in <modified, abilities, basic, 2> Anub'Arak to surface early causing untalented <modified, abilities, basic, 0> to be casted in all directions around Anub'arak",
+                  "text": "Changed functionality: Activate while in <modified, abilities, basic, 2> Anub'Arak to surface early causing <modified, abilities, basic, 0> to be casted in all directions around Anub'arak",
                   "subtexts": ["Cooldown 75 seconds"]
                 }
               ],
@@ -240,7 +240,7 @@
               "name": "<vanilla, talents, 16, 2> renamed to <modified, talents, 16, 2>",
               "texts": [
                 {
-                  "text": "Changed functionality: You can recast <modified, abilities, basic, 2> to go back to the initial cast position. <modified, abilities, basic, 2> also grants a 400 point shield for 5 seconds"
+                  "text": "Changed functionality: You can recast <modified, abilities, basic, 2> to go back to the initial cast position for 3.5 after surfacing. <modified, abilities, basic, 2> also grants a 400 point shield for 5 seconds"
                 }
               ],
               "developerCommentary": "Similar to <vanilla, talents, 13, 0, tyrael>",
@@ -271,7 +271,6 @@
                 {
                   "text": "Changed functionality: When Anub'arak uses Cocoon on an enemy hero, it creates a web area around them. Enemies in this area are slowed by 25%. Basic attacks while on the Web area reduces Cocoon cooldown by 4 seconds. The area lasts 8 seconds",
                   "subtexts": [
-                    "Anub'arak will only become visible on that area if he takes damage and will become invisible again in 0.5 seconds after not taking damage.",
                     "The radius will be 5.5 | <vanilla, abilities, heroic, 1, blaze> is 6.5"
                   ]
                 }

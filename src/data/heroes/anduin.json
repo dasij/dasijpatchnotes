@@ -53,7 +53,13 @@
               "name": "<vanilla, talents, 16, 0>",
               "texts": [
                 {
-                  "text": "Changed functionality: If Flash Heal is used at a stunned, rooted or silenced target it will be recast after 2 seconds on the same target. If <modified, abilities, trait, 0> cooldown is available the second healing is increased by 100%"
+                  "text": "Changed functionality: If Flash Heal is used at a stunned, rooted or silenced target it will be recast after 2 seconds on the same target. If <modified, abilities, trait, 0> cooldown is available the second healing is increased by 100%",
+                  "subtexts": [
+                    "The increased healing effect will be applied if you used the flash heal with the <modified, abilities, trait, 0> cooldown available not when the second heal is applied."
+                  ]
+                },
+                {
+                  "text": "moved from level 16"
                 }
               ],
               "developerCommentary": "Making that talent to have a different usage from the others",
@@ -194,12 +200,12 @@
             },
             {
               "change_id": "anduin_13",
-              "name": "NEW: Power Word: <modified, talents, 16, 1>",
+              "name": "NEW: <modified, talents, 13, 1>",
               "texts": [
                 {
                   "text": "The healing done by <modified, abilities, basic, 1> Star and Basic Attacks will be converted on temporary max health that lasts 6 seconds.",
                   "subtexts": [
-                    "This will also apply bonus from <modified, talents, 16, 0>"
+                    "This will also apply bonus to <modified, talents, 16, 1> and <modified, talents, 20, 3>"
                   ]
                 },
                 {

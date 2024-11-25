@@ -33,9 +33,7 @@
               "texts": [
                 {
                   "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "subtexts": [""]
                 }
               ],
               "developerCommentary": "",
@@ -49,16 +47,17 @@
           "changes": [
             {
               "change_id": "jaina_",
-              "name": "",
+              "name": "Mass Teleport",
               "texts": [
                 {
-                  "text": "",
+                  "text": "Activate to teleport Jaina and all allied troops and mercenary camps units around her to target troop or structure after 3 seconds",
                   "subtexts": [
-                    ""
+                    "This will only teleport troops and mercenary camps with her without any limit",
+                    "Both Jaina and the target teleport position will give a hint that she is teleporting similar to how it behaves on Warcraft 3"
                   ]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "For how commonly Jaina Teleports on her stories i find kinda odd she wouldn't have it here be it balanced or not this is a character skill often used that won't conflict with the 'frost mage' concept as having fire skills would conflict with Kael'thas fire mage position",
               "likes": 0,
               "likedBy": {}
             }
@@ -73,9 +72,7 @@
               "texts": [
                 {
                   "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "subtexts": [""]
                 }
               ],
               "developerCommentary": "",
@@ -93,9 +90,7 @@
               "texts": [
                 {
                   "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "subtexts": [""]
                 }
               ],
               "developerCommentary": "",
@@ -113,9 +108,7 @@
               "texts": [
                 {
                   "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "subtexts": [""]
                 }
               ],
               "developerCommentary": "",
@@ -133,9 +126,7 @@
               "texts": [
                 {
                   "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "subtexts": [""]
                 }
               ],
               "developerCommentary": "",
@@ -153,9 +144,7 @@
               "texts": [
                 {
                   "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "subtexts": [""]
                 }
               ],
               "developerCommentary": "",

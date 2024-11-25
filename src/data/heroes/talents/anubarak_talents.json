@@ -87,7 +87,7 @@
     },
     {
       "name": "Nerubian Grasp",
-      "description": "{highlight}Using Impale within 1.5 seconds of your Hardened Carapace being destroyed or expired slightly pull enemy heroes close to you.{/highlight}",
+      "description": "{highlight}Using Impale within 1.5 seconds of your Hardened Carapace being destroyed or expired slightly pull enemy heroes close to you that you hit with.{/highlight}",
       "image": "anubarak_impale.png",
       "talentChanged": true
     }
@@ -162,14 +162,14 @@
     },
     {
       "name": "Thorn Burst",
-      "description": "{highlight}Activate while in Burrow Charge to surface early causing untalented impale to be casted in all directions around Anub'arak{/highlight}",
+      "description": "{highlight}Activate while in Burrow Charge to surface early causing impale to be casted in all directions around Anub'arak{/highlight}",
       "image": "anubarak_burrowcharge.png",
       "talentChanged": true,
       "cooldown": "75 seconds"
     },
     {
       "name": "Subterranean Reversion",
-      "description": "{highlight}You can recast Burrow Charge to the initial cast position. Burrow Charge also grants a 400 point shield for 5 seconds{/highlight}",
+      "description": "{highlight}You can recast Burrow Charge to the initial cast position for 3.5 after surfacing. Burrow Charge also grants a 400 point shield for 5 seconds{/highlight}",
       "image": "anubarak_burrowcharge.png",
       "talentChanged": true
     }

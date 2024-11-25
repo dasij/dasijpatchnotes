@@ -1,44 +1,65 @@
 {
-  "id": 999,
+  "id": 28,
   "name": "GREYMANE",
-  "role": "",
+  "role": "Ranged Assassin",
   "image": "heroes_portraits/greymane.webp",
-  "show": "false",
+  "show": "true",
   "patchNotes": [
     {
-      "id": 999,
-      "title": "",
+      "id": 28,
+      "title": "Talents changes",
       "general": [
         {
-          "change_id": "greymane_",
-          "change": "",
+          "change_id": "greymane_1",
+          "change": "<basic, abilities, basic, 0>",
           "texts": [
             {
-              "text": ""
+              "text": "Additional Quest: Every time Greymane hits an enemy Hero with the explosion damage from <basic, abilities, basic, 0> increase its explosion damage by 12.5, up to 375."
+            },
+            {
+              "text": "Reward: After hitting 15 heroes Increases range by 30%"
+            },
+            {
+              "text": "Reward: after hitting 30 heroes make <basic, abilities, basic, 0> always explode at it's apex"
             }
           ],
-          "developerCommentary": "",
+          "developerCommentary": "I bring almost all of the current <basic, abilities, basic, 0> talents here. Greymane is someone specifically focused on positioning for basic attacking and i want his talents continue on that vision making <basic, abilities, basic, 0> only for some utility and poke.",
           "likes": 0,
           "likedBy": {}
         }
       ],
-      "developerCommentary": "",
+      "developerCommentary": "Greymane is one of my two favorite characters on the game and by playing him and analysing a lot of his gameplay i got to the conclusion that there's two main things i dislike about his current state, one being the lack of constant form swapping and i mean constant form swapping and also how the Cocktail is implemented, you could build Cocktail to be an damage poke dealer but would lose the most fun and currently strong part of greymane as a constant auto attack menace..",
       "sections": [
         {
           "name": "Level 1",
           "changes": [
             {
-              "change_id": "greymane_",
-              "name": "",
+              "change_id": "greymane_2",
+              "name": "<vanilla, talents, 1, 0>",
               "texts": [
                 {
-                  "text": "",
+                  "text": "Changed functionality: Activate to transform into human parry basic attacks in the following 0.75 seconds. If atleast one basic attack was parried refreshes <modified, abilities, basic, 0> cooldown",
                   "subtexts": [
-                    ""
+                    "Can be used on any form",
+                    "This won't reset <basic, abilities, basic, 2>/<basic, abilities, basic, 4> cooldown",
+                    "Cooldown 15 seconds"
                   ]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "Greymane seems the kinda of guy that would parry a bullet and...it's cool as hell",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "greymane_3",
+              "name": "<vanilla, talents, 1, 1>",
+              "texts": [
+                {
+                  "text": "Changed functionality: <modified, abilities, basic, 0> reduces enemy healing by 60% for 3 seconds on explosion and refunds 45 mana if it hits an enemy hero",
+                  "subtexts": []
+                }
+              ],
+              "developerCommentary": "I wanted to make <modified, abilities, basic, 0> an usable skill without having to pick the range talent as the base <modified, abilities, basic, 0> is very hard to use and instead i wanted to make this one situational",
               "likes": 0,
               "likedBy": {}
             }
@@ -48,17 +69,24 @@
           "name": "Level 4",
           "changes": [
             {
-              "change_id": "greymane_",
-              "name": "",
+              "change_id": "greymane_4",
+              "name": "<vanilla, talents, 4, 2> renamed to <modified, talents, 4, 2>",
               "texts": [
                 {
-                  "text": "",
+                  "text": "Won't restore mana anymore"
+                },
+
+                {
+                  "text": "Additional functionality: Activate to transform into Worgen instantly and receive a 50% movement speed bonus for 4 seconds. If you attack or cast any skill you will lose the bonus",
                   "subtexts": [
-                    ""
+                    "Can be used on any form",
+                    "Cooldown: 30 seconds",
+                    "This bonus is not stacking",
+                    "This won't reset <basic, abilities, basic, 2>/<basic, abilities, basic, 2> cooldown"
                   ]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "This is a thing i wanted the Worgens to do. Simply get all fours and gain movement speed...They have this passive on WoW and it's normal to think about Werewolfs and Wolfs getting to that position to go FASTER",
               "likes": 0,
               "likedBy": {}
             }
@@ -68,37 +96,23 @@
           "name": "Level 7",
           "changes": [
             {
-              "change_id": "greymane_",
-              "name": "",
+              "change_id": "greymane_5",
+              "name": "<vanilla, talents, 7, 1> renamed to <modified, talents, 7, 1>",
               "texts": [
                 {
-                  "text": "",
+                  "text": "Changed functionality: Activate to instantly transform into Human perfoming a kick at the target hero, this will knockback the enemy hero dealing 85 damage and stunning for 0.5 seconds if he collides with an wall. While on Worgen form Greymane have partial vision of enemy heroes and traps close to him.",
                   "subtexts": [
-                    ""
+                    "Can be used on any form",
+                    "This is a point and click skill",
+                    "The range is 1.0 same as <vanilla, abilities, heroic, 1, muradin>",
+                    "The Knockback duration is 0.20 while <vanilla, abilities, basic, 2, auriel> is 0.25",
+                    "The Knockback speed is 18 while <vanilla, abilities, basic, 2, auriel> is 30",
+                    "This will work similar to how https://leagueoflegends.fandom.com/wiki/Sweeping_Lens. Every 1 second on the greymane effect radius a red shadow of unrealeaved enemies and hidden traps will appear.",
+                    "The Worgen vision effect is 6.5 same as <vanilla, abilities, heroic, 1, blaze>"
                   ]
                 }
               ],
-              "developerCommentary": "",
-              "likes": 0,
-              "likedBy": {}
-            }
-          ]
-        },
-        {
-          "name": "Level 10",
-          "changes": [
-            {
-              "change_id": "greymane_",
-              "name": "",
-              "texts": [
-                {
-                  "text": "",
-                  "subtexts": [
-                    ""
-                  ]
-                }
-              ],
-              "developerCommentary": "",
+              "developerCommentary": "With the removal of <vanilla, talents, 7, 1> straight to the baseline i want to make a competition with utility rather +damage",
               "likes": 0,
               "likedBy": {}
             }
@@ -108,37 +122,45 @@
           "name": "Level 13",
           "changes": [
             {
-              "change_id": "greymane_",
-              "name": "",
+              "change_id": "greymane_6",
+              "name": "<vanilla, talents, 13, 0>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "text": "No longer reduces <basic, abilities, basic, 2> and <basic, abilities, basic, 24>'s cooldown passively"
+                },
+                {
+                  "text": "Additional functionality: Reduces <basic, abilities, basic, 2> and <basic, abilities, basic, 4>'s cooldown by 1 second on every basic attack."
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "The current version of <vanilla, talents, 13, 0> ain't bad even tho it's not the current meta. The change itself is not about being balanced or not the objective is to make something fun such as on the prowl making it oh yeah boi on constant form swapping",
               "likes": 0,
               "likedBy": {}
-            }
-          ]
-        },
-        {
-          "name": "Level 16",
-          "changes": [
+            },
             {
-              "change_id": "greymane_",
-              "name": "",
+              "change_id": "greymane_7",
+              "name": "<vanilla, talents, 13, 1>",
               "texts": [
                 {
-                  "text": "",
+                  "text": "Additional functionality: Using <basic, abilities, basic, 4> heals Greymane 15% of his maximum health",
+                  "subtexts": ["Cooldown: 25 seconds"]
+                }
+              ],
+              "developerCommentary": "I dislike how the current version of <vanilla, talents, 13, 1> incentivizes the player to stay on the Worgen form by just making it the effective way of playing when you pick that talent..im just changing it to be more flexible on decision on form swapping.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "greymane_12",
+              "name": "<vanilla, talents, 13, 2>",
+              "texts": [
+                {
+                  "text": "Additional functionality: Receives 10% stacking movement speed for 3 seconds Hitting enemy heroes recently affected by <modified, abilities, basic, 0>.",
                   "subtexts": [
-                    ""
+                    "The <modified, abilities, basic, 0> mark lasts 3 seconds"
                   ]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "Hitting Good <modified, abilities, basic, 0>s will be oh boi yeah",
               "likes": 0,
               "likedBy": {}
             }
@@ -148,17 +170,78 @@
           "name": "Level 20",
           "changes": [
             {
-              "change_id": "greymane_",
-              "name": "",
+              "change_id": "greymane_8",
+              "name": "<vanilla, talents, 20, 0>",
               "texts": [
                 {
-                  "text": "",
+                  "text": "Changed functionality: After taking fatal damage, Greymane enters a frenzy state in Worgen form. During this state, he rapidly loses health, gains 150% movement speed, and can only use <modified, abilities, heroic, 0> whose cooldown is reset. If Greymane kills an enemy hero while in this state, he returns to normal. ",
                   "subtexts": [
-                    ""
+                    "This will automatically transform you into Worgen if are in human form",
+                    "60 seconds cooldown",
+                    "The frenzy state transition has a 1.0 seconds delay",
+                    "<modified, abilities, heroic, 0> cooldown is reset on the frenzy state",
+                    "He will lose a total of 11.11% maximum health per second and can take damage from enemies and die faster, the objective is to make him alive for 9 seconds without enemy damage."
+                  ]
+                },
+                {
+                  "text": "Passive: <modified, abilities, heroic, 0> damage is increased by 25%"
+                }
+              ],
+              "developerCommentary": "I won't lie this was one of my favorite talents BUT it gets onto one problem...It's pure damage similar to the other talents even with the changes i made still it's pure damage and it will hardly compete with the splash damage talents as they also complement <modified, abilities, heroic, 0> so i wanted to go for a totally new approach and with the Worgen Cursed i found that to be an excellent option to make it similar to Sion's passive In Gloria Mori as they both can fit that https://leagueoflegends.fandom.com/wiki/Sion",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "greymane_9",
+              "name": "<vanilla, talents, 20, 1>",
+              "texts": [
+                {
+                  "text": "Changed functionality: <modified, abilities, heroic, 1> destroy the target resistence on the bullet affected area making every projectile and basic attack ignore armor on that direction for 3 seconds",
+                  "subtexts": [
+                    "This will work similar to Fiora Duelist's Dance https://leagueoflegends.fandom.com/wiki/Fiora/LoL.",
+                    "The marked area will cover a 75º angle of the character hitbox",
+                    "This won't give armor reduction to skills that doesn't come on projectiles such as jaina frost cone",
+                    "The enemy hero won't have control of that armor breaking direction meaning it's independent from player action while rotating the character"
                   ]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "It's hard to make a balanced and creative talent for <modified, abilities, heroic, 1> as the skill itself is very balanced but hard to upgrade, this means that the buff i am giving it is probally broken(lmao) BUT i found it to be very fun and atleast very good against certain heroes like Garrosh or Whitemane so it becomes the undisputable killing ultimate and also useful even when used on a low life target now.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "greymane_11",
+              "name": "<vanilla, talents, 20, 2> renamed to <modified, talents, 20, 2>",
+              "texts": [
+                {
+                  "text": "Changed functionality: Toggle between two attack modes: <basic, talents, 20, 2> (100% splash damage behind target) or <basic, talents, 20, 3> (100% cleave damage and 100% bonus Razor Swipe damage).",
+                  "subtexts": [
+                    "You can have only one active at the time",
+                    "You can only swap between attack modes after 4 seconds out of combat",
+                    "The cooldown is 2 seconds"
+                  ]
+                }
+              ],
+              "developerCommentary": "I found it underwhelming that we have on level 20 two talents that have the same functionality even tho they work differently...it just feels wrong because you could have another talent that covers other aspect of the Greymane, again, it's not about balancing it just feels underwhelming.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "greymane_10",
+              "name": "<vanilla, talents, 20, 3> renamed to <modified, talents, 20, 3>",
+              "texts": [
+                {
+                  "text": "Changed functionality: Greymane marks an around him as a <modified, talents, 20, 3> after 1 second, enemy heroes on that area will have their vision reduced and allied heroes will have 15% damage bonus, the area lasts 6 seconds.",
+                  "subtexts": [
+                    "Cooldown: 60 seconds",
+                    "This will transform Greymane into Worgen form",
+                    "The channeling will be a Howling Wolf",
+                    "The radius will be 10 while <vanilla, abilities, heroic, 1, blaze> 6.5",
+                    "The enemy vision reduction will decrease their vision by 25% and remove shared vision while on it"
+                  ]
+                }
+              ],
+              "developerCommentary": "As a Worgen for me it's mandatory to have some kind of Howling. The enemy reduced vision is to represent the fear and stress prey will have while under being hunted by a wolf",
               "likes": 0,
               "likedBy": {}
             }

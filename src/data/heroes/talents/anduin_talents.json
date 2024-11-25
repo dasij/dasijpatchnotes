@@ -67,7 +67,7 @@
     },
     {
       "name": "Renew",
-      "description": "If Flash Heal is used at a stunned, rooted or silenced target it will be recast after 2 seconds on the same target. If Leap of Faith cooldown is available the second healing is increased by 100%",
+      "description": "{highlight}If Flash Heal is used at a stunned, rooted or silenced target it will be recast after 2 seconds on the same target. If Leap of Faith cooldown is available the second healing is increased by 100%{/highlight}",
       "image": "anduin_flash_heal.png",
       "talentChanged": true
     }
@@ -153,7 +153,7 @@
     },
     {
       "name": "Moral Compass",
-      "description": "Divine Star fires Basic Attacks at Heroes close to its apex.Passive: Increase Attack Range by 1.1.",
+      "description": "Divine Star fires Basic Attacks at Heroes close to its apex.",
       "image": "anduin_divine_star.png",
       "talentChanged": true,
       "passives": [
@@ -172,7 +172,7 @@
     },
     {
       "name": "Holy Nova",
-      "description": "{highlight}After Anduin catches Divine Star, it explodes, healing nearby allied Heroes for 105 and damaging enemies for 150. Also explodes at the apex.{/highlight}",
+      "description": "After Anduin catches Divine Star, it explodes, healing nearby allied Heroes for 105 and damaging enemies for 150.{highlight} Also explodes at the apex.{/highlight}",
       "image": "anduin_divine_star.png",
       "talentChanged": true
     },

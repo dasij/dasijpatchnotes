@@ -3,7 +3,7 @@
   "name": "JOHANNA",
   "role": "Tank",
   "image": "heroes_portraits/johanna.webp",
-
+  "show": "true",
   "patchNotes": [
     {
       "id": 35,
