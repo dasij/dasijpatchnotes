@@ -68,7 +68,7 @@
               "name": "New: <modified, talents, 4, 1>",
               "texts": [
                 {
-                  "text": "Garrosh runs in a straigh line, knockbacking enemies that enters on contact with him.",
+                  "text": "Garrosh runs in a straigh line, knockbacking enemies that enters on contact with him and healing 10% of his missing health for each target hit.",
                   "subtexts": [
                     "Cooldown 45 seconds",
 

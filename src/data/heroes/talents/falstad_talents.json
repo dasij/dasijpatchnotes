@@ -29,9 +29,9 @@
     "heroic": [
       {
         "name": "Hinterland Blast (R)",
-        "description": "After 1 second, deal 475 damage to enemies within a long line. The cooldown is reduced by 30 seconds for every enemy Hero hit.",
+        "description": "After 1 second, deal 475 damage to enemies within a long line. The cooldown is reduced by 30 seconds for every enemy Hero hit.{highlight} 15% of all damage from Hinterland Blast is converted to shields that last indefinitely.{/highlight}",
         "image": "falstad_hinterlandblast.png",
-        "abilityChanged": false,
+        "abilityChanged": true,
         "manaCost": "80 Mana",
         "cooldown": "120s"
       },
@@ -46,7 +46,7 @@
     ],
     "trait": {
       "name": "Tailwind (T)",
-      "description": " Gain 15% increased Movement Speed after not taking damage for 5 seconds.",
+      "description": "Gain 15% increased Movement Speed after not taking damage for 5 seconds.",
       "image": "falstad_tailwind.png",
       "abilityChanged": false
     }
@@ -60,9 +60,9 @@
     },
     {
       "name": "Dishonorable Discharge",
-      "description": "Reduce Lightning Rod's cooldown by 2 seconds.Quest: After 3 Lightning Rod strikes, subsequent strikes on enemy Heroes increases its damage by 1%, up to 75%.Reward: After 30 subsequent strikes, further reduce Lightning Rod's cooldown by 2 seconds.Reward: After 75 subsequent strikes, Takedowns reset Lightning Rod's cooldown.",
+      "description": "{highlight}Lightning Rod strikes against enemies who used dash skills deal an extra 80 damage. Passive: Increases Lightning Rod range by 25%.{/highlight}",
       "image": "falstad_lightningrod.png",
-      "talentChanged": false
+      "talentChanged": true
     },
     {
       "name": "Frequent Flyer",
@@ -75,9 +75,9 @@
   "4": [
     {
       "name": "Static Shield",
-      "description": "Lightning Rod strikes grant a Shield equal to 4% of Falstad's maximum Health, up to 28%, for 4 seconds.",
+      "description": "Lightning Rod strikes grant a Shield equal to 4% of Falstad's maximum Health, up to 28%, for 4 seconds.{highlight} Basic attacks against the Lightning Rod target refresh one strike.{/highlight}",
       "image": "falstad_lightningrod.png",
-      "talentChanged": false
+      "talentChanged": true
     },
     {
       "name": "Updraft",
@@ -106,18 +106,18 @@
       "talentChanged": false
     },
     {
-      "name": "Charged Up",
-      "description": "Increases the number of Lightning Rod strikes by 2 and its range by 25%.",
-      "image": "falstad_lightningrod.png",
-      "talentChanged": false
+      "name": "Crippling Hammer",
+      "description": "Increase Hammerang's Slow from 25% to 50%, and Hammerang's explosion also Slows.",
+      "image": "falstad_hammerang.png",
+      "talentChanged": true
     }
   ],
   "10": [
     {
       "name": "Hinterland Blast",
-      "description": "After 1 second, deal 475 damage to enemies within a long line. The cooldown is reduced by 30 seconds for every enemy Hero hit.",
+      "description": "After 1 second, deal 475 damage to enemies within a long line. The cooldown is reduced by 30 seconds for every enemy Hero hit.{highlight} 15% of all damage from Hinterland Blast is converted to shields that last indefinitely.{/highlight}",
       "image": "falstad_hinterlandblast.png",
-      "talentChanged": false,
+      "talentChanged": true,
       "manaCost": "80 Mana",
       "cooldown": "120s"
     },
@@ -132,10 +132,10 @@
   ],
   "13": [
     {
-      "name": "Thunderstrikes",
-      "description": "Lightning Rod deals 25% more damage each subsequent strike.",
-      "image": "falstad_lightningrod.png",
-      "talentChanged": false
+      "name": "Flying Riders",
+      "description": "{highlight} While Tailwind is active, close allied Heroes receive 5% stacking Movement Speed. This bonus is increased to 7.5% if Falstad has shields.{/highlight}",
+      "image": "falstad_tailwind.png",
+      "talentChanged": true
     },
     {
       "name": "Flow Rider",
@@ -152,12 +152,6 @@
   ],
   "16": [
     {
-      "name": "Crippling Hammer",
-      "description": "Increase Hammerang's Slow from 25% to 50%, and Hammerang's explosion also Slows.",
-      "image": "falstad_hammerang.png",
-      "talentChanged": false
-    },
-    {
       "name": "Aerie Gusts",
       "description": "Reduces the activation time for Tailwind from 5 to 3 seconds, and increases the Movement Speed bonus from 15% to 25%.",
       "image": "falstad_tailwind.png",
@@ -168,32 +162,38 @@
       "description": "Barrel Roll increases Movement Speed by 60%, decaying over 3 seconds.",
       "image": "falstad_barrelroll.png",
       "talentChanged": false
-    }
-  ],
-  "20": [
-    {
-      "name": "Call of the Wildhammer",
-      "description": "Hinterland Blast has double the range and deals 25% more damage.",
-      "image": "falstad_hinterlandblast.png",
-      "talentChanged": false
-    },
-    {
-      "name": "Wind Tunnel",
-      "description": "Mighty Gust creates a wind tunnel for 4 seconds. Enemies caught in the tunnel will periodically be pushed back.",
-      "image": "falstad_mightygust.png",
-      "talentChanged": false
-    },
-    {
-      "name": "Nexus Frenzy",
-      "description": "Increases Attack Speed by 20% and Attack Range by 1.1.",
-      "image": "talent_autoattack_range.png",
-      "talentChanged": false
     },
     {
       "name": "Epic Mount",
       "description": "Reduce the cooldown of Flight by 50 seconds, reduce the cast time before flying to 0.5 seconds, and increase the speed by 50%.",
       "image": "falstad_epicmount.png",
-      "talentChanged": false
+      "talentChanged": true
+    }
+  ],
+  "20": [
+    {
+      "name": "Call of the Wildhammer",
+      "description": "{highlight}Hinterland Blast increases its size by 15% and deals 25% more damage.{/highlight}",
+      "image": "falstad_hinterlandblast.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Wind Tunnel",
+      "description": "Mighty Gust creates a wind tunnel for {highlight}3{/highlight} seconds. Enemies caught in the tunnel will periodically be pushed back.",
+      "image": "falstad_mightygust.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Thunder Frenzy",
+      "description": "{highlight}Falstad charges up to 100 stacks by moving. When he reaches 100 charges, his next Basic Attack bounces 4 times prioritizing Heroes, slows every target by 99% for 0.3 seconds, has 1.1 increased range, and deals 200% extra damage.{/highlight}",
+      "image": "talent_autoattack_range.png",
+      "talentChanged": true
+    },
+    {
+      "name": "Khaz Modan Torpedo",
+      "description": "{highlight}Barrel Roll has two extra charges and applies Lightning Rod to every target he goes through.{/highlight}",
+      "image": "falstad_barrelroll.png",
+      "talentChanged": true
     }
   ]
 }

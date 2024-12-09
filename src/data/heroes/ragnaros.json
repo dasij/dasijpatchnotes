@@ -33,9 +33,7 @@
               "texts": [
                 {
                   "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "subtexts": [""]
                 }
               ],
               "developerCommentary": "",
@@ -53,9 +51,7 @@
               "texts": [
                 {
                   "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "subtexts": [""]
                 }
               ],
               "developerCommentary": "",
@@ -73,9 +69,7 @@
               "texts": [
                 {
                   "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "subtexts": [""]
                 }
               ],
               "developerCommentary": "",
@@ -93,9 +87,7 @@
               "texts": [
                 {
                   "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "subtexts": [""]
                 }
               ],
               "developerCommentary": "",
@@ -113,9 +105,7 @@
               "texts": [
                 {
                   "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "subtexts": [""]
                 }
               ],
               "developerCommentary": "",
@@ -133,9 +123,7 @@
               "texts": [
                 {
                   "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "subtexts": [""]
                 }
               ],
               "developerCommentary": "",
@@ -149,13 +137,15 @@
           "changes": [
             {
               "change_id": "ragnaros_",
-              "name": "",
+              "name": "Submerge",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "text": "Additional functionality: Can choose another place to submerge in range dealing damage and restoring accordinlyg",
+                  "subtexts": [""]
+                },
+                {
+                  "text": "Additional functionality: Resets sulfuras smash cooldown on Molten Core",
+                  "subtexts": [""]
                 }
               ],
               "developerCommentary": "",

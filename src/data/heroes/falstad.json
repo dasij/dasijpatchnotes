@@ -3,40 +3,51 @@
   "name": "FALSTAD",
   "role": "Ranged Assassin",
   "image": "heroes_portraits/falstad.webp",
-  "show": "false",
+  "show": "true",
   "patchNotes": [
     {
       "id": 22,
-      "title": "",
+      "title": "Talent Rework",
       "general": [
         {
-          "change_id": "falstad_",
-          "change": "",
+          "change_id": "falstad_2",
+          "change": "<vanilla, abilities, basic, 1>",
           "texts": [
             {
-              "text": ""
+              "text": "You can now cast it while performing a <vanilla, abilities, basic, 2>"
             }
           ],
-          "developerCommentary": "",
+          "developerCommentary": "Not being able to use <vanilla, abilities, basic, 1> in contrast of other skills while performing <vanilla, abilities, basic, 2> seems a odd",
+          "likes": 0,
+          "likedBy": {}
+        },
+        {
+          "change_id": "falstad_3",
+          "change": "<vanilla, abilities, basic, 2>",
+          "texts": [
+            {
+              "text": "Decrease total <vanilla, abilities, basic, 2> time to reach final destination and better tweak overall animation feeling or being able to animation cancel the ending"
+            }
+          ],
+          "developerCommentary": "Currently when you use <vanilla, abilities, basic, 2> you sometimes feel 'stuck' in the end part of the animation thinking it should've already be completed but it is still performing, the numbers here is abstract because i want to subtract that feeling of being stuck on the end part of the animation and don't know what would be the exactly value.",
           "likes": 0,
           "likedBy": {}
         }
       ],
-      "developerCommentary": "",
+      "developerCommentary": "Falstad always had 3 builds focused on doing damage but ALWAYS one of them underperformed my focus was to focus 2 builds of damage only and make the talents for <vanilla, abilities, basic 1> more niche focused and also bring some new talents to level 20. My changes are based mostly on my experiences with Falstad on tournaments, storm league and lore reading.",
       "sections": [
         {
           "name": "Level 1",
           "changes": [
             {
-              "change_id": "falstad_",
-              "name": "",
+              "change_id": "falstad_4",
+              "name": "<vanilla, talents, 1, 1>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Changed functionality: <modified, abilities, basic, 1> Strikes against enemies who used dash skills deals extra 80 damage. Passive: Increase <modified, abilities, basic, 1> range by 25%"
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "I completely dislike how the vanilla version incentivizes Falstad players to play and bevahing strangely trying too much to finish the quest. For this reason i want to niche this skill in utility to not compete with the other quests but provide a selected value in some games",
               "likes": 0,
               "likedBy": {}
             }
@@ -46,15 +57,14 @@
           "name": "Level 4",
           "changes": [
             {
-              "change_id": "falstad_",
-              "name": "",
+              "change_id": "falstad_1",
+              "name": "<vanilla, talents, 4, 0>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Additional functionality: Basic attacks against <modified, abilities, basic, 1> target refreshs one strike"
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "With the removal of the <vanilla, talents, 1, 1> and <vanilla, talents, 13, 0> i wanted to give it a little boost.",
               "likes": 0,
               "likedBy": {}
             }
@@ -64,15 +74,26 @@
           "name": "Level 7",
           "changes": [
             {
-              "change_id": "falstad_",
-              "name": "",
+              "change_id": "falstad_5",
+              "name": "<vanilla, talents, 7, 2>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "removed"
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "I split both bonuses on other talents",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "falstad_6",
+              "name": "<vanilla, talents, 16, 0>",
+              "texts": [
+                {
+                  "text": "Moved from level 16"
+                }
+              ],
+              "developerCommentary": "The objective here is to make this level about <modified, abilities, basic 0> whilst i bring here a talent that in MY OPINION doesn't belong to level 16",
               "likes": 0,
               "likedBy": {}
             }
@@ -82,15 +103,14 @@
           "name": "Level 10",
           "changes": [
             {
-              "change_id": "falstad_",
-              "name": "",
+              "change_id": "falstad_7",
+              "name": "<modified, abilities, heroic, 0>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Additional functionality: Additional functionality: 15% of all damage from <modified, abilities, heroic, 0> is converted to shields that lasts indefinidelity."
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "I didn't want to change <modified, abilities, heroic, 0> because it's a fun ultimate so instead i gave it a little more power.",
               "likes": 0,
               "likedBy": {}
             }
@@ -100,15 +120,14 @@
           "name": "Level 13",
           "changes": [
             {
-              "change_id": "falstad_",
-              "name": "",
+              "change_id": "falstad_8",
+              "name": "<vanilla, talents, 13, 0> renamed to <modified, talents, 13, 0>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Changed functionality: While <modified, abilities, trait, 0> is active close allied heroes receive 5% stacking movement speed. This bonus is increased to 7.5% if Falstad Has shields."
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "With the buff i gave to <modified, talents, 4, 0> i took the chance to make level 13 all about <modified, abilities, trait, 0>",
               "likes": 0,
               "likedBy": {}
             }
@@ -118,12 +137,23 @@
           "name": "Level 16",
           "changes": [
             {
-              "change_id": "falstad_",
-              "name": "",
+              "change_id": "falstad_9",
+              "name": "<vanilla, talents, 20, 3>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Moved from level 20"
+                }
+              ],
+              "developerCommentary": "For me talents like <vanilla, talents, 20, 3> should come sooner as competition for level 16 comes strong in talents combos but i also faster Macro gameplay would benefit on how Falstad could be",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "falstad_10",
+              "name": "<vanilla, talents, 16, 0>",
+              "texts": [
+                {
+                  "text": "Moved to level 7"
                 }
               ],
               "developerCommentary": "",
@@ -136,12 +166,63 @@
           "name": "Level 20",
           "changes": [
             {
-              "change_id": "falstad_",
-              "name": "",
+              "change_id": "falstad_11",
+              "name": "<vanilla, talents, 20, 0>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Instead of double range increase the size of <modified, abilities, heroic, 0> by 15%."
+                }
+              ],
+              "developerCommentary": "Increasing the range for <modified, abilities, heroic, 0> never made much sense. Normally a Falstad player will be in good range but Size on other range really compete with the other talents as you could go for wombo combos.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "falstad_12",
+              "name": "<vanilla, talents, 20, 1>",
+              "texts": [
+                {
+                  "text": "Reduced to from 4 to 3 seconds."
+                }
+              ],
+              "developerCommentary": "With all honesty for me that talent is a big problem, i changed some of other talents that i consider broken to the point of being unfun..in that case i just think the the number is too high and rarely anything could compete too how eazy AND strong it is.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "falstad_13",
+              "name": "<vanilla, talents, 20, 2>",
+              "texts": [
+                {
+                  "text": "Changed functionality: Falstad charges up to 100 stacks by moving. When he reaches 100 charges the next Basic attack bounces 4 times prioritizing heroes and slows every target by 99% for 0.3 seconds with 1.1 increased range and 200% extra damage.",
+                  "subtexts": [
+                    "It charges my moving, using <modified, abilities, basic, 2> or flight.",
+                    "If you move with 100% movespeed for 5 seconds you fully charge it."
+                  ]
+                }
+              ],
+              "developerCommentary": "I taught https://leagueoflegends.fandom.com/wiki/Fleet_Footwork rune from league of legends REALLY suits the idea on Falstad charging storm attacks",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "falstad_14",
+              "name": "<modified, talents, 20, 3>",
+              "texts": [
+                {
+                  "text": "<modified, abilities, basic, 2> has two extra charges and applies <modified, abilities, basic, 1> to every target he goes through."
+                }
+              ],
+              "developerCommentary": "BRO there's no lore or good decision making..it's just funny to think about it",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "falstad_15",
+              "name": "<vanilla, talents, 20, 3>",
+              "texts": [
+                {
+                  "text": "Moved from level 16"
                 }
               ],
               "developerCommentary": "",

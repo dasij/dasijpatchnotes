@@ -11,7 +11,7 @@
       },
       {
         "name": "Blizzard (W)",
-        "description": "Bombard an area with 3 waves of ice, dealing 142 damage each. Damaged enemies are Chilled.",
+        "description": "Bombard an area with 3 waves of ice, each dealing 142 damage. Damaged enemies are Chilled.",
         "image": "jaina_blizzard.png",
         "abilityChanged": false,
         "manaCost": "90 Mana",
@@ -37,7 +37,7 @@
       },
       {
         "name": "Summon Water Elemental (R)",
-        "description": "Summon a Water Elemental at target location. The Water Elemental's Basic Attacks deal 62 damage, splash for 25% damage and Chill. The Ability can be reactivated to retarget the Water Elemental.  Lasts 20 seconds.",
+        "description": "Summon a Water Elemental at target location. The Water Elemental's Basic Attacks deal 62 damage, splash for 25% damage and Chill. The Ability can be reactivated to retarget the Water Elemental. Lasts 20 seconds.",
         "image": "jaina_summonwaterelemental.png",
         "abilityChanged": false,
         "manaCost": "60 Mana",
@@ -46,17 +46,20 @@
     ],
     "trait": {
       "name": "Frostbite (T)",
-      "description": " Jaina's Abilities Chill targets, Slowing them by 25% and amplifying damage taken from her Abilities by 50%. Lasts 4 seconds.Quest: Deal 12000 Ability damage to Chilled Heroes.Reward: Unlock the Improved Ice Block Ability, allowing Jaina to become temporarily Invulnerable.",
+      "description": "Jaina's Abilities Chill targets, Slowing them by 25% and amplifying damage taken from her Abilities by 50%. Lasts 4 seconds. Quest: Deal 12000 Ability damage to Chilled Heroes. Reward: Unlock the Improved Ice Block Ability, allowing Jaina to become temporarily Invulnerable.",
       "image": "jaina_frostbite.png",
       "abilityChanged": false
     }
   },
   "1": [
     {
-      "name": "Winter's Reach",
-      "description": "Increase the range and travel speed of Frostbolt by 30%.",
-      "image": "jaina_frostbolt.png",
-      "talentChanged": false
+      "name": "Snowstorm",
+      "description": "{highlight}The damage of the second wave of Blizzard is increased by 12.5%. The damage of the third wave is increased by 25%. This damage is increased by 300% against non-heroic units.{/highlight}",
+      "passives": [
+        "{highlight}Reduces Blizzard's cooldown by 2 seconds.{/highlight}"
+      ],
+      "image": "jaina_blizzard.png",
+      "talentChanged": true
     },
     {
       "name": "Lingering Chill",
@@ -80,35 +83,38 @@
     },
     {
       "name": "Arcane Intellect",
-      "description": "Dealing damage to a Chilled target returns Mana to Jaina. Basic Attacks return 5 Mana and Abilities return 20.Passive: While above 75% Mana, Jaina gains 10% Spell Power.",
+      "description": "Dealing damage to a Chilled target returns Mana to Jaina. Basic Attacks return 5 Mana and Abilities return 20. Passive: While above 75% Mana, Jaina gains 10% Spell Power.",
       "image": "jaina_arcaneintellect.png",
       "talentChanged": false
     },
     {
       "name": "Frost Armor",
-      "description": "Enemies that attack Jaina are Chilled. Additionally, every 10 seconds, Jaina gains 75 Physical Armor against the next enemy Hero Basic Attack, reducing the damage taken by 75%.",
+      "description": "Enemies that attack Jaina {highlight}or frost armor{/highlight} are Chilled. Additionally, every 10 seconds, Jaina gains 75 Physical Armor against the next enemy Hero Basic Attack, reducing the damage taken by 75%.{highlight}Activate to transfer your Frost Armor charge to an allied Hero, lasting 6 seconds.{/highlight}",
       "image": "jaina_frostarmor.png",
-      "talentChanged": false
+      "talentChanged": true
     }
   ],
   "7": [
     {
       "name": "Ice Lance",
-      "description": "Hitting a Chilled target with Frostbolt reduces its cooldown by 1.5 seconds and restores 10 Mana.",
+      "description": "Hitting a Chilled target with Frostbolt reduces its cooldown by 1.5 seconds and restores 10 Mana.{highlight} Increase Frostbolt's range and travel speed by 30%.{/highlight}",
       "image": "jaina_frostbolt.png",
-      "talentChanged": false
+      "talentChanged": true
     },
     {
       "name": "Ice Floes",
-      "description": "Increase the width of Cone of Cold by 100% and cause each Hero hit to reduce its cooldown by 2 seconds, doubled against chilled Heroes, up to a maximum of 8 seconds per use.",
+      "description": "Increase the width of Cone of Cold by 100% and cause each Hero hit to reduce its cooldown by 2 seconds, doubled against Chilled Heroes, up to a maximum of 8 seconds per use.",
       "image": "jaina_coneofcold.png",
       "talentChanged": false
     },
     {
-      "name": "Icefury Wand",
-      "description": "Basic Attacks against Chilled enemies deal 50% more damage and lower the cooldown of Blizzard by 1.25 seconds.  Doubled against enemy Heroes.",
-      "image": "talent_autoattack_cooldown.png",
-      "talentChanged": false
+      "name": "Ice Mirage",
+      "description": "{highlight}Activate to become Perfect Stealth for 1.5 seconds, gaining 30% Movement Speed and leaving ice mirage trails on the path.{/highlight}",
+      "passives": [
+        "{highlight}Basic Attacks reset Chilling effects.{/highlight}"
+      ],
+      "image": "jaina_frostbite.png",
+      "talentChanged": true
     }
   ],
   "10": [
@@ -122,7 +128,7 @@
     },
     {
       "name": "Summon Water Elemental",
-      "description": "Summon a Water Elemental at target location. The Water Elemental's Basic Attacks deal 62 damage, splash for 25% damage and Chill. The Ability can be reactivated to retarget the Water Elemental.  Lasts 20 seconds.",
+      "description": "Summon a Water Elemental at target location. The Water Elemental's Basic Attacks deal 62 damage, splash for 25% damage and Chill. The Ability can be reactivated to retarget the Water Elemental. Lasts 20 seconds.",
       "image": "jaina_summonwaterelemental.png",
       "talentChanged": false,
       "manaCost": "60 Mana",
@@ -131,10 +137,11 @@
   ],
   "13": [
     {
-      "name": "Storm Front",
-      "description": "Increase the cast range of Blizzard by 75% and its radius by 30%.",
-      "image": "jaina_blizzard.png",
-      "talentChanged": false
+      "name": "Mass Teleport",
+      "description": "{highlight}Activate to teleport Jaina and all allied Troops and Mercenary Camp units around her to target Troop or Structure after 3 seconds.{/highlight}",
+      "image": "BTNMassTeleport.webp",
+      "talentChanged": true,
+      "cooldown": "90s"
     },
     {
       "name": "Ice Barrier",
@@ -152,10 +159,11 @@
   ],
   "16": [
     {
-      "name": "Snowstorm",
-      "description": "The damage of the second wave of Blizzard is increased by 50%. The damage of the third wave is increased by 100%.",
-      "image": "jaina_blizzard.png",
-      "talentChanged": false
+      "name": "Brilliance Aura",
+      "description": "{highlight}After 1 second of activating, Jaina will grant every allied Hero 2000% Mana regeneration and 10% Spell Power for 4 seconds.{/highlight}",
+      "image": "PASBTNBrilliance.webp",
+      "talentChanged": true,
+      "cooldown": "60s"
     },
     {
       "name": "Northern Exposure",
@@ -184,17 +192,16 @@
       "talentChanged": false
     },
     {
-      "name": "Ice Blink",
-      "description": "Activate to teleport a short distance and Chill all nearby enemies.",
-      "image": "talent_boltofthestorm.png",
-      "talentChanged": false,
-      "cooldown": "60s"
+      "name": "Ice Control",
+      "description": "{highlight}For every Chilled enemy Hero, Jaina receives 100% faster recharge rate on Ice Block and 5% Spell Power.{/highlight}",
+      "image": "jaina_frostbite.png",
+      "talentChanged": true
     },
     {
       "name": "Deep Chill",
-      "description": "Frostbite's Chill can now stack a second time, slowing targets up to 40%.",
-      "image": "jaina_frostbite.png",
-      "talentChanged": false
+      "description": "{highlight}Increases blizzard cast range by 75% and area of effect by 40%, while adding 2 extra waves of damage.{/highlight}",
+      "image": "jaina_blizzard.png",
+      "talentChanged": true
     }
   ]
 }

@@ -89,7 +89,7 @@
     },
     {
       "name": "Bull rush",
-      "description": "{highlight}Garrosh charges in a straight line, knocking back enemies on contact.{/highlight}",
+      "description": "{highlight}Garrosh charges in a straight line, knocking back enemies on contact and healing 10% of his missing health for each target hit.{/highlight}",
       "image": "garrosh_indomitablel.png",
       "cooldown": "45s",
       "talentChanged": true

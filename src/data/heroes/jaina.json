@@ -1,42 +1,28 @@
 {
-  "id": 999,
+  "id": 34,
   "name": "JAINA",
-  "role": "",
+  "role": "Ranged Assassin",
   "image": "heroes_portraits/jaina.webp",
-  "show": "false",
+  "show": "true",
   "patchNotes": [
     {
-      "id": 999,
-      "title": "",
-      "general": [
-        {
-          "change_id": "jaina_",
-          "change": "",
-          "texts": [
-            {
-              "text": ""
-            }
-          ],
-          "developerCommentary": "",
-          "likes": 0,
-          "likedBy": {}
-        }
-      ],
-      "developerCommentary": "",
+      "id": 34,
+      "title": "Talent Changes",
+      "general": [],
+      "developerCommentary": "I am changing Jaina with the intents to mix her with some skills that she presented on her lore without going after Firemage or other type of schools only focusing on Frost and some arcane magic. The objective here is to bring it closer to the lore and also add some skills that can increase her skill ceiling.",
       "sections": [
         {
           "name": "Level 1",
           "changes": [
             {
-              "change_id": "jaina_",
-              "name": "",
+              "change_id": "jaina_5",
+              "name": "<vanilla, talents, 1, 0>  renamed to <modified, talents, 1, 0>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Changed functionality: The damage of the second wave of <modified, abilities, basic, 1> is increased by 12.5%. The damage of the third wave is increased by 25%. That damage is increased by 300% against non-heroic units. Passive: reduces <modified, abilities, basic, 1> cooldown by 2 seconds"
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "This talent is to be an alternative for the mana one BUT without going for mana. Currently you use only <modified, abilities, basic, 1> to ALMOST clear an wave so you need help OR use another skill, with this talent i want to add an option to preserve mana by using only <modified, abilities, basic, 1> and making it focused on PVE",
               "likes": 0,
               "likedBy": {}
             }
@@ -46,14 +32,76 @@
           "name": "Level 4",
           "changes": [
             {
-              "change_id": "jaina_",
-              "name": "Mass Teleport",
+              "change_id": "jaina_2",
+              "name": "<vanilla, talents, 4, 2>",
               "texts": [
                 {
-                  "text": "Activate to teleport Jaina and all allied troops and mercenary camps units around her to target troop or structure after 3 seconds",
+                  "text": "New functionality: Activate to transfer your block charge to an allied hero lasting 6 seconds.",
+                  "subtexts": [
+                    "It's also added that the block charge will chill the attacker.",
+                    "Cooldown is tied to Jaina current block charge, when she transfers the block charge it starts the cooldown again."
+                  ]
+                }
+              ],
+              "developerCommentary": "I feel that the current Frost Armor could be more flexible and give Jaina more options without breaking the original concept.",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 7",
+          "changes": [
+            {
+              "change_id": "jaina_3",
+              "name": "<vanilla, talents, 7, 0>",
+              "texts": [
+                {
+                  "text": "Additional functionality: Increase <modified, abilities, basic, 0> range and travel speed by 30%"
+                }
+              ],
+              "developerCommentary": "I don't like funneling talents on general, for me the max funnel it's about two talents AND BESIDES that one is underperforming right now so it's more an strategic change with talents i like.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "jaina_4",
+              "name": "<vanilla, talents, 7, 2> renamed to <modified, talents, 7, 2>",
+              "texts": [
+                {
+                  "text": "Changed functionality: Activate to become perfect stealth for 1.5 seconds gaining 30% movement speed and leaving ice mirage trails on the path",
+                  "subtexts": [
+                    "Perfect stealth means Jaina can't be revelead until she casts a skill, attack or the effect expires AND she will behave like old invisibility so she will be totally invisible no visual cues",
+                    "The visual ice mirage trails will work as a stop motion, leaving an ice mirage cue on the 0.6 and 1.2 duration of the skill. The closest reference will be characters being revealed by sweeping radar from league of legends"
+                  ]
+                },
+                {
+                  "text": "Basic attacks reset <modified, abilities, trait, 0> effect",
+                  "subtexts": [
+                    "This will only reset active <modified, abilities, trait, 0> effect"
+                  ]
+                }
+              ],
+              "developerCommentary": "Reading Jaina's abilities she is an incredible sorceress that can also boost her speed and perform some mirage and stealth spells i didn't want to break that concept of ice mage of her on HOTS so i made a skill that also makes me remember a little about Sub-Zero",
+              "likes": 0,
+              "likedBy": {}
+            }
+          ]
+        },
+        {
+          "name": "Level 13",
+          "changes": [
+            {
+              "change_id": "jaina_6",
+              "name": "<vanilla, talents, 13, 0> renamed to <modified, talents, 13, 0>",
+              "texts": [
+                {
+                  "text": "Changed functionality: Activate to teleport Jaina and all allied troops and mercenary camps units around her to target troop or structure after 3 seconds",
                   "subtexts": [
                     "This will only teleport troops and mercenary camps with her without any limit",
-                    "Both Jaina and the target teleport position will give a hint that she is teleporting similar to how it behaves on Warcraft 3"
+                    "Both Jaina and the target teleport position will give a hint that she is teleporting similar to how it behaves on Warcraft 3",
+                    "Global Range",
+                    "Cooldown 90 seconds"
                   ]
                 }
               ],
@@ -64,72 +112,21 @@
           ]
         },
         {
-          "name": "Level 7",
-          "changes": [
-            {
-              "change_id": "jaina_",
-              "name": "",
-              "texts": [
-                {
-                  "text": "",
-                  "subtexts": [""]
-                }
-              ],
-              "developerCommentary": "",
-              "likes": 0,
-              "likedBy": {}
-            }
-          ]
-        },
-        {
-          "name": "Level 10",
-          "changes": [
-            {
-              "change_id": "jaina_",
-              "name": "",
-              "texts": [
-                {
-                  "text": "",
-                  "subtexts": [""]
-                }
-              ],
-              "developerCommentary": "",
-              "likes": 0,
-              "likedBy": {}
-            }
-          ]
-        },
-        {
-          "name": "Level 13",
-          "changes": [
-            {
-              "change_id": "jaina_",
-              "name": "",
-              "texts": [
-                {
-                  "text": "",
-                  "subtexts": [""]
-                }
-              ],
-              "developerCommentary": "",
-              "likes": 0,
-              "likedBy": {}
-            }
-          ]
-        },
-        {
           "name": "Level 16",
           "changes": [
             {
-              "change_id": "jaina_",
-              "name": "",
+              "change_id": "jaina_7",
+              "name": "<vanilla, talents, 16, 0> renamed to <modified, talents, 16, 0>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Changed functionality: After 1 second of activating Jaina will grant every allied hero a 2000% mana regeneration and 10% spell power for 4 seconds.",
+                  "subtexts": [
+                    "The range is equal to <vanilla, abilities, heroic, 1>",
+                    "Cooldown 60 seconds"
+                  ]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "I really wanted Jaina to have the Brilliance Aura seriouslz...I think it's a cool concept but i didn't want it to be kinda 'lame' so i tried to make it more special",
               "likes": 0,
               "likedBy": {}
             }
@@ -139,15 +136,26 @@
           "name": "Level 20",
           "changes": [
             {
-              "change_id": "jaina_",
-              "name": "",
+              "change_id": "jaina_8",
+              "name": "<vanilla, talents, 20, 2> renamed to <modified, talents, 20, 2>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [""]
+                  "text": "Changed functionality: For every chilled enemy hero Jaina receives 100% faster recharge rate on iceblock and 5% spell power."
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "I wanted to make a talent that would be about Chill control and i remembered that <vanilla, talents, 20, 2, orphea> talent and i made something close.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "jaina_9",
+              "name": "<vanilla, talents, 20, 3>",
+              "texts": [
+                {
+                  "text": "Changed functionality: Increases <modified, abilities, basic, 1> cast range by 75% and area of effect by 40%, while adding 2 extra waves of damage."
+                }
+              ],
+              "developerCommentary": "I liked the original <vanilla, talents, 13, 0> concept but i had to change it from level 13 so i could fit the <modified, talents, 13, 0> but i still wanted it to be somewhere so i made this version with additional damage waves",
               "likes": 0,
               "likedBy": {}
             }
