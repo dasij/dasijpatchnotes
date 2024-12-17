@@ -1,44 +1,41 @@
 {
-  "id": 999,
+  "id": 66,
   "name": "SONYA",
-  "role": "",
+  "role": "Bruiser",
   "image": "heroes_portraits/sonya.webp",
-  "show": "false",
+  "show": "true",
   "patchNotes": [
     {
-      "id": 999,
-      "title": "",
+      "id": 66,
+      "title": "Talent Changes",
       "general": [
         {
-          "change_id": "sonya_",
-          "change": "",
+          "change_id": "sonya_14",
+          "change": "<vanilla, abilities, basic, 2>",
           "texts": [
             {
-              "text": ""
+              "text": "Cooldown reduced from 5 seconds to 4"
             }
           ],
-          "developerCommentary": "",
+          "developerCommentary": "I removed any <vanilla, abilities, basic, 2> cooldown reduction from the build to not make funnel builds but i still think that could affect this style of gameplay that some players want to have by just go spamming it and having fun by becoming THE BEYBLADE.",
           "likes": 0,
           "likedBy": {}
         }
       ],
-      "developerCommentary": "",
+      "developerCommentary": "I wanted to increase Sonya possible skill Ceiling and make more standalone talents that could suit the Barbarian highlander concept..i also like strong woman",
       "sections": [
         {
           "name": "Level 1",
           "changes": [
             {
-              "change_id": "sonya_",
-              "name": "",
+              "change_id": "sonya_2",
+              "name": "<vanilla, talents, 1, 1> renamed to <modified, talents, 1, 1>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "text": "Every 10 <modified, abilities, trait, 0> generated Sonya receives 1% attack speed up to 50% for 5 seconds. The effect refresh with new stacks"
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "I don't really know how to balance that attack speed received to <modified, abilities, trait, 0> generated but the idea is to make Sonya receives Attack Speed by generating <modified, abilities, trait, 0> so by staying in combat she gets stronger.",
               "likes": 0,
               "likedBy": {}
             }
@@ -48,14 +45,26 @@
           "name": "Level 4",
           "changes": [
             {
-              "change_id": "sonya_",
-              "name": "",
+              "change_id": "sonya_3",
+              "name": "<vanilla, talents, 7, 2>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "text": "Instead of healing 10% of her maximum health instead will heal 60% of the damage received in the last second."
+                },
+                {
+                  "text": "Moved from level 7."
+                }
+              ],
+              "developerCommentary": "I wanted to make this active more about how you use it instead of how you spam it.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "sonya_4",
+              "name": "<vanilla, talents, 4, 1>",
+              "texts": [
+                {
+                  "text": "Removed."
                 }
               ],
               "developerCommentary": "",
@@ -68,34 +77,23 @@
           "name": "Level 7",
           "changes": [
             {
-              "change_id": "sonya_",
-              "name": "",
+              "change_id": "sonya_6",
+              "name": "NEW: <modified, talents, 13, 2>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "text": "If Sonya receives 350 damage in a single <modified, abilities, basic, 2> her next <modified, abilities, basic, 1> will stun the primary target by 0.75 seconds and secondary targets for 0.25 seconds."
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "This is a mix of two ideas i had that i found both cool and wanted a talent that could mix on between builds BUT i don't really know the numbers to balance this one.",
               "likes": 0,
               "likedBy": {}
-            }
-          ]
-        },
-        {
-          "name": "Level 10",
-          "changes": [
+            },
             {
-              "change_id": "sonya_",
-              "name": "",
+              "change_id": "sonya_7",
+              "name": "<vanilla, talents, 7, 2>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "text": "Moved to level 4."
                 }
               ],
               "developerCommentary": "",
@@ -108,17 +106,32 @@
           "name": "Level 13",
           "changes": [
             {
-              "change_id": "sonya_",
-              "name": "",
+              "change_id": "sonya_8",
+              "name": "<vanilla, talents, 13, 1> renamed to <modified, talents, 13, 1>",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "text": "For 0.75 seconds after using <modified, abilities, basic, 2> Sonya reduces all incoming damage by 50% also cleanse Slow and Roots."
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "I want to bring Ignore Pain on some way that is eazy to use but can be used on any build and also useful enough",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "sonya_9",
+              "name": "<vanilla, talents, 13, 0>",
+              "texts": [
+                {
+                  "text": "Increase the cooldown reduction from 5 to 8 seconds"
+                },
+                {
+                  "text": "The cooldown will be decreased if you don't hit enemy heroes instead"
+                },
+                {
+                  "text": "Additional functionality: Increase Spear Range by 50%"
+                }
+              ],
+              "developerCommentary": "I always liked Mystical Spear and want to bring MORE to it making it make Sonya play differently from normal..by making it also hit non-heroic units you could also use it to move better on fights and also better to make camps to maintain high <modified, abilities, trait, 0>. With extra Range makes it eazier to missplay and hit a non-heroic unit.",
               "likes": 0,
               "likedBy": {}
             }
@@ -128,17 +141,31 @@
           "name": "Level 16",
           "changes": [
             {
-              "change_id": "sonya_",
-              "name": "",
+              "change_id": "sonya_10",
+              "name": "<vanilla, talents, 16, 2>",
               "texts": [
                 {
-                  "text": "",
+                  "text": "Additional functionality: This shield is increased to 60% if used while below 15% maximum health.",
+                  "subtexts": []
+                }
+              ],
+              "developerCommentary": "I want to increase the thematic of Barbarians fight near death.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "sonya_11",
+              "name": "<vanilla, talents, 16, 1> renamed to <modified, talents, 16, 1>",
+              "texts": [
+                {
+                  "text": "Sonya basic attacks cleave and cause enemies to bleed for 40 damage over 4 seconds. While bleeding enemy heroes have 25% reduced healing.",
                   "subtexts": [
-                    ""
+                    "The bleed stack infinitely",
+                    "The cleave will work the same as Malthael and Leoric"
                   ]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "I wanted to mix Cleave with Rend that for me are classic skills for Barbarians",
               "likes": 0,
               "likedBy": {}
             }
@@ -148,17 +175,51 @@
           "name": "Level 20",
           "changes": [
             {
-              "change_id": "sonya_",
-              "name": "",
+              "change_id": "sonya_12",
+              "name": "<vanilla, talents, 20, 1>",
               "texts": [
                 {
-                  "text": "",
+                  "text": "Changed functionality: If Sonya takes a fatal hit while <modified, abilities, heroic, 1> is active she becomes unkillable for 3 seconds. During that time allied heroes cannot target Sonya",
                   "subtexts": [
-                    ""
+                    "Happens on each <modified, abilities, heroic, 1>.",
+                    "If this is activated and you ult again while under it's effect the cooldown will be reset, so it's possible to stack that 2 times",
+                    "Allied heroes can't interact with her but she can interact with them or vehicles"
                   ]
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "It's supposed to be a low cooldown and not a super revive. I also didn't want to make it with Leap so it's harder to escape and i also want to make it harder for Sonya to abuse it by not letting allied heroes help her.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "sonya_1",
+              "name": "<vanilla, talents, 20, 2> renamed to <modified, talents, 20, 2>",
+              "texts": [
+                {
+                  "text": "Changed functionality: <modified, abilities, basic, 2> will deal extra damage based on your attack speed. Enemy champions hit by <modified, abilities, basic, 2> will have their Physical armor reduced by 10 up to 40 for 4 seconds",
+                  "subtexts": [
+                    "For every 1% will increase total <modified, abilities, basic, 2> damage by 1% by making Sonya spin faster similar to how Garen on league of legends work",
+                    "The debuff will be refreshed with every hit"
+                  ]
+                }
+              ],
+              "developerCommentary": "The concept is based on the idea of spinning faster, i like Garen, Juggernaught, Axe..I like spinning and faster spinning equals fun.",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "sonya_13",
+              "name": "<vanilla, talents, 20, 3> renamed to <modified, talents, 20, 3>",
+              "texts": [
+                {
+                  "text": "Reactivate <modified, abilities, basic, 0> within 3 seconds from hitting the enemy hero to pull him back to Sonya.",
+                  "subtexts": [
+                    "Enemy hero will move at the same speed of Sonya <modified, abilities, basic, 0>",
+                    "Enemy hero will be pulled at the closest position to Sonya"
+                  ]
+                }
+              ],
+              "developerCommentary": "Sonya is the perfect hero for that and no one can tell me otherwise. COME OVER HERE. Also this is useful against high mobility and is ok for a storm talent tier..",
               "likes": 0,
               "likedBy": {}
             }

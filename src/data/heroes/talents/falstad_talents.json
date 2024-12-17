@@ -60,7 +60,7 @@
     },
     {
       "name": "Dishonorable Discharge",
-      "description": "{highlight}Lightning Rod strikes against enemies who used dash skills deal an extra 80 damage. Passive: Increases Lightning Rod range by 25%.{/highlight}",
+      "description": "{highlight}If Lightning Rod kills the primary target resets it's cooldown, refunds 50% of the mana cost and deal 75% of it's damage on area. Passive: Increase Lightning Rod range by 25% and damage against non-heroic units by 100%.{/highlight}",
       "image": "falstad_lightningrod.png",
       "talentChanged": true
     },
@@ -173,7 +173,7 @@
   "20": [
     {
       "name": "Call of the Wildhammer",
-      "description": "{highlight}Hinterland Blast increases its size by 15% and deals 25% more damage.{/highlight}",
+      "description": "{highlight}Hinterland Blast increases its size and damage by 25%.{/highlight}",
       "image": "falstad_hinterlandblast.png",
       "talentChanged": true
     },

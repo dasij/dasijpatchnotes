@@ -17,7 +17,7 @@
               "text": "You can now cast it while performing a <vanilla, abilities, basic, 2>"
             }
           ],
-          "developerCommentary": "Not being able to use <vanilla, abilities, basic, 1> in contrast of other skills while performing <vanilla, abilities, basic, 2> seems a odd",
+          "developerCommentary": "Not being able to use <vanilla, abilities, basic, 1> while performing <vanilla, abilities, basic, 2> seems a odd. Falstad doesn't really have an animation to cast it so for me it makes sense he could just do it.",
           "likes": 0,
           "likedBy": {}
         },
@@ -44,7 +44,10 @@
               "name": "<vanilla, talents, 1, 1>",
               "texts": [
                 {
-                  "text": "Changed functionality: <modified, abilities, basic, 1> Strikes against enemies who used dash skills deals extra 80 damage. Passive: Increase <modified, abilities, basic, 1> range by 25%"
+                  "text": "Changed functionality: If <modified, abilities, basic, 1> kills the primary target resets it's cooldown, refunds 50% of the mana cost and deal 75% of it's damage on area. Passive: Increase <modified, abilities, basic, 1> range by 25%  and damage against non-heroic units by 100%.",
+                  "subtexts": [
+                    "It doesn't need to land the final blow just be active while the final blow is dealt to refund and splash the damage"
+                  ]
                 }
               ],
               "developerCommentary": "I completely dislike how the vanilla version incentivizes Falstad players to play and bevahing strangely trying too much to finish the quest. For this reason i want to niche this skill in utility to not compete with the other quests but provide a selected value in some games",
@@ -124,7 +127,11 @@
               "name": "<vanilla, talents, 13, 0> renamed to <modified, talents, 13, 0>",
               "texts": [
                 {
-                  "text": "Changed functionality: While <modified, abilities, trait, 0> is active close allied heroes receive 5% stacking movement speed. This bonus is increased to 7.5% if Falstad Has shields."
+                  "text": "Changed functionality: While <modified, abilities, trait, 0> is active close allied heroes receive 5% stacking movement speed. This bonus is increased to 7.5% if Falstad Has shields.",
+                  "subtexts": [
+                    "This affects Falstad too",
+                    "Area will be 7.0 while <vanilla, abilities, heroic, 1, blaze> is 6.5"
+                  ]
                 }
               ],
               "developerCommentary": "With the buff i gave to <modified, talents, 4, 0> i took the chance to make level 13 all about <modified, abilities, trait, 0>",
@@ -170,10 +177,13 @@
               "name": "<vanilla, talents, 20, 0>",
               "texts": [
                 {
-                  "text": "Instead of double range increase the size of <modified, abilities, heroic, 0> by 15%."
+                  "text": "Instead of double range increase the size of <modified, abilities, heroic, 0> by 25%.",
+                  "subtexts": [
+                    "Width goes from 3.0 to 3.75 and Height goes from 32.5 to 40.625"
+                  ]
                 }
               ],
-              "developerCommentary": "Increasing the range for <modified, abilities, heroic, 0> never made much sense. Normally a Falstad player will be in good range but Size on other range really compete with the other talents as you could go for wombo combos.",
+              "developerCommentary": "Increasing the range for <modified, abilities, heroic, 0> never made much sense, the normal range of the ultimate is alredy big enough not like <vanilla, abilities, heroic, 1, qhira> so makes no sense to me to go for range instead of size.",
               "likes": 0,
               "likedBy": {}
             },
