@@ -13,7 +13,7 @@
           "change": "<vanilla, abilities,  trait, 0>",
           "texts": [
             {
-              "text": "Additional functionality: Warchief pride -> Taunting up to 1.5 seconds after a takedown heals Garrosh 25% of his maximum health on the end.",
+              "text": "Additional functionality: Warchief pride -> Taunting up to 1.5 seconds after a takedown heals Garrosh 15% of his maximum health on the end.",
               "subtexts": [
                 "Cooldown 45 seconds",
                 "Enemies will have vision of Garrosh when he is taunting even if it's on cooldown.",
@@ -36,7 +36,7 @@
               "name": "New: <modified, talents, 1, 2>",
               "texts": [
                 {
-                  "text": "For every 2% missing maximum health Garrosh receive 3% extra attack speed"
+                  "text": "For every 2% missing maximum health Garrosh receive 0.75% extra attack speed"
                 },
                 {
                   "text": "Basic Attacks against Heroes reduce the cooldown of <modified, abilities,  basic, 1> by 1 second."
@@ -68,7 +68,7 @@
               "name": "New: <modified, talents, 4, 1>",
               "texts": [
                 {
-                  "text": "Garrosh runs in a straigh line, knockbacking enemies that enters on contact with him and healing 10% of his missing health for each target hit.",
+                  "text": "Activate to run in a straigh line after 0.5 seconds, knockbacking enemies that enters on contact with him and healing 10% of his missing health for each target hit.",
                   "subtexts": [
                     "Cooldown 45 seconds",
 
@@ -87,7 +87,10 @@
               "name": "New: <modified, talents, 4, 2>",
               "texts": [
                 {
-                  "text": "<modified, abilities,  basic, 0> can now be channeled for up to 2 seconds, increasing the outer area radius up to 40%. If channeled to Maximum enemies will be pulled towards Garrosh instead of stunned"
+                  "text": "Activate to make <modified, abilities,  basic, 0> be channeled for up to 2 seconds, increasing the outer area radius up to 40%. If channeled to Maximum enemies will be pulled towards Garrosh instead of stunned",
+                  "subtexts": [
+                    "You will press the active button and hold it instead of the (Q) button"
+                  ]
                 }
               ],
               "developerCommentary": "Inspired on Sion Decimating Smash and justify the old garrosh interaction being gatekeeped by maximum channeling and by not picking cleanse",
@@ -145,7 +148,7 @@
               "name": "<vanilla, talents, 13, 2> renamed to Don't let them run",
               "texts": [
                 {
-                  "text": "Changed functionality: Increase Garrosh movement speed by 1% every 4% missing health capping at 15%. This Talent only take effect if there's an visible enemy hero close to Garrosh.",
+                  "text": "Changed functionality: For every second Garrosh stays in combat with enemy heroes he deals 1% more damage up to 10%. When reaching the maximum stacks he shares the bonuses to allied heroes around. The bonus is lost after 4 seconds without combat.",
                   "subtexts": [
                     "8 radius | <vanilla, abilities,  heroic, 1, blaze> has 6.5 radius"
                   ]

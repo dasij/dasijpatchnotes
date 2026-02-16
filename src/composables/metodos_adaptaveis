@@ -1,0 +1,73 @@
+// MÉTODOS ATUALIZADOS PARA SUA ESTRUTURA DE JSON
+
+getDeveloperCommentary(item) {
+  if (!item) return ''; // Proteção contra item null/undefined
+  
+  for (const patch of this.patchNotes || []) { // Proteção se patchNotes for null
+    if (patch.sections) {
+      for (const section of patch.sections) {
+        if (section.changes) {
+          for (const change of section.changes) {
+            if (change.name === item.name && change.developerCommentary) {
+              return change.developerCommentary;
+            }
+          }
+        }
+      }
+    }
+    if (patch.general) {
+      for (const generalItem of patch.general) {
+        if (generalItem.change === item.name && generalItem.developerCommentary) {
+          return generalItem.developerCommentary;
+        }
+      }
+    }
+  }
+  
+  return item.developerCommentary || ''; // Retorna string vazia, não null
+},
+
+getItemChanges(item) {
+  if (!item) return []; // Proteção contra item null/undefined
+  
+  const changes = [];
+  
+  for (const patch of this.patchNotes || []) {
+    if (patch.sections) {
+      for (const section of patch.sections) {
+        if (section.changes) {
+          for (const change of section.changes) {
+            if (change.name === item.name) {
+              let changeText = '';
+              if (change.texts && change.texts.length > 0) {
+                changeText = change.texts.map(t => t.text).join(' ');
+              }
+              changes.push({
+                date: patch.date,
+                title: patch.title,
+                text: changeText
+              });
+            }
+          }
+        }
+      }
+    }
+    if (patch.general) {
+      for (const generalItem of patch.general) {
+        if (generalItem.change === item.name) {
+          let changeText = '';
+          if (generalItem.texts && generalItem.texts.length > 0) {
+            changeText = generalItem.texts.map(t => t.text).join(' ');
+          }
+          changes.push({
+            date: patch.date,
+            title: patch.title,
+            text: changeText
+          });
+        }
+      }
+    }
+  }
+  
+  return changes; // Sempre retorna array (pode ser vazio)
+},

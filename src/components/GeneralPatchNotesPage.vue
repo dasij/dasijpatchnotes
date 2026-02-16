@@ -45,10 +45,6 @@
                   <p class="font-semibold mb-2">Developer Comment:</p>
                   <p>{{ item.developerCommentary }}</p>
                 </div>
-                <button @click="likeChange(patchNote.id, item.change_id)"
-                  :class="['like-button', { 'loading': isLoading, 'liked': item.likedBy && item.likedBy[userId] }]">
-                  👍 {{ item.likes || 0 }}
-                </button>
               </li>
             </ul>
           </div>
@@ -66,53 +62,25 @@
 </template>
 
 <script>
-import { database, ref as dbRef, auth, googleProvider, facebookProvider } from '../firebase';
-import { set, get } from 'firebase/database';
-import { signInWithPopup } from 'firebase/auth';
 import { ref, watch } from 'vue';
 import { useRoute } from 'vue-router';
 
 export default {
   name: 'GeneralPatchNotesPage',
-  setup(props, { emit }) {
+  setup() {
     const route = useRoute();
     const generalItem = ref({});
     const patchNotes = ref([]);
     const selectedTab = ref('patchNotes');
-    const isUserLoggedIn = ref(false);
-    const isLoading = ref(false);
-    const likesData = ref({});
 
     const loadGeneralData = async (generalName) => {
       try {
         const generalData = await import(`../data/general/${generalName}.json`);
         generalItem.value = generalData.default;
         patchNotes.value = generalData.default.patchNotes;
-        loadLikes(generalName);
       } catch (error) {
         console.error('Failed to load general data', error);
       }
-    };
-
-    const loadLikes = async (generalName) => {
-      const likesRef = dbRef(database, `general/${generalName}/likes`);
-      const snapshot = await get(likesRef);
-      if (snapshot.exists()) {
-        likesData.value = snapshot.val();
-        applyLikes();
-      }
-    };
-
-    const applyLikes = () => {
-      patchNotes.value.forEach(patchNote => {
-        patchNote.general.forEach(change => {
-          const likeInfo = likesData.value[change.change_id];
-          if (likeInfo) {
-            change.likes = likeInfo.likes;
-            change.likedBy = likeInfo.likedBy;
-          }
-        });
-      });
     };
 
     watch(
@@ -128,119 +96,15 @@ export default {
       selectedTab.value = tab;
     };
 
-    const likeChange = (patchNoteId, changeId) => {
-      if (!isUserLoggedIn.value) {
-        emit('open-login-modal');
-        return;
-      }
-
-      const patchNote = patchNotes.value.find(note => note.id === patchNoteId);
-      const change = patchNote.general.find(item => item.change_id === changeId);
-
-      if (!change.likedBy) {
-        change.likedBy = {};
-      }
-
-      const userId = getUserId();
-      if (userId) {
-        if (change.likedBy[userId]) {
-          change.likes = (change.likes || 0) - 1;
-          delete change.likedBy[userId];
-        } else {
-          change.likes = (change.likes || 0) + 1;
-          change.likedBy[userId] = true;
-        }
-        saveChanges();
-      }
-    };
-
-    const saveChanges = () => {
-      const generalName = generalItem.value.name.toLowerCase().replace(/ /g, '_');
-      const likesRef = dbRef(database, `general/${generalName}/likes`);
-      const likesToSave = {};
-
-      patchNotes.value.forEach(patchNote => {
-        patchNote.general.forEach(change => {
-          likesToSave[change.change_id] = {
-            likes: change.likes,
-            likedBy: change.likedBy
-          };
-        });
-      });
-
-      set(likesRef, likesToSave);
-    };
-
-    const getUserId = () => {
-      let userId = localStorage.getItem('userId');
-      if (!userId) {
-        userId = 'user-' + Math.random().toString(36).substr(2, 9);
-        localStorage.setItem('userId', userId);
-      }
-      return userId;
-    };
-
-    auth.onAuthStateChanged(user => {
-      isUserLoggedIn.value = !!user;
-    });
-
     return {
       generalItem,
       patchNotes,
       selectedTab,
       selectTab,
-      likeChange,
-      isUserLoggedIn,
-      isLoading,
     };
-  },
-  methods: {
-    authenticateUser() {
-      auth.onAuthStateChanged(user => {
-        this.isUserLoggedIn = !!user;
-        if (user) {
-          this.userId = user.uid;
-        }
-      });
-    },
-    handleLogin() {
-      const provider = Math.random() > 0.5 ? googleProvider : facebookProvider;
-      signInWithPopup(auth, provider)
-        .then(result => {
-          console.log('Usuário logado:', result.user);
-        })
-        .catch(error => {
-          console.error('Erro ao tentar autenticar:', error);
-        });
-    },
-    checkUserLogin() {
-      auth.onAuthStateChanged(user => {
-        this.isUserLoggedIn = !!user;
-      });
-    },
-    loadChanges() {
-      if (!this.generalItem.name) {
-        console.error('General item name is not defined');
-        return;
-      }
-      const changesRef = dbRef(database, `general/${this.generalItem.name.toLowerCase().replace(/ /g, '_')}/patchNotes`);
-      get(changesRef).then(snapshot => {
-        if (snapshot.exists()) {
-          this.patchNotes = snapshot.val();
-        }
-        this.isLoading = false; // Atualizar o estado de carregamento
-      });
-    }
-  },
-  mounted() {
-    this.checkUserLogin();
-    this.authenticateUser();
-    this.loadChanges();
   },
 };
 </script>
-
-
 
 <style scoped>
 @import '@/assets/css/common.css';
@@ -262,13 +126,11 @@ export default {
 
 .nav-tabs {
   background-color: #4a148c;
-  /* Darker purple */
   transition: background-color 0.3s ease-in-out;
 }
 
 .nav-tabs.selected {
   background-color: #6a1b9a;
-  /* Slightly lighter purple */
 }
 
 .general-details-container {

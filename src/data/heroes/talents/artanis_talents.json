@@ -15,7 +15,13 @@
         "image": "artanis_doubleslash_on.png",
         "abilityChanged": true,
         "manaCost": "20 Mana",
-        "cooldown": "4s"
+        "cooldown": "4s",
+        "subtexts": [
+          "3.5 range the same as the base Range",
+          "Phases through walls if it's casted inside one",
+          "If it's cast inside a unit or structure will automatically be placed on the closest valid position to double hit it"
+        ],
+        "developerCommentary": "I like both <vanilla, abilities, basic, 1> and <vanilla, abilities, basic, 0> but with some old kits being more dash and mobility centered Artanis itself got his kit a little old in that sense. I want to hold the current principles but add more control to the Player so the same won't feel overwhelmed for the lack of option. Besides i am trying to make my loved hero be able to escape ganks without needing to resort on trying a 2v1 situation...please delete tracer. But talking for real, he is one of the few solo laners that has a deprecated way of escaping ganks."
       },
       {
         "name": "Phase Prism (E)",
@@ -23,7 +29,11 @@
         "image": "artanis_repositionmatrix.png",
         "abilityChanged": false,
         "manaCost": "50 Mana",
-        "cooldown": "12s"
+        "cooldown": "12s",
+        "subtexts": [
+          "Cancelling mid swap will make the unstoppable effect worn off earlier"
+        ],
+        "developerCommentary": "With some changes i made to Artanis this talent would need a little rebalance"
       },
       {
         "name": "Charge blades (?)",
@@ -31,7 +41,14 @@
         "image": "artanis_doubleslash_on.png",
         "abilityChanged": true,
         "manaCost": "20 Mana",
-        "cooldown": "4s"
+        "cooldown": "4s",
+        "subtexts": [
+          "3.5 cast range Artanis basic attack has 1.25 range",
+          "3.5 distance dash the equivalent of <vanilla, abilities, basic, 1> distance",
+          "Point and click skill",
+          "It will work similar to Yasuo Sweeping Blade from League of Legends"
+        ],
+        "developerCommentary": "Within the same argumento on reactivating <vanilla, abilities, basic, 1> on <vanilla, abilities, basic, 0> , i want to make Artanis tools of mobility a reality."
       }
     ],
     "heroic": [
@@ -60,24 +77,30 @@
       "cooldown": "24s"
     }
   },
-  "1": [
+   "1": [
     {
       "name": "Zealot Parry",
       "description": "{highlight}When Artanis activates Twin Blades he negates basic attacks damage for 1.25 seconds. 20% of the damage negated will be added to you next Blade Dash first dash{/highlight}",
       "image": "artanis_doubleslash_on.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I want to make Parry a real thing."
     },
     {
       "name": "Amateur Opponent",
       "description": "Twin Blades attacks deal 150% bonus damage to non-Heroes. {highlight}Resets cooldown and refunds mana if the target was killed by Twin Blades{/highlight}",
       "image": "artanis_doubleslash_var1.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "subtexts": [
+        "Has a 0.35 extra time to count the kill."
+      ],
+      "developerCommentary": "This is one of the two only talents that improve Artanis PVE aspects directly. I just see a chance here to make it a fun experience with the new <modified, abilities, basic, 3>"
     },
     {
       "name": "Protector Of Aiur",
       "description": "{highlight}Hitting an enemy Hero with Twin Blades reduces it's cooldown by 4 and grant a stacking 8% increased Attack Damage bonus for 4 seconds. Can only occur once every 7 seconds per Hero.{/highlight}",
       "image": "talent_autoattack_damage.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I dislike how in general infinite quests incentivize players to play and especially on Artanis aspects it just make players goddamn maniacs and with that in mind i want players to be maniacs but without the pressure of losing the ding value"
     }
   ],
   "4": [
@@ -97,7 +120,8 @@
       "name": "Shield Surge",
       "description": "Increases Shield Overload's Shields by 80% while below 25% Health.{highlight} Grant 20% of the Shield Overload's Shields to nearby allied heros{/highlight}",
       "image": "artanis_shieldoverload_a.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "By watching some campaign maps again i forgot that Artanis had a skill that he could use to heal allied heroes and shield them. I want to bring that aspect back while make it a viable talent for other reasons when close to <vanilla, talents, 13, 3>"
     }
   ],
   "7": [
@@ -105,20 +129,29 @@
       "name": "Triple Strike",
       "description": "Increases Twin Blades's number of Basic Attacks to 3, but increase its cooldown by 1 second.",
       "image": "artanis_doubleslash_on.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Making level 13 the <modified, abilities, basic, 0> level"
     },
     {
       "name": "Chrono Surge",
       "description": "Hitting an enemy Hero with Phase Prism grants 40% bonus Attack Speed for 5 seconds and slow the target for 30% for 4 seconds.{highlight} Refreshs cooldown if you hit the target with Twin Blades within 2 seconds.{/highlight}",
       "image": "artanis_repositionmatrix.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "By removing <vanilla, talents , 13, 2> i wanted to hold the way of how some Artanis players were close swap maniacs and with the new <modified, talents, 1, 2> works i think it will be a great combo"
     },
     {
       "name": "Shield Force",
       "description": "{highlight}Activate to destroy your current Shield and deal damage 50% of the value as damage to enemies nearby and knock back them{/highlight}",
       "cooldown": "20s",
       "image": "artanis_shieldoverload.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "subtexts": [
+        "Cooldows: 20",
+        "Radius 3.0 same from <vanilla, talents, 4, 0, dehaka>",
+        "Knockback duration: 0.25 same <vanilla, talents, 4, 0, dehaka>",
+        "Knockback speed: 10 same from <vanilla, talents, 4, 0, dehaka>"
+      ],
+      "developerCommentary": "This is a talent i always wanted Artanis to have i really dunno about how the numbers would work specially with how the <modified, talents, 4, 2> works"
     }
   ],
   "10": [
@@ -144,19 +177,22 @@
       "name": "Templar's  Zeal",
       "description": "Reduces Blade Dash mana cost to 25. {highlight}Hitting enemy heroes with Blade Dash reduces its cooldown by 3.5 seconds . Blade Dash can be cast while on Blade Dash{/highlight}",
       "image": "artanis_powerstrikes.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "This talent is intended to cause nauseas on Artanis players with the number of <modified, abilities, basic, 0> you will be able to perform"
     },
     {
       "name": "Solarite Reaper",
       "description": "Increases the damage of the first dash of Blade Dash by 175%.",
       "image": "artanis_powerstrikes.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Making level 13 a <modified, abilities, basic, 0> level"
     },
     {
       "name": "Aiur reinforcements",
       "description": "{highlight}For each enemy hero hit by Blade Dash reduces Artanis Heroic cooldown by 5%{/highlight}",
       "image": "artanis_powerstrikes.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I didn't want to upgrade ultimates because i feel them are strong but at the same time i kinda wanted. So this is a indirect ultimate buff for the possibility of taking a nano boost and performing two lasers."
     }
   ],
   "16": [
@@ -172,12 +208,16 @@
       "image": "artanis_shieldoverload.png",
       "talentChanged": false
     },
-
     {
       "name": "Force of the Prism",
       "description": "{highlight}When Phase Prism Reaches maximum range it splits into three Phase Prisms and travels extra 25% range. Artanis Won't swap with targets pulled that way{/highlight}",
       "image": "artanis_repositionmatrix.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "subtexts": [
+        "The extra range is 1.875.",
+        "The other two prisms will be create at a 45º angle difference, one to the left and another to the right"
+      ],
+      "developerCommentary": "I was on a fight to decide between this or Longshot, a inspired reddit talent that made <modified, abilities, basic, 2> have a longer range and increased travel speed, i choose this because i think this could make great wtf moments"
     }
   ],
   "20": [

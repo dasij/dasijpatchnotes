@@ -270,7 +270,7 @@
               "name": "New: <modified, talents, 13, 0>",
               "texts": [
                 {
-                  "text": "<modified, abilities, basic, 1> now takes off 5 seconds after being used and can carry any amount of people."
+                  "text": "<modified, abilities, basic, 1> now takes off 5 seconds after being used and can carry any amount of people. Unloaded heroes will be mounted and can't be dismounted for 1.5 seconds"
                 }
               ],
               "developerCommentary": "It's supposed to work like before for any nostalgic player.",

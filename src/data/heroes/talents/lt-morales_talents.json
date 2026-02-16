@@ -140,7 +140,7 @@
   "13": [
     {
       "name": "Mass Evacuation Protocol",
-      "description": "{highlight}Medivac now takes off 5 seconds after being used and can carry any amount of people.{/highlight}",
+      "description": "{highlight}Medivac now takes off 5 seconds after being used and can carry any amount of people. Unloaded heroes will be mounted and can't be dismounted for 1.5 seconds{/highlight}",
       "image": "medic_medivacdropship.png",
       "talentChanged": true
     },

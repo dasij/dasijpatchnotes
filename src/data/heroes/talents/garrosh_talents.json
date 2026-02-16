@@ -53,7 +53,7 @@
     ],
     "trait": {
       "name": "Armor Up (T)",
-      "description": "Garrosh gains 1 Armor for every 2% of maximum Health missing. {highlight}Taunting up to 1.5 seconds after a takedown heals Garrosh for 25% of his max health.{/highlight}",
+      "description": "Garrosh gains 1 Armor for every 2% of maximum Health missing. {highlight}Taunting up to 1.5 seconds after a takedown heals Garrosh for 15% of his max health.{/highlight}",
       "cooldown": "Cooldown: 45s",
       "image": "garrosh_armor_up.png",
       "abilityChanged": true
@@ -74,7 +74,7 @@
     },
     {
       "name": "Brutality",
-      "description": "{highlight}Gain 3% attack speed for every 2% missing health. Basic Attacks against Heroes reduce Bloodthirst's cooldown by 1 second.{/highlight}",
+      "description": "{highlight}Gain 0.75% attack speed for every 2% missing health. Basic Attacks against Heroes reduce Bloodthirst's cooldown by 1 second.{/highlight}",
       "image": "garrosh_bloodthirst.png",
       "talentChanged": true
     }
@@ -89,14 +89,14 @@
     },
     {
       "name": "Bull rush",
-      "description": "{highlight}Garrosh charges in a straight line, knocking back enemies on contact and healing 10% of his missing health for each target hit.{/highlight}",
+      "description": "{highlight}Activate to run in a straigh line after 0.5 seconds, knocking back enemies on contact and healing 10% of his missing health for each target hit.{/highlight}",
       "image": "garrosh_indomitablel.png",
       "cooldown": "45s",
       "talentChanged": true
     },
     {
       "name": "Groundbreaking tactics",
-      "description": "{highlight}Groundbreaker can be channeled for up to 2 seconds, increasing the outer area radius by up to 40%. At max channel, pulls enemies instead of stunning.{/highlight}",
+      "description": "Activate to make {highlight}Groundbreaker be channeled for up to 2 seconds, increasing the outer area radius by up to 40%. At max channel, pulls enemies instead of stunning.{/highlight}",
       "image": "garrosh_groundbreaker.png",
       "talentChanged": true
     }
@@ -154,7 +154,7 @@
     },
     {
       "name": "Don't let them run",
-      "description": "{highlight}Gain 1% movement speed for every 4% missing health, up to 15%. Only active if a visible enemy Hero is nearby.{/highlight}",
+      "description": "{highlight}For every second Garrosh stays in combat with enemy heroes he deals 1% more damage up to 10%. When reaching the maximum stacks he shares the bonuses to allied heroes around. The bonus is lost after 4 seconds without combat.{/highlight}",
       "image": "garrosh_armor_up.png",
       "talentChanged": true
     }

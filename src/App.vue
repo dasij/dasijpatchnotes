@@ -21,97 +21,17 @@
                 <ul class="navbar-menu">
                     <li><router-link to="/Gamemodes">Gamemodes</router-link></li>
                 </ul>
-                <ul class="navbar-menu">
-                    <li>
-                        <button @click="isUserLoggedIn ? handleLogout() : openLoginModal()">
-                            {{ isUserLoggedIn ? 'Sign Out' : 'Login' }}
-                        </button>
-                    </li>
-                </ul>
             </div>
         </nav>
-        <router-view @open-login-modal="openLoginModal"></router-view>
-
-        <!-- Login Modal -->
-        <div v-if="showLoginModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-                <h2 class="text-2xl font-bold mb-4">Choose a login method</h2>
-                <div class="flex flex-col space-y-4">
-                    <button @click="handleLogin('google')"
-                        class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">
-                        Login with Google
-                    </button>
-                    <!-- <button @click="handleLogin('facebook')"
-                        class="bg-blue-800 text-white py-2 px-4 rounded hover:bg-blue-900">
-                        Login with Facebook
-                    </button>-->
-                    <button @click="closeLoginModal" class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-gray-700">
-                        Cancel
-                    </button>
-                </div>
-            </div>
-        </div>
+        <router-view></router-view>
     </div>
 </template>
 
 <script>
-import { auth, googleProvider, facebookProvider } from './firebase';
-import { signInWithPopup, signOut } from 'firebase/auth';
-
 export default {
     name: 'App',
-    data() {
-        return {
-            isUserLoggedIn: false,
-            showLoginModal: false,
-        };
-    },
-    methods: {
-        openLoginModal() {
-            this.showLoginModal = true;
-        },
-        closeLoginModal() {
-            this.showLoginModal = false;
-        },
-        handleLogin(providerName) {
-            const provider = providerName === 'google' ? googleProvider : facebookProvider;
-            signInWithPopup(auth, provider)
-                .then(result => {
-                    console.log('User logged in:', result.user);
-                    this.isUserLoggedIn = true;
-                    this.closeLoginModal();
-                })
-                .catch(error => {
-                    console.error('Error during authentication:', error);
-                });
-        },
-        handleLogout() {
-            signOut(auth)
-                .then(() => {
-                    console.log('User logged out');
-                    this.isUserLoggedIn = false;
-                })
-                .catch(error => {
-                    console.error('Error during logout:', error);
-                });
-        },
-        checkUserLogin() {
-            auth.onAuthStateChanged(user => {
-                this.isUserLoggedIn = !!user;
-                if (this.isUserLoggedIn) {
-                    this.closeLoginModal();
-                }
-            });
-        }
-    },
-    mounted() {
-        this.checkUserLogin();
-    }
 };
 </script>
-
-
-
 
 <style>
 .navbar-overlay {

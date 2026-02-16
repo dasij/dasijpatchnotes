@@ -33,9 +33,7 @@
               "texts": [
                 {
                   "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "subtexts": [""]
                 }
               ],
               "developerCommentary": "",
@@ -52,10 +50,21 @@
               "name": "",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "text": "Grants Bonk of light: Hit an allied hero with an empowered basic attack to grant him 25% faster cooldowns for 2.5 second and also heal him for 100 health.",
+                  "subtexts": [""]
+                }
+              ],
+              "developerCommentary": "",
+              "likes": 0,
+              "likedBy": {}
+            },
+            {
+              "change_id": "uther_",
+              "name": "",
+              "texts": [
+                {
+                  "text": "Grants Bonk of Darkness: Hit an enemy hero with an empowered basic to purge him with light making him explode after 2.5 seconds dealing 150 damage do enemy heroes around him and healing allied heros for the same amount.",
+                  "subtexts": [""]
                 }
               ],
               "developerCommentary": "",
@@ -69,16 +78,13 @@
           "changes": [
             {
               "change_id": "uther_",
-              "name": "",
+              "name": "Guardian of Ancient Kings",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "text": "Additional functionality: Devotion now grants 25 armor to Uther"
                 }
               ],
-              "developerCommentary": "",
+              "developerCommentary": "The problematic Uther tank is back to action. I am bringing it back this way because i like that talent but when it gave more armor(75) it would be unecessarily overpowered and i don't want that BUT i still like it so instead of buffing that number i rather want to give players other reason to pick it and that's is the Tank uther and for me it's ok because you make it choose between that and Hand of Protection making it a very hard choice.",
               "likes": 0,
               "likedBy": {}
             }
@@ -92,10 +98,8 @@
               "name": "",
               "texts": [
                 {
-                  "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "text": "Uther can basic attack allied heroes healing them instead and applying devotion.",
+                  "subtexts": [""]
                 }
               ],
               "developerCommentary": "",
@@ -113,9 +117,7 @@
               "texts": [
                 {
                   "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "subtexts": [""]
                 }
               ],
               "developerCommentary": "",
@@ -133,9 +135,7 @@
               "texts": [
                 {
                   "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "subtexts": [""]
                 }
               ],
               "developerCommentary": "",
@@ -153,9 +153,7 @@
               "texts": [
                 {
                   "text": "",
-                  "subtexts": [
-                    ""
-                  ]
+                  "subtexts": [""]
                 }
               ],
               "developerCommentary": "",

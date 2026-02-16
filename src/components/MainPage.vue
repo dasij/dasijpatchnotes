@@ -87,7 +87,6 @@ export default {
   justify-content: center;
   align-items: center;
   height: 200px;
-  /* Adjust the height as needed */
 }
 
 .welcome-title {
@@ -113,14 +112,11 @@ export default {
 .links-container {
   display: flex;
   justify-content: center;
-  /* Center the links horizontally */
   flex-wrap: wrap;
-  /* Allows wrapping if the screen is too small */
 }
 
 .link-section {
   margin: 0 20px;
-  /* Adds spacing between the links */
 }
 
 .link-section a {
