@@ -77,13 +77,18 @@
       "name": "Smite",
       "description": "Anduin can use Flash Heal on a chastized enemy dealing damage instead and launching basic attacks on close enemy heroes.",
       "image": "anduin_chastise.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "subtexts": [
+        "Radius 2.0 | <vanilla, abilities, basic, 1, muradin> is 3.0"
+      ],
+      "developerCommentary": "I just find those two very suitable one to the other"
     },
     {
       "name": "Surge of Light",
       "description": "Basic Attacks reduce the cooldown of Chastise by 0.75 seconds. Basic Attacks against {highlight}rooted heroes{/highlight} launch an additional Basic Attack and restore 25 Mana.",
       "image": "anduin_chastise.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Instead of going off the board i wanted to make this "
     },
     {
       "name": "Piercing Light",
@@ -104,7 +109,8 @@
       "name": "Blessed Recovery",
       "description": "{highlight}If Anduin loses more than 8% of his maximum Health at once, recover 15% Health over 3 seconds. During the healing Anduin is immune to Silences and Slows. This effect has a 15 second cooldown.Current Health required: 133{/highlight}",
       "image": "anduin_blessed_recovery.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "This is supposed to give Anduin a tool to prevent certain types of engage to suceed against him but not all of them."
     },
     {
       "name": "Desperate Prayer",
@@ -140,7 +146,8 @@
       "talentChanged": true,
       "passives": [
         "{highlight}Basic Attacks against enemies gives 10% movement speed to the closest hero to Anduin for 1 second.{/highlight}"
-      ]
+      ],
+      "developerCommentary": "Yes, turbo Anduin is real."
     },
     {
       "name": "Power Word: Fortitude",
@@ -149,7 +156,11 @@
       "talentChanged": true,
       "passives": [
         "{highlight}Basic Attacks against enemy Heroes heal the lowest Health allied Hero near Anduin for 32.{/highlight}"
-      ]
+      ],
+      "subtexts": [
+        "This will also apply bonus to <modified, talents, 16, 1> and <modified, talents, 20, 3>"
+      ],
+      "developerCommentary": "The intent here was to buff <vanilla, talents, 1, 1> but also being different"
     },
     {
       "name": "Moral Compass",
@@ -165,16 +176,23 @@
     {
       "name": "Inner Focus",
       "description": "Activate to reset the cooldown of Flash Heal ",
-      "passives": ["{highlight}Receive all level 1 talents.{/highlight}"],
+      "passives": [
+        "{highlight}Receive all level 1 talents.{/highlight}"
+      ],
       "image": "anduin_inner_focus.png",
       "talentChanged": true,
-      "cooldown": "20s"
+      "cooldown": "20s",
+      "subtexts": [
+        "The increased healing effect will be applied if you used the flash heal with the <modified, abilities, trait, 0> cooldown available not when the second heal is applied."
+      ],
+      "developerCommentary": "Making that talent to have a different usage from the others"
     },
     {
       "name": "Holy Nova",
       "description": "After Anduin catches Divine Star, it explodes, healing nearby allied Heroes for 105 and damaging enemies for 150.{highlight} Also explodes at the apex.{/highlight}",
       "image": "anduin_divine_star.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I like the concept of this talent and i love the interaction the <vanilla, abilities, basic, 1> but i wanted it to be more appealing."
     },
     {
       "name": "Glyph of Faith",
@@ -206,7 +224,14 @@
       "name": "Halo",
       "description": "{highlight}A holy area surrounds Anduin. Every time he basic attacks an enemy hero all allied units within this area are healed by 1% of their maximum health.{/highlight}",
       "image": "anduin_varians_legacy.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "subtexts": [
+        "Radius will be 5 | <vanilla, talents, 10, 1, blaze> is 6.5"
+      ],
+      "developerCommentary": "I was reading through all the talents from discipline and holy priest from WoW and this one got my attention. Big fan."
     }
-  ]
+  ],
+  "developerCommentary": "For me Anduin is a great hero that is cursed a little on how his <vanilla, abilities, trait, 0> works and it's not because the skill itself is bad but it causes a little frustation sometimes with the 'no consent' type of skill. His kit overall is fun but i want to change it to something more inclined to how i would want Anduin to be so here is more like a preference than anything. The truly problematic part of his kit i would say that lies on level 13-16 on how good <vanilla, abilities, trait, 0> talents are AND equally fun"
 }
+  
+

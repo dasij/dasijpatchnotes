@@ -61,7 +61,6 @@
       "abilityChanged": true
     }
   },
-
   "1": [
     {
       "name": "Maximum Effort",
@@ -192,15 +191,17 @@
   "20": [
     {
       "name": "Silent Killer",
-      "description": "Hitting enemy Heroes with Unrelenting Strikes Silences them for 0.5 seconds and reduces its cooldown by 3 seconds. {highlight}Decrease unrelenting strikes area by 1 meter{/highlight}",
+      "description": "Decrease <modified, abilities, heroic, 0> are by 1 meter",
       "image": "storm_ui_icon_nexushunter_r1.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "With the changes on the base <modified, abilities, heroic, 0> we need to nerf it because it's truly eazier to perform the wombo wipes we've seen Qhira mains making, this is one of the level 20 talents that could solo win a fight and the extra area would easily make it wipe entire teams without effort. It's the <vanilla, talents, 20, 0, leoric> treatment"
     },
     {
       "name": "Unleashed Potential",
-      "description": "{highlight}Casting Final Strike unleashes two additional beams that curve outward, each dealing 50% damage. The beams converge towards the end of the original Final Strike, creating an area of effect that deals 250% of the ultimate damage.{/highlight}",
+      "description": "Changed functionality: Casting <modified, abilities, heroic, 1> unleashes two additional beams that curve outward, each dealing 50% damage. The beams converge towards the end of the original <modified, abilities, heroic, 1>, creating an area of effect that deals 250% of the ultimate damage.",
       "image": "storm_ui_icon_nexushunter_r2.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I tried lots of times to think..What is making the level 20 talent of <modified, abilities, heroic, 1> a little odd? First it starts by being a finishing ultimate that RESETS COOLDOWN if you are finishing someone it make less likely that you will use that resets and the ultimate doesn't give any give of mobility for you to use these resets better..sure you have the <modified, abilities, trait, 0> but on a teamfight you have high chances to have already used the <modified, abilities, trait, 0> when you reset atleast on my vision it's counterintuitive except for the ultimate reset on kill. On that instance i want to bring something that further increase the concept of 'unsleashed potential' and finisher move to make it more original and unique that is bringing more the finishing part."
     },
     {
       "name": "Utility Belt",
@@ -213,13 +214,14 @@
     },
     {
       "name": "No Sanctuary",
-      "description": "Nearby enemy Heroes below 50% Health are revealed and you gain 20% Movement Speed while an enemy Hero is revealed by you in this way. Additionally, you deal 20% increased damage to these revealed enemies.",
+      "description": "Additional functionality: <modified, abilities, trait, 0> now always pulls Qhira\n\nKilling an enemy hero resets <modified, abilities, trait, 0> charges",
       "passives": [
         "{highlight}Grappling hook now always pulls Qhira{/highlight}",
         "{highlight}Killing an enemy hero resets grappling hook charges{/highlight}"
       ],
       "image": "storm_ui_icon_nexushunter_passive_alt_1.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "No Sanctuary has the 'predator' concept and with that in mind i want to suit it with the <modified, abilities, trait, 0> changes and make Qhira the ultimate predator (That sounds criminal)"
     },
     {
       "name": "Mortal Wounds",

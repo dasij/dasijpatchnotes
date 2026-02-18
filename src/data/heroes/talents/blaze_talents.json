@@ -1,5 +1,10 @@
 {
   "abilities": {
+    "general": {
+      "name": "Base",
+      "description": "Basic attacks deal 25% more damage to Minions, Mercenaries and Monsters",
+      "developerCommentary": "<vanilla, talents, 4, 2> is extremely popular due to how Blaze works in-game making it a nerf to not pick it..a similar situation with <vanilla, talents, 4, 1, etc>. With this effect being so integrated i wanted to bring it baseline on a weaker effect and make his level 4 more interesting for choice making"
+    },
     "basic": [
       {
         "name": "Flame Stream (Q)",
@@ -65,14 +70,16 @@
       "description": "Activate to gain a Shield that absorbs 590 damage over 5 seconds.When taking damage while below 30% maximum Health, Endurance Stimpack will automatically be cast if it is not on cooldown.{highlight} Endurance Stimpack will grant unstopabble while it's active{/highlight}",
       "image": "blaze_stim_1.png",
       "talentChanged": true,
-      "cooldown": "30s"
+      "cooldown": "30s",
+      "developerCommentary": "For me <vanilla, talents, 1, 3> were just competing for the same spot. To make Blaze a more viable Tank, with that approach i think it guarantees more Blaze survavibility as it could cleanse him on harsh situation."
     },
     {
       "name": "Neural Stimpack",
       "description": "Activate to gain 40 Mana and cause Basic Ability cooldowns to recharge 100% faster for 5 seconds.{highlight} Ignited Oil Spills will also restores Blaze 1 mana each time it hits an enemy if the target is an enemy hero also grants 1% spell power for 4 seconds.{/highlight}",
       "image": "blaze_stim_3.png",
       "talentChanged": true,
-      "cooldown": "30s"
+      "cooldown": "30s",
+      "developerCommentary": "Blaze natural habitat is the solo lane or a cheesing tank so <vanilla, talents, 1, 2> always felt kinda underwhelming not on the lack of purpose but power."
     }
   ],
   "4": [
@@ -86,13 +93,15 @@
       "name": "Meltdown",
       "description": "Hitting an enemy Hero with Pyromania reduces their damage dealt by 8% for 2.5 seconds, up to 40%. {highlight}Regeneration globes decrease Pyromania cooldown by 4 seconds{/highlight}",
       "image": "blaze_pyromania.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "With the changes on level 1 for me that tier is gonna have a great competition of talents now and i'm giving a little buff to Meltdown for the lack of Pyromania cooldown lost with the removal of <vanilla, talents, 1, 3>"
     },
     {
       "name": "Hot Footed",
       "description": "{highlight}Blaze receives 15% bonus movement speed while standing on a Oil Spill area and increase it's Basic Attack area by 30% while on a Ignited Oil Spill area{/highlight}",
       "image": "blaze_oil.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "<vanilla, talents, 13, 1> did something like that before but my objective of making the opposite is to validate better every possible build as movement speed is relevant all around."
     }
   ],
   "7": [
@@ -138,19 +147,22 @@
       "name": "Grill and Kill",
       "description": "{highlight}Increase Ignited Oil Spill damage by 45% and increase Oil Spill's Ignite duration by 2.5 seconds. Ignited Oil Spill's bonus damage is increased to 100% to non-heroic units{/highlight}",
       "image": "blaze_oil.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Mid-Late game quests are kinda awkward when they act like early game quests with no dynamic completion system like <vanilla, talents, 16, 1, thrall>. With that in mind im removing the quest part."
     },
     {
       "name": "Burn Notice",
       "description": "Basic Attacks Slow enemies by 5% and deal an additional 18 damage over 2.5 seconds. Stacks up to 5 times.",
       "image": "talent_autoattack_slow.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Bringing Burn Notice to the damage dealing tier as i feel it's not powerful enough for a level 20 and it can be numeric nerfed to fit here if it gets too strong."
     },
     {
       "name": "Collision Course",
       "description": "Jet Propulsion deals {highlight}10% of target maximum health{/highlight}",
       "image": "blaze_jet.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "A High flat damage means that the stun will work against any enemy hero and can only be countered by armor which is not a very commom ocurrence specially on squishy targets. Stunning a squishy target by itself is alredy a strong feat that could guarantee a kill BUT 275 (which doesn't count the level scaling of 4%) is moreless 10% of a level 18 Hanzo Maximum life(2785). My intent with this change is to make it a more guaranteed tool of damage not being reduced by armor BUT with a more consistent value which undervalues itself against squishies and is more valued against tanks characters. We could round up the numerical values of this talent on the flat damage base but i think this could lead to the talent being underperfoming. But as well RIP Garrosh"
     }
   ],
   "16": [
@@ -164,7 +176,11 @@
       "name": "Heat Treatment",
       "description": "Heal for 75% of the damage dealt by Pyromania.{highlight} Damaging enemy heroes with Pyromania reduces it's cooldown by 2 for each hero hit{/highlight}",
       "image": "blaze_pyromania.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "subtexts": [
+        "Hitting 5 heroes with all ticks of damage will reset Pyromania cooldown"
+      ],
+      "developerCommentary": "<vanilla, talents, 16, 1> will now reign over constant fighting and crazy combustion blazes"
     },
     {
       "name": "Juggernaut Plating",
@@ -192,13 +208,23 @@
       "description": "{highlight}Activate to empower your next Jet Propulsion. Increasing the speed and impact radius greatly{/highlight}",
       "image": "blaze_jet.png",
       "cooldown": "60 seconds",
-      "talentChanged": true
+      "talentChanged": true,
+      "subtexts": [
+        "Cooldown 60 seconds",
+        "Missile speed will go from 19 to 38",
+        "Travel duration will be the same, doubling final range with new speed",
+        "Impact radius will go from 3 to 6.5",
+        "This mean that the blaze will travel double distance on the same time as a commom <vanilla, abilities, basic, 2>"
+      ],
+      "developerCommentary": "Superman Blaze engage, is there a discussion about the idea? On the numbers we probally have"
     },
     {
       "name": "You're fired",
       "description": "{highlight}Reduces Flame Stream cooldown to 2 seconds and another 1 second each time Flame Stream does bonus damage to a hero{/highlight}",
       "image": "blaze_flame.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I find <modified, abilities, basic, 0> extremely satisfying to hit and a level 20 that makes that makes it a plus for me is very nice."
     }
-  ]
+  ],
+  "developerCommentary": "Blaze is one of the strongest solo laners in the game since launch both his skills and talents are strong making nearly impossible to remove him from the meta without nerfing him hard as his utility for a solo laner is unmatched as well good clear. The changes i am gonna make are probally gonna make him strong overall as my objective is to increase the talent choice variety."
 }

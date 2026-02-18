@@ -192,9 +192,9 @@
     },
     {
       "name": "Submerge",
-      "description": "Ragnaros submerges below, entering Stasis and healing for 600 Health over 3 seconds.",
+      "description": "Additional functionality: Can choose another place to submerge in range dealing damage and restoring accordinlyg\n\nAdditional functionality: Resets sulfuras smash cooldown on Molten Core",
       "image": "ragnaros_submerge.png",
-      "talentChanged": false,
+      "talentChanged": true,
       "cooldown": "60s"
     }
   ]

@@ -100,9 +100,10 @@
     },
     {
       "name": "Guardian of Ancient Kings",
-      "description": "Healing a Hero with a Basic Ability that is Stunned, Rooted, or Silenced grants them 50 Armor for 3 seconds.",
+      "description": "Additional functionality: Devotion now grants 25 armor to Uther",
       "image": "uther_eternaldevotion.png",
-      "talentChanged": false
+      "talentChanged": false,
+      "developerCommentary": "The problematic Uther tank is back to action. I am bringing it back this way because i like that talent but when it gave more armor(75) it would be unecessarily overpowered and i don't want that BUT i still like it so instead of buffing that number i rather want to give players other reason to pick it and that's is the Tank uther and for me it's ok because you make it choose between that and Hand of Protection making it a very hard choice."
     },
     {
       "name": "Hand of Protection",

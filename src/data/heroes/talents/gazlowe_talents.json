@@ -50,7 +50,8 @@
         "manaCost": "No cost",
         "classes": "text-small text-warning",
         "image": "storm_ui_icon_gazlowe_robogoblin.png",
-        "abilityChanged": true
+        "abilityChanged": true,
+        "developerCommentary": "Robo-Goblin ain't a big game changer compared to Grav-o-Bomb for your build to be picked and not effective as much BUT with the additional power the talents i created/modified i believe that making it have a increased synergy with Rock-It! Turret would make it A GAME CHANGER for some builds."
       }
     ],
     "trait": {
@@ -73,35 +74,47 @@
         "{highlight}Destroying a turret with Reduce, Reuse, Recycle gives Gazlowe 15% movement speed for 2 seconds{/highlight}"
       ],
       "image": "storm_ui_icon_gazlowe_salvager.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "The auto attack is a build more focused on solo laners and it requires Gazlowe to hit heroes. The problem with that relies on Gazlowe's methods to reach enemies or crowd control them. His Deth Lazor is hard to hit, and the movement speed on basic attacks comes only on level 16, with no mobility, he has hard times going for the enemies. The only reliable source for him to for the auto attacks safely and early is the slow he gets when hitting with Master Blaster. So the objective here is to bring up the tools for him to go for this auto attack build faster by making a synergy with the extra scrap and making it a more high skill ceiling talent."
     },
     {
       "name": "MOLL-E Blingtron 5000 Gift",
-      "description": "{highlight}Activate to put a Mailbox that will give a random item after 30 seconds. The item disappears after 60 seconds if not picked up and after 2 minutes if not used.{/highlight}",
+      "description": "{highlight}Activate to put a Mailbox that will give a random item after 30 seconds. The item disappears after 60 seconds if not picked up and after 60 seconds if not used. Any hero can get the items (Cooldown 20 seconds):{/highlight}",
+      "subtexts": [
+        "Invisibility Field - Grants invisibility in target area for 10 seconds.",
+        "Hyperspeed Accelerators - Grants speed by 20% for 3 seconds.",
+        "Grounded Plasma Shield - Grants 200 shield for 3 seconds."
+      ],
       "image": "Portable_Mailbox.webp",
       "cooldown": "20 seconds",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "This is made thinking on improve gazlowe utility as a 4-man hero rather than a solo laner granting him more of gadget power to his side."
     }
   ],
   "4": [
     {
       "name": "Mekgineer's Mount 5000",
-      "description": "{highlight}Activate to make Gazlowe become unstoppable for 5 seconds. He can't be unmounted by damage while mounted and his mount speed increases to 150%. The effect is lost if Gazlowe dismounts{/highlight}",
-      "cooldown": "30 seconds",
+      "description": "{highlight}Gazlowe's mount lets another hero mount together on a mining cart installed by Gazlowe. The allied hero will mount instantly on Gazlowe's cart without resetting their own mount cooldown{/highlight}",
+      "subtexts": [
+        "Nitro Boosts (Active): Activate to make Gazlowe become unstoppable for 5 seconds. He can't be unmounted by damage while mounted and his mount speed increases to 150%. The effect is lost if Gazlowe dismounts (Cooldown: 30 seconds)"
+      ],
       "image": "Ability_mount_rocketmount3.webp",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Gazlowe is a tinker but isn't building much.Roleplay fantasy is a must and clip moments of Gazlowe saving teammates would be damn popular, i am only uncertain if should be added an effect that prevents Gazlowe being unmounted if he takes damage lower than 2% of his health as that talent could alredy be fairly strong on rotations"
     },
     {
       "name": "Hyperfocus Coils",
       "description": "{highlight}Heroes hit with Deth Lazor are affected by zapped for 3 seconds dealing 40 damage per second to enemy heros close to them. Hitting the same enemy hero with Deth Lazor and Xplodium Charge within 3 seconds on a enemy hero makes Gazlowe zaps all his Rock-It! Turret to deal damage to the enemies. Gazlowe is healed 100% of all zapped damage{/highlight}",
       "image": "storm_ui_icon_gazlowe_combo_w_e.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Hyperfocus Coils original effects serves his purpose for the mage talent build BUT it's not only about serving the purpose that makes HOTS talents cool but also how they affect your gameplay, straight number buffs are not necessarily game changers and I FELT that on this. The changes here are made to make the original purpose stay..damage+healing on the Deth Lazor but also adding more interactions and effects that would make the player play potential increase"
     },
     {
       "name": "EZ-PZ Dimensional Ripper",
       "description": "{highlight}Destroying a turret with Reduce, Reuse, Recycle reduces nearby enemy heroes' damage by 20% and increases allied heroes' armor by 10 for 4 seconds. Gazlowe will receive a shield that absorbs 100 damage for each hero affected for 2.5 seconds{/highlight}",
       "image": "storm_ui_icon_talent_imposingpresence.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "EZ-PZ Dimensional Ripper and Break it Down! kindas fight for the same spot of utility, one being more turret focused and the other being a more eazy to pick talent but it kinda undermines build variety with 2 talents covering the same topic. For that instance both talents also works in a way too simple that >IN MY OPINION< could be more valued in a higher skill ceiling talent that also doesn't too complex. The objective here is to make that talent viable both as a 4-man and a solo laner while showing that skill expression that i talked about as the enemy hero damage reduction would work better in 1v1's and the armor would work better when close to your team."
     }
   ],
   "7": [
@@ -112,13 +125,13 @@
     },
     {
       "name": "Cardboard Assassin(active)",
-      "description": "{highlight}If you hit Cardboard Assassin with Deth Lazor, it becomes Zapped and deals 40 damage per second to enemy heroes and taunts them for 0.5 seconds. After 3 seconds, it explodes.{/highlight}",
-      "cooldown": "10 seconds",
+      "description": "Activate to place a Cardboard Assassin decoy unit that have 1000 health and act as a heroic unit for 10 seconds. If you hit Cardboard Assassin with Deth Lazor, it becomes Zapped and deals 40 damage per second to enemy heroes and taunts them for 0.5 seconds. After 3 seconds, it explodes and get destroyed. (Cooldown: 10 seconds)",
       "passives": [
-        "{highlight}Deth Lazor cooldown is reduced by 2 seconds{/highlight}"
+        "Deth Lazor cooldown is reduced by 2 seconds"
       ],
       "image": "200014-cardboard-assassin.jpg",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Cardboard Assassin is made with the intention to increase the skill expression of gazlowe while also mainting the roleplay of builder fantasy"
     },
     {
       "name": "Master Blaster",
@@ -139,7 +152,8 @@
       "manaCost": "No cost",
       "classes": "text-small text-warning",
       "image": "storm_ui_icon_gazlowe_robogoblin.png",
-      "abilityChanged": true
+      "abilityChanged": true,
+      "developerCommentary": "Robo-Goblin ain't a big game changer compared to Grav-o-Bomb for your build to be picked and not effective as much BUT with the additional power the talents i created/modified i believe that making it have a increased synergy with Rock-It! Turret would make it A GAME CHANGER for some builds."
     },
     {
       "name": "Grav-O-Bomb 3000",
@@ -153,7 +167,8 @@
       "name": "Positive Reinforcement",
       "description": "Primary Rock-It! Turret attacks against Heroes increase Gazlowe's Attack Speed by 40% for 3 seconds.{highlight}Dealing Basic Attack damage extends the duration of Rock-It! Turrets by 0.75 seconds{/highlight}",
       "image": "storm_ui_icon_gazlowe_rockitturret.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I always felt that this talent effects belongs to an AA build as it rewards more the Gazlowe players that risk themselves more for the basic attacks"
     },
     {
       "name": "Superior Schematics",
@@ -164,7 +179,8 @@
       "name": "Overload",
       "description": "{highlight}Deth Lazor can now be recast during its channeling up to three times. Each recast will increase the channel time by 0.65 seconds, the area by 100% of its base area, and the damage by 75% of the base damage{/highlight}",
       "image": "storm_ui_icon_gazlowe_dethlazor_a.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Master Blaster on level 13 is an option to replace Overclock while also making Gazlowe more prone to creative plays. The ideia of increasing Deth Lazor casting better suit what i envision of player control instead of the original effect of non-stop reseting."
     }
   ],
   "16": [
@@ -176,7 +192,8 @@
       ],
       "cooldown": 30,
       "image": "storm_ui_icon_gazlowe_dethlazor.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Changing Turret Storage to be more consistent and reliable"
     },
     {
       "name": "Ark Reaktor",
@@ -186,7 +203,8 @@
     {
       "name": "Overklock",
       "description": "Basic Attacks grant Gazlowe 15% Movement Speed for 2 seconds. Dealing Basic Attack damage to Heroes causes them to take an additional 2.5% of their maximum Health as damage.",
-      "image": "storm_ui_icon_talent_autoattack_searing.png"
+      "image": "storm_ui_icon_talent_autoattack_searing.png",
+      "developerCommentary": "I just want to note that the movement speed you get from Big Game Hunter needs to stack with that talent granting an effective 30% movespeed bonus if used correctly"
     }
   ],
   "20": [
@@ -196,9 +214,13 @@
       "passives": [
         "Basic Attacks increase Gazlowe's Armor by {highlight}5{/highlight} for 5 seconds, up to a maximum of {highlight}45{/highlight}."
       ],
+      "subtexts": [
+        "Reference Homing missile - https://www.dota2.com/hero/gyrocopter"
+      ],
       "cooldown": 60,
       "image": "storm_ui_icon_gazlowe_robogoblin.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Mecha-Lord doesn't encourages basic attacks build enough neither it can compete with It's Raining Scrap on the build, so, you don't need to try to compete with it. Gazlowe as a tinkerer should have a happy time as a builder. For instance i don't even mine it being a copy cat of Gyrocopter homing missile because it suits SO WELL gazlowe"
     },
     {
       "name": "Miniature Black Hole",

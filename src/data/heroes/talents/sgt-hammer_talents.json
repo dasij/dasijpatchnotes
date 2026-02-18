@@ -55,7 +55,6 @@
       "abilityChanged": true
     }
   },
-
   "1": [
     {
       "name": "Advanced Siege Tech",
@@ -80,10 +79,11 @@
   "4": [
     {
       "name": "New: Mounting spiders",
-      "description": "{highlight}When you mount and dismount spawn 4 spider mines around Sgt. Hammer. When you mount and dismount also heals 10% of Sgt. Hammer maximum health. {/highlight}",
+      "description": "When you mount and dismount spawn 4 <modified, abilities, basic, 0> around Sgt. Hammer\n\nWhen mount and dismount also heals 10% of Sgt. Hammer maximum health\n\nBoth effects are only activated on cooldown\n\nCooldown: 10s",
       "cooldown": "10s",
       "image": "sgthammer_spidermines.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "This is supposed to synergise with a <modified, abilities, basic, 0> build but not be built on a way that makes you go for a <modified, abilities, basic, 0> build to pick it. Placed on level 4 due to be a sustain competitor. ALSO BOTH EFFECTS ARE ON COOLDOWN so you can't spam mount and dismount for healing"
     },
     {
       "name": "Siege Tactics",
