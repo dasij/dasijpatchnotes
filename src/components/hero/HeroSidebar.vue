@@ -255,6 +255,7 @@ export default {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  padding-bottom: 40px;
 }
 
 .tab-content.placeholder {

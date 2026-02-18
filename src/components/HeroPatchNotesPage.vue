@@ -7,15 +7,20 @@
     />
 
     <!-- LEFT SIDEBAR: Full height fixed -->
-    <div class="sidebar-fixed">
+    <div class="sidebar-fixed" :class="{ hidden: !showSidebar }">
       <HeroSidebar
         :selected-hero-name="heroName"
         @select-hero="onSelectHero"
       />
+      <!-- Toggle Button at bottom -->
+      <button class="sidebar-toggle" @click="toggleSidebar" title="Hide sidebar">
+        <span>◀</span>
+        <span class="toggle-text">Hide</span>
+      </button>
     </div>
 
     <!-- MAIN CONTENT: Full width with margin for sidebar -->
-    <div class="main-content">
+    <div class="main-content" :class="{ 'full-width': !showSidebar }">
       <div v-if="heroName" class="hero-content">
         <!-- Top Section: Abilities | Splash/Details | Talent Tree -->
         <div class="top-section">
@@ -101,6 +106,11 @@
         </div>
       </div>
     </div>
+
+    <!-- Floating button to show sidebar when hidden -->
+    <button v-if="!showSidebar" class="sidebar-show-btn" @click="toggleSidebar" title="Show sidebar">
+      <span>▶</span>
+    </button>
   </div>
 </template>
 
@@ -119,6 +129,9 @@ import DetailView from './hero/DetailView.vue'
 
 // Constants
 const talentLevels = [1, 4, 7, 10, 13, 16, 20]
+
+// Sidebar visibility state
+const showSidebar = ref(true)
 
 // Hero data composable
 const {
@@ -168,6 +181,10 @@ const onSelectHero = (heroName) => {
   selectedTalentLevel.value = 1
   showDevComments.value = false
   showDevCommentsAlways.value = false
+}
+
+const toggleSidebar = () => {
+  showSidebar.value = !showSidebar.value
 }
 
 const selectAbility = (ability) => {
@@ -272,6 +289,73 @@ provide('convertTextPlaceholders', convertTextPlaceholders)
   z-index: 100;
   overflow: hidden;
   border-right: 2px solid #333;
+  transition: transform 0.3s ease;
+}
+
+.sidebar-fixed.hidden {
+  transform: translateX(-100%);
+}
+
+/* Toggle Button at bottom */
+.sidebar-toggle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 40px;
+  background: rgba(20, 20, 20, 0.95);
+  border: none;
+  border-top: 2px solid #333;
+  color: #888;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 12px;
+  transition: all 0.2s;
+  z-index: 102;
+}
+
+.sidebar-toggle:hover {
+  background: #742aff;
+  color: #fff;
+  border-top-color: #742aff;
+}
+
+.toggle-text {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+/* Floating button to show sidebar */
+.sidebar-show-btn {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.9);
+  border: 2px solid #444;
+  border-left: none;
+  border-radius: 0 8px 8px 0;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  transition: all 0.2s;
+  z-index: 99;
+}
+
+.sidebar-show-btn:hover {
+  background: #742aff;
+  border-color: #742aff;
+  width: 44px;
 }
 
 /* Main Content - Takes remaining space */
@@ -283,6 +367,11 @@ provide('convertTextPlaceholders', convertTextPlaceholders)
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  transition: margin-left 0.3s ease;
+}
+
+.main-content.full-width {
+  margin-left: 0;
 }
 
 /* Hero Content - Fill available space */
@@ -465,6 +554,10 @@ provide('convertTextPlaceholders', convertTextPlaceholders)
     padding: 8px 12px;
   }
   
+  .main-content.full-width {
+    margin-left: 0;
+  }
+  
   .top-section {
     grid-template-columns: 180px 1fr 320px;
     gap: 10px;
@@ -495,10 +588,20 @@ provide('convertTextPlaceholders', convertTextPlaceholders)
     max-height: 300px;
     border-right: none;
     border-bottom: 2px solid #333;
+    transform: none !important;
+  }
+  
+  .sidebar-fixed.hidden {
+    transform: none !important;
+    display: none;
+  }
+  
+  .sidebar-toggle {
+    display: none;
   }
   
   .main-content {
-    margin-left: 0;
+    margin-left: 0 !important;
     height: auto;
     min-height: calc(100vh - 300px);
     overflow: visible;
