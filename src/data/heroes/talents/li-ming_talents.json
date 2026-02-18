@@ -65,7 +65,11 @@
         "{highlight}Dying resets takedowns to current checkpoint{/highlight}"
       ],
       "image": "wizard_criticalmass.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I wanted to make something different that would feel like Maiev Naisha's Memento power spike but at the same time a feeling of The Butcher Fresh Meat taking advantage of Critical Mass nature",
+      "subtexts": [
+        "If you die with 5 kills you return to 0 BUT if you die with 11 kills you return to 6"
+      ]
     },
     {
       "name": "Aether Walker",
@@ -77,7 +81,8 @@
       "name": "Power Hungry",
       "description": "Regeneration Globes {highlight} and fountains {/highlight} restore 100% more Mana and grant 10% Spell Power for 20 seconds.",
       "image": "talent_powerhungry.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Wanted to strenghten it's interaction for Li-Mings mana as a more fierce competitor on that aspect"
     }
   ],
   "4": [
@@ -85,7 +90,8 @@
       "name": "Magic Weapon",
       "description": "{highlight}Li-Ming's basic attacks deal magic damage and ignore armour. Hitting enemy heroes recently hit by a Magic Missile restores 25 mana{/highlight}",
       "image": "wizard_magicmissiles.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Wanted to make a competitor with the other two talents with utility rather than flat stats"
     },
     {
       "name": "Triumvirate",
@@ -105,13 +111,15 @@
       "name": "Diamond Skin",
       "description": "Teleport grants a Shield equal to 25% of Li-Ming's maximum Health for 4 seconds.",
       "image": "wizard_teleport.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Bringing it to compete as a Teleport talent"
     },
     {
       "name": "Mocking image",
       "description": "{highlight}Teleport will leave a Li-Ming Decoy with 100% of Li-Ming current health, that decoy will last 1 second. After being destroyed or expiring it will stun close enemy units for 0.5 second{/highlight}",
       "image": "wizard_teleport.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I was reading her arcane talents on Diablo and this one caught my attention and i found it a fun option to escape"
     },
     {
       "name": "Calamity",
@@ -152,6 +160,10 @@
       "talentChanged": true,
       "passives": [
         "{highlight}Magic Missiles now pierce through non-heroic targets.{/highlight}"
+      ],
+      "developerCommentary": "I didn't wish to change Li-Ming's basic attack interaction but instead of trying to compete with Cannoneer as an damage alternative i just made it compete through utility",
+      "subtexts": [
+        "The Magic Missiles guiding effect shouldn't be too strong."
       ]
     },
     {
@@ -181,7 +193,8 @@
         "{highlight}Basic attacks creates one Magic Missile on the direction of the target.{/highlight}"
       ],
       "image": "wizard_magicmissiles.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I wanted to bring this talent to this tier to make it an defensive option that differs from the others"
     }
   ],
   "20": [
@@ -208,7 +221,9 @@
       "description": "{highlight}Activate to enter Archon form for 6 seconds, during that time Magic missiles will travel 35% faster and Arcane Orb will pull enemies to the center when hit but Li-Ming will be unable to cast teleport during that time.{/highlight}",
       "image": "wizard_archon.png",
       "talentChanged": true,
-      "cooldown": "25s"
+      "cooldown": "25s",
+      "developerCommentary": "I wanted to preserve some of personality of her old Archon but without being too cluncky and also revive Ess of Johan somehow where the problem was too eazy for big reward SO i time limited it and cut the safety options during that time.",
+      "subtexts": ["Cooldown: 25 seconds"]
     }
   ]
 }

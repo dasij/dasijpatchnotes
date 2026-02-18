@@ -6,7 +6,8 @@
         "description": "Launch a grenade that explodes at the end of its path or upon hitting an enemy, dealing 124 damage to nearby enemies. Grenades can ricochet off of terrain. Deals 50% less damage to Structures.Stores up to 4 charges. Frag Launcher's cooldown replenishes all charges at the same time. {highlight}Hitting a Hero with Frag Launcher increases its damage by 0.1%, up to 40%.{/highlight}",
         "image": "junkrat_frag_launcher.png",
         "abilityChanged": true,
-        "cooldown": "12s"
+        "cooldown": "12s",
+        "developerCommentary": "The original quest is a long one and i prefer it to be here and controlled instead of a talent. It also opens a slot for a more unique talent and from my perspective it becomes more natural."
       },
       {
         "name": "Concussion Mine (W)",
@@ -20,14 +21,20 @@
         "description": "Place a trap on the ground that arms after <highlight>1.5</highlight> seconds. Deals 130 damage to the first enemy that walks over it and Roots them for 2 seconds.Limit 1 active trap. {highlight}Traps have 400 health but can only be damaged after armed.{/highlight}",
         "image": "junkrat_steel_trap.png",
         "abilityChanged": true,
-        "cooldown": "{highlight}9s{/highlight}"
+        "cooldown": "{highlight}9s{/highlight}",
+        "developerCommentary": "Junkrat has a complete, useful and impactful kit. Having safety tools, good poke, good burst ultimates and even with all the only thing that comes to me a toxic trait is the fact he has summon crowd control traps that can't be destroyed, such a complete character has one of the best zoning roots of the games and it's a COMPLETE nightmare for melee user, they should be but not impossible to deal without cleanses. ",
+        "subtexts": [
+          "Chromie Time Trap has 400 health",
+          "Will be a Summon type"
+        ]
       },
       {
         "name": "Frag Mode (?)",
         "description": "{highlight}Activate to make your next Frag Grenade fire a continuous burst consuming all current charges.{/highlight}",
         "image": "junkrat_frag_launcher.png",
         "abilityChanged": true,
-        "cooldown": "30"
+        "cooldown": "30",
+        "developerCommentary": "Always felt that Burst Fire was a talent that looked like a QoL"
       }
     ],
     "heroic": [
@@ -58,7 +65,8 @@
       "name": "Tricky Shuffles",
       "description": "{highlight}For each charge remaining on Frag Launcher Junkrat receives 7.5% increased basic attack damage. If there's no charges remaining receives 15% movement speed{/highlight}",
       "image": "junkrat_frag_launcher.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "The only intent here is to make that a more flexible talent based on the situation you want to sticky yourself in and not make it worse with Bombs Away"
     },
     {
       "name": "Extra-Wound Timers",
@@ -70,7 +78,8 @@
       "name": "Blow 'Em Up!",
       "description": "{highlight}Junkrat Frag Grenades and Basic Attacks stacks powder on enemy heros for 6 seconds, hitting an enemy hero with concussion mine explodes the marks and deals 124 damage for each mark consumed{/highlight}",
       "image": "junkrat_frag_launcher.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I wanted to make something related to the previous effect but that won't conflict directly on the way the other talents would deal damage. Making it not a DPS or either a POKE talent but rather a burst one that makes sense with the name"
     }
   ],
   "4": [
@@ -78,7 +87,8 @@
       "name": "I Hate Waiting!",
       "description": "{highlight}Every 60 seconds after using Hearthstone Junkrat will ride his Rocket Ride Mount, which grants 100% increased Movement Speed.{/highlight}",
       "image": "junkrat_mount_rocket.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Made it into a weaker version to input it on level 4 as an utility talent, the reason why is because i feel like this talent belong to weaker tiers but as a competitor with other important talents that could change entirely how Junkrat act."
     },
     {
       "name": "Dirty Trickster",
@@ -104,13 +114,18 @@
       "name": "Ripper Air",
       "description": "Junkrat is knocked back 50% farther by Concussion Mine. Additionally, Concussion Mine's cooldown is reduced by 12 seconds if only Junkrat is hit.",
       "image": "junkrat_concussion_mine.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Bringing it to a Concussion Mine talent tier"
     },
     {
       "name": "More Powder!",
       "description": "{highlight}Enemies that are affected by Steel Trap and Concussion mine within 2 seconds one from the other take 6% maximum health damage{/highlight}",
       "image": "junkrat_trap_mine.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Bringing an offensive option for the Concussion Mine talent tier that suits very well the situation that makes every tank wants to ban Junkrat. The famous trap mine combo.",
+      "subtexts": [
+        "If an enemy is affected by 2 Steel Traps and one Concussion Mine within 2 seconds it will only proc one time. It will work similar to a mark that is consumed when done right with 1 only mark being able to be active at the time"
+      ]
     }
   ],
   "10": [
@@ -134,7 +149,8 @@
       "name": "Sticky Wicket",
       "description": "Enemy Heroes who are hit by Steel Trap are Silenced for 2 seconds {highlight} and increase root duration to 2 seconds {/highlight}.",
       "image": "junkrat_steel_trap.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Bringing it to this level so you need to make a choice on how you want to upgrade your Steel Trap"
     },
     {
       "name": "Gotta Trap 'Em All!",
@@ -146,7 +162,8 @@
       "name": "Big As",
       "description": "Steel Trap now only hits Heroes, and Heroes hit have their Armor reduced by 15 for 3 seconds. Increases Steel Trap's radius and damage by 50%. {highlight}Steel Trap can't be destroyed anymore{/highlight}",
       "image": "junkrat_steel_trap_a.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "With the changes on Steel Trap this seems a perfect opportunity to increase this talent value differently from the other."
     }
   ],
   "16": [
@@ -154,7 +171,8 @@
       "name": "Bombs Away",
       "description": "Increase Junkrat's Basic Attack range by 1.  Frag Launcher grenades fired within 0.5 seconds of using a Basic Attack deal 30% bonus damage.",
       "image": "junkrat_frag_launcher.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Made into a QoL change for Frag Launcher."
     },
     {
       "name": "Endless Nades",
@@ -181,7 +199,8 @@
       "name": "Puckish Scamp",
       "description": "{highlight}If Rocket Ride kills a enemy hero with the explosion after 0.5 seconds Junkrat will launch himself in the air and after 3.75 seconds perform another explosion. This can be reseted any number of times on one go{/highlight}",
       "image": "junkrat_rocket_ride.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I would argue that Puckish Scamp is one of the few times a hero can perform their two ultimates BUT this doesn't necessarily mean it's worth it. What i want to bring here is make it worth it not necessarily by being strong but being hehehe junkrat goes BOOM"
     },
     {
       "name": "Cannonball!",
@@ -193,7 +212,9 @@
       "name": "BOOM POW",
       "description": "{highlight}Reduces Concussion Mine cooldown to 5 seconds, holds 3 charges and enemies will be knocked back 35% further. Enable Junkrat to have 3 concussion mines at the same time.{/highlight}",
       "image": "junkrat_concussion_mine.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I was thinkering on how i could enable Junkrat to perform the double concussion he is able on Overwatch game but also doesn't make it a rip-off of Gotta Trap 'Em All and that was the pog solution i came, it's simple but gets the same result and lets the players perform more.",
+      "subtexts": ["Cooldown between charges will be 0.5 seconds"]
     }
   ]
 }

@@ -37,16 +37,18 @@
         "manaCost": "50",
         "classes": "text-small text-warning",
         "image": "storm_ui_icon_nexushunter_r1.png",
-        "abilityChanged": false
+        "abilityChanged": true,
+        "developerCommentary": "With the changes on the base Unrelenting Strikes we need to nerf it because it's truly eazier to perform the wombo wipes we've seen Qhira mains making, this is one of the level 20 talents that could solo win a fight and the extra area would easily make it wipe entire teams without effort. It's the Entomb treatment"
       },
       {
         "name": "Final Strike (R)",
-        "description": "After a short delay, strike in a long line, dealing significant damage to all enemies hit. Damage is increased against low health enemies.",
+        "description": "After a short delay, strike in a long line, dealing significant damage to all enemies hit. Damage is increased against low health enemies. {highlight}Increased range by 5.{/highlight}",
         "cooldown": "40s",
         "manaCost": "45",
         "classes": "text-small text-warning",
         "image": "storm_ui_icon_nexushunter_r2.png",
-        "abilityChanged": false
+        "abilityChanged": true,
+        "developerCommentary": "Qhira Final Strike always felt too short, increasing it by a little less than half it's range would just make it 10/10. The amount of time i see other people and myself had the little range difference to hit the target is not normal and shouldn't be taught as only 'skill issue'"
       }
     ],
     "trait": {
@@ -58,7 +60,8 @@
       ],
       "cooldown": "20s",
       "image": "storm_ui_icon_nexushunter_d.png",
-      "abilityChanged": true
+      "abilityChanged": true,
+      "developerCommentary": "This is the beginning of spiderQhira. I am going for that route because i always thought that the Grappling Hook was an underdeveloped part of Qhira kits, one of her skills that could increase her skill ceiling to the roof but it's missused"
     }
   },
   "1": [
@@ -75,7 +78,8 @@
         "After damaging Heroes with Blood Rage's bleed damage 150 times, Blood Rage's duration is increased by 2 seconds"
       ],
       "image": "storm_ui_icon_nexushunter_w.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Following Alarak and Maiev quest completion method i want to make it easier to complete quests when you do it right fast"
     },
     {
       "name": "Finishing Touch",
@@ -84,7 +88,8 @@
         "{highlight} Hitting enemies with grappling hook increases Qhira movespeed by 15% for 2 seconds{/highlight}"
       ],
       "image": "storm_ui_icon_nexushunter_passive.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "With the changes i made with the extra attack damage by hitting bleed targets giving her more basic attack damage would be overkill"
     }
   ],
   "4": [
@@ -100,19 +105,22 @@
         "{highlight} Increases Qhira rotating speed on revolving sweep by 200%{/highlight}"
       ],
       "image": "storm_ui_icon_nexushunter_e.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Upstage wasn't one of the most attractive talents compared to their counterparts but increasing rotating speed could lead to better interaction with other sweep talents"
     },
     {
       "name": "Your Pain, My Gain",
       "description": "Hitting enemy heroes with basic attacks {highlight}or the grappling hook{/highlight} causes Qhira to gain 10 Armor for 3 seconds. Stacks 3 times.",
       "image": "storm_ui_icon_nexushunter_passive.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Changing it to better suit the SpiderQhira lore."
     },
     {
       "name": "Hooked",
       "description": "{highlight}Grappling hook now targets non-heroic units dealing extra 2000% damage to them, refunds a charge if it kills a non-heroic target.{/highlight}",
       "image": "talent1.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "The objective here is to give Qhira new ways to chase whilst also giving her a little PvE damage, take in mind that the damage is supposed to be around the life of a warrior minion + 1 auto but i don't know if i put the correct value"
     }
   ],
   "7": [
@@ -125,7 +133,8 @@
       "name": "Healmonger",
       "description": "If Blood Rage damages an enemy Hero below 50% Health, {highlight}it heals for an additional 150 Health and 75 more health for other heroes under 50% Health.{/highlight}",
       "image": "storm_ui_icon_nexushunter_w.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I wish to make this talent a little worse on 1x1 and better on teamfights."
     },
     {
       "name": "Siphoning Link",
@@ -134,7 +143,8 @@
         "Damaging an enemy Hero with Revolving Sweep's initial impact or swing causes Qhira to regenerate 96 (+4% per level) Health over 4 seconds. Stacks up to 4 times."
       ],
       "image": "storm_ui_icon_nexushunter_e.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "The Siphoning Link always bugged me..why would something related to the sweep have a healing talent on basic attack whilst it doesn't benefit it on anything or synergize and for that i didn't feel like it belonged there. Replacing it we have something that would benefit the SpiderQhira possibilities and synergizing with the primary talent concept"
     }
   ],
   "10": [
@@ -143,7 +153,8 @@
       "description": "Deal 44 (+4% per level) damage to nearby enemies every 0.5 seconds for 2.5 seconds as your sword grows outward. Upon expiring, deal 160 (+4% per level) damage to nearby enemy Heroes and Stun them for 1.5 seconds",
       "image": "storm_ui_icon_nexushunter_r1.png",
       "cooldown": "60s",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "You can now use Grappling Hook while channeling Unrelenting Strikes. This talent is hardly used right"
     },
     {
       "name": "Final Strike",
@@ -185,23 +196,24 @@
       "name": "Swing Life Away",
       "description": "{highlight}For each second Qhira swings around a target she receives 12 spell armor that will expire 5 seconds after re-activates or stop swinging. Hitting enemy heroes with Grappling hook decreases Revolving Sweep cooldown by 3 seconds{/highlight}",
       "image": "storm_ui_icon_nexushunter_e_alt_2.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I want to change this talent to still benefit the swinging effect but also change how you can deal with that"
     }
   ],
   "20": [
     {
       "name": "Silent Killer",
-      "description": "Decrease <modified, abilities, heroic, 0> are by 1 meter",
+      "description": "Decrease Unrelenting Strikes area by 1 meter",
       "image": "storm_ui_icon_nexushunter_r1.png",
       "talentChanged": true,
-      "developerCommentary": "With the changes on the base <modified, abilities, heroic, 0> we need to nerf it because it's truly eazier to perform the wombo wipes we've seen Qhira mains making, this is one of the level 20 talents that could solo win a fight and the extra area would easily make it wipe entire teams without effort. It's the <vanilla, talents, 20, 0, leoric> treatment"
+      "developerCommentary": "With the changes on the base Unrelenting Strikes we need to nerf it because it's truly eazier to perform the wombo wipes we've seen Qhira mains making, this is one of the level 20 talents that could solo win a fight and the extra area would easily make it wipe entire teams without effort. It's the Entomb treatment"
     },
     {
       "name": "Unleashed Potential",
-      "description": "Changed functionality: Casting <modified, abilities, heroic, 1> unleashes two additional beams that curve outward, each dealing 50% damage. The beams converge towards the end of the original <modified, abilities, heroic, 1>, creating an area of effect that deals 250% of the ultimate damage.",
+      "description": "Changed functionality: Casting Final Strike unleashes two additional beams that curve outward, each dealing 50% damage. The beams converge towards the end of the original Final Strike, creating an area of effect that deals 250% of the ultimate damage.",
       "image": "storm_ui_icon_nexushunter_r2.png",
       "talentChanged": true,
-      "developerCommentary": "I tried lots of times to think..What is making the level 20 talent of <modified, abilities, heroic, 1> a little odd? First it starts by being a finishing ultimate that RESETS COOLDOWN if you are finishing someone it make less likely that you will use that resets and the ultimate doesn't give any give of mobility for you to use these resets better..sure you have the <modified, abilities, trait, 0> but on a teamfight you have high chances to have already used the <modified, abilities, trait, 0> when you reset atleast on my vision it's counterintuitive except for the ultimate reset on kill. On that instance i want to bring something that further increase the concept of 'unsleashed potential' and finisher move to make it more original and unique that is bringing more the finishing part."
+      "developerCommentary": "I tried lots of times to think..What is making the level 20 talent of Final Strike a little odd? First it starts by being a finishing ultimate that RESETS COOLDOWN if you are finishing someone it make less likely that you will use that resets and the ultimate doesn't give any give of mobility for you to use these resets better..sure you have the Grappling Hook but on a teamfight you have high chances to have already used the Grappling Hook when you reset atleast on my vision it's counterintuitive except for the ultimate reset on kill. On that instance i want to bring something that further increase the concept of 'unsleashed potential' and finisher move to make it more original and unique that is bringing more the finishing part."
     },
     {
       "name": "Utility Belt",
@@ -210,24 +222,26 @@
         "{highlight}Grappling hook now stuns targets it hit for 0.25 seconds and hitting terrain refunds half of the hook cooldown.{/highlight}"
       ],
       "image": "storm_ui_icon_nexushunter_d.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "With the changes i made for Grappling Hook utility belt the way it is doesn't feel valid anymore so i'm really changing it to be closer of an utility belt. Also the pull active is to better suit Booming Kick and Swing Life Away playstyles all you don't want always to kick lots of people like with Lingering Ailment"
     },
     {
       "name": "No Sanctuary",
-      "description": "Additional functionality: <modified, abilities, trait, 0> now always pulls Qhira\n\nKilling an enemy hero resets <modified, abilities, trait, 0> charges",
+      "description": "Additional functionality: Grappling Hook now always pulls Qhira\n\nKilling an enemy hero resets Grappling Hook charges",
       "passives": [
         "{highlight}Grappling hook now always pulls Qhira{/highlight}",
         "{highlight}Killing an enemy hero resets grappling hook charges{/highlight}"
       ],
       "image": "storm_ui_icon_nexushunter_passive_alt_1.png",
       "talentChanged": true,
-      "developerCommentary": "No Sanctuary has the 'predator' concept and with that in mind i want to suit it with the <modified, abilities, trait, 0> changes and make Qhira the ultimate predator (That sounds criminal)"
+      "developerCommentary": "No Sanctuary has the 'predator' concept and with that in mind i want to suit it with the Grappling Hook changes and make Qhira the ultimate predator (That sounds criminal)"
     },
     {
       "name": "Mortal Wounds",
       "description": "{highlight}Activating Blood rage makes targets with 5 bleed stacks receive 100% more bleed damage for 3 seconds if they move{/highlight}",
       "image": "talent1.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I would say that would be a test..i find it fun but also too disruptive"
     }
   ]
 }

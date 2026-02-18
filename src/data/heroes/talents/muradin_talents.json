@@ -146,7 +146,8 @@
       "name": "Dwarf Survival Tactics",
       "description": "{highlight}Increase dwarf toss armor duration by 2 seconds. Decrease Second Wind activation time to 1.5 seconds.{/highlight}",
       "image": "muradin_dwarftoss.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "By enabling a fast use of Second Wind this could enhance Muradin potential for fast trades even more as he could take his bets on an engage and fastly go for another one."
     }
   ],
   "16": [
@@ -168,8 +169,11 @@
       "description": "{highlight}Activate to empower the next Storm Bolt making it stuns and damage enemies on a small area around the target and at the maximum range.{/highlight}",
       "image": "muradin_stormbolt.png",
       "talentChanged": true,
+      "developerCommentary": "Inspired by Sven Dota Stun. You can check it here https://www.dota2.com/hero/sven",
       "cooldown": "60s",
-      "radius": "3.0"
+      "subtexts": [
+        "Radius will be 3.0 | The same as Thunder Clap"
+      ]
     }
   ],
   "20": [
@@ -180,13 +184,15 @@
         "{highlight}Dwarf Toss grants unstoppable while leaping{/highlight}"
       ],
       "image": "muradin_avatar.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "For making the new Flying Dwarf talent"
     },
     {
       "name": "Grand Slam",
       "description": "Haymaker gains a 2nd charge and its damage is increased by 25%. If a Hero dies within 3 seconds of being hit by Haymaker, instantly gain 1 charge.",
       "image": "muradin_haymaker.png",
       "talentChanged": true,
+      "developerCommentary": "I find extremely funny to punch jump. No more reasons",
       "passives": [
         "{highlight}Casting Haymaker reset Dwarf Toss cooldown{/highlight}"
       ]
@@ -195,13 +201,22 @@
       "name": "Thunder Strike",
       "description": "{highlight}Activate to empower the next Thunderclap. Muradin will cast thunderclap three times under a period of 1.25 seconds increasing the thunderclap size by 50% and damage by 75% each time it's cast.{/highlight}",
       "image": "muradin_thunderclap.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I also taught on making it become somewhat similar do Earthshaker Echo Slam by increasing the damage by hero hit instead ot baseline extra damage but i think we shouls reserve that for new hero concept ideas.",
+      "subtexts": [
+        "The first Thunder Clap will be normal",
+        "The second Thunder Clap will have extra 50% size and 75% more damage",
+        "The third Thunder Clap will have extra 100% size and 150% more damage ",
+        "Final radius is 6.0 | Combustion is 6.5",
+        "It interacts with all the Thunder Clap talents"
+      ]
     },
     {
       "name": "It's Hammer Time",
       "description": "{highlight}Storm Bolt now pierces all targets. Hitting an enemy with Storm Bolt increases Muradin attack speed by 40% for 4 seconds{/highlight}",
       "image": "muradin_stormbolt.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "For all my bruiseradins i got you."
     }
   ]
 }

@@ -49,8 +49,12 @@
       "description": "Basic Attacks cleave in an area in front of Malthael and afflict non-Structure targets with Reaper's Mark for 4 seconds.  Marked enemies are revealed and take damage equal to 2% of their maximum Health every 1 second. {highlight}Malthael can interact with dead bodies destroying their souls. This interaction takes 3 seconds.{/highlight}",
       "image": "malthael_reapersmark.png",
       "abilityChanged": true,
+      "developerCommentary": "I want to make him closer to the Aspect of Death role and also make it closer to the lore.",
       "passives": [
         "Malthael receive 2% extra experience in the end of the game everytime he participates on a Nephalem takedown and 1% for other humans"
+      ],
+      "subtexts": [
+        "This interaction means skills like Resurrect and Ritual of Ruin can't be used as it will destroy the soul"
       ]
     }
   },
@@ -72,7 +76,11 @@
       "description": "Activate to increase Movement Speed by 25% and pass through other units for 4 seconds. {highlight}Each Time Malthael go through an unit he gains a charge of dodge that lasts 3 seconds.{/highlight}",
       "image": "malthael_fearthereaper.png",
       "talentChanged": true,
-      "cooldown": "25s"
+      "cooldown": "25s",
+      "subtexts": [
+        "Can only hold one charge",
+        "Won't gain charges if he goes through the same unit"
+      ]
     }
   ],
   "4": [
@@ -104,11 +112,11 @@
     },
     {
       "name": "Black Harvest",
-      "quest": ": Apply Reaper's Mark to Heroes for a total of 180 seconds.",
+      "description": "Apply Reaper's Mark to Heroes for a total of 180 seconds.",
+      "quest": "Permanently increase Reaper's Mark's duration by 2 seconds.",
       "rewards": [
-        "Permanently increase Reaper's Mark's duration by 2 seconds."
+        "{highlight}Receive 15 physical armor while one enemy hero is affected by Reaper's Mark{/highlight}"
       ],
-      "description": "{highlight}Receive 15 physical armor while one enemy hero is affected by Reaper's Mark{/highlight}",
       "image": "malthael_reapersmark.png",
       "talentChanged": true
     },
@@ -117,7 +125,12 @@
       "description": "{highlight}Activate to fear enemies close to Malthael for 1.25 seconds after 0.25 seconds.{/highlight}",
       "cooldown": "2000 healing on enemy heroes marked with Reaper's Mark",
       "image": "malthael_noonecanstopdeath.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I really don't know which number to put on the recharge.",
+      "subtexts": [
+        "Radius will be 2 | Crippling Spores is 3.0",
+        "Works similar to Cyber Agility in terms of cooldown needing to recharge doing X thing."
+      ]
     }
   ],
   "10": [
@@ -159,7 +172,10 @@
       "description": "{highlight}Activate to after 2 seconds, Steal 15 spell armor from each enemy Hero affliected by Reaper's Mark for 4 seconds.{/highlight}",
       "image": "malthael_shroudofwisdom.png",
       "talentChanged": true,
-      "cooldown": "20s"
+      "cooldown": "20s",
+      "subtexts": [
+        "Stealing will subtract the armor from affect heroes and give it to Malthael."
+      ]
     }
   ],
   "16": [
@@ -167,7 +183,10 @@
       "name": "Soul Collector",
       "description": "Reduce Soul Rip's cooldown by 0.5 seconds and increase its range by 25%. {highlight}Soul Rip increase the current Reaper's Mark damage by 10% each time it hits the enemy.{/highlight}",
       "image": "malthael_soulrip.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "subtexts": [
+        "The damage will be independent meaning one target could be receiving extra 70% damage from the passive and other could be receiving only 10%."
+      ]
     },
     {
       "name": "Mortality",
@@ -180,7 +199,12 @@
       "description": "{highlight}Activate to use a charge of Essence of death decreasing every respawn time by 7% of it's current time for each charge.{/highlight}",
       "cooldown": "One takedown for each charge",
       "image": "malthael_reapersmark.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "subtexts": [
+        "Can hold up to 5 charges",
+        "This affect enemy heroes",
+        "The minimum time this will decrease will be 1 second."
+      ]
     }
   ],
   "20": [
@@ -188,7 +212,13 @@
       "name": "Reaper of Souls",
       "description": "Increase Tormented Souls' duration by 2 seconds. While Tormented Souls is active, Hero Takedowns refresh the duration. {highlight}Tormentend Souls steals 1% maximum health of every hero on the area each second. Lasts 4 seconds{/highlight}",
       "image": "malthael_tormentedsoul.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "subtexts": [
+        "The maximum health from given heroes will be decreased and given to Malthael effectively stealing their maximum health",
+        "The health stolen will be returned in one go to the stolen heroes, if Malthael stole 4% maximum health points from a Diablo after 4 seconds all the maximum health will be returned in one go.",
+        "The maximum health Malthael steals will come healed meaning if he steals 79 maximum health that health will alredy come healed instead of only increased the maximum health point limit.",
+        "The health returned to enemy heroes won't come back healed. Meaning it will only give back the limit health points."
+      ]
     },
     {
       "name": "Angel of Death",
@@ -207,7 +237,12 @@
       "name": "No One Can Stop Death",
       "description": "{highlight}Malthael traverse through terrain and can't be unmounted by damage{/highlight}",
       "image": "malthael_noonecanstopdeath.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "subtexts": [
+        "This means Malthael will have no collision with terrain.",
+        "Shadow Charge won't be able to stun him anymore and any similar skill that needs terrain to work",
+        "Malthael fog vision will completely ignore the current object he stand on. Meaning it will count as if that terrain doensn't exist for fog vision block."
+      ]
     }
   ]
 }

@@ -56,7 +56,8 @@
       "name": "Speed Metal",
       "description": "Using a Basic or Heroic ability also gives nearby allied Heroes 20% Movement Speed for 2.5 seconds.",
       "image": "etc_speedmetal.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Bringing Speed Metal to make that a tier for picking out which area passive you want to focus on"
     },
     {
       "name": "Prog Rock",
@@ -82,13 +83,15 @@
       "name": "Guitar Hero",
       "description": "While Guitar Solo is active, E.T.C. {highlight}deals 35% more damage{/highlight} and heals for 60% of his damage dealt with Basic Attacks. Basic Attacks increase the duration of Guitar Solo by 0.5 seconds.",
       "image": "etc_guitarsolo.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Buffing the talent to make it self-sufficient and adjust numbers after so i can change <vanilla, talents, 7, 1> and evade direct vertical combos. Even if <vanilla, talents, 1, 1> is a combo it's a weaker link that doesn't necessarily makes you pick both."
     },
     {
       "name": "Slow Tempo",
       "description": "{highlight}Enemy heroes hit by E.T.C. basic attacks have their damage reduced by 15% for 1.25 seconds and E.T.C. restores 6 mana{/highlight}",
       "image": "etc_rockstar.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I really wanted to make an alternative for basic attack E.T.C. focused on utility"
     }
   ],
   "7": [
@@ -102,7 +105,8 @@
       "name": "Guitar Smashing",
       "description": "{highlight}Rockstar empowers E.T.C. next basic attack making it reduces the target armor by 15 for 1.5 seconds.{/highlight}",
       "image": "etc_rockstar.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "With the current effect being mixed on <modified, talents, 4, 1> my objective was to make something related to basic attacks but without the worry of making it an obligatory complement but rather one option on combos."
     },
     {
       "name": "Echo Pedal",
@@ -134,7 +138,8 @@
       "name": "Mic Check",
       "description": "Hitting at least 2 targets with Face Melt reduces its cooldown by 6 seconds{highlight} and refunds 55 mana{/highlight}",
       "image": "etc_facemelt.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "With the buff+nerf to <modified, abilities, basic, 1> this talent would be indirected nerfed and would undermine the utility of that talent by making E.T.C extremely mana hungry."
     },
     {
       "name": "Encore",
@@ -146,7 +151,8 @@
       "name": "Face Smelt",
       "description": "Face Melt slows enemies by 50% fading over 2 seconds {highlight}and deal 350 extra damage against shields and summons{/highlight}",
       "image": "etc_facemelt_b.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I focusing this talent to a niche."
     }
   ],
   "16": [
@@ -161,13 +167,15 @@
       "description": "{highlight}Activate to Throw a mic on the target position and after 2 seconds E.T.C. will teleport to that MIC. Can be teleported casting Mosh Pit. Mic Drop teleport timing will be stopped when using Stage Dive{/highlight}",
       "cooldown": "40 seconds",
       "image": "etc_rockstar.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I wanted to make an alternative version of <vanilla, talents, 20, 4> specially related to Mosh Pit usage and found this to be fun to imagine."
     },
     {
       "name": "Pull off",
       "description": "{highlight}While using PowerSlide you can use Face Melt but it will instead pull enemies towards you.{/highlight}",
       "image": "etc_powerslide.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "You will able to finally not miss your <vanilla, abilities, heroic, 0> on Lucio players. Thus i was thinkering about the talents and found this ideia to be extremely funny"
     }
   ],
   "20": [
@@ -187,14 +195,16 @@
       "name": "Death Metal",
       "description": "{highlight}Upon dying, a ghost uses Mosh Pit at E.T.C's location. Each enemy hero affected by Death Metal decreases E.T.C. respawn time by 2 second each second.{/highlight}",
       "image": "etc_moshpit_a.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "<vanilla, talents, 20, 2> is fun and make a lot of POG moments but in the end is not something you could rely on and sometimes you could even <vanilla, talents, 20, 2> 5 players but your entire team is dead SO for that reason i am bringing a buff so <vanilla, talents, 20, 2> would never be useless only if it everyone"
     },
     {
       "name": "201% Volume",
       "description": "{highlight}Activate to make your next Face Melt knockback enemies 75% farther{/highlight}",
       "image": "etc_facemelt.png",
       "talentChanged": true,
-      "cooldown": "35s"
+      "cooldown": "35s",
+      "developerCommentary": "It's extremely ROCK AND ROLL to increase the volume."
     }
   ]
 }

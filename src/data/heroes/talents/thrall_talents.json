@@ -27,6 +27,10 @@
         "passives": [
           "{highlight}Quest: Basic Attacks against Heroes while Windfury's Movement Speed bonus is active increase Attack Damage by 1{/highlight}",
           "{highlight}Reward 30 hits: Grants Thrall Far Sight{/highlight}"
+        ],
+        "developerCommentary": "This change itself is pretty basic but it's supposed to hold the funniest Thrall quest baseline and also bring back the original Thrall Far Sight. The vision is intended for late game and that's why a so high threshold",
+        "subtexts": [
+          "Far Sight -> Activate to reveal the targeted area for 4 seconds. Cooldown: 45 seconds"
         ]
       }
     ],
@@ -90,7 +94,8 @@
       "talentChanged": true,
       "passives": [
         "{highlight}Heroes hit by Feral Spirit grants 3 stacks of Frostwolf Resilience{/highlight}"
-      ]
+      ],
+      "developerCommentary": "The objective here is to make all talents of level 4 be centered around the passive and Frostwolf Pack is included, a weaker version to use the passive being inconsistent BUT giving another buff in compensation"
     },
     {
       "name": "Mana Tide",
@@ -107,19 +112,26 @@
         "{highlight} Increase Thrall movement speed by 10% {/highlight}"
       ],
       "image": "thrall_windfury.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Level 7 will now be an extension of the baseline quest to Maelstrom. I made some options for it and this one is supposed to be related for utility to the Character"
     },
     {
       "name": "Grace of Lava",
       "description": "{highlight}Maelstrom basic attacks will be imbued with lava dealing 6% maximum health damage over 3 seconds on each attack and Healing Thrall 150% of that damage dealt{/highlight}",
       "image": "thrall_windfury.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "This one is reimagining the Frostwolf's Grace but instead of being point and click you need to enter in contact tu use it being a tank burster talent"
     },
     {
       "name": "Grace of Lightning",
       "description": "{highlight}Maelstrom basic attacks will now teleport to the target and reduce their armor by 8 on each hit{/highlight}",
       "image": "thrall_windfury.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "This is supposed to be an option when trying to handle high mobile and distant targets and remember that all the level 7 talents can be paired with Crash Lightning",
+      "subtexts": [
+        "The teleport range will be 5.0 | Malfurion astral communion is 7",
+        "Works the same as the Old Zeratul auto attack teleporting ultimate"
+      ]
     }
   ],
   "10": [
@@ -145,19 +157,25 @@
       "name": "Spirit of Lightning",
       "description": "{highlight}Chain Lightning can now bounce to allied heroes, dealing area damage around them and converting the damage dealt into a shield for the ally.{/highlight}",
       "image": "thrall_chainlightning.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "This should bring some scenarios similar to a Cassia using the lighing ball on a 1v1. But besides this just seems like a fun scenario to handle"
     },
     {
       "name": "Earth Spirit",
       "description": "{highlight}Frostwolf resilience now grants one stack of block to Thrall and Allied heroes close for 6 seconds reducing the damage of the next basic attack received by 75%. Caps at 3 stacks{/highlight}",
       "image": "thrall_frostwolfresilience.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I enjoy the idea of having physical armor talents and i think that fits on Frostwolf Resilience",
+      "subtexts": [
+        "Radius is 4.4 same as ETC Block Party"
+      ]
     },
     {
       "name": "Spirit of Air",
       "description": "{highlight}Frostwolf Resilience cleanses slows and grants 20 magic resistence for 2 seconds{/highlight}",
       "image": "thrall_frostwolfresilience.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Specific type of cleanses are something that i find cool to see and fitting the fast stacking Frostwolf Resilience has it could be a niche pick against heavy slow comps."
     }
   ],
   "16": [
@@ -177,7 +195,8 @@
       "name": "Alpha Wolf",
       "description": "{highlight}Thrall now mounts an Alpha Wolf, the Alpha Wolf mount can't be dismounted by damage. Casting Spirit Wolf while riding Alpha Wolf empowers it dealing extra 10% maximum health damage to every one hit.{/highlight}",
       "image": "thrall_feralspirit.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "One thing that bothers me is the fact Alpha Wolf doesn't feel like Alpha Wolf"
     }
   ],
   "20": [
@@ -185,7 +204,12 @@
       "name": "Shattering Worlds",
       "description": "{highlight}Sundering now travels the planet until hits the starting point leaving behind an impassable rift, blocking unit movement. After 2.5 seconds the rift starts to be destroyed.{/highlight}",
       "image": "thrall_sundering.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Mixing the old effect with the new one seems the perfect recipe for some crazy plays instead of it simply moving on the map. Even tho it could be argued to be toxic it can also be argued that this gives players Chad feelings. If you want something similar you can check Taliyah League of Legends ultimate https://www.leagueoflegends.com/pt-br/champions/taliyah/",
+      "subtexts": [
+        "It starts to be destroyed from the initial sundering position it will destroy the entire Sundering rift at the same speed Sundering travels",
+        "It will work  similarly as the Napalm Strike but will stop at the starting point"
+      ]
     },
     {
       "name": "Earthen Shields",
@@ -197,13 +221,22 @@
       "name": "ThunderFury",
       "description": "{highlight}Windfury basic attacks casts a Chain of Lighting at the target.{/highlight}",
       "image": "thrall_chainlightning.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Nothing like bouncing that hard earned crash lighintg mission",
+      "subtexts": [
+        "It will work with Rolling Thunder but remember, hitting the same hero target will reset the mission progress"
+      ]
     },
     {
       "name": "Feral Violence",
       "description": "{highlight}Feral Spirit will now travel 25% farther and will continually grow its way to end also increasing root duration up to 1.5 extra seconds{/highlight}",
       "image": "thrall_feralspirit.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Mixing the old effect with the new one seems the perfect recipe for some crazy plays instead of it simply moving on the map. Even tho it could be argued to be toxic it can also be argued that this gives players Chad feelings.",
+      "subtexts": [
+        "getting atleast 60% bigger if it don't hit anyone, i don't know to put that on consistent numbers.",
+        "The extra 1.5 duration will cap at the 60% bigger"
+      ]
     }
   ]
 }

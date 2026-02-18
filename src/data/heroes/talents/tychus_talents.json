@@ -7,7 +7,12 @@
         "image": "tychus_overkill.png",
         "abilityChanged": true,
         "manaCost": "60 Mana",
-        "cooldown": "12s"
+        "cooldown": "12s",
+        "developerCommentary": "This is a change both for QoL on the situations you press Minigun and can't hit a hero so Minigun trait is activated and you can't do anything and also to combo with the new Overkill Mechanic better. The new Overkill interaction is worse on single targets but better on area damage as the Overkill stacks less hits(3.0second) in comparison of the basic attacks(4.0second) but with the advantage of hitting on area.",
+        "subtexts": [
+          "Everyone hit is affected by the Minigun",
+          "Using Overkill DOESN'T activate the Minigun effect you need to manually activate it or basic attack someone"
+        ]
       },
       {
         "name": "Frag Grenade (W)",
@@ -41,7 +46,16 @@
         "image": "tychus_drakkenlaserdrill.png",
         "abilityChanged": true,
         "manaCost": "100 Mana",
-        "cooldown": "70s"
+        "cooldown": "70s",
+        "developerCommentary": "One problem i have with the current Drakken Laser Drill is the fighting summonable aspect that can't be changed if it has a fixed duration but i like the idea of Drakken because it's a very important mission that Tychus takes care. For that i want to bring it closer to how it works in game and that means being global BUT i will remove the natural retargetting aspect for not start a Toxic global constant damage ultimate. And also for to better enhance the lore aspect Drakken Laser Drill is global",
+        "subtexts": [
+          "The laser activation will not follow the target but will stay on the target position after it start BEAMING.",
+          "The activated beam radius is 2.0 | Napalm strike radius is 2.0",
+          "The laser range is global but it will ALWAYS target the closest visible enemy target to Tychus doesn't matter if its a hero or troop but will always prefer the closest hero on a 10 range from Tychus.",
+          "The laser will only START focusing on visible targets but won't leave the current target no matter what happens.",
+          "It takes 0.5 seconds to change target",
+          "Cooldown 70 seconds to empower"
+        ]
       }
     ],
     "trait": {
@@ -57,7 +71,11 @@
       "name": "Stun and Gun",
       "description": "{highlight}At the end of Run and Gun, enemies in front of Tychus will be stunned for 0.75 seconds and will have their physical armor reduced by 40 for 2 seconds, as Tychus hits them with the butt of his minigun.{/highlight}",
       "image": "tychus_runandgun.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "This is a talent to better benefit Tychus players who go for ambushing the solo laner instead of following the tank, it can also be used for that but only for extreme agressive gameplay",
+      "subtexts": [
+        "Range: 1.5 on a 45º radius. It should perform as an very small arc"
+      ]
     },
     {
       "name": "Dash",
@@ -69,7 +87,8 @@
       "name": "Press the Advantage",
       "description": "Increase Tychus's Basic Attack range by 1. {highlight}Hitting the same target will increase Tychus attack speed by 2% for each basic attack he hits it. Bonus reset every time he hits another target.{/highlight}",
       "image": "talent_autoattack_range.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "It's not bad as it is but has more potential to have some kind of niche"
     }
   ],
   "4": [
@@ -84,6 +103,7 @@
       "description": "Increase the damage bonus to 4% while enemy Heroes are above 30% Health, but Minigun no longer has any effect on targets below 30%.",
       "image": "tychus_minigun_a.png",
       "talentChanged": true,
+      "developerCommentary": "This is a hard talent to either nerf or buff on numerical reasons i feel like mixing it with Dash could help it to better balance it.",
       "passives": [
         "{highlight}Reduces the cooldown of Minigun by 4 seconds after using Run and Gun{/highlight}"
       ]
@@ -92,7 +112,8 @@
       "name": "That's the Stuff!",
       "description": "Minigun heals Tychus for 100% of the bonus damage dealt after it expires.",
       "image": "tychus_minigun.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "The biggest reason to That's the Stuff! is to make the player choose on how he wants the minigun to behave for the entire game, choose between killing a target, extended duration or self-healing."
     }
   ],
   "7": [
@@ -107,13 +128,15 @@
       "description": "{highlight}Tychus grenade will pull targets to it's center now.{/highlight} ",
       "passives": ["{highlight}Increase explosion radius by 15%.{/highlight}"],
       "image": "tychus_fraggrenade.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Based on Tychus from Sc2 it could give another type of utility for Tychus"
     },
     {
       "name": "Quarterback",
       "description": "Increases Frag Grenade's range by 50%. {highlight}Reduces armor of enemy heros hit by 15 for 3 seconds.{/highlight}",
       "image": "tychus_fraggrenade.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Bringing that talent to level 7 means it would directly compete with damage with melting point so instead im changing it for something similar but that provide another use"
     }
   ],
   "10": [
@@ -139,20 +162,23 @@
       "name": "Armor Piercing Rounds",
       "description": "Each time Overkill hits an enemy, its damage against them is increased by 15%, stacking up to 60% bonus damage.",
       "image": "tychus_overkill.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "As a talent i consider less important for synergy with any talent from Overkill builds i bring it here so i can make this tier the Overkill Talent tree choice and put Spray 'n' Pray as the big choice on 16"
     },
     {
       "name": "OverExtend",
       "description": "{highlight}After expiring overkill does an extra hit applying a decaying slow on every enemy hero of 75% for 2.5 seconds. {/highlight} ",
       "passives": ["Reduces minigun cooldown by 4 seconds"],
       "image": "tychus_overkill.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Something that i want to make is a talent that could make Overkill feel a little different somehow and that's a solution a liked. For better targetting melee targets without the need from the Stun and Gun new talent but on with a good synergy with it."
     },
     {
       "name": "Can do this all day",
       "description": "Reduce Overkill's cooldown by 5 seconds {highlight} if you finish casting Overkill{/highlight}. While Channeling Overkill, Tychus gains 40 Armor. ",
       "image": "tychus_overkill.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Nerfing it a little to better suit level 13 and bringing it here as the new defensive talent."
     }
   ],
   "16": [
@@ -160,7 +186,8 @@
       "name": "Spray 'n' Pray",
       "description": "Overkill Slows enemy Movement Speed by 25% and its range is increased by 25%.",
       "image": "tychus_overkill.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "This talent is the most important if you want to focus on a Overkill build because it gives everything extra you would want AND i am putting it on 16 as a very important choice to make."
     },
     {
       "name": "Titan Grenade",
@@ -186,7 +213,8 @@
       "name": "Focusing Diodes",
       "description": "{highlight}Focusing Heroes will deal extra 3% damage to health per second.{/highlight}",
       "image": "tychus_drakkenlaserdrill.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "On all seriousness i think that's enough to be a good pick by niching it for better usage against tanks"
     },
     {
       "name": "Bob and Weave",
@@ -198,7 +226,12 @@
       "name": "Stepping rock",
       "description": "{highlight}Tychus grenade will bounce 2 times, exploding on each one of the bounces{/highlight}",
       "image": "tychus_fraggrenade.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "What can i saw it just sounds fun",
+      "subtexts": [
+        "I don't know how measure that but it should be enough to bounce and explode with atleast 1 range between each bounce if you pick the talent that pull enemies.",
+        "This sums 3 explosions"
+      ]
     }
   ]
 }

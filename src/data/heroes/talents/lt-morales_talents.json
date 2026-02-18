@@ -8,7 +8,8 @@
         "manaCost": "{highlight}No cost{/highlight}",
         "classes": "text-small text-primary",
         "image": "medic_healingbeam.png",
-        "abilityChanged": true
+        "abilityChanged": true,
+        "developerCommentary": "The removal of the energy cost necessitated a nerf."
       },
       {
         "name": "Medivac Dropship (W)",
@@ -17,7 +18,8 @@
         "manaCost": "No cost",
         "classes": "text-small text-secondary",
         "image": "medic_medivacdropship.png",
-        "abilityChanged": true
+        "abilityChanged": true,
+        "developerCommentary": "The Medivac is one of the few tools that gives Morales agency. It allows for rapid transport of players between map areas. By converting this ultimate-level skill into a basic ability, some adjustments are necessary for balance and practicality."
       },
       {
         "name": "Displacement Grenade (E)",
@@ -35,7 +37,8 @@
         "manaCost": "{highlight}100 Energy{/highlight}",
         "classes": "text-small text-warning",
         "image": "medic_stim.png",
-        "abilityChanged": true
+        "abilityChanged": true,
+        "developerCommentary": "As previously mentioned, I want to bring Morales closer to the gameplay experience of the Medic in TF2. Introducing Combat Stimpack as a baseline skill that charges up enhances Morales' engagement in gameplay, focusing on skillful play rather than passive cooldown management. This also distinguishes her from other healers."
       }
     ],
     "trait": {
@@ -50,13 +53,15 @@
       "name": "Caduceus Feedback",
       "description": "Increases Attack Range by 1.1 and Basic Attacks against Heroes generate {highlight}1{/highlight} Energy.",
       "image": "talent_autoattack_mana.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Balancing the talent for the new ultimate"
     },
     {
       "name": "Life Support",
       "description": "{highlight}Morales now receives all movement speed bonuses from the target she's healing.{/highlight}",
       "image": "medic_healingbeam.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "There's no more need for the energy BUT there's always a need for giving Morales a chance to heal junkrat with the fast mount and also follow the steroids target"
     },
     {
       "name": "Clear!",
@@ -67,7 +72,8 @@
         "{highlight}Reduces Clear cooldown to 9 seconds.{/highlight}"
       ],
       "image": "medic_displacementgrenade.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I rebalanced the quest so we could preserve the Displacement Grenade quest and bring earlier the Displacement Grenade reset"
     }
   ],
   "4": [
@@ -78,7 +84,8 @@
         "{highlight}Prevents Morales from losing Energy upon death.{/highlight}"
       ],
       "image": "upgrade-terran-mobiusreactor.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Rebalanced it for the new energy settings"
     },
     {
       "name": "Trauma Trigger",
@@ -99,13 +106,15 @@
       "name": "EMP Grenade",
       "description": "Displacement Grenade deals an additional 96 damage over 2 seconds, and up to 400 bonus damage to Shields.",
       "image": "medic_displacementgrenade.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "The Displacement Grenade talent tier was not very strong, and the new talents created for Medivac are somewhat stronger, so I'm shifting them to level 7 for better power spikes."
     },
     {
       "name": "System Shock",
       "description": "Heroes hit by Displacement Grenade deal 30% less damage for 3 seconds.",
       "image": "medic_displacementgrenade_b.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "The Displacement Grenade talent tier was not very strong, and the new talents created for Medivac are somewhat stronger, so I'm shifting them to level 7 for better power spikes."
     },
     {
       "name": "Bedside Manner",
@@ -114,7 +123,8 @@
       "talentChanged": true,
       "passives": [
         "Basic Attacks against Heroes deal an additional 1% of their maximum Health as damage."
-      ]
+      ],
+      "developerCommentary": "The Displacement Grenade talent tier was not very strong, and the new talents created for Medivac are somewhat stronger, so I'm shifting them to level 7 for better power spikes."
     }
   ],
   "10": [
@@ -122,19 +132,22 @@
       "name": "Koprulu Warfare Booster",
       "description": "{highlight}Steroids charge now makes allied heroes' basic attacks deal an extra 30% damage.{/highlight}",
       "image": "medic_stim.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I didn't want to just buff attack speed and movement speed as a simple buff and wanted to make something that reminds me of the Kritzkrieg from TF2. Perfect time to make Morales a significant problem considering that some characters are troublesome with higher attack damage."
     },
     {
       "name": "Terran Übercharge Stimulant",
       "description": "{highlight}Increase Steroids charge movement speed bonus by 25% and makes the target unkillable.{/highlight}",
       "image": "medic_stim.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "The risk plays with Morales, remember that the Healing Beam can be cancelled with crowd control."
     },
     {
       "name": "Battlefield Resuscitation System",
       "description": "{highlight}Targets receive additional healing equal to 330% of the Healing Beam.{/highlight}",
       "image": "medic_stim.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I wanted to give it 300% of the original Healing Beam value."
     }
   ],
   "13": [
@@ -142,19 +155,22 @@
       "name": "Mass Evacuation Protocol",
       "description": "{highlight}Medivac now takes off 5 seconds after being used and can carry any amount of people. Unloaded heroes will be mounted and can't be dismounted for 1.5 seconds{/highlight}",
       "image": "medic_medivacdropship.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "It's supposed to work like before for any nostalgic player."
     },
     {
       "name": "Warp-Speed Rescue",
       "description": "{highlight}Now Medivac calls upon Morales after 1 second of channeling, the Medivac is 150% faster and has the cooldown reduced by half plus instantly takes off as soon as it's used.{/highlight}",
       "image": "medic_medivacdropship.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "This works very close to how the old Medivac was, but only Morales will ride it."
     },
     {
       "name": "Reinforcements",
       "description": "{highlight}Call down a Medivac Dropship at your Hall of Storms for your allies. After 10 seconds, or when a hero enters, the Medivac will travel to the target location to unload the passenger.{/highlight}",
       "image": "medic_medivacdropship.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I had to make the talent as NEW because it was a extended part of the Medivac. Changed it to hold only one person and also drop it where Morales wants for increased map control potential."
     }
   ],
   "16": [
@@ -168,13 +184,15 @@
       "name": "First Responder",
       "description": "{highlight}Morales can overheal targets, granting them an overshield up to 20% of their maximum health that rapidly decays after 5 seconds. Healing resets the shield duration.{/highlight}",
       "image": "medic_healingbeam_c.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Inspired by the Tf2 medic overheal and bringing some more utility for late game Morales"
     },
     {
       "name": "Healing Shockwave",
       "description": "{highlight}Morales' Displacement Grenade now gets bigger the farther it travels, up to 40% extra. On explosion, it also heals allied heroes in the area by 480.{/highlight}",
       "image": "medic_displacementgrenade.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Sometimes using the Displacement Grenade feels like an disadvantage and this is a talent option for this games."
     }
   ],
   "20": [
@@ -191,14 +209,16 @@
       "name": "Focus Morales!",
       "description": "{highlight}When Morales dies, every allied heroes nearby will receive the overcharge effects for 4 seconds.{/highlight}",
       "image": "medic_stim.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Now the people on ranked will think twice before saying that"
     },
     {
       "name": "Medi-Relay Beacon",
       "description": "{highlight}Morales drops a beacon with 1200 health for 12 seconds. If Morales redirects her healing beam to the beacon, all allied heroes within 6.5 range of that beacon will receive the Healing Beam and overcharge effects used by Morales.{/highlight}",
       "cooldown": "60s",
       "image": "medic_healingbeam.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I always saw an opportunity to make Morales area healing a thing and with the Combat Stimpack changes it gets even better"
     },
     {
       "name": "Unstoppable Rescuer",
@@ -207,7 +227,8 @@
         "{highlight}Increase her energy generation by 25%.{/highlight}"
       ],
       "image": "medic_medivacdropship.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "This is made to be the ultimate safe talento for Morales..i wanted to go more on a Soraka from Lol passive route but i taught this would be funnier and better."
     }
   ]
 }

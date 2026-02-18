@@ -59,7 +59,8 @@
         "{highlight}Reduces Blizzard's cooldown by 2 seconds.{/highlight}"
       ],
       "image": "jaina_blizzard.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "This talent is to be an alternative for the mana one BUT without going for mana. Currently you use only Blizzard to ALMOST clear an wave so you need help OR use another skill, with this talent i want to add an option to preserve mana by using only Blizzard and making it focused on PVE"
     },
     {
       "name": "Lingering Chill",
@@ -91,7 +92,12 @@
       "name": "Frost Armor",
       "description": "Enemies that attack Jaina {highlight}or frost armor{/highlight} are Chilled. Additionally, every 10 seconds, Jaina gains 75 Physical Armor against the next enemy Hero Basic Attack, reducing the damage taken by 75%.{highlight}Activate to transfer your Frost Armor charge to an allied Hero, lasting 6 seconds.{/highlight}",
       "image": "jaina_frostarmor.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I feel that the current Frost Armor could be more flexible and give Jaina more options without breaking the original concept.",
+      "subtexts": [
+        "It's also added that the block charge will chill the attacker.",
+        "Cooldown is tied to Jaina current block charge, when she transfers the block charge it starts the cooldown again."
+      ]
     }
   ],
   "7": [
@@ -99,7 +105,8 @@
       "name": "Ice Lance",
       "description": "Hitting a Chilled target with Frostbolt reduces its cooldown by 1.5 seconds and restores 10 Mana.{highlight} Increase Frostbolt's range and travel speed by 30%.{/highlight}",
       "image": "jaina_frostbolt.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I don't like funneling talents on general, for me the max funnel it's about two talents AND BESIDES that one is underperforming right now so it's more an strategic change with talents i like."
     },
     {
       "name": "Ice Floes",
@@ -114,7 +121,13 @@
         "{highlight}Basic Attacks reset Chilling effects.{/highlight}"
       ],
       "image": "jaina_frostbite.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Reading Jaina's abilities she is an incredible sorceress that can also boost her speed and perform some mirage and stealth spells i didn't want to break that concept of ice mage of her on HOTS so i made a skill that also makes me remember a little about Sub-Zero",
+      "subtexts": [
+        "Perfect stealth means Jaina can't be revelead until she casts a skill, attack or the effect expires AND she will behave like old invisibility so she will be totally invisible no visual cues",
+        "The visual ice mirage trails will work as a stop motion, leaving an ice mirage cue on the 0.6 and 1.2 duration of the skill. The closest reference will be characters being revealed by sweeping radar from league of legends",
+        "This will only reset active Frostbite effect"
+      ]
     }
   ],
   "10": [
@@ -141,7 +154,14 @@
       "description": "{highlight}Activate to teleport Jaina and all allied Troops and Mercenary Camp units around her to target Troop or Structure after 3 seconds.{/highlight}",
       "image": "BTNMassTeleport.webp",
       "talentChanged": true,
-      "cooldown": "90s"
+      "cooldown": "90s",
+      "developerCommentary": "For how commonly Jaina Teleports on her stories i find kinda odd she wouldn't have it here be it balanced or not this is a character skill often used that won't conflict with the 'frost mage' concept as having fire skills would conflict with Kael'thas fire mage position",
+      "subtexts": [
+        "This will only teleport troops and mercenary camps with her without any limit",
+        "Both Jaina and the target teleport position will give a hint that she is teleporting similar to how it behaves on Warcraft 3",
+        "Global Range",
+        "Cooldown 90 seconds"
+      ]
     },
     {
       "name": "Ice Barrier",
@@ -163,7 +183,12 @@
       "description": "{highlight}After 1 second of activating, Jaina will grant every allied Hero 2000% Mana regeneration and 10% Spell Power for 4 seconds.{/highlight}",
       "image": "PASBTNBrilliance.webp",
       "talentChanged": true,
-      "cooldown": "60s"
+      "cooldown": "60s",
+      "developerCommentary": "I really wanted Jaina to have the Brilliance Aura seriouslz...I think it's a cool concept but i didn't want it to be kinda 'lame' so i tried to make it more special",
+      "subtexts": [
+        "The range is equal to Summon Water Elemental",
+        "Cooldown 60 seconds"
+      ]
     },
     {
       "name": "Northern Exposure",
@@ -195,13 +220,15 @@
       "name": "Ice Control",
       "description": "{highlight}For every Chilled enemy Hero, Jaina receives 100% faster recharge rate on Ice Block and 5% Spell Power.{/highlight}",
       "image": "jaina_frostbite.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I wanted to make a talent that would be about Chill control and i remembered that Orphea Dead Magic talent and i made something close."
     },
     {
       "name": "Deep Chill",
       "description": "{highlight}Increases blizzard cast range by 75% and area of effect by 40%, while adding 2 extra waves of damage.{/highlight}",
       "image": "jaina_blizzard.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I liked the original Storm Front concept but i had to change it from level 13 so i could fit the Mass Teleport but i still wanted it to be somewhere so i made this version with additional damage waves"
     }
   ]
 }

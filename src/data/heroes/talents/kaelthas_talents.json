@@ -7,7 +7,8 @@
         "image": "kaelthas_flamestrike.png",
         "abilityChanged": false,
         "manaCost": "70 Mana",
-        "cooldown": "7s"
+        "cooldown": "7s",
+        "developerCommentary": "I want to make Kael'thas Flamestrike more present on the character as baseline."
       },
       {
         "name": "Living Bomb (W)",
@@ -48,7 +49,8 @@
       "name": "Verdant Spheres (T)",
       "description": "Activate to make Kael'thas's next Basic Ability more powerful. {highlight}You can reactivate Verdant Spheres to consume it and restore 7.5% of your maximum mana{/highlight}",
       "image": "kaelthas_verdantspheres.png",
-      "abilityChanged": true
+      "abilityChanged": true,
+      "developerCommentary": "I wanted to bring Verdant Spheres somehow an interaction for when you don't need the upgraded skill and bringing Mana Tap effect here was a big one"
     }
   },
   "1": [
@@ -56,19 +58,27 @@
       "name": "Convection",
       "description": "Quest: Damaging an enemy Hero with Flamestrike increase its damage by 5, up to 100. This bonus is lost on death.Reward: After hitting 20 enemy Heroes, increase Flamestrike damage by an additional 100 and no longer lose any bonuses on death. {highlight}Hitting 4 heros with a Flame Strike completes the quest and increases Kael'Thas maximum mana by 100.{/highlight}",
       "image": "kaelthas_flamestrike.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I was thinking of swapping this quest to something similar to Maiev Umbral Bind but i think Maiev Naisha's Memento will be more beneficial as Convection has a long story of being THAT talent and with the mix of the old Mana Addict on the baseline character it becomes more doable"
     },
     {
       "name": "Mana Cubes",
       "description": "{highlight}Drops a mana cube that restores allied hero maximum mana by 5% of Kael'thas maximum mana to the first allied hero that enters in contact every time Kael'thas uses an ability or get a regeneration globe. Passive: Verdant Spheres cooldown is decreased by 3{/highlight}",
       "image": "kaelthas_verdantspheres.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "The mana cube lore was a very interesting bit and with the bringing of Mana Addict as a baselina quest i found that a utility that like that could convey his lore and be strong with other mana hungry heroes like Malfurion",
+      "subtexts": [
+        "Drops on a 3.0 range radius from Kael'thas",
+        "Each cube lasts 2 seconds",
+        "Only allied heros can get the cubes"
+      ]
     },
     {
       "name": "Mana Addict",
       "description": "{highlight}When Kael'thas has more than 80% of his maximum mana he receives 15% extra spell power but have 15% less spell power when his mana is lower than 25%.{/highlight}",
       "image": "kaelthas_manaaddict.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Wanted to change the name Mana Addict closer to what i understand from the lore where the blood elves get sick with the lack of mana"
     }
   ],
   "4": [
@@ -82,14 +92,22 @@
       "name": "Banish Lapse",
       "description": "{highlight}Exile enemy heros currently affected by Gravity Lapse making them unable to be targeted by allied heroes. Also reduces their spell armor by 15 while affected{/highlight}",
       "image": "kaelthas_gravitylapse_a.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I wanted to bring the Banish from Warcraft 3 somehow, first i wanted to make the base interaction and also give the power to affect allied heros BUT a commom thing i see people complaining is on forced-allied interactions so i rejected the idea because i do not think it conveys Kael'thas to make anything not forced on it's character fantasy so with that i came to that new debuff idea called EXILED that would be a untargetable but for the enemy team which i think it suits well the idea of banish as other heroes will only interact with yours with spells and we don't need slow it's movement speed as the target is stunned."
     },
     {
       "name": "Mana Siphon",
       "description": "{highlight}Drain the Mana from an enemy hero over 3 seconds. Draining 8% of the target current mana per second and restoring Kael'thas 8% maximum mana per second and half of his mana value to close heores.{/highlight}",
       "cooldown": "25 seconds",
       "image": "manadrain.webp",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I wanted to bring Mana drain similar to how it was on Warcraft 3 and make it possible to have a sucking team with Gul'dan and Kael'thas",
+      "subtexts": [
+        "Range 7.2 | Gul'dan Drain Life range is 6.5",
+        "Cooldown: 25 seconds",
+        "Extra mana radius will be 4.0 | Muradin Stormbolt radius is 3.0",
+        "Manaless heroes just don't lose mana but can be drained"
+      ]
     }
   ],
   "7": [
@@ -113,7 +131,9 @@
       "talentChanged": true,
       "passives": [
         "{highlight}Basic attacks against enemy heros increase Kael'Thas magic mana by 5 permanently{/highlight}"
-      ]
+      ],
+      "developerCommentary": "With the removal of sunfire enchatmente i saw an opportunity to still have some advantage on basic attacks and bringing Mana Shield here",
+      "subtexts": ["Cooldown: 45 seconds"]
     }
   ],
   "10": [
@@ -145,7 +165,8 @@
       "name": "Backdraft",
       "description": "Living Bomb's explosion slows enemy Movement Speed by {highlight}99%{/highlight} for {highlight}1.0 seconds{/highlight}, {highlight}decaying over the duration.{/highlight}",
       "image": "kaelthas_livingbomb_var1.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I want to make Backdraft a setup tool rather than a control talent"
     },
     {
       "name": "Fission Bomb",
@@ -172,7 +193,15 @@
       "description": "{highlight}Kael'thas swings his sword Felo'melorn, dealing 126 damage to nearby heroes and shooting a projectile that deals an extra 126 damage to the target hit, thus exploding the target's Living Bomb instantly with a 35% greater radius.{/highlight}",
       "cooldown": "45 seconds",
       "image": "felomelorn.jpg",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "He had an 1v1 Arthas on melee combat..We need to mention that",
+      "subtexts": [
+        "Range 8.0 | Valla Hungering Arrow range is 11.0",
+        "Cooldown: 45 seconds",
+        "14 Missile Speed | Valla Hungering Arrow missile speed is 20.0",
+        "Close attack radius is 3.0 | Lucio Soundwave Radius is 4.5",
+        "Close attack is 80 degrees | Lucio Soundwave Arc is 80 degress"
+      ]
     }
   ],
   "20": [
@@ -180,13 +209,20 @@
       "name": "Arcane Phoenix",
       "description": "{highlight}Reactivate Phoenix with 80 mana cost with 80 mana cost to reposition it and increase it's duration by 2 seconds and it's attack speed by 20%. You can reposition it up to 10 times{/highlight}",
       "image": "kaelthas_phoenix.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "With so many Talents based on Mana and the hard job to make Phoenix unique with the curret HOTS setup i find it to be perfect case scenario",
+      "subtexts": ["0.5 second cooldown between repositions"]
     },
     {
       "name": "Presence Of Mind",
       "description": "{highlight}Pyroblast have the radius increased by 100%. If Kael'thas reactivate Pyroblast while it's active it will instead split create smaller versions of Pyroblast targeting every hero on the radius dealing 65% of the Pyroblast damage.{/highlight}",
       "image": "kaelthas_pyroblast.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Hard to increase the damage and resetting doesn't feel power enough. That's why i bring chaos player inputs",
+      "subtexts": [
+        "The smaller versions will have 50% of the original radius",
+        "The speed of each split Pyroblast will reset as if it was just cast"
+      ]
     },
     {
       "name": "Master of Flames",

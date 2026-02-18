@@ -57,7 +57,8 @@
       "name": "Skovo's Pride",
       "description": "{highlight}Fend now stuns the target for 0.75 seconds. If the target health is below 35% Fend will deal additional 50% damage and grant Cassia protected while Channeling{/highlight}",
       "image": "cassia_fend.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Bringing more variety to Fend. This one is intended to be flexible to deal with mobile heroes and a finishing move."
     },
     {
       "name": "Ring of Leech",
@@ -66,13 +67,15 @@
         "{highlight} Increase Fend area of effect by 25%{/highlight}"
       ],
       "image": "cassia_fend.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I am spreading healing focused talents between Cassia talent tree instead of focusing it on level 7. I think this one is a good option if you want to play safe"
     },
     {
       "name": "Valkyrie's Charge",
       "description": "{highlight}Increase Fend cast range by 70%. Cassia now travels through terrain while charging{/highlight}",
       "image": "cassia_fend.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "This is to elevate your psychopathy"
     }
   ],
   "4": [
@@ -86,7 +89,8 @@
       "name": "Zerae's boon",
       "description": "{highlight}After 0.75 of casting Blinding Light a lightning javelin will struck the center of the affected area making enemey heroes disoriented for 1.5 seconds.{/highlight}",
       "image": "cassia_blindinglight.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "It seems fun. I always first looking to make it as a thunder bolt but sadly Cassia is not Zeus. Disoriented comes from the ideas of the possible effects that a lightning effect could do on an rpg and i wanted to not make stuns and bolts can't make targets sleep."
     },
     {
       "name": "Seraph's Hymn",
@@ -95,7 +99,8 @@
       "talentChanged": true,
       "passives": [
         "Increase the passive damage bonus of Blinding Light from 15% to 30%"
-      ]
+      ],
+      "developerCommentary": "I like the idea of making it also a zoning tool, the duration needs to be low just to prevent it to be more of a nuisance that it will alredy be."
     }
   ],
   "7": [
@@ -103,13 +108,15 @@
       "name": "Surge of Light",
       "description": "After taking 650 damage with Avoidance active, Cassia can activate Avoidance to deal 220 damage to enemies around her.",
       "image": "cassia_avoidance_b.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "This additional buff is to compete as one of the power house on an all around style."
     },
     {
       "name": "Charged Strikes",
       "description": "Gain 15% Attack Speed. Every 3rd Basic Attack deals 20% bonus damage and bounces to nearby enemy Heroes. {highlight}Each enemy hero hit reduces Cassia cooldowns by 0.3 seconds and restores 10 mana{/highlight}",
       "image": "cassia_new_chargedstrikes.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "This additional buff is to compete as one of the power house on an all around style."
     },
     {
       "name": "Inner Light",
@@ -119,7 +126,8 @@
       "cooldown": "70s",
       "passives": [
         "{highlight}Increase Lightning Fury damage by 25% while active{/highlight}"
-      ]
+      ],
+      "developerCommentary": "Making Inner Light receive that bonus damage to compete as the more defensive powerhouse option"
     }
   ],
   "10": [
@@ -145,7 +153,8 @@
       "name": "Athulua's Fury",
       "description": "{highlight}Fend now knocks back enemies at the end of its channel slowing them for 30% for 2 seconds and deal extra 6% of his maximum health damage if he is blinded.{/highlight}",
       "image": "cassia_fend.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "There's not much to say besides i found that idea to be cool"
     },
     {
       "name": "War Traveler",
@@ -158,7 +167,8 @@
       "description": "Activate to fully charge Avoidance and increase its Armor value to {highlight}40{/highlight} for 4 seconds. Losing Avoidance removes this bonus.",
       "image": "cassia_avoidance.png",
       "talentChanged": true,
-      "cooldown": "30s"
+      "cooldown": "30s",
+      "developerCommentary": "With the mix of Plate of the Whale to Skovo's Pride i am bringing it here to be the new defensive option as well i don't think this talent should belong to level 20 as it doesn't make the player feel powerful even tho it's a good talent."
     }
   ],
   "16": [
@@ -178,7 +188,8 @@
       "name": "Gloves of Alacrity",
       "description": "{highlight}Hitting enemy heroes with Lightning Fury empowers Cassia next basic attack with 3 extra range and extra 6% of their maximum health as damage.{/highlight}",
       "image": "cassia_new_gloves.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "This new effect is to bring more synergy between Lightning Fury between all level 16 talents while still retaining it's essence"
     }
   ],
   "20": [
@@ -198,13 +209,15 @@
       "name": "Titan's Revenge",
       "description": "Cassia's Basic Attacks now ignore Armor{highlight} and empowers the next Lightning Fury increasing its speed and max range by 30%.{/highlight}",
       "image": "cassia_avoidance_b.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "The current talent effect is good BUT doesn't feel good for a level 20. What i mean is that usually level 20 talents FEEL strong and different..this adjustament is to bring that FEELING."
     },
     {
       "name": "War Matron",
       "description": "{highlight}Receive all level 7 talents.{/highlight}",
       "image": "cassia_ringoftheleech.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "The sad thing about this talent is the description is short but the good thing is that this talent is absolutely nuts."
     }
   ]
 }

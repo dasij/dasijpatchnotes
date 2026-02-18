@@ -7,7 +7,8 @@
         "image": "guldan_felflame.png",
         "abilityChanged": false,
         "manaCost": "75 Mana",
-        "cooldown": "2s"
+        "cooldown": "2s",
+        "developerCommentary": "Gul'dan Fel Flame currently has a problem..depending on how you build Gul'dan Fel Flame becomes your priority skill by far or the useless one and with the other changes i propose on the Fel Flame aspect one thing is prevalent..Without the extra cast range there's almost no incentive to use it."
       },
       {
         "name": "Drain Life (W)",
@@ -36,11 +37,16 @@
       },
       {
         "name": "Rain of Destruction (R)",
-        "description": "After 1.5 seconds, summon a rain of meteors in an {highlight}small area{/highlight} for 7 seconds{highlight}, that area will expand within it's duration{/highlight}. Each meteor deals 165 damage in a small area.",
+        "description": "After 1.5 seconds, summon a rain of meteors in an {highlight}small area{/highlight} for 7 seconds{highlight}, that area will expand within it's duration{/highlight}. Each meteor deals 165 damage in a small area.{highlight} Reduced 50% damage on structures {/highlight}",
         "image": "guldan_rainoffire.png",
         "abilityChanged": true,
         "manaCost": "80 Mana",
-        "cooldown": "70s"
+        "cooldown": "70s",
+        "developerCommentary": "My initial idea was to make Rain of Destruction have a smaller radius since the beginning and make it have charges but that would make it too similar on Jaina Blizzard and after thinking a little RoD greatest problem was the uncertainty of it's effect as it one of the few skills that are affected by luck on Heroes of the storm. End result was not go away from the similarity to Blizzard but make it on a unique way.",
+        "subtexts": [
+          "This won't change the meteor spawn rate it will just concentrate the damage at the beginning at a smaller area.",
+          "Muradin Stormbolt has 3.0 radius."
+        ]
       }
     ],
     "trait": {
@@ -56,7 +62,11 @@
       "name": "Chaotic Energy",
       "description": "{highlight}Drain life reduces the target self-heal and regeneration effects by 75% while it's active.{/highlight}",
       "image": "guldan_healthfunnel.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I am not a big fan of reducing Gul'dan skills cost but rather give him more talents on the complete build that could sustain it's skill so instead in changing it for a situational talent.",
+      "subtexts": [
+        "For complete context, it won't reduce healing from other heroes. For example Dehaka Essence Collection or Dehaka Adaptation healing will be cut but receiving healing from a Healer will work normally."
+      ]
     },
     {
       "name": "Rampant Hellfire",
@@ -64,13 +74,15 @@
       "quest": "Hit 30 enemy Heroes with Fel Flame.",
       "rewards": ["Fel Flame's radius is increased by 10%."],
       "image": "guldan_felflame.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Corruption is a high cost skill that Gul'dan players should take a little more care to use BUT i wanted to increase interactions between Corruption and the rest of the Kit. Also i wanted to provide some 'more' to the pursuit of flame as it's not very popular for being a little dull"
     },
     {
       "name": "Consume Life",
       "description": "{highlight}Quest: Killing troops increase Gul'dan maximun health points by 0.3% up to 20%. Reward: If Consume life is fully charged it can be activated while dead to immediately respawn at the Hall of Storms, but must be charged again.{/highlight}",
       "image": "guldan_darkpact.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I wanted to make something related to the Vanilla Dark Bargain effect but i disliked increasing respawn time the way it is..on counterpart the Malthael level 20 talent No One Can Stop Death gives a better control of it"
     }
   ],
   "4": [
@@ -78,19 +90,22 @@
       "name": "Harvest Life",
       "description": "Drain Life heals for 75% more Health when used on Heroes.",
       "image": "guldan_healthfunnel.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I want to make players choose one Drain Life bonus instead of building Drain Life, one of the things that make Harvest Life is strong is the combination with Curse of Exhaustion"
     },
     {
       "name": "Curse of Exhaustion",
       "description": "Drain Life deals 50% more damage and Slows the target's Movement Speed by 40%.",
       "image": "guldan_healthfunnel.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I want to make players choose one Drain Life bonus instead of building Drain Life"
     },
     {
       "name": "Drain Power",
       "description": "{highlight}Drain life will steal 7.5% spell power per second if used on corruption affected enemies, Gul'dan will retain the spell power for 4 seconds after stop draining{/highlight}",
       "image": "guldan_healthfunnel.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Gul'dan is well known for drain vital essence and i think that can be transferred to spell power"
     }
   ],
   "7": [
@@ -104,7 +119,8 @@
       "name": "Darkness Within",
       "description": "Dealing 600 (+4% per level) damage to enemy Heroes causes the next cast of Life Tap to cost no Health{highlight} and increases the mana restored to 60%.{/highlight}",
       "image": "guldan_lifetap.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I want Hungry for power and Drain power to be the only ways to obtain more spellpower so instead i am bringing this talent for a sustain."
     },
     {
       "name": "Hunger for Power",
@@ -128,7 +144,12 @@
       "image": "guldan_rainoffire.png",
       "talentChanged": true,
       "manaCost": "80 Mana",
-      "cooldown": "70s"
+      "cooldown": "70s",
+      "developerCommentary": "My initial idea was to make Rain of Destruction have a smaller radius since the beginning and make it have charges but that would make it too similar on Jaina Blizzard and after thinking a little RoD greatest problem was the uncertainty of it's effect as it one of the few skills that are affected by luck on Heroes of the storm. End result was not go away from the similarity to Blizzard but make it on a unique way.",
+      "subtexts": [
+        "This won't change the meteor spawn rate it will just concentrate the damage at the beginning at a smaller area.",
+        "Muradin Stormbolt has 3.0 radius."
+      ]
     }
   ],
   "13": [
@@ -143,7 +164,14 @@
       "description": "{highlight}Activate to consume a enemy or allied hero body to absorb their maximum health points, the extra health granted will decay over 15 seconds.{/highlight}",
       "cooldown": "60s",
       "image": "guldan_darkbargain.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Gul'dan is known for trying increase his own lifespan be it by changing bodies or draining life essence, it's totally on lore for him doing it.",
+      "subtexts": [
+        "This will consume their maximum health points after death. So if you guldan has 3000hp and kill a maximum souls Diablo that had 8k life by losing his souls lets say he has 6k life now then you will be granted 6k health points. ",
+        "Cooldown: 60 seconds",
+        "1 second cast time",
+        "This will literally consume the corpse so Auriel Resurrect can't be used on the consumed target"
+      ]
     },
     {
       "name": "Healthstone",
@@ -162,7 +190,11 @@
       ],
       "cooldown": "60s",
       "image": "guldan_healthfunnel.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Inspired by Fiddlesticks ultimate i wanted to create some way to make a ultra power move with Drain Life and make the Chupacabra build a little different.",
+      "subtexts": [
+        "7.0 range | Same as Malfurion Tranquility"
+      ]
     },
     {
       "name": "Rampant Hellfire",
@@ -174,7 +206,8 @@
       "name": "Echoed Corruption",
       "description": " After the third strike, Corruption strikes 3 times in the opposite direction. ",
       "image": "guldan_handofguldan.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "This is a strong level 16 contender and with the new level 20 talent it becomes more willing to be picked."
     }
   ],
   "20": [
@@ -201,7 +234,12 @@
       "name": "Ruinous Affliction",
       "description": "Corruption deals an additional 78 damage on impact. If the enemy is hit by all three strikes, the third strike deals 268 damage.{highlight}Each time an enemy hero is hit, they are marked by Gul'dan's envy, stealing all healing received by 40% for 6 seconds. Receiving extra stacks resets the duration.{/highlight}",
       "image": "guldan_handofguldan.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I like this talent but with how i wanted to rework it there wasn't much space for it BUT i also wanted something that would make Gul'dan steal healing so WE GOT AN OPPORTUNITY",
+      "subtexts": [
+        "Receiving extra stacks resets the duration",
+        " This is not reduced healing effect is literally healing stealing"
+      ]
     }
   ]
 }

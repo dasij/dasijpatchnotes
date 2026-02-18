@@ -7,7 +7,8 @@
         "image": "lunara_pollencloud.png",
         "abilityChanged": true,
         "manaCost": "60 Mana",
-        "cooldown": "8s"
+        "cooldown": "8s",
+        "developerCommentary": "I was trying to figure out how to fit Splintered Spear into my modified Lunara builds and after some time I realized that its existence didn't fit as a talent. However, I like its bonuses, so I'm bringing the most important one to Lunara's baseline kit. Besides, I always felt that Noxious Blossom was kind of underwhelming as Lunara's only damage skill, not because of its effect but its size. It doesn't feel powerful enough for such a core ability."
       },
       {
         "name": "Crippling Spores (W)",
@@ -68,13 +69,25 @@
       "name": "Flower of poison",
       "description": "{highlight}After staying still for 3 seconds Wisps apply one stack of Nature Toxin each second on area, lasts 3 seconds.{/highlight}",
       "image": "lunara_wisp.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "One thing that i always like about the wisps were the power to transform themselves into living structures here i wanted to apply a concept next to it but focused on empowering Lunara toolkit.",
+      "subtexts": [
+        "Area will be 2 | Crippling Spores is 3.0",
+        "The flower should appear visually"
+      ]
     },
     {
       "name": "Detonate",
       "description": "{highlight}Activate to detonate the closest Wisp of your mouse. When Wisps are destroyed or detonated they deal 400 damage to summoned units and 405 shield damage. If Lunara doesn't receive damage or basic attack on the last 2 seconds increase Dryad's Swiftness movement speed bonus by 10%{/highlight}",
       "image": "lunara_wisp.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Another thing that i always liked about wisps on warcraft 3 were the Detonate skill. Give up the Wisp for a last resort skill, sadly i don't think that taking buffs from other characters or draining mana would fit Heroes of the Storm on that interaction",
+      "subtexts": [
+        "400 Health is equal to the Time Trap Health",
+        "405 Shield is equal to half of Iron Skin Health",
+        "The mouse position recognizer should be global. So if you only have one Wisp it will detonate it no matter the position",
+        "Cooldown: 0.5 seconds"
+      ]
     }
   ],
   "4": [
@@ -82,7 +95,11 @@
       "name": "Nature Spirits",
       "description": "{highlight}Wisps will heal allied heros near them by 40 per second. This effect is doubled on bushes{/highlight}",
       "image": "lunara_wisp.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I wanted to add the effects of Lunara nature connection and show that by make some sort of healing related to nature spirits. Another thing that should be mentioned is that even tho i removed Nature's Perspective to prevent it to make the player feel obliged to pick Nature's call i don't feel that this talent combo is strong enough with Nature's call to make the player feel obliged to pick it",
+      "subtexts": [
+        "Radius will be 2.5 | Crippling Spores radius is 3.0"
+      ]
     },
     {
       "name": "Nature's Culling",
@@ -95,6 +112,7 @@
       "description": "Heal 9 (+4%/level) per second while an enemy has Nature's Toxin. Additional 19 (+4%/level) per second healing if an enemy Hero has 3 stacks.",
       "image": "lunara_stiflingblossom_var1.png",
       "talentChanged": true,
+      "developerCommentary": "With the changes made to other talents i could see this talent losing some of it's charm. So i bring up an extra removed from level 1 to make this talent a menace.",
       "passives": [
         "{highlight}Nature Toxin reveals enemies for its duration{/highlight}"
       ]
@@ -147,6 +165,7 @@
       "description": "Increases Crippling Spores' Slow duration by 1 second and causes it to no longer decay.",
       "image": "lunara_fullbloom_a.png",
       "talentChanged": true,
+      "developerCommentary": "Mixing it with Unfair Advantage with its removal",
       "passives": [
         "{highlight}Crippling Spores cooldown reduced by 2s if cast while two or more Heroes have Nature's Toxin.{/highlight}"
       ]
@@ -163,7 +182,13 @@
       "description": "{highlight}Lunara leaps backward, dodge enemy incoming projectiles and launches a basic attack on three of the furthest enemy units within range{/highlight}",
       "image": "lunara_boundlessstride_a.png",
       "talentChanged": true,
-      "cooldown": "30s"
+      "developerCommentary": "This work almost exactly as https://www.dota2.com/hero/enchantress Sproink skill. I am bringing this here as a method to bring Lunara closer to what she was before..an opressive mobile character a thing she kinda lost the spot with additions like Genji.",
+      "cooldown": "30s",
+      "subtexts": [
+        "Leap range will be 4.0 | Vault is 5.0",
+        "Missile speed will be 10 | Vault is 14",
+        "Lunara will leap backward based on the character facing direction"
+      ]
     }
   ],
   "16": [
@@ -183,7 +208,14 @@
       "name": "Nature's call",
       "description": "{highlight}When Lunara cast Wisp it will also summon 3 additional wisps that can't be controlled and each one will move to the closest bushes to Lunara.{/highlight}",
       "image": "lunara_wisp.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "With the new interactions from level 1 i wanted to make a talent that could provide more utility for the Wisp and interactions to remember that classic thousand wisps detotaning on your army from warcraft 3.",
+      "subtexts": [
+        "Multiple Wisps can be active at the same time.",
+        "The additional Wisps won't go to the same bush",
+        "This Wisps are affected by Lunara talents",
+        "They will always move to the center of the Bush"
+      ]
     }
   ],
   "20": [
@@ -197,13 +229,18 @@
       "name": "Boundless Stride",
       "description": "{highlight}Everytime you use on an target that is not affected by Nature Toxin you receive another charge. Leaping Strike now can be used on allies.{/highlight}",
       "image": "lunara_boundlessstride.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Boundless Stride is not bad for any means the thing here is to make it one of those talents you are waiting to pick because it's fun changing your game possibilities similar to Unleashed.",
+      "subtexts": [
+        "You can freely use on your allies as they won't be affected by Nature Toxin"
+      ]
     },
     {
       "name": "Intensifying Toxin",
       "description": "At 3 stacks, Nature's Toxin deals {highlight}20%{/highlight} more damage, {highlight}that damage is increased to 60% on slowed targets{/highlight}",
       "image": "lunara_stiflingblossom.png",
       "talentChanged": true,
+      "developerCommentary": "I dislike the concept of receiving only a damage boost for Nature's Toxin as a level 20 and with the low pick rate of Galloping Gait even tho it's a high winrate one in general i wanted to mix both talents, this could lead to and extremely strong Lunara but for me that's the way for that talent.",
       "passives": [
         "{highlight}Increase Dryad's swiftness movement speed bonus by 7.5% for each enemy hero with 3 stacks{/highlight}"
       ]
@@ -213,6 +250,7 @@
       "description": "{highlight}Activate to become immune to spell damage for 6 seconds{/highlight}",
       "image": "lunara_greaterspellshield.png",
       "talentChanged": true,
+      "developerCommentary": "Similar to Galloping Gait i want to bring that no zero damage for Lunara as a level 20 tool that is lore related, we could say that this also the level 13 just boosted with power for a level 20.",
       "cooldown": "60s"
     }
   ]

@@ -1,5 +1,6 @@
 {
   "hero": "Chromie",
+  "developerCommentary": "Chromie ain't on a bad spot right now BUT i want to give her some more interactive talents based on the time premise.",
   "abilities": {
     "basic": [
       {
@@ -57,7 +58,8 @@
         "manaCost": "60 Mana",
         "cooldown": "50s",
         "image": "chromie_looper.png",
-        "abilityChanged": true
+        "abilityChanged": true,
+        "developerCommentary": "I always found an interesting idea the concept of using temporal loop on allied heros, it could be a long one it could be a shorter one buffed BUT one that i found the concept funny is the cooldown one, you could temporal loop a garrosh so he throws people and he is ready to throw it again or do it on a azmodan for double BALLS"
       }
     ],
     "trait": {
@@ -92,7 +94,8 @@
       "name": "Chronic Conditions",
       "description": "After its Time Stop ends, enemies affected by Time Trap are Slowed by 30% for 3 seconds and allies gain {highlight}stacking{/highlight} 30% Movement Speed for 3 seconds.",
       "image": "chromie_timetrap.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "<vanilla, talents, 4, 0> is a talent that lacks only a little spice to make it cool and for me is to make it to increase the movespeed further on any situation be it Lucio wall ride or the mount."
     },
     {
       "name": "Time Troubles",
@@ -124,7 +127,8 @@
       "name": "It's Skill O'Clock",
       "description": "{highlight}Every 12 seconds resets Chromie basic abilities cooldown.{/highlight}",
       "image": "chromie_timetrap_b.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I wanted to give an alternative focused on damage abilities that didn't overlap with the other two talents and by giving it an alternate effect it don't go through the 'more damage' set and i also find it kinda funny"
     }
   ],
   "10": [
@@ -142,7 +146,14 @@
       "cooldown": "50s",
       "manaCost": "60 Mana",
       "image": "chromie_looper.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I always found an interesting idea the concept of using temporal loop on allied heros, it could be a long one it could be a shorter one buffed BUT one that i found the concept funny is the cooldown one, you could temporal loop a garrosh so he throws people and he is ready to throw it again or do it on a azmodan for double BALLS",
+      "subtexts": [
+        "Temporal Friendship shares cooldown with Temporal Loop.",
+        "Temporal Friendship DOES NOT have the 500% cooldown reduction effect while loop is being cast.",
+        "Initially it was supposed to be a forced interaction but after some reddit discussion people really dislike being on forced interactions. I myself don't dislike that BUT there's not much to win forcing that",
+        "That area will last 3 seconds and if not used will refund Chromie's cooldown and mana"
+      ]
     }
   ],
   "13": [
@@ -150,14 +161,19 @@
       "name": "Gnome Speed Ahead!",
       "description": "After casting Sand Blast{highlight} or exiting stasis effects{/highlight}, Chromie gains 20% Movement Speed and 200% increased Health Regeneration for 3 seconds.",
       "image": "chromie_aethercannon.png",
-      "talentChanged": false
+      "talentChanged": true,
+      "developerCommentary": "Giving it this boost so every talent on that level will have lots of possibilites to explore and things to consider."
     },
     {
       "name": "Here and There",
       "description": "Activate Here and There to teleport to an area near an Echo{highlight} or There and There for a stasis trap{/highlight}, swapping it with Chromie's previous location. {highlight}And activate Here and Here to bring all echos on Chromie current position{/highlight} ",
       "cooldown": "20s",
       "image": "chromie_herethere.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "For a low life assassin like Chromie go with an option that doesn't guarantee her safety like <vanilla, talents, 13, 2> does it needs to be either a good option and the good options is always making it blink more than zeratul..i think ",
+      "subtexts": [
+        "20 seconds cooldown"
+      ]
     },
     {
       "name": "Time Out",
@@ -180,14 +196,21 @@
         "{highlight}Increase projectile speed by 15% and max range by 15%.{/highlight}"
       ],
       "image": "chromie_aethercannon_a.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I want to make <vanilla, talents, 16, 1> serve a different purpose than <vanilla, talents, 16, 0> on the concept of being a Damage focused concept, i want to make fast forward a 'sniper' skill so you can play safer but not damaging as much"
     },
     {
       "name": "Quantum Overdrive",
       "description": "{highlight}Creates a zone that will speed every allied non-heroic unit time by 100% and slow every enemy non-heroic unit time by 75% for 8 seconds.{/highlight}",
       "cooldown": "60s",
       "image": "chromie_hyperdrivesreach.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "A Utility talent that will slow everything from the non-heroic units including their attack speed, movement speed, cooldowns and so on. Similar to how the <vanilla, abilities, heroic, 1, zeratul> does but on that case it slows by about 99.99% and will speed up the allied ones. One example: If used on a allied Keep the keep will shoot 100% faster and if used on an enemy keep it will attack 75% slower and neutral units counts as allied units so if you use it on the uncaptured boss it will hit 100% faster.. I wanted to make neutral units count as allied because if we let Chromies uses that for safe boss making it will make invading a boss really harder at the point people would evade invades. Now the reason i changed it's functionality was the fact it competes with <vanilla, talents, 16, 0> as a Spell Power talent but being on the boring and safe way..if you wish to do more damages then hit your sandblasts.",
+      "subtexts": [
+        "60 seconds cooldown",
+        "Radius : 7.0 ( Blaze Combustion is 6.5 )",
+        "Range : 13 (Dragon's Breath range)"
+      ]
     }
   ],
   "20": [
@@ -195,13 +218,15 @@
       "name": "Unravelling",
       "description": "{highlight}Cast an additional Speeding sands area on Chromie cast position, this area will instead speed up allied heroes by 10% every 0.25 second, up to 50%. The speed effect will persist for 0.75 seconds after leaving the area.{/highlight}",
       "image": "chromie_timewarp.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Making a slow upgrade on the level of <new, abilities, heroic, 0> stronger is not an optimal choice as it could be extremely disruptive for the gameplay so instead we are using it with the concept of speed for allied heros as it also goes under the 'time' concept."
     },
     {
       "name": "Stuck in a Loop",
       "description": "Temporal Loop teleports the target a second time after the first, and Basic Abilities continue recharging for an additional 3 seconds. Increase the cooldown recharge rate from 500% to 700%. {highlight} Using Friendship Loop will also reset heroics {/highlight}",
       "image": "chromie_looper.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "For me it's cool to imagine being able to make some allied hero use his ultimate two times giving her an incredible amount of possibilities"
     },
     {
       "name": "Piercing Sands",
@@ -213,7 +238,13 @@
       "name": "T-I-M-E TRAP",
       "description": "{highlight}Chromie casts a giant time trap in target position that will detonate after 1.50 seconds making every hero in the area be on stasis for 0.75 seconds, this effect will be triggered 3 times sequentially.{/highlight}",
       "image": "storm_ui_icon_chromie_detonate_timetrap.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "The idea is inspired on the League Of Legends Bard ultimate that will stasis a big area and i wanted to implement that somehow on the game making chromie the perfect one to make that both in terms of gameplay and roleplay.",
+      "subtexts": [
+        "60 seconds cooldown",
+        "Radius 7.0 | <vanilla, abilities, heroic, 1, blaze> radius is 6.5",
+        "global range"
+      ]
     }
   ]
 }

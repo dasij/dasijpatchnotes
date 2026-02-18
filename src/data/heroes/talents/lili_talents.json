@@ -8,7 +8,8 @@
         "manaCost": "30 Mana",
         "classes": "text-small text-primary",
         "image": "storm_ui_icon_lili_healingbrew.png",
-        "abilityChanged": true
+        "abilityChanged": true,
+        "developerCommentary": "This change aims to raise Li Li's skill ceiling by enhancing Fast Feet, necessitating a talent overhaul. The current Fast Feet is too potent with this new ability interaction."
       },
       {
         "name": "Cloud Serpent (W)",
@@ -29,7 +30,8 @@
         "manaCost": "35 Mana",
         "classes": "text-small text-danger",
         "image": "storm_ui_icon_lili_blindingwind.png",
-        "abilityChanged": true
+        "abilityChanged": true,
+        "developerCommentary": "After the talent overhaul, I obliterated the mana talents, recognizing Li Li's need for mana. I aimed to provide a simple solution for her mana needs."
       }
     ],
     "heroic": [
@@ -55,7 +57,8 @@
     "trait": {
       "name": "Fast Feet (Trait)",
       "description": "Upon taking damage, your Basic Ability cooldowns refresh {highlight}50%{/highlight} faster and you gain 10% Movement Speed for 1 second.",
-      "image": "storm_ui_icon_lili_fastfeet.png"
+      "image": "storm_ui_icon_lili_fastfeet.png",
+      "developerCommentary": "Given Healing Brew mechanics, Fast Feet was adjusted to be slightly weaker and more customizable."
     }
   },
 
@@ -64,20 +67,23 @@
       "name": "Eager adventurer",
       "description": "Increase Fast Feet's duration by 150%",
       "image": "storm_ui_icon_lili_fastfeet.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Fast Feet now affects allied heroes, so extending its duration also prolongs its effect on them."
     },
     {
       "name": "Safety Sprint",
       "description": "Activate to gain Fast Feet, 30 Armor, and 30% Movement Speed for {highlight}1.5{/highlight} seconds.",
       "passives": ["While Fast Feet is active, Li Li gains 10 Armor."],
       "image": "storm_ui_icon_lili_fastfeet.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "This talent is defensive, designed to encourage Li Li players to use it for escaping or engaging by enhancing Fast Feet effects to be using on par with the new Healing Brew effect. Bigger duration while affecting allied heros could be troublesome."
     },
     {
       "name": "Fur-ocious Serpent",
       "description": "{highlight}Fast Feet increases self and Cloud Serpent's attack speed by 25%{/highlight}",
       "image": "storm_ui_icon_lili_fastfeet.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I don't want to give ability power to her because Ana cover this role and the basic abilities alredy give spell spower besides i think the interaction on giving spell power won't be so good for something that you could SUDDENLY receive as the Fast Feet bonus and for that instance i choose attack speed. One more thing, allied heros with Fast Feet should further increase Cloud Serpent and Li Li attack speed"
     }
   ],
   "4": [
@@ -85,19 +91,22 @@
       "name": "Two for One",
       "description": "Healing brew now heals an additional target{highlight} being the closest hero to Li Li{/highlight}",
       "image": "storm_ui_icon_lili_healingbrew.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "This talent is one that i want to give the best control possible of who Li Li heals"
     },
     {
       "name": "Healing Vapors",
       "description": "{highlight}Healing brew now heals an area around the hero by 50% applying cups to everyone{/highlight}",
       "image": "storm_ui_icon_lili_healingbrew.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "This one is best suited for melee teams"
     },
     {
       "name": "Five O'Clock",
       "description": "{highlight}Tea Table (Active|Toggle): The next Healing Brew heals all heroes within range (18 seconds){/highlight}",
       "image": "storm_ui_icon_lili_healingbrew.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "This one is an alternative version of Two for one but more focused on stacking the cups"
     }
   ],
   "7": [
@@ -110,7 +119,8 @@
       "name": "Mass Vortex",
       "description": "{highlight}Every Time Li Li hit all Blinding Wind Targets makes her next cast hit one more target also increasing Li Li spell power by 10% each stack for 4 seconds, not hitting all targets reset the bonus{/highlight}",
       "image": "storm_ui_icon_lili_blindingwind.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Now this is a thing i got the idea from the Lucio level 1 i changed on resetting stacks, this talent always felt kinda weak and i wanted it to be stronger but not about necessarily about the damage and on that way i could say it makes the talent fair holds the nature of having more surging winds hits and could be a good entry for higher skill ceiling talents while not being so hard."
     },
     {
       "name": "Don't Stop, We Need Adventure!",
@@ -119,7 +129,8 @@
         "{highlight}Fast feet increase cloud serpent refresh rate an additional 50%{/highlight}"
       ],
       "image": "storm_ui_icon_lili_cloudserpent.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "This new cleanse for Li Li is more user-friendly, balancing effectiveness with accessibility for new players. It's designed to be practical without being overly complex."
     }
   ],
   "10": [
@@ -143,7 +154,8 @@
       "name": "Gale Force",
       "description": "{highlight}Li Li basic attacks againt blinded heroes increases the blind duration by 0.25 and bounces to the closest hero if the hero is also blinded the attack bounces again.{/highlight}",
       "image": "talent1.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "On this talent i wanted to give a more funny interaction with Mass Vortex..Initially i wanted to reduce it's cooldown by hitting blinded targets but that could become recursive by hitting blind targets you blind them..kinda off..For that instance i wanted to give a bigger meaning on blinding targets by also making it work with other blind synergies like Johanna Shield Glare and Cassia Blinding Light and making the blind stronger overall."
     },
     {
       "name": "Lightning Serpent",
@@ -164,7 +176,8 @@
         "{highlight}Passive: Fast feet increases Li Li health regeneration by 400%{/highlight}"
       ],
       "image": "storm_ui_icon_lili_fastfeet.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Nerfing it would be necessary for the new Healing Brew not become problematic as more ability refresh rate could become too strong when you can share it with other heroes. Health regeneration bonus could combo with more survavibility which is the main talent effect BUT i really don't know how much bonus health regen would be good as you could also give it to other heroes..imagine sharing health regen with Dehaka Tissue Regeneration? Character would have 2 seconds of 160 health regen."
     },
     {
       "name": "Pick Me Up",
@@ -197,7 +210,8 @@
       "name": "Tea Bagging",
       "description": "{highlight}Decrease the cups needed for Li Li to collect to 2{/highlight}",
       "image": "talent1.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "With the Shake it Off change i had to add a new talent to that tier and it's hard to add talents for a character that should be simple most of the time BUT with the new mechanic created on Healing Brew that's not impossible, decreasing Healing Brew cups needed for the bonus activation would be a game changer as you could abuse more eazier with all the talents that help Li Li stacks cups more eazily."
     }
   ]
 }

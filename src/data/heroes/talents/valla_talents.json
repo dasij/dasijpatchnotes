@@ -48,7 +48,8 @@
       "name": "Hatred (T)",
       "description": "Basic Attacks grant a stack of Hatred, up to 10. Each Hatred stack increases Basic Attack damage by 8% and Movement Speed by 1%. Lasts 6 seconds.{highlight}If there's no allied heroes close to Valla she will receive extra 150% health regeneration {/highlight}",
       "image": "valla_hatred.png",
-      "abilityChanged": true
+      "abilityChanged": true,
+      "developerCommentary": "This is not made with balance purposes but rather the concept of her preference to work alone."
     }
   },
   "1": [
@@ -56,14 +57,19 @@
       "name": "Steady Aim",
       "description": "{highlight}If there are no enemy heroes within 5 range from Valla she deals extra 10% damage. At 10 maximum stacks of Hatred increase Valla Basic Attack Range by 10%.{/highlight}",
       "image": "valla_hatred.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "This is intended to bring changes to Vengeance AND more interactivity with the bonus range.",
+      "subtexts": [
+        "This converts into 0.55 range, Valla attack range will be 5.5 + 0.55 | Tyrande has 6 range"
+      ]
     },
     {
       "name": "Hot Pursuit",
       "description": "{highlight}Valla's Hatred reaches maximum stacks on takedown participation. At 10 stacks, additional takedowns grant 5% movement speed and 10% attack speed bonuses to current Hatred stacks until expiration, stacks up to 5 times{/highlight}",
       "passives": ["{highlight}Skills now reset Hatred duration.{/highlight}"],
       "image": "valla_hatred.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Creed always felt good but in this case i am making the choice to change it for a more teamfight based because i just find it more fun.Inspired by Jinx passive 'Get Excited!' from League of Legends."
     },
     {
       "name": "Fire Support",
@@ -72,7 +78,11 @@
         "{highlight}Each stack of Hatred increase Valla mana regeneration by 20%.{/highlight}"
       ],
       "image": "valla_hatred.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "As mentioned one of my objective is to relate Valla mage path mixed with Auto Attacking.",
+      "subtexts": [
+        "Radius will be 2.0 same as Victuals"
+      ]
     }
   ],
   "4": [
@@ -80,19 +90,31 @@
       "name": "Entangling Shot",
       "description": "{highlight}Hungering arrow now bounce only 1 time prioritizing other enemy heroes, the bounce speed will be increased by 400%. If it hits a second target it will slightly pull both targets towards the center of the hit.{/highlight}",
       "image": "valla_hungeringarrow.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I always liked the concept of Entangling Shot from Diablo 3 and i want to bring a variety of options on how you want that to perform. I got also inspired by Dota 2 Windranger to upt it here",
+      "subtexts": [
+        "Pull duration: 0.21875 that's half of Chains of Kel'Thuzad",
+        "Pull speed: 11 that's half of Chains of Kel'Thuzad"
+      ]
     },
     {
       "name": "Bolas",
       "description": "{highlight}Hungering arrow first hit will wrap an explosive bola on the first enemy hit. After 1.25 seconds that bola will explode dealing 140 damage and knockbacking close enemies{/highlight}",
       "image": "valla_hungeringarrow.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "This is a variation on Hungering Shot to how you want to control it.",
+      "subtexts": [
+        "Radius will be 2.5 | Victuals is 2.0",
+        "Knockback duration: 0.25 same Brushstalker",
+        "Knockback speed: 10 same from Brushstalker"
+      ]
     },
     {
       "name": "Repeating Arrow",
       "description": "Vault no longer has a Mana cost. Casting Vault resets the cooldown of Hungering Arrow. {highlight}Hungering arrow deals 150% extra damage to Mercenaries and Monsters and instantly kill troops.{/highlight}",
       "image": "valla_hungeringarrow.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "By removing Composite Arrows the value of Monster Hunter is decreased and with the intent to prevent the combo talent pick Arsenal im mixing both"
     }
   ],
   "7": [
@@ -101,19 +123,25 @@
       "description": "Increase Vaults Basic Attack damage bonus from 6% to 15% per stack of Hatred. If this attack kills its victim within 1.5 seconds, the Mana cost and cooldown of Vault are refunded. {highlight}Instantly kill troops{/highlight}",
       "passives": ["Reduce the cooldown of Vault by 5 seconds."],
       "image": "valla_vault.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Giving it the ability to instantly kill troops to further incentivize troops reset mid-fight"
     },
     {
       "name": "Smoke Screen",
       "description": "{highlight}Becomes invisible during Vault and 0.25 seconds after{/highlight}",
       "image": "valla_vault.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I saw that and i kinda liked as invisible is kinda weaker on Heroes of the Storm i don't see a great problem with that thus Vault being really quick. I tried to compare it with Vayne from League of Legends and Kai'sa so by making that invisible reveable with damage it's little weaker."
     },
     {
       "name": "Caltrops",
       "description": "{highlight}Drop 3 Caltrops while Vaulting that deal 60 damage and Slow enemies by 20% for 1 second. Enemy hero hits by caltrops decrease Vault cooldown by 3.5 seconds{/highlight}",
       "image": "valla_vault.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "A second defensive option for Vault intended to bring the talent from level 20 that in my opinion doesn't quite make the effect for a storm tier talent.",
+      "subtexts": [
+        "Duration will be 6 seconds. Caltrops is 10 seconds."
+      ]
     }
   ],
   "10": [
@@ -140,7 +168,8 @@
       "description": "Multishot heals for {highlight}4%{/highlight} of Valla maximum health per enemy hero hit{highlight} and slows them for 25% for 2.5 seconds.{/highlight}",
       "passives": ["{highlight}Increases Multishot range by 25%{/highlight}"],
       "image": "valla_multishot.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I didn't want to remove Tempered by Discipline complete effect so with that in mind i wanted to bring something to make it differs from the other talents. It will work close to how Ancestral Strength works"
     },
     {
       "name": "Tempered by Discipline",
@@ -161,14 +190,23 @@
       "name": "Arsenal",
       "description": "{highlight}Grenades damage reduce targets armor by 10 for 3 seconds. Multiple grenade hits armor reduction stacks. If Valla hits an close enemy hero with Multishot she will dash a short distance backwards.{/highlight}",
       "image": "valla_multishot.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I wanted to make Arsenal self-sufficient",
+      "subtexts": [
+        "A Hero can be hit by any of the grenades more than once now.",
+        "Will have the same range even if Tempered by Discipline is not picked",
+        "Multishot has a 3.0 initial and a 8.75 maximum radius on 50º degrees the effect will activated if an enemy hero is hit between the 3.0 and 4.5 radius.",
+        "Knockback duration: 0.15 same Brushstalker",
+        "Knockback speed: 35 | Brushstalker is 10. The objective is to achieve the same Concussive Blast knockback distance on a faster time"
+      ]
     },
     {
       "name": "Awaraness",
       "description": "{highlight}Maintaining maximum Hatred stacks for 5 seconds grants Valla Awareness. When Awareness is active, the next instance of fatal damage is prevented, healing Valla for 30% of her maximum Health, cleansing her from negative effects and making her invisible for 2 seconds.{/highlight}",
       "cooldown": "65s",
       "image": "valla_hatred.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "My intent was to bring it as a revive talent for Valla since it's based on her passive skills from Diablo 3 but i like to make every revive distinct in it's own manners with tha mind i tied her revive to her passive making it a weaker but not necessarily bad."
     },
     {
       "name": "Manticore",
@@ -191,7 +229,8 @@
         "{highlight}Valla deals 20% additional damage to enemies above 75% health.{/highlight}"
       ],
       "image": "valla_rainofvengeance.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I wanted to bring the extra attack speed to it's own niche and with that i swapped the attack speed with the Ambush effect from her Diablo 3 passive skills"
     },
     {
       "name": "Acrobat",
@@ -203,7 +242,13 @@
       "name": "Vengeance",
       "description": "{highlight}When an allied Hero is killed, Valla reveals the enemy Hero responsible for 5 seconds. During this time, Valla gains 25% increased attack range and damage against the revealed Hero. She will also be untargeatable to him{/highlight}",
       "image": "valla_hatred.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "There's no secrets here just Vengeance for murky deaths.",
+      "subtexts": [
+        "This effect will only be counted against the hero who had the last hit.",
+        "If the Boss killed the allied hero Valla will receive the bonus against it",
+        "This effect stacks, be careful Li-Ming"
+      ]
     }
   ]
 }

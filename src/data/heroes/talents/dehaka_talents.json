@@ -60,7 +60,10 @@
         "{highlight}Dehaka gets 0.5% bigger for every 50 essence collected up to 25%{/highlight}"
       ],
       "image": "dehaka_evolve_mutation.webp",
-      "talentChanged": true
+      "talentChanged": true,
+      "subtexts": [
+        "The objective here is mean't to be Kaiju based similar to how he is portrayed on the coop missions from SC2"
+      ]
     },
     {
       "name": "Tissue Regeneration",
@@ -86,7 +89,8 @@
       "name": "One-Who-Collects",
       "description": "Increases Essence collected from Minions by 50%. Dark Swarm deals 40% more damage to Mercenaries. {highlight}Exceeding essence will be automatically used by Dehaka{/highlight}",
       "image": "dehaka_essencecollection.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I wanted to make it more competitive with the other talents but on other way without going for numerical changes"
     },
     {
       "name": "Hero Stalker",
@@ -106,13 +110,19 @@
       "name": "Devour",
       "description": "{highlight}Drag against troops or non-boss mercenaries will turn them unkillable during the drag duration and will grab enemies around the target. After that duration it will instantly kill the primary target{/highlight}",
       "image": "dehaka_drag_var1.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "subtexts": [
+        "I wanted to make a playmaking tool for Drag but didn't want it to be eazily abused so i made a level 7 spike for that type of talent mixing two talents i wanted to create."
+      ]
     },
     {
       "name": "Symbiosis",
       "description": "Every time Dark Swarm damages an enemy Hero, reduce its cooldown by 0.4 seconds. {highlight}Every time Dark Swarm hits an enemy hero it also extends Brushstalker duration by 0.5 second if it's active{/highlight}",
       "image": "dehaka_trample.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "subtexts": [
+        "This change is made to make 2º option talent for picking <vanilla, talents, 13, 0> without the need of <vanilla, talents, 1, 2>"
+      ]
     }
   ],
   "10": [
@@ -130,10 +140,10 @@
       "image": "dehaka_intimidating_roar.webp",
       "talentChanged": true,
       "manaCost": "70 Mana",
-      "cooldown": "60s"
+      "cooldown": "60s",
+      "developerCommentary": "For me this feels like a strong talent rather than a ultimate and that's the most important WHY i am changing it"
     }
   ],
-
   "13": [
     {
       "name": "Ferocious Stalker",
@@ -145,13 +155,15 @@
       "name": "Primal Swarm",
       "description": "Dark Swarm causes enemies hit to lose 10 Armor for 0.75 seconds.{highlight}While active, it grants Dehaka 25 Spell Armor and extends its duration by 0.2 seconds per enemy hero hit.{/highlight}",
       "image": "dehaka_trample_a.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "With the removal of <vanilla, talents, 1, 0> and changes to <vanilla, talents, 10, 1> i am buffing changing that talent to cover it."
     },
     {
       "name": "Primal Rage",
       "description": "Gain 1.25% increased Attack Damage {highlight}and 0.4% slow for 1 second on basic attacks{/highlight} per Essence stored. ",
       "image": "dehaka_essencecollection.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Buffing it a little to make it more competitive with <vanilla, talents, 13, 0> while also covering the removal of <vanilla, talents, 20, 2>"
     }
   ],
   "16": [
@@ -172,7 +184,8 @@
       "name": "Apex Predator",
       "description": "Reduces Brushstalker's cooldown by {highlight}35{/highlight} seconds and the cast time by 0.5 seconds.",
       "image": "dehaka_brushstalker.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "by bringing <modified, talents, 16, 2> to level 16 this doesn't feel necessary anymore"
     }
   ],
   "20": [
@@ -186,21 +199,26 @@
       "name": "Survival Instinct",
       "description": "{highlight}Intimidating Roar will reduce enemy heroes armor by 25.{/highlight}",
       "image": "dehaka_intimidating_roar.webp",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "The area is enormous and that effect is strong combined with such a strong slow"
     },
     {
       "name": "Leap",
       "description": "{highlight}Leap to target location after 0.5 seconds, dealing 246 damage to enemies on landing also stunning them for 0.25.{/highlight}",
       "cooldown": "50 seconds",
       "image": "dehaka_leap.webp",
-      "talentChanged": true
+      "talentChanged": true,
+      "subtexts": [
+        "Even tho we could argue that it overlaps with <vanilla, talents, 10, 0, sonya> it's not something that would bother that much as it's not an ultimate powerhouse"
+      ]
     },
     {
       "name": "Scorching Breath",
       "description": "{highlight}Dehaka's fiery breath scorches the earth, creating a scorching area, dealing 50 damage every 0.5 seconds and reducing 50% healing on the area.The area lasts 4 seconds.{/highlight}",
       "cooldown": "20 seconds",
       "image": "dehaka_scorching_breath.webp",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Made level 20 a place where how you want to customize your kaiju so there's no place for a talent like this"
     }
   ]
 }

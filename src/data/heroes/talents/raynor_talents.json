@@ -23,7 +23,8 @@
         "name": "Drop Pod (?)",
         "description": "Activate to respawn at the targeted position instead of the halls of the storm dealing 200 damage on contact.",
         "image": "DropPod_SC2_Rend1.webp",
-        "abilityChanged": true
+        "abilityChanged": true,
+        "developerCommentary": "This change is made to have a better approach on the fantasy of a Terran Soldier with the Drop Pod."
       }
     ],
     "heroic": [
@@ -67,7 +68,8 @@
       "name": "Ace In The Hole",
       "description": "{highlight}Quest: Hitting Penetrating Round increases the slow by 5% up to 5 times. When at max stacks, increase Raynor's damage by 15%. Stacks are lost on miss. Increase Penetrating Round's slow duration by 2 seconds.{/highlight}",
       "image": "raynor_acardtoplay.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Ace In The Hole compete with Veteran Marksman on being a damage talent but on the safe way and with being sincere it's hard to compete with the fun on making DINGS DINGS with Veteran Marksman and besides i wanted to make this talent still be on the same direction but increasing it's output."
     }
   ],
   "4": [
@@ -82,13 +84,19 @@
       "description": "{highlight}Deploy a terran pod that deals 200 damage on contact with 3 marines and 1 medic that will go towards the closest lane to push.{/highlight}",
       "cooldown": "45s",
       "image": "DropPod_SC2_Rend1.webp",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "The intent here is to bring more of the leadership that Raynor has on the campaign of Starcraft 2 being a tool more focused on Macro or vision.",
+      "subtexts": [
+        "This units can grab experience globes",
+        "Shares Raynor Drop Pod talents"
+      ]
     },
     {
       "name": "Behemoth Armor",
       "description": "{highlight}Give 'Em Some Pepper heals 2% maximum health, doubled when the primary target is a Hero. Quest: Every time Give 'Em Some Pepper's primary target is a Hero, gain an additional 40 Health. After reaching 400 Health, each stack will now give 8 maximum Health instead. Loses the bonus Health on death.{/highlight}",
       "image": "raynor_hulkarmor.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I like both Fight or Flight and Behemoth Armor but i first dislike a second mission of infinite stacking and also i would say that both these quests synergise well and could aggregate."
     }
   ],
   "7": [
@@ -96,7 +104,8 @@
       "name": "Old Times",
       "description": "{highlight}Raynor always rides his Vulture. The first shot after dismounting deals 50% extra damage, and slows the target by 40% for 2 seconds.{/highlight}",
       "image": "Vulture_WoL.webp",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Mounted always felt kinda eeh and would only be picked on big numbers. I'm changing it for something that level 7 doesn't cover and giving a damage option instead of the utility/healing options."
     },
     {
       "name": "Fuel The Rush",
@@ -169,7 +178,13 @@
       ],
       "image": "raynor_acquireweakspot.png",
       "cooldown": "30s",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I first wanted to add a flashbang grenade for Raynor who would make a similar effect but bringing one of the most iconic moments of SC2 wings of liberty seems a better choice. Gameplay wise this is to be an optional talent against Mobile targets further make Raynor a good counter to them. And why change it from the original? It's because the results are somewhat similar to Rallying cry with the big difference being about killing high life targets but that doesn't mean you couldn't do it alredy with Rallying cry so im making it an more uility based rather than a direct option.",
+      "subtexts": [
+        "Cooldown 30 seconds.",
+        "Range 8 | Penetrating Round has 9.5 range.",
+        "Missile speed 24 | Sleep Dart has 24 missile speed"
+      ]
     }
   ],
   "20": [
@@ -181,7 +196,11 @@
       ],
       "cooldown": "20s",
       "image": "raynor_hyperion.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Hyperion by itself doesn't feel strong as we imagine coming from the Starcraft 2 perspective and it further diminishes this effect by using it as a Siege ultimate by having no control of the Yamato Cannon. Cavalry's Arrived current effect do not make Hyperion upgrade feel and act powerful but rather incentivize the ultimate spam.",
+      "subtexts": [
+        "3.0 radius | Disruption Pulse has 3.0 radius"
+      ]
     },
     {
       "name": "Dusk Wing",

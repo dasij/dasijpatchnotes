@@ -22,7 +22,8 @@
         "image": "sonya_whirlwind.png",
         "abilityChanged": true,
         "manaCost": "40 Fury",
-        "cooldown": "{highlight}4s{/highlight}"
+        "cooldown": "{highlight}4s{/highlight}",
+        "developerCommentary": "I removed any Whirlwind cooldown reduction from the build to not make funnel builds but i still think that could affect this style of gameplay that some players want to have by just go spamming it and having fun by becoming THE BEYBLADE."
       }
     ],
     "heroic": [
@@ -59,7 +60,8 @@
       "name": "Frenzy",
       "description": "{highlight}Every 10 Fury generated Sonya receives 1% attack speed up to 50% for 5 seconds. The effect refreshes with new stacks.{/highlight}",
       "image": "sonya_fury.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I don't really know how to balance that attack speed received to Fury generated but the idea is to make Sonya receives Attack Speed by generating Fury so by staying in combat she gets stronger."
     },
     {
       "name": "Tough As Nails",
@@ -87,6 +89,7 @@
       "description": "Activate to instantly restore {highlight}60% of the damage received in the last second{/highlight}. Stores up to 2 charges. Usable while Whirlwinding. Passive: Sonya deals 25% more damage to Mercenaries.",
       "image": "talent_mercenarylord.png",
       "talentChanged": true,
+      "developerCommentary": "I wanted to make this active more about how you use it instead of how you spam it.",
       "cooldown": "30s"
     }
   ],
@@ -107,7 +110,8 @@
       "name": "Stagger",
       "description": "{highlight}If Sonya receives 350 damage during a single Whirlwind her next Seismic Slam will stun the primary target for 0.75 seconds and secondary targets for 0.25 seconds.{/highlight}",
       "image": "sonya_seismicslam.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "This is a mix of two ideas i had that i found both cool and wanted a talent that could mix on between builds BUT i don't really know the numbers to balance this one."
     }
   ],
   "10": [
@@ -131,13 +135,15 @@
       "name": "Mystical Spear",
       "description": "Ancient Spear always pulls Sonya to the target location even if it doesn't hit an enemy. Ancient Spear's cooldown is reduced by {highlight}8 seconds{/highlight}{highlight} if it doesn't hit enemy heroes.{/highlight}",
       "image": "sonya_ancientspear.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I always liked Mystical Spear and want to bring MORE to it making it make Sonya play differently from normal..by making it also hit non-heroic units you could also use it to move better on fights and also better to make camps to maintain high Fury. With extra Range makes it eazier to missplay and hit a non-heroic unit."
     },
     {
       "name": "Ignore Pain",
       "description": "{highlight}For 0.75 seconds after using Whirlwind, Sonya reduces all incoming damage by 50% and cleanses Slows and Roots.{/highlight}",
       "image": "sonya_whirlwind.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I want to bring Ignore Pain on some way that is eazy to use but can be used on any build and also useful enough"
     },
     {
       "name": "No Escape",
@@ -157,13 +163,19 @@
       "name": "Ravage",
       "description": "{highlight}Sonya's Basic Attacks cleave and cause enemies to bleed for 40 damage over 4 seconds. While bleeding, enemy Heroes have 25% reduced healing.{/highlight}",
       "image": "sonya_fury.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I wanted to mix Cleave with Rend that for me are classic skills for Barbarians",
+      "subtexts": [
+        "The bleed stack infinitely",
+        "The cleave will work the same as Malthael and Leoric"
+      ]
     },
     {
       "name": "Nerves of Steel",
       "description": "Activate to gain 25% of your maximum Health as a Shield for 3 seconds. Usable while Whirlwinding. {highlight}This shield is increased to 60% if used while below 15% maximum Health.{/highlight}",
       "image": "sonya_nervesofsteel.png",
       "talentChanged": true,
+      "developerCommentary": "I want to increase the thematic of Barbarians fight near death.",
       "cooldown": "60s"
     }
   ],
@@ -178,19 +190,35 @@
       "name": "Striding Giant",
       "description": "{highlight}If Sonya takes a fatal hit while Wrath of the Berserker is active she becomes Unkillable for 3 seconds. During that time, allied Heroes cannot target Sonya.{/highlight}",
       "image": "sonya_wrathoftheberserker.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "It's supposed to be a low cooldown and not a super revive. I also didn't want to make it with Leap so it's harder to escape and i also want to make it harder for Sonya to abuse it by not letting allied heroes help her.",
+      "subtexts": [
+        "Happens on each Wrath of the Berserker.",
+        "If this is activated and you ult again while under it's effect the cooldown will be reset, so it's possible to stack that 2 times",
+        "Allied heroes can't interact with her but she can interact with them or vehicles"
+      ]
     },
     {
       "name": "Ruthless",
       "description": "{highlight}Whirlwind will deal extra damage based on your attack speed. Enemy Heroes hit by Whirlwind will have their Physical Armor reduced by 10, up to 40, for 4 seconds.{/highlight}",
       "image": "sonya_whirlwind.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "The concept is based on the idea of spinning faster, i like Garen, Juggernaught, Axe..I like spinning and faster spinning equals fun.",
+      "subtexts": [
+        "For every 1% will increase total Whirlwind damage by 1% by making Sonya spin faster similar to how Garen on league of legends work",
+        "The debuff will be refreshed with every hit"
+      ]
     },
     {
       "name": "Harpoon",
       "description": "{highlight}Reactivate Ancient Spear within 3 seconds of hitting an enemy Hero to pull them back to Sonya.{/highlight}",
       "image": "sonya_ancientspear.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Sonya is the perfect hero for that and no one can tell me otherwise. COME OVER HERE. Also this is useful against high mobility and is ok for a storm talent tier..",
+      "subtexts": [
+        "Enemy hero will move at the same speed of Sonya Ancient Spear",
+        "Enemy hero will be pulled at the closest position to Sonya"
+      ]
     }
   ]
 }

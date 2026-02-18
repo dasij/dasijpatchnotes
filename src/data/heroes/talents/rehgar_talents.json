@@ -41,7 +41,13 @@
         "image": "rehgar_shamanmastertraining.webp",
         "abilityChanged": true,
         "manaCost": "70 Mana",
-        "cooldown": "70s"
+        "cooldown": "70s",
+        "developerCommentary": "The idea here is to empower possibilities with Rehgar on the buff/debuff scenario and by making area bloodlust still be possible.",
+        "subtexts": [
+          "Radius is 9 | Combustion is 6.5",
+          "Cast range is 2.0 | Earthbind Totem cast range is 4.0",
+          "The totem is visual only"
+        ]
       }
     ],
     "trait": {
@@ -49,7 +55,8 @@
       "description": "{highlight}Picked on level 1{/highlight}",
       "image": "rehgar_purge.png",
       "abilityChanged": true,
-      "cooldown": "60s"
+      "cooldown": "60s",
+      "developerCommentary": "I want to bring Ghost Wolf as a talent to better be able to make more decisions on how i can control the trait and bring diversity on the utility section"
     }
   },
   "1": [
@@ -58,21 +65,24 @@
       "description": "When used on an allied Hero, make them Unstoppable for 0.5 seconds. When used on an enemy Hero, Slow them by 80%, decaying over 2 seconds.",
       "image": "rehgar_purge.png",
       "talentChanged": true,
-      "cooldown": "60s"
+      "cooldown": "60s",
+      "developerCommentary": "As mentioned on general i want to make it one of many options for utility shaman"
     },
     {
       "name": "Spirit link  (T)",
       "description": "{highlight}Use on an allied hero to share 25% of the damage received for 4 seconds.{/highlight}",
       "image": "rehgar_spiritlink.webp",
       "talentChanged": true,
-      "cooldown": "25s"
+      "cooldown": "25s",
+      "developerCommentary": "A classic one from shamans that i don't think many heroes could share the same mechanic"
     },
     {
       "name": "Bloodlust (T)",
       "description": "{highlight}Grants an allied Hero{/highlight} 40% Attack Speed and 35% Movement Speed and causes them to heal for 30% of the Basic Attack damage to their primary target. Lasts for 4 seconds.",
       "image": "rehgar_bloodlust.png",
       "talentChanged": true,
-      "cooldown": "30s"
+      "cooldown": "30s",
+      "developerCommentary": "Bloodlust can't be leveled up as a Strong ultimate without it being either kinda meh or absurdly strong on my vision for that i would prefer to make a baseline skill that can also increase the utility Rehgar could give to the team"
     }
   ],
   "4": [
@@ -80,7 +90,8 @@
       "name": "Bloodlust Empowerment",
       "description": "{highlight}Rehgar will receive Bloodlust when casting Lightning Shield.{/highlight}",
       "image": "rehgar_lightningshield.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "This is intended for people who are stressed out and needs to bite the enemies with high intensity"
     },
     {
       "name": "Electric Charge",
@@ -92,7 +103,8 @@
       "name": "Elemental Totem Empowerment",
       "description": "{highlight}Rehgar elemental totems will receive Lightning Shield.{/highlight}",
       "image": "rehgar_lightningshield.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Bringing the old problematic talent back as i am changing the entire Rehgar"
     }
   ],
   "7": [
@@ -101,27 +113,39 @@
       "description": "{highlight}Reactivate earthbind totem to create a water totem that every 2 seconds, will cast Chain Heal at the nearest allied Hero with the lowest Health. This Chain Heal heals for 35% of its normal amount. Also increase allied heros healing received by 25%.{/highlight}",
       "image": "rehgar_earthbindtotem.png",
       "talentChanged": true,
-      "health": "180",
-      "radius": "6.5",
-      "range": "2.5"
+      "developerCommentary": "I wanted to change the totems for them to become closer to the elemental style that normally shamans represent and with i used the reactivation on the totem to make it perform close to the original source but making different things and also the water totem is one of three talents but is inteded to boost the healing ",
+      "subtexts": [
+        "Totem has 180 health | Earthbind Totem has 260 health",
+        "Totem has 6.5 radius | Earthbind Totem has 3.5 radius and 5.25 with Colossal Totem",
+        "2.5 range | Earthbind Totem has 4.0 range and Earthgrasp Totem increase the range to 5.75",
+        "It starts perfoming the effect"
+      ]
     },
     {
       "name": "Fire Totem",
       "description": "{highlight}Reactivate earthbind totem to create a fire totem that will debuff enemies on area every 2 seconds reducing their Attack speed and spell power by 25% for 2 seconds. lasts 6 seconds{/highlight}.",
       "image": "rehgar_earthbindtotem.png",
       "talentChanged": true,
-      "health": "260",
-      "radius": "4",
-      "range": "7.0"
+      "developerCommentary": "Renaming the talent and making it closer to what he was but being another totem means it won't have the slow",
+      "subtexts": [
+        "Totem has 260 health | Earthbind Totem has 260 health",
+        "Totem has 4 radius | Earthbind Totem has 3.5 radius and 5.25 with Colossal Totem",
+        "7.0 range | Earthbind Totem has 4.0 range and Earthgrasp Totem increase the range to 5.75",
+        "It starts perfoming the effect"
+      ]
     },
     {
       "name": "Air Totem",
       "description": "{highlight}Reactivate earthbind totem to create a air totem that every 2 seconds, will pull the closes enemy hero nearby.{/highlight}",
       "image": "rehgar_earthbindtotem.png",
       "talentChanged": true,
-      "health": "390",
-      "radius": "2",
-      "range": "10.0"
+      "developerCommentary": "This is supposed to be the controller option. It was first intended to be a knockback similar to emerald wind but it would be too small and harder to make effective. One target is enough.",
+      "subtexts": [
+        "Totem has 390 health | Earthbind Totem has 260 health",
+        "Totem has 2.5 radius | Earthbind Totem has 3.5 radius and 5.25 with Colossal Totem",
+        "10.0 range | Earthbind Totem has 4.0 range and Earthgrasp Totem increase the range to 5.75",
+        "It starts perfoming the effect"
+      ]
     }
   ],
   "10": [
@@ -149,19 +173,22 @@
       "name": "Spirit waves",
       "description": "{highlight}Chain Heal will grant allied heroes unkillable for 1 second and will have its number of bounces increased by 2.{/highlight}",
       "image": "rehgar_chainheal.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "As i said before i want to reduce the Rehgar potentital as a pure healer and upping the potential as a utility healer"
     },
     {
       "name": "Earth Shield",
       "description": "Lightning Shield gives Heroes a Shield that absorbs damage equal to 14% of their maximum Health for 3 seconds. {highlight}If the shield is destroyed it renews the Lightning Shield duration and increases its size by 25%.{/highlight}",
       "image": "rehgar_lightningshield.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Earth shield is alredy a good talent but it's hard to buff it for numerical reasons so i am bringing it a IF so it could be eazier changed"
     },
     {
       "name": "Feral Heart",
       "description": "{highlight}Ghost Wolf's Movement Speed bonus is increased to 30%. Ghost Wolf attacks against Heroes deal an additional 4% of the target's maximum Health and casts Lightning Shield on Rehgar.{/highlight}",
       "image": "rehgar_ghostwolf.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "This is the habilitation card for every Rehgar maniacs outthere that wants to perform the hunt"
     }
   ],
   "16": [
@@ -181,7 +208,8 @@
       "name": "Wind heal",
       "description": "Chain Heal empowers the next allied hero basic attacks making it hit twice.",
       "image": "rehgar_chainheal.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Taking inspiration on the windfury segment from Shamans from WoW but making it perform different from what Thrall Windfury is"
     }
   ],
   "20": [
@@ -189,25 +217,45 @@
       "name": "Farseer's Blessing",
       "description": "{highlight}Ancestral Healing is cast a second time on the same target after 2.5 seconds and both healings are now a Perfect Heal meaning it can't be reduced.{/highlight}",
       "image": "rehgar_ancestralhealing.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Farseer's Blessing is one of the strongest game ultimate upgrades by a long distance with the teamfight comeback potential BUT it's hard to balance as Rehgar alredy have a strong Base Kit. What i want to implement with this change is to make that more about making it optimal on certain situations rather than an all around pick.",
+      "subtexts": [
+        "This means even Ana grenade can't cut the healing anymore"
+      ]
     },
     {
       "name": "Shamanic Master Training",
       "description": "{highlight}Increase the totem range by 35% and increase the number of reactivations to 2.{/highlight}",
       "image": "rehgar_shamanmastertraining.webp",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I found this to be enough to be a fair upgrade ult that could be extremely powerful in some situations or even for specific traits",
+      "subtexts": [
+        "Current radius is 9.0 i want to increase it to 12 but i don't know how to math"
+      ]
     },
     {
       "name": "Totemic Mastery",
       "description": "{highlight}Your elemental totems will now last indefinitely and will have 100% increased health points. You will also be able to use all the elemental totems.{/highlight}",
       "image": "rehgar_earthbindtotem.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "One of the things shamans are famous for are the usage of totems so i wanted to expand that futher beyong on a way that could be skill expression.",
+      "subtexts": [
+        "Elemental totems are the Earthbind Totem , Fire Totem , Water Totem and Air Totem",
+        "The other two totems you didn't pick on level 7 now will be new actives for Rehgar. So if you picked Water Totem it will be bound as an reactivate skill but the other two totems will be new actives within 15 seconds cooldown each."
+      ]
     },
     {
       "name": "Pit Fighter",
       "description": "{highlight}When there's no nearby allied heroes close to Rehgar he receives 30 armor, increased 25% basic attack damage and spell power.{/highlight}",
       "image": "rehgar.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Rehgar was on of the best arena fighters out there and i see arenas as omega 1v1 situations.",
+      "passives": [
+        "Receives cleanse when for 0.5 seconds when entering and exiting ghost form."
+      ],
+      "subtexts": [
+        "Radius: 9"
+      ]
     }
   ]
 }

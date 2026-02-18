@@ -15,7 +15,8 @@
         "image": "necromancer_cursedstrikes_off.png",
         "abilityChanged": true,
         "manaCost": "50 Mana",
-        "cooldown": "16s"
+        "cooldown": "16s",
+        "developerCommentary": "The objective here is to make Cursed Strikes less frustating to use if you don't go for melee talents."
       },
       {
         "name": "Bone Prison (E)",
@@ -55,7 +56,8 @@
       "name": "Raise Skeleton (T)",
       "description": "When a nearby enemy Minion dies, it becomes a Skeletal Warrior with 240 Health that attacks for 21 damage and lasts up to 12 seconds. Upon death, Skeletal Warriors deal 40 damage to nearby enemies.  Up to 3 Skeletal Warriors can be active at once when spawned in this way.{highlight} Quest: Spawn 80 Skeletal Warriors. Reward: While fixating on an enemy, Skeletal Warriors gain 25% Movement and Attack Speed.{/highlight}",
       "image": "necromancer_raiseskeleton.png",
-      "abilityChanged": true
+      "abilityChanged": true,
+      "developerCommentary": "I am popping talents to deal with summoners on different characters and for this reason i don't want to fear them but rather go further on that concept."
     }
   },
   "1": [
@@ -83,19 +85,31 @@
       "name": "Skeleton Champion",
       "description": "{highlight}Combine close Skeletal Warriors summons into a single, powerful unit. Each skeleton increases the unit's stats by 50%, extends duration, and stacks on-hit effects.{/highlight}",
       "image": "necromancer_raiseskeleton.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "In essence it's a way to bypass the Raise Skeleton summon limit while not making hordes of skeletons",
+      "subtexts": [
+        "Accumulated skeletons DOESN'T COUNT to the skeleton limit.",
+        "The stats will be health, damage, explosion damage and size",
+        "The on-hit effects means that if three Skeletal Warrior stacked his hit will count as if it hit three times the same target.",
+        "This will be prioritized before the Raise Skeleton limit so if you summon a 4th skeleton it will first check that talent before destroying a skeleton",
+        "The check area will be 6.5 same as Combustion",
+        "Better details: Every time a Skeleton would be born it will first check if there's another skeletal warrior on the area if there is a skeleton alive instead of being summoned he will buff the alive skeletal",
+        "Example: If Xul kills a minion wave instead of having 7 skeletons(that will be subsequentially killing each of other based on the limit of 3) he will summon 1 big skeleton with 200% more status"
+      ]
     },
     {
       "name": "Trag'Oul's Essence",
       "description": "Every time a Skeletal Warrior attacks an enemy, restore 0.5% of Xul's maximum Health and 0.2% of his maximum Mana.",
       "image": "necromancer_raiseskeleton.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "It's now the Raise Skeleton competition"
     },
     {
       "name": "Jailors",
       "description": "Bone Prison spawns 2 Skeletal Warriors. These do not count towards Xul's Raise Skeleton maximum. {highlight}Skeletal warrior hits against enemy heroes slow them by 5% for 3 seconds stacking up to 6 times{/highlight}",
       "image": "necromancer_raiseskeleton.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "With the removal of the quest to better balance all the talents from this level i bring the Backlash effect to balance out."
     }
   ],
   "7": [
@@ -106,13 +120,20 @@
       "talentChanged": true,
       "passives": [
         "{highlight}Every time Xul is healed he receives 2.5% attack speed for 3 seconds up to 75%{/highlight}"
-      ]
+      ],
+      "developerCommentary": "I made the core part of the Cursed Strikes build both on this talent and baseline BUT didn't made it on a commitment."
     },
     {
       "name": "Dim Vision",
       "description": "{highlight}Bone Prison reduces the target's vision radius by 25% and restricts them to their own vision only for 2.0 seconds.{/highlight}",
       "image": "necromancer_boneprison.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I wanted to change the Deadly Reach effect into something different and that's it. I tried to balance the talent the better i could see it between being viable and not being detrimental.",
+      "subtexts": [
+        "This effect cannot be cleansed.",
+        "The affected hero loses access to allied vision but allies can still see through their vision.",
+        "During this time, the target can only see what's within their own reduced vision radius."
+      ]
     },
     {
       "name": "Wall Of Bones",
@@ -147,7 +168,8 @@
       "talentChanged": true,
       "passives": [
         "{highlight}Reduces Spectral Scythe cooldown by 2 seconds and mana cost by 15{/highlight}"
-      ]
+      ],
+      "developerCommentary": "With the changes of other Spectral Scythe position on the talent tree this talent could get a little stronger"
     },
     {
       "name": "Decrepify",
@@ -156,13 +178,15 @@
       "talentChanged": true,
       "passives": [
         "{highlight}Increase Spectral Scythe size by 25%{/highlight}"
-      ]
+      ],
+      "developerCommentary": "I was looking into the Diablo 2 skill tree and i saw lower resistence and decrepify effects and i wanted to go a little closer to its original concept of decrepify but with Weaken damage reduction and some other slow talents i prefer to hold onto only the physical armor reduction."
     },
     {
       "name": "Mortal Wound",
       "description": "Enemy Heroes hit by Spectral Scythe receive {highlight}50%{/highlight} less healing for 4 seconds.",
       "image": "necromancer_reap.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Bringing this talent to level 13 with a little nerfs. This talent won't be so strong as before without Amplify Damage possibility so it's alredy a big nerf."
     }
   ],
   "16": [
@@ -170,7 +194,8 @@
       "name": "Skeletal Mastery",
       "description": "{highlight}Receive all level 4 talents{/highlight}",
       "image": "necromancer_raiseskeleton.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I saw my Skeleton Champion and i wanted to make his super version and that's it."
     },
     {
       "name": "Weaken",
@@ -183,7 +208,11 @@
       "description": "Deal 230 damage to enemies in a line. {highlight}Hitting an enemy hero currently affected by Bone Prison will destroy Bone Spear reducing the target armor by 25 for 2 seconds and rooting close heroes for 1 second.{/highlight}",
       "image": "necromancer_bonespear.png",
       "talentChanged": true,
-      "cooldown": "12s"
+      "developerCommentary": "I wanted to buff it somehow. Made it more flexible and predictable but stronger.",
+      "cooldown": "12s",
+      "subtexts": [
+        "Root area will be 3.0 same as Thunder Clap"
+      ]
     }
   ],
   "20": [
@@ -200,6 +229,10 @@
       "talentChanged": true,
       "passives": [
         "{highlight}Receive the other two level 13 talents you didn't pick with 50% efficiency.{/highlight}"
+      ],
+      "developerCommentary": "I wanted to increase the effectiviness of that talent BUT i didn't want to directly buff the current effects as they could become something 'not cool'. With that in mind i want bring those talents from 13 to suit the current effect. If this talent comes to be overpowered i would bring something like Epiphany with the reduced effectiviness of those talents.",
+      "subtexts": [
+        "Echoes of Death will still create two scythes"
       ]
     },
     {
@@ -207,7 +240,14 @@
       "description": "{highlight}Xul creates an area that controls life that lasts 10 seconds. Every allied hero that dies within this area will be reanimated restoring 100% of their maximum health but losing 6.25% of their maximum health every 0.25 seconds while on reanimated state.{/highlight}",
       "cooldown": "120 seconds",
       "image": "rathma_dominion.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "subtexts": [
+        "The reanimation will take effect after every death effect, so it will only revive Uther after his Eternal Devotion expires and will activate his passive again after his reanimated form dies.",
+        "Area of effect will be 7.0 | Combustion is 6.5",
+        "Their respawn timers will be active while they are reanimated",
+        "Their soul will only be available after they reanimation ends. This is a interaction with Resurrect and Ritual of Ruin",
+        "They will only be reanimated if they die on the area and will be reanimated on the exact same position"
+      ]
     },
     {
       "name": "Kalan's Edict",

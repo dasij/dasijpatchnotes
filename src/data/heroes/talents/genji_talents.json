@@ -7,7 +7,8 @@
         "image": "genji_shurikens.png",
         "abilityChanged": true,
         "manaCost": "20 Mana",
-        "cooldown": "12s"
+        "cooldown": "12s",
+        "developerCommentary": ""
       },
       {
         "name": "Deflect (W)",
@@ -60,19 +61,26 @@
       "talentChanged": true,
       "passives": [
         "Genji dodges 1 Heroic Basic Attack every {highlight}8{/highlight} seconds."
-      ]
+      ],
+      "developerCommentary": "A individually strong talent but one who became toxic when paired with Pathfinder cooldown reduction. The objective here is to prevent talent combos that reset Cyber Agility. It's arguable an absurd talent on level 1 on the hands of people which know to play but Genji is also affected by his team as a character that provides almost no PVE help..what i mean is that this talent is fun but will only be abused on high elo lobbies which i don't mind as a rotation killer and also a talent with three different numeric effects can be number nerfed on three differente places."
     },
     {
       "name": "Swift as the Wind",
       "description": "{highlight}Cyber Agility can be recast two times within a period of 5 seconds. Genji becomes Unstopabble while jumping{/highlight}",
       "image": "genji_cyberagility.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I wanted to make this talent tier about Cyber Agility and for that reason my reasoning was to make something that could be more Dragonblade oriented and Cool ninja stuff as my objective is not just fill Genji gaps but rather give him more funny stuff to do."
     },
     {
       "name": "Pathfinder",
       "description": "Jumping over terrain with Cyber Agility increases Movement Speed by 25%, and grants Stealth, for 4 seconds. {highlight}While Stealth increases Cyber Agility refresh rate by 1000%{/highlight}",
       "image": "genji_cyberagility_a.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "With the changes on the other talents from that tier i want to bring that talent closer to rotation purposes but not so eazy to abuse the cooldown on teamfights by attaching it to Stealth. And besides this is NIN-NIN roleplay.",
+      "subtexts": [
+        "If i did math right, it's supposed to be a 2 second cooldown",
+        "Receiving Stealth from other sources will also increase the refresh rate"
+      ]
     }
   ],
   "4": [
@@ -80,7 +88,8 @@
       "name": "Strike At The Heart",
       "description": "Enemies hit by the end of Swift Strike take an additional 134 damage after 1 second. {highlight}Increase Swift Strike range by 1{/highlight}",
       "image": "genji_swiftstrike.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "As a talent that works for the tip i would argue that it could perform again like the old times."
     },
     {
       "name": "Dragon Claw",
@@ -92,7 +101,8 @@
       "name": "Sharpened Stars",
       "description": "Shuriken now pierce all enemies hit.",
       "image": "genji_shurikens.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "With the way i want to apply Genji the Shuriken reset would need to be baseline"
     }
   ],
   "7": [
@@ -112,7 +122,8 @@
       "name": "Reflect",
       "description": "Deflect also deals an additional 33% of the damage blocked.",
       "image": "genji_deflect.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Changing this tier to be about Deflect"
     }
   ],
   "10": [
@@ -158,7 +169,8 @@
       "name": "Dragon Steel",
       "description": "{highlight}Hitting an enemy hero with Swift Strike increase Genji movement speed by 30% and grants a 360 shield for 3 seconds.{/highlight}",
       "image": "genji_swiftstrike.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "The objective here is to make a safe option to this tier if you wish to go with a Dragonblade build on"
     },
     {
       "name": "Final Cut",
@@ -170,7 +182,8 @@
       "name": "Steady Blade",
       "description": "Each enemy Hero hit by Swift Strike increases the damage of the next Swift Strike by 30%. This bonus stacks up to 3 times. {highlight} Grants 0.25 seconds of unrevealable stealth for each stack. {/highlight}",
       "image": "genji_swiftstrike_a.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I want to give this talent an appeal without buffing the damage as it leads to conflicts with Final Cut as a stat damage competitor with that in mind i want to make it pickable for another reason."
     }
   ],
   "20": [
@@ -190,7 +203,11 @@
       "name": "Ninja Course",
       "description": "{highlight}Cyber Agility creates caltrops trap area where he lands that lasts 2.5 seconds and deals 65 damage per second on enemies in the area and reduces their armor by 5 for 4 seconds, up to 20{/highlight}",
       "image": "genji_cyberagility.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I really wanted to give either give smoke bomb or a caltrops ninja trap because Genji is a ninja and ninja things are cool. I wouldn't give him smoke bomb because i alredy implemented smoke bombs similars on Pathfinder and Steady Blade.",
+      "subtexts": [
+        "Radius is 2 | Malfurion Entangling Roots is 3.0"
+      ]
     },
     {
       "name": "Zanshin",

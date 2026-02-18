@@ -56,20 +56,23 @@
       "name": "Al'maiesh touch",
       "description": "{highlight}Hitting allied heros with Sacred Sweep (Q) center increase their movespeed by 30% for 2 seconds and fills Auriel energy bar by 10%{/highlight}",
       "image": "auriel_angelicsweep.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "As far i understand Al'maiesh is a tool that can be used as a weapon but can also be used to energize and give clarity to allies that enters in contact. For a talent named increase clarity this would make sense for allied heros wise and also when i think about that WHIP effect i remember about that https://wiki.teamfortress.com/wiki/Disciplinary_Action"
     },
     {
       "name": "Righteous Assault",
       "description": "{highlight}Enemies hit by the outer area of Sacred Sweep (Q) are pushed slightly toward the center. {/highlight}",
       "passives": ["{highlight} Increase it's size by 15%{/highlight}"],
       "image": "auriel_angelicsweep_b.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I mixed the current effect with <vanilla, talents, 13, 0> and changed it to bring the other talents from <modified, abilities, basic, 0> that  better perform on general situations"
     },
     {
       "name": "Blinding Flash",
       "description": "Enemies hit by the center area of Sacred Sweep are blinded for {highlight}1.5{/highlight} seconds {highlight} and reduces the cooldown of Sacred Sweep by 2 seconds {/highlight}",
       "image": "auriel_angelicsweep.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I like the idea of using <modified, abilities, basic, 0> to blind enemies hit it's a good option for situational talents"
     }
   ],
   "4": [
@@ -77,13 +80,15 @@
       "name": "Detainment STRIKE",
       "description": "{highlight}Detainment Strike (E) primary target collides with other enemy heros stunning and dealing damage to both on contact.{/highlight}",
       "image": "auriel_restrainingblow.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Pinball effect. With all seriousness this is to increase Auriel flexibility on open maps"
     },
     {
       "name": "Angiris Trial",
       "description": "{highlight}After hitting a target with Detainment Strike (E) you can reactivate within 1 second to pull the target to Auriel. This will place the target on a distance of 1 from Auriel{/highlight}",
       "image": "auriel_restrainingblow.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Making it a 2º option for open scenarios and also making it possible to make Detainment Strike an ever useful tool"
     },
     {
       "name": "Repeated Offense",
@@ -97,13 +102,16 @@
       "name": "Changing Hope",
       "description": "{highlight}When Auriel uses Bestow Hope (T) on an ally in Heroes of the Storm, the converted damage from that ally to other heroes is increased by 65% and to non-heroes by 30% for the first 2 seconds. Once Auriel changes the target of Bestow Hope (T) the previous bearer will have a 10 seconds cooldown of this effect{/highlight}",
       "image": "auriel_bestowhope.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "subtexts": ["Example: If auriel puts the mark on Valla for the first 2 seconds she will grant that extra energy and after 2 seconds the effect will work as normal. After changing the target from Valla to a Hogger the effect will enter on cooldown to be reactivated on Valla again. So only after 10 seconds of taking the selection off from Valla you can reactivate it again", "If Auriel rapidly changes target with the <modified, abilities, trait, 0> it will also count for the effect and will enter on cooldown."],
+      "developerCommentary": "I want to benefit somehow an Auriel Gameplay focused on changing the target she is using <modified, abilities, trait, 0> but more so changing it between the entire team rather than going back to the Carry"
     },
     {
       "name": "Searing Light",
       "description": "Ray of Heaven also deals damage to enemies in the area equal to 30% of the energy consumed. {highlight}Damaging 2 heroes with Ray of Heaven (W) refunds 40% of the energy{/highlight}",
       "image": "auriel_rayofheaven.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "This tier should be about energy control so i am changing that to be a plus"
     },
     {
       "name": "Empathic Link",
@@ -133,20 +141,24 @@
       "name": "Patient Angel",
       "description": "{highlight}After 3 seconds within max energy your next Ray of Heaven (W) grants 50% shield based on the healed amount that decays over 6 seconds.{/highlight}",
       "image": "auriel_rayofheaven.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "One thing Auriel is known for is her patience and i wanted to add a talent on that perspective"
     },
     {
       "name": "Hope Strike",
       "description": "{highlight}Activate to Pull the first allied hero it hits on a straight line. {/highlight}",
       "cooldown": "20 seconds",
       "image": "auriel_restrainingblow.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "subtexts": ["<modified, abilities, basic, 2> range is 6.0 | Hope Strike is 9.0 | <vanilla, abilities, trait, 0, anduin> is 10.0", "The pull will work similar to <vanilla, abilities, trait, 0, anduin> when hitting the target but won't cleanse the target while they are travelling, stuns and knockback after starting the animation will cancel the effect"],
+      "developerCommentary": "It would make sense for Auriel to use Al'maiesh as a saving tool that suits her character."
     },
     {
       "name": "Energized Cord",
       "description": "{highlight}Basic attacks reduces basic abilities cooldowns by 0.5 seconds{/highlight}",
       "image": "auriel_bestowhope_a.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I wanted to add something that relates to the basic attacks grants from the old effect with a selfish touch but that would require exposing yourself."
     }
   ],
   "16": [
@@ -154,7 +166,9 @@
       "name": "Hope to everyone",
       "description": "{highlight}Auriel shares all stat bonuses within the Bestow Hope (T) bearer. {/highlight}",
       "image": "auriel_bestowhope.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "subtexts": ["This means Auriel will receive all the bonuses from a <vanilla, abilities, heroic, 0, ana> but won't receive healing granted from <vanilla, abilities, trait, 0, dehaka> for example and on the same topic she would receive all the bonus health regeneration granted from the <vanilla, talents, 1, 1, dehaka>", "This is not buff stacking, if Auriel and the bearer are receiving the same Buff then only 1 instance will be counted. For example <vanilla, talents, 16, 0, varian>", "That sharing comes from both directions, if someone buff Auriel the bearer will receive the bonus and vice-versa"],
+      "developerCommentary": "I think that could lead to new ways of playing Auriel with extra utility heros or hyper carries. Imagine for example that a Auriel would share the bonus movement speed granted by <vanilla, abilities, trait, 0, valla> or <vanilla, abilities, trait, 0, cho> and drafting correctly could lead to some cool insanities made with Auriel"
     },
     {
       "name": "Will of Heaven",
@@ -174,19 +188,24 @@
       "name": "Angel of Hope",
       "description": "{highlight}After 5 seconds of ressurecting the primary target will perform another Resurrect (R) on area 5 seconds after on the initial target position.{/highlight}",
       "image": "auriel_resurrect.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "subtexts": ["The radius will be 5.0 | <vanilla, abilities, heroic, 1, blaze> is 6.5", "Example: If auriel <modified, abilities, heroic, 0> a Muradin..a second area <modified, abilities, heroic, 0> will be used on the position Muradin was ressurected bringing back all dead heroes close to that position.", "Auriel can <modified, abilities, heroic, 0> herself with the area <modified, abilities, heroic, 0>."],
+      "developerCommentary": "<vanilla, abilities, heroic, 0> is a hard skill to balance as it can eazily change the tides of battle, that's show in the Dota buyback, league of legends Akshan passive or either Hots with some Cho'gall gameplays. With that in mind i pursued something that could be broken as a level 20 but not necessarily eazy to perform so the OPness of the Ressurection could be justified."
     },
     {
       "name": "Diamond Resolve",
       "description": "{highlight}Upon expiration Crystal Aegis (R) will knockback enemies nearby and every hero hit will reduce it's cooldown by 17 seconds. {/highlight}",
       "image": "auriel_ribboncocoon.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "subtexts": ["Knockback speed 16.5 same as <vanilla, abilities, basic, 0, lucio>", "Knockback duration 0.35, <vanilla, abilities, basic, 0, lucio> is 0.25"],
+      "developerCommentary": "Instead of making a armor ultimate i want to make it dynamic by being a reliable Skill of protection on level 20 but more focused for Ranged heroes as the knockback could bother some melees in certain situations.The plan behind the 17 seconds is to be close to a full 60 seconds with 3 enemy heroes hit but not to reset the ultimate."
     },
     {
       "name": "Reservoir of Hope",
       "description": "{highlight}Auriel energy can now overcharge but all energy that goes beyond the limit will decay in under 4 seconds{/highlight}",
       "image": "auriel_rayofheaven.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Reservoir of Hope at the same time of being a fan favorite is also my worst nightmare when playing Auriel and that lies on the fact of being a late-game quest with infinite stacking rather than being a fast quest similar to Thrall Thunderstorm. With that in my mind i want to bring something similar and pushing it to level 20 as it get's a lot strong depending on the situation"
     },
     {
       "name": "Shield of Hope",

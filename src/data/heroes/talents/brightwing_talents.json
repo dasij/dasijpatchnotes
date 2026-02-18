@@ -7,7 +7,8 @@
         "image": "brightwing_arcaneflare.png",
         "abilityChanged": true,
         "manaCost": "35 Mana",
-        "cooldown": "6s"
+        "cooldown": "6s",
+        "developerCommentary": "I always liked the concept of receiving bonuses for hitting the center and i want to mix it with the anti-magic concept Brightwing has"
       },
       {
         "name": "Polymorph (W)",
@@ -15,7 +16,8 @@
         "image": "brightwing_polymorph.png",
         "abilityChanged": true,
         "manaCost": "50 Mana",
-        "cooldown": "12s"
+        "cooldown": "12s",
+        "developerCommentary": "Polymorph is one of the few skills on the game that i consider to be extremely toxic. That's come from the fact that it's a ranged point and click pseudo stun for a good amount of time and not a hard one for her to hit within the skill distance, the idea here is to make it more doable by removing the speed penalty"
       },
       {
         "name": "Blink Heal (E)",
@@ -23,14 +25,16 @@
         "image": "brightwing_blinkheal.png",
         "abilityChanged": true,
         "manaCost": "40 Mana",
-        "cooldown": "9s"
+        "cooldown": "9s",
+        "developerCommentary": "Blink Heal is something i would say that makes great part of the Fun Brightwing outplays i see and gives her the most control on her gameplay and i always felt it SHOULD be comboed with Emerald Wind even tho it would be extremely strong and with that in mind in also making it only be able to teleport on heroes so it better balance itself"
       },
       {
         "name": "Hyper Shift (Z)",
         "description": "After 2 seconds, teleport to an allied Hero and heal them for 25% of their maximum Health. {highlight} Reduces the cooldown by 0.35 with nearby enemy minion death {/highlight}",
         "image": "brightwing_hypershift.png",
         "abilityChanged": true,
-        "cooldown": "40s"
+        "cooldown": "40s",
+        "developerCommentary": "Hyper Shift is almost a baseline talent for Brightwing by giving her so much flexibility that increase her presence and flexibility to play. I think that's great and i want that to perform a base for what she is supposed to do even tho i think the original numbers were a kinda busted"
       }
     ],
     "heroic": [
@@ -40,7 +44,8 @@
         "image": "brightwing_counter_magic.webp",
         "abilityChanged": true,
         "manaCost": "40 Mana",
-        "cooldown": "30s"
+        "cooldown": "30s",
+        "developerCommentary": "One of the highlights of faerie dragons is the power to either absorb and redirect magic, i wanted to bring it to life"
       },
       {
         "name": "Emerald Wind (R)",
@@ -56,7 +61,8 @@
       "description": "Brightwing heals nearby allied Heroes for 110 every 4 seconds",
       "image": "brightwing_soothingmist.png",
       "abilityChanged": true,
-      "cooldown": "75s"
+      "cooldown": "75s",
+      "developerCommentary": "The decision here is to not let Brightwing become overtuned naturally this happens specially with the Blink Heal being a baseline skill."
     }
   },
   "1": [
@@ -64,13 +70,15 @@
       "name": "Peekaboo!",
       "description": "{highlight}Reduces Hyper Shift cooldown by 30 on takedowns and refresh Blink Heal charges.{/highlight}",
       "image": "brightwing_hypershift.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "This is for all my Brightwing fellows that love to destroy a happy 1v1 on the solo lane. I kinda hate you guys but i think it's part of yours kit to be such a nuisance being able to secure kills and fastily return to the team."
     },
     {
       "name": "Hyper Shift",
       "description": "Increase Phase Shift's healing by an additional 6% of the target's maximum Health. {highlight} Grants both target and brightwing a 335 shield for 4 seconds. {/highlight}",
       "image": "brightwing_hypershift.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "By bringing the cooldown reduction baseline now this talent was changed to be the ultimate save atalent"
     },
     {
       "name": "Pixie Charm",
@@ -78,8 +86,12 @@
       "passives": [
         "{highlight} Refreshs Hyper Shift cooldown when you capture a camp with one bribed unit{/highlight}"
       ],
+      "subtexts": [
+        "This is supposed to stack with other character bribes, if used the-lost-vikings bribe and Brightwing captures it the skill will reset"
+      ],
       "image": "talent_bribe.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "The objective is to make Pixie Charm not only a fun pick but also a competitive one"
     }
   ],
   "4": [
@@ -87,13 +99,15 @@
       "name": "Blink Speed",
       "description": "{highlight}Increase Blink Heal target movement speed by 20%.{/highlight}",
       "image": "brightwing_blinkheal.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "By removing Pixie Dust some of her cool parts would've be left behind so i am bringing them back like making someone a super sonic speed player"
     },
     {
       "name": "Magic Play",
       "description": "{highlight}Blink Heal will increase the target magic resistence to 75 for 0.5 seconds{/highlight}",
       "image": "brightwing_blinkheal.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "By removing Pixie Dust some of her cool parts would've be left behind so i am bringing them back like making someone almost immune to magic. But in this case i want to reward better timing with higher numbers."
     },
     {
       "name": "Magic Spit",
@@ -107,29 +121,41 @@
       "name": "Sticky Flare",
       "description": "Enemy Heroes hit by Arcane Flare have their Movement Speed Slowed by {highlight}30%{/highlight} decaying for 3 seconds. Increase the Slow to {highlight}60%{/highlight} if they are hit by the center portion.",
       "image": "brightwing_arcaneflare.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "With the removal of slow from Polymorph i see an opportunity to bring more value to this talent"
     },
     {
       "name": "Dream Shot",
       "description": "Increase Arcane Flare's range by 50%. Hitting a Hero with Arcane Flare's center reduces its cooldown to 2 seconds.",
       "image": "brightwing_arcaneflare.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Making this tier based on Arcane Flare"
     },
     {
       "name": "Faerie Shift",
       "description": "{highlight}Brightwing can reactivate Arcane Flare to teleport to the projectile current location{/highlight}",
+      "subtexts": [
+        "You will be able to use up to 0.25 seconds after the magic hits"
+      ],
       "image": "brightwing_arcaneflare.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Providing more tools for that Emerald Wind ultra playmaking youtuber HOTS wtf moments clip"
     }
   ],
   "10": [
     {
       "name": "Deflect Magic",
       "description": "{highlight}Brightwing stops and starts to absorb all magic damage and effects taken during the next 0.6 seconds after that redirects all magic damage and status effects backs to their casters and cleanses her negatives effects.{/highlight}",
+      "subtexts": [
+        "Cooldown: 30 seconds",
+        "Garrosh Wrecking ball or other disruption type skills won't have the disruption part returned as it won't be counted as status effects",
+        "Stitches gorge won't count"
+      ],
       "image": "brightwing_counter_magic.webp",
       "talentChanged": true,
       "manaCost": "40 Mana",
-      "cooldown": "30s"
+      "cooldown": "30s",
+      "developerCommentary": "One of the highlights of faerie dragons is the power to either absorb and redirect magic, i wanted to bring it to life"
     },
     {
       "name": "Emerald Wind",
@@ -145,21 +171,33 @@
       "name": "Critericize",
       "description": "{highlight}Brightwing can use Blink Heal on enemy heroes affected by Polymorph decreasing its armor by 25 by the duration and dealing 5% of the enemy max health as damage.{/highlight}",
       "image": "brightwing_blinkheal.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "To a skill that reduces the target armor on a point click ranged stun i think it needs some more interaction and so my objective is to bring that to the table."
     },
     {
       "name": "Emergency Mist",
       "description": "{highlight}Activate to remove all Stun, Root, Slow, and Silence effects from nearby allied Heroes.{/highlight}",
+      "subtexts": [
+        "cooldown is 45 seconds",
+        "It works exactly how it worked on the Trait with the only exception that it doesn't proc another Soothing Mist only the cleanse"
+      ],
       "cooldown": "45s",
       "image": "brightwing_soothingmist.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I want to bring Brightwing old cleanse as an talent because i liked how different her cleanse worked but also make it to be a choice with other two strong talents to compete with"
     },
     {
       "name": "Faerie Heal",
       "description": "{highlight}Activate to absorb 10% of all magic damage on a large radius around Brightwing for 5 seconds, after that heals all allied hero units for the same value.{/highlight}",
+      "subtexts": [
+        "cooldown: 45 seconds",
+        "The radius is 7.0 | Blaze combustion is 6.5",
+        "this include allied hero damage"
+      ],
       "cooldown": "45s",
       "image": "brightwing_soothingmist.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Wanted to highlight more the faerie dragons power to absorb magic"
     }
   ],
   "16": [
@@ -172,9 +210,14 @@
     {
       "name": "Mass Polymorph",
       "description": "{highlight}Activate to empower Polymorph and affect all enemy heroes around the primary target for the same duration.{/highlight}",
+      "subtexts": [
+        "Cooldown: 60 seconds",
+        "Area will be 3.0 same as Muradin Stormbolt"
+      ],
       "image": "brightwing_polymorph.png",
       "talentChanged": true,
-      "cooldown": "60s"
+      "cooldown": "60s",
+      "developerCommentary": "I just like the idea of polymorphing a bunch of targets with some exceptions and i find it funny to think on the interactions."
     },
     {
       "name": "Phase Out",
@@ -189,7 +232,8 @@
       "name": "Innate Magic Control",
       "description": "{highlight}Cooldown is refreshed after using Hyper Shift.{/highlight}",
       "image": "brightwing_counter_magic.webp",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "It's hard to buff that skill without it becoming toxic, so i made it toxic but on a way i like it and i think it's doable to hate it."
     },
     {
       "name": "Intensive Winds",
@@ -201,7 +245,8 @@
       "name": "Speedy Dragon",
       "description": "Permanently gain 20% Movement Speed. Reduce Phase Shift's cast time by 1 second.{highlight}Allow Brightwing to use Blink Heal on allied non-heroic units.{/highlight}",
       "image": "brightwing_hypershift.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I wanted to make it more interesting as i changed the Blink Heal for better balancing"
     },
 
     {

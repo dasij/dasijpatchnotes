@@ -30,7 +30,13 @@
         "description": "{highlight}Activate to choose an allied hero as an apprentice. If your choosen hero receives the MVP screen you will receive 20% extra XP for that match.{/highlight}.",
         "image": "apprentice.png",
         "abilityChanged": true,
-        "cooldown": "Until Gates Open"
+        "cooldown": "Until Gates Open",
+        "developerCommentary": "This is for some roleplay. It's mentioned specially on her debut video that she's looking for an apprentice.",
+        "subtexts": [
+          "X will be the hero selected",
+          "This skill must be used on the beginning of the game expiring after the gates open",
+          "You have only 1 charge"
+        ]
       }
     ],
     "heroic": [
@@ -70,7 +76,12 @@
       "name": "Trip Attack",
       "description": "{highlight}If Shield Glare hits an close enemy Hero, Johanna's next Basic Attack gains 0.5 range and stuns the target for 0.6 seconds, plus 0.15 seconds per additional Hero hit by Shield Glare.{/highlight}",
       "image": "johanna_shield_glare.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I wanted to bring other ways to perform with Shield Glare, i was looking for both ways to make it more effective at close or long range and i came to that idea.",
+      "subtexts": [
+        "Johanna Shield Glare radius is 12. The close range would be 2.0",
+        "The extra stun duration counts for every hit on any range"
+      ]
     },
     {
       "name": "Consecration",
@@ -79,6 +90,10 @@
       "talentChanged": true,
       "passives": [
         "{highlight}Quest: Every 5 Regeneration Globes gathered increase the healing received by 5%{/highlight}"
+      ],
+      "developerCommentary": "After looking a lot at the crusader skill tree for Diablo 3 i kinda liked the idea of giving her more utility skills to the team ",
+      "subtexts": [
+        "The area will be the exactly same size of the Shield Glare"
       ]
     }
   ],
@@ -97,7 +112,8 @@
       "passives": [
         "{highlight}Quest: Hit 4 or more Heroes at the same time with Punish{/highlight}",
         "{highlight}Reward: Basic attacks against marked targets grants Johanna 1 stack of 40 physical armor block.{/highlight}"
-      ]
+      ],
+      "developerCommentary": "I made this level about Punish and i also like the quest from Subdue and i see it as something that makes Johanna more fun overall"
     },
     {
       "name": "Laws of Valor",
@@ -107,6 +123,10 @@
       "passives": [
         "{highlight}Quest: Hit 4 or more Heroes at the same time with Punish{/highlight}",
         "{highlight}Reward: Johanna basic attacks against marked heroes also heals 1.25% of maximum health of nearby heroes{/highlight}"
+      ],
+      "developerCommentary": "I want my Crusader have the possibility for an utility tank similar to how Tyrael works as it's on the core values on the Diablo 3 being a support frontline.",
+      "subtexts": [
+        "Radius will be 6.5 same as Uther Benediction"
       ]
     }
   ],
@@ -116,7 +136,9 @@
       "description": "{highlight}Johanna redirects 65% of the damage taken to an allied hero to herself for 2 seconds being unable to act during that time.{/highlight}",
       "cooldown": "70 seconds",
       "image": "johanna_iron_skin.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I find that skill extremely suitable for the roleplay of a Crusader and besides this skill will be balance through the range of use as it could eazily render an hyper carry immortal.",
+      "subtexts": ["Cooldown: 70 seconds", "Range: 4"]
     },
     {
       "name": "Conviction",
@@ -133,7 +155,8 @@
       "passives": [
         "{highlight}While unhindered Johanna Mount kills minions on contact instantly.{/highlight}",
         "{highlight}While mounted Johanna restores 1% of her maximum health points per seconds increased to 5% while unhindered.{/highlight}"
-      ]
+      ],
+      "developerCommentary": "There's not much to say about it..i just wanted to make a stomping horse."
     }
   ],
   "10": [
@@ -159,13 +182,19 @@
       "name": "Shield Bash",
       "description": "{highlight}Increase Punish's damage by 50%. If you hit atleast 2 enemy heroes you can reactivate Punish dealing 125 damage and knock back enemy heroes. Increase Punish damage against shields by 300%{/highlight}",
       "image": "johanna_punish.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I wanted to bring somehow the shieldbash without using a direct stun",
+      "subtexts": [
+        "Knockback duration: 0.25 same Dehaka Drag",
+        "Knockback speed: 16.5 it's the same as Dehaka Drag"
+      ]
     },
     {
       "name": "Holy Fury",
       "description": "{highlight}Iron Skin can now be used while stunned or silenced. If used that way increases it's shield by 50% and deal 60 damage in area per second while it's active, increase the damage by 100% against shield and summons.{/highlight}",
       "image": "johanna_iron_skin.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": ""
     },
     {
       "name": "Blessed Hammer",
@@ -180,7 +209,12 @@
       "name": "Vacuum",
       "description": "{highlight}Create an outer area of Condemn, that area will pull enemy heroes with 200% stronger force and damage{/highlight}",
       "image": "johanna_condemn.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "This was the first skill that i wanted to add to Johanna i wanted to make that skill have another interaction that would make it cool",
+      "subtexts": [
+        "The outer radius is 1.0. Current Condemn is 5.0 so it will effectively increase the radius to 6.0",
+        "The pull speed is going to be increased from 19 to 57"
+      ]
     },
     {
       "name": "Holy Renewal",
@@ -192,7 +226,9 @@
       "name": "Divine Fortress",
       "description": "{highlight}Reduces all basic attack damage received from the direction you are facing by 40% returning the damage to the attacker while reducing 0.4 seconds of Iron Skin's cooldown up to 10 seconds.{/highlight}",
       "image": "talent_block.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Crusaders are strongly related to thorns and i liked the Holy Hold concept so i leveled him up",
+      "subtexts": ["The damage is after physical armor blocks"]
     }
   ],
   "20": [
@@ -213,7 +249,8 @@
       "description": "{highlight}Upon taking fatal damage, Johanna gains a Shield equal to her maximum Health for 4 seconds. Can be activated to grant nearby allied heroes a shield equal to 25% of their maximum Health for 3 seconds setting the cooldown to 60 seconds. Hitting Heroes with Shield Glare reduces the cooldown of this ability by 8 seconds.{/highlight}",
       "image": "johanna_indestructible.png",
       "talentChanged": true,
-      "cooldown": "90s"
+      "cooldown": "90s",
+      "developerCommentary": "The objective was to make both Indestructible and Akarat's Champion one talent but on a flexible way."
     },
     {
       "name": "Akarat's Champion",
@@ -223,7 +260,9 @@
       ],
       "cooldown": "60 seconds",
       "image": "akarat.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Similar to Bruiseradin i want to make Bruiserhanna a commom thing",
+      "subtexts": ["Same cleave as Malthael of 3.25 radius"]
     }
   ]
 }

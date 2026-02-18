@@ -8,7 +8,13 @@
         "manaCost": "40 Mana",
         "cooldown": "8s",
         "image": "storm_ui_icon_rexxar_spiritswoop.png",
-        "abilityChanged": true
+        "abilityChanged": true,
+        "developerCommentary": "Spirit Swoop is currently a simple skillshot that slows and damages enemies in a straight line, underutilizing the concept of Spirit, a bird dedicated to scouting. Inspired by Beastmaster from Dota 2, I wanted to give Spirit a better role while increasing Rexxar's decision-making without creating a new active ability.",
+        "subtexts": [
+          "Spirit Swoop cooldown only starts when it returns to Rexxar.",
+          "The vision radius is 10 | Wraith is 10",
+          "Will only divebomb enemies on vision radius, if there's no enemy on vision radius won't divebomb anyone and will just return to Rexxar"
+        ]
       },
       {
         "name": "Misha, Charge!",
@@ -31,7 +37,8 @@
         "description": "{highlight}Switch between Misha's automatic and manual modes. In automatic mode, Misha, Focus! changes to Offensive and Defensive behaviors. In Offensive Mode, Misha targets any enemy hero within leash range. In Defensive Mode, Misha focuses on enemies close to Rexxar.{/highlight}",
         "cooldown": "5s",
         "image": "storm_ui_icon_rexxar_mishafixate.png",
-        "abilityChanged": true
+        "abilityChanged": true,
+        "developerCommentary": "While I aimed to increase Rexxar's skill floor, I find it acceptable to create a more casual-friendly version of Rexxar, even if it performs slightly worse compared to manual mode."
       }
     ],
     "heroic": [
@@ -40,7 +47,11 @@
         "description": "{highlight}Rexxar calls Huffer his boar companion to aid him in battle. Huffer will have 1200 HP and 5 attack range and will be controlled by Focus, Huffer!, a skill command that works similarly to Misha, Focus!. After engaging in combat with heroes for atleast 5 seconds Huffer will have increased 40% attack speed and 25% movement speed. This bonus is lost if Huffer doesn't hit heroes for 3 seconds.{/highlight}",
         "image": "storm_ui_icon_rexxar_heremisha.png",
         "passives": ["Increase Rexxar companions leash range by 30%."],
-        "abilityChanged": true
+        "abilityChanged": true,
+        "developerCommentary": "Further exploring the Rexxar Beastmaster gameplay and besides Summoners are a great problem on Moba games so for this reason im not letting it play automatic to justify.",
+        "subtexts": [
+          "Huffer will work similar as Misha, giving exp to the enemy team on kill and having the same respawn time."
+        ]
       },
       {
         "name": "Unleash the Boars",
@@ -65,19 +76,22 @@
       "name": "Meat Mending",
       "description": "{highlight}Empowers Misha's next basic attack, reducing its target's healing received by 75% for 1.25 seconds when Mend Pet is used.{/highlight}",
       "image": "storm_ui_icon_rexxar_mendpet.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "One of the many changes I want for Rexxar is to give more strategic uses for Mend Pet, encouraging players to hold the skill and use it in different ways."
     },
     {
       "name": "Animal Husbandry",
       "description": "Rexxar and Misha gain 2 maximum Health every second, {highlight}up to 500, increasing the cap by 100 every level. You receive a bonus of 25 maximum health on takedowns and 10 on globes.{/highlight} This bonus is lost on Rexxar's death.",
       "image": "storm_ui_icon_rexxar_stayinalive.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Animal Husbandry should be a commitment from level 1, showcasing the player's dedication and spreading defensive talents across Rexxar's skill tree."
     },
     {
       "name": "Thrill of the Hunt",
       "description": "{highlight}Rexxar's basic attacks increase Misha's movement speed by 25%, and if Misha gets close to Rexxar after stunning a target with Misha, Charge!, Rexxar gains 20% movement speed for 4 seconds.{/highlight}",
       "image": "storm_ui_icon_rexxar_heremishaactive.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "At level 1, I want to make it easier to mix defensive and offensive talents, with Thrill of the Hunt empowering a different playstyle."
     }
   ],
   "4": [
@@ -85,19 +99,25 @@
       "name": "Hungry Animals",
       "description": "{highlight}Misha's basic attacks instantly kill enemy troops and heal Misha for 2.25% health. This bonus is doubled against heroes. When Spirit divebombs an enemy hero, it heals Rexxar for 12.5% of his maximum health.{/highlight}",
       "image": "storm_ui_icon_rexxar_heremishaactive.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "With the changes to Spirit Swoop, it's the perfect opportunity to make this talent a reliable choice."
     },
     {
       "name": "Bird of Prey",
       "description": "Increases Spirit Swoop's damage by 150% to Minions. {highlight}Vision will stay for 3 seconds after Spirit comes back and if it hits no targets on the initial cast reduces it's cooldown by 4 seconds and refunds mana.{/highlight}",
       "image": "storm_ui_icon_rexxar_spiritswoop.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "With the changes to Spirit Swoop, this talent is weaker if you wish to use its vision. As a level 4 talent competing with survivability talents bringing the Bird of Prey survavibility could make it a good choice."
     },
     {
       "name": "Misha, Protect!",
       "description": "{highlight}When Misha stays close to Rexxar, both receive 25 armor and reduced crowd control effect durations by 35%.{/highlight}",
       "image": "storm_ui_icon_rexxar_heremishaactive.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "A talent to help Rexxar against dive comps.",
+      "subtexts": [
+        "The intended range is something close to 2, almost melee range"
+      ]
     }
   ],
   "7": [
@@ -105,7 +125,8 @@
       "name": "Crippling Talons",
       "description": "{highlight}Spirit divebomb's slow is now increased to 70% and doesn't decay anymore.{/highlight}",
       "image": "storm_ui_icon_rexxar_spiritswoop.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Changing Crippling Talons to still be an effective slowing skill but more inclined to the new Spirit Swoop mechanics."
     },
     {
       "name": "Aspect of the Beast",
@@ -117,7 +138,8 @@
       "name": "Bestial Wrath",
       "description": "{highlight}Misha's basic attacks against enemy heroes grant a stacking 25% increased attack damage bonus for 4 seconds.{/highlight}",
       "image": "storm_ui_icon_rexxar_bestialwrath.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I don't dislike the effects of Bestial Wrath, but I found it too simple and not worth a high cooldown active for dynamic purposes. Instead, I wanted to make it similar to Hunter's Mark and put it on level 7 to increase how you want to optimize your build, damage|utility|control talents for level 7."
     }
   ],
 
@@ -144,7 +166,8 @@
       "description": "Misha deals 21 damage per second to nearby enemies for 4 seconds. {highlight}While under Mend Pet effect, increase Wildfire Bear damage by 100%.{/highlight}",
       "passives": ["{highlight}Increase Misha's size by 20%{/highlight}"],
       "image": "storm_ui_icon_talent_burningrage.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Initially, I wanted to remove Wildfire Bear, but now I see an opportunity to bring two things I wanted: a talent that increases Misha's size for better body blocking and also increases Mend Pet interactions."
     },
     {
       "name": "Aspect of the Hawk",
@@ -163,14 +186,19 @@
       "name": "Beast Roar",
       "description": "{highlight}Knocks back enemies around Misha by a significant distance when Mend Pet is used.{/highlight}",
       "image": "storm_ui_icon_rexxar_mendpet.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "The knockback effect is intended to be smaller than Soundwave, just enough for Misha to cancel enemy animations.",
+      "subtexts": [
+        "The radius is supposed to be 3.5, a little smaller than Misha, Charge!"
+      ]
     },
     {
       "name": "Ambush",
       "description": "{highlight}Entering bushes grants Rexxar or his pets invisibility for 3 seconds.{/highlight}",
       "cooldown": "5s individually",
       "image": "storm_ui_icon_rexxar_mendpet.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Hunters should know the jungle and it also grants a great power to ambush or either escape from engages all on a hunter lore."
     },
     {
       "name": "Feigned Death",
@@ -187,7 +215,11 @@
       "description": "{highlight}Summons Leokk to inspire nearby allied heroes, increasing their attack speed by 40% in an area. Leokk will have 1200 HP and will be automatically following Rexxar  close to his back. Rexxar can activate Leokk, Follow! To change the target Leokk will follow.{/highlight}",
       "image": "storm_ui_icon_rexxar_heremisha.png",
       "passives": ["Make Rexxar companions leash range global."],
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "A common complaint, which I agree with, is that Rexxar could be more challenging by utilizing the Beastmaster fantasy. I want to bring that with Leokk.",
+      "subtexts": [
+        "Leokk will work similar as Misha, giving exp to the enemy team on kill and having the same respawn time."
+      ]
     },
 
     {
@@ -203,13 +235,18 @@
       "image": "storm_ui_icon_rexxar_stampede.webp",
       "manaCost": "100 Mana",
       "cooldown": "80s",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Stampede is a Rexxar classic from the Warcraft 3 era, but it's a challenging ultimate to implement because it works similarly to March of the Murlocs. Changing the area Stampede covers was the best solution to give it a distinct feel while avoiding the randomness similar to Rain of Destruction.",
+      "subtexts": [
+        "The stampede area will cover two parallel lines on Rexxar's sides."
+      ]
     },
     {
       "name": "Bond of Sacrifice",
       "description": "{highlight}If Rexxar takes a fatal hit while Misha is alive, Misha will die and heal Rexxar for Misha's remaining HP.{/highlight}",
       "image": "storm_ui_icon_rexxar_heremishaactive.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "After reading some of Rexxar's lore to better understand new talents I could create, I found out about Haratha and saw a perfect opportunity to make a reference that could still make sense and be useful/dynamic for a level 20 talent, and also fun."
     }
   ]
 }

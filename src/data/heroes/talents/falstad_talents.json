@@ -62,7 +62,11 @@
       "name": "Dishonorable Discharge",
       "description": "{highlight}If Lightning Rod kills the primary target resets it's cooldown, refunds 50% of the mana cost and deal 75% of it's damage on area. Passive: Increase Lightning Rod range by 25% and damage against non-heroic units by 100%.{/highlight}",
       "image": "falstad_lightningrod.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I completely dislike how the vanilla version incentivizes Falstad players to play and bevahing strangely trying too much to finish the quest. For this reason i want to niche this skill in utility to not compete with the other quests but provide a selected value in some games",
+      "subtexts": [
+        "It doesn't need to land the final blow just be active while the final blow is dealt to refund and splash the damage"
+      ]
     },
     {
       "name": "Frequent Flyer",
@@ -77,7 +81,8 @@
       "name": "Static Shield",
       "description": "Lightning Rod strikes grant a Shield equal to 4% of Falstad's maximum Health, up to 28%, for 4 seconds.{highlight} Basic attacks against the Lightning Rod target refresh one strike.{/highlight}",
       "image": "falstad_lightningrod.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "With the removal of the <vanilla, talents, 1, 1> and <vanilla, talents, 13, 0> i wanted to give it a little boost."
     },
     {
       "name": "Updraft",
@@ -109,7 +114,8 @@
       "name": "Crippling Hammer",
       "description": "Increase Hammerang's Slow from 25% to 50%, and Hammerang's explosion also Slows.",
       "image": "falstad_hammerang.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "The objective here is to make this level about <modified, abilities, basic 0> whilst i bring here a talent that in MY OPINION doesn't belong to level 16"
     }
   ],
   "10": [
@@ -119,7 +125,8 @@
       "image": "falstad_hinterlandblast.png",
       "talentChanged": true,
       "manaCost": "80 Mana",
-      "cooldown": "120s"
+      "cooldown": "120s",
+      "developerCommentary": "I didn't want to change <modified, abilities, heroic, 0> because it's a fun ultimate so instead i gave it a little more power."
     },
     {
       "name": "Mighty Gust",
@@ -135,7 +142,12 @@
       "name": "Flying Riders",
       "description": "{highlight} While Tailwind is active, close allied Heroes receive 5% stacking Movement Speed. This bonus is increased to 7.5% if Falstad has shields.{/highlight}",
       "image": "falstad_tailwind.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "With the buff i gave to <modified, talents, 4, 0> i took the chance to make level 13 all about <modified, abilities, trait, 0>",
+      "subtexts": [
+        "This affects Falstad too",
+        "Area will be 7.0 while <vanilla, abilities, heroic, 1, blaze> is 6.5"
+      ]
     },
     {
       "name": "Flow Rider",
@@ -167,7 +179,8 @@
       "name": "Epic Mount",
       "description": "Reduce the cooldown of Flight by 50 seconds, reduce the cast time before flying to 0.5 seconds, and increase the speed by 50%.",
       "image": "falstad_epicmount.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "For me talents like <vanilla, talents, 20, 3> should come sooner as competition for level 16 comes strong in talents combos but i also faster Macro gameplay would benefit on how Falstad could be"
     }
   ],
   "20": [
@@ -175,25 +188,36 @@
       "name": "Call of the Wildhammer",
       "description": "{highlight}Hinterland Blast increases its size and damage by 25%.{/highlight}",
       "image": "falstad_hinterlandblast.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Increasing the range for <modified, abilities, heroic, 0> never made much sense, the normal range of the ultimate is alredy big enough not like <vanilla, abilities, heroic, 1, qhira> so makes no sense to me to go for range instead of size.",
+      "subtexts": [
+        "Width goes from 3.0 to 3.75 and Height goes from 32.5 to 40.625"
+      ]
     },
     {
       "name": "Wind Tunnel",
       "description": "Mighty Gust creates a wind tunnel for {highlight}3{/highlight} seconds. Enemies caught in the tunnel will periodically be pushed back.",
       "image": "falstad_mightygust.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "With all honesty for me that talent is a big problem, i changed some of other talents that i consider broken to the point of being unfun..in that case i just think the the number is too high and rarely anything could compete too how eazy AND strong it is."
     },
     {
       "name": "Thunder Frenzy",
       "description": "{highlight}Falstad charges up to 100 stacks by moving. When he reaches 100 charges, his next Basic Attack bounces 4 times prioritizing Heroes, slows every target by 99% for 0.3 seconds, has 1.1 increased range, and deals 200% extra damage.{/highlight}",
       "image": "talent_autoattack_range.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I taught https://leagueoflegends.fandom.com/wiki/Fleet_Footwork rune from league of legends REALLY suits the idea on Falstad charging storm attacks",
+      "subtexts": [
+        "It charges my moving, using <modified, abilities, basic, 2> or flight.",
+        "If you move with 100% movespeed for 5 seconds you fully charge it."
+      ]
     },
     {
       "name": "Khaz Modan Torpedo",
       "description": "{highlight}Barrel Roll has two extra charges and applies Lightning Rod to every target he goes through.{/highlight}",
       "image": "falstad_barrelroll.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "BRO there's no lore or good decision making..it's just funny to think about it"
     }
   ]
 }

@@ -56,7 +56,13 @@
       "description": "Garrosh gains 1 Armor for every 2% of maximum Health missing. {highlight}Taunting up to 1.5 seconds after a takedown heals Garrosh for 15% of his max health.{/highlight}",
       "cooldown": "Cooldown: 45s",
       "image": "garrosh_armor_up.png",
-      "abilityChanged": true
+      "abilityChanged": true,
+      "developerCommentary": "A brutal leader that wants to intimidate the enemy should have the possibility to do it.",
+      "subtexts": [
+        "Cooldown 45 seconds",
+        "Enemies will have vision of Garrosh when he is taunting even if it's on cooldown.",
+        "This is the game taunt button which show mastery button not to be confused with Warlord's Challenge"
+      ]
     }
   },
   "1": [
@@ -76,7 +82,8 @@
       "name": "Brutality",
       "description": "{highlight}Gain 0.75% attack speed for every 2% missing health. Basic Attacks against Heroes reduce Bloodthirst's cooldown by 1 second.{/highlight}",
       "image": "garrosh_bloodthirst.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": ""
     }
   ],
   "4": [
@@ -92,13 +99,24 @@
       "description": "{highlight}Activate to run in a straigh line after 0.5 seconds, knocking back enemies on contact and healing 10% of his missing health for each target hit.{/highlight}",
       "image": "garrosh_indomitablel.png",
       "cooldown": "45s",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Even tho this gives Garrosh great mobility it's on cost of not getting cleanse also it's on par with the character angry style.",
+      "subtexts": [
+        "Cooldown 45 seconds",
+        "Range will be 7.0 | Valla Vault has 5.0 range | Muradin Dwarf Toss has 8.0 range",
+        "Missile Speed will be 15 | Valla Vault is 14 | Muradin Dwarf Toss is 30",
+        "Cast needs to be finished before being to cast skills"
+      ]
     },
     {
       "name": "Groundbreaking tactics",
       "description": "Activate to make {highlight}Groundbreaker be channeled for up to 2 seconds, increasing the outer area radius by up to 40%. At max channel, pulls enemies instead of stunning.{/highlight}",
       "image": "garrosh_groundbreaker.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "Inspired on Sion Decimating Smash and justify the old garrosh interaction being gatekeeped by maximum channeling and by not picking cleanse",
+      "subtexts": [
+        "You will press the active button and hold it instead of the (Q) button"
+      ]
     }
   ],
   "7": [
@@ -106,7 +124,8 @@
       "name": "Intimidation",
       "description": "Groundbreaker reduces the Attack Speed of Heroes hit by 30% for 4 seconds. {highlight}Missing Heroes on the outer radius reduces cooldown by 2 seconds.{/highlight}",
       "image": "garrosh_groundbreaker.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "This could be considered strong as Intimidation is a niche talent BUT i want you to propositally miss the outer radius sometimes just for attack speed reduction."
     },
     {
       "name": "Oppressor",
@@ -118,7 +137,8 @@
       "name": "Lok-tar ogar!",
       "description": "{highlight}Into the Fray stuns enemies near the impact for 0.25 seconds. If the target throw is a non-heroic unit, reduces cooldown by 20 seconds.{/highlight}",
       "image": "garrosh_intothefray.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I want to bring a utility for throwing minions instead of only a mistake."
     }
   ],
   "10": [
@@ -156,7 +176,11 @@
       "name": "Don't let them run",
       "description": "{highlight}For every second Garrosh stays in combat with enemy heroes he deals 1% more damage up to 10%. When reaching the maximum stacks he shares the bonuses to allied heroes around. The bonus is lost after 4 seconds without combat.{/highlight}",
       "image": "garrosh_armor_up.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "One thing that i always wanted was a talent to make Garrosh pursuing better especially on a Decimate focused build",
+      "subtexts": [
+        "8 radius | Blaze Combustion has 6.5 radius"
+      ]
     }
   ],
   "16": [
@@ -171,7 +195,8 @@
       "description": "Activate to deal 111 (+4% per level) damage to a target. {highlight}If used on an enemy that used dashes within the last 3 seconds will cause 400% more damage and stuns the target for 0.25 seconds while reducing it's cooldown to 4 seconds.{/highlight}",
       "image": "garrosh_slam.png",
       "talentChanged": true,
-      "cooldown": "20s"
+      "cooldown": "20s",
+      "developerCommentary": "Garrosh is a character that suffers a lot against mobility characters and this talent itself still not make it eazy for Garrosh to deal with this weaklings BUT turns him into a menace if he gets in range and making the kill eazy. After reading some feedback on reddit i came in the Illidan situation as the original version was supposed to be exhaustion i changed it to still be related to dashes but damage focused."
     },
     {
       "name": "Seasoned Soldier",
@@ -203,7 +228,12 @@
       "name": "Gorehowl",
       "description": "{highlight}After Garrosh uses Groundbreaker, three additional waves are created sequentially from the edge of the original area. Each wave deals 81 damage and stuns enemies for 0.5 seconds. Additional waves are affected by groundbreaking tactics size increase but won't pull the enemies.{/highlight}",
       "image": "garrosh_groundbreaker.png",
-      "talentChanged": true
+      "talentChanged": true,
+      "developerCommentary": "I wanted to empower Groundbreaker somehow and this, this is good. I really like the concept of Angry Garrosh simply destroying the ground angry as he is and it also feels like an level 20 talent.",
+      "subtexts": [
+        "Additional waves are affected by groundbreaking tactics size increase but WILL pull the enemies.",
+        "Imagine something close to the Sonya Seismic Slam"
+      ]
     }
   ]
 }
