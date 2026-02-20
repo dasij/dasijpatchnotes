@@ -223,7 +223,10 @@
       "talentChanged": true,
       "cooldown": "25s",
       "developerCommentary": "I wanted to preserve some of personality of her old Archon but without being too cluncky and also revive Ess of Johan somehow where the problem was too eazy for big reward SO i time limited it and cut the safety options during that time.",
-      "subtexts": ["Cooldown: 25 seconds"]
+      "subtexts": [
+        "Cooldown: 25 seconds"
+      ]
     }
-  ]
+  ],
+  "developerCommentary": "Li-Ming is one of the those characters from Heroes of the Storm that almost no one will get mad at as she is fair..she was unbalanced on launch but that was it. The objective here is mostly rebuild her talent tree similar on how i am building the other talent trees making characters more all-round and not a complete focus on talents for one type of skill."
 }

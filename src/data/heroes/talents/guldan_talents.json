@@ -77,7 +77,9 @@
       "name": "Rampant Hellfire",
       "description": "{highlight}Hitting Corruption affected targets with fel flame restores Gul'dan life by 22.5 this bonus is increased to 90 on heroes{/highlight}",
       "quest": "Hit 30 enemy Heroes with Fel Flame.",
-      "rewards": ["Fel Flame's radius is increased by 10%."],
+      "rewards": [
+        "Fel Flame's radius is increased by 10%."
+      ],
       "image": "guldan_felflame.png",
       "talentChanged": true,
       "developerCommentary": "Corruption is a high cost skill that Gul'dan players should take a little more care to use BUT i wanted to increase interactions between Corruption and the rest of the Kit. Also i wanted to provide some 'more' to the pursuit of flame as it's not very popular for being a little dull"
@@ -246,5 +248,6 @@
         " This is not reduced healing effect is literally healing stealing"
       ]
     }
-  ]
+  ],
+  "developerCommentary": "I like Gul'dan's gameplay and how he has developed in various aspects, but just because I like something doesn't mean it's solid. Currently, he faces two serious problems: one where one of his ultimates is basically losing a talent by picking it, and the other is that his talents have been molded into a funnel shape. What I mean is that there is little room for variability in Gul'dan's talents, especially if you choose to go for the <vanilla, abilities, basic, 1> build. What I initially thought could be something simple, I realized how difficult it is to change his talents without altering his entire structure and completely changing how Gul'dan should choose his talents, since the talents themselves are not necessarily bad or uncreative and with that i will probally kill some builds and i will instead make it a more all-rounded mage to preserve something i really like on Heroes of the Storm talent tree system and that's the possibility of mixing builds."
 }

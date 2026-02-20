@@ -24,7 +24,6 @@
           "It's supposed to work with Subwoofer"
         ]
       },
-
       {
         "name": "Crossfade (W)",
         "description": "Play one of two tracks that passively provide all nearby allied Heroes with either a speed boost or a heal over time. Switch tracks at will.",
@@ -78,7 +77,6 @@
       "cooldown": "20s"
     }
   },
-
   "1": [
     {
       "name": "Party Mix",
@@ -222,5 +220,6 @@
       "talentChanged": true,
       "developerCommentary": "Just adding a new functionality considering that we bring it up to level 20 and also consider that you can now extend Lucio Amp It Up and besides that get the level 16 that gives % health so it can't be buffed as much"
     }
-  ]
+  ],
+  "developerCommentary": "Lucio sits on a pretty good spot right now in my vision on gameplay standards.What i aim here is just to strengthen his place as a speedster healer"
 }

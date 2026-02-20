@@ -4,8 +4,10 @@
       <span :class="{ active: modelValue === 'vanilla' }">Vanilla</span>
       <label class="switch">
         <input 
+          id="talent-type-toggle"
           type="checkbox" 
           :checked="modelValue === 'modified'"
+          autocomplete="off"
           @change="$emit('update:modelValue', modelValue === 'modified' ? 'vanilla' : 'modified')"
         >
         <span class="slider"></span>
@@ -14,7 +16,7 @@
     </div>
 
     <label class="dev-comments-toggle">
-      <input type="checkbox" v-model="devCommentsModel">
+      <input id="dev-comments-toggle" type="checkbox" v-model="devCommentsModel" autocomplete="off">
       <span class="checkmark-box">✓</span>
       <span class="label-text">Dev Notes</span>
     </label>

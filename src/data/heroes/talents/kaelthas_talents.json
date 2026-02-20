@@ -138,7 +138,9 @@
         "{highlight}Basic attacks against enemy heros increase Kael'Thas magic mana by 5 permanently{/highlight}"
       ],
       "developerCommentary": "With the removal of sunfire enchatmente i saw an opportunity to still have some advantage on basic attacks and bringing Mana Shield here",
-      "subtexts": ["Cooldown: 45 seconds"]
+      "subtexts": [
+        "Cooldown: 45 seconds"
+      ]
     }
   ],
   "10": [
@@ -216,7 +218,9 @@
       "image": "kaelthas_phoenix.png",
       "talentChanged": true,
       "developerCommentary": "With so many Talents based on Mana and the hard job to make Phoenix unique with the curret HOTS setup i find it to be perfect case scenario",
-      "subtexts": ["0.5 second cooldown between repositions"]
+      "subtexts": [
+        "0.5 second cooldown between repositions"
+      ]
     },
     {
       "name": "Presence Of Mind",
@@ -241,5 +245,6 @@
       "image": "kaelthas_flamestrike.png",
       "talentChanged": false
     }
-  ]
+  ],
+  "developerCommentary": "Kael'thas was an extremely strong champion in the early days but got heavily nerfed along the way as a countermeasure for better balance in lower ELO games and casual matches, as he was too disruptive in those. He suffered from being too effective against players who couldn't stay away when affected by Living Bomb. Nowadays, he is not only nerfed, but other champions more easily abuse his weaknesses as a mage, which has a low number of tools to deal with things like dive. For my changes, I will expand his talents, focusing on lore aspects, especially on how he can deal with Mana, as the Sin'dorei story is highly connected to mana addiction and usage."
 }

@@ -50,11 +50,11 @@
       "image": "anubarak_scarabhost.png",
       "abilityChanged": false
     },
-      "general": {
-    "name": "Base",
-    "description": "If Anub'arak wins a game against where the other team had an Arthas player he will receive 20% bonus experience",
-    "developerCommentary": "Roleplay reasons"
-  }
+    "general": {
+      "name": "Base",
+      "description": "If Anub'arak wins a game against where the other team had an Arthas player he will receive 20% bonus experience",
+      "developerCommentary": "Roleplay reasons"
+    }
   },
   "1": [
     {
@@ -245,5 +245,6 @@
       ],
       "developerCommentary": "I wanted <vanilla, abilities, heroic, 1> to be casted on allied heroes but without forced interactions."
     }
-  ]
+  ],
+  "developerCommentary": "Anub'arak has a solid kit and can do his job well BUT on my vision he lacks options to diversify his build. His talents are often defined by efficiency and mostly do similar things."
 }

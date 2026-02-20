@@ -151,7 +151,6 @@
       "cooldown": "70s"
     }
   ],
-
   "13": [
     {
       "name": "Touch of Death",
@@ -244,5 +243,6 @@
         "Malthael fog vision will completely ignore the current object he stand on. Meaning it will count as if that terrain doensn't exist for fog vision block."
       ]
     }
-  ]
+  ],
+  "developerCommentary": ""
 }

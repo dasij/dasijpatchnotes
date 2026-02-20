@@ -66,7 +66,9 @@
     {
       "name": "Hot Pursuit",
       "description": "{highlight}Valla's Hatred reaches maximum stacks on takedown participation. At 10 stacks, additional takedowns grant 5% movement speed and 10% attack speed bonuses to current Hatred stacks until expiration, stacks up to 5 times{/highlight}",
-      "passives": ["{highlight}Skills now reset Hatred duration.{/highlight}"],
+      "passives": [
+        "{highlight}Skills now reset Hatred duration.{/highlight}"
+      ],
       "image": "valla_hatred.png",
       "talentChanged": true,
       "developerCommentary": "Creed always felt good but in this case i am making the choice to change it for a more teamfight based because i just find it more fun.Inspired by Jinx passive 'Get Excited!' from League of Legends."
@@ -121,7 +123,9 @@
     {
       "name": "Death Dealer",
       "description": "Increase Vaults Basic Attack damage bonus from 6% to 15% per stack of Hatred. If this attack kills its victim within 1.5 seconds, the Mana cost and cooldown of Vault are refunded. {highlight}Instantly kill troops{/highlight}",
-      "passives": ["Reduce the cooldown of Vault by 5 seconds."],
+      "passives": [
+        "Reduce the cooldown of Vault by 5 seconds."
+      ],
       "image": "valla_vault.png",
       "talentChanged": true,
       "developerCommentary": "Giving it the ability to instantly kill troops to further incentivize troops reset mid-fight"
@@ -166,7 +170,9 @@
     {
       "name": "Evasive fire",
       "description": "Multishot heals for {highlight}4%{/highlight} of Valla maximum health per enemy hero hit{highlight} and slows them for 25% for 2.5 seconds.{/highlight}",
-      "passives": ["{highlight}Increases Multishot range by 25%{/highlight}"],
+      "passives": [
+        "{highlight}Increases Multishot range by 25%{/highlight}"
+      ],
       "image": "valla_multishot.png",
       "talentChanged": true,
       "developerCommentary": "I didn't want to remove Tempered by Discipline complete effect so with that in mind i wanted to bring something to make it differs from the other talents. It will work close to how Ancestral Strength works"
@@ -250,5 +256,6 @@
         "This effect stacks, be careful Li-Ming"
       ]
     }
-  ]
+  ],
+  "developerCommentary": "One of the oldest heroes with the most solid kits on HOTS. My goal here is to make Valla more centered around basic attacks as her main damage with greater utility tools."
 }

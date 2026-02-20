@@ -248,12 +248,12 @@
       "talentChanged": true,
       "developerCommentary": "I wanted to make it more interesting as i changed the Blink Heal for better balancing"
     },
-
     {
       "name": "Invisible Friends",
       "description": "Blink Heal grants Stealth to Brightwing and her Heroic targets for 9 seconds, and they are Unrevealable for the first 0.5 seconds. While Stealthed by Invisible Friends, Heroes heal for 25 health per second.Remaining stationary for at least 1.5 seconds while Stealthed grants Invisible.",
       "image": "brightwing_blinkheal.png",
       "talentChanged": false
     }
-  ]
+  ],
+  "developerCommentary": "I dislike brightwing when i come to the nexus to play against her. So i made her more dislakable for me to play against because she is doing a good job. Apart from that i tried to shape Brightwing on my vision of how i could increase her skill floor at the same time i gave her more tools."
 }

@@ -205,5 +205,6 @@
       "image": "talent_autoattack_damage.png",
       "talentChanged": false
     }
-  ]
+  ],
+  "developerCommentary": ""
 }

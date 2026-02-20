@@ -14,11 +14,13 @@
     
     <div class="code-input-wrapper">
       <input 
+        id="talent-code"
         ref="codeInput"
         v-model="codeText"
         type="text" 
         class="code-input"
         placeholder="Hero[Vanilla][Modified]"
+        autocomplete="off"
         @keyup.enter="loadCode"
       />
     </div>

@@ -37,10 +37,12 @@
       <!-- Search Bar -->
       <div class="search-container">
         <input
+          id="hero-search"
           v-model="searchQuery"
           type="text"
           placeholder="Search hero..."
           class="search-input"
+          autocomplete="off"
         />
         <span class="search-icon">🔍</span>
       </div>
@@ -93,7 +95,8 @@
           <div
             v-for="map in maps"
             :key="map.id"
-            class="coming-soon-item map-item"
+            class="clickable-item map-item"
+            @click="navigateToItem('map', map.name)"
           >
             <div class="image-wrapper map-image-wrapper">
               <img 
@@ -104,8 +107,8 @@
               <div class="item-name-overlay">
                 <span class="item-name-large">{{ map.name }}</span>
               </div>
-              <div class="coming-soon-overlay transparent">
-                <span class="coming-soon-text">Coming Soon</span>
+              <div v-if="!map.changed" class="wip-overlay">
+                <span class="wip-text">WIP</span>
               </div>
             </div>
           </div>
@@ -121,7 +124,8 @@
           <div
             v-for="item in generalItems"
             :key="item.id"
-            class="coming-soon-item large-item"
+            class="clickable-item large-item"
+            @click="navigateToItem('general', item.name)"
           >
             <div class="image-wrapper large-image-wrapper">
               <img 
@@ -131,9 +135,6 @@
               />
               <div class="item-name-overlay">
                 <span class="item-name-large">{{ formatItemName(item.name) }}</span>
-              </div>
-              <div class="coming-soon-overlay transparent">
-                <span class="coming-soon-text">Coming Soon</span>
               </div>
             </div>
           </div>
@@ -149,7 +150,8 @@
           <div
             v-for="mode in gameModes"
             :key="mode.id"
-            class="coming-soon-item large-item"
+            class="clickable-item large-item"
+            @click="navigateToItem('gamemode', mode.name)"
           >
             <div class="image-wrapper large-image-wrapper">
               <img 
@@ -160,14 +162,17 @@
               <div class="item-name-overlay">
                 <span class="item-name-large">{{ formatItemName(mode.name) }}</span>
               </div>
-              <div class="coming-soon-overlay transparent">
-                <span class="coming-soon-text">Coming Soon</span>
-              </div>
             </div>
           </div>
         </template>
       </div>
     </div>
+
+    <!-- Close Button (bottom) - Mobile only -->
+    <button v-if="isMobile" class="sidebar-close-btn" @click="$emit('close-sidebar')">
+      <span>◀</span>
+      <span class="close-text">Close</span>
+    </button>
   </div>
 </template>
 
@@ -175,9 +180,10 @@
 export default {
   name: 'HeroSidebar',
   props: {
-    selectedHeroName: { type: String, default: '' }
+    selectedHeroName: { type: String, default: '' },
+    isMobile: { type: Boolean, default: false }
   },
-  emits: ['selectHero'],
+  emits: ['selectHero', 'close-sidebar'],
   data() {
     return {
       activeTab: 'heroes',
@@ -189,10 +195,14 @@ export default {
       searchQuery: '',
       expandedRoles: new Set(),
       loading: true,
-      debugInfo: ''
+      debugInfo: '',
+      windowWidth: typeof window !== 'undefined' ? window.innerWidth : 1024
     }
   },
   computed: {
+    isTablet() {
+      return this.windowWidth >= 768 && this.windowWidth <= 991
+    },
     filteredHeroes() {
       if (!this.searchQuery || this.searchQuery.trim() === '') {
         return this.allHeroes
@@ -209,6 +219,11 @@ export default {
     }
   },
   async created() {
+    // Add resize listener for tablet detection
+    if (typeof window !== 'undefined') {
+      window.addEventListener('resize', this.updateWindowWidth)
+    }
+    
     try {
       // Carregar roles
       const roleData = require('@/data/roles.json')
@@ -294,6 +309,12 @@ export default {
     }
   },
   methods: {
+    navigateToItem(type, name) {
+      // Navega para a rota apropriada
+      const path = `/${type}/${name.toLowerCase().replace(/ /g, '_')}`
+      this.$router.push(path)
+      this.$emit('close-sidebar')
+    },
     getHeroesByRole(roleName) {
       return this.filteredHeroes.filter(hero => hero.role === roleName)
     },
@@ -342,6 +363,14 @@ export default {
       } catch {
         return ''
       }
+    },
+    updateWindowWidth() {
+      this.windowWidth = window.innerWidth
+    }
+  },
+  beforeUnmount() {
+    if (typeof window !== 'undefined') {
+      window.removeEventListener('resize', this.updateWindowWidth)
     }
   }
 }
@@ -392,7 +421,7 @@ export default {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  padding-bottom: 40px;
+  padding-bottom: 60px; /* Espaço para o botão de fechar (50px + margem) */
 }
 
 /* Search */
@@ -564,10 +593,10 @@ export default {
 }
 
 /* ===========================================
-   COMING SOON ITEMS (Maps, General, Modes)
+   CLICKABLE ITEMS (Maps, General, Modes)
    =========================================== */
 
-.coming-soon-item {
+.clickable-item {
   display: flex;
   flex-direction: column;
   margin-bottom: 8px;
@@ -575,10 +604,39 @@ export default {
   overflow: hidden;
   background: rgba(255, 255, 255, 0.03);
   transition: all 0.2s;
+  cursor: pointer;
 }
 
-.coming-soon-item:hover {
-  background: rgba(255, 255, 255, 0.06);
+.clickable-item:hover {
+  background: rgba(116, 42, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* WIP Overlay */
+.wip-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.wip-text {
+  color: #888;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 6px 12px;
+  border-radius: 4px;
 }
 
 /* Map items - 2x height (~96px) */
@@ -673,9 +731,69 @@ export default {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+
+
 /* ===========================================
    RESPONSIVE STYLES
    =========================================== */
+
+/* Tablet (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero-sidebar {
+    width: 320px;
+    height: 100vh;
+    background: rgba(10, 10, 15, 0.98);
+  }
+  
+  /* Hide close button in tablet - usar o do parent */
+  .sidebar-close-btn {
+    display: none;
+  }
+  
+  .tabs {
+    padding-top: 0;
+  }
+  
+  .tab {
+    padding: 12px 6px;
+    font-size: 11px;
+  }
+  
+  .search-container {
+    padding: 12px;
+  }
+  
+  .heroes-list-container,
+  .items-list-container {
+    padding: 12px;
+  }
+  
+  .role-header {
+    padding: 10px 12px;
+  }
+  
+  .role-icon {
+    width: 26px;
+    height: 26px;
+  }
+  
+  .role-name {
+    font-size: 13px;
+  }
+  
+  .hero-item {
+    padding: 8px 12px;
+  }
+  
+  .hero-icon {
+    width: 34px;
+    height: 34px;
+  }
+  
+  .hero-name {
+    font-size: 14px;
+  }
+}
 
 /* Mobile - Sidebar em tela cheia */
 @media (max-width: 767px) {
@@ -683,10 +801,49 @@ export default {
     width: 100vw;
     height: 100vh;
     background: rgba(10, 10, 15, 0.98);
+    position: relative;
+  }
+  
+  /* Close button at bottom - igual ao desktop */
+  .sidebar-close-btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 50px;
+    background: rgba(20, 20, 20, 0.95);
+    border: none;
+    border-top: 2px solid #333;
+    color: #888;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 14px;
+    transition: all 0.2s;
+    z-index: 10;
+  }
+  
+  .sidebar-close-btn:hover {
+    background: #742aff;
+    color: #fff;
+    border-top-color: #742aff;
+  }
+  
+  .sidebar-close-btn span:first-child {
+    font-size: 12px;
+  }
+  
+  .close-text {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
   }
   
   .tabs {
-    padding-top: 10px;
+    padding-top: 0;
   }
   
   .tab {

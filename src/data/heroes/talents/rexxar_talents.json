@@ -46,7 +46,9 @@
         "name": "Animal companions",
         "description": "{highlight}Rexxar calls Huffer his boar companion to aid him in battle. Huffer will have 1200 HP and 5 attack range and will be controlled by Focus, Huffer!, a skill command that works similarly to Misha, Focus!. After engaging in combat with heroes for atleast 5 seconds Huffer will have increased 40% attack speed and 25% movement speed. This bonus is lost if Huffer doesn't hit heroes for 3 seconds.{/highlight}",
         "image": "storm_ui_icon_rexxar_heremisha.png",
-        "passives": ["Increase Rexxar companions leash range by 30%."],
+        "passives": [
+          "Increase Rexxar companions leash range by 30%."
+        ],
         "abilityChanged": true,
         "developerCommentary": "Further exploring the Rexxar Beastmaster gameplay and besides Summoners are a great problem on Moba games so for this reason im not letting it play automatic to justify.",
         "subtexts": [
@@ -65,7 +67,9 @@
     "trait": {
       "name": "Misha, Focus!",
       "description": "Command Misha to attack a specific enemy or move to a point and wait.\nTargeting Rexxar commands Misha to retreat to his position, gaining 30% move speed until she reaches Rexxar.\nTargeting Misha commands her to hold her current position.",
-      "passives": ["Misha gains 15% move speed."],
+      "passives": [
+        "Misha gains 15% move speed."
+      ],
       "cooldown": "10s",
       "image": "storm_ui_icon_rexxar_mishafixate.png",
       "abilityChanged": true
@@ -142,13 +146,14 @@
       "developerCommentary": "I don't dislike the effects of Bestial Wrath, but I found it too simple and not worth a high cooldown active for dynamic purposes. Instead, I wanted to make it similar to Hunter's Mark and put it on level 7 to increase how you want to optimize your build, damage|utility|control talents for level 7."
     }
   ],
-
   "10": [
     {
       "name": "Animal companions",
       "description": "{highlight}Rexxar calls Huffer his boar companion to aid him in battle. Huffer will have 1200 HP and 5 attack range and will be controlled by Focus, Huffer!, a skill command that works similarly to Misha, Focus!. After engaging in combat with heroes for atleast 5 seconds Huffer will have increased 40% attack speed and 25% movement speed. This bonus is lost if Huffer doesn't hit heroes for 3 seconds.{/highlight}",
       "image": "storm_ui_icon_rexxar_heremisha.png",
-      "passives": ["Increase Rexxar companions leash range by 30%."],
+      "passives": [
+        "Increase Rexxar companions leash range by 30%."
+      ],
       "talentChanged": true
     },
     {
@@ -164,7 +169,9 @@
     {
       "name": "Wildfire Bear",
       "description": "Misha deals 21 damage per second to nearby enemies for 4 seconds. {highlight}While under Mend Pet effect, increase Wildfire Bear damage by 100%.{/highlight}",
-      "passives": ["{highlight}Increase Misha's size by 20%{/highlight}"],
+      "passives": [
+        "{highlight}Increase Misha's size by 20%{/highlight}"
+      ],
       "image": "storm_ui_icon_talent_burningrage.png",
       "talentChanged": true,
       "developerCommentary": "Initially, I wanted to remove Wildfire Bear, but now I see an opportunity to bring two things I wanted: a talent that increases Misha's size for better body blocking and also increases Mend Pet interactions."
@@ -214,21 +221,21 @@
       "name": "Leokk",
       "description": "{highlight}Summons Leokk to inspire nearby allied heroes, increasing their attack speed by 40% in an area. Leokk will have 1200 HP and will be automatically following Rexxar  close to his back. Rexxar can activate Leokk, Follow! To change the target Leokk will follow.{/highlight}",
       "image": "storm_ui_icon_rexxar_heremisha.png",
-      "passives": ["Make Rexxar companions leash range global."],
+      "passives": [
+        "Make Rexxar companions leash range global."
+      ],
       "talentChanged": true,
       "developerCommentary": "A common complaint, which I agree with, is that Rexxar could be more challenging by utilizing the Beastmaster fantasy. I want to bring that with Leokk.",
       "subtexts": [
         "Leokk will work similar as Misha, giving exp to the enemy team on kill and having the same respawn time."
       ]
     },
-
     {
       "name": "Kill Command",
       "description": "Unleash the Boars roots enemy Heroes for 1.5 seconds.",
       "image": "storm_ui_icon_rexxar_unleashtheboars.png",
       "talentChanged": false
     },
-
     {
       "name": "Stampede",
       "description": "{highlight}Channel to call down hordes of rampaging thunder lizards that explode around Rexxar's enemies for 3 seconds. Each explosion deals 120 damage.{/highlight}",
@@ -248,5 +255,6 @@
       "talentChanged": true,
       "developerCommentary": "After reading some of Rexxar's lore to better understand new talents I could create, I found out about Haratha and saw a perfect opportunity to make a reference that could still make sense and be useful/dynamic for a level 20 talent, and also fun."
     }
-  ]
+  ],
+  "developerCommentary": "Rexxar, despite not underperforming, lacks depth due to a straightforward kit centered around managing two characters with simplistic abilities. This simplicity is acceptable given the challenge of controlling multiple entities, but Rexxar's identity as a Beastmaster is underutilized. Enhancing his complexity is justified to cater to high-skill-cap players, focusing on deepening the strategic and visual appeal of Rexxar's Beastmaster persona."
 }

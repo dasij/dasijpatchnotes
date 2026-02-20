@@ -214,7 +214,10 @@
       "image": "junkrat_concussion_mine.png",
       "talentChanged": true,
       "developerCommentary": "I was thinkering on how i could enable Junkrat to perform the double concussion he is able on Overwatch game but also doesn't make it a rip-off of Gotta Trap 'Em All and that was the pog solution i came, it's simple but gets the same result and lets the players perform more.",
-      "subtexts": ["Cooldown between charges will be 0.5 seconds"]
+      "subtexts": [
+        "Cooldown between charges will be 0.5 seconds"
+      ]
     }
-  ]
+  ],
+  "developerCommentary": "Junkrat is a fun and complete character BUT the problem lies on how complete he is, for a mage character he has everything on a level that make it a super pick. It's very hard to break that without changing something on core level like making it have mana or changing how one of his skills works. Here i try to control the power of his crowd control mechanics by changing how <basic, abilities, basic, 2>s can be dealt and also making their talents harder to abuse and not make a melee character life truly miserable. Besides that i tried to bring on some new things for the other aspects."
 }

@@ -191,7 +191,9 @@
       "image": "greymane_swipe.png",
       "talentChanged": true,
       "developerCommentary": "I dislike how the current version of Unfettered Assault incentivizes the player to stay on the Worgen form by just making it the effective way of playing when you pick that talent..im just changing it to be more flexible on decision on form swapping.",
-      "subtexts": ["Cooldown: 25 seconds"]
+      "subtexts": [
+        "Cooldown: 25 seconds"
+      ]
     },
     {
       "name": "On the Prowl",
@@ -231,7 +233,9 @@
       "image": "greymane_goforthethroat.png",
       "talentChanged": true,
       "cooldown": "60 seconds",
-      "passives": ["Go for the Throat's damage is increased by 25%"],
+      "passives": [
+        "Go for the Throat's damage is increased by 25%"
+      ],
       "developerCommentary": "I won't lie this was one of my favorite talents BUT it gets onto one problem...It's pure damage similar to the other talents even with the changes i made still it's pure damage and it will hardly compete with the splash damage talents as they also complement Go for the Throat so i wanted to go for a totally new approach and with the Worgen Cursed i found that to be an excellent option to make it similar to Sion's passive In Gloria Mori as they both can fit that https://leagueoflegends.fandom.com/wiki/Sion",
       "subtexts": [
         "This will automatically transform you into Worgen if are in human form",
@@ -282,5 +286,6 @@
         "The enemy vision reduction will decrease their vision by 25% and remove shared vision while on it"
       ]
     }
-  ]
+  ],
+  "developerCommentary": "Greymane is one of my two favorite characters on the game and by playing him and analysing a lot of his gameplay i got to the conclusion that there's two main things i dislike about his current state, one being the lack of constant form swapping and i mean constant form swapping and also how the Cocktail is implemented, you could build Cocktail to be an damage poke dealer but would lose the most fun and currently strong part of greymane as a constant auto attack menace.."
 }

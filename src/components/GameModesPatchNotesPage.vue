@@ -45,10 +45,6 @@
                   <p class="font-semibold mb-2">Developer Comment:</p>
                   <p>{{ item.developerCommentary }}</p>
                 </div>
-                <button @click="likeChange(patchNote.id, item.change_id)"
-                  :class="['like-button', { 'loading': isLoading, 'liked': item.likedBy && item.likedBy[userId] }]">
-                  👍 {{ item.likes || 0 }}
-                </button>
               </li>
             </ul>
           </div>
@@ -67,53 +63,25 @@
 
 
 <script>
-import { database, ref as dbRef, auth, googleProvider, facebookProvider } from '../firebase';
-import { set, get } from 'firebase/database';
-import { signInWithPopup } from 'firebase/auth';
 import { watch, ref } from 'vue';
 import { useRoute } from 'vue-router';
 
 export default {
   name: 'GameModesPatchNotesPage',
-  setup(props, { emit }) {
+  setup() {
     const route = useRoute();
     const gameModeItem = ref({});
     const patchNotes = ref([]);
     const selectedTab = ref('patchNotes');
-    const isUserLoggedIn = ref(false);
-    const isLoading = ref(false);
-    const likesData = ref({});
 
     const loadGameModeData = async (gameModeName) => {
       try {
         const gameModeData = await import(`../data/gamemodes/${gameModeName}.json`);
         gameModeItem.value = gameModeData.default;
         patchNotes.value = gameModeData.default.patchNotes;
-        loadLikes(gameModeName);
       } catch (error) {
         console.error('Failed to load game mode data', error);
       }
-    };
-
-    const loadLikes = async (gameModeName) => {
-      const likesRef = dbRef(database, `gamemodes/${gameModeName}/likes`);
-      const snapshot = await get(likesRef);
-      if (snapshot.exists()) {
-        likesData.value = snapshot.val();
-        applyLikes();
-      }
-    };
-
-    const applyLikes = () => {
-      patchNotes.value.forEach(patchNote => {
-        patchNote.general.forEach(change => {
-          const likeInfo = likesData.value[change.change_id];
-          if (likeInfo) {
-            change.likes = likeInfo.likes;
-            change.likedBy = likeInfo.likedBy;
-          }
-        });
-      });
     };
 
     watch(
@@ -129,114 +97,12 @@ export default {
       selectedTab.value = tab;
     };
 
-    const likeChange = (patchNoteId, changeId) => {
-      if (!isUserLoggedIn.value) {
-        emit('open-login-modal');
-        return;
-      }
-
-      const patchNote = patchNotes.value.find(note => note.id === patchNoteId);
-      const change = patchNote.general.find(item => item.change_id === changeId);
-
-      if (!change.likedBy) {
-        change.likedBy = {};
-      }
-
-      const userId = getUserId();
-      if (userId) {
-        if (change.likedBy[userId]) {
-          change.likes = (change.likes || 0) - 1;
-          delete change.likedBy[userId];
-        } else {
-          change.likes = (change.likes || 0) + 1;
-          change.likedBy[userId] = true;
-        }
-        saveChanges();
-      }
-    };
-
-    const saveChanges = () => {
-      const gameModeName = gameModeItem.value.name.toLowerCase().replace(/ /g, '_');
-      const likesRef = dbRef(database, `gamemodes/${gameModeName}/likes`);
-      const likesToSave = {};
-
-      patchNotes.value.forEach(patchNote => {
-        patchNote.general.forEach(change => {
-          likesToSave[change.change_id] = {
-            likes: change.likes,
-            likedBy: change.likedBy
-          };
-        });
-      });
-
-      set(likesRef, likesToSave);
-    };
-
-    const getUserId = () => {
-      let userId = localStorage.getItem('userId');
-      if (!userId) {
-        userId = 'user-' + Math.random().toString(36).substr(2, 9);
-        localStorage.setItem('userId', userId);
-      }
-      return userId;
-    };
-
-    auth.onAuthStateChanged(user => {
-      isUserLoggedIn.value = !!user;
-    });
-
     return {
       gameModeItem,
       patchNotes,
       selectedTab,
       selectTab,
-      likeChange,
-      isUserLoggedIn,
-      isLoading,
     };
-  },
-  methods: {
-    authenticateUser() {
-      auth.onAuthStateChanged(user => {
-        this.isUserLoggedIn = !!user;
-        if (user) {
-          this.userId = user.uid;
-        }
-      });
-    },
-    handleLogin() {
-      const provider = Math.random() > 0.5 ? googleProvider : facebookProvider;
-      signInWithPopup(auth, provider)
-        .then(result => {
-          console.log('Usuário logado:', result.user);
-        })
-        .catch(error => {
-          console.error('Erro ao tentar autenticar:', error);
-        });
-    },
-    checkUserLogin() {
-      auth.onAuthStateChanged(user => {
-        this.isUserLoggedIn = !!user;
-      });
-    },
-    loadChanges() {
-      if (!this.gameModeItem.name) {
-        console.error('Game mode item name is not defined');
-        return;
-      }
-      const changesRef = dbRef(database, `gamemodes/${this.gameModeItem.name.toLowerCase().replace(/ /g, '_')}/patchNotes`);
-      get(changesRef).then(snapshot => {
-        if (snapshot.exists()) {
-          this.patchNotes = snapshot.val();
-        }
-        this.isLoading = false; // Atualizar o estado de carregamento
-      });
-    }
-  },
-  mounted() {
-    this.checkUserLogin();
-    this.authenticateUser();
-    this.loadChanges();
   },
 };
 </script>

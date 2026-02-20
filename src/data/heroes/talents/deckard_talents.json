@@ -58,7 +58,16 @@
     },
     "general": {
       "name": "Base",
-      "description": "Horadric Cube now roulette between 7 gems sequentially each time it's cast: Sapphire (slow), Amethyst (cast speed), Ruby (health potion), Topaz (duration), Sapphire (healing reduction), Diamond (armor reduction), Skull (size).",
+      "description": "Horadric Cube now roulette between 7 gems sequentially each time it's cast, each gem will have a different effect.",
+      "subtexts": [
+        "Sapphire: Slow enemy heroes by 40% for 2 seconds",
+        "Amethyst: Increase cast speed by 25%",
+        "Ruby: Spawn 1 health potion on each hero hit",
+        "Topaz: Increase the effect duration by 20%",
+        "Emerald: Reduces healing on heroes hit by 25% for 2 seconds",
+        "Diamond: Reduce enemy armor by 10",
+        "Skull: Increase the size by 25%"
+      ],
       "developerCommentary": "I always liked the Field Study, Rejuvenation Potion and Ancient Blessings BUT couldn't find a way to make it possible to increase the possibilities on other tiers."
     }
   },
@@ -229,5 +238,6 @@
       "talentChanged": true,
       "developerCommentary": "All the gems rework i made was just a path for that. You can use a polished gem version with that."
     }
-  ]
+  ],
+  "developerCommentary": "Deckard is on good spot, the deal here is to add some aspects from his lore that i particurally miss and change some talents i consider to be bland."
 }

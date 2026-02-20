@@ -61,7 +61,6 @@
       "developerCommentary": "Given Healing Brew mechanics, Fast Feet was adjusted to be slightly weaker and more customizable."
     }
   },
-
   "1": [
     {
       "name": "Eager adventurer",
@@ -73,7 +72,9 @@
     {
       "name": "Safety Sprint",
       "description": "Activate to gain Fast Feet, 30 Armor, and 30% Movement Speed for {highlight}1.5{/highlight} seconds.",
-      "passives": ["While Fast Feet is active, Li Li gains 10 Armor."],
+      "passives": [
+        "While Fast Feet is active, Li Li gains 10 Armor."
+      ],
       "image": "storm_ui_icon_lili_fastfeet.png",
       "talentChanged": true,
       "developerCommentary": "This talent is defensive, designed to encourage Li Li players to use it for escaping or engaging by enhancing Fast Feet effects to be using on par with the new Healing Brew effect. Bigger duration while affecting allied heros could be troublesome."
@@ -213,5 +214,6 @@
       "talentChanged": true,
       "developerCommentary": "With the Shake it Off change i had to add a new talent to that tier and it's hard to add talents for a character that should be simple most of the time BUT with the new mechanic created on Healing Brew that's not impossible, decreasing Healing Brew cups needed for the bonus activation would be a game changer as you could abuse more eazier with all the talents that help Li Li stacks cups more eazily."
     }
-  ]
+  ],
+  "developerCommentary": "From the start, developers aimed to make Li Li an ideal starter hero. They didn't change her much, believing not all heroes need high viability or skill ceilings. However, I think every hero should have growth potential. Over time, a lack of this can deter players from choosing Li Li. Take Team Fortress 2's Soldier: simple yet with a high skill ceiling. Similarly, I want Li Li to be easy for beginners but also offer significant skill development opportunities."
 }

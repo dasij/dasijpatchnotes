@@ -138,7 +138,10 @@
       "image": "johanna_iron_skin.png",
       "talentChanged": true,
       "developerCommentary": "I find that skill extremely suitable for the roleplay of a Crusader and besides this skill will be balance through the range of use as it could eazily render an hyper carry immortal.",
-      "subtexts": ["Cooldown: 70 seconds", "Range: 4"]
+      "subtexts": [
+        "Cooldown: 70 seconds",
+        "Range: 4"
+      ]
     },
     {
       "name": "Conviction",
@@ -228,7 +231,9 @@
       "image": "talent_block.png",
       "talentChanged": true,
       "developerCommentary": "Crusaders are strongly related to thorns and i liked the Holy Hold concept so i leveled him up",
-      "subtexts": ["The damage is after physical armor blocks"]
+      "subtexts": [
+        "The damage is after physical armor blocks"
+      ]
     }
   ],
   "20": [
@@ -262,7 +267,10 @@
       "image": "akarat.png",
       "talentChanged": true,
       "developerCommentary": "Similar to Bruiseradin i want to make Bruiserhanna a commom thing",
-      "subtexts": ["Same cleave as Malthael of 3.25 radius"]
+      "subtexts": [
+        "Same cleave as Malthael of 3.25 radius"
+      ]
     }
-  ]
+  ],
+  "developerCommentary": "Current Johanna is strong and solid. I am changing her for increased build variety specially on <vanilla, abilities, basic, 2> and bringing some skill expression talents to her."
 }

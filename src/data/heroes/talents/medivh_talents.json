@@ -59,7 +59,7 @@
       "talentChanged": false
     },
     {
-      "name": "Raven\u2019s Intellect",
+      "name": "Raven’s Intellect",
       "description": "Raven Form increases Medivh's Mana and Health Regeneration by 75%.",
       "image": "medivh_ravenform_b.png",
       "talentChanged": false
@@ -205,5 +205,6 @@
       "talentChanged": false,
       "cooldown": "10s"
     }
-  ]
+  ],
+  "developerCommentary": ""
 }

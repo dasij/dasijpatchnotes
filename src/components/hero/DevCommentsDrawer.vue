@@ -6,7 +6,7 @@
     </div>
     <div class="dev-comments-content-wrapper">
       <div class="dev-comments-content" v-if="comment">
-        <p v-html="formattedComment"></p>
+        <p><RichText v-if="findAbilityOrTalent" :text="comment" :convert-fn="findAbilityOrTalent" /></p>
       </div>
       <div v-else class="dev-comments-content no-comment">
         <p>No developer comments available.</p>
@@ -17,18 +17,17 @@
 
 <script setup>
 /* eslint-disable no-undef */
-import { computed, inject } from 'vue'
+import { inject } from 'vue'
+import RichText from '@/components/RichText.vue'
 
-const props = defineProps({
+defineProps({
   isOpen: { type: Boolean, default: false },
   comment: { type: String, default: null }
 })
 
 defineEmits(['toggle'])
 
-const convertTextPlaceholders = inject('convertTextPlaceholders')
-
-const formattedComment = computed(() => convertTextPlaceholders(props.comment))
+const findAbilityOrTalent = inject('findAbilityOrTalent', () => null)
 </script>
 
 <style scoped>

@@ -59,7 +59,9 @@
     {
       "name": "Righteous Assault",
       "description": "{highlight}Enemies hit by the outer area of Sacred Sweep (Q) are pushed slightly toward the center. {/highlight}",
-      "passives": ["{highlight} Increase it's size by 15%{/highlight}"],
+      "passives": [
+        "{highlight} Increase it's size by 15%{/highlight}"
+      ],
       "image": "auriel_angelicsweep_b.png",
       "talentChanged": true,
       "developerCommentary": "I mixed the current effect with <vanilla, talents, 13, 0> and changed it to bring the other talents from <modified, abilities, basic, 0> that  better perform on general situations"
@@ -100,7 +102,10 @@
       "description": "{highlight}When Auriel uses Bestow Hope (T) on an ally in Heroes of the Storm, the converted damage from that ally to other heroes is increased by 65% and to non-heroes by 30% for the first 2 seconds. Once Auriel changes the target of Bestow Hope (T) the previous bearer will have a 10 seconds cooldown of this effect{/highlight}",
       "image": "auriel_bestowhope.png",
       "talentChanged": true,
-      "subtexts": ["Example: If auriel puts the mark on Valla for the first 2 seconds she will grant that extra energy and after 2 seconds the effect will work as normal. After changing the target from Valla to a Hogger the effect will enter on cooldown to be reactivated on Valla again. So only after 10 seconds of taking the selection off from Valla you can reactivate it again", "If Auriel rapidly changes target with the <modified, abilities, trait, 0> it will also count for the effect and will enter on cooldown."],
+      "subtexts": [
+        "Example: If auriel puts the mark on Valla for the first 2 seconds she will grant that extra energy and after 2 seconds the effect will work as normal. After changing the target from Valla to a Hogger the effect will enter on cooldown to be reactivated on Valla again. So only after 10 seconds of taking the selection off from Valla you can reactivate it again",
+        "If Auriel rapidly changes target with the <modified, abilities, trait, 0> it will also count for the effect and will enter on cooldown."
+      ],
       "developerCommentary": "I want to benefit somehow an Auriel Gameplay focused on changing the target she is using <modified, abilities, trait, 0> but more so changing it between the entire team rather than going back to the Carry"
     },
     {
@@ -147,7 +152,10 @@
       "cooldown": "20 seconds",
       "image": "auriel_restrainingblow.png",
       "talentChanged": true,
-      "subtexts": ["<modified, abilities, basic, 2> range is 6.0 | Hope Strike is 9.0 | <vanilla, abilities, trait, 0, anduin> is 10.0", "The pull will work similar to <vanilla, abilities, trait, 0, anduin> when hitting the target but won't cleanse the target while they are travelling, stuns and knockback after starting the animation will cancel the effect"],
+      "subtexts": [
+        "<modified, abilities, basic, 2> range is 6.0 | Hope Strike is 9.0 | <vanilla, abilities, trait, 0, anduin> is 10.0",
+        "The pull will work similar to <vanilla, abilities, trait, 0, anduin> when hitting the target but won't cleanse the target while they are travelling, stuns and knockback after starting the animation will cancel the effect"
+      ],
       "developerCommentary": "It would make sense for Auriel to use Al'maiesh as a saving tool that suits her character."
     },
     {
@@ -164,7 +172,11 @@
       "description": "{highlight}Auriel shares all stat bonuses within the Bestow Hope (T) bearer. {/highlight}",
       "image": "auriel_bestowhope.png",
       "talentChanged": true,
-      "subtexts": ["This means Auriel will receive all the bonuses from a <vanilla, abilities, heroic, 0, ana> but won't receive healing granted from <vanilla, abilities, trait, 0, dehaka> for example and on the same topic she would receive all the bonus health regeneration granted from the <vanilla, talents, 1, 1, dehaka>", "This is not buff stacking, if Auriel and the bearer are receiving the same Buff then only 1 instance will be counted. For example <vanilla, talents, 16, 0, varian>", "That sharing comes from both directions, if someone buff Auriel the bearer will receive the bonus and vice-versa"],
+      "subtexts": [
+        "This means Auriel will receive all the bonuses from a <vanilla, abilities, heroic, 0, ana> but won't receive healing granted from <vanilla, abilities, trait, 0, dehaka> for example and on the same topic she would receive all the bonus health regeneration granted from the <vanilla, talents, 1, 1, dehaka>",
+        "This is not buff stacking, if Auriel and the bearer are receiving the same Buff then only 1 instance will be counted. For example <vanilla, talents, 16, 0, varian>",
+        "That sharing comes from both directions, if someone buff Auriel the bearer will receive the bonus and vice-versa"
+      ],
       "developerCommentary": "I think that could lead to new ways of playing Auriel with extra utility heros or hyper carries. Imagine for example that a Auriel would share the bonus movement speed granted by <vanilla, abilities, trait, 0, valla> or <vanilla, abilities, trait, 0, cho> and drafting correctly could lead to some cool insanities made with Auriel"
     },
     {
@@ -186,7 +198,11 @@
       "description": "{highlight}After 5 seconds of ressurecting the primary target will perform another Resurrect (R) on area 5 seconds after on the initial target position.{/highlight}",
       "image": "auriel_resurrect.png",
       "talentChanged": true,
-      "subtexts": ["The radius will be 5.0 | <vanilla, abilities, heroic, 1, blaze> is 6.5", "Example: If auriel <modified, abilities, heroic, 0> a Muradin..a second area <modified, abilities, heroic, 0> will be used on the position Muradin was ressurected bringing back all dead heroes close to that position.", "Auriel can <modified, abilities, heroic, 0> herself with the area <modified, abilities, heroic, 0>."],
+      "subtexts": [
+        "The radius will be 5.0 | <vanilla, abilities, heroic, 1, blaze> is 6.5",
+        "Example: If auriel <modified, abilities, heroic, 0> a Muradin..a second area <modified, abilities, heroic, 0> will be used on the position Muradin was ressurected bringing back all dead heroes close to that position.",
+        "Auriel can <modified, abilities, heroic, 0> herself with the area <modified, abilities, heroic, 0>."
+      ],
       "developerCommentary": "<vanilla, abilities, heroic, 0> is a hard skill to balance as it can eazily change the tides of battle, that's show in the Dota buyback, league of legends Akshan passive or either Hots with some Cho'gall gameplays. With that in mind i pursued something that could be broken as a level 20 but not necessarily eazy to perform so the OPness of the Ressurection could be justified."
     },
     {
@@ -194,7 +210,10 @@
       "description": "{highlight}Upon expiration Crystal Aegis (R) will knockback enemies nearby and every hero hit will reduce it's cooldown by 17 seconds. {/highlight}",
       "image": "auriel_ribboncocoon.png",
       "talentChanged": true,
-      "subtexts": ["Knockback speed 16.5 same as <vanilla, abilities, basic, 0, lucio>", "Knockback duration 0.35, <vanilla, abilities, basic, 0, lucio> is 0.25"],
+      "subtexts": [
+        "Knockback speed 16.5 same as <vanilla, abilities, basic, 0, lucio>",
+        "Knockback duration 0.35, <vanilla, abilities, basic, 0, lucio> is 0.25"
+      ],
       "developerCommentary": "Instead of making a armor ultimate i want to make it dynamic by being a reliable Skill of protection on level 20 but more focused for Ranged heroes as the knockback could bother some melees in certain situations.The plan behind the 17 seconds is to be close to a full 60 seconds with 3 enemy heroes hit but not to reset the ultimate."
     },
     {
@@ -211,5 +230,6 @@
       "talentChanged": false,
       "cooldown": "60s"
     }
-  ]
+  ],
+  "developerCommentary": "The objective here is to bring some modernization on the current Auriel gamestyle increase a little more the interactions with Bestow hope and give some touches that represent her a little better as the Angel of Hope"
 }

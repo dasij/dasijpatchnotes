@@ -53,7 +53,6 @@
       "developerCommentary": "This change is due to modifications in her ultimate ability."
     }
   },
-
   "1": [
     {
       "name": "Caduceus Feedback",
@@ -183,7 +182,9 @@
     {
       "name": "Extended Care",
       "description": "Channeling Healing Beam on a Hero for at least 3 seconds causes them to be healed for 258 over 3 seconds when Healing Beam ends.",
-      "passives": ["Increase the range of Healing Beam by 30%."],
+      "passives": [
+        "Increase the range of Healing Beam by 30%."
+      ],
       "image": "medic_healingbeam.png"
     },
     {
@@ -236,5 +237,6 @@
       "talentChanged": true,
       "developerCommentary": "This is made to be the ultimate safe talento for Morales..i wanted to go more on a Soraka from Lol passive route but i taught this would be funnier and better."
     }
-  ]
+  ],
+  "developerCommentary": "I believe Morales is either the top or at least among the top three most boring characters to play right now, according to a significant portion of the community. After considering these opinions, I agree with the players: Morales feels more like a tool for the team rather than a hero. You lack agency, and your role is reduced to a walking bot that simply presses Q on someone. The changes I propose are inspired by what I consider the ideal <vanilla, abilities, basic, 0> character, the TF2 Medic. I aim to give Morales a similar level of agency and introduce some risks."
 }

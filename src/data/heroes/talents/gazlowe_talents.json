@@ -65,7 +65,6 @@
       "developerCommentary": "This is the change that helps Auto attack Gazlowe, he doesn't have any gap closer he shouldn't be forced on melee range all the time for making it efficient."
     }
   },
-
   "1": [
     {
       "name": "Rocket Boots",
@@ -242,5 +241,6 @@
       "description": "Xplodium Charge gains a 2nd charge with a 3 second cooldown between uses and launches 2 more bombs when it detonates.",
       "image": "storm_ui_icon_gazlowe_explodiumcharge.png"
     }
-  ]
+  ],
+  "developerCommentary": "Right now Gazlowe is a mix of a mage and an Auto Attacker where he doesn't shine in both roles. His auto attack build ain't complete enough and the mage build centers on comboing his ultimate. What i want to accomplish here is to make his kit more play-creative while giving a boost to the auto attack build and i want to do that by boosting his roleplay fantasy while increasing the skill ceiling(not the skill floor)"
 }

@@ -10,10 +10,12 @@
     <div class="sidebar-fixed" :class="{ hidden: !showSidebar }">
       <HeroSidebar
         :selected-hero-name="heroName"
+        :is-mobile="isMobile"
         @select-hero="onSelectHero"
+        @close-sidebar="toggleSidebar"
       />
-      <!-- Toggle Button at bottom -->
-      <button class="sidebar-toggle" @click="toggleSidebar" title="Hide sidebar">
+      <!-- Toggle Button at bottom (desktop and tablet) -->
+      <button v-if="!isMobile" class="sidebar-toggle" @click="toggleSidebar" title="Hide sidebar">
         <span>◀</span>
         <span class="toggle-text">Hide</span>
       </button>
@@ -27,6 +29,7 @@
       :selected-level="selectedTalentLevel"
       :abilities="talents.abilities"
       :talent-type="talentType"
+      @toggle-sidebar="toggleSidebar"
     />
 
     <!-- MAIN CONTENT: Full width with margin for sidebar -->
@@ -148,8 +151,8 @@
       </div>
     </div>
 
-    <!-- Floating button to show sidebar when hidden -->
-    <button v-if="!showSidebar" class="sidebar-show-btn" @click="toggleSidebar" title="Show sidebar">
+    <!-- Floating button to show sidebar when hidden (desktop and tablet only) -->
+    <button v-if="!showSidebar && !isMobile" class="sidebar-show-btn" @click="toggleSidebar" title="Show sidebar">
       <span>▶</span>
     </button>
   </div>
@@ -242,6 +245,8 @@ const onSelectHero = (heroName) => {
   showDevComments.value = false
   showDevCommentsAlways.value = false
 }
+
+
 
 const toggleSidebar = () => {
   showSidebar.value = !showSidebar.value
@@ -429,6 +434,7 @@ provide('heroName', heroName)
 provide('heroPortraitPath', heroPortraitPath)
 provide('formatText', formatText)
 provide('convertTextPlaceholders', convertTextPlaceholders)
+provide('findAbilityOrTalent', findAbilityOrTalent)
 </script>
 
 <style scoped>
@@ -686,10 +692,7 @@ provide('convertTextPlaceholders', convertTextPlaceholders)
 
 /* Highlight Text */
 :global(.highlight-text) {
-  background-color: rgba(255, 100, 100, 0.3);
-  padding: 2px 6px;
-  border-radius: 4px;
-  color: #ffcccc;
+  color: rgb(209, 119, 119);
 }
 
 :global(.inline-ref) {
@@ -861,21 +864,28 @@ provide('convertTextPlaceholders', convertTextPlaceholders)
     transform: translateX(-100%);
   }
   
-  /* Botão de toggle fixo no topo esquerdo */
+  /* Botão de toggle na parte inferior (igual desktop) */
   .sidebar-toggle {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    width: 48px;
-    height: 48px;
-    border-radius: 8px;
-    z-index: 1001;
-    background: rgba(0, 0, 0, 0.9);
-    border: 2px solid #444;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 40px;
+    border-radius: 0;
+    z-index: 102;
+    background: rgba(20, 20, 20, 0.95);
+    border: none;
+    border-top: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
   }
   
   .sidebar-toggle .toggle-text {
-    display: none;
+    display: inline;
+    font-size: 12px;
   }
   
   /* Botão flutuante para mostrar sidebar */

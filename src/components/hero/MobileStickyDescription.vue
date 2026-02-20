@@ -1,8 +1,13 @@
 <template>
   <div class="mobile-sticky-bar">
-    <div class="sticky-content" @click="toggleExpanded">
-      <!-- Icon and Title -->
-      <div class="sticky-main">
+    <div class="sticky-content">
+      <!-- Menu Button - Left side -->
+      <button class="menu-btn" @click.stop="$emit('toggle-sidebar')">
+        <span class="menu-icon">☰</span>
+      </button>
+      
+      <!-- Icon and Title - Clickable area for expansion -->
+      <div class="sticky-main" @click="toggleExpanded">
         <img v-if="iconSrc" :src="iconSrc" class="sticky-icon" :class="iconClass">
         <div class="sticky-info">
           <h4 class="sticky-title">{{ displayTitle }}</h4>
@@ -28,7 +33,7 @@
           <div class="dev-header">
             <span>💬 Developer Commentary</span>
           </div>
-          <p v-html="formattedDevComment"></p>
+          <p><RichText v-if="findAbilityOrTalent" :text="devComment" :convert-fn="findAbilityOrTalent" /></p>
         </div>
         
         <!-- Quest/Rewards/Passives -->
@@ -68,23 +73,34 @@
 
 <script setup>
 /* eslint-disable no-undef */
-import { ref, computed, inject } from 'vue'
+import { ref, computed, inject, watch } from 'vue'
+import RichText from '@/components/RichText.vue'
 
 const props = defineProps({
   selectedAbility: { type: Object, default: null },
   selectedTalent: { type: Object, default: null },
   selectedLevel: { type: Number, default: 1 },
   abilities: { type: Object, default: () => ({}) },
-  talentType: { type: String, default: 'modified' }
+  talentType: { type: String, default: 'modified' },
+  heroDevComment: { type: String, default: null },
+  showHeroComment: { type: Boolean, default: false }
 })
 
 const heroName = inject('heroName')
 const heroPortraitPath = inject('heroPortraitPath')
 const formatText = inject('formatText')
 const convertTextPlaceholders = inject('convertTextPlaceholders')
+const findAbilityOrTalent = inject('findAbilityOrTalent', () => null)
 
 const isExpanded = ref(false)
 const showDevComments = ref(false)
+
+// Expande automaticamente quando mostra o comentário do herói
+watch(() => props.showHeroComment, (newVal) => {
+  if (newVal) {
+    isExpanded.value = true
+  }
+})
 
 const toggleExpanded = () => {
   isExpanded.value = !isExpanded.value
@@ -94,7 +110,14 @@ const toggleDevComments = () => {
   showDevComments.value = !showDevComments.value
 }
 
+const heroDisplayName = computed(() => {
+  return heroName.value ? heroName.value.charAt(0).toUpperCase() + heroName.value.slice(1) : ''
+})
+
 const iconSrc = computed(() => {
+  if (props.showHeroComment) {
+    return heroPortraitPath.value
+  }
   if (props.selectedAbility) {
     if (props.abilities?.general === props.selectedAbility) {
       return heroPortraitPath.value
@@ -124,10 +147,16 @@ const iconClass = computed(() => {
 })
 
 const displayTitle = computed(() => {
+  if (props.showHeroComment) {
+    return heroDisplayName.value
+  }
   return props.selectedAbility?.name || props.selectedTalent?.name || 'Select Ability/Talent'
 })
 
 const displaySubtitle = computed(() => {
+  if (props.showHeroComment) {
+    return 'Developer Commentary'
+  }
   if (props.selectedAbility) {
     if (props.abilities?.trait === props.selectedAbility) return 'Trait'
     if (props.abilities?.heroic?.includes(props.selectedAbility)) return 'Heroic'
@@ -140,18 +169,30 @@ const displaySubtitle = computed(() => {
   return ''
 })
 
+const heroDescription = computed(() => {
+  if (props.showHeroComment && props.heroDevComment) {
+    return props.heroDevComment
+  }
+  return null
+})
+
 const formattedDescription = computed(() => {
+  if (heroDescription.value) {
+    return formatText(heroDescription.value)
+  }
   const desc = props.selectedAbility?.description || props.selectedTalent?.description || ''
   return formatText(desc)
 })
 
 const devComment = computed(() => {
+  // Não mostra dev badge quando é comentário do herói (já é o conteúdo principal)
+  if (props.showHeroComment) {
+    return null
+  }
   return props.selectedAbility?.developerCommentary || props.selectedTalent?.developerCommentary
 })
 
-const formattedDevComment = computed(() => {
-  return devComment.value ? convertTextPlaceholders(devComment.value) : ''
-})
+
 
 const quest = computed(() => props.selectedTalent?.quest)
 const rewards = computed(() => props.selectedTalent?.rewards)
@@ -175,7 +216,7 @@ const formatSubtext = (sub) => convertTextPlaceholders(sub)
 <style scoped>
 .mobile-sticky-bar {
   position: fixed;
-  top: 50px; /* Abaixo do menu */
+  top: 0; /* Colada no topo */
   left: 0;
   right: 0;
   z-index: 500;
@@ -187,10 +228,34 @@ const formatSubtext = (sub) => convertTextPlaceholders(sub)
 .sticky-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 10px 15px;
+  min-height: 50px;
+  gap: 12px;
+}
+
+/* Menu Button */
+.menu-btn {
+  background: rgba(116, 42, 255, 0.2);
+  border: 1px solid #742aff;
+  border-radius: 6px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  min-height: 60px;
+  flex-shrink: 0;
+  transition: background 0.2s;
+}
+
+.menu-btn:hover {
+  background: rgba(116, 42, 255, 0.4);
+}
+
+.menu-icon {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1;
 }
 
 .sticky-main {

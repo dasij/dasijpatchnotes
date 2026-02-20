@@ -24,7 +24,7 @@
       <div v-if="hasChanges" class="detail-extra changes">
         <h4>Change Details</h4>
         <ul>
-          <li v-for="(sub, i) in selectedAbility.subtexts" :key="i" v-html="formatSubtext(sub)"></li>
+          <li v-for="(sub, i) in selectedAbility.subtexts" :key="i"><RichText v-if="findAbilityOrTalent" :text="sub" :convert-fn="findAbilityOrTalent" /></li>
         </ul>
       </div>
     </div>
@@ -71,8 +71,25 @@
       <div v-if="hasTalentChanges" class="detail-extra changes">
         <h4>Change Details</h4>
         <ul>
-          <li v-for="(sub, i) in selectedTalent.subtexts" :key="i" v-html="formatSubtext(sub)"></li>
+          <li v-for="(sub, i) in selectedTalent.subtexts" :key="i"><RichText v-if="findAbilityOrTalent" :text="sub" :convert-fn="findAbilityOrTalent" /></li>
         </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Developer Commentary View -->
+  <div v-else-if="showHeroComment && heroDevComment" class="hero-comment-view">
+    <div class="detail-header">
+      <img :src="heroPortraitPath" class="detail-icon base-border">
+      <div class="detail-title">
+        <h3>{{ heroDisplayName }}</h3>
+        <span class="detail-type">Developer Commentary</span>
+      </div>
+    </div>
+    
+    <div class="detail-scrollable">
+      <div class="hero-comment-content">
+        <p><RichText v-if="findAbilityOrTalent" :text="heroDevComment" :convert-fn="findAbilityOrTalent" /></p>
       </div>
     </div>
   </div>
@@ -87,19 +104,27 @@
 <script setup>
 /* eslint-disable no-undef */
 import { computed, inject } from 'vue'
+import RichText from '@/components/RichText.vue'
 
 const props = defineProps({
   selectedAbility: { type: Object, default: null },
   selectedTalent: { type: Object, default: null },
   selectedLevel: { type: Number, default: 1 },
   abilities: { type: Object, default: () => ({}) },
-  talentType: { type: String, default: 'modified' }
+  talentType: { type: String, default: 'modified' },
+  showHeroComment: { type: Boolean, default: false },
+  heroDevComment: { type: String, default: null }
 })
 
 const heroName = inject('heroName')
 const heroPortraitPath = inject('heroPortraitPath')
 const formatText = inject('formatText')
-const convertTextPlaceholders = inject('convertTextPlaceholders')
+const findAbilityOrTalent = inject('findAbilityOrTalent', () => null)
+
+const heroDisplayName = computed(() => {
+  if (!heroName.value) return ''
+  return heroName.value.charAt(0).toUpperCase() + heroName.value.slice(1)
+})
 
 const abilityImage = computed(() => {
   if (!props.selectedAbility) return ''
@@ -163,7 +188,7 @@ const hasTalentChanges = computed(() =>
 
 const formattedDescription = computed(() => formatText(props.selectedAbility?.description))
 const formattedTalentDescription = computed(() => formatText(props.selectedTalent?.description))
-const formatSubtext = (sub) => convertTextPlaceholders(sub)
+
 </script>
 
 <style scoped>
@@ -302,6 +327,29 @@ const formatSubtext = (sub) => convertTextPlaceholders(sub)
   left: 0;
   color: #666;
   font-size: 16px;
+}
+
+/* Hero Comment View */
+.hero-comment-view {
+  animation: fadeIn 0.3s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-comment-content {
+  background: rgba(116, 42, 255, 0.1);
+  border-left: 4px solid #742aff;
+  padding: 15px;
+  border-radius: 0 8px 8px 0;
+}
+
+.hero-comment-content p {
+  color: #eee;
+  font-size: 14px;
+  line-height: 1.7;
+  font-style: italic;
+  margin: 0;
 }
 
 .empty-placeholder {

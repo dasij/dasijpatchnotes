@@ -198,5 +198,6 @@
       "talentChanged": false,
       "cooldown": "20s"
     }
-  ]
+  ],
+  "developerCommentary": ""
 }

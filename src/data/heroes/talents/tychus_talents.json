@@ -126,7 +126,9 @@
     {
       "name": "KD9a Implosion Core",
       "description": "{highlight}Tychus grenade will pull targets to it's center now.{/highlight} ",
-      "passives": ["{highlight}Increase explosion radius by 15%.{/highlight}"],
+      "passives": [
+        "{highlight}Increase explosion radius by 15%.{/highlight}"
+      ],
       "image": "tychus_fraggrenade.png",
       "talentChanged": true,
       "developerCommentary": "Based on Tychus from Sc2 it could give another type of utility for Tychus"
@@ -168,7 +170,9 @@
     {
       "name": "OverExtend",
       "description": "{highlight}After expiring overkill does an extra hit applying a decaying slow on every enemy hero of 75% for 2.5 seconds. {/highlight} ",
-      "passives": ["Reduces minigun cooldown by 4 seconds"],
+      "passives": [
+        "Reduces minigun cooldown by 4 seconds"
+      ],
       "image": "tychus_overkill.png",
       "talentChanged": true,
       "developerCommentary": "Something that i want to make is a talent that could make Overkill feel a little different somehow and that's a solution a liked. For better targetting melee targets without the need from the Stun and Gun new talent but on with a good synergy with it."
@@ -233,5 +237,6 @@
         "This sums 3 explosions"
       ]
     }
-  ]
+  ],
+  "developerCommentary": "I like Tychus but some talents of it's build are into a funnel shape so for my vision i made adjustments on those talents to prevent that making it that you can pick any talent for any build and also changing how Drakkin works so it's more reliable."
 }
