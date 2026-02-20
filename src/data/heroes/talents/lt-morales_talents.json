@@ -45,6 +45,12 @@
       "name": "Caduceus Reactor (T)",
       "description": "While channeling Healing Beam, Lt. Morales regenerates 2% of her maximum Health per second.",
       "image": "upgrade-terran-mobiusreactor.png"
+    },
+    "general": {
+      "name": "Base",
+      "description": "Morales no longer has energy regeneration and starts with 0 energy.",
+      "image": "ltmorales.png",
+      "developerCommentary": "This change is due to modifications in her ultimate ability."
     }
   },
 

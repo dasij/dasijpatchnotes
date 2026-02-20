@@ -46,7 +46,7 @@
     ],
     "trait": {
       "name": "Voodoo Ritual (T)",
-      "description": " Nazeebo's Basic Attacks and Abilities poison Non-Heroic enemies, causing them to take 67 additional damage over 6 seconds. Quest: If a Minion dies while poisoned by Voodoo Ritual, Nazeebo permanently gains 6 Health and 1 Mana.",
+      "description": " Nazeebo's Basic Attacks and Abilities poison Non-Heroic enemies, causing them to take 67 additional damage over 6 seconds. {quest}Quest:{/quest} If a Minion dies while poisoned by Voodoo Ritual, Nazeebo permanently gains 6 Health and 1 Mana.",
       "image": "nazeebo_voodooritual.png",
       "abilityChanged": false
     }
@@ -54,19 +54,19 @@
   "1": [
     {
       "name": "Widowmakers",
-      "description": "Enemies hit by Corpse Spiders' jar are Slowed by 25% for 1 second.Reward: After Corpse Spiders attack Heroes 100 times, their attack damage is increased by 25% and their duration is increased by 1 second.",
+      "description": "Enemies hit by Corpse Spiders' jar are Slowed by 25% for 1 second.{reward}Reward:{/reward} After Corpse Spiders attack Heroes 100 times, their attack damage is increased by 25% and their duration is increased by 1 second.",
       "image": "nazeebo_corpsespider.png",
       "talentChanged": false
     },
     {
       "name": "Pandemic",
-      "description": "Quest: Hit Heroes with Plague of Toads.Reward: After hitting 35 Heroes with Plague of Toads, it spawns 2 additional toads.Reward: After hitting 70 Heroes with Plague of Toads, it reduces the damage Heroes deal by 5%, stacking up to 25%.",
+      "description": "{quest}Quest:{/quest} Hit Heroes with Plague of Toads.{reward}Reward:{/reward} After hitting 35 Heroes with Plague of Toads, it spawns 2 additional toads.{reward}Reward:{/reward} After hitting 70 Heroes with Plague of Toads, it reduces the damage Heroes deal by 5%, stacking up to 25%.",
       "image": "nazeebo_plagueoftoads.png",
       "talentChanged": false
     },
     {
       "name": "Thing of the Deep",
-      "description": "Increase the range of Nazeebo's Basic Abilities by 20%.Reward: After gaining 50 stacks of Voodoo Ritual, gain 5% Spell Power.Reward: After gaining 100 stacks of Voodoo Ritual, gain an additional 5% Spell Power.",
+      "description": "Increase the range of Nazeebo's Basic Abilities by 20%.{reward}Reward:{/reward} After gaining 50 stacks of Voodoo Ritual, gain 5% Spell Power.{reward}Reward:{/reward} After gaining 100 stacks of Voodoo Ritual, gain an additional 5% Spell Power.",
       "image": "talent_elunesgrace.png",
       "talentChanged": false
     }
@@ -186,7 +186,7 @@
     },
     {
       "name": "Vile Infection",
-      "description": "Quest: Reach 175 stacks of Voodoo Ritual.Reward: After reaching 175 stacks of Voodoo Ritual, it can also be applied to Heroes and its damage is increased from 67 to 167 over 6 seconds.",
+      "description": "{quest}Quest:{/quest} Reach 175 stacks of Voodoo Ritual.{reward}Reward:{/reward} After reaching 175 stacks of Voodoo Ritual, it can also be applied to Heroes and its damage is increased from 67 to 167 over 6 seconds.",
       "image": "nazeebo_voodooritual.png",
       "talentChanged": false
     },

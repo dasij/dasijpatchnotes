@@ -45,7 +45,7 @@
     ],
     "trait": {
       "name": "Sadism",
-      "description": " Alarak's Ability damage and self-healing are increased by 100% against enemy Heroes.Repeatable Quest: Takedowns increase Sadism by 3%, up to 30%. Sadism gained from Takedowns is lost on death.",
+      "description": " Alarak's Ability damage and self-healing are increased by 100% against enemy Heroes.{repeatable_quest}Repeatable Quest:{/repeatable_quest} Takedowns increase Sadism by 3%, up to 30%. Sadism gained from Takedowns is lost on death.",
       "image": "alarak_sadism.png",
       "abilityChanged": false
     }
@@ -65,7 +65,7 @@
     },
     {
       "name": "Extended Lightning",
-      "description": "Reduce Sadism by 10%.Quest: Hit Heroes with the center of Lightning Surge.Reward: After hitting 5 Heroes, increase Lightning Surge's range by 20%.Reward: After hitting 15 Heroes, Lightning Surge's center also Slows enemies by 40% for 2 seconds.Reward: After hitting 3 Heroes with the center of a single cast, increase Sadism by 10% and instantly gain all other Rewards.",
+      "description": "Reduce Sadism by 10%.{quest}Quest:{/quest} Hit Heroes with the center of Lightning Surge.{reward}Reward:{/reward} After hitting 5 Heroes, increase Lightning Surge's range by 20%.{reward}Reward:{/reward} After hitting 15 Heroes, Lightning Surge's center also Slows enemies by 40% for 2 seconds.{reward}Reward:{/reward} After hitting 3 Heroes with the center of a single cast, increase Sadism by 10% and instantly gain all other Rewards.",
       "image": "alarak_lightningsurge.png",
       "talentChanged": false
     }
@@ -73,13 +73,13 @@
   "4": [
     {
       "name": "Chaos Reigns",
-      "description": "Quest: Hit Heroes with Discord Strike.Reward: After hitting 15 Heroes, increase Discord Strike's damage by 60.Reward: After hitting 2 Heroes with a single Discord Strike, increase its damage by 60.Reward: After hitting 3 Heroes with a single Discord Strike, increase its damage by 100 and instantly gain all other Rewards.",
+      "description": "{quest}Quest:{/quest} Hit Heroes with Discord Strike.{reward}Reward:{/reward} After hitting 15 Heroes, increase Discord Strike's damage by 60.{reward}Reward:{/reward} After hitting 2 Heroes with a single Discord Strike, increase its damage by 60.{reward}Reward:{/reward} After hitting 3 Heroes with a single Discord Strike, increase its damage by 100 and instantly gain all other Rewards.",
       "image": "alarak_discordstrike.png",
       "talentChanged": false
     },
     {
       "name": "Negatively Charged",
-      "description": "Increase the Lightning Surge damage bonus to enemies between Alarak and his victim to 175%.Repeatable Quest: Each Hero hit by the center of Lightning Surge permanently increases the damage bonus by 5%.",
+      "description": "Increase the Lightning Surge damage bonus to enemies between Alarak and his victim to 175%.{repeatable_quest}Repeatable Quest:{/repeatable_quest} Each Hero hit by the center of Lightning Surge permanently increases the damage bonus by 5%.",
       "image": "alarak_lightningsurge.png",
       "talentChanged": false
     },

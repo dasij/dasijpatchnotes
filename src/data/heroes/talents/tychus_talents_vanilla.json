@@ -75,7 +75,7 @@
   "4": [
     {
       "name": "In the Rhythm",
-      "description": "Quest: While Minigun is active, Basic Attacks against Heroes permanently increase future Minigun durations by 0.03 seconds.",
+      "description": "{quest}Quest:{/quest} While Minigun is active, Basic Attacks against Heroes permanently increase future Minigun durations by 0.03 seconds.",
       "image": "tychus_minigun.png",
       "talentChanged": false
     },
@@ -87,7 +87,7 @@
     },
     {
       "name": "Master Assassin",
-      "description": "Passive: Increase Tychus's Attack Speed by 10%. Reward: After getting 15 Takedowns, Tychus's Attack Speed is increased by an additional 15%.",
+      "description": "Passive: Increase Tychus's Attack Speed by 10%. {reward}Reward:{/reward} After getting 15 Takedowns, Tychus's Attack Speed is increased by an additional 15%.",
       "image": "talent_autoattack_speed.png",
       "talentChanged": false
     }

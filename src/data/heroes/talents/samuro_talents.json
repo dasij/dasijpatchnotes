@@ -50,7 +50,7 @@
   "1": [
     {
       "name": "Way of Illusion",
-      "description": "Quest: Every time a Mirror Image Critically Strikes a Hero, Samuro gains 0.25 Attack Damage, up to 10.Reward: After hitting 40 Heroes, Samuro gains an additional 30 Attack Damage.",
+      "description": "{quest}Quest:{/quest} Every time a Mirror Image Critically Strikes a Hero, Samuro gains 0.25 Attack Damage, up to 10.{reward}Reward:{/reward} After hitting 40 Heroes, Samuro gains an additional 30 Attack Damage.",
       "image": "samuro_mirrorimage.png",
       "talentChanged": false
     },

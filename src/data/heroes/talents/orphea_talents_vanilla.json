@@ -60,7 +60,7 @@
     },
     {
       "name": "Growing Nightmare",
-      "description": "Increase Dread's damage by 50%.  Quest: Hit 3 enemy Heroes with a single cast of Dread's eruption.Reward: Permanently increase Dread's eruption damage by 50% and increase the Slow amount of Dread's eruption by 15%.",
+      "description": "Increase Dread's damage by 50%.  {quest}Quest:{/quest} Hit 3 enemy Heroes with a single cast of Dread's eruption.{reward}Reward:{/reward} Permanently increase Dread's eruption damage by 50% and increase the Slow amount of Dread's eruption by 15%.",
       "image": "orphea_e.png",
       "talentChanged": false
     },
@@ -100,13 +100,13 @@
     },
     {
       "name": "Ravenous Hunger",
-      "description": "Quest: Minions that die within 1.5 seconds of being hit by Chomp permanently increase its damage by 2 and heal Orphea for 60. Heroes that die increase its damage by 40 and heal Orphea for 25% of her maximum Health.",
+      "description": "{quest}Quest:{/quest} Minions that die within 1.5 seconds of being hit by Chomp permanently increase its damage by 2 and heal Orphea for 60. Heroes that die increase its damage by 40 and heal Orphea for 25% of her maximum Health.",
       "image": "orphea_w_2.png",
       "talentChanged": false
     },
     {
       "name": "Mind Devourer",
-      "description": "Quest: Hitting Heroes with Dread increases its damage by 5, up to 150.Reward: After hitting 30 Heroes, hitting an enemy Hero with Dread's eruption sets its cooldown to 6 seconds and refunds 50 Mana.",
+      "description": "{quest}Quest:{/quest} Hitting Heroes with Dread increases its damage by 5, up to 150.{reward}Reward:{/reward} After hitting 30 Heroes, hitting an enemy Hero with Dread's eruption sets its cooldown to 6 seconds and refunds 50 Mana.",
       "image": "orphea_e.png",
       "talentChanged": false
     }

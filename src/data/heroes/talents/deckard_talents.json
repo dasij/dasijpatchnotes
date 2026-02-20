@@ -55,13 +55,18 @@
       "description": "When at least 1 other allied Hero is nearby, Deckard gains 10 Armor and his Basic Abilities recharge 50% faster.",
       "image": "deckard_protectors_of_cain.png",
       "abilityChanged": false
+    },
+    "general": {
+      "name": "Base",
+      "description": "Horadric Cube now roulette between 7 gems sequentially each time it's cast: Sapphire (slow), Amethyst (cast speed), Ruby (health potion), Topaz (duration), Sapphire (healing reduction), Diamond (armor reduction), Skull (size).",
+      "developerCommentary": "I always liked the Field Study, Rejuvenation Potion and Ancient Blessings BUT couldn't find a way to make it possible to increase the possibilities on other tiers."
     }
   },
   "1": [
     {
       "name": "Scroll of Identify",
       "description": "",
-      "quest": "{highlight}Quest: Hitting an enemy Hero with Scroll of Sealing permanently increases its damage by 2.{/highlight}",
+      "quest": "{quest}Quest: Hitting an enemy Hero with Scroll of Sealing permanently increases its damage by 2.{/quest}",
       "rewards": [
         "{highlight} 15 hits Scroll of sealing will also apply gems from the roulette and reveal hit heroes by 6 seconds.{/highlight}",
         "{highlight} 30 hits Scroll of sealing now deal 500% extra damage to summons.{/highlight}"

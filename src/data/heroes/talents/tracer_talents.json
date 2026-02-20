@@ -122,7 +122,7 @@
   "13": [
     {
       "name": "Untouchable",
-      "description": "Passive: After Blinking, gain 20% Movement Speed for 1.25 seconds.Quest: Takedowns increase Tracer's Basic Attack damage by 5%, up to 25%. These bonuses are lost on death.",
+      "description": "Passive: After Blinking, gain 20% Movement Speed for 1.25 seconds.{quest}Quest:{/quest} Takedowns increase Tracer's Basic Attack damage by 5%, up to 25%. These bonuses are lost on death.",
       "image": "tracer_combo_q_trait.png",
       "talentChanged": false
     },

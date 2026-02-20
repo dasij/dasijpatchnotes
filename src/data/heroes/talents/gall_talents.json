@@ -82,7 +82,7 @@
     },
     {
       "name": "Bomb's Away",
-      "description": "Quest: Damaging a Hero with Runic Blast increases its damage by 5, up to 200.Reward: After damaging 20 Heroes, the range and speed of Cho's Rune Bomb is increased by 20%.",
+      "description": "{quest}Quest:{/quest} Damaging a Hero with Runic Blast increases its damage by 5, up to 200.{reward}Reward:{/reward} After damaging 20 Heroes, the range and speed of Cho's Rune Bomb is increased by 20%.",
       "image": "cho_runebomb_var1.png",
       "talentChanged": false
     }
@@ -96,7 +96,7 @@
     },
     {
       "name": "Double Trouble",
-      "description": "Quest: If Shadowflame hits an enemy Hero that is afflicted by Cho's Consuming Blaze, its cooldown is reduced by 0.5 seconds.Reward: After hitting 20 Heroes, Shadowflame's cooldown is instead permanently reduced by 0.5 seconds.",
+      "description": "{quest}Quest:{/quest} If Shadowflame hits an enemy Hero that is afflicted by Cho's Consuming Blaze, its cooldown is reduced by 0.5 seconds.{reward}Reward:{/reward} After hitting 20 Heroes, Shadowflame's cooldown is instead permanently reduced by 0.5 seconds.",
       "image": "gall_shadowflame_var1.png",
       "talentChanged": false
     },

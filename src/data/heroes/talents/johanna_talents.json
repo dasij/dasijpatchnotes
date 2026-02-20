@@ -89,9 +89,9 @@
       "image": "johanna_shield_glare.png",
       "talentChanged": true,
       "passives": [
-        "{highlight}Quest: Every 5 Regeneration Globes gathered increase the healing received by 5%{/highlight}"
+        "{quest}Quest: Every 5 Regeneration Globes gathered increase the healing received by 5%"
       ],
-      "developerCommentary": "After looking a lot at the crusader skill tree for Diablo 3 i kinda liked the idea of giving her more utility skills to the team ",
+      "developerCommentary": "After looking a lot at the crusader skill tree for Diablo 3 i kinda liked the idea of giving her more utility skills to the team {/quest}",
       "subtexts": [
         "The area will be the exactly same size of the Shield Glare"
       ]
@@ -100,7 +100,7 @@
   "4": [
     {
       "name": "Subdue",
-      "description": "Hitting 2 or more Heroes at the same time with Punish increases the Slow to 80% and the Slow amount does not decay.Quest: Hit 4 or more Heroes at the same time with Punish.Reward: Punish always Slows by 80%.",
+      "description": "Hitting 2 or more Heroes at the same time with Punish increases the Slow to 80% and the Slow amount does not decay.{quest}Quest:{/quest} Hit 4 or more Heroes at the same time with Punish.{reward}Reward:{/reward} Punish always Slows by 80%.",
       "image": "johanna_punish.png",
       "talentChanged": false
     },
@@ -110,8 +110,8 @@
       "image": "johanna_punish.png",
       "talentChanged": true,
       "passives": [
-        "{highlight}Quest: Hit 4 or more Heroes at the same time with Punish{/highlight}",
-        "{highlight}Reward: Basic attacks against marked targets grants Johanna 1 stack of 40 physical armor block.{/highlight}"
+        "{quest}Quest:{/quest} Hit 4 or more Heroes at the same time with Punish",
+        "{reward}Reward: Basic attacks against marked targets grants Johanna 1 stack of 40 physical armor block."
       ],
       "developerCommentary": "I made this level about Punish and i also like the quest from Subdue and i see it as something that makes Johanna more fun overall"
     },
@@ -121,8 +121,8 @@
       "image": "johanna_punish.png",
       "talentChanged": true,
       "passives": [
-        "{highlight}Quest: Hit 4 or more Heroes at the same time with Punish{/highlight}",
-        "{highlight}Reward: Johanna basic attacks against marked heroes also heals 1.25% of maximum health of nearby heroes{/highlight}"
+        "{quest}Quest:{/quest} Hit 4 or more Heroes at the same time with Punish",
+        "{reward}Reward: Johanna basic attacks against marked heroes also heals 1.25% of maximum health of nearby heroes"
       ],
       "developerCommentary": "I want my Crusader have the possibility for an utility tank similar to how Tyrael works as it's on the core values on the Diablo 3 being a support frontline.",
       "subtexts": [

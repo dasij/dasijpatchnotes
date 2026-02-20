@@ -67,7 +67,7 @@
     },
     {
       "name": "Protector Of Aiur",
-      "description": "Quest: Basic Attacks against enemy Heroes increase Artanis's Attack damage by 0.1%.  Takedowns grant 1% bonus damage.",
+      "description": "{quest}Quest:{/quest} Basic Attacks against enemy Heroes increase Artanis's Attack damage by 0.1%.  Takedowns grant 1% bonus damage.",
       "image": "talent_autoattack_damage.png",
       "talentChanged": false
     }

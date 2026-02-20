@@ -54,7 +54,7 @@
   "1": [
     {
       "name": "Unyielding Power",
-      "description": "Quest: Hit Heroes with Skull Missile.Reward: After hitting 20 Heroes, increase Skull Missile's damage by 100.Reward: After hitting 40 Heroes, Skull Missile gains an additional charge.",
+      "description": "{quest}Quest:{/quest} Hit Heroes with Skull Missile.{reward}Reward:{/reward} After hitting 20 Heroes, increase Skull Missile's damage by 100.{reward}Reward:{/reward} After hitting 40 Heroes, Skull Missile gains an additional charge.",
       "image": "mephisto_skull.png",
       "talentChanged": false
     },

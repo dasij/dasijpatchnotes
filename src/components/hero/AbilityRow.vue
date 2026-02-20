@@ -34,12 +34,26 @@ const heroName = inject('heroName')
 const displayName = computed(() => props.name || props.ability.name)
 
 const displayImage = computed(() => {
-  if (props.image) return props.image
-  if (!props.ability.image) return ''
+  // Determine which image source to use
+  const imageSource = props.image || props.ability?.image
+  if (!imageSource) return ''
+  
+  // If it's already a full path (starts with / or http), return it
+  if (imageSource.startsWith('/') || imageSource.startsWith('http')) {
+    return imageSource
+  }
+  
+  // Try to resolve the image path from multiple folders
   try {
-    return require(`@/assets/talents/${heroName.value}/${props.ability.image}`)
+    // First try talents folder with hero name
+    return require(`@/assets/talents/${heroName.value}/${imageSource}`)
   } catch {
-    return ''
+    try {
+      // Then try heroes portraits (for general/base images like Morales)
+      return require(`@/assets/heroes_portraits/${imageSource}`)
+    } catch {
+      return ''
+    }
   }
 })
 </script>
@@ -55,6 +69,7 @@ const displayImage = computed(() => {
   transition: all 0.2s;
   border: 2px solid transparent;
   background: rgba(255, 255, 255, 0.03);
+  flex-shrink: 0;
 }
 
 .ability-row:hover {
@@ -130,5 +145,111 @@ const displayImage = computed(() => {
 
 .ability-row.active .ability-name-small {
   color: #fff;
+}
+
+/* ===========================================
+   RESPONSIVE STYLES
+   =========================================== */
+
+/* Tablet - Layout 3 colunas com ícones maiores e bem distribuídos */
+@media (max-width: 991px) {
+  .ability-row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+    padding: 8px 4px;
+    width: 100%;
+    min-width: 0;
+    height: 100%;
+    min-height: 70px;
+  }
+  
+  .ability-row:hover {
+    transform: none;
+  }
+  
+  .ability-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    border-width: 2px;
+    flex-shrink: 0;
+  }
+  
+  .ability-name-small {
+    font-size: 10px;
+    text-align: center;
+    line-height: 1.2;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 500;
+  }
+  
+  .key-bind {
+    font-size: 9px;
+    padding: 1px 4px;
+    bottom: 2px;
+    right: 2px;
+    border-radius: 3px;
+  }
+}
+
+/* Mobile - Grid de 3 colunas (ícones menores e centralizados) */
+@media (max-width: 767px) {
+  .ability-row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 8px 4px;
+    width: 100%;
+    min-width: auto;
+    height: 100%;
+  }
+  
+  .ability-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    border-width: 2px;
+  }
+  
+  .ability-name-small {
+    font-size: 10px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.2;
+  }
+  
+  .key-bind {
+    font-size: 9px;
+    padding: 2px 4px;
+    border-radius: 3px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .ability-row {
+    padding: 12px 8px;
+    gap: 8px;
+  }
+  
+  .ability-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 10px;
+  }
+  
+  .ability-name-small {
+    font-size: 11px;
+  }
+  
+  .key-bind {
+    font-size: 10px;
+  }
 }
 </style>

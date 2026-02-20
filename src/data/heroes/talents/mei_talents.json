@@ -50,6 +50,11 @@
       "image": "mei_trait.png",
       "abilityChanged": false,
       "cooldown": "40s"
+    },
+    "general": {
+      "name": "Base",
+      "description": "Activate to switch basic attack to a short constant freezing blast that you can attack while moving dealing 112.5 damage per second (150% base damage, 4 attacks per second, range 2.0).",
+      "developerCommentary": ""
     }
   },
   "1": [

@@ -11,10 +11,10 @@
     
     <div class="detail-stats" v-if="selectedAbility.cooldown || selectedAbility.manaCost">
       <span v-if="selectedAbility.cooldown" class="detail-stat">
-        <span class="stat-label">Cooldown:</span> {{ selectedAbility.cooldown }}
+        <span class="stat-label">Cooldown:</span> <span v-html="formatText(selectedAbility.cooldown)"></span>
       </span>
       <span v-if="selectedAbility.manaCost" class="detail-stat">
-        <span class="stat-label">Mana Cost:</span> {{ selectedAbility.manaCost }}
+        <span class="stat-label">Mana Cost:</span> <span v-html="formatText(selectedAbility.manaCost)"></span>
       </span>
     </div>
 
@@ -42,10 +42,10 @@
     
     <div class="detail-stats" v-if="selectedTalent.cooldown || selectedTalent.manaCost">
       <span v-if="selectedTalent.cooldown" class="detail-stat">
-        <span class="stat-label">Cooldown:</span> {{ selectedTalent.cooldown }}
+        <span class="stat-label">Cooldown:</span> <span v-html="formatText(selectedTalent.cooldown)"></span>
       </span>
       <span v-if="selectedTalent.manaCost" class="detail-stat">
-        <span class="stat-label">Mana Cost:</span> {{ selectedTalent.manaCost }}
+        <span class="stat-label">Mana Cost:</span> <span v-html="formatText(selectedTalent.manaCost)"></span>
       </span>
     </div>
 
@@ -104,6 +104,21 @@ const convertTextPlaceholders = inject('convertTextPlaceholders')
 const abilityImage = computed(() => {
   if (!props.selectedAbility) return ''
   if (props.abilities?.general === props.selectedAbility) {
+    // If general has its own image defined, try to use it
+    if (props.selectedAbility.image) {
+      try {
+        // Try talents folder first
+        return require(`@/assets/talents/${heroName.value}/${props.selectedAbility.image}`)
+      } catch {
+        try {
+          // Then heroes portraits
+          return require(`@/assets/heroes_portraits/${props.selectedAbility.image}`)
+        } catch {
+          // Fall back to hero portrait
+          return heroPortraitPath.value
+        }
+      }
+    }
     return heroPortraitPath.value
   }
   try {
@@ -231,6 +246,7 @@ const formatSubtext = (sub) => convertTextPlaceholders(sub)
   font-size: 15px;
   line-height: 1.6;
   margin-bottom: 12px;
+  white-space: pre-line;
 }
 
 .detail-extra {
@@ -299,5 +315,140 @@ const formatSubtext = (sub) => convertTextPlaceholders(sub)
   color: #444;
   font-size: 13px;
   margin-top: 8px;
+}
+
+/* ===========================================
+   RESPONSIVE STYLES
+   =========================================== */
+
+/* Tablet */
+@media (max-width: 991px) {
+  .detail-header {
+    gap: 12px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .detail-icon {
+    width: 52px;
+    height: 52px;
+  }
+  
+  .detail-title h3 {
+    font-size: 18px;
+  }
+  
+  .detail-type, .detail-level {
+    font-size: 11px;
+  }
+  
+  .detail-stats {
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .detail-stat {
+    font-size: 12px;
+  }
+  
+  .detail-description {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  
+  .detail-extra {
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .detail-extra h4 {
+    font-size: 11px;
+    margin-bottom: 6px;
+  }
+  
+  .detail-extra p, .detail-extra li {
+    font-size: 12px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .detail-header {
+    gap: 10px;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+  }
+  
+  .detail-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+  }
+  
+  .detail-title h3 {
+    font-size: 16px;
+    margin-bottom: 3px;
+  }
+  
+  .detail-type, .detail-level {
+    font-size: 10px;
+    letter-spacing: 0.5px;
+  }
+  
+  .detail-stats {
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+  
+  .detail-stat {
+    font-size: 11px;
+  }
+  
+  .detail-description {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  
+  .detail-extra {
+    padding: 8px 10px;
+    margin-top: 8px;
+    border-left-width: 3px;
+  }
+  
+  .detail-extra h4 {
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .detail-extra p, .detail-extra li {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+  
+  .detail-extra li {
+    padding-left: 14px;
+    margin-bottom: 4px;
+  }
+  
+  .empty-placeholder {
+    padding: 30px 15px;
+    font-size: 13px;
+  }
+  
+  .hint {
+    font-size: 11px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .detail-icon {
+    width: 44px;
+    height: 44px;
+  }
+  
+  .detail-title h3 {
+    font-size: 14px;
+  }
 }
 </style>

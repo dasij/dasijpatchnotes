@@ -8,7 +8,9 @@ export function useHeroData() {
   const router = useRouter()
   
   const hero = ref({})
-  const talents = ref({})
+  // Mantém os talentos de ambos os tipos separadamente
+  const vanillaTalentsData = ref({})
+  const modifiedTalentsData = ref({})
   const talentType = ref('modified')
   const selectedTalents = ref({
     modified: { 1: null, 4: null, 7: null, 10: null, 13: null, 16: null, 20: null },
@@ -20,13 +22,27 @@ export function useHeroData() {
   
   const heroName = computed(() => selectedHeroName.value || route.params.name?.toLowerCase() || '')
   
+  // Retorna os talentos do tipo atual (para compatibilidade com o código existente)
+  const talents = computed(() => {
+    return talentType.value === 'modified' ? modifiedTalentsData.value : vanillaTalentsData.value
+  })
+  
+  // Mapeamento de nomes de heróis com hífen para nomes de arquivos sem hífen
+  const heroNameToFileMap = {
+    'li-ming': 'liming',
+    'lt-morales': 'ltmorales',
+    'sgt-hammer': 'sgthammer',
+    'the-butcher': 'thebutcher',
+    'the-lost-vikings': 'lostvikings',
+    'cho': 'chogall',
+    'gall': 'chogall'
+  }
+  
   const heroPortraitPath = computed(() => {
     if (!heroName.value) return ''
-    try {
-      return require(`@/assets/heroes_portraits/${heroName.value}.png`)
-    } catch {
-      return ''
-    }
+    const fileName = heroNameToFileMap[heroName.value] || heroName.value
+    // Usa caminho direto para pasta public (não passa pelo webpack)
+    return `/heroes_portraits/${fileName}.png`
   })
   
   const heroSplashPath = computed(() => {
@@ -54,35 +70,60 @@ export function useHeroData() {
       const heroData = require(`@/data/heroes/${targetHero}.json`)
       if (heroData) {
         hero.value = heroData
-        loadTalents(targetHero)
+        // Carrega os talentos de AMBOS os tipos
+        loadAllTalents(targetHero)
       }
     } catch (error) {
       console.error('Error loading hero data:', error)
     }
   }
   
-  const loadTalents = (targetHero = null) => {
+  // Carrega os talentos de um tipo específico
+  const loadTalents = (targetHero = null, type = null) => {
     const hero = targetHero || heroName.value
+    const targetType = type || talentType.value
     if (!hero) return
     
-    const cacheKey = `${hero}-${talentType.value}`
+    const cacheKey = `${hero}-${targetType}`
     
     if (talentsCache.has(cacheKey)) {
-      talents.value = talentsCache.get(cacheKey)
+      if (targetType === 'modified') {
+        modifiedTalentsData.value = talentsCache.get(cacheKey)
+      } else {
+        vanillaTalentsData.value = talentsCache.get(cacheKey)
+      }
       return
     }
     
     try {
-      const fileName = talentType.value === 'modified'
+      const fileName = targetType === 'modified'
         ? `${hero}_talents.json`
         : `${hero}_talents_vanilla.json`
       const data = require(`@/data/heroes/talents/${fileName}`)
-      talents.value = data
+      
+      if (targetType === 'modified') {
+        modifiedTalentsData.value = data
+      } else {
+        vanillaTalentsData.value = data
+      }
       talentsCache.set(cacheKey, data)
     } catch (error) {
-      console.error('Error loading talents:', error)
-      talents.value = { abilities: { basic: [], heroic: [], trait: null, general: null } }
+      console.error(`Error loading ${targetType} talents:`, error)
+      if (targetType === 'modified') {
+        modifiedTalentsData.value = { abilities: { basic: [], heroic: [], trait: null, general: null } }
+      } else {
+        vanillaTalentsData.value = { abilities: { basic: [], heroic: [], trait: null, general: null } }
+      }
     }
+  }
+  
+  // Carrega os talentos de ambos os tipos
+  const loadAllTalents = (targetHero = null) => {
+    const hero = targetHero || heroName.value
+    if (!hero) return
+    
+    loadTalents(hero, 'modified')
+    loadTalents(hero, 'vanilla')
   }
   
   const selectHero = (heroName) => {
@@ -103,12 +144,31 @@ export function useHeroData() {
   
   const toggleTalentType = () => {
     talentType.value = talentType.value === 'modified' ? 'vanilla' : 'modified'
-    loadTalents()
+    // Não precisa carregar talentos aqui pois já temos ambos carregados
+  }
+  
+  const setTalentType = (type) => {
+    if (type === 'modified' || type === 'vanilla') {
+      talentType.value = type
+      // Não precisa carregar talentos aqui pois já temos ambos carregados
+    }
   }
   
   const toggleTalentSelection = (level, talent) => {
-    const current = selectedTalents.value[talentType.value]
-    current[level] = current[level] === talent ? null : talent
+    const type = talentType.value
+    const current = selectedTalents.value[type]
+    // Comparar por nome em vez de referência de objeto
+    const isCurrentlySelected = current[level]?.name === talent.name
+    const newValue = isCurrentlySelected ? null : talent
+    
+    // Criar novo objeto para garantir reatividade
+    selectedTalents.value = {
+      ...selectedTalents.value,
+      [type]: {
+        ...current,
+        [level]: newValue
+      }
+    }
   }
   
   const resetSelections = () => {
@@ -119,10 +179,10 @@ export function useHeroData() {
   }
   
   const isSelected = (level, talent) => 
-    currentSelectedTalents.value[level] === talent
+    currentSelectedTalents.value[level]?.name === talent.name
   
   const isAnySelected = (level) => 
-    currentSelectedTalents.value[level] !== null
+    currentSelectedTalents.value[level] !== null && currentSelectedTalents.value[level] !== undefined
   
   const findAbilityOrTalent = (type, section, category, index, targetHero) => {
     const hero = targetHero || heroName.value
@@ -170,9 +230,21 @@ export function useHeroData() {
     }
   })
   
+  const setSelectedTalents = (type, selections) => {
+    if (type === 'modified' || type === 'vanilla') {
+      // Cria uma nova referência para garantir reatividade
+      selectedTalents.value = {
+        ...selectedTalents.value,
+        [type]: { ...selectedTalents.value[type], ...selections }
+      }
+    }
+  }
+
   return {
     hero,
     talents,
+    vanillaTalentsData,
+    modifiedTalentsData,
     heroName,
     heroPortraitPath,
     heroSplashPath,
@@ -182,10 +254,13 @@ export function useHeroData() {
     selectedHeroName,
     loadHeroData,
     loadTalents,
+    loadAllTalents,
     selectHero,
     toggleTalentType,
+    setTalentType,
     toggleTalentSelection,
     resetSelections,
+    setSelectedTalents,
     isSelected,
     isAnySelected,
     findAbilityOrTalent

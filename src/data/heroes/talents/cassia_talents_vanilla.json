@@ -54,7 +54,7 @@
   "1": [
     {
       "name": "Thunderstroke",
-      "description": "Increase the damage of Lightning Fury by 15.Quest: Lightning Fury's damage is increased by 1.5 every time it hits a Hero.",
+      "description": "Increase the damage of Lightning Fury by 15.{quest}Quest:{/quest} Lightning Fury's damage is increased by 1.5 every time it hits a Hero.",
       "image": "cassia_lightningfury.png",
       "talentChanged": false
     },

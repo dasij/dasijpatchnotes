@@ -3,9 +3,9 @@
     "basic": [
       {
         "name": "Hammerang (Q)",
-        "description": "Throw out a Hammer that returns to Falstad, dealing 80 damage and Slowing enemies hit by 25% for 2 seconds. Reactive to explode the Hammer, dealing 95 damage to nearby enemies.",
+        "description": "Throw out a Hammer that returns to Falstad, dealing 80 damage and Slowing enemies hit by 25% for 2 seconds. Reactive to explode the Hammer, dealing 95 damage to nearby enemies. {highlight}Can now be cast while performing Barrel Roll.{/highlight}",
         "image": "falstad_hammerang.png",
-        "abilityChanged": false,
+        "abilityChanged": true,
         "manaCost": "60 Mana",
         "cooldown": "10s"
       },
@@ -19,9 +19,9 @@
       },
       {
         "name": "Barrel Roll (E)",
-        "description": "Dashes forward and grants a 171 point Shield for 3 seconds.",
+        "description": "Dashes forward and grants a 171 point Shield for 3 seconds. {highlight}Decreased total time to reach final destination with better animation feeling.{/highlight}",
         "image": "falstad_barrelroll.png",
-        "abilityChanged": false,
+        "abilityChanged": true,
         "manaCost": "70 Mana",
         "cooldown": "13s"
       }
@@ -54,7 +54,7 @@
   "1": [
     {
       "name": "Gathering Storm",
-      "description": "Quest: Every time Hammerang hits a Hero increase its damage by 0.5% and refund 6 Mana.Reward: After hitting 30 Heroes with Hammerang, increase its damage by 15%.",
+      "description": "{quest}Quest:{/quest} Every time Hammerang hits a Hero increase its damage by 0.5% and refund 6 Mana.{reward}Reward:{/reward} After hitting 30 Heroes with Hammerang, increase its damage by 15%.",
       "image": "falstad_hammerang.png",
       "talentChanged": false
     },
@@ -70,7 +70,7 @@
     },
     {
       "name": "Frequent Flyer",
-      "description": "Activate Frequent Flyer to gain 40% Attack Speed and Tailwind for 4 seconds.Quest: Minion kills grant 0.2 Basic Attack Damage. Hero Takedowns grant 0.5 Basic Attack Damage.",
+      "description": "Activate Frequent Flyer to gain 40% Attack Speed and Tailwind for 4 seconds.{quest}Quest:{/quest} Minion kills grant 0.2 Basic Attack Damage. Hero Takedowns grant 0.5 Basic Attack Damage.",
       "image": "falstad_tailwind_a.png",
       "talentChanged": false,
       "cooldown": "45s"

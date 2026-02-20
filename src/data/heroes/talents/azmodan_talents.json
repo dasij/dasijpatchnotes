@@ -3,7 +3,7 @@
     "basic": [
       {
         "name": "Globe of Annihilation (Q)",
-        "description": "Shoot a globe of destruction, dealing 176 damage on impact.Quest: Hitting a Hero or killing a Minion within 1.5 seconds of being hit by Globe of Annihilation grants 2 Annihilation.Reward: Each stack of Annihilation increases the damage of Globe of Annihilation by 1, up to 400.",
+        "description": "Shoot a globe of destruction, dealing 176 damage on impact.{quest}Quest:{/quest} Hitting a Hero or killing a Minion within 1.5 seconds of being hit by Globe of Annihilation grants 2 Annihilation.{reward}Reward:{/reward} Each stack of Annihilation increases the damage of Globe of Annihilation by 1, up to 400.",
         "image": "azmodan_globeofannihilation.png",
         "abilityChanged": false,
         "manaCost": "70 Mana",
@@ -55,19 +55,19 @@
   "1": [
     {
       "name": "Greed",
-      "description": "Globe of Annihilation deals 15% more damage to non-Heroic targets.Quest: After gaining 200 Annihilation, increase the range of All Shall Burn by 25% and Demon Warriors gain 20% Attack Speed and Movement Speed.",
+      "description": "Globe of Annihilation deals 15% more damage to non-Heroic targets.{quest}Quest:{/quest} After gaining 200 Annihilation, increase the range of All Shall Burn by 25% and Demon Warriors gain 20% Attack Speed and Movement Speed.",
       "image": "azmodan_globeofannihilation.png",
       "talentChanged": false
     },
     {
       "name": "Gluttony",
-      "description": "Increase the number of stacks of Annihilation gained by hitting Heroes with Globe of Annihilation from 2 to 4.Quest: After gaining 200 Annihilation, each enemy hit by Globe of Annihilation reduces its cooldown by 0.25 seconds, doubled against Heroes.",
+      "description": "Increase the number of stacks of Annihilation gained by hitting Heroes with Globe of Annihilation from 2 to 4.{quest}Quest:{/quest} After gaining 200 Annihilation, each enemy hit by Globe of Annihilation reduces its cooldown by 0.25 seconds, doubled against Heroes.",
       "image": "azmodan_globeofannihilation_a.png",
       "talentChanged": false
     },
     {
       "name": "Wrath",
-      "description": "Basic Attacks against Heroes under 75% Health grant 1 Annihilation. Quest: After gaining 200 Annihilation, hitting a Hero with Globe of Annihilation increases the damage of Azmodan's next Basic Attack against them within 3 seconds by 85% the amount of Annihilation he has.",
+      "description": "Basic Attacks against Heroes under 75% Health grant 1 Annihilation. {quest}Quest:{/quest} After gaining 200 Annihilation, hitting a Hero with Globe of Annihilation increases the damage of Azmodan's next Basic Attack against them within 3 seconds by 85% the amount of Annihilation he has.",
       "image": "azmodan_globeofannihilation_b.png",
       "talentChanged": false
     }

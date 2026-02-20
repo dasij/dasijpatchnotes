@@ -3,9 +3,9 @@
     "basic": [
       {
         "name": "Fel Flame (Q)",
-        "description": "Release a wave of flame, dealing 210 damage to enemies.",
+        "description": "Release a wave of flame, dealing 210 damage to enemies. {highlight}Cast range increased by 25%.{/highlight}",
         "image": "guldan_felflame.png",
-        "abilityChanged": false,
+        "abilityChanged": true,
         "manaCost": "75 Mana",
         "cooldown": "2s",
         "developerCommentary": "Gul'dan Fel Flame currently has a problem..depending on how you build Gul'dan Fel Flame becomes your priority skill by far or the useless one and with the other changes i propose on the Fel Flame aspect one thing is prevalent..Without the extra cast range there's almost no incentive to use it."
@@ -55,6 +55,11 @@
       "image": "guldan_lifetap.png",
       "abilityChanged": false,
       "cooldown": "1s"
+    },
+    "general": {
+      "name": "Base",
+      "description": "Fel Flame cast range increased by 25%.",
+      "developerCommentary": "Gul'dan Fel Flame currently has a problem..depending on how you build Gul'dan Fel Flame becomes your priority skill by far or the useless one and with the other changes i propose on the Fel Flame aspect one thing is prevalent..Without the extra cast range there's almost no incentive to use it."
     }
   },
   "1": [
@@ -79,7 +84,7 @@
     },
     {
       "name": "Consume Life",
-      "description": "{highlight}Quest: Killing troops increase Gul'dan maximun health points by 0.3% up to 20%. Reward: If Consume life is fully charged it can be activated while dead to immediately respawn at the Hall of Storms, but must be charged again.{/highlight}",
+      "description": "{quest}Quest:{/quest} Killing troops increase Gul'dan maximun health points by 0.3% up to 20%. {reward}Reward:{/reward} If Consume life is fully charged it can be activated while dead to immediately respawn at the Hall of Storms, but must be charged again.",
       "image": "guldan_darkpact.png",
       "talentChanged": true,
       "developerCommentary": "I wanted to make something related to the Vanilla Dark Bargain effect but i disliked increasing respawn time the way it is..on counterpart the Malthael level 20 talent No One Can Stop Death gives a better control of it"

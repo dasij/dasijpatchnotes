@@ -60,13 +60,13 @@
     },
     {
       "name": "Circle of Life",
-      "description": "Quest: Collect Regeneration Globes.Reward: After collecting 10 Regeneration Globes, Abundance heals for an additional 5% maximum Health.Reward: After collecting 15 Regeneration Globes, Abundance's healing burst creates a Regeneration Globe.",
+      "description": "{quest}Quest:{/quest} Collect Regeneration Globes.{reward}Reward:{/reward} After collecting 10 Regeneration Globes, Abundance heals for an additional 5% maximum Health.{reward}Reward:{/reward} After collecting 15 Regeneration Globes, Abundance's healing burst creates a Regeneration Globe.",
       "image": "alexstrasza_abundance.png",
       "talentChanged": false
     },
     {
       "name": "Flames of Fury",
-      "description": "Reduce the Mana cost of Flame Buffet from 50 to 40.Quest: Hit 20 Burning Heroes with Flame Buffet.Reward: Hitting a Burning Hero with Flame Buffet reduces Dragonqueen's cooldown by 5 seconds.",
+      "description": "Reduce the Mana cost of Flame Buffet from 50 to 40.{quest}Quest:{/quest} Hit 20 Burning Heroes with Flame Buffet.{reward}Reward:{/reward} Hitting a Burning Hero with Flame Buffet reduces Dragonqueen's cooldown by 5 seconds.",
       "image": "alexstrasza_flame_buffet.png",
       "talentChanged": false
     }

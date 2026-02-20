@@ -61,7 +61,7 @@
     },
     {
       "name": "Unending Hatred",
-      "description": "Quest: Minion kills grant 0.2 Basic Attack Damage. Hero Takedowns grant 1 Basic Attack Damage.Reward: After gaining 20 increased Basic Attack Damage, receive an additional 20 Basic Attack Damage.",
+      "description": "{quest}Quest:{/quest} Minion kills grant 0.2 Basic Attack Damage. Hero Takedowns grant 1 Basic Attack Damage.{reward}Reward:{/reward} After gaining 20 increased Basic Attack Damage, receive an additional 20 Basic Attack Damage.",
       "image": "talent_seasonedmarksman.png",
       "talentChanged": false
     }
@@ -101,7 +101,7 @@
     },
     {
       "name": "Unbound",
-      "description": "Sweeping Strike can go over walls and terrain.Reward: After hitting 15 Heroes with Sweeping Strike, gain a second charge.",
+      "description": "Sweeping Strike can go over walls and terrain.{reward}Reward:{/reward} After hitting 15 Heroes with Sweeping Strike, gain a second charge.",
       "image": "illidan_sweepingstrike.png",
       "talentChanged": false
     }

@@ -165,7 +165,7 @@
     },
     {
       "name": "Mithril Mace",
-      "description": "Increase Leoric's Attack Speed by 20%.Repeatable Quest: Nearby enemy Minion deaths grant 0.3% permanent Attack Speed, and Takedowns grant 3% permanent Attack Speed, up to 30%.",
+      "description": "Increase Leoric's Attack Speed by 20%.{repeatable_quest}Repeatable Quest:{/repeatable_quest} Nearby enemy Minion deaths grant 0.3% permanent Attack Speed, and Takedowns grant 3% permanent Attack Speed, up to 30%.",
       "image": "talent_autoattack_speed.png",
       "talentChanged": false
     }

@@ -82,7 +82,7 @@
     },
     {
       "name": "Hunter-Gatherer",
-      "description": "Quest: Gathering a Regeneration Globe increases Rexxar and Misha's Health Regeneration by 1 per second, up to 25 per second. Reward: After gathering 25 Globes, Rexxar and Misha gain 15 Armor.",
+      "description": "{quest}Quest:{/quest} Gathering a Regeneration Globe increases Rexxar and Misha's Health Regeneration by 1 per second, up to 25 per second. {reward}Reward:{/reward} After gathering 25 Globes, Rexxar and Misha gain 15 Armor.",
       "image": "talent_regenerationmaster.png",
       "talentChanged": false
     },

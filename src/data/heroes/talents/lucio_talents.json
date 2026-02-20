@@ -101,7 +101,7 @@
   "4": [
     {
       "name": "Subwoofer",
-      "description": "Enemies within the first half of Soundwave's range are knocked back 75% further. Quest: Hit 3 enemy Heroes with a single Soundwave. Reward: Increase Soundwave's arc by 50% and its range by 20%.",
+      "description": "Enemies within the first half of Soundwave's range are knocked back 75% further. {quest}Quest:{/quest} Hit 3 enemy Heroes with a single Soundwave. {reward}Reward:{/reward} Increase Soundwave's arc by 50% and its range by 20%.",
       "image": "storm_ui_icon_lucio_soundwave.png"
     },
     {

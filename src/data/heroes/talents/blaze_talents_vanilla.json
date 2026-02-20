@@ -76,7 +76,7 @@
     },
     {
       "name": "New Habits",
-      "description": "Collecting Regeneration Globes reduces the cooldown of Pyromania by 6 seconds.Quest: Collect 15 Regeneration Globes.Reward: Pyromania grants Unstoppable for 2 seconds.",
+      "description": "Collecting Regeneration Globes reduces the cooldown of Pyromania by 6 seconds.{quest}Quest:{/quest} Collect 15 Regeneration Globes.{reward}Reward:{/reward} Pyromania grants Unstoppable for 2 seconds.",
       "image": "blaze_new_habits.png",
       "talentChanged": false
     }
@@ -142,7 +142,7 @@
   "13": [
     {
       "name": "Grill and Kill",
-      "description": "Increase Ignited Oil Spill damage by 45%.Quest: Damage enemy Heroes with Ignited Oil Spills 30 times.Reward: Increase Oil Spill's Ignite duration by 2.5 seconds.",
+      "description": "Increase Ignited Oil Spill damage by 45%.{quest}Quest:{/quest} Damage enemy Heroes with Ignited Oil Spills 30 times.{reward}Reward:{/reward} Increase Oil Spill's Ignite duration by 2.5 seconds.",
       "image": "blaze_oil.png",
       "talentChanged": false
     },

@@ -1,7 +1,7 @@
 <template>
   <div class="abilities-panel">
     <h2 class="panel-title">Abilities</h2>
-    <div class="abilities-vertical">
+    <div ref="scrollContainer" class="abilities-vertical" :class="{ 'has-overflow': hasOverflow }">
       <!-- Render exactly 9 slots, fill with actual abilities or placeholders -->
       <template v-for="index in 9" :key="index">
         <!-- Actual abilities -->
@@ -26,7 +26,7 @@
 
 <script setup>
 /* eslint-disable no-undef */
-import { computed } from 'vue'
+import { computed, ref, onMounted, onUpdated, onUnmounted, nextTick } from 'vue'
 import AbilityRow from './AbilityRow.vue'
 
 const props = defineProps({
@@ -87,7 +87,7 @@ const abilityList = computed(() => {
       ability: props.abilities.general,
       name: 'Base Changes',
       keyBind: 'B',
-      image: props.heroPortraitPath,
+      image: props.abilities.general.image || props.heroPortraitPath,
       isChanged: props.abilities.general.talentChanged || props.abilities.general.abilityChanged,
       type: 'base'
     })
@@ -99,6 +99,42 @@ const abilityList = computed(() => {
 const getAbilityAtIndex = (index) => {
   return abilityList.value[index] || null
 }
+
+// Detect overflow to show scrollbar only when needed
+const scrollContainer = ref(null)
+const hasOverflow = ref(false)
+
+let checkTimeout = null
+
+const checkOverflow = () => {
+  if (scrollContainer.value) {
+    const el = scrollContainer.value
+    hasOverflow.value = el.scrollHeight > el.clientHeight + 1 // +1px tolerance
+  }
+}
+
+const debouncedCheck = () => {
+  clearTimeout(checkTimeout)
+  checkTimeout = setTimeout(checkOverflow, 50)
+}
+
+onMounted(() => {
+  // Initial checks with delay to ensure DOM is ready
+  setTimeout(checkOverflow, 100)
+  setTimeout(checkOverflow, 300) // Double check after images load
+  
+  // Listen for window resize
+  window.addEventListener('resize', debouncedCheck)
+})
+
+onUpdated(() => {
+  nextTick(checkOverflow)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('resize', debouncedCheck)
+  clearTimeout(checkTimeout)
+})
 </script>
 
 <style scoped>
@@ -123,16 +159,140 @@ const getAbilityAtIndex = (index) => {
 .abilities-vertical {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
   flex: 1;
   justify-content: flex-start;
+  min-height: 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+/* Show scrollbar only when there's overflow */
+.abilities-vertical.has-overflow {
+  overflow-y: auto;
+}
+
+/* Firefox scrollbar */
+.abilities-vertical.has-overflow {
+  scrollbar-width: thin;
+  scrollbar-color: #444 transparent;
+}
+
+/* Webkit scrollbar - only visible when has-overflow */
+.abilities-vertical.has-overflow::-webkit-scrollbar {
+  width: 6px;
+}
+
+.abilities-vertical.has-overflow::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.abilities-vertical.has-overflow::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 3px;
 }
 
 .ability-placeholder {
-  height: 56px;
-  min-height: 56px;
+  height: 0;
+  min-height: 0;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.02);
   border: 2px dashed rgba(255, 255, 255, 0.05);
+  flex-shrink: 0;
+  opacity: 0;
+}
+
+/* ===========================================
+   RESPONSIVE STYLES
+   =========================================== */
+
+/* Tablet - Abilities em grid de 3 colunas bem distribuído */
+@media (max-width: 991px) {
+  .abilities-panel {
+    flex-direction: column;
+    gap: 8px;
+    height: 100%;
+    overflow: hidden;
+    padding: 10px;
+  }
+  
+  .panel-title {
+    font-size: 12px;
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+    flex-shrink: 0;
+    text-align: center;
+  }
+  
+  /* Grid de 3 colunas x 3 linhas - com altura mínima para ícones */
+  .abilities-vertical {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    grid-template-rows: repeat(3, minmax(70px, 1fr)) !important;
+    gap: 10px;
+    overflow: hidden;
+    height: auto;
+    min-height: 0;
+    padding: 2px;
+  }
+  
+  .ability-placeholder {
+    height: 100%;
+    min-height: 70px;
+    width: 100%;
+    min-width: 0;
+    border-radius: 10px;
+  }
+}
+
+/* Mobile - Abilities em grid de 3 colunas compacto */
+@media (max-width: 767px) {
+  .abilities-panel {
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .panel-title {
+    font-size: 12px;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+  }
+  
+  /* Grid de 3 colunas (3-3-3) - altura fixa para evitar células gigantes */
+  .abilities-vertical {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 90px);
+    gap: 8px;
+    overflow: visible;
+    height: auto;
+    min-height: auto;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .ability-placeholder {
+    height: 100%;
+    min-height: 90px;
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+/* Small Mobile - Grid mais compacto */
+@media (max-width: 480px) {
+  .abilities-panel {
+    padding: 8px;
+  }
+  
+  .abilities-vertical {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+  }
+  
+  .ability-placeholder {
+    min-height: 50px;
+    border-radius: 8px;
+  }
 }
 </style>

@@ -21,9 +21,9 @@
     </div>
     
     <!-- Tab Content -->
-    <div class="tab-content">
+    <div ref="tabContent" class="tab-content" :class="{ 'has-overflow': hasOverflow && activeTab === 'tree', 'compact-mode': isCompact && activeTab === 'tree' }">
       <!-- Tree View - Ocupa espaço verticalmente -->
-      <div v-if="activeTab === 'tree'" class="tree-view">
+      <div v-if="activeTab === 'tree'" ref="treeContainer" class="tree-view">
         <div
           v-for="level in talentLevels"
           :key="level"
@@ -40,7 +40,7 @@
           >
             {{ level }}
           </span>
-          <div class="talent-options">
+          <div class="talent-options" :class="{ 'five-talents': talents[level]?.length > 4 }">
             <TalentNode
               v-for="(talent, index) in talents[level]"
               :key="talent.name"
@@ -91,7 +91,7 @@
 
 <script setup>
 /* eslint-disable no-undef */
-import { ref, computed, inject } from 'vue'
+import { ref, computed, inject, watch, onMounted, nextTick } from 'vue'
 import TalentNode from './TalentNode.vue'
 
 const props = defineProps({
@@ -108,9 +108,9 @@ const heroName = inject('heroName')
 const formatText = inject('formatText')
 const activeTab = ref('tree')
 
-const isSelected = (level, talent) => props.currentSelectedTalents[level] === talent
+const isSelected = (level, talent) => props.currentSelectedTalents[level]?.name === talent.name
 const isAnySelected = (level) => props.currentSelectedTalents[level] !== null
-const spacerCount = (level) => 4 - (props.talents[level]?.length || 0)
+const spacerCount = (level) => Math.max(0, 4 - (props.talents[level]?.length || 0))
 
 const hasAnySelection = computed(() => {
   return Object.values(props.currentSelectedTalents).some(t => t !== null)
@@ -138,6 +138,70 @@ const getTalentImage = (level) => {
     return ''
   }
 }
+
+// Detect overflow to show scrollbar only when needed
+const tabContent = ref(null)
+const treeContainer = ref(null)
+const hasOverflow = ref(false)
+const isCompact = ref(false)
+
+const checkOverflow = async () => {
+  // Wait for DOM update
+  await nextTick()
+  
+  // Only check on tree tab
+  if (activeTab.value !== 'tree' || !treeContainer.value || !tabContent.value) {
+    return
+  }
+  
+  const container = tabContent.value
+  const content = treeContainer.value
+  const containerHeight = container.clientHeight
+  
+  console.log('Container height:', containerHeight)
+  
+  // Step 1: Start with normal size
+  isCompact.value = false
+  await nextTick()
+  
+  const normalHeight = content.scrollHeight
+  console.log('Normal height:', normalHeight, 'Fits:', normalHeight <= containerHeight + 1)
+  
+  // If fits in normal mode, done
+  if (normalHeight <= containerHeight + 1) {
+    hasOverflow.value = false
+    return
+  }
+  
+  // Step 2: Try compact mode
+  isCompact.value = true
+  await nextTick()
+  
+  const compactHeight = content.scrollHeight
+  console.log('Compact height:', compactHeight, 'Needs scroll:', compactHeight > containerHeight + 1)
+  
+  // If still doesn't fit, show scrollbar
+  hasOverflow.value = compactHeight > containerHeight + 1
+}
+
+onMounted(() => {
+  // Initial check with delay to ensure DOM is ready
+  setTimeout(checkOverflow, 200)
+})
+
+// Watch for tab changes
+watch(activeTab, (newVal) => {
+  if (newVal === 'tree') {
+    setTimeout(checkOverflow, 100)
+  }
+})
+
+// Watch for window resize
+let resizeTimeout = null
+window.addEventListener('resize', () => {
+  clearTimeout(resizeTimeout)
+  resizeTimeout = setTimeout(checkOverflow, 100)
+})
 </script>
 
 <style scoped>
@@ -206,12 +270,36 @@ const getTalentImage = (level) => {
   margin-bottom: 10px;
 }
 
-/* Tree View - Distribui o espaço verticalmente */
+/* Show scrollbar only when there's overflow */
+.tab-content.has-overflow {
+  overflow-y: auto;
+}
+
+/* Firefox scrollbar */
+.tab-content.has-overflow {
+  scrollbar-width: thin;
+  scrollbar-color: #444 transparent;
+}
+
+/* Webkit scrollbar - only visible when has-overflow */
+.tab-content.has-overflow::-webkit-scrollbar {
+  width: 6px;
+}
+
+.tab-content.has-overflow::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.tab-content.has-overflow::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 3px;
+}
+
+/* Tree View - Mantém tamanho fixo, scrollbar no pai quando necessário */
 .tree-view {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 4px;
 }
 
@@ -222,8 +310,38 @@ const getTalentImage = (level) => {
   padding: 6px 10px;
   border-radius: 10px;
   transition: background 0.2s;
-  flex: 1;
-  min-height: 0;
+  flex-shrink: 0;
+  height: auto;
+  min-height: 56px;
+}
+
+/* Compact mode - smaller icons like tablet */
+.tab-content.compact-mode .talent-level-row {
+  padding: 6px 8px;
+  gap: 10px;
+  min-height: 48px;
+}
+
+.tab-content.compact-mode .level-number {
+  width: 36px;
+  height: 36px;
+  font-size: 13px;
+}
+
+.tab-content.compact-mode .talent-options {
+  gap: 8px;
+}
+
+.tab-content.compact-mode .talent-spacer {
+  width: 44px;
+  height: 44px;
+}
+
+.tab-content.compact-mode :deep(.talent-node) {
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 8px;
+  border-width: 2px;
 }
 
 .talent-level-row:hover {
@@ -268,6 +386,23 @@ const getTalentImage = (level) => {
   flex: 1;
   justify-content: space-evenly;
   align-items: center;
+}
+
+/* When there are 5 talents, scale them down proportionally */
+.talent-options.five-talents {
+  gap: 6px;
+}
+
+.talent-options.five-talents :deep(.talent-node) {
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 8px;
+  border-width: 2px;
+}
+
+.talent-options.five-talents .talent-spacer {
+  width: 44px;
+  height: 44px;
 }
 
 .talent-spacer {
@@ -383,5 +518,257 @@ const getTalentImage = (level) => {
   border-color: #ff4444;
   color: #ff4444;
   background: rgba(255, 68, 68, 0.1);
+}
+
+/* ===========================================
+   RESPONSIVE STYLES
+   =========================================== */
+
+/* Tablet - Tree mais compacto com ícones menores */
+@media (max-width: 991px) {
+  .panel-title {
+    font-size: 13px;
+    margin-bottom: 8px;
+    padding-bottom: 6px;
+  }
+  
+  .tabs {
+    margin-bottom: 8px;
+  }
+  
+  .tabs button {
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+  
+  .talent-level-row {
+    padding: 6px 8px;
+    gap: 10px;
+  }
+  
+  .level-number {
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
+  }
+  
+  .talent-options {
+    gap: 8px;
+  }
+  
+  .talent-spacer {
+    width: 36px;
+    height: 36px;
+  }
+  
+  /* 5 talents - tablet */
+  .talent-options.five-talents {
+    gap: 4px;
+  }
+  
+  .talent-options.five-talents :deep(.talent-node) {
+    width: 28px !important;
+    height: 28px !important;
+    border-radius: 5px;
+    border-width: 1px;
+  }
+  
+  .talent-options.five-talents .talent-spacer {
+    width: 28px;
+    height: 28px;
+  }
+  
+  /* Ícones de talento menores no tablet */
+  :deep(.talent-node) {
+    width: 36px !important;
+    height: 36px !important;
+    border-radius: 6px;
+    border-width: 2px;
+  }
+  
+  :deep(.talent-node img) {
+    width: 100%;
+    height: 100%;
+  }
+  
+  :deep(.talent-node .checkmark) {
+    width: 14px;
+    height: 14px;
+    font-size: 9px;
+    top: -5px;
+    right: -5px;
+  }
+  
+  .reset-btn {
+    padding: 10px 16px;
+    font-size: 11px;
+  }
+}
+
+/* Mobile - Mais espaçamento e ícones maiores */
+@media (max-width: 767px) {
+  .talent-tree-panel {
+    padding-bottom: 10px;
+  }
+  
+  .panel-title {
+    font-size: 13px;
+    margin-bottom: 8px;
+    padding-bottom: 6px;
+  }
+  
+  .tabs {
+    margin-bottom: 10px;
+    gap: 8px;
+  }
+  
+  .tabs button {
+    padding: 8px 12px;
+    font-size: 11px;
+  }
+  
+  .tab-content {
+    margin-bottom: 8px;
+  }
+  
+  /* Mais espaço entre as linhas de talento */
+  .tree-view {
+    gap: 8px;
+    justify-content: flex-start;
+  }
+  
+  .talent-level-row {
+    padding: 8px 10px;
+    gap: 12px;
+    min-height: 60px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 10px;
+  }
+  
+  /* Números de level maiores */
+  .level-number {
+    width: 44px;
+    height: 44px;
+    font-size: 14px;
+    border-radius: 8px;
+    border-width: 2px;
+  }
+  
+  /* Ícones de talento maiores com mais espaço */
+  .talent-options {
+    gap: 10px;
+    justify-content: space-around;
+  }
+  
+  .talent-spacer {
+    width: 52px;
+    height: 52px;
+  }
+  
+  /* Talent nodes maiores via deep selector */
+  :deep(.talent-node) {
+    width: 64px !important;
+    height: 64px !important;
+    border-radius: 12px;
+    border-width: 2px;
+  }
+  
+  /* 5 talents - mobile */
+  .talent-options.five-talents {
+    gap: 6px;
+  }
+  
+  .talent-options.five-talents :deep(.talent-node) {
+    width: 48px !important;
+    height: 48px !important;
+    border-radius: 8px;
+    border-width: 2px;
+  }
+  
+  .talent-options.five-talents .talent-spacer {
+    width: 48px;
+    height: 48px;
+  }
+  
+  :deep(.talent-node img) {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .build-item {
+    padding: 12px;
+  }
+  
+  .build-header {
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+  
+  .build-level {
+    width: 34px;
+    height: 34px;
+    font-size: 13px;
+  }
+  
+  .build-header img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .build-name {
+    font-size: 14px;
+  }
+  
+  .build-description {
+    font-size: 12px;
+  }
+  
+  .reset-btn {
+    padding: 12px 16px;
+    font-size: 11px;
+    margin-top: 10px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .level-number {
+    width: 36px;
+    height: 36px;
+    font-size: 12px;
+  }
+  
+  .talent-spacer {
+    width: 56px;
+    height: 56px;
+  }
+  
+  .talent-options {
+    gap: 6px;
+  }
+  
+  /* Ícones de talento maiores em telas pequenas */
+  :deep(.talent-node) {
+    width: 56px !important;
+    height: 56px !important;
+    border-radius: 10px;
+  }
+  
+  /* 5 talents - small mobile */
+  .talent-options.five-talents {
+    gap: 4px;
+  }
+  
+  .talent-options.five-talents :deep(.talent-node) {
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 8px;
+    border-width: 1px;
+  }
+  
+  .talent-options.five-talents .talent-spacer {
+    width: 44px;
+    height: 44px;
+  }
 }
 </style>

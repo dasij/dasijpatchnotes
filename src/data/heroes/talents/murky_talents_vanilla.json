@@ -71,7 +71,7 @@
   "4": [
     {
       "name": "Slime Time",
-      "description": "Quest: Slime enemy Heroes that are already Slimed.Reward: After Sliming 10 Heroes, increase Slime's bonus damage by 125.Reward: After Sliming 20 Heroes, increase Slime's slow amount to 30%.",
+      "description": "{quest}Quest:{/quest} Slime enemy Heroes that are already Slimed.{reward}Reward:{/reward} After Sliming 10 Heroes, increase Slime's bonus damage by 125.{reward}Reward:{/reward} After Sliming 20 Heroes, increase Slime's slow amount to 30%.",
       "image": "murky_slime.png",
       "talentChanged": false
     },
@@ -83,7 +83,7 @@
     },
     {
       "name": "Living the Dream",
-      "description": "Quest: Every 15 seconds Murky is alive, he gains 5% Spell Power, up to 25%. This bonus is reset upon his death.",
+      "description": "{quest}Quest:{/quest} Every 15 seconds Murky is alive, he gains 5% Spell Power, up to 25%. This bonus is reset upon his death.",
       "image": "murky_trait_spawnegg_var1.png",
       "talentChanged": false
     }

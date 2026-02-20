@@ -104,4 +104,85 @@ const imagePath = computed(() => {
   box-shadow: 0 2px 6px rgba(0,0,0,0.4);
   border: 2px solid #000;
 }
+
+/* ===========================================
+   RESPONSIVE STYLES
+   =========================================== */
+
+/* 1280px - Ícones menores */
+@media (max-width: 1280px) {
+  .talent-node {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+/* 1200px - Ícones ainda menores */
+@media (max-width: 1200px) {
+  .talent-node {
+    width: 44px;
+    height: 44px;
+  }
+  
+  .checkmark {
+    width: 18px;
+    height: 18px;
+    font-size: 10px;
+    top: -6px;
+    right: -6px;
+  }
+}
+
+/* Tablet - Ícones menores */
+@media (max-width: 991px) {
+  .talent-node {
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+  }
+  
+  .checkmark {
+    width: 14px;
+    height: 14px;
+    font-size: 9px;
+    top: -5px;
+    right: -5px;
+  }
+}
+
+/* Mobile - Ícones maiores */
+@media (max-width: 767px) {
+  .talent-node {
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+    border-width: 2px;
+  }
+  
+  .checkmark {
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+    top: -8px;
+    right: -8px;
+    border-width: 2px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .talent-node {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+  }
+  
+  .checkmark {
+    width: 18px;
+    height: 18px;
+    font-size: 10px;
+    top: -6px;
+    right: -6px;
+  }
+}
 </style>

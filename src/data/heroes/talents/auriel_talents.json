@@ -3,20 +3,17 @@
     "basic": [
       {
         "name": "Sacred Sweep (Q)",
-        "description": "Sweep the area with sacred power, dealing 40 damage to enemies and an additional 160 damage to enemies caught in the center.  ",
-        "quest": "{highlight}Every time Sacred Sweep hits a Hero in the center, increase the center damage by 2, up to 50.{/highlight}",
-        "rewards": [
-          "{highlight}After hitting 30 Heroes, Hitting allied heros with <vanilla, abilities, basic, 0> center increase the damage by 180.{/highlight}"
-        ],
+        "description": "Sweep the area with sacred power, dealing 40 damage to enemies and an additional 160 damage to enemies caught in the center. {quest}Quest:{/quest} Every time Sacred Sweep hits a Hero in the center, increase the center damage by 2, up to 50. {reward}Reward:{/reward} After hitting 30 Heroes, Hitting allied heros with Sacred Sweep center increase the damage by 180.",
         "image": "auriel_angelicsweep.png",
         "abilityChanged": true,
+        "developerCommentary": "BRO. we have a unique animation Al'maiesh slap no way we only have it on the quest that is also fun",
         "cooldown": "8s"
       },
       {
         "name": "Ray of Heaven (W)",
-        "description": "Consume Auriel's stored energy and heal allied Heroes in the area for the amount of energy consumed.",
+        "description": "Consume Auriel's stored energy and heal allied Heroes in the area for the amount of energy consumed. {highlight}Hearthstone and respawning fills up the entire energy bar.{/highlight}",
         "image": "auriel_rayofheaven.png",
-        "abilityChanged": false,
+        "abilityChanged": true,
         "cooldown": "4s"
       },
       {
@@ -92,7 +89,7 @@
     },
     {
       "name": "Repeated Offense",
-      "description": "Enemies hit by Detainment Strike are knocked back 25% farther.Quest: Every time Detainment Strike stuns a Hero, increase the stun damage by 10, up to 60.Reward: After stunning 6 Heroes, increase this damage bonus to 250.",
+      "description": "Enemies hit by Detainment Strike are knocked back 25% farther.{quest}Quest:{/quest} Every time Detainment Strike stuns a Hero, increase the stun damage by 10, up to 60.{reward}Reward:{/reward} After stunning 6 Heroes, increase this damage bonus to 250.",
       "image": "auriel_restrainingblow_a.png",
       "talentChanged": false
     }

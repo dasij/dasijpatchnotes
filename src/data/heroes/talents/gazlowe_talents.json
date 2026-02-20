@@ -58,6 +58,11 @@
       "name": "Salvager (D)",
       "description": "Destroying enemy structures or Rock-It! Turrets grants Scrap. Collecting Scrap restores mana and reduces the cooldown of abilities.",
       "image": "storm_ui_icon_gazlowe_salvager.png"
+    },
+    "general": {
+      "name": "Base",
+      "description": "Gazlowe basic attack speed is reduced by 66%. Gazlowe basic attack is now a triple-hit attack.",
+      "developerCommentary": "This is the change that helps Auto attack Gazlowe, he doesn't have any gap closer he shouldn't be forced on melee range all the time for making it efficient."
     }
   },
 

@@ -61,7 +61,7 @@
     },
     {
       "name": "Fatal Wounds",
-      "description": "While at maximum stacks, Blood Rage's bleed deals 30% additional damage to enemy Heroes under 50% Health.Quest: Damage enemy Heroes with Blood Rage's bleed damage. Reward: After damaging Heroes with Blood Rage's bleed damage 150 times, Blood Rage's duration is increased by 2 seconds.",
+      "description": "While at maximum stacks, Blood Rage's bleed deals 30% additional damage to enemy Heroes under 50% Health.{quest}Quest:{/quest} Damage enemy Heroes with Blood Rage's bleed damage. {reward}Reward:{/reward} After damaging Heroes with Blood Rage's bleed damage 150 times, Blood Rage's duration is increased by 2 seconds.",
       "image": "nexushunter_w.png",
       "talentChanged": false
     },

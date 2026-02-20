@@ -54,19 +54,19 @@
   "1": [
     {
       "name": "Puncturing Arrow",
-      "description": "Increase the number of Hungering Arrow bounces by 1.Quest: Hitting an enemy Hero with the initial impact of Hungering Arrow refunds 40 Mana and permanently increases the damage of its initial impact by 6.",
+      "description": "Increase the number of Hungering Arrow bounces by 1.{quest}Quest:{/quest} Hitting an enemy Hero with the initial impact of Hungering Arrow refunds 40 Mana and permanently increases the damage of its initial impact by 6.",
       "image": "valla_hungeringarrow.png",
       "talentChanged": false
     },
     {
       "name": "Fire At Will",
-      "description": "Quest: Hitting a Hero with Multishot grants 2 Hatred and permanently increases its damage by 2.Reward: After hitting 20 Heroes with Multishot, increase its damage by 40.",
+      "description": "{quest}Quest:{/quest} Hitting a Hero with Multishot grants 2 Hatred and permanently increases its damage by 2.{reward}Reward:{/reward} After hitting 20 Heroes with Multishot, increase its damage by 40.",
       "image": "valla_multishot.png",
       "talentChanged": false
     },
     {
       "name": "Creed of the Hunter",
-      "description": "Quest: Every 50 Basic Attacks against Heroes increases Hatred's damage bonus per stack by 1%, up to 6%.Gambit: Gain 25% bonus Attack Speed. Every death reduces this bonus by 5%.",
+      "description": "{quest}Quest:{/quest} Every 50 Basic Attacks against Heroes increases Hatred's damage bonus per stack by 1%, up to 6%.Gambit: Gain 25% bonus Attack Speed. Every death reduces this bonus by 5%.",
       "image": "valla_hatred.png",
       "talentChanged": false
     }

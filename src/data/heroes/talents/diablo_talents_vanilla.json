@@ -46,7 +46,7 @@
     ],
     "trait": {
       "name": "Black Soulstone (T)",
-      "description": " Repeatable Quest: Gain 10 Souls per Hero killed and 1 Soul per Minion, up to 100. For each Soul, gain 0.3% maximum Health. If Diablo has 100 Souls upon dying, he will resurrect in 5 seconds but lose 100 Souls.After reaching level 10, Diablo only consumes 75 Souls when resurrecting.",
+      "description": " {repeatable_quest}Repeatable Quest:{/repeatable_quest} Gain 10 Souls per Hero killed and 1 Soul per Minion, up to 100. For each Soul, gain 0.3% maximum Health. If Diablo has 100 Souls upon dying, he will resurrect in 5 seconds but lose 100 Souls.After reaching level 10, Diablo only consumes 75 Souls when resurrecting.",
       "image": "diablo_blacksoulstone_var1.png",
       "abilityChanged": false
     }
@@ -133,7 +133,7 @@
   "13": [
     {
       "name": "Devastating Charge",
-      "description": "Increase Shadow Charge's terrain collision damage by 50%.Quest: Hit an enemy Hero against terrain 5 times.Reward: Hitting enemy Heroes against terrain reduces their Armor by 20 for 4 seconds.",
+      "description": "Increase Shadow Charge's terrain collision damage by 50%.{quest}Quest:{/quest} Hit an enemy Hero against terrain 5 times.{reward}Reward:{/reward} Hitting enemy Heroes against terrain reduces their Armor by 20 for 4 seconds.",
       "image": "diablo_shadowcharge_var1.png",
       "talentChanged": false
     },

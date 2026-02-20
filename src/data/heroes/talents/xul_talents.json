@@ -54,10 +54,15 @@
     ],
     "trait": {
       "name": "Raise Skeleton (T)",
-      "description": "When a nearby enemy Minion dies, it becomes a Skeletal Warrior with 240 Health that attacks for 21 damage and lasts up to 12 seconds. Upon death, Skeletal Warriors deal 40 damage to nearby enemies.  Up to 3 Skeletal Warriors can be active at once when spawned in this way.{highlight} Quest: Spawn 80 Skeletal Warriors. Reward: While fixating on an enemy, Skeletal Warriors gain 25% Movement and Attack Speed.{/highlight}",
+      "description": "When a nearby enemy Minion dies, it becomes a Skeletal Warrior with 240 Health that attacks for 21 damage and lasts up to 12 seconds. Upon death, Skeletal Warriors deal 40 damage to nearby enemies.  Up to 3 Skeletal Warriors can be active at once when spawned in this way.{highlight} {quest}Quest:{/quest} Spawn 80 Skeletal Warriors. {reward}Reward:{/reward} While fixating on an enemy, Skeletal Warriors gain 25% Movement and Attack Speed.",
       "image": "necromancer_raiseskeleton.png",
       "abilityChanged": true,
       "developerCommentary": "I am popping talents to deal with summoners on different characters and for this reason i don't want to fear them but rather go further on that concept."
+    },
+    "general": {
+      "name": "Base",
+      "description": "If Xul writes 'I Sense... Death' he will start seeing ghosts of every unit that died within the last 8 seconds. Xul basic attacks with the Dagger deal 25% bonus damage over 3 seconds.",
+      "developerCommentary": "This is just roleplay to reflect his connection with death and Poison Dagger."
     }
   },
   "1": [

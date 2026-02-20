@@ -54,7 +54,7 @@
   "1": [
     {
       "name": "Perfect Storm",
-      "description": "Quest: Every time Muradin hits an enemy Hero with a Basic Attack, increase Storm Bolt's damage by 0.75. If an enemy Hero is killed within 3 seconds of being hit by a Storm Bolt increase its damage by an additional 10.",
+      "description": "{quest}Quest:{/quest} Every time Muradin hits an enemy Hero with a Basic Attack, increase Storm Bolt's damage by 0.75. If an enemy Hero is killed within 3 seconds of being hit by a Storm Bolt increase its damage by an additional 10.",
       "image": "muradin_stormbolt.png",
       "talentChanged": false
     },

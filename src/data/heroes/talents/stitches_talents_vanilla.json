@@ -69,13 +69,13 @@
     },
     {
       "name": "Savor The Flavor",
-      "description": "Quest: Hitting an enemy Hero with Devour increases Stitches' Health Regeneration by 1.5 and the damage of Vile Gas by 2%, stacking up to 100 times.",
+      "description": "{quest}Quest:{/quest} Hitting an enemy Hero with Devour increases Stitches' Health Regeneration by 1.5 and the damage of Vile Gas by 2%, stacking up to 100 times.",
       "image": "stitches_devour.png",
       "talentChanged": false
     },
     {
       "name": "Hungry for More",
-      "description": "Gain 5% Movement Speed.Quest: Gathering a Regeneration Globe increases Stitches's maximum Health by 25. Reward: Every 20 Globes gathered permanently increases Stitches' Movement Speed by an additional 5%.",
+      "description": "Gain 5% Movement Speed.{quest}Quest:{/quest} Gathering a Regeneration Globe increases Stitches's maximum Health by 25. {reward}Reward:{/reward} Every 20 Globes gathered permanently increases Stitches' Movement Speed by an additional 5%.",
       "image": "stitches_hungry.png",
       "talentChanged": false
     }
@@ -147,7 +147,7 @@
     },
     {
       "name": "Under Pressure",
-      "description": "Increase Slam's damage by 25.Quest: After damaging Heroes with Vile Gas 6 times, permanently increase the damage of Slam by 1, to a maximum of 75 additional damage.",
+      "description": "Increase Slam's damage by 25.{quest}Quest:{/quest} After damaging Heroes with Vile Gas 6 times, permanently increase the damage of Slam by 1, to a maximum of 75 additional damage.",
       "image": "stitches_underpressure.png",
       "talentChanged": false
     },
@@ -181,7 +181,7 @@
   "20": [
     {
       "name": "Gift From The Embalmer",
-      "description": "Putrid Bile deals 100% more damage to Heroes.Quest: Each time Putrid Bile damages an enemy Hero, the duration of Stitches' next death timer is reduced by 2%, to a maximum of 80% total reduction. All stacks of this effect are lost upon death.",
+      "description": "Putrid Bile deals 100% more damage to Heroes.{quest}Quest:{/quest} Each time Putrid Bile damages an enemy Hero, the duration of Stitches' next death timer is reduced by 2%, to a maximum of 80% total reduction. All stacks of this effect are lost upon death.",
       "image": "stitches_putridbile.png",
       "talentChanged": false
     },

@@ -88,7 +88,7 @@
     },
     {
       "name": "Piercing Light",
-      "description": "Chastise pierces to hit an additional Hero.Quest: Hitting two Heroes with a single Chastise permanently increases Spell Power by 1, to a maximum of 10.",
+      "description": "Chastise pierces to hit an additional Hero.{quest}Quest:{/quest} Hitting two Heroes with a single Chastise permanently increases Spell Power by 1, to a maximum of 10.",
       "image": "anduin_chastise_a.png",
       "talentChanged": false
     }

@@ -66,7 +66,7 @@
     },
     {
       "name": "Regeneration Master",
-      "description": "Quest: Gathering a Regeneration Globe increases your Health Regeneration by 1 per second, up to 30. Reward: After gathering 30 Regeneration Globes, you also gain 500 Health.",
+      "description": "{quest}Quest:{/quest} Gathering a Regeneration Globe increases your Health Regeneration by 1 per second, up to 30. {reward}Reward:{/reward} After gathering 30 Regeneration Globes, you also gain 500 Health.",
       "image": "talent_regenerationmaster.png",
       "talentChanged": false
     }

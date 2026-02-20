@@ -61,7 +61,7 @@
     },
     {
       "name": "Unfurling Shadows",
-      "description": "Quest: Each time an enemy Hero with 3 stacks of Banshee's Curse is hit by Shadow Dagger, its damage is permanently increased by 0.5%.",
+      "description": "{quest}Quest:{/quest} Each time an enemy Hero with 3 stacks of Banshee's Curse is hit by Shadow Dagger, its damage is permanently increased by 0.5%.",
       "image": "sylvanas_shadowdagger.png",
       "talentChanged": false
     },

@@ -49,7 +49,7 @@
   "1": [
     {
       "name": "Advanced Targeting",
-      "description": "Quest: Hitting enemy Heroes with Plasma Cutter permanently increases Fenix's Basic Attack damage by 0.5, up to 60.Reward: After hitting 30 Heroes, Plasma Cutter circles an additional time.",
+      "description": "{quest}Quest:{/quest} Hitting enemy Heroes with Plasma Cutter permanently increases Fenix's Basic Attack damage by 0.5, up to 60.{reward}Reward:{/reward} After hitting 30 Heroes, Plasma Cutter circles an additional time.",
       "image": "fenix_q.png",
       "talentChanged": false
     },

@@ -69,7 +69,7 @@
   "4": [
     {
       "name": "Taste For Explosions",
-      "description": "Quest: Hitting a Hero with Frag Launcher increases its damage by 0.2%, up to 40%.",
+      "description": "{quest}Quest:{/quest} Hitting a Hero with Frag Launcher increases its damage by 0.2%, up to 40%.",
       "image": "junkrat_frag_launcher.png",
       "talentChanged": false
     },

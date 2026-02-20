@@ -85,9 +85,88 @@
       </div>
     </div>
 
-    <!-- Other Tabs (placeholder for now) -->
-    <div v-else class="tab-content placeholder">
-      <div class="placeholder-text">{{ activeTab }} coming soon...</div>
+    <!-- Maps Tab Content -->
+    <div v-else-if="activeTab === 'maps'" class="tab-content">
+      <div class="items-list-container">
+        <div v-if="loading" class="loading">Loading...</div>
+        <template v-else>
+          <div
+            v-for="map in maps"
+            :key="map.id"
+            class="coming-soon-item map-item"
+          >
+            <div class="image-wrapper map-image-wrapper">
+              <img 
+                :src="getItemImage(map.image)" 
+                :alt="map.name"
+                class="item-image map-image"
+              />
+              <div class="item-name-overlay">
+                <span class="item-name-large">{{ map.name }}</span>
+              </div>
+              <div class="coming-soon-overlay transparent">
+                <span class="coming-soon-text">Coming Soon</span>
+              </div>
+            </div>
+          </div>
+        </template>
+      </div>
+    </div>
+
+    <!-- General Tab Content -->
+    <div v-else-if="activeTab === 'general'" class="tab-content">
+      <div class="items-list-container">
+        <div v-if="loading" class="loading">Loading...</div>
+        <template v-else>
+          <div
+            v-for="item in generalItems"
+            :key="item.id"
+            class="coming-soon-item large-item"
+          >
+            <div class="image-wrapper large-image-wrapper">
+              <img 
+                :src="getItemImage(item.image)" 
+                :alt="item.name"
+                class="item-image large-image"
+              />
+              <div class="item-name-overlay">
+                <span class="item-name-large">{{ formatItemName(item.name) }}</span>
+              </div>
+              <div class="coming-soon-overlay transparent">
+                <span class="coming-soon-text">Coming Soon</span>
+              </div>
+            </div>
+          </div>
+        </template>
+      </div>
+    </div>
+
+    <!-- Game Modes Tab Content -->
+    <div v-else-if="activeTab === 'gamemodes'" class="tab-content">
+      <div class="items-list-container">
+        <div v-if="loading" class="loading">Loading...</div>
+        <template v-else>
+          <div
+            v-for="mode in gameModes"
+            :key="mode.id"
+            class="coming-soon-item large-item"
+          >
+            <div class="image-wrapper large-image-wrapper">
+              <img 
+                :src="getItemImage(mode.image)" 
+                :alt="mode.name"
+                class="item-image large-image"
+              />
+              <div class="item-name-overlay">
+                <span class="item-name-large">{{ formatItemName(mode.name) }}</span>
+              </div>
+              <div class="coming-soon-overlay transparent">
+                <span class="coming-soon-text">Coming Soon</span>
+              </div>
+            </div>
+          </div>
+        </template>
+      </div>
     </div>
   </div>
 </template>
@@ -104,6 +183,9 @@ export default {
       activeTab: 'heroes',
       allHeroes: [],
       roles: [],
+      maps: [],
+      generalItems: [],
+      gameModes: [],
       searchQuery: '',
       expandedRoles: new Set(),
       loading: true,
@@ -162,8 +244,50 @@ export default {
       
       // Expandir todas as roles por padrão
       this.roles.forEach(role => this.expandedRoles.add(role.id))
+
+      // Carregar mapas
+      const mapFiles = require.context('@/data/maps', false, /\.json$/)
+      const maps = await Promise.all(
+        mapFiles.keys().map(async (key) => {
+          const mapData = await mapFiles(key)
+          return {
+            id: mapData.id,
+            name: mapData.name,
+            image: mapData.image,
+          }
+        })
+      )
+      this.maps = maps.sort((a, b) => a.name.localeCompare(b.name))
+
+      // Carregar itens gerais
+      const generalFiles = require.context('@/data/general', false, /\.json$/)
+      const generalItems = await Promise.all(
+        generalFiles.keys().map(async (key) => {
+          const itemData = await generalFiles(key)
+          return {
+            id: itemData.id,
+            name: itemData.name,
+            image: itemData.image,
+          }
+        })
+      )
+      this.generalItems = generalItems.sort((a, b) => a.name.localeCompare(b.name))
+
+      // Carregar modos de jogo
+      const gameModeFiles = require.context('@/data/gamemodes', false, /\.json$/)
+      const gameModes = await Promise.all(
+        gameModeFiles.keys().map(async (key) => {
+          const modeData = await gameModeFiles(key)
+          return {
+            id: modeData.id,
+            name: modeData.name,
+            image: modeData.image,
+          }
+        })
+      )
+      this.gameModes = gameModes.sort((a, b) => a.name.localeCompare(b.name))
     } catch (error) {
-      console.error('Error loading heroes:', error)
+      console.error('Error loading data:', error)
       this.debugInfo = `Error: ${error.message}`
     } finally {
       this.loading = false
@@ -192,6 +316,12 @@ export default {
         part.charAt(0).toUpperCase() + part.slice(1).toLowerCase()
       ).join(' ')
     },
+    formatItemName(name) {
+      if (!name) return ''
+      return name.split(/[-_]/).map(part => 
+        part.charAt(0).toUpperCase() + part.slice(1).toLowerCase()
+      ).join(' ')
+    },
     getRoleIcon(imageName) {
       try {
         return require(`@/assets/roles/${imageName}`)
@@ -200,6 +330,13 @@ export default {
       }
     },
     getHeroIcon(imagePath) {
+      try {
+        return require(`@/assets/${imagePath}`)
+      } catch {
+        return ''
+      }
+    },
+    getItemImage(imagePath) {
       try {
         return require(`@/assets/${imagePath}`)
       } catch {
@@ -258,17 +395,6 @@ export default {
   padding-bottom: 40px;
 }
 
-.tab-content.placeholder {
-  align-items: center;
-  justify-content: center;
-}
-
-.placeholder-text {
-  color: #666;
-  font-size: 14px;
-  text-transform: capitalize;
-}
-
 /* Search */
 .search-container {
   position: relative;
@@ -306,7 +432,8 @@ export default {
 }
 
 /* Heroes List */
-.heroes-list-container {
+.heroes-list-container,
+.items-list-container {
   flex: 1;
   overflow-y: auto;
   padding: 10px;
@@ -325,15 +452,18 @@ export default {
   margin-top: 10px;
 }
 
-.heroes-list-container::-webkit-scrollbar {
+.heroes-list-container::-webkit-scrollbar,
+.items-list-container::-webkit-scrollbar {
   width: 6px;
 }
 
-.heroes-list-container::-webkit-scrollbar-track {
+.heroes-list-container::-webkit-scrollbar-track,
+.items-list-container::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0.3);
 }
 
-.heroes-list-container::-webkit-scrollbar-thumb {
+.heroes-list-container::-webkit-scrollbar-thumb,
+.items-list-container::-webkit-scrollbar-thumb {
   background: #444;
   border-radius: 3px;
 }
@@ -431,5 +561,196 @@ export default {
 .hero-item.active .hero-name {
   color: #fff;
   font-weight: 600;
+}
+
+/* ===========================================
+   COMING SOON ITEMS (Maps, General, Modes)
+   =========================================== */
+
+.coming-soon-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.03);
+  transition: all 0.2s;
+}
+
+.coming-soon-item:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* Map items - 2x height (~96px) */
+.coming-soon-item.map-item .map-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 96px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.coming-soon-item .item-image,
+.coming-soon-item.map-item .map-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Large items (General and Modes) - 3x height (~144px) */
+.coming-soon-item.large-item .large-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 144px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.coming-soon-item.large-item .large-image {
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Item Name Overlay - Inside the image */
+.item-name-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.item-name-large {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.9),
+    0 4px 8px rgba(0, 0, 0, 0.7),
+    0 0 20px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 0 10px;
+  line-height: 1.2;
+}
+
+/* Coming Soon Overlay */
+.coming-soon-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.coming-soon-overlay.transparent {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.coming-soon-text {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  background: rgba(116, 42, 255, 0.7);
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* ===========================================
+   RESPONSIVE STYLES
+   =========================================== */
+
+/* Mobile - Sidebar em tela cheia */
+@media (max-width: 767px) {
+  .hero-sidebar {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(10, 10, 15, 0.98);
+  }
+  
+  .tabs {
+    padding-top: 10px;
+  }
+  
+  .tab {
+    padding: 15px 8px;
+    font-size: 14px;
+  }
+  
+  .search-container {
+    padding: 15px;
+  }
+  
+  .search-input {
+    padding: 12px 40px 12px 15px;
+    font-size: 15px;
+  }
+  
+  .heroes-list-container,
+  .items-list-container {
+    padding: 15px;
+  }
+  
+  .role-header {
+    padding: 12px 15px;
+  }
+  
+  .role-icon {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .role-name {
+    font-size: 14px;
+  }
+  
+  .hero-item {
+    padding: 10px 15px;
+  }
+  
+  .hero-icon {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .hero-name {
+    font-size: 15px;
+  }
+
+  /* Mobile Coming Soon Items */
+  .coming-soon-item.map-item .map-image-wrapper {
+    height: 112px;
+  }
+
+  .coming-soon-item.large-item .large-image-wrapper {
+    height: 168px;
+  }
+
+  .coming-soon-text {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .item-name-large {
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
 }
 </style>

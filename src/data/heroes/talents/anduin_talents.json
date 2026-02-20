@@ -46,10 +46,11 @@
     ],
     "trait": {
       "name": "Leap of Faith (T)",
-      "description": "Faith instantly pulls an allied Hero to Anduin's location, granting them Unstoppable while they travel. {highlight}Damaging an enemy Hero increases Movement Speed by 2.5% and heals by 3.75% for 6 seconds. These effects stack up to 8 times.{/highlight}",
+      "description": "Faith instantly pulls an allied Hero to Anduin's location, granting them Unstoppable while they travel. {highlight}Leap of Faith active won't cancel any channeling abilities anymore. Damaging an enemy Hero increases Movement Speed by 2.5% and heals by 3.75% for 6 seconds. These effects stack up to 8 times.{/highlight}",
       "image": "anduin_leap_of_faith.png",
       "abilityChanged": true,
-      "cooldown": "70s"
+      "cooldown": "70s",
+      "developerCommentary": "The concept of this change was to change how the speed tier on level 13 would work and also preventing the active to cancel skills to lessen the frustation of players and incentivize some new plays"
     }
   },
   "1": [
@@ -92,7 +93,7 @@
     },
     {
       "name": "Piercing Light",
-      "description": "Chastise pierces to hit an additional Hero.Quest: Hitting two Heroes with a single Chastise permanently increases Spell Power by 1, to a maximum of 10.",
+      "description": "Chastise pierces to hit an additional Hero.{quest}Quest:{/quest} Hitting two Heroes with a single Chastise permanently increases Spell Power by 1, to a maximum of 10.",
       "image": "anduin_chastise_a.png",
       "talentChanged": false
     }

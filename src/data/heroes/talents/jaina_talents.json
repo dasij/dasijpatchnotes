@@ -46,7 +46,7 @@
     ],
     "trait": {
       "name": "Frostbite (T)",
-      "description": "Jaina's Abilities Chill targets, Slowing them by 25% and amplifying damage taken from her Abilities by 50%. Lasts 4 seconds. Quest: Deal 12000 Ability damage to Chilled Heroes. Reward: Unlock the Improved Ice Block Ability, allowing Jaina to become temporarily Invulnerable.",
+      "description": "Jaina's Abilities Chill targets, Slowing them by 25% and amplifying damage taken from her Abilities by 50%. Lasts 4 seconds. {quest}Quest:{/quest} Deal 12000 Ability damage to Chilled Heroes. {reward}Reward:{/reward} Unlock the Improved Ice Block Ability, allowing Jaina to become temporarily Invulnerable.",
       "image": "jaina_frostbite.png",
       "abilityChanged": false
     }
@@ -70,7 +70,7 @@
     },
     {
       "name": "Fingers of Frost",
-      "description": "Quest: Gather Regeneration Globes to increase Jaina's Mana regeneration by 0.1 per second, up to 2 per second. Reward: After gathering 20 Globes, the damage bonus from Frostbite is increased by 10%.",
+      "description": "{quest}Quest:{/quest} Gather Regeneration Globes to increase Jaina's Mana regeneration by 0.1 per second, up to 2 per second. {reward}Reward:{/reward} After gathering 20 Globes, the damage bonus from Frostbite is increased by 10%.",
       "image": "talent_conjurerspursuit.png",
       "talentChanged": false
     }

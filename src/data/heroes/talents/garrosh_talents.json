@@ -68,7 +68,7 @@
   "1": [
     {
       "name": "Warbreaker",
-      "description": "Quest: Stun Heroes with Groundbreaker. Reward: After Stunning 5 Heroes, Groundbreaker's Stun deals an additional 165 damage over 3 seconds to Heroes. Reward: After Stunning 15 Heroes, permanently reduce Groundbreaker's cooldown by 2 seconds.",
+      "description": "{quest}Quest:{/quest} Stun Heroes with Groundbreaker. {reward}Reward:{/reward} After Stunning 5 Heroes, Groundbreaker's Stun deals an additional 165 damage over 3 seconds to Heroes. {reward}Reward:{/reward} After Stunning 15 Heroes, permanently reduce Groundbreaker's cooldown by 2 seconds.",
       "image": "garrosh_groundbreaker.png",
       "talentChanged": false
     },

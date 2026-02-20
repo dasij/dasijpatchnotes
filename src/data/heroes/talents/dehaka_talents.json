@@ -49,6 +49,11 @@
       "description": " Heal Dehaka for a small amount per stored Essence over 5 seconds. Can be cast during Drag and Burrow.Passive: Gain 10 Essence from Takedowns and 2 Essence from nearby Minions dying. Maximum of 50 Essence.",
       "image": "dehaka_essencecollection.png",
       "abilityChanged": false
+    },
+    "general": {
+      "name": "Base",
+      "description": "If Dehaka uses Brushstalker and the cooldown is bug reset, a message on the game chat will say 'I failed to adapt'.",
+      "developerCommentary": "There's currently a bug that when Dehaka uses Brushstalker on a bush on his own hitbox he will perform the Brushstalker but will have his cooldown reset so instead of fixing it im going for a joke."
     }
   },
   "1": [
@@ -67,13 +72,13 @@
     },
     {
       "name": "Tissue Regeneration",
-      "description": "Regeneration Globes grant 10 Essence.Repeatable Quest: Every 50 Essence collected permanently increases Health Regeneration by 4, up to 40, and maximum Essence by 1, up to 10.",
+      "description": "Regeneration Globes grant 10 Essence.{repeatable_quest}Repeatable Quest:{/repeatable_quest} Every 50 Essence collected permanently increases Health Regeneration by 4, up to 40, and maximum Essence by 1, up to 10.",
       "image": "dehaka_essencecollection.png",
       "talentChanged": false
     },
     {
       "name": "Enhanced Agility",
-      "description": "Brushstalker's Movement Speed bonus now lasts for 5 seconds after leaving a bush.Repeatable Quest: Every 50 Essence collected permanently increases the Movement Speed bonus of Brushstalker by 2%, up to 20%.",
+      "description": "Brushstalker's Movement Speed bonus now lasts for 5 seconds after leaving a bush.{repeatable_quest}Repeatable Quest:{/repeatable_quest} Every 50 Essence collected permanently increases the Movement Speed bonus of Brushstalker by 2%, up to 20%.",
       "image": "dehaka_brushstalker.png",
       "talentChanged": false
     }

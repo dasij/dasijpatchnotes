@@ -54,7 +54,7 @@
   "1": [
     {
       "name": "Convection",
-      "description": "Quest: Damaging an enemy Hero with Flamestrike increase its damage by 5, up to 100. This bonus is lost on death.Reward: After hitting 20 enemy Heroes, increase Flamestrike damage by an additional 100 and no longer lose any bonuses on death.",
+      "description": "{quest}Quest:{/quest} Damaging an enemy Hero with Flamestrike increase its damage by 5, up to 100. This bonus is lost on death.{reward}Reward:{/reward} After hitting 20 enemy Heroes, increase Flamestrike damage by an additional 100 and no longer lose any bonuses on death.",
       "image": "kaelthas_flamestrike.png",
       "talentChanged": false
     },
@@ -66,7 +66,7 @@
     },
     {
       "name": "Mana Addict",
-      "description": "Quest: Gathering a Regeneration Globe increases Kael'thas's maximum Mana by 15.Reward: After gathering 20 Globes, Kael'thas can activate Arcane Barrier to gain a Shield equal to 100% of his maximum Mana for 4 seconds. 45 second cooldown.",
+      "description": "{quest}Quest:{/quest} Gathering a Regeneration Globe increases Kael'thas's maximum Mana by 15.{reward}Reward:{/reward} After gathering 20 Globes, Kael'thas can activate Arcane Barrier to gain a Shield equal to 100% of his maximum Mana for 4 seconds. 45 second cooldown.",
       "image": "kaelthas_manaaddict.png",
       "talentChanged": false
     }

@@ -56,6 +56,11 @@
       "description": " Lunara's Basic Attacks and damaging Abilities poison their target, dealing 33 damage a second for 3 seconds. Every additional application increases the duration by 3 seconds, up to a maximum of 9 seconds.",
       "image": "lunara_stiflingblossom.png",
       "abilityChanged": false
+    },
+    "general": {
+      "name": "Base",
+      "description": "Typing 'HaHaHa' as Lunara on chat will result on a game message saying 'HaHaHa' and perform a laugh SFX.",
+      "developerCommentary": "Quadrupede demon."
     }
   },
   "1": [

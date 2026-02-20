@@ -72,13 +72,13 @@
   "1": [
     {
       "name": "Once Again the First Time",
-      "description": "Quest: Hit 40 Heroes with Sand Blast from Chromie or her Echoes. Reward: Increase the maximum number of active Echoes to 2, and increase Echo damage to 45%.",
+      "description": "{quest}Quest:{/quest} Hit 40 Heroes with Sand Blast from Chromie or her Echoes. {reward}Reward:{/reward} Increase the maximum number of active Echoes to 2, and increase Echo damage to 45%.",
       "image": "chromie_aethercannon.png",
       "talentChanged": false
     },
     {
       "name": "Deep Breathing",
-      "description": "Quest: Every time Dragon's Breath hits a Hero increase its damage by 1%, up to 20%. Reward: After hitting 20 Heroes, reduce the cooldown of Dragon's Breath by 4 seconds and its Mana cost from 65 to 40.",
+      "description": "{quest}Quest:{/quest} Every time Dragon's Breath hits a Hero increase its damage by 1%, up to 20%. {reward}Reward:{/reward} After hitting 20 Heroes, reduce the cooldown of Dragon's Breath by 4 seconds and its Mana cost from 65 to 40.",
       "image": "chromie_sandstrike.png",
       "talentChanged": false
     },

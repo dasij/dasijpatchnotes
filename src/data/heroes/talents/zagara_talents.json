@@ -89,7 +89,7 @@
     },
     {
       "name": "Serrated Spines",
-      "description": "Quest: Each Basic Attack against a Hero increases Zagara's Attack Damage by 0.2%.",
+      "description": "{quest}Quest:{/quest} Each Basic Attack against a Hero increases Zagara's Attack Damage by 0.2%.",
       "image": "talent_autoattack_damage.png",
       "talentChanged": false
     }
@@ -109,7 +109,7 @@
     },
     {
       "name": "Bile Drop",
-      "description": "Quest: Passively increases the radius of Infested Drop by 20%.Reward: After hitting 12 Heroes with Infested Drop, it spawns an additional Roachling.",
+      "description": "{quest}Quest:{/quest} Passively increases the radius of Infested Drop by 20%.{reward}Reward:{/reward} After hitting 12 Heroes with Infested Drop, it spawns an additional Roachling.",
       "image": "zagara_infesteddrop.png",
       "talentChanged": false
     }

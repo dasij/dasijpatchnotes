@@ -111,4 +111,61 @@ const formattedComment = computed(() => convertTextPlaceholders(props.comment))
 .dev-comments-content.no-comment p {
   color: #777;
 }
+
+/* ===========================================
+   RESPONSIVE STYLES
+   =========================================== */
+
+/* Tablet */
+@media (max-width: 991px) {
+  .dev-comments-tab {
+    padding: 6px 15px;
+    right: 15px;
+    font-size: 10px;
+  }
+  
+  .tab-text {
+    font-size: 9px;
+  }
+  
+  .dev-comments-wrapper.open .dev-comments-content-wrapper {
+    max-height: 200px;
+  }
+  
+  .dev-comments-content {
+    padding: 15px;
+  }
+  
+  .dev-comments-content p {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .dev-comments-tab {
+    padding: 5px 12px;
+    right: 10px;
+    font-size: 9px;
+    gap: 4px;
+  }
+  
+  .tab-text {
+    font-size: 8px;
+  }
+  
+  .dev-comments-wrapper.open .dev-comments-content-wrapper {
+    max-height: 180px;
+  }
+  
+  .dev-comments-content {
+    padding: 12px;
+  }
+  
+  .dev-comments-content p {
+    font-size: 11px;
+    line-height: 1.5;
+  }
+}
 </style>

@@ -94,7 +94,7 @@
   "4": [
     {
       "name": "In the Rhythm",
-      "description": "Quest: While Minigun is active, Basic Attacks against Heroes permanently increase future Minigun durations by 0.03 seconds.",
+      "description": "{quest}Quest:{/quest} While Minigun is active, Basic Attacks against Heroes permanently increase future Minigun durations by 0.03 seconds.",
       "image": "tychus_minigun.png",
       "talentChanged": false
     },

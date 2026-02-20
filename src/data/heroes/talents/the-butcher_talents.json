@@ -46,7 +46,7 @@
     ],
     "trait": {
       "name": "Fresh Meat (T)",
-      "description": " Upon dying, nearby enemy Minions drop 1 Fresh Meat and enemy Heroes drop 20 Fresh Meat. Fresh Meat can be picked up to gain 0.5 Attack Damage per Meat. The Butcher loses 15 Fresh Meat upon dying.Quest: Collect 200 Fresh Meat.Reward: Gain an additional 125 Attack Damage and 25% increased Attack Speed. Heroes continue to drop 10 Fresh Meat, Minions no longer drop Fresh Meat, and Fresh Meat is no longer lost on death.",
+      "description": " Upon dying, nearby enemy Minions drop 1 Fresh Meat and enemy Heroes drop 20 Fresh Meat. Fresh Meat can be picked up to gain 0.5 Attack Damage per Meat. The Butcher loses 15 Fresh Meat upon dying.{quest}Quest:{/quest} Collect 200 Fresh Meat.{reward}Reward:{/reward} Gain an additional 125 Attack Damage and 25% increased Attack Speed. Heroes continue to drop 10 Fresh Meat, Minions no longer drop Fresh Meat, and Fresh Meat is no longer lost on death.",
       "image": "butcher_freshmeat.png",
       "abilityChanged": false
     }

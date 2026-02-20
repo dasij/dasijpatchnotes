@@ -61,7 +61,7 @@
     },
     {
       "name": "Lunar Blaze",
-      "description": "Increase Lunar Flare's range by 30%.Quest: Hitting a Hero with Lunar Flare increases its damage by 5%, up to 150%.",
+      "description": "Increase Lunar Flare's range by 30%.{quest}Quest:{/quest} Hitting a Hero with Lunar Flare increases its damage by 5%, up to 150%.",
       "image": "tyrande_lunarflare.png",
       "talentChanged": false
     },

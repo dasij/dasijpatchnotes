@@ -55,13 +55,13 @@
   "1": [
     {
       "name": "Sulfuras Hungers",
-      "description": "Quest: Every time Empower Sulfuras kills a Minion, its damage is increased by 1, up to 25.Reward: After killing 25 Minions, increase its damage by an additional 100.",
+      "description": "{quest}Quest:{/quest} Every time Empower Sulfuras kills a Minion, its damage is increased by 1, up to 25.{reward}Reward:{/reward} After killing 25 Minions, increase its damage by an additional 100.",
       "image": "ragnaros_empowersulfuras.png",
       "talentChanged": false
     },
     {
       "name": "Shifting Meteor",
-      "description": "Each time an enemy is hit by the same Living Meteor, they take 6% increased damage from it.Quest: Hit 75 Heroes with Living Meteor.Reward: After hitting 75 Heroes with Living Meteor, its duration is increased to 2.25 seconds, and it can be reactivated to change its direction once per use.",
+      "description": "Each time an enemy is hit by the same Living Meteor, they take 6% increased damage from it.{quest}Quest:{/quest} Hit 75 Heroes with Living Meteor.{reward}Reward:{/reward} After hitting 75 Heroes with Living Meteor, its duration is increased to 2.25 seconds, and it can be reactivated to change its direction once per use.",
       "image": "ragnaros_livingmeteor.png",
       "talentChanged": false
     },
@@ -87,7 +87,7 @@
     },
     {
       "name": "Catching Fire",
-      "description": "Quest: Gathering a Regeneration Globe increases Ragnaros' Health Regeneration by 1.25 per second, up to 18.75.Reward: After gathering 15 Regeneration Globes, activate Catching Fire to gain 25 Armor for 3 seconds, reducing damage taken by 25%.",
+      "description": "{quest}Quest:{/quest} Gathering a Regeneration Globe increases Ragnaros' Health Regeneration by 1.25 per second, up to 18.75.{reward}Reward:{/reward} After gathering 15 Regeneration Globes, activate Catching Fire to gain 25 Armor for 3 seconds, reducing damage taken by 25%.",
       "image": "ragnaros_catchingfire.png",
       "talentChanged": false,
       "cooldown": "30s"

@@ -60,13 +60,13 @@
     },
     {
       "name": "Veteran Marksman",
-      "description": "Quest: Every time the primary target of Give 'Em Some Pepper is a Hero, permanently increase its damage bonus by 0.75%. Gambit: Gain 60% bonus Give 'Em Some Pepper damage. Every death reduces this bonus by 15%.",
+      "description": "{quest}Quest:{/quest} Every time the primary target of Give 'Em Some Pepper is a Hero, permanently increase its damage bonus by 0.75%. Gambit: Gain 60% bonus Give 'Em Some Pepper damage. Every death reduces this bonus by 15%.",
       "image": "raynor_acquireweakspot.png",
       "talentChanged": false
     },
     {
       "name": "Ace In The Hole",
-      "description": "{highlight}Quest: Hitting Penetrating Round increases the slow by 5% up to 5 times. When at max stacks, increase Raynor's damage by 15%. Stacks are lost on miss. Increase Penetrating Round's slow duration by 2 seconds.{/highlight}",
+      "description": "{quest}Quest: Hitting Penetrating Round increases the slow by 5% up to 5 times. When at max stacks, increase Raynor's damage by 15%. Stacks are lost on miss. Increase Penetrating Round's slow duration by 2 seconds.{/quest}",
       "image": "raynor_acardtoplay.png",
       "talentChanged": true,
       "developerCommentary": "Ace In The Hole compete with Veteran Marksman on being a damage talent but on the safe way and with being sincere it's hard to compete with the fun on making DINGS DINGS with Veteran Marksman and besides i wanted to make this talent still be on the same direction but increasing it's output."
@@ -93,7 +93,7 @@
     },
     {
       "name": "Behemoth Armor",
-      "description": "{highlight}Give 'Em Some Pepper heals 2% maximum health, doubled when the primary target is a Hero. Quest: Every time Give 'Em Some Pepper's primary target is a Hero, gain an additional 40 Health. After reaching 400 Health, each stack will now give 8 maximum Health instead. Loses the bonus Health on death.{/highlight}",
+      "description": "{highlight}Give 'Em Some Pepper heals 2% maximum health, doubled when the primary target is a Hero. {quest}Quest:{/quest} Every time Give 'Em Some Pepper's primary target is a Hero, gain an additional 40 Health. After reaching 400 Health, each stack will now give 8 maximum Health instead. Loses the bonus Health on death.",
       "image": "raynor_hulkarmor.png",
       "talentChanged": true,
       "developerCommentary": "I like both Fight or Flight and Behemoth Armor but i first dislike a second mission of infinite stacking and also i would say that both these quests synergise well and could aggregate."

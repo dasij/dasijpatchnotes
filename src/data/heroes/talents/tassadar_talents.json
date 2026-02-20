@@ -54,7 +54,7 @@
   "1": [
     {
       "name": "Static Charge",
-      "description": "Quest: Heroes hit by Shock Ray permanently increases its damage by 5 and grants 33% Resonance Beam charge. Maximum of 200 bonus damage.",
+      "description": "{quest}Quest:{/quest} Heroes hit by Shock Ray permanently increases its damage by 5 and grants 33% Resonance Beam charge. Maximum of 200 bonus damage.",
       "image": "tassadar_rework_q_ray.png",
       "talentChanged": false
     },
@@ -66,7 +66,7 @@
     },
     {
       "name": "Khaydarin Amulet",
-      "description": "Quest: Resonance Beam charges 50% faster.Reward: After Resonance Beam has been fully charged for 80 seconds, it bounces to hit 1 additional target for 75% damage, prioritizing Heroes.Reward: After Resonance Beam has been fully charged for 160 seconds, it bounces to hit 2 additional targets for 75% damage, prioritizing Heroes.",
+      "description": "{quest}Quest:{/quest} Resonance Beam charges 50% faster.{reward}Reward:{/reward} After Resonance Beam has been fully charged for 80 seconds, it bounces to hit 1 additional target for 75% damage, prioritizing Heroes.{reward}Reward:{/reward} After Resonance Beam has been fully charged for 160 seconds, it bounces to hit 2 additional targets for 75% damage, prioritizing Heroes.",
       "image": "tassadar_rework_trait.png",
       "talentChanged": false
     }

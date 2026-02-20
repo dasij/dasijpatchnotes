@@ -59,7 +59,7 @@
     },
     {
       "name": "Veteran Marksman",
-      "description": "Quest: Every time the primary target of Give 'Em Some Pepper is a Hero, permanently increase its damage bonus by 0.75%.Gambit: Gain 60% bonus Give 'Em Some Pepper damage. Every death reduces this bonus by 15%.",
+      "description": "{quest}Quest:{/quest} Every time the primary target of Give 'Em Some Pepper is a Hero, permanently increase its damage bonus by 0.75%.Gambit: Gain 60% bonus Give 'Em Some Pepper damage. Every death reduces this bonus by 15%.",
       "image": "raynor_acquireweakspot.png",
       "talentChanged": false
     },
@@ -85,7 +85,7 @@
     },
     {
       "name": "Behemoth Armor",
-      "description": "Gain 200 bonus maximum Health.  Quest: Every time Give 'Em Some Pepper's primary target is a Hero, gain an additional 8 maximum Health.",
+      "description": "Gain 200 bonus maximum Health.  {quest}Quest:{/quest} Every time Give 'Em Some Pepper's primary target is a Hero, gain an additional 8 maximum Health.",
       "image": "raynor_hulkarmor.png",
       "talentChanged": false
     }

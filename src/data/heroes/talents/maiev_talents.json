@@ -55,7 +55,7 @@
   "1": [
     {
       "name": "Bonds of Justice",
-      "description": "Quest: Each tether applied to a secondary target of Umbral Bind permanently increases Umbral Bind's pull damage by 15.Reward: After applying 5 tethers to secondary targets, increase Umbral Bind's pull damage by 75.Reward: After applying 10 tethers to secondary targets, increase Umbral Bind's cleave damage by 30%.",
+      "description": "{quest}Quest:{/quest} Each tether applied to a secondary target of Umbral Bind permanently increases Umbral Bind's pull damage by 15.{reward}Reward:{/reward} After applying 5 tethers to secondary targets, increase Umbral Bind's pull damage by 75.{reward}Reward:{/reward} After applying 10 tethers to secondary targets, increase Umbral Bind's cleave damage by 30%.",
       "image": "maiev_umbra_1.png",
       "talentChanged": false
     },
@@ -75,7 +75,7 @@
   "4": [
     {
       "name": "Pin Down",
-      "description": "Quest: Hit 3 enemy Heroes with a single Fan of Knives.Reward: Increase Fan of Knives damage by 35%.Reward: Each additional time 3 enemy Heroes are hit by a single Fan of Knives, gain an additional 5% damage, up to 50%.Reward: Hit 4 enemy Heroes with a single Fan of Knives to instantly gain all Rewards.",
+      "description": "{quest}Quest:{/quest} Hit 3 enemy Heroes with a single Fan of Knives.{reward}Reward:{/reward} Increase Fan of Knives damage by 35%.{reward}Reward:{/reward} Each additional time 3 enemy Heroes are hit by a single Fan of Knives, gain an additional 5% damage, up to 50%.{reward}Reward:{/reward} Hit 4 enemy Heroes with a single Fan of Knives to instantly gain all Rewards.",
       "image": "maiev_knives.png",
       "talentChanged": false
     },

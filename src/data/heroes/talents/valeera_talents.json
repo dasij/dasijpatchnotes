@@ -53,7 +53,7 @@
   "1": [
     {
       "name": "Vigor",
-      "description": "Valeera regenerates an additional 3 Energy per second.Reward: After Gathering 20 Regen Globes, increase Valeera's maximum Energy to 120.",
+      "description": "Valeera regenerates an additional 3 Energy per second.{reward}Reward:{/reward} After Gathering 20 Regen Globes, increase Valeera's maximum Energy to 120.",
       "image": "talent_conjurerspursuit.png",
       "talentChanged": false
     },
@@ -113,7 +113,7 @@
     },
     {
       "name": "Fatal Finesse",
-      "description": "Quest: Each time Blade Flurry damages an enemy Hero, its damage increases by 6, up to 90.Reward: After damaging 15 Heroes with Blade Flurry, permanently reduce its Energy cost by 20.",
+      "description": "{quest}Quest:{/quest} Each time Blade Flurry damages an enemy Hero, its damage increases by 6, up to 90.{reward}Reward:{/reward} After damaging 15 Heroes with Blade Flurry, permanently reduce its Energy cost by 20.",
       "image": "valeera_bladeflurry.png",
       "talentChanged": false
     },

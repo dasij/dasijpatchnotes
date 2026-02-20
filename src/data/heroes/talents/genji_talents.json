@@ -51,6 +51,11 @@
       "image": "genji_cyberagility.png",
       "abilityChanged": false,
       "cooldown": "20s"
+    },
+    "general": {
+      "name": "Base",
+      "description": "Writing 'Ryujin no ken wo kurae' on chat will write 'The dragon needs healing'.",
+      "developerCommentary": "I need healing."
     }
   },
   "1": [
@@ -211,7 +216,7 @@
     },
     {
       "name": "Zanshin",
-      "description": "Quest: Block 6500 damage with Deflect, including damage blocked so far. Reward: Deflect hits all nearby enemy Heroes.",
+      "description": "{quest}Quest:{/quest} Block 6500 damage with Deflect, including damage blocked so far. {reward}Reward:{/reward} Deflect hits all nearby enemy Heroes.",
       "image": "genji_deflect.png",
       "talentChanged": false
     }

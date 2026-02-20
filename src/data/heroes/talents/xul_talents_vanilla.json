@@ -93,7 +93,7 @@
     },
     {
       "name": "Jailors",
-      "description": "Bone Prison spawns 2 Skeletal Warriors.  These do not count towards Xul's Raise Skeleton maximum.Quest: Spawn 80 Skeletal Warriors.Reward: While fixating on an enemy, Skeletal Warriors gain 25% Movement and Attack Speed.",
+      "description": "Bone Prison spawns 2 Skeletal Warriors.  These do not count towards Xul's Raise Skeleton maximum.{quest}Quest:{/quest} Spawn 80 Skeletal Warriors.{reward}Reward:{/reward} While fixating on an enemy, Skeletal Warriors gain 25% Movement and Attack Speed.",
       "image": "necromancer_raiseskeleton.png",
       "talentChanged": false
     }

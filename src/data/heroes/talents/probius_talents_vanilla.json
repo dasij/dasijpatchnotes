@@ -60,13 +60,13 @@
     },
     {
       "name": "Warp Resonance",
-      "description": "Quest: Hit Heroes with Warp Rift explosions.Reward: After hitting 8 Heroes with Warp Rift explosions, increase the explosion damage by 120.Reward: After hitting 16 Heroes with Warp Rift explosions, Warp Rift gains 1 additional charge.",
+      "description": "{quest}Quest:{/quest} Hit Heroes with Warp Rift explosions.{reward}Reward:{/reward} After hitting 8 Heroes with Warp Rift explosions, increase the explosion damage by 120.{reward}Reward:{/reward} After hitting 16 Heroes with Warp Rift explosions, Warp Rift gains 1 additional charge.",
       "image": "probius_warprift.png",
       "talentChanged": false
     },
     {
       "name": "Gather Minerals",
-      "description": "Quest: Gather Minerals to increase the Health of Photon Cannons by 8, up to 560. Reward: After collecting 70 Minerals, Photon Cannons deal 35% more damage.",
+      "description": "{quest}Quest:{/quest} Gather Minerals to increase the Health of Photon Cannons by 8, up to 560. {reward}Reward:{/reward} After collecting 70 Minerals, Photon Cannons deal 35% more damage.",
       "image": "probius_photoncannon.png",
       "talentChanged": false
     }

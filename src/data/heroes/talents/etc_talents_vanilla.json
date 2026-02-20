@@ -60,7 +60,7 @@
     },
     {
       "name": "Prog Rock",
-      "description": "Quest: Gathering a Regeneration Globe permanently increases the healing per second of Guitar Solo by 5, to a maximum of 100Reward: After gathering 20 Regeneration Globes, Guitar Solo also heals nearby allied Heroes for 50 Health every second while it is active.",
+      "description": "{quest}Quest:{/quest} Gathering a Regeneration Globe permanently increases the healing per second of Guitar Solo by 5, to a maximum of 100{reward}Reward:{/reward} After gathering 20 Regeneration Globes, Guitar Solo also heals nearby allied Heroes for 50 Health every second while it is active.",
       "image": "etc_guitarsolo_a.png",
       "talentChanged": false
     },

@@ -54,7 +54,7 @@
   "1": [
     {
       "name": "Scroll of Identify",
-      "description": "Quest: Hitting an enemy Hero with Scroll of Sealing permanently increases its damage by 2.Reward: After hitting 15 Heroes, Scroll of Sealing reveals and reduces the Armor of Heroes hit by 10 for 4 seconds.Reward: After hitting 30 Heroes, this talent's Armor reduction effect is increased to 15 and its duration to 6 seconds.",
+      "description": "{quest}Quest:{/quest} Hitting an enemy Hero with Scroll of Sealing permanently increases its damage by 2.{reward}Reward:{/reward} After hitting 15 Heroes, Scroll of Sealing reveals and reduces the Armor of Heroes hit by 10 for 4 seconds.{reward}Reward:{/reward} After hitting 30 Heroes, this talent's Armor reduction effect is increased to 15 and its duration to 6 seconds.",
       "image": "deckard_scroll_of_sealing.png",
       "talentChanged": false
     },

@@ -53,7 +53,7 @@
   "1": [
     {
       "name": "Party Mix",
-      "description": "Quest: Play L\u00facio's Crossfade tracks to nearby allies. Multiple allies provide additional time.Reward: For every 1 Minute played, permanently increase Lucio's maximum Mana by 10. Reward: Once you have played for 8 minutes or more, permanently increase Crossfade's range by 20%.",
+      "description": "{quest}Quest:{/quest} Play L\u00facio's Crossfade tracks to nearby allies. Multiple allies provide additional time.{reward}Reward:{/reward} For every 1 Minute played, permanently increase Lucio's maximum Mana by 10. {reward}Reward:{/reward} Once you have played for 8 minutes or more, permanently increase Crossfade's range by 20%.",
       "image": "lucio_crossfade_all.png",
       "talentChanged": false
     },
@@ -73,7 +73,7 @@
   "4": [
     {
       "name": "Subwoofer",
-      "description": "Enemies within the first half of Soundwave's range are knocked back 75% further.Quest: Hit 3 enemy Heroes with a single Soundwave.Reward: Increase Soundwave's arc by 50% and its range by 20%.",
+      "description": "Enemies within the first half of Soundwave's range are knocked back 75% further.{quest}Quest:{/quest} Hit 3 enemy Heroes with a single Soundwave.{reward}Reward:{/reward} Increase Soundwave's arc by 50% and its range by 20%.",
       "image": "lucio_soundwave.png",
       "talentChanged": false
     },

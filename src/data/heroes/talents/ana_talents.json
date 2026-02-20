@@ -66,7 +66,7 @@
     },
     {
       "name": "Vampiric Rounds",
-      "description": "Quest: Stack 5 Doses on an enemy Hero or Basic Attack a Hero with 5 Doses.Reward: Stack 5 Doses to increase Shrike's healing by 1%.Reward: Basic Attack a Hero with 5 Doses to increase Shrike's healing by 0.25%.",
+      "description": "{quest}Quest:{/quest} Stack 5 Doses on an enemy Hero or Basic Attack a Hero with 5 Doses.{reward}Reward:{/reward} Stack 5 Doses to increase Shrike's healing by 1%.{reward}Reward:{/reward} Basic Attack a Hero with 5 Doses to increase Shrike's healing by 0.25%.",
       "image": "ana_shrike.png",
       "talentChanged": false
     }

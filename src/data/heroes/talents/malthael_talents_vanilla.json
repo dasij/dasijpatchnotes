@@ -37,7 +37,7 @@
       },
       {
         "name": "Last Rites (R)",
-        "description": "Apply a death sentence to an enemy Hero that, after 2 seconds, deals damage equal to 50% of their missing Health.Quest: Enemies killed between the application of Last Rites and within 1.5 seconds of it dealing damage permanently reduce its cooldown by 5 seconds, to a minimum of 20 seconds.",
+        "description": "Apply a death sentence to an enemy Hero that, after 2 seconds, deals damage equal to 50% of their missing Health.{quest}Quest:{/quest} Enemies killed between the application of Last Rites and within 1.5 seconds of it dealing damage permanently reduce its cooldown by 5 seconds, to a minimum of 20 seconds.",
         "image": "malthael_lastrites.png",
         "abilityChanged": false,
         "manaCost": "100 Mana",
@@ -87,7 +87,7 @@
     },
     {
       "name": "Black Harvest",
-      "description": "Quest: Apply Reaper's Mark to Heroes for a total of 180 seconds.Reward: Permanently increase Reaper's Mark's duration by 2 seconds.",
+      "description": "{quest}Quest:{/quest} Apply Reaper's Mark to Heroes for a total of 180 seconds.{reward}Reward:{/reward} Permanently increase Reaper's Mark's duration by 2 seconds.",
       "image": "malthael_reapersmark.png",
       "talentChanged": false
     }
@@ -124,7 +124,7 @@
     },
     {
       "name": "Last Rites",
-      "description": "Apply a death sentence to an enemy Hero that, after 2 seconds, deals damage equal to 50% of their missing Health.Quest: Enemies killed between the application of Last Rites and within 1.5 seconds of it dealing damage permanently reduce its cooldown by 5 seconds, to a minimum of 20 seconds.",
+      "description": "Apply a death sentence to an enemy Hero that, after 2 seconds, deals damage equal to 50% of their missing Health.{quest}Quest:{/quest} Enemies killed between the application of Last Rites and within 1.5 seconds of it dealing damage permanently reduce its cooldown by 5 seconds, to a minimum of 20 seconds.",
       "image": "malthael_lastrites.png",
       "talentChanged": false,
       "manaCost": "100 Mana",

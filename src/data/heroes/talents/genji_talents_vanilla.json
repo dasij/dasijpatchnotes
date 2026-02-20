@@ -75,7 +75,7 @@
   "4": [
     {
       "name": "Shuriken Mastery",
-      "description": "Quest: Hit enemy Heroes with Shuriken.Reward: After hitting 30 Heroes, Shuriken damage is increased by 25.Reward: After hitting 60 Heroes, Cyber Agility now refunds 3 charges of Shuriken.",
+      "description": "{quest}Quest:{/quest} Hit enemy Heroes with Shuriken.{reward}Reward:{/reward} After hitting 30 Heroes, Shuriken damage is increased by 25.{reward}Reward:{/reward} After hitting 60 Heroes, Cyber Agility now refunds 3 charges of Shuriken.",
       "image": "genji_shurikens.png",
       "talentChanged": false
     },
@@ -191,7 +191,7 @@
     },
     {
       "name": "Zanshin",
-      "description": "Quest: Block 6500 damage with Deflect, including damage blocked so far.Reward: Deflect hits all nearby enemy Heroes.",
+      "description": "{quest}Quest:{/quest} Block 6500 damage with Deflect, including damage blocked so far.{reward}Reward:{/reward} Deflect hits all nearby enemy Heroes.",
       "image": "genji_deflect.png",
       "talentChanged": false
     }

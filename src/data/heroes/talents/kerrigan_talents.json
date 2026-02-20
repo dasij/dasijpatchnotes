@@ -74,7 +74,7 @@
   "4": [
     {
       "name": "Sharpened Blades",
-      "description": "Quest: Minions and Heroes that die within 1.5 seconds of being hit by Ravage increase its damage up to a maximum of 75.Minions grant 1 increased damage and Heroes grant 5 increased damage.Reward: After reaching a 75 damage increase, Ravage gains 50 additional damage.",
+      "description": "{quest}Quest:{/quest} Minions and Heroes that die within 1.5 seconds of being hit by Ravage increase its damage up to a maximum of 75.Minions grant 1 increased damage and Heroes grant 5 increased damage.{reward}Reward:{/reward} After reaching a 75 damage increase, Ravage gains 50 additional damage.",
       "image": "kerrigan_ravage.png",
       "talentChanged": false
     },

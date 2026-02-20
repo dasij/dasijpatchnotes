@@ -46,10 +46,7 @@
     ],
     "trait": {
       "name": "Siege Mode (T)",
-      "description": "Activate to enter Siege Mode. While in Siege Mode, Basic Attacks deal 20% more damage, have 100% increased range, and deal 25% of their damage as splash damage around the target.",
-      "passives": [
-        "{highlight}Heat Tank: While under siege mode Sgt. Hammer can move at 50% of her base move speed but each time she auto attacks that movespeed decreases by 2.5% capping at 25% slowly regaining the speed after 2 seconds not shooting. Mounting reset the heat effect{/highlight}"
-      ],
+      "description": "Activate to enter Siege Mode. While in Siege Mode, Basic Attacks deal 20% more damage, have 100% increased range, and deal 25% of their damage as splash damage around the target. {highlight}Heat Tank: While under Siege Mode, Sgt. Hammer can move at 50% of her base move speed, but each auto attack decreases movespeed by 2.5%, capping at 25%. She slowly regains speed after 2 seconds of not shooting. Mounting resets the heat effect.{/highlight}",
       "cooldown": "2s",
       "image": "sgthammer_siegemode.png",
       "abilityChanged": true,

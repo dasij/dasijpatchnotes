@@ -54,13 +54,13 @@
   "1": [
     {
       "name": "Echo of the Elements",
-      "description": "Quest: Kill Minions or Heroes within 1.5 seconds of hitting them with Chain Lightning.Reward: After killing 10 enemies, reduce the Mana cost of Chain Lightning from 40 to 20.Reward: After killing 20 enemies, gain a second charge of Chain Lightning.",
+      "description": "{quest}Quest:{/quest} Kill Minions or Heroes within 1.5 seconds of hitting them with Chain Lightning.{reward}Reward:{/reward} After killing 10 enemies, reduce the Mana cost of Chain Lightning from 40 to 20.{reward}Reward:{/reward} After killing 20 enemies, gain a second charge of Chain Lightning.",
       "image": "thrall_chainlightning.png",
       "talentChanged": false
     },
     {
       "name": "Crash Lightning",
-      "description": "Repeatable Quest: Hitting at least 2 Heroes with a single use of Chain Lightning increases the damage of its bounces by 12, up to 360.Reward: After hitting multiple Heroes 30 times, Chain Lightning prioritizes bouncing to Heroes.",
+      "description": "{repeatable_quest}Repeatable Quest:{/repeatable_quest} Hitting at least 2 Heroes with a single use of Chain Lightning increases the damage of its bounces by 12, up to 360.{reward}Reward:{/reward} After hitting multiple Heroes 30 times, Chain Lightning prioritizes bouncing to Heroes.",
       "image": "thrall_chainlightning_var1.png",
       "talentChanged": false
     },
@@ -80,7 +80,7 @@
     },
     {
       "name": "Frostwolf Pack",
-      "description": "Quest: Hit 6 Heroes with Feral Spirit. Progress is lost on death and when Thrall fails to hit a Hero.Reward: Reduce the cooldown and Mana cost of Feral Spirit by 50%.",
+      "description": "{quest}Quest:{/quest} Hit 6 Heroes with Feral Spirit. Progress is lost on death and when Thrall fails to hit a Hero.{reward}Reward:{/reward} Reduce the cooldown and Mana cost of Feral Spirit by 50%.",
       "image": "thrall_feralspirit_var1.png",
       "talentChanged": false
     },
@@ -94,7 +94,7 @@
   "7": [
     {
       "name": "Maelstrom Weapon",
-      "description": "Repeatable Quest: Basic Attacks against Heroes while Windfury's Movement Speed bonus is active increase Attack Damage by 1.Reward: After gaining 20 Attack Damage, increase the Movement Speed bonus of Windfury to 40%.Reward: After gaining 40 Attack Damage, Thrall permanently gains 15% increased Movement Speed.",
+      "description": "{repeatable_quest}Repeatable Quest:{/repeatable_quest} Basic Attacks against Heroes while Windfury's Movement Speed bonus is active increase Attack Damage by 1.{reward}Reward:{/reward} After gaining 20 Attack Damage, increase the Movement Speed bonus of Windfury to 40%.{reward}Reward:{/reward} After gaining 40 Attack Damage, Thrall permanently gains 15% increased Movement Speed.",
       "image": "thrall_windfury.png",
       "talentChanged": false
     },
@@ -160,7 +160,7 @@
     },
     {
       "name": "Thunderstorm",
-      "description": "Chain Lightning Slows targets by 8% for 2 seconds.Quest: Targeting a Hero directly with Chain Lightning increases this Slow by 8%, up to an additional 40%.Reward: While at a 40% bonus, Chain Lightning's damage is increased by 25%.Bonuses are reset if Chain Lightning is used on the same Hero it was last used on, or if Thrall dies.",
+      "description": "Chain Lightning Slows targets by 8% for 2 seconds.{quest}Quest:{/quest} Targeting a Hero directly with Chain Lightning increases this Slow by 8%, up to an additional 40%.{reward}Reward:{/reward} While at a 40% bonus, Chain Lightning's damage is increased by 25%.Bonuses are reset if Chain Lightning is used on the same Hero it was last used on, or if Thrall dies.",
       "image": "thrall_chainlightning.png",
       "talentChanged": false
     },

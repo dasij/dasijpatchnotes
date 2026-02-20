@@ -13,16 +13,13 @@
       <img :src="imagePath" :alt="talent.name">
       <div class="card-title">
         <h4>{{ talent.name }}</h4>
-        <span v-if="isSelected" class="selected-badge">Selected</span>
+        <span v-if="talent.talentChanged" class="changed-indicator">Modified</span>
+        <span v-else-if="isSelected" class="selected-badge">Selected</span>
         <span v-else class="placeholder-badge"></span>
       </div>
     </div>
     <div class="card-body">
       <p v-html="formattedDescription"></p>
-    </div>
-    <!-- Sempre renderiza o footer, mesmo que vazio, para manter altura consistente -->
-    <div class="card-footer">
-      <span v-if="talent.talentChanged" class="changed-indicator">Modified</span>
     </div>
   </div>
 </template>
@@ -108,7 +105,7 @@ const formattedDescription = computed(() => formatText(props.talent.description)
 .card-title h4 {
   color: #fff;
   font-size: 16px;
-  margin: 0 0 6px 0;
+  margin: 0 0 4px 0;
   line-height: 1.3;
 }
 
@@ -116,18 +113,27 @@ const formattedDescription = computed(() => formatText(props.talent.description)
   display: inline-block;
   background: #78da5b;
   color: #000;
-  font-size: 11px;
-  padding: 3px 10px;
+  font-size: 10px;
+  padding: 2px 8px;
   border-radius: 4px;
   text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Modified agora fica abaixo do título */
+.changed-indicator {
+  color: #ff4444;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   font-weight: bold;
 }
 
 /* Placeholder invisível para manter altura consistente */
 .placeholder-badge {
   display: inline-block;
-  height: 21px; /* Mesma altura do selected-badge */
-  min-height: 21px;
+  height: 18px;
+  min-height: 18px;
 }
 
 .card-body {
@@ -149,21 +155,113 @@ const formattedDescription = computed(() => formatText(props.talent.description)
   -webkit-box-orient: vertical;
 }
 
-/* Footer sempre presente para manter altura consistente */
-.card-footer {
-  height: 24px;
-  min-height: 24px;
-  margin-top: 8px;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
+/* ===========================================
+   RESPONSIVE STYLES
+   =========================================== */
+
+/* Tablet */
+@media (max-width: 991px) {
+  .talent-card {
+    padding: 12px;
+    width: 240px;
+    min-height: 140px;
+  }
+  
+  .card-header {
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .card-header img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .card-title h4 {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  
+  .selected-badge {
+    font-size: 10px;
+    padding: 2px 8px;
+  }
+  
+  .placeholder-badge {
+    height: 18px;
+    min-height: 18px;
+  }
+  
+  .card-body {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  
+  .card-body p {
+    -webkit-line-clamp: 2;
+  }
 }
 
-.changed-indicator {
-  color: #ff4444;
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: bold;
+/* Mobile */
+@media (max-width: 767px) {
+  .talent-card {
+    padding: 10px;
+    width: 200px;
+    min-height: 120px;
+  }
+  
+  .card-header {
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .card-header img {
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+  }
+  
+  .card-title h4 {
+    font-size: 12px;
+    margin-bottom: 3px;
+  }
+  
+  .selected-badge {
+    font-size: 9px;
+    padding: 2px 6px;
+  }
+  
+  .placeholder-badge {
+    height: 16px;
+    min-height: 16px;
+  }
+  
+  .card-body {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+  
+  .changed-indicator {
+    font-size: 9px;
+    letter-spacing: 0.5px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .talent-card {
+    width: 180px;
+    min-height: 110px;
+    padding: 8px;
+  }
+  
+  .card-header img {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .card-title h4 {
+    font-size: 11px;
+  }
 }
 </style>

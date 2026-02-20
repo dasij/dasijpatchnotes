@@ -55,7 +55,7 @@
   "1": [
     {
       "name": "Stormcaller",
-      "description": "Increase the radius of Lightning Shield by 25%. Quest: Each time Lightning Shield damages an enemy Hero, permanently increase Rehgar's Health by 2 and Mana by 1, stacking up to 300 times.",
+      "description": "Increase the radius of Lightning Shield by 25%. {quest}Quest:{/quest} Each time Lightning Shield damages an enemy Hero, permanently increase Rehgar's Health by 2 and Mana by 1, stacking up to 300 times.",
       "image": "rehgar_lightningshield.png",
       "talentChanged": false
     },

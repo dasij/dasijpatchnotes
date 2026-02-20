@@ -70,7 +70,7 @@
     },
     {
       "name": "Inquisitor's Prayer",
-      "description": "Quest: Hit Heroes with Searing Lash.Reward: Each Hero hit grants 3 permanent Health and 2 permanent Mana. Heroes hit with the second strike count as 2 hits.",
+      "description": "{quest}Quest:{/quest} Hit Heroes with Searing Lash.{reward}Reward:{/reward} Each Hero hit grants 3 permanent Health and 2 permanent Mana. Heroes hit with the second strike count as 2 hits.",
       "image": "whitemane_lash_alt_1.png",
       "talentChanged": false
     }

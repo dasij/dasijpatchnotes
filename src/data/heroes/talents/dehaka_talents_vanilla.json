@@ -60,13 +60,13 @@
     },
     {
       "name": "Tissue Regeneration",
-      "description": "Regeneration Globes grant 10 Essence.Repeatable Quest: Every 50 Essence collected permanently increases Health Regeneration by 4, up to 40, and maximum Essence by 1, up to 10.",
+      "description": "Regeneration Globes grant 10 Essence.{repeatable_quest}Repeatable Quest:{/repeatable_quest} Every 50 Essence collected permanently increases Health Regeneration by 4, up to 40, and maximum Essence by 1, up to 10.",
       "image": "dehaka_essencecollection.png",
       "talentChanged": false
     },
     {
       "name": "Enhanced Agility",
-      "description": "Brushstalker's Movement Speed bonus now lasts for 5 seconds after leaving a bush.Repeatable Quest: Every 50 Essence collected permanently increases the Movement Speed bonus of Brushstalker by 2%, up to 20%.",
+      "description": "Brushstalker's Movement Speed bonus now lasts for 5 seconds after leaving a bush.{repeatable_quest}Repeatable Quest:{/repeatable_quest} Every 50 Essence collected permanently increases the Movement Speed bonus of Brushstalker by 2%, up to 20%.",
       "image": "dehaka_brushstalker.png",
       "talentChanged": false
     }

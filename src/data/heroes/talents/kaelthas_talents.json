@@ -51,12 +51,17 @@
       "image": "kaelthas_verdantspheres.png",
       "abilityChanged": true,
       "developerCommentary": "I wanted to bring Verdant Spheres somehow an interaction for when you don't need the upgraded skill and bringing Mana Tap effect here was a big one"
+    },
+    "general": {
+      "name": "Base",
+      "description": "Increase Kael'thas maximum mana by 15 every time he picks a regeneration globe.",
+      "developerCommentary": "I want to make Kael'thas mana talents more present on the character as baseline."
     }
   },
   "1": [
     {
       "name": "Convection",
-      "description": "Quest: Damaging an enemy Hero with Flamestrike increase its damage by 5, up to 100. This bonus is lost on death.Reward: After hitting 20 enemy Heroes, increase Flamestrike damage by an additional 100 and no longer lose any bonuses on death. {highlight}Hitting 4 heros with a Flame Strike completes the quest and increases Kael'Thas maximum mana by 100.{/highlight}",
+      "description": "{quest}Quest:{/quest} Damaging an enemy Hero with Flamestrike increase its damage by 5, up to 100. This bonus is lost on death.{reward}Reward:{/reward} After hitting 20 enemy Heroes, increase Flamestrike damage by an additional 100 and no longer lose any bonuses on death. {highlight}Hitting 4 heros with a Flame Strike completes the quest and increases Kael'Thas maximum mana by 100.",
       "image": "kaelthas_flamestrike.png",
       "talentChanged": true,
       "developerCommentary": "I was thinking of swapping this quest to something similar to Maiev Umbral Bind but i think Maiev Naisha's Memento will be more beneficial as Convection has a long story of being THAT talent and with the mix of the old Mana Addict on the baseline character it becomes more doable"

@@ -46,7 +46,7 @@
     ],
     "trait": {
       "name": "Master of the Cold Dark (T)",
-      "description": " Quest: Gain 1 Blight every time a Hero is Rooted by Frost Nova or hit by Chains of Kel'Thuzad.Reward: After gaining 15 Blight, gain the Glacial Spike Ability.Reward: After gaining 30 Blight, gain 75% Spell Power.Blight: 0/30",
+      "description": " {quest}Quest:{/quest} Gain 1 Blight every time a Hero is Rooted by Frost Nova or hit by Chains of Kel'Thuzad.{reward}Reward:{/reward} After gaining 15 Blight, gain the Glacial Spike Ability.{reward}Reward:{/reward} After gaining 30 Blight, gain 75% Spell Power.Blight: 0/30",
       "image": "kelthuzad_masterofthecolddark.webp",
       "abilityChanged": false
     }
@@ -80,7 +80,7 @@
     },
     {
       "name": "Phylactery of Kel'Thuzad",
-      "description": "Quest: Collect 12 Regeneration Globes to charge Kel'Thuzad's Phylactery.Reward: Kel'Thuzad's Phylactery can be activated while dead to immediately respawn at the Hall of Storms, but must be charged again.Passive: Kel'Thuzad heals for 10% of all Spell Damage dealt while the Phylactery is charged.",
+      "description": "{quest}Quest:{/quest} Collect 12 Regeneration Globes to charge Kel'Thuzad's Phylactery.{reward}Reward:{/reward} Kel'Thuzad's Phylactery can be activated while dead to immediately respawn at the Hall of Storms, but must be charged again.Passive: Kel'Thuzad heals for 10% of all Spell Damage dealt while the Phylactery is charged.",
       "image": "kelthuzad_phylactery.png",
       "talentChanged": false
     },

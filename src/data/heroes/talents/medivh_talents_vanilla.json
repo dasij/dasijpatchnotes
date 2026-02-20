@@ -3,7 +3,7 @@
     "basic": [
       {
         "name": "Arcane Rift (Q)",
-        "description": "Launch a rift that deals 170 damage to enemies in its path. If an enemy Hero is hit, reduce its cooldown by 5 seconds and refund 50 Mana.Quest: Hit 40 enemy Heroes with Arcane Rift without dying.Reward: Permanently increase the damage dealt by 75 and cooldown reduction for hitting a Hero by 1 second.",
+        "description": "Launch a rift that deals 170 damage to enemies in its path. If an enemy Hero is hit, reduce its cooldown by 5 seconds and refund 50 Mana.{quest}Quest:{/quest} Hit 40 enemy Heroes with Arcane Rift without dying.{reward}Reward:{/reward} Permanently increase the damage dealt by 75 and cooldown reduction for hitting a Hero by 1 second.",
         "image": "medivh_arcanemissile.png",
         "abilityChanged": false,
         "manaCost": "50 Mana",

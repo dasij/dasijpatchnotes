@@ -67,7 +67,7 @@
     },
     {
       "name": "Shadow Hunter",
-      "description": "Quest: Gather Regeneration Globes to lower the Mana cost of Blink by 3, up to 45.Reward: Upon gathering 15 Regeneration Globes, Basic Attacks reduce the cooldown of Blink by 1.5 seconds.",
+      "description": "{quest}Quest:{/quest} Gather Regeneration Globes to lower the Mana cost of Blink by 3, up to 45.{reward}Reward:{/reward} Upon gathering 15 Regeneration Globes, Basic Attacks reduce the cooldown of Blink by 1.5 seconds.",
       "image": "zeratul_blink.png",
       "talentChanged": false
     },

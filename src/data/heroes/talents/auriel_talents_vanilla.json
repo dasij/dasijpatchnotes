@@ -50,7 +50,7 @@
   "1": [
     {
       "name": "Increasing Clarity",
-      "description": "Quest: Every time Sacred Sweep hits a Hero in the center, increase the center damage by 2, up to 50. Reward: After hitting 25 Heroes, this center damage bonus is increased to 180.",
+      "description": "{quest}Quest:{/quest} Every time Sacred Sweep hits a Hero in the center, increase the center damage by 2, up to 50. {reward}Reward:{/reward} After hitting 25 Heroes, this center damage bonus is increased to 180.",
       "image": "auriel_angelicsweep.png",
       "talentChanged": false
     },
@@ -82,7 +82,7 @@
     },
     {
       "name": "Repeated Offense",
-      "description": "Enemies hit by Detainment Strike are knocked back 25% farther.Quest: Every time Detainment Strike stuns a Hero, increase the stun damage by 10, up to 60.Reward: After stunning 6 Heroes, increase this damage bonus to 250.",
+      "description": "Enemies hit by Detainment Strike are knocked back 25% farther.{quest}Quest:{/quest} Every time Detainment Strike stuns a Hero, increase the stun damage by 10, up to 60.{reward}Reward:{/reward} After stunning 6 Heroes, increase this damage bonus to 250.",
       "image": "auriel_restrainingblow_a.png",
       "talentChanged": false
     }
@@ -146,7 +146,7 @@
   "16": [
     {
       "name": "Reservoir of Hope",
-      "description": "Quest: Each maximum energy Ray of Heaven Auriel casts increases the maximum amount of energy that can be stored by 75.",
+      "description": "{quest}Quest:{/quest} Each maximum energy Ray of Heaven Auriel casts increases the maximum amount of energy that can be stored by 75.",
       "image": "auriel_rayofheaven.png",
       "talentChanged": false
     },

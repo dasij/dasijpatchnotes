@@ -154,7 +154,7 @@
     },
     {
       "name": "Wizened Duelist",
-      "description": "Quest: Every 6 Human Basic Attacks against Heroes increase Basic Attack damage by 1%, up to 30%. Worgen Basic Attacks grant credit for 3 Basic Attacks. Half of this bonus is lost upon death.",
+      "description": "{quest}Quest:{/quest} Every 6 Human Basic Attacks against Heroes increase Basic Attack damage by 1%, up to 30%. Worgen Basic Attacks grant credit for 3 Basic Attacks. Half of this bonus is lost upon death.",
       "image": "greymane_curseoftheworgen_var1.png",
       "talentChanged": false
     }

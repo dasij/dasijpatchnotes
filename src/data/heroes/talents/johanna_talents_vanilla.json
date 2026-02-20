@@ -67,7 +67,7 @@
     },
     {
       "name": "Laws of Hope",
-      "description": "Activate to heal 20% of Johanna's max Health over 5 seconds.Quest: Every 10 Regeneration Globes gathered increases this heal amount by 5% of Johanna's max Health.",
+      "description": "Activate to heal 20% of Johanna's max Health over 5 seconds.{quest}Quest:{/quest} Every 10 Regeneration Globes gathered increases this heal amount by 5% of Johanna's max Health.",
       "image": "johanna_lawsofhope.png",
       "talentChanged": false,
       "cooldown": "40s"
@@ -76,7 +76,7 @@
   "4": [
     {
       "name": "Subdue",
-      "description": "Hitting 2 or more Heroes at the same time with Punish increases the Slow to 80% and the Slow amount does not decay.Quest: Hit 4 or more Heroes at the same time with Punish.Reward: Punish always Slows by 80%.",
+      "description": "Hitting 2 or more Heroes at the same time with Punish increases the Slow to 80% and the Slow amount does not decay.{quest}Quest:{/quest} Hit 4 or more Heroes at the same time with Punish.{reward}Reward:{/reward} Punish always Slows by 80%.",
       "image": "johanna_punish.png",
       "talentChanged": false
     },

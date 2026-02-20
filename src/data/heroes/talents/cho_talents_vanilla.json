@@ -62,7 +62,7 @@
     },
     {
       "name": "The Will of Cho",
-      "description": "Quest: Killing enemy Minions grants 1 stack of The Will of Cho, and Hero takedowns grant 10 stacks.  Gain 1 Armor for every 30 stacks of The Will of Cho, up to a maximum of 10 Armor.This Armor bonus stacks with Ogre Hide.",
+      "description": "{quest}Quest:{/quest} Killing enemy Minions grants 1 stack of The Will of Cho, and Hero takedowns grant 10 stacks.  Gain 1 Armor for every 30 stacks of The Will of Cho, up to a maximum of 10 Armor.This Armor bonus stacks with Ogre Hide.",
       "image": "cho_ogrehide_var1.png",
       "talentChanged": false
     }

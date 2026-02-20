@@ -61,7 +61,7 @@
   "1": [
     {
       "name": "Lion's Maw",
-      "description": "Quest: Every time Lion's Fang hits a Hero, increase its damage by 7, up to 175.Reward: After hitting 25 Heroes, the Slow is increased to 50% and its duration is increased to 2 seconds.",
+      "description": "{quest}Quest:{/quest} Every time Lion's Fang hits a Hero, increase its damage by 7, up to 175.{reward}Reward:{/reward} After hitting 25 Heroes, the Slow is increased to 50% and its duration is increased to 2 seconds.",
       "image": "varian_lionsfang.png",
       "talentChanged": false
     },
@@ -73,7 +73,7 @@
     },
     {
       "name": "High King's Quest",
-      "description": "Quest: Hit 50 Heroes with Basic Attacks.Quest: Participate in 5 Hero Takedowns.Quest: Gather 15 Regeneration Globes.Reward: Completing a Quest grants 10 Base Attack Damage. Completing all 3 Quests grants an additional 30 Base Attack Damage.",
+      "description": "{quest}Quest:{/quest} Hit 50 Heroes with Basic Attacks.{quest}Quest:{/quest} Participate in 5 Hero Takedowns.{quest}Quest:{/quest} Gather 15 Regeneration Globes.{reward}Reward:{/reward} Completing a Quest grants 10 Base Attack Damage. Completing all 3 Quests grants an additional 30 Base Attack Damage.",
       "image": "varian_highkingsquest.png",
       "talentChanged": false
     }

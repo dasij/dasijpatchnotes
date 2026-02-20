@@ -53,7 +53,7 @@
     ],
     "trait": {
       "name": "Berserker (T)",
-      "description": " Activate to increase Basic Attack damage by 25% but consume 2% maximum Health per attack.Passive: Zul'jin attacks 1% faster for every 1% of maximum Health missing.You Want Axe?Quest: Every 5 Basic Attacks against Heroes permanently increases Basic Attack damage by 1.Reward: After attacking Heroes 75 times, Basic Attack range is increased by 1.1.Reward: After attacking Heroes 150 times, Twin Cleave now revolves twice.",
+      "description": " Activate to increase Basic Attack damage by 25% but consume 2% maximum Health per attack.Passive: Zul'jin attacks 1% faster for every 1% of maximum Health missing.You Want Axe?{quest}Quest:{/quest} Every 5 Basic Attacks against Heroes permanently increases Basic Attack damage by 1.{reward}Reward:{/reward} After attacking Heroes 75 times, Basic Attack range is increased by 1.1.{reward}Reward:{/reward} After attacking Heroes 150 times, Twin Cleave now revolves twice.",
       "image": "zuljin_berzerker.png",
       "abilityChanged": false
     }
@@ -73,7 +73,7 @@
     },
     {
       "name": "Headhunter",
-      "description": "Quest: Zul'jin's first Takedown against each enemy Hero permanently increases his damage dealt by 2%.Reward: After getting Takedowns on every enemy Hero, Basic Attack range is increased by 1.1.",
+      "description": "{quest}Quest:{/quest} Zul'jin's first Takedown against each enemy Hero permanently increases his damage dealt by 2%.{reward}Reward:{/reward} After getting Takedowns on every enemy Hero, Basic Attack range is increased by 1.1.",
       "image": "zuljin_headhunter.png",
       "talentChanged": false
     }
@@ -108,7 +108,7 @@
     },
     {
       "name": "Arcanite Axes",
-      "description": "Quest: Twin Cleave's damage is permanently increased by 0.75 every time it hits a Hero.",
+      "description": "{quest}Quest:{/quest} Twin Cleave's damage is permanently increased by 0.75 every time it hits a Hero.",
       "image": "zuljin_twincleave.png",
       "talentChanged": false
     },

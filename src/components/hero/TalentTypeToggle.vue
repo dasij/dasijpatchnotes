@@ -172,4 +172,120 @@ input:checked + .slider:before {
 .dev-comments-toggle input:checked ~ .label-text {
   color: #fff;
 }
+
+/* ===========================================
+   RESPONSIVE STYLES
+   =========================================== */
+
+/* Tablet */
+@media (max-width: 991px) {
+  .splash-controls {
+    gap: 12px;
+  }
+  
+  .horizontal-toggle {
+    gap: 8px;
+    padding: 8px 12px;
+  }
+  
+  .horizontal-toggle span {
+    font-size: 10px;
+    letter-spacing: 0.5px;
+  }
+  
+  .switch {
+    width: 40px;
+    height: 22px;
+  }
+  
+  .slider:before {
+    height: 16px;
+    width: 16px;
+    left: 3px;
+    bottom: 3px;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(18px);
+  }
+  
+  .dev-comments-toggle {
+    gap: 6px;
+    padding: 8px 12px;
+  }
+  
+  .checkmark-box {
+    width: 16px;
+    height: 16px;
+    font-size: 10px;
+  }
+  
+  .dev-comments-toggle .label-text {
+    font-size: 10px;
+    letter-spacing: 0.5px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .splash-controls {
+    gap: 8px;
+  }
+  
+  .horizontal-toggle {
+    gap: 6px;
+    padding: 6px 10px;
+    border-radius: 20px;
+  }
+  
+  .horizontal-toggle span {
+    font-size: 9px;
+  }
+  
+  .switch {
+    width: 36px;
+    height: 20px;
+  }
+  
+  .slider:before {
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(16px);
+  }
+  
+  .dev-comments-toggle {
+    gap: 5px;
+    padding: 6px 10px;
+    border-radius: 20px;
+  }
+  
+  .checkmark-box {
+    width: 14px;
+    height: 14px;
+    font-size: 9px;
+  }
+  
+  .dev-comments-toggle .label-text {
+    font-size: 9px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .splash-controls {
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-start;
+  }
+  
+  .horizontal-toggle,
+  .dev-comments-toggle {
+    padding: 5px 8px;
+  }
+}
 </style>
