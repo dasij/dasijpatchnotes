@@ -1,38 +1,62 @@
 <template>
   <div class="unified-sidebar">
-    <!-- Category Tabs -->
-    <div class="category-tabs">
-      <button
-        v-for="category in categories"
-        :key="category.id"
-        class="category-tab"
-        :class="{ active: activeCategory === category.id }"
-        @click="selectCategory(category.id)"
+    <!-- Tabs with Icons -->
+    <div class="tabs">
+      <div 
+        class="tab" 
+        :class="{ active: activeTab === 'heroes' }"
+        @click="selectCategory('heroes')"
       >
-        <img :src="category.icon" :alt="category.name" class="category-icon" />
-        <span class="category-name">{{ category.name }}</span>
-      </button>
+        <img :src="require('@/assets/roles/all.png')" alt="Heroes" class="tab-icon" />
+        <span class="tab-label">Heroes</span>
+      </div>
+      <div 
+        class="tab" 
+        :class="{ active: activeTab === 'maps' }"
+        @click="selectCategory('maps')"
+      >
+        <img :src="require('@/assets/mainpage/maps.webp')" alt="Maps" class="tab-icon" />
+        <span class="tab-label">Maps</span>
+      </div>
+      <div 
+        class="tab" 
+        :class="{ active: activeTab === 'general' }"
+        @click="selectCategory('general')"
+      >
+        <img :src="require('@/assets/mainpage/general.webp')" alt="General" class="tab-icon" />
+        <span class="tab-label">General</span>
+      </div>
+      <div 
+        class="tab" 
+        :class="{ active: activeTab === 'gamemodes' }"
+        @click="selectCategory('gamemodes')"
+      >
+        <img :src="require('@/assets/mainpage/gamemodes.webp')" alt="Modes" class="tab-icon" />
+        <span class="tab-label">Modes</span>
+      </div>
     </div>
 
-    <!-- Search Box (only for heroes) -->
-    <div v-if="activeCategory === 'heroes'" class="search-box">
-      <input
-        id="unified-hero-search"
-        v-model="searchQuery"
-        type="text"
-        placeholder="Search hero..."
-        class="search-input"
-        autocomplete="off"
-      />
-      <span class="search-icon">🔍</span>
-    </div>
+    <!-- Heroes Tab Content -->
+    <div v-if="activeTab === 'heroes'" class="tab-content">
+      <!-- Search Bar -->
+      <div class="search-container">
+        <input
+          id="hero-search"
+          v-model="searchQuery"
+          type="text"
+          placeholder="Search hero..."
+          class="search-input"
+          autocomplete="off"
+        />
+        <span class="search-icon">🔍</span>
+      </div>
 
-    <!-- HEROES TAB CONTENT -->
-    <div v-if="activeCategory === 'heroes'" class="tab-content">
+      <!-- Heroes List by Role -->
       <div class="heroes-list-container">
         <div v-if="loading" class="loading">Loading...</div>
         <div v-else-if="filteredHeroes.length === 0" class="no-heroes">
           No heroes found
+          <div v-if="debugInfo" class="debug">{{ debugInfo }}</div>
         </div>
         <template v-else>
           <div
@@ -51,15 +75,15 @@
                 v-for="hero in getHeroesByRole(role.name)"
                 :key="hero.id"
                 class="hero-item"
-                :class="{ active: isSelected(hero) }"
-                @click="selectItem(hero)"
+                :class="{ active: isActiveItem('hero', hero.name) }"
+                @click="selectItem('hero', hero.name)"
               >
                 <img 
-                  :src="getHeroPortrait(hero.name)" 
+                  :src="getHeroIcon(hero.image)" 
                   :alt="hero.name"
                   class="hero-icon"
                 />
-                <span class="hero-name">{{ formatName(hero.name) }}</span>
+                <span class="hero-name">{{ formatHeroName(hero.name) }}</span>
               </div>
             </div>
           </div>
@@ -67,21 +91,21 @@
       </div>
     </div>
 
-    <!-- MAPS TAB CONTENT -->
-    <div v-else-if="activeCategory === 'maps'" class="tab-content">
-      <div class="items-list-container" :key="'maps-' + maps.length">
-        <div v-if="loading || maps.length === 0" class="loading">Loading...</div>
+    <!-- Maps Tab Content -->
+    <div v-else-if="activeTab === 'maps'" class="tab-content">
+      <div class="items-list-container">
+        <div v-if="loading" class="loading">Loading...</div>
         <template v-else>
           <div
-            v-for="map in filteredMaps"
-            :key="`map-${map.id}`"
+            v-for="map in maps"
+            :key="map.id"
             class="clickable-item map-item"
-            :class="{ selected: isSelected(map) }"
-            @click="selectItem(map)"
+            :class="{ active: isActiveItem('map', map.name), 'no-content': !map.changed }"
+            @click="selectItem('map', map.name)"
           >
             <div class="image-wrapper map-image-wrapper">
               <img 
-                :src="getItemImage(map)" 
+                :src="getItemImage(map.image)" 
                 :alt="map.name"
                 class="item-image map-image"
               />
@@ -97,26 +121,26 @@
       </div>
     </div>
 
-    <!-- GENERAL TAB CONTENT -->
-    <div v-else-if="activeCategory === 'general'" class="tab-content">
-      <div class="items-list-container" :key="'general-' + generalItems.length">
-        <div v-if="loading || generalItems.length === 0" class="loading">Loading...</div>
+    <!-- General Tab Content -->
+    <div v-else-if="activeTab === 'general'" class="tab-content">
+      <div class="items-list-container">
+        <div v-if="loading" class="loading">Loading...</div>
         <template v-else>
           <div
-            v-for="item in filteredGeneral"
-            :key="`general-${item.id}`"
+            v-for="item in generalItems"
+            :key="item.id"
             class="clickable-item large-item"
-            :class="{ selected: isSelected(item) }"
-            @click="selectItem(item)"
+            :class="{ active: isActiveItem('general', item.name) }"
+            @click="selectItem('general', item.name)"
           >
             <div class="image-wrapper large-image-wrapper">
               <img 
-                :src="getItemImage(item)" 
+                :src="getItemImage(item.image)" 
                 :alt="item.name"
                 class="item-image large-image"
               />
               <div class="item-name-overlay">
-                <span class="item-name-large">{{ formatName(item.name) }}</span>
+                <span class="item-name-large">{{ formatItemName(item.name) }}</span>
               </div>
             </div>
           </div>
@@ -124,26 +148,26 @@
       </div>
     </div>
 
-    <!-- GAME MODES TAB CONTENT -->
-    <div v-else-if="activeCategory === 'gamemodes'" class="tab-content">
-      <div class="items-list-container" :key="'gamemodes-' + gameModes.length">
-        <div v-if="loading || gameModes.length === 0" class="loading">Loading...</div>
+    <!-- Game Modes Tab Content -->
+    <div v-else-if="activeTab === 'gamemodes'" class="tab-content">
+      <div class="items-list-container">
+        <div v-if="loading" class="loading">Loading...</div>
         <template v-else>
           <div
-            v-for="mode in filteredGameModes"
-            :key="`mode-${mode.id}`"
+            v-for="mode in gameModes"
+            :key="mode.id"
             class="clickable-item large-item"
-            :class="{ selected: isSelected(mode) }"
-            @click="selectItem(mode)"
+            :class="{ active: isActiveItem('gamemode', mode.name) }"
+            @click="selectItem('gamemode', mode.name)"
           >
             <div class="image-wrapper large-image-wrapper">
               <img 
-                :src="getItemImage(mode)" 
+                :src="getItemImage(mode.image)" 
                 :alt="mode.name"
                 class="item-image large-image"
               />
               <div class="item-name-overlay">
-                <span class="item-name-large">{{ formatName(mode.name) }}</span>
+                <span class="item-name-large">{{ formatItemName(mode.name) }}</span>
               </div>
             </div>
           </div>
@@ -151,348 +175,253 @@
       </div>
     </div>
 
-    <!-- Close button for mobile -->
-    <button v-if="isMobile" class="mobile-close-btn" @click="$emit('close-sidebar')">
-      ✕ Close
+    <!-- Close Button (bottom) - Mobile only -->
+    <button v-if="isMobile" class="sidebar-close-btn" @click="$emit('close-sidebar')">
+      <span>◀</span>
+      <span class="close-text">Close</span>
     </button>
   </div>
 </template>
 
-<script setup>
-/* eslint-disable no-undef */
-import { ref, computed, watch, onMounted } from 'vue'
-
-const props = defineProps({
-  selectedItemName: {
-    type: String,
-    default: ''
+<script>
+export default {
+  name: 'UnifiedSidebar',
+  props: {
+    selectedItemName: { type: String, default: '' },
+    selectedItemType: { type: String, default: 'hero' },
+    activeCategory: { type: String, default: null },
+    isMobile: { type: Boolean, default: false }
   },
-  selectedItemType: {
-    type: String,
-    default: 'hero'
+  emits: ['select-item', 'select-category', 'close-sidebar'],
+  data() {
+    return {
+      activeTab: this.activeCategory || 'heroes',
+      allHeroes: [],
+      roles: [],
+      maps: [],
+      generalItems: [],
+      gameModes: [],
+      searchQuery: '',
+      expandedRoles: new Set(),
+      loading: true,
+      debugInfo: '',
+      windowWidth: typeof window !== 'undefined' ? window.innerWidth : 1024
+    }
   },
-  isMobile: {
-    type: Boolean,
-    default: false
-  }
-})
-
-// Estado interno para seleção - independente das props
-const internalSelectedName = ref('')
-const internalSelectedType = ref('hero')
-
-const emit = defineEmits(['select-item', 'select-category', 'close-sidebar'])
-
-// Categories
-const categories = [
-  { id: 'heroes', name: 'Heroes', icon: require('@/assets/roles/all.png') },
-  { id: 'maps', name: 'Maps', icon: require('@/assets/mainpage/maps.webp') },
-  { id: 'general', name: 'General', icon: require('@/assets/mainpage/general.webp') },
-  { id: 'gamemodes', name: 'Modes', icon: require('@/assets/mainpage/gamemodes.webp') }
-]
-
-// State
-const activeCategory = ref('heroes')  // Sempre começa com heroes, ajusta via watcher
-const searchQuery = ref('')
-const heroes = ref([])
-const maps = ref([])
-const generalItems = ref([])
-const gameModes = ref([])
-const roles = ref([])
-const expandedRoles = ref(new Set())
-const loading = ref(true)
-const categoryLoading = ref({
-  heroes: false,
-  maps: false,
-  general: false,
-  gamemodes: false
-})
-
-// Hero name mapping
-const heroNameToFileMap = {
-  'li-ming': 'liming',
-  'lt-morales': 'ltmorales',
-  'sgt-hammer': 'sgthammer',
-  'the-butcher': 'thebutcher',
-  'the-lost-vikings': 'lostvikings',
-  'cho': 'chogall',
-  'gall': 'chogall'
-}
-
-// Computed
-const filteredHeroes = computed(() => {
-  let items = heroes.value
-  if (searchQuery.value) {
-    const query = searchQuery.value.toLowerCase()
-    items = items.filter(hero => hero.name.toLowerCase().includes(query))
-  }
-  return items
-})
-
-const availableRoles = computed(() => {
-  const rolesWithHeroes = new Set(filteredHeroes.value.map(h => h.role))
-  return roles.value.filter(role => rolesWithHeroes.has(role.name))
-})
-
-const filteredMaps = computed(() => {
-  let items = [...maps.value].sort((a, b) => a.name.localeCompare(b.name))
-  // Sort changed first
-  const changed = items.filter(item => item.changed)
-  const unchanged = items.filter(item => !item.changed)
-  return [...changed, ...unchanged]
-})
-
-const filteredGeneral = computed(() => {
-  return [...generalItems.value].sort((a, b) => a.name.localeCompare(b.name))
-})
-
-const filteredGameModes = computed(() => {
-  return [...gameModes.value].sort((a, b) => a.name.localeCompare(b.name))
-})
-
-// Methods
-const selectCategory = async (categoryId) => {
-  // Só atualiza se for diferente
-  if (activeCategory.value === categoryId) return
-  
-  activeCategory.value = categoryId
-  searchQuery.value = ''
-  
-  // Limpa seleção interna ao trocar de categoria
-  internalSelectedName.value = ''
-  internalSelectedType.value = ''
-  
-  // Garante que os dados da categoria estejam carregados antes de emitir o evento
-  if (categoryId === 'general' && generalItems.value.length === 0) {
-    await loadGeneral()
-  } else if (categoryId === 'gamemodes' && gameModes.value.length === 0) {
-    await loadGameModes()
-  } else if (categoryId === 'maps' && maps.value.length === 0) {
-    await loadMaps()
-  } else if (categoryId === 'heroes' && heroes.value.length === 0) {
-    await loadHeroes()
-  }
-  
-  emit('select-category', categoryId)
-}
-
-const selectItem = (item) => {
-  // Map category to type
-  const typeMap = {
-    'heroes': 'hero',
-    'maps': 'map',
-    'general': 'general',
-    'gamemodes': 'gamemode'
-  }
-  const type = typeMap[activeCategory.value] || activeCategory.value
-  
-  // Atualiza estado interno imediatamente
-  internalSelectedName.value = item.name
-  internalSelectedType.value = type
-  
-  emit('select-item', { type, name: item.name })
-}
-
-const isSelected = (item) => {
-  return internalSelectedName.value.toLowerCase() === item.name.toLowerCase()
-}
-
-const getHeroesByRole = (roleName) => {
-  return filteredHeroes.value.filter(hero => hero.role === roleName)
-}
-
-const toggleRole = (roleId) => {
-  if (expandedRoles.value.has(roleId)) {
-    expandedRoles.value.delete(roleId)
-  } else {
-    expandedRoles.value.add(roleId)
-  }
-}
-
-const isExpanded = (roleId) => {
-  return expandedRoles.value.has(roleId)
-}
-
-const getHeroPortrait = (heroName) => {
-  const fileName = heroNameToFileMap[heroName.toLowerCase()] || heroName.toLowerCase()
-  return `/heroes_portraits/${fileName}.png`
-}
-
-const getItemImage = (item) => {
-  try {
-    return require(`@/assets/${item.image}`)
-  } catch {
-    return ''
-  }
-}
-
-const getRoleIcon = (imageName) => {
-  try {
-    return require(`@/assets/roles/${imageName}`)
-  } catch {
-    return ''
-  }
-}
-
-const formatName = (name) => {
-  return name.split(/[-_]/).map(part => 
-    part.charAt(0).toUpperCase() + part.slice(1).toLowerCase()
-  ).join(' ')
-}
-
-// Data loading (com cache)
-const loadHeroes = async () => {
-  if (categoryLoading.value.heroes) return
-  categoryLoading.value.heroes = true
-  
-  try {
-    // Load roles first
-    const roleData = require('@/data/roles.json')
-    roles.value = roleData.filter(r => r.name !== 'All')
+  computed: {
+    isTablet() {
+      return this.windowWidth >= 768 && this.windowWidth <= 991
+    },
+    filteredHeroes() {
+      if (!this.searchQuery || this.searchQuery.trim() === '') {
+        return this.allHeroes
+      }
+      const query = this.searchQuery.toLowerCase().trim()
+      return this.allHeroes.filter(hero => 
+        hero.name.toLowerCase().includes(query) ||
+        hero.role.toLowerCase().includes(query)
+      )
+    },
+    availableRoles() {
+      // Ordem fixa: Tank -> Bruiser -> Ranged Assassin -> Melee Assassin -> Healer -> Support
+      const roleOrder = ['Tank', 'Bruiser', 'Ranged Assassin', 'Melee Assassin', 'Healer', 'Support']
+      const rolesWithHeroes = new Set(this.filteredHeroes.map(h => h.role))
+      
+      // Filtra apenas roles que têm heróis e ordena conforme roleOrder
+      return roleOrder
+        .map(roleName => this.roles.find(r => r.name === roleName))
+        .filter(role => role && rolesWithHeroes.has(role.name))
+    }
+  },
+  watch: {
+    activeCategory(newVal) {
+      if (newVal) {
+        this.activeTab = newVal
+      }
+    }
+  },
+  async created() {
+    // Set initial tab based on activeCategory prop (prioridade) ou selectedItemType
+    if (this.activeCategory) {
+      this.activeTab = this.activeCategory
+    } else {
+      const typeToTab = {
+        'hero': 'heroes',
+        'map': 'maps',
+        'general': 'general',
+        'gamemode': 'gamemodes'
+      }
+      this.activeTab = typeToTab[this.selectedItemType] || 'heroes'
+    }
     
-    // Expand all roles by default
-    roles.value.forEach(role => expandedRoles.value.add(role.id))
+    // Add resize listener for tablet detection
+    if (typeof window !== 'undefined') {
+      window.addEventListener('resize', this.updateWindowWidth)
+    }
     
-    const heroFiles = require.context('@/data/heroes', false, /^(?!.*talents).*\.json$/)
-    const loadedHeroes = await Promise.all(
-      heroFiles.keys().map(async (key) => {
-        const heroData = await heroFiles(key)
-        return {
-          id: heroData.id,
-          name: heroData.name,
-          role: heroData.role,
-          show: heroData.show
+    try {
+      // Carregar roles
+      const roleData = require('@/data/roles.json')
+      this.roles = roleData.filter(r => r.name !== 'All')
+      
+      // Carregar heróis
+      const heroFiles = require.context('@/data/heroes', false, /^(?!.*talents).*\.json$/)
+      const heroes = await Promise.all(
+        heroFiles.keys().map(async (key) => {
+          const heroData = await heroFiles(key)
+          return {
+            id: heroData.id,
+            name: heroData.name,
+            image: heroData.image,
+            role: heroData.role,
+            show: heroData.show,
+          }
+        })
+      )
+      
+      // Filtrar apenas heróis modificados
+      const modifiedHeroes = heroes.filter(hero => {
+        if (hero.show === 'false') return false
+        try {
+          require(`@/data/heroes/talents/${hero.name.toLowerCase()}_talents.json`)
+          return true
+        } catch {
+          return false
         }
       })
-    )
-    heroes.value = loadedHeroes.filter(h => h.show !== 'false')
-  } finally {
-    categoryLoading.value.heroes = false
-  }
-}
+      
+      this.allHeroes = modifiedHeroes.sort((a, b) => a.name.localeCompare(b.name))
+      
+      // Expandir todas as roles por padrão
+      this.roles.forEach(role => this.expandedRoles.add(role.id))
 
-const loadMaps = async () => {
-  if (categoryLoading.value.maps) return
-  categoryLoading.value.maps = true
-  
-  try {
-    const mapFiles = require.context('@/data/maps', false, /\.json$/)
-    const loadedMaps = await Promise.all(
-      mapFiles.keys().map(async (key) => {
-        const mapData = await mapFiles(key)
-        return {
-          id: mapData.id,
-          name: mapData.name,
-          image: mapData.image,
-          changed: mapData.changed === 'true' || mapData.changed === true
+      // Carregar mapas
+      const mapFiles = require.context('@/data/maps', false, /\.json$/)
+      const maps = await Promise.all(
+        mapFiles.keys().map(async (key) => {
+          const mapData = await mapFiles(key)
+          return {
+            id: mapData.id,
+            name: mapData.name,
+            image: mapData.image,
+            changed: mapData.changed === 'true' || mapData.changed === true
+          }
+        })
+      )
+      // Ordenar: primeiro os com conteúdo (changed: true), depois ordem alfabética
+      this.maps = maps.sort((a, b) => {
+        if (a.changed === b.changed) {
+          return a.name.localeCompare(b.name)
         }
+        return a.changed ? -1 : 1
       })
-    )
-    maps.value = loadedMaps
-  } finally {
-    categoryLoading.value.maps = false
+
+      // Carregar itens gerais
+      const generalFiles = require.context('@/data/general', false, /\.json$/)
+      const generalItems = await Promise.all(
+        generalFiles.keys().map(async (key) => {
+          const itemData = await generalFiles(key)
+          return {
+            id: itemData.id,
+            name: itemData.name,
+            image: itemData.image,
+          }
+        })
+      )
+      this.generalItems = generalItems.sort((a, b) => a.name.localeCompare(b.name))
+
+      // Carregar modos de jogo
+      const gameModeFiles = require.context('@/data/gamemodes', false, /\.json$/)
+      const gameModes = await Promise.all(
+        gameModeFiles.keys().map(async (key) => {
+          const modeData = await gameModeFiles(key)
+          return {
+            id: modeData.id,
+            name: modeData.name,
+            image: modeData.image,
+          }
+        })
+      )
+      this.gameModes = gameModes.sort((a, b) => a.name.localeCompare(b.name))
+    } catch (error) {
+      console.error('Error loading data:', error)
+      this.debugInfo = `Error: ${error.message}`
+    } finally {
+      this.loading = false
+    }
+  },
+  methods: {
+    selectCategory(categoryId) {
+      this.activeTab = categoryId
+      this.$emit('select-category', categoryId)
+    },
+    selectItem(type, name) {
+      this.$emit('select-item', { type, name })
+      // Só fecha sidebar automaticamente para heroes
+      if (type === 'hero') {
+        this.$emit('close-sidebar')
+      }
+    },
+    isActiveItem(type, name) {
+      return this.selectedItemType === type && 
+             this.selectedItemName.toLowerCase() === name.toLowerCase()
+    },
+    getHeroesByRole(roleName) {
+      return this.filteredHeroes.filter(hero => hero.role === roleName)
+    },
+    toggleRole(roleId) {
+      if (this.expandedRoles.has(roleId)) {
+        this.expandedRoles.delete(roleId)
+      } else {
+        this.expandedRoles.add(roleId)
+      }
+    },
+    isExpanded(roleId) {
+      return this.expandedRoles.has(roleId)
+    },
+    formatHeroName(name) {
+      if (!name) return ''
+      return name.split('-').map(part => 
+        part.charAt(0).toUpperCase() + part.slice(1).toLowerCase()
+      ).join(' ')
+    },
+    formatItemName(name) {
+      if (!name) return ''
+      return name.split(/[-_]/).map(part => 
+        part.charAt(0).toUpperCase() + part.slice(1).toLowerCase()
+      ).join(' ')
+    },
+    getRoleIcon(imageName) {
+      try {
+        return require(`@/assets/roles/${imageName}`)
+      } catch {
+        return ''
+      }
+    },
+    getHeroIcon(imagePath) {
+      try {
+        return require(`@/assets/${imagePath}`)
+      } catch {
+        return ''
+      }
+    },
+    getItemImage(imagePath) {
+      try {
+        return require(`@/assets/${imagePath}`)
+      } catch {
+        return ''
+      }
+    },
+    updateWindowWidth() {
+      this.windowWidth = window.innerWidth
+    }
+  },
+  beforeUnmount() {
+    if (typeof window !== 'undefined') {
+      window.removeEventListener('resize', this.updateWindowWidth)
+    }
   }
 }
-
-const loadGeneral = async () => {
-  if (categoryLoading.value.general) return
-  categoryLoading.value.general = true
-  
-  try {
-    const generalFiles = require.context('@/data/general', false, /\.json$/)
-    const loadedGeneral = await Promise.all(
-      generalFiles.keys().map(async (key) => {
-        const itemData = await generalFiles(key)
-        return {
-          id: itemData.id,
-          name: itemData.name,
-          image: itemData.image
-        }
-      })
-    )
-    generalItems.value = loadedGeneral
-  } finally {
-    categoryLoading.value.general = false
-  }
-}
-
-const loadGameModes = async () => {
-  if (categoryLoading.value.gamemodes) return
-  categoryLoading.value.gamemodes = true
-  
-  try {
-    const gameModeFiles = require.context('@/data/gamemodes', false, /\.json$/)
-    const loadedGameModes = await Promise.all(
-      gameModeFiles.keys().map(async (key) => {
-        const itemData = await gameModeFiles(key)
-        return {
-          id: itemData.id,
-          name: itemData.name,
-          image: itemData.image
-        }
-      })
-    )
-    gameModes.value = loadedGameModes
-  } finally {
-    categoryLoading.value.gamemodes = false
-  }
-}
-
-// Watch para activeCategory - carrega dados imediatamente quando muda de categoria
-watch(() => activeCategory.value, (newCategory) => {
-  if (newCategory === 'general' && generalItems.value.length === 0 && !categoryLoading.value.general) {
-    loadGeneral()
-  } else if (newCategory === 'gamemodes' && gameModes.value.length === 0 && !categoryLoading.value.gamemodes) {
-    loadGameModes()
-  } else if (newCategory === 'maps' && maps.value.length === 0 && !categoryLoading.value.maps) {
-    loadMaps()
-  } else if (newCategory === 'heroes' && heroes.value.length === 0 && !categoryLoading.value.heroes) {
-    loadHeroes()
-  }
-}, { immediate: true })
-
-// Mapeamento correto de tipo para categoria
-const typeToCategory = {
-  'hero': 'heroes',
-  'map': 'maps',
-  'general': 'general',
-  'gamemode': 'gamemodes'
-}
-
-// Watch for external changes - apenas sincroniza se necessário
-watch(() => props.selectedItemType, (newType) => {
-  // Se newType estiver vazio, não faz nada (evita interferir quando troca categoria)
-  if (!newType) return
-  
-  const category = typeToCategory[newType]
-  if (category && category !== activeCategory.value) {
-    activeCategory.value = category
-  }
-  internalSelectedType.value = newType
-}, { immediate: true })
-
-watch(() => props.selectedItemName, (newName) => {
-  if (newName && newName !== internalSelectedName.value) {
-    internalSelectedName.value = newName
-  }
-}, { immediate: true })
-
-// Load data on mount - carrega tudo imediatamente
-onMounted(async () => {
-  // Inicializa estado interno com as props usando o mapeamento correto
-  const category = typeToCategory[props.selectedItemType] || 'heroes'
-  activeCategory.value = category
-  internalSelectedType.value = props.selectedItemType
-  internalSelectedName.value = props.selectedItemName
-  
-  await Promise.all([
-    loadHeroes(),
-    loadMaps(),
-    loadGeneral(),
-    loadGameModes()
-  ])
-  loading.value = false
-})
 </script>
 
 <style scoped>
@@ -500,68 +429,73 @@ onMounted(async () => {
   height: 100%;
   display: flex;
   flex-direction: column;
-  background: rgba(10, 10, 10, 0.98);
-  border-right: 2px solid #333;
-  overflow: hidden;
+  background: rgba(0, 0, 0, 0.85);
 }
 
-/* Category Tabs */
-.category-tabs {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2px;
-  background: #222;
-  border-bottom: 2px solid #333;
+/* Tabs with Icons */
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #333;
+  background: rgba(0, 0, 0, 0.5);
 }
 
-.category-tab {
+.tab {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 10px 4px;
-  background: #1a1a1a;
-  border: none;
+  text-align: center;
+  color: #888;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.2s;
+  border-bottom: 2px solid transparent;
+  gap: 4px;
 }
 
-.category-tab:hover {
-  background: #2a2a2a;
+.tab:hover {
+  color: #ccc;
+  background: rgba(255, 255, 255, 0.05);
 }
 
-.category-tab.active {
-  background: #742aff;
+.tab.active {
+  color: #fff;
+  border-bottom-color: #742aff;
+  background: rgba(116, 42, 255, 0.1);
 }
 
-.category-icon {
+.tab-icon {
   width: 24px;
   height: 24px;
   object-fit: contain;
-  margin-bottom: 4px;
   filter: brightness(0.7);
   transition: filter 0.2s;
 }
 
-.category-tab:hover .category-icon,
-.category-tab.active .category-icon {
+.tab:hover .tab-icon,
+.tab.active .tab-icon {
   filter: brightness(1);
 }
 
-.category-name {
-  color: #888;
+.tab-label {
   font-size: 10px;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  font-weight: 600;
 }
 
-.category-tab.active .category-name {
-  color: #fff;
+/* Tab Content */
+.tab-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding-bottom: 60px; /* Espaço para o botão de fechar (50px + margem) */
 }
 
-/* Search Box */
-.search-box {
+/* Search */
+.search-container {
   position: relative;
   padding: 12px;
   border-bottom: 1px solid #333;
@@ -570,18 +504,17 @@ onMounted(async () => {
 .search-input {
   width: 100%;
   padding: 10px 35px 10px 12px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
   border: 1px solid #444;
-  border-radius: 6px;
+  border-radius: 8px;
   color: #fff;
-  font-size: 14px;
-  outline: none;
-  transition: all 0.2s;
+  font-size: 13px;
 }
 
 .search-input:focus {
+  outline: none;
   border-color: #742aff;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .search-input::placeholder {
@@ -597,21 +530,25 @@ onMounted(async () => {
   opacity: 0.5;
 }
 
-/* Tab Content */
-.tab-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  padding-bottom: 60px;
-}
-
-/* Lists Container */
+/* Heroes List */
 .heroes-list-container,
 .items-list-container {
   flex: 1;
   overflow-y: auto;
   padding: 10px;
+}
+
+.loading, .no-heroes {
+  color: #666;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.debug {
+  color: #999;
+  font-size: 11px;
+  margin-top: 10px;
 }
 
 .heroes-list-container::-webkit-scrollbar,
@@ -630,19 +567,7 @@ onMounted(async () => {
   border-radius: 3px;
 }
 
-.heroes-list-container::-webkit-scrollbar-thumb:hover,
-.items-list-container::-webkit-scrollbar-thumb:hover {
-  background: #742aff;
-}
-
-.loading, .no-heroes, .no-items {
-  color: #666;
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
-}
-
-/* HEROES TAB STYLES */
+/* Role Section */
 .role-section {
   margin-bottom: 8px;
 }
@@ -684,6 +609,7 @@ onMounted(async () => {
   font-size: 10px;
 }
 
+/* Role Heroes */
 .role-heroes {
   padding: 5px 0 5px 8px;
 }
@@ -703,8 +629,7 @@ onMounted(async () => {
   background: rgba(255, 255, 255, 0.08);
 }
 
-.hero-item.active,
-.hero-item.selected {
+.hero-item.active {
   background: rgba(116, 42, 255, 0.2);
   border-left: 3px solid #742aff;
 }
@@ -717,8 +642,7 @@ onMounted(async () => {
   border: 2px solid #444;
 }
 
-.hero-item.active .hero-icon,
-.hero-item.selected .hero-icon {
+.hero-item.active .hero-icon {
   border-color: #742aff;
   box-shadow: 0 0 8px rgba(116, 42, 255, 0.4);
 }
@@ -733,13 +657,15 @@ onMounted(async () => {
   color: #fff;
 }
 
-.hero-item.active .hero-name,
-.hero-item.selected .hero-name {
+.hero-item.active .hero-name {
   color: #fff;
   font-weight: 600;
 }
 
-/* MAPS / GENERAL / MODES STYLES */
+/* ===========================================
+   CLICKABLE ITEMS (Maps, General, Modes)
+   =========================================== */
+
 .clickable-item {
   display: flex;
   flex-direction: column;
@@ -757,7 +683,7 @@ onMounted(async () => {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-.clickable-item.selected {
+.clickable-item.active {
   box-shadow: 0 0 0 2px #742aff;
 }
 
@@ -806,17 +732,53 @@ onMounted(async () => {
   text-transform: uppercase;
   letter-spacing: 1.5px;
   text-shadow: 
-    0 0 5px rgba(0, 0, 0, 1),
-    0 2px 4px rgba(0, 0, 0, 0.95),
-    0 4px 8px rgba(0, 0, 0, 0.9),
-    0 8px 16px rgba(0, 0, 0, 0.8),
-    0 0 30px rgba(0, 0, 0, 0.9);
+    0 2px 4px rgba(0, 0, 0, 0.9),
+    0 4px 8px rgba(0, 0, 0, 0.7),
+    0 0 20px rgba(0, 0, 0, 0.8);
   text-align: center;
   padding: 0 10px;
   line-height: 1.2;
 }
 
-/* WIP Overlay */
+/* Close Button (Mobile) */
+.sidebar-close-btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 50px;
+  background: rgba(20, 20, 20, 0.95);
+  border: none;
+  border-top: 2px solid #333;
+  color: #888;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+  transition: all 0.2s;
+  z-index: 10;
+}
+
+.sidebar-close-btn:hover {
+  background: #742aff;
+  color: #fff;
+  border-top-color: #742aff;
+}
+
+.sidebar-close-btn span:first-child {
+  font-size: 12px;
+}
+
+.close-text {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+/* WIP Overlay for maps without content */
 .wip-overlay {
   position: absolute;
   top: 0;
@@ -842,62 +804,122 @@ onMounted(async () => {
   border-radius: 4px;
 }
 
-/* Mobile Close Button */
-.mobile-close-btn {
-  padding: 15px;
-  background: #742aff;
-  border: none;
-  color: #fff;
-  font-size: 14px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.2s;
-}
+/* ===========================================
+   RESPONSIVE STYLES
+   =========================================== */
 
-.mobile-close-btn:hover {
-  background: #853aff;
-}
-
-/* Mobile Responsive */
-@media (max-width: 767px) {
-  .category-tab {
-    padding: 15px 4px;
+/* Tablet (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .unified-sidebar {
+    width: 320px;
+    height: 100vh;
+    background: rgba(10, 10, 15, 0.98);
   }
   
-  .category-icon {
+  /* Hide close button in tablet - usar o do parent */
+  .sidebar-close-btn {
+    display: none;
+  }
+  
+  .tabs {
+    padding-top: 0;
+  }
+  
+  .tab {
+    padding: 10px 4px;
+  }
+  
+  .tab-icon {
+    width: 22px;
+    height: 22px;
+  }
+  
+  .tab-label {
+    font-size: 9px;
+  }
+  
+  .search-container {
+    padding: 12px;
+  }
+  
+  .heroes-list-container,
+  .items-list-container {
+    padding: 12px;
+  }
+  
+  .role-header {
+    padding: 10px 12px;
+  }
+  
+  .role-icon {
+    width: 26px;
+    height: 26px;
+  }
+  
+  .role-name {
+    font-size: 13px;
+  }
+  
+  .hero-item {
+    padding: 8px 12px;
+  }
+  
+  .hero-icon {
+    width: 34px;
+    height: 34px;
+  }
+  
+  .hero-name {
+    font-size: 14px;
+  }
+  
+  .map-image-wrapper {
+    height: 100px;
+  }
+  
+  .large-image-wrapper {
+    height: 140px;
+  }
+}
+
+/* Mobile - Sidebar em tela cheia */
+@media (max-width: 767px) {
+  .unified-sidebar {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(10, 10, 15, 0.98);
+    position: relative;
+  }
+  
+  .tabs {
+    padding-top: 0;
+  }
+  
+  .tab {
+    padding: 12px 6px;
+  }
+  
+  .tab-icon {
     width: 28px;
     height: 28px;
   }
   
-  .category-name {
+  .tab-label {
     font-size: 11px;
   }
   
-  .search-box {
+  .search-container {
     padding: 15px;
+  }
+  
+  .search-input {
+    padding: 12px 40px 12px 15px;
+    font-size: 15px;
   }
   
   .heroes-list-container,
   .items-list-container {
     padding: 15px;
-  }
-  
-  .map-image-wrapper {
-    height: 112px;
-  }
-  
-  .large-image-wrapper {
-    height: 168px;
-  }
-  
-  .item-name-large {
-    font-size: 22px;
-    letter-spacing: 2px;
-  }
-  
-  .wip-text {
-    font-size: 14px;
-    padding: 8px 16px;
   }
   
   .role-header {
@@ -924,6 +946,19 @@ onMounted(async () => {
   
   .hero-name {
     font-size: 15px;
+  }
+
+  .map-image-wrapper {
+    height: 112px;
+  }
+
+  .large-image-wrapper {
+    height: 168px;
+  }
+
+  .item-name-large {
+    font-size: 22px;
+    letter-spacing: 2px;
   }
 }
 </style>

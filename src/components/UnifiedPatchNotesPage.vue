@@ -11,6 +11,7 @@
       <UnifiedSidebar
         :selected-item-name="itemName"
         :selected-item-type="itemType"
+        :active-category="activeCategory"
         :is-mobile="isMobile"
         @select-item="onSelectItem"
         @select-category="onSelectCategory"
@@ -55,16 +56,32 @@
       <!-- Empty State -->
       <div v-else class="empty-state">
         <div class="empty-message">
-          <h2>Select an Item</h2>
-          <p>Choose a map, general item, or game mode from the sidebar</p>
+          <h2>Welcome to Dasij Patch Notes</h2>
+          <p>Here you'll find patch notes based on my personal vision for Heroes of the Storm.</p>
+          <p>These changes prioritize fun over competitive balance, focusing on modifying heroes based on their lore and current gameplay.</p>
+          <br />
+          <p><strong>Choose a category from the sidebar to get started:</strong></p>
+          <div class="welcome-links">
+            <router-link to="/heroes" class="welcome-link">🦸 Heroes</router-link>
+            <router-link to="/maps" class="welcome-link">🗺️ Maps</router-link>
+            <router-link to="/general" class="welcome-link">⚙️ General</router-link>
+            <router-link to="/gamemodes" class="welcome-link">🎮 Game Modes</router-link>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Floating button to show sidebar when hidden -->
+    <!-- Floating button to show sidebar when hidden (desktop) -->
     <button v-if="!showSidebar && !isMobile" class="sidebar-show-btn" @click="toggleSidebar" title="Show sidebar">
       <span>▶</span>
     </button>
+
+    <!-- Mobile Sticky Menu (always visible on mobile) -->
+    <MobileMenuSticky 
+      v-if="isMobile" 
+      :title="itemName ? item.name : 'Select an Item'"
+      @toggle-sidebar="toggleSidebar"
+    />
   </div>
 </template>
 
@@ -74,6 +91,7 @@ import { ref, computed, watch, onMounted, onUnmounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import MetaTags from './MetaTags.vue'
 import UnifiedSidebar from './UnifiedSidebar.vue'
+import MobileMenuSticky from './MobileMenuSticky.vue'
 import ChangesList from './patchnotes/ChangesList.vue'
 import ChangeDetailView from './patchnotes/ChangeDetailView.vue'
 
@@ -81,8 +99,8 @@ import ChangeDetailView from './patchnotes/ChangeDetailView.vue'
 const route = useRoute()
 const router = useRouter()
 
-// Sidebar visibility state
-const showSidebar = ref(true)
+// Sidebar visibility state - começa fechado
+const showSidebar = ref(false)
 
 // Responsive detection
 const windowWidth = ref(window.innerWidth)
@@ -94,10 +112,31 @@ const updateWindowWidth = () => {
 onMounted(() => window.addEventListener('resize', updateWindowWidth))
 onUnmounted(() => window.removeEventListener('resize', updateWindowWidth))
 
+// Detectar tipo baseado na rota atual
+const detectTypeFromRoute = () => {
+  const path = route.path
+  if (path.includes('/general')) return 'general'
+  if (path.includes('/gamemode')) return 'gamemode'
+  if (path.includes('/hero')) return 'hero'
+  if (path.includes('/map')) return 'map'
+  return null
+}
+
+// Detectar categoria ativa baseada na rota (para abrir o sidebar na aba correta)
+const detectCategoryFromRoute = () => {
+  const path = route.path
+  if (path === '/heroes' || path.includes('/hero/')) return 'heroes'
+  if (path === '/maps' || path.includes('/map/')) return 'maps'
+  if (path === '/general' || path.includes('/general/')) return 'general'
+  if (path === '/gamemodes' || path.includes('/gamemode/')) return 'gamemodes'
+  return 'heroes' // default
+}
+
 // Data state
 const item = ref({})
-const itemType = ref('map') // 'map', 'general', 'gamemode'
+const itemType = ref(detectTypeFromRoute())
 const itemName = ref('')
+const activeCategory = ref(detectCategoryFromRoute())
 const patchNotes = ref([])
 const selectedChange = ref(null)
 
@@ -192,13 +231,20 @@ const loadItemData = async (type, name) => {
   }
 }
 
-const onSelectCategory = () => {
-  // Clear current item when switching categories to show empty state
-  item.value = {}
-  itemName.value = ''
-  itemType.value = ''  // Limpa o tipo também para não interferir no sidebar
-  patchNotes.value = []
-  selectedChange.value = null
+const onSelectCategory = (categoryId) => {
+  // Atualiza a categoria ativa
+  activeCategory.value = categoryId
+  
+  // Navega para a página principal da categoria selecionada
+  if (categoryId === 'heroes') {
+    router.push('/heroes')
+  } else if (categoryId === 'maps') {
+    router.push('/maps')
+  } else if (categoryId === 'general') {
+    router.push('/general')
+  } else if (categoryId === 'gamemodes') {
+    router.push('/gamemodes')
+  }
 }
 
 const onSelectItem = (payload) => {
@@ -231,15 +277,22 @@ const toggleSidebar = () => {
   showSidebar.value = !showSidebar.value
 }
 
+// Watch for route changes to update itemType e activeCategory
+watch(() => route.path, () => {
+  itemType.value = detectTypeFromRoute()
+  activeCategory.value = detectCategoryFromRoute()
+  
+  // Abre o sidebar automaticamente quando navegar para uma categoria
+  const path = route.path
+  if (path === '/heroes' || path === '/maps' || path === '/general' || path === '/gamemodes') {
+    showSidebar.value = true
+  }
+}, { immediate: true })
+
 // Initialize from URL
 onMounted(() => {
   if (route.params.name) {
-    const path = route.path
-    let type = 'map'
-    if (path.includes('/general/')) type = 'general'
-    else if (path.includes('/gamemode/')) type = 'gamemode'
-    
-    loadItemData(type, route.params.name.toLowerCase())
+    loadItemData(itemType.value, route.params.name.toLowerCase())
   }
 })
 
@@ -487,6 +540,33 @@ watch(() => route.params.name, (newName) => {
   font-size: 18px;
 }
 
+.welcome-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.welcome-link {
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #2E60A3 0%, #4a8fd9 100%);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  border: 2px solid #2E60A3;
+}
+
+.welcome-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(46, 96, 163, 0.4);
+  background: linear-gradient(135deg, #3a7bc8 0%, #5aa0e8 100%);
+}
+
 /* Responsive - 1200px */
 @media (max-width: 1200px) {
   .sidebar-fixed {
@@ -593,7 +673,7 @@ watch(() => route.params.name, (newName) => {
     height: auto;
     min-height: 100vh;
     overflow: visible;
-    padding: 10px;
+    padding: 60px 10px 10px 10px; /* Espaço para barra sticky no topo */
   }
   
   .content-area {

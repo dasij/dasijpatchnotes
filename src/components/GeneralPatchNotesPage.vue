@@ -10,6 +10,17 @@
 
       <div v-if="selectedTab === 'patchNotes'" class="mt-8">
         <h1 class="text-4xl font-bold text-white mb-4">{{ generalItem.name }} PATCH NOTES</h1>
+        
+        <!-- Empty State - No Content -->
+        <div v-if="!patchNotes || patchNotes.length === 0" class="empty-state">
+          <div class="empty-content">
+            <span class="empty-icon">📋</span>
+            <h2 class="empty-title">No Patch Notes Available</h2>
+            <p class="empty-text">This section doesn't have any changes yet.</p>
+            <p class="empty-subtext">Please select another item from the sidebar.</p>
+          </div>
+        </div>
+        
         <div v-for="patchNote in patchNotes" :key="patchNote.id" class="mb-12">
           <h2 class="text-2xl font-bold text-white mb-2">{{ patchNote.title }}</h2>
           <p class="text-gray-400 text-sm mb-6">{{ patchNote.date }}</p>

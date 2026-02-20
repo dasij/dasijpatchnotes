@@ -17,10 +17,12 @@
       </button>
     </div>
 
-    <!-- Mobile Menu Button (fixed at top) -->
-    <button v-if="isMobile && !showSidebar" class="mobile-menu-btn" @click="toggleSidebar">
-      <span>☰</span>
-    </button>
+    <!-- Mobile Sticky Menu (always visible on mobile) -->
+    <MobileMenuSticky 
+      v-if="isMobile" 
+      title="General"
+      @toggle-sidebar="toggleSidebar"
+    />
 
     <!-- MAIN CONTENT -->
     <div class="main-content" :class="{ 'full-width': !showSidebar }">
@@ -52,8 +54,13 @@
 </template>
 
 <script>
+import MobileMenuSticky from './MobileMenuSticky.vue'
+
 export default {
   name: 'GeneralPage',
+  components: {
+    MobileMenuSticky
+  },
   data() {
     return {
       generalItems: [],
@@ -224,30 +231,6 @@ export default {
   background: #742aff;
   border-color: #742aff;
   width: 44px;
-}
-
-/* Mobile menu button (fixed at top) */
-.mobile-menu-btn {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 50px;
-  background: rgba(20, 20, 20, 0.95);
-  border: none;
-  border-bottom: 2px solid #444;
-  color: #fff;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  z-index: 100;
-}
-
-.mobile-menu-btn:hover {
-  background: #742aff;
 }
 
 /* Main Content */
@@ -497,7 +480,7 @@ export default {
     height: auto;
     min-height: 100vh;
     overflow: visible;
-    padding: 15px;
+    padding: 60px 15px 15px 15px; /* Espaço para barra sticky no topo */
   }
   
   .page-title {

@@ -1,10 +1,9 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
 import HeroPatchNotesPage from './components/HeroPatchNotesPage.vue';
 import UnifiedPatchNotesPage from './components/UnifiedPatchNotesPage.vue';
-import MainPage from './components/MainPage.vue';
 
 const routes = [
-  { path: '/', component: MainPage },
+  { path: '/', component: UnifiedPatchNotesPage },
   { path: '/heroes', component: HeroPatchNotesPage },
   { path: '/hero/:name', component: HeroPatchNotesPage },
   { path: '/maps', component: UnifiedPatchNotesPage },

@@ -8,10 +8,12 @@
 
     <!-- LEFT SIDEBAR: Full height fixed -->
     <div class="sidebar-fixed" :class="{ hidden: !showSidebar }">
-      <HeroSidebar
-        :selected-hero-name="heroName"
+      <UnifiedSidebar
+        :selected-item-name="heroName"
+        selected-item-type="hero"
         :is-mobile="isMobile"
-        @select-hero="onSelectHero"
+        @select-item="onSelectItem"
+        @select-category="onSelectCategory"
         @close-sidebar="toggleSidebar"
       />
       <!-- Toggle Button at bottom (desktop and tablet) -->
@@ -161,9 +163,10 @@
 <script setup>
 /* eslint-disable no-undef */
 import { ref, computed, watch, provide, onMounted, onUnmounted } from 'vue'
+import { useRouter } from 'vue-router'
 import { useHeroData } from '@/composables/useHeroData'
 import MetaTags from './MetaTags.vue'
-import HeroSidebar from './hero/HeroSidebar.vue'
+import UnifiedSidebar from './UnifiedSidebar.vue'
 import AbilityList from './hero/AbilityList.vue'
 import TalentTree from './hero/TalentTree.vue'
 import TalentCards from './hero/TalentCards.vue'
@@ -178,6 +181,9 @@ const talentLevels = [1, 4, 7, 10, 13, 16, 20]
 
 // Sidebar visibility state
 const showSidebar = ref(true)
+
+// Router
+const router = useRouter()
 
 // Responsive detection
 const windowWidth = ref(window.innerWidth)
@@ -237,13 +243,35 @@ const activeDevComment = computed(() => {
 })
 
 // Methods
-const onSelectHero = (heroName) => {
-  selectHero(heroName)
-  selectedAbility.value = null
-  selectedTalent.value = null
-  selectedTalentLevel.value = 1
-  showDevComments.value = false
-  showDevCommentsAlways.value = false
+const onSelectItem = (payload) => {
+  const { type, name } = payload || {}
+  if (!type || !name) return
+  
+  if (type === 'hero') {
+    // Navigate to hero page
+    router.push(`/hero/${name.toLowerCase()}`)
+    selectHero(name)
+    selectedAbility.value = null
+    selectedTalent.value = null
+    selectedTalentLevel.value = 1
+    showDevComments.value = false
+    showDevCommentsAlways.value = false
+  } else {
+    // Navigate to other pages (maps, general, gamemodes)
+    router.push(`/${type}/${name.toLowerCase().replace(/ /g, '_')}`)
+  }
+}
+
+const onSelectCategory = (categoryId) => {
+  if (categoryId === 'heroes') {
+    router.push('/heroes')
+  } else if (categoryId === 'maps') {
+    router.push('/maps')
+  } else if (categoryId === 'general') {
+    router.push('/general')
+  } else if (categoryId === 'gamemodes') {
+    router.push('/gamemodes')
+  }
 }
 
 
