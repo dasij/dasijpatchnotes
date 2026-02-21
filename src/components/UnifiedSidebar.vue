@@ -101,7 +101,7 @@
             :key="map.id"
             class="clickable-item map-item"
             :class="{ active: isActiveItem('map', map.name), 'no-content': !map.changed }"
-            @click="selectItem('map', map.name)"
+            @click="map.changed && selectItem('map', map.name)"
           >
             <div class="image-wrapper map-image-wrapper">
               <img 
@@ -357,10 +357,7 @@ export default {
     },
     selectItem(type, name) {
       this.$emit('select-item', { type, name })
-      // Só fecha sidebar automaticamente para heroes
-      if (type === 'hero') {
-        this.$emit('close-sidebar')
-      }
+      // Não fecha o sidebar automaticamente ao selecionar heróis
     },
     isActiveItem(type, name) {
       return this.selectedItemType === type && 
@@ -791,6 +788,17 @@ export default {
   justify-content: center;
   pointer-events: none;
   z-index: 2;
+}
+
+/* Map items without content (WIP) */
+.clickable-item.no-content {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.clickable-item.no-content:hover {
+  background: rgba(255, 255, 255, 0.03);
+  border-color: transparent;
 }
 
 .wip-text {

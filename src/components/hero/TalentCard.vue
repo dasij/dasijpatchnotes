@@ -38,16 +38,36 @@ defineEmits(['click', 'dblclick'])
 
 const heroName = inject('heroName')
 const formatText = inject('formatText')
+const getTalentImagePath = inject('getTalentImagePath', null)
 
 const imagePath = computed(() => {
-  try {
-    return require(`@/assets/talents/${heroName.value}/${props.talent.image}`)
-  } catch {
-    return ''
+  if (!props.talent?.image) return ''
+  if (getTalentImagePath) {
+    return getTalentImagePath(heroName.value, props.talent.image)
   }
+  return `/talents/${heroName.value}/${props.talent.image}`
 })
 
-const formattedDescription = computed(() => formatText(props.talent.description))
+// Junta descrição + quest + rewards no mesmo formato do Tissue Regeneration
+const formattedDescription = computed(() => {
+  let fullText = props.talent.description || ''
+  
+  // Se tiver quest separado, adiciona com tag
+  if (props.talent.quest) {
+    if (fullText) fullText += ' '
+    fullText += `{quest}Quest:{/quest} ${props.talent.quest}`
+  }
+  
+  // Se tiver rewards separados, adiciona com tags
+  if (props.talent.rewards?.length) {
+    props.talent.rewards.forEach(reward => {
+      if (fullText) fullText += ' '
+      fullText += `{reward}Reward:{/reward} ${reward}`
+    })
+  }
+  
+  return formatText(fullText)
+})
 </script>
 
 <style scoped>
@@ -146,13 +166,70 @@ const formattedDescription = computed(() => formatText(props.talent.description)
   flex-direction: column;
 }
 
-.card-body p {
+.card-body > p {
   margin: 0;
   flex: 1;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+}
+
+/* Quest/Rewards sections (formato Dehaka) */
+.quest-section,
+.rewards-section {
+  margin-top: 4px;
+}
+
+.quest-section .quest-label {
+  margin: 0 0 2px 0;
+  color: #ffd700;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.quest-section .quest-text {
+  margin: 0;
+  color: #bbb;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.reward-item {
+  margin: 4px 0 0 0;
+  color: #bbb;
+  font-size: 14px;
+  line-height: 1.5;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.reward-label {
+  color: #ffd700;
+  font-weight: bold;
+}
+
+.reward-text {
+  color: #bbb;
+}
+
+.repeatable-quest-label {
+  color: #ffaa00;
+  font-weight: bold;
+  display: inline;
+}
+
+/* Estilos para quest/reward labels dentro do card */
+.card-body :deep(.quest-label),
+.card-body :deep(.reward-label),
+.card-body :deep(.repeatable-quest-label) {
+  color: #ffd700;
+  font-weight: bold;
+}
+
+.card-body :deep(.repeatable-quest-label) {
+  color: #ffaa00;
 }
 
 /* ===========================================
@@ -197,8 +274,17 @@ const formattedDescription = computed(() => formatText(props.talent.description)
     line-height: 1.4;
   }
   
-  .card-body p {
+  .card-body > p {
     -webkit-line-clamp: 2;
+  }
+  
+  .quest-section .quest-label,
+  .quest-section .quest-text,
+  .reward-item,
+  .reward-label,
+  .reward-text {
+    font-size: 12px;
+    line-height: 1.4;
   }
 }
 
@@ -241,6 +327,15 @@ const formattedDescription = computed(() => formatText(props.talent.description)
     line-height: 1.4;
   }
   
+  .quest-section .quest-label,
+  .quest-section .quest-text,
+  .reward-item,
+  .reward-label,
+  .reward-text {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+  
   .changed-indicator {
     font-size: 9px;
     letter-spacing: 0.5px;
@@ -262,6 +357,15 @@ const formattedDescription = computed(() => formatText(props.talent.description)
   
   .card-title h4 {
     font-size: 11px;
+  }
+  
+  .quest-section .quest-label,
+  .quest-section .quest-text,
+  .reward-item,
+  .reward-label,
+  .reward-text {
+    font-size: 10px;
+    line-height: 1.3;
   }
 }
 </style>

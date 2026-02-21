@@ -46,6 +46,7 @@ const props = defineProps({
 
 const currentHeroName = inject('heroName')
 const formatText = inject('formatText', (text) => text)
+const getTalentImagePath = inject('getTalentImagePath', null)
 
 const isVisible = ref(false)
 const triggerRef = ref(null)
@@ -59,11 +60,12 @@ const targetHeroName = computed(() => {
 
 const imagePath = computed(() => {
   if (!targetHeroName.value || !props.item.image) return ''
-  try {
-    return require(`@/assets/talents/${targetHeroName.value}/${props.item.image}`)
-  } catch {
-    return ''
+  // Use the injected helper function if available
+  if (getTalentImagePath) {
+    return getTalentImagePath(targetHeroName.value, props.item.image)
   }
+  // Fallback to direct path
+  return `/talents/${targetHeroName.value}/${props.item.image}`
 })
 
 const formattedDescription = computed(() => {

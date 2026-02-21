@@ -81,7 +81,7 @@
                 <div class="hero-overlay"></div>
                 
                 <div class="splash-header">
-                  <h1 class="hero-title">{{ hero.name }}</h1>
+                  <h1 class="hero-title clickable" @click="showHeroDeveloperCommentary" title="Click to view developer commentary">{{ hero.name }}</h1>
                   <TalentTypeToggle
                     v-model="talentType"
                     v-model:dev-comments-always="showDevCommentsAlways"
@@ -103,6 +103,8 @@
                   :selected-level="selectedTalentLevel"
                   :abilities="talents.abilities"
                   :talent-type="talentType"
+                  :show-hero-comment="showHeroComment"
+                  :hero-dev-comment="heroDevComment"
                 />
               </div>
             </div>
@@ -216,7 +218,8 @@ const {
   toggleTalentSelection,
   resetSelections,
   setSelectedTalents,
-  findAbilityOrTalent
+  findAbilityOrTalent,
+  getTalentImagePath
 } = useHeroData()
 
 // Local state
@@ -225,6 +228,7 @@ const selectedTalent = ref(null)
 const selectedTalentLevel = ref(1)
 const showDevComments = ref(false)
 const showDevCommentsAlways = ref(false)
+const showHeroComment = ref(false)
 
 // Pending selections for cross-hero load
 const pendingSelections = ref(null)
@@ -240,6 +244,12 @@ const splashStyle = computed(() => ({
 const activeDevComment = computed(() => {
   const item = selectedTalent.value || selectedAbility.value
   return item?.developerCommentary || null
+})
+
+const heroDevComment = computed(() => {
+  // Pega o developerCommentary do nível raiz do JSON de talentos
+  const currentTalents = talentType.value === 'modified' ? modifiedTalentsData.value : vanillaTalentsData.value
+  return currentTalents?.developerCommentary || null
 })
 
 // Methods
@@ -283,12 +293,14 @@ const toggleSidebar = () => {
 const selectAbility = (ability) => {
   selectedAbility.value = ability
   selectedTalent.value = null
+  showHeroComment.value = false
 }
 
 const selectTalent = (level, talent) => {
   selectedTalent.value = talent
   selectedTalentLevel.value = level
   selectedAbility.value = null
+  showHeroComment.value = false
   toggleTalentSelection(level, talent)
 }
 
@@ -301,6 +313,7 @@ const selectLevel = (level) => {
   } else {
     selectedTalent.value = null
   }
+  showHeroComment.value = false
 }
 
 const toggleDevComments = () => {
@@ -312,6 +325,13 @@ const toggleDevCommentsPanel = () => {
   if (!showDevComments.value && showDevCommentsAlways.value) {
     showDevCommentsAlways.value = false
   }
+}
+
+const showHeroDeveloperCommentary = () => {
+  // Limpa seleções de ability/talent e mostra o comentário do desenvolvedor do herói
+  selectedAbility.value = null
+  selectedTalent.value = null
+  showHeroComment.value = true
 }
 
 const onTalentTypeChange = () => {
@@ -334,6 +354,7 @@ const resetAll = () => {
   selectedTalentLevel.value = 1
   showDevComments.value = false
   showDevCommentsAlways.value = false
+  showHeroComment.value = false
 }
 
 const loadTalentCode = ({ heroName: codeHeroName, vanillaSelections, modifiedSelections, vanillaCode, modifiedCode }) => {
@@ -378,14 +399,17 @@ const applyTalentSelections = (vanillaSelections, modifiedSelections) => {
 const formatText = (text) => {
   if (!text) return ''
   
-  // Substitui highlight primeiro
-  let result = text.replace(/\{highlight\}(.*?)\{\/highlight\}/g, '<span class="highlight-text">$1</span>')
+  // Remove quebras de linha e espaços extras do JSON
+  let result = text.replace(/\n\s*/g, ' ').trim()
   
-  // Substitui as tags de quest/reward por versões com <br> antes
+  // Substitui highlight primeiro
+  result = result.replace(/\{highlight\}(.*?)\{\/highlight\}/g, '<span class="highlight-text">$1</span>')
+  
+  // Substitui as tags de quest/reward por versões com <br> antes e símbolo ❢
   result = result
-    .replace(/\{quest\}Quest:\{\/quest\}/g, '<br><span class="quest-label">Quest:</span>')
-    .replace(/\{reward\}Reward:\{\/reward\}/g, '<br><span class="reward-label">Reward:</span>')
-    .replace(/\{repeatable_quest\}Repeatable Quest:\{\/repeatable_quest\}/g, '<br><span class="repeatable-quest-label">Repeatable Quest:</span>')
+    .replace(/\{quest\}Quest:\{\/quest\}/g, '<br><span class="quest-label">❢ Quest:</span>')
+    .replace(/\{reward\}Reward:\{\/reward\}/g, '<br><span class="reward-label">❢ Reward:</span>')
+    .replace(/\{repeatable_quest\}Repeatable Quest:\{\/repeatable_quest\}/g, '<br><span class="repeatable-quest-label">❢ Repeatable Quest:</span>')
   
   // Remove <br> no início se houver
   return result.replace(/^<br>/, '')
@@ -463,6 +487,7 @@ provide('heroPortraitPath', heroPortraitPath)
 provide('formatText', formatText)
 provide('convertTextPlaceholders', convertTextPlaceholders)
 provide('findAbilityOrTalent', findAbilityOrTalent)
+provide('getTalentImagePath', getTalentImagePath)
 </script>
 
 <style scoped>
@@ -659,6 +684,16 @@ provide('findAbilityOrTalent', findAbilityOrTalent)
   text-shadow: 0 2px 4px rgba(0,0,0,0.9), 0 0 15px rgba(0,0,0,0.7);
   pointer-events: auto;
   letter-spacing: 0.05em;
+}
+
+.hero-title.clickable {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.hero-title.clickable:hover {
+  color: #742aff;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.9), 0 0 20px rgba(116, 42, 255, 0.5);
 }
 
 /* Center Container */

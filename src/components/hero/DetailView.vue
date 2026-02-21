@@ -52,16 +52,6 @@
     <div class="detail-scrollable">
       <p class="detail-description" v-html="formattedTalentDescription"></p>
 
-      <div v-if="selectedTalent.quest" class="detail-extra quest">
-        <h4>❢ Quest</h4>
-        <p v-html="formatText(selectedTalent.quest)"></p>
-      </div>
-      <div v-if="selectedTalent.rewards?.length" class="detail-extra rewards">
-        <h4>❢ Rewards</h4>
-        <ul>
-          <li v-for="(reward, i) in selectedTalent.rewards" :key="i" v-html="formatText(reward)"></li>
-        </ul>
-      </div>
       <div v-if="selectedTalent.passives?.length" class="detail-extra passives">
         <h4>Passive</h4>
         <ul>
@@ -120,6 +110,7 @@ const heroName = inject('heroName')
 const heroPortraitPath = inject('heroPortraitPath')
 const formatText = inject('formatText')
 const findAbilityOrTalent = inject('findAbilityOrTalent', () => null)
+const getTalentImagePath = inject('getTalentImagePath', null)
 
 const heroDisplayName = computed(() => {
   if (!heroName.value) return ''
@@ -131,23 +122,18 @@ const abilityImage = computed(() => {
   if (props.abilities?.general === props.selectedAbility) {
     // If general has its own image defined, try to use it
     if (props.selectedAbility.image) {
-      try {
-        // Try talents folder first
-        return require(`@/assets/talents/${heroName.value}/${props.selectedAbility.image}`)
-      } catch {
-        try {
-          // Then heroes portraits
-          return require(`@/assets/heroes_portraits/${props.selectedAbility.image}`)
-        } catch {
-          // Fall back to hero portrait
-          return heroPortraitPath.value
-        }
-      }
+      const imagePath = getTalentImagePath 
+        ? getTalentImagePath(heroName.value, props.selectedAbility.image)
+        : `/talents/${heroName.value}/${props.selectedAbility.image}`
+      return imagePath || heroPortraitPath.value
     }
     return heroPortraitPath.value
   }
   try {
-    return require(`@/assets/talents/${heroName.value}/${props.selectedAbility.image}`)
+    const imagePath = getTalentImagePath
+      ? getTalentImagePath(heroName.value, props.selectedAbility.image)
+      : `/talents/${heroName.value}/${props.selectedAbility.image}`
+    return imagePath
   } catch {
     return ''
   }
@@ -175,11 +161,10 @@ const hasChanges = computed(() =>
 
 const talentImage = computed(() => {
   if (!props.selectedTalent?.image) return ''
-  try {
-    return require(`@/assets/talents/${heroName.value}/${props.selectedTalent.image}`)
-  } catch {
-    return ''
+  if (getTalentImagePath) {
+    return getTalentImagePath(heroName.value, props.selectedTalent.image)
   }
+  return `/talents/${heroName.value}/${props.selectedTalent.image}`
 })
 
 const hasTalentChanges = computed(() => 
@@ -187,7 +172,29 @@ const hasTalentChanges = computed(() =>
 )
 
 const formattedDescription = computed(() => formatText(props.selectedAbility?.description))
-const formattedTalentDescription = computed(() => formatText(props.selectedTalent?.description))
+
+// Junta descrição + quest + rewards no mesmo formato do Tissue Regeneration
+const formattedTalentDescription = computed(() => {
+  if (!props.selectedTalent) return ''
+  
+  let fullText = props.selectedTalent.description || ''
+  
+  // Se tiver quest separado, adiciona com tag
+  if (props.selectedTalent.quest) {
+    if (fullText) fullText += ' '
+    fullText += `{quest}Quest:{/quest} ${props.selectedTalent.quest}`
+  }
+  
+  // Se tiver rewards separados, adiciona com tags
+  if (props.selectedTalent.rewards?.length) {
+    props.selectedTalent.rewards.forEach(reward => {
+      if (fullText) fullText += ' '
+      fullText += `{reward}Reward:{/reward} ${reward}`
+    })
+  }
+  
+  return formatText(fullText)
+})
 
 </script>
 

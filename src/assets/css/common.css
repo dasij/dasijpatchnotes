@@ -5,27 +5,20 @@
   font-weight: bold;
 }
 
-/* Quest labels - estilo dourado com exclamação */
+/* Quest labels - estilo dourado com exclamação ❢ */
 .quest-label,
 .reward-label,
 .repeatable-quest-label {
   color: #ffd700;
   font-weight: bold;
+  font-size: inherit;
   text-shadow: 0 0 2px rgba(255, 215, 0, 0.5);
+  display: inline;
 }
 
-.quest-label::before,
-.reward-label::before,
-.repeatable-quest-label::before {
-  content: "⚠ ";
-  color: #ffd700;
-}
+/* O símbolo ❢ já está incluído no HTML, não precisa de ::before */
 
 .repeatable-quest-label {
-  color: #ffaa00;
-}
-
-.repeatable-quest-label::before {
   color: #ffaa00;
 }
 

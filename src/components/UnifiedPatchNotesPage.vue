@@ -458,8 +458,8 @@ watch(() => route.params.name, (newName) => {
 
 /* Splash Section */
 .splash-section {
-  height: 45%;
-  min-height: 180px;
+  height: 27%; /* Reduzido 40% do original (45%) */
+  min-height: 120px;
   background-size: cover;
   background-position: center;
   position: relative;

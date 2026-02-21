@@ -29,15 +29,16 @@ const props = defineProps({
 defineEmits(['click', 'dblclick'])
 
 const heroName = inject('heroName')
+const getTalentImagePath = inject('getTalentImagePath', null)
 
 const isNotSelected = computed(() => !props.isSelected && props.hasSelection)
 
 const imagePath = computed(() => {
-  try {
-    return require(`@/assets/talents/${heroName.value}/${props.talent.image}`)
-  } catch {
-    return ''
+  if (!props.talent?.image) return ''
+  if (getTalentImagePath) {
+    return getTalentImagePath(heroName.value, props.talent.image)
   }
+  return `/talents/${heroName.value}/${props.talent.image}`
 })
 </script>
 

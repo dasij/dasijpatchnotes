@@ -30,6 +30,7 @@ const props = defineProps({
 defineEmits(['select', 'toggleDevComments'])
 
 const heroName = inject('heroName')
+const getTalentImagePath = inject('getTalentImagePath', null)
 
 const displayName = computed(() => props.name || props.ability.name)
 
@@ -43,18 +44,13 @@ const displayImage = computed(() => {
     return imageSource
   }
   
-  // Try to resolve the image path from multiple folders
-  try {
-    // First try talents folder with hero name
-    return require(`@/assets/talents/${heroName.value}/${imageSource}`)
-  } catch {
-    try {
-      // Then try heroes portraits (for general/base images like Morales)
-      return require(`@/assets/heroes_portraits/${imageSource}`)
-    } catch {
-      return ''
-    }
+  // Use the injected helper function if available
+  if (getTalentImagePath) {
+    return getTalentImagePath(heroName.value, imageSource)
   }
+  
+  // Fallback to direct path
+  return `/talents/${heroName.value}/${imageSource}`
 })
 </script>
 

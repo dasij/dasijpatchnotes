@@ -67,7 +67,9 @@
       "image": "dehaka_evolve_mutation.webp",
       "talentChanged": true,
       "subtexts": [
-        "The objective here is mean't to be Kaiju based similar to how he is portrayed on the coop missions from SC2"
+        "The objective here is mean't to be Kaiju based similar to how he is portrayed on the coop missions from SC2",
+        "This will increase his size, basic attack range, skills radius and range by that amount",
+        "This will increase Dehaka Hitbox (1.0) to be the same as Deathwing (1.25) at max stacks"
       ]
     },
     {

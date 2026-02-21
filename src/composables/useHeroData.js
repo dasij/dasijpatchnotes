@@ -45,6 +45,18 @@ export function useHeroData() {
     return `/heroes_portraits/${fileName}.png`
   })
   
+  // Helper para gerar caminho de imagem de talento (usa pasta public)
+  const getTalentImagePath = (hero, imageName) => {
+    if (!hero || !imageName) return ''
+    // Se já for um caminho completo (começa com / ou http), retorna como está
+    if (imageName.startsWith('/') || imageName.startsWith('http')) {
+      return imageName
+    }
+    // Mapeia nomes de heróis com hífen para o formato da pasta
+    const mappedHero = heroNameToFileMap[hero] || hero
+    return `/talents/${mappedHero}/${imageName}`
+  }
+  
   const heroSplashPath = computed(() => {
     if (!heroName.value) return ''
     try {
@@ -263,6 +275,7 @@ export function useHeroData() {
     setSelectedTalents,
     isSelected,
     isAnySelected,
-    findAbilityOrTalent
+    findAbilityOrTalent,
+    getTalentImagePath
   }
 }

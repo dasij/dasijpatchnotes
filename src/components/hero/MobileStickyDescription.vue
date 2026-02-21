@@ -88,6 +88,7 @@ const props = defineProps({
 
 const heroName = inject('heroName')
 const heroPortraitPath = inject('heroPortraitPath')
+const getTalentImagePath = inject('getTalentImagePath', null)
 const formatText = inject('formatText')
 const convertTextPlaceholders = inject('convertTextPlaceholders')
 const findAbilityOrTalent = inject('findAbilityOrTalent', () => null)
@@ -122,18 +123,16 @@ const iconSrc = computed(() => {
     if (props.abilities?.general === props.selectedAbility) {
       return heroPortraitPath.value
     }
-    try {
-      return require(`@/assets/talents/${heroName.value}/${props.selectedAbility.image}`)
-    } catch {
-      return ''
+    if (getTalentImagePath) {
+      return getTalentImagePath(heroName.value, props.selectedAbility.image)
     }
+    return `/talents/${heroName.value}/${props.selectedAbility.image}`
   }
   if (props.selectedTalent?.image) {
-    try {
-      return require(`@/assets/talents/${heroName.value}/${props.selectedTalent.image}`)
-    } catch {
-      return ''
+    if (getTalentImagePath) {
+      return getTalentImagePath(heroName.value, props.selectedTalent.image)
     }
+    return `/talents/${heroName.value}/${props.selectedTalent.image}`
   }
   return ''
 })

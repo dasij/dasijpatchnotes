@@ -129,14 +129,15 @@ const getTalentDescription = (level) => {
   return formatText(talent?.description || '')
 }
 
+const getTalentImagePath = inject('getTalentImagePath', null)
+
 const getTalentImage = (level) => {
   const talent = props.currentSelectedTalents[level]
   if (!talent?.image) return ''
-  try {
-    return require(`@/assets/talents/${heroName.value}/${talent.image}`)
-  } catch {
-    return ''
+  if (getTalentImagePath) {
+    return getTalentImagePath(heroName.value, talent.image)
   }
+  return `/talents/${heroName.value}/${talent.image}`
 }
 
 // Detect overflow to show scrollbar only when needed
