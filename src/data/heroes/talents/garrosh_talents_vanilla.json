@@ -61,13 +61,13 @@
   "1": [
     {
       "name": "Warbreaker",
-      "description": "{quest}Quest:{/quest} Stun Heroes with Groundbreaker.{reward}Reward:{/reward} After Stunning 5 Heroes, Groundbreaker's Stun deals an additional 165 damage over 3 seconds to Heroes.{reward}Reward:{/reward} After Stunning 15 Heroes, permanently reduce Groundbreaker's cooldown by 2 seconds.",
+      "description": "Quest: Stun Heroes with Groundbreaker.Reward: After Stunning 5 Heroes, Groundbreaker's Stun deals an additional 165 damage over 3 seconds to Heroes.Reward: After Stunning 15 Heroes, permanently reduce Groundbreaker's cooldown by 2 seconds.",
       "image": "garrosh_groundbreaker.png",
       "talentChanged": false
     },
     {
       "name": "Unrivaled Strength",
-      "description": "Increase Wrecking Ball's throw range by 25% and its damage by 125%.",
+      "description": "Increase Wrecking Ball's throw range by 20% and its damage by 125%.",
       "image": "garrosh_wrecking_ball.png",
       "talentChanged": false
     },
@@ -117,8 +117,7 @@
       "name": "Lok-tar ogar!",
       "description": "Increase Into the Fray's Armor by 20. Hitting enemy Heroes with Into the Fray reduces its cooldown by 12 seconds.",
       "image": "garrosh_intothefray.png",
-      "talentChanged": false,
-      "cooldown": "45s"
+      "talentChanged": false
     }
   ],
   "10": [
@@ -183,7 +182,7 @@
   "20": [
     {
       "name": "Death Wish",
-      "description": "Increase the duration of Warlord's Challenge by 0.5 seconds.  If an enemy Hero is killed while Taunted by Warlord's Challenge, its cooldown is reduced by 45 seconds.",
+      "description": "Increase the duration of Warlord's Challenge by 0.5 seconds. If an enemy Hero is killed while Taunted by Warlord's Challenge, its cooldown is reduced by 45 seconds.",
       "image": "garrosh_warlords_challenge.png",
       "talentChanged": false
     },

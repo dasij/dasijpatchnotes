@@ -47,14 +47,14 @@
     "trait": {
       "name": "Fortitude of the Faithful (T)",
       "description": " When at least 1 other allied Hero is nearby, Deckard gains 10 Armor and his Basic Abilities recharge 50% faster.",
-      "image": "deckard_study_time.png",
+      "image": "deckard_protectors_of_cain.png",
       "abilityChanged": false
     }
   },
   "1": [
     {
       "name": "Scroll of Identify",
-      "description": "{quest}Quest:{/quest} Hitting an enemy Hero with Scroll of Sealing permanently increases its damage by 2.{reward}Reward:{/reward} After hitting 15 Heroes, Scroll of Sealing reveals and reduces the Armor of Heroes hit by 10 for 4 seconds.{reward}Reward:{/reward} After hitting 30 Heroes, this talent's Armor reduction effect is increased to 15 and its duration to 6 seconds.",
+      "description": "Quest: Hitting an enemy Hero with Scroll of Sealing permanently increases its damage by 2.Reward: After hitting 15 Heroes, Scroll of Sealing reveals and reduces the Armor of Heroes hit by 10 for 4 seconds.Reward: After hitting 30 Heroes, this talent's Armor reduction effect is increased to 15 and its duration to 6 seconds.",
       "image": "deckard_scroll_of_sealing.png",
       "talentChanged": false
     },
@@ -87,7 +87,7 @@
     },
     {
       "name": "Ruby",
-      "description": "Activate to increase the damage of the next Horadric Cube by 100%  and it spawns 3 Lesser Healing Potions from each enemy Hero hit, healing allied Heroes for 250 when picked up. Lesser Healing Potions last for 10 seconds.Only 1 Gem may be active at a time.",
+      "description": "Activate to increase the damage of the next Horadric Cube by 100% and it spawns 3 Lesser Healing Potions from each enemy Hero hit, healing allied Heroes for 250 when picked up. Lesser Healing Potions last for 10 seconds.Only 1 Gem may be active at a time.",
       "image": "deckard_ruby.png",
       "talentChanged": false,
       "cooldown": "20s"
@@ -96,7 +96,7 @@
   "7": [
     {
       "name": "Cube Mastery",
-      "description": "Reduce the Mana cost of Scroll of Sealing from 40 to 25.  Each enemy Hero hit by Horadric Cube reduces the cooldown of Scroll of Sealing by 4 seconds.",
+      "description": "Reduce the Mana cost of Scroll of Sealing from 40 to 25. Each enemy Hero hit by Horadric Cube reduces the cooldown of Scroll of Sealing by 4 seconds.",
       "image": "deckard_horadric_cube.png",
       "talentChanged": false
     },

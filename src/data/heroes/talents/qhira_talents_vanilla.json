@@ -11,11 +11,11 @@
       },
       {
         "name": "Blood Rage (W)",
-        "description": "Passive: Basic Attack and Ability damage cause enemies to bleed for 44 damage over 4 seconds. Stacks 5 times.Qhira deals 32 damage and heals for 85 Health per enemy Hero affected. Damage and healing is increased by 50% per each additional stack on that Hero.",
+        "description": "Passive: Basic Attack and Ability damage cause enemies to bleed for 44 damage over 4 seconds. Stacks 5 times.Qhira deals 32 damage and heals for 90 Health per enemy Hero affected. Damage and healing is increased by 50% per each additional stack on that Hero.",
         "image": "nexushunter_w.png",
         "abilityChanged": false,
         "manaCost": "35 Mana",
-        "cooldown": "8s"
+        "cooldown": "7s"
       },
       {
         "name": "Revolving Sweep (E)",
@@ -37,7 +37,7 @@
       },
       {
         "name": "Final Strike (R)",
-        "description": "After 1 second, deal 395 damage to enemies in a line. This damage is increased by 25% against enemy Heroes who are below 50% Health.",
+        "description": "After 1 second, deal 410 damage to enemies in a line. This damage is increased by 25% against enemy Heroes who are below 50% Health.",
         "image": "nexushunter_r2.png",
         "abilityChanged": false,
         "manaCost": "45 Mana",
@@ -47,9 +47,9 @@
     "trait": {
       "name": "Grappling Hook (T)",
       "description": "Qhira fires a grappling hook that pulls her to terrain it contacts. If an enemy Hero is hit, they take 35 damage and Qhira launches at them, kicking them for an additional 108 damage.Can be used while Revolving Sweep is active.",
-      "image": "storm_ui_icon_nexushunter_d.png",
+      "image": "nexushunter_d.png",
       "abilityChanged": false,
-      "cooldown": "25s"
+      "cooldown": "20s"
     }
   },
   "1": [
@@ -61,7 +61,7 @@
     },
     {
       "name": "Fatal Wounds",
-      "description": "While at maximum stacks, Blood Rage's bleed deals 30% additional damage to enemy Heroes under 50% Health.{quest}Quest:{/quest} Damage enemy Heroes with Blood Rage's bleed damage. {reward}Reward:{/reward} After damaging Heroes with Blood Rage's bleed damage 150 times, Blood Rage's duration is increased by 2 seconds.",
+      "description": "While at maximum stacks, Blood Rage's bleed deals 30% additional damage to enemy Heroes under 50% Health.Quest: Damage enemy Heroes with Blood Rage's bleed damage. Reward: After damaging Heroes with Blood Rage's bleed damage 150 times, Blood Rage's duration is increased by 2 seconds.",
       "image": "nexushunter_w.png",
       "talentChanged": false
     },
@@ -101,7 +101,7 @@
     },
     {
       "name": "Healmonger",
-      "description": "If Blood Rage damages an enemy Hero below 50% Health, it heals for an additional 190 Health.",
+      "description": "If Blood Rage damages an enemy Hero below 50% Health, it heals for an additional 210 Health.",
       "image": "nexushunter_w.png",
       "talentChanged": false
     },
@@ -123,7 +123,7 @@
     },
     {
       "name": "Final Strike",
-      "description": "After 1 second, deal 395 damage to enemies in a line. This damage is increased by 25% against enemy Heroes who are below 50% Health.",
+      "description": "After 1 second, deal 410 damage to enemies in a line. This damage is increased by 25% against enemy Heroes who are below 50% Health.",
       "image": "nexushunter_r2.png",
       "talentChanged": false,
       "manaCost": "45 Mana",
@@ -159,7 +159,7 @@
     },
     {
       "name": "Lingering Ailment",
-      "description": "Enemy Heroes hit by Revolving Sweep or by Grappling Hook have their Armor reduced by 25 for 3 seconds.",
+      "description": "Enemy Heroes hit by Revolving Sweep or by Grappling Hook have their Armor reduced by 35 for 4 seconds.",
       "image": "nexushunter_e_alt_1.png",
       "talentChanged": false
     },

@@ -4,7 +4,7 @@
       {
         "name": "Blade Dash (Q)",
         "description": "Dash forward and deal 63 damage to enemies, then return and deal 171 damage. Every enemy hit reduces the cooldown on Shield Overload by 1 second, and Heroes by 2 seconds.",
-        "image": "artanis_powerstrikes.png",
+        "image": "artanis_doubleslash_on.png",
         "abilityChanged": false,
         "manaCost": "50 Mana",
         "cooldown": "10s"
@@ -12,7 +12,7 @@
       {
         "name": "Twin Blades (W)",
         "description": "Artanis's next Basic Attack immediately causes him to charge a short distance and strike the enemy 2 times.",
-        "image": "artanis_doubleslash_on.png",
+        "image": "artanis_doubleslash_var1.png",
         "abilityChanged": false,
         "manaCost": "20 Mana",
         "cooldown": "4s"
@@ -20,7 +20,7 @@
       {
         "name": "Phase Prism (E)",
         "description": "Fire a Phase Prism that deals 66 damage to the first Hero hit and swaps Artanis's position with theirs. Hitting a Hero also grants Artanis Unstoppable for 1.5 seconds. Can be used during Blade Dash.",
-        "image": "artanis_repositionmatrix.png",
+        "image": "artanis_powerstrikes.png",
         "abilityChanged": false,
         "manaCost": "50 Mana",
         "cooldown": "12s"
@@ -37,7 +37,7 @@
       },
       {
         "name": "Purifier Beam (R)",
-        "description": "Target an enemy Hero with an orbital beam from the Spear of Adun, dealing 184 damage per second for 8 seconds. The beam will chase the target as they move.  Unlimited range.",
+        "description": "Target an enemy Hero with an orbital beam from the Spear of Adun, dealing 184 damage per second for 8 seconds. The beam will chase the target as they move. Unlimited range.",
         "image": "artanis_purifierbeam.png",
         "abilityChanged": false,
         "manaCost": "65 Mana",
@@ -67,7 +67,7 @@
     },
     {
       "name": "Protector Of Aiur",
-      "description": "{quest}Quest:{/quest} Basic Attacks against enemy Heroes increase Artanis's Attack damage by 0.1%.  Takedowns grant 1% bonus damage.",
+      "description": "Quest: Basic Attacks against enemy Heroes increase Artanis's Attack damage by 0.1%. Takedowns grant 1% bonus damage.",
       "image": "talent_autoattack_damage.png",
       "talentChanged": false
     }
@@ -101,7 +101,7 @@
     },
     {
       "name": "Chrono Surge",
-      "description": "Hitting an enemy Hero with Phase Prism grants 40% bonus Attack Speed for 5 seconds and Slows the enemy's Movement Speed by 30% for 4 seconds.{/highlight}",
+      "description": "Hitting an enemy Hero with Phase Prism grants 40% bonus Attack Speed for 5 seconds and Slows the enemy's Movement Speed by 30% for 4 seconds.",
       "image": "artanis_repositionmatrix.png",
       "talentChanged": false
     },
@@ -123,7 +123,7 @@
     },
     {
       "name": "Purifier Beam",
-      "description": "Target an enemy Hero with an orbital beam from the Spear of Adun, dealing 184 damage per second for 8 seconds. The beam will chase the target as they move.  Unlimited range.",
+      "description": "Target an enemy Hero with an orbital beam from the Spear of Adun, dealing 184 damage per second for 8 seconds. The beam will chase the target as they move. Unlimited range.",
       "image": "artanis_purifierbeam.png",
       "talentChanged": false,
       "manaCost": "65 Mana",
@@ -179,7 +179,7 @@
   "20": [
     {
       "name": "Orbital Bombardment",
-      "description": "Suppression Pulse gains an additional charge.  There is a 10 second cooldown between uses.",
+      "description": "Suppression Pulse gains an additional charge. There is a 10 second cooldown between uses.",
       "image": "artanis_disruptionweb.png",
       "talentChanged": false
     },

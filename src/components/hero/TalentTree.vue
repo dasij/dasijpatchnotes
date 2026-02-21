@@ -137,7 +137,7 @@ const getTalentImage = (level) => {
   if (getTalentImagePath) {
     return getTalentImagePath(heroName.value, talent.image)
   }
-  return `/talents/${heroName.value}/${talent.image}`
+  return `talents/${heroName.value}/${talent.image}`
 }
 
 // Detect overflow to show scrollbar only when needed

@@ -3,7 +3,7 @@
     "basic": [
       {
         "name": "Spectral Scythe (Q)",
-        "description": "Summon a scythe that travels to Xul after 1 second, dealing 190 damage to enemies and spawning a Skeletal Warrior when hitting enemy Heroes.  These do not count towards Xul's Raise Skeleton maximum.",
+        "description": "Summon a scythe that travels to Xul after 1 second, dealing 190 damage to enemies and spawning a Skeletal Warrior when hitting enemy Heroes. These do not count towards Xul's Raise Skeleton maximum.",
         "image": "necromancer_reap.png",
         "abilityChanged": false,
         "manaCost": "55 Mana",
@@ -19,7 +19,7 @@
       },
       {
         "name": "Bone Prison (E)",
-        "description": "After a 2 second delay, deal 80 damage and Root the target enemy Hero for 1.75 seconds.  All nearby Skeletal Warriors will fixate on the target for their duration.",
+        "description": "After a 2 second delay, deal 80 damage and Root the target enemy Hero for 1.75 seconds. All nearby Skeletal Warriors will fixate on the target for their duration.",
         "image": "necromancer_boneprison.png",
         "abilityChanged": false,
         "manaCost": "70 Mana",
@@ -53,7 +53,7 @@
     ],
     "trait": {
       "name": "Raise Skeleton (T)",
-      "description": " When a nearby enemy Minion dies, it becomes a Skeletal Warrior with 240 Health that attacks for 21 damage and lasts up to 12 seconds. Upon death, Skeletal Warriors deal 40 damage to nearby enemies.  Up to 3 Skeletal Warriors can be active at once when spawned in this way.",
+      "description": " When a nearby enemy Minion dies, it becomes a Skeletal Warrior with 240 Health that attacks for 21 damage and lasts up to 12 seconds. Upon death, Skeletal Warriors deal 40 damage to nearby enemies. Up to 3 Skeletal Warriors can be active at once when spawned in this way.",
       "image": "necromancer_raiseskeleton.png",
       "abilityChanged": false
     }
@@ -87,13 +87,13 @@
     },
     {
       "name": "Grim Scythe",
-      "description": "Increase Xul's Basic Attack damage by 15%.  Each enemy hit by Cursed Strikes reduces its cooldown by 1 second, up to 12 seconds.",
+      "description": "Increase Xul's Basic Attack damage by 15%. Each enemy hit by Cursed Strikes reduces its cooldown by 1 second, up to 12 seconds.",
       "image": "necromancer_cursedstrikes_off.png",
       "talentChanged": false
     },
     {
       "name": "Jailors",
-      "description": "Bone Prison spawns 2 Skeletal Warriors.  These do not count towards Xul's Raise Skeleton maximum.{quest}Quest:{/quest} Spawn 80 Skeletal Warriors.{reward}Reward:{/reward} While fixating on an enemy, Skeletal Warriors gain 25% Movement and Attack Speed.",
+      "description": "Bone Prison spawns 2 Skeletal Warriors. These do not count towards Xul's Raise Skeleton maximum.Quest: Spawn 80 Skeletal Warriors.Reward: While fixating on an enemy, Skeletal Warriors gain 25% Movement and Attack Speed.",
       "image": "necromancer_raiseskeleton.png",
       "talentChanged": false
     }
@@ -151,7 +151,7 @@
     },
     {
       "name": "Amplify Damage",
-      "description": "Increase the Root duration of Bone Prison by 0.25 seconds.  Enemies Rooted by Bone Prison lose 25 Armor for 2 seconds.",
+      "description": "Increase the Root duration of Bone Prison by 0.25 seconds. Enemies Rooted by Bone Prison lose 25 Armor for 2 seconds.",
       "image": "necromancer_boneprison.png",
       "talentChanged": false
     }
@@ -186,7 +186,7 @@
     },
     {
       "name": "Cold Hand of Death",
-      "description": "Increase the Slow of Frost Mages by 20%.  Every 5th Spectral Scythe that hits enemy Heroes spawns a Frost Mage instead of a Skeletal Warrior at their location.",
+      "description": "Increase the Slow of Frost Mages by 20%. Every 5th Spectral Scythe that hits enemy Heroes spawns a Frost Mage instead of a Skeletal Warrior at their location.",
       "image": "necromancer_skeletalmages.png",
       "talentChanged": false
     },

@@ -11,7 +11,7 @@
       },
       {
         "name": "Living Bomb (W)",
-        "description": "Deal 126 damage over 3 seconds to an enemy, then they explode dealing 215 damage to all nearby enemies.  Other Heroes damaged by this explosion are also affected by Living Bomb, though the secondary explosions cannot spread.Verdant Spheres makes this Ability cost no Mana and have no cooldown.",
+        "description": "Deal 126 damage over 3 seconds to an enemy, then they explode dealing 215 damage to all nearby enemies. Other Heroes damaged by this explosion are also affected by Living Bomb, though the secondary explosions cannot spread.Verdant Spheres makes this Ability cost no Mana and have no cooldown.",
         "image": "kaelthas_livingbomb.png",
         "abilityChanged": false,
         "manaCost": "50 Mana",
@@ -54,7 +54,7 @@
   "1": [
     {
       "name": "Convection",
-      "description": "{quest}Quest:{/quest} Damaging an enemy Hero with Flamestrike increase its damage by 5, up to 100. This bonus is lost on death.{reward}Reward:{/reward} After hitting 20 enemy Heroes, increase Flamestrike damage by an additional 100 and no longer lose any bonuses on death.",
+      "description": "Repeatable Quest: Hit 20 enemy Heroes with Flamestrike without dying.Repeatable Reward: Permanently increases Flamestrike damage by 150, and Kael'thas's maximum Health by 50.",
       "image": "kaelthas_flamestrike.png",
       "talentChanged": false
     },
@@ -66,7 +66,7 @@
     },
     {
       "name": "Mana Addict",
-      "description": "{quest}Quest:{/quest} Gathering a Regeneration Globe increases Kael'thas's maximum Mana by 15.{reward}Reward:{/reward} After gathering 20 Globes, Kael'thas can activate Arcane Barrier to gain a Shield equal to 100% of his maximum Mana for 4 seconds. 45 second cooldown.",
+      "description": "Quest: Gathering a Regeneration Globe increases Kael'thas's maximum Mana by 15.Reward: After gathering 20 Globes, Kael'thas can activate Arcane Barrier to gain a Shield equal to 100% of his maximum Mana for 4 seconds. 45 second cooldown.",
       "image": "kaelthas_manaaddict.png",
       "talentChanged": false
     }
@@ -80,7 +80,7 @@
     },
     {
       "name": "Energy Roil",
-      "description": "Reduce the Mana cost of Gravity Lapse by 70.  If Gravity Lapse hits a Hero, reduce its cooldown by 8 seconds.",
+      "description": "Reduce the Mana cost of Gravity Lapse by 70. If Gravity Lapse hits a Hero, reduce its cooldown by 8 seconds.",
       "image": "kaelthas_gravitylapse_a.png",
       "talentChanged": false
     },
@@ -100,13 +100,13 @@
     },
     {
       "name": "Sun King's Fury",
-      "description": "Living Bombs that spread to enemy Heroes deal 35% more damage.",
+      "description": "Living Bombs that have spread to enemy Heroes deal 35% more damage.",
       "image": "kaelthas_livingbomb.png",
       "talentChanged": false
     },
     {
       "name": "Sunfire Enchantment",
-      "description": "Activating Verdant Spheres causes Kael'thas's next 2 Basic Attacks to instead deal 115 Spell Damage.  If both of these Attacks hit enemy Heroes, gain 15% Spell Power for 10 seconds.",
+      "description": "Activating Verdant Spheres causes Kael'thas's next 2 Basic Attacks to instead deal 115 Spell Damage. If both of these Attacks hit enemy Heroes, gain 15% Spell Power for 10 seconds.",
       "image": "kaelthas_verdantspheres.png",
       "talentChanged": false
     }
@@ -172,7 +172,7 @@
   "20": [
     {
       "name": "Rebirth",
-      "description": "Increases Phoenix duration by 100%. While alive, the Phoenix may be ordered to move to a different location.",
+      "description": "Increases Phoenix duration by 100%. While alive, the Phoenix may be ordered to move to a different location. Stores 3 charges.",
       "image": "kaelthas_phoenix.png",
       "talentChanged": false
     },

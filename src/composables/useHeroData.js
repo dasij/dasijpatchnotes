@@ -29,20 +29,18 @@ export function useHeroData() {
   
   // Mapeamento de nomes de heróis com hífen para nomes de arquivos sem hífen
   const heroNameToFileMap = {
-    'li-ming': 'liming',
-    'lt-morales': 'ltmorales',
-    'sgt-hammer': 'sgthammer',
-    'the-butcher': 'thebutcher',
-    'the-lost-vikings': 'lostvikings',
-    'cho': 'chogall',
-    'gall': 'chogall'
+    'lt-morales': 'lt-morales',
+    'the-butcher': 'the-butcher',
+    'the-lost-vikings': 'the-lost-vikings',
+    'cho': 'cho',
+    'gall': 'gall'
   }
   
   const heroPortraitPath = computed(() => {
     if (!heroName.value) return ''
     const fileName = heroNameToFileMap[heroName.value] || heroName.value
     // Usa caminho direto para pasta public (não passa pelo webpack)
-    return `/heroes_portraits/${fileName}.png`
+    return `heroes_portraits/${fileName}.png`
   })
   
   // Helper para gerar caminho de imagem de talento (usa pasta public)
@@ -54,7 +52,7 @@ export function useHeroData() {
     }
     // Mapeia nomes de heróis com hífen para o formato da pasta
     const mappedHero = heroNameToFileMap[hero] || hero
-    return `/talents/${mappedHero}/${imageName}`
+    return `talents/${mappedHero}/${imageName}`
   }
   
   const heroSplashPath = computed(() => {

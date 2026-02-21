@@ -9,9 +9,16 @@ def normalize_name(name):
     """Normalize the name to match the image file naming convention."""
     return name.lower().replace(" ", "").replace("(", "").replace(")", "").replace("'", "").replace(".", "").replace("-", "")
 
+def normalize_ability_name(name):
+    """Normalize ability name to match image file naming convention (uses underscores)."""
+    return name.lower().replace(" ", "_").replace("(", "").replace(")", "").replace("'", "").replace(".", "").replace("-", "_")
+
 def clean_description(description):
-    """Remove unwanted Unicode characters from the description."""
-    return description.replace("\u00a0", " ")
+    """Remove unwanted Unicode characters and clean up the description."""
+    description = description.replace("\u00a0", " ")
+    # Remove extra whitespace
+    description = re.sub(r'\s+', ' ', description).strip()
+    return description
 
 def extract_mana_and_cooldown(description):
     """Extract mana cost and cooldown from the description."""
@@ -40,7 +47,13 @@ def scrape_hero_talents(hero_name):
 
     # Construct the URL based on the hero name
     url = f"https://psionic-storm.com/en/heroes/{hero_name}/"
-    response = requests.get(url)
+    
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+    }
+    
+    response = requests.get(url, headers=headers)
+    response.raise_for_status()
     soup = BeautifulSoup(response.content, "html.parser")
 
     # Scrape talents
@@ -62,21 +75,37 @@ def scrape_hero_talents(hero_name):
                 name = img_tag['alt']  # Use the alt attribute of the img tag as a fallback
 
         description_html = talent.get("data-content")
-        decoded_html = html.unescape(description_html)
-        description = BeautifulSoup(decoded_html, "html.parser").text.strip()
-        description = clean_description(description)  # Clean the description
-        description, mana_cost, cooldown = extract_mana_and_cooldown(description)  # Extract mana and cooldown
+        if description_html:
+            decoded_html = html.unescape(description_html)
+            description = BeautifulSoup(decoded_html, "html.parser").text.strip()
+            description = clean_description(description)  # Clean the description
+            description, mana_cost, cooldown = extract_mana_and_cooldown(description)  # Extract mana and cooldown
+        else:
+            description = ""
+            mana_cost = None
+            cooldown = None
 
         img_tag = talent.find("img")
         if img_tag:
             image_url = img_tag['src']
-            image_response = requests.get(f"https://psionic-storm.com{image_url}")
-            image_name = os.path.basename(image_url)
-            image_path = os.path.join(base_image_dir, image_name)
-            with open(image_path, 'wb') as f:
-                f.write(image_response.content)
-            normalized_name = normalize_name(name)
-            talent_images[normalized_name] = image_name  # Map normalized talent name to image name
+            # Ensure the URL is absolute
+            if image_url.startswith('/'):
+                image_url = f"https://psionic-storm.com{image_url}"
+            elif not image_url.startswith('http'):
+                image_url = f"https://psionic-storm.com/{image_url}"
+                
+            try:
+                image_response = requests.get(image_url, headers=headers)
+                image_response.raise_for_status()
+                image_name = os.path.basename(image_url)
+                image_path = os.path.join(base_image_dir, image_name)
+                with open(image_path, 'wb') as f:
+                    f.write(image_response.content)
+                normalized_name = normalize_name(name)
+                talent_images[normalized_name] = image_name  # Map normalized talent name to image name
+            except Exception as e:
+                print(f"Warning: Could not download image for talent '{name}': {e}")
+                image_name = "default_talent.png"
         else:
             image_name = "default_talent.png"
 
@@ -106,18 +135,23 @@ def scrape_hero_talents(hero_name):
         if abilities_section:
             abilities = abilities_section.find_all("li")
             for ability in abilities:
-                name = ability.find("h3", class_="ability-name").text.strip()
+                name_elem = ability.find("h3", class_="ability-name")
+                if not name_elem:
+                    continue
+                name = name_elem.text.strip()
+                
                 stats = ability.find("p", class_="ability-stats")
-                if stats:
-                    stats_text = stats.text.strip()
-                else:
-                    stats_text = ""
-                description = ability.find("p", class_="ability-description").text.strip()
+                stats_text = stats.text.strip() if stats else ""
+                
+                desc_elem = ability.find("p", class_="ability-description")
+                description = desc_elem.text.strip() if desc_elem else ""
+                
                 description = clean_description(description)  # Clean the description
                 description, mana_cost, cooldown = extract_mana_and_cooldown(stats_text + " " + description)  # Extract mana and cooldown
-                # Remove the part in parentheses
+                
+                # Remove the part in parentheses for image naming
                 name_without_parentheses = name.split(" (")[0]
-                normalized_name = normalize_name(name_without_parentheses)
+                normalized_name = normalize_ability_name(name_without_parentheses)
                 image_name = f"{hero_name}_{normalized_name}.png"  # Construct the image name
 
                 ability_data = {
@@ -146,16 +180,27 @@ def scrape_hero_talents(hero_name):
         "abilities": abilities_data
     }
 
-    # Add talents data directly to hero_data
+    # Add talents data directly to hero_data (levels "1", "4", "7", "10", "13", "16", "20")
     hero_data.update(talent_data)
 
     # Save the talents data to a JSON file named after the hero
     json_filename = os.path.join("src", "data", "heroes", "talents", f"{hero_name}_talents_vanilla.json")
     if not os.path.exists(os.path.dirname(json_filename)):
         os.makedirs(os.path.dirname(json_filename))
-    with open(json_filename, "w") as file:
-        json.dump(hero_data, file, indent=2)
+    
+    with open(json_filename, "w", encoding="utf-8") as file:
+        json.dump(hero_data, file, indent=2, ensure_ascii=False)
+    
+    print(f"[OK] Successfully scraped and saved data for {hero_name}")
+    print(f"  - JSON saved to: {json_filename}")
+    print(f"  - Images saved to: {base_image_dir}")
+    
+    return hero_data
 
 # Example usage
-hero_name = "genji"  # This can be dynamically changed
-scrape_hero_talents(hero_name)
+if __name__ == "__main__":
+    hero_name = "muradin"  # This can be dynamically changed
+    scrape_hero_talents(hero_name)
+
+
+

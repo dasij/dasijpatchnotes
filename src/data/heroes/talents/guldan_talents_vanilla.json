@@ -21,7 +21,7 @@
         "description": "Call forth three bursts of shadow energy, dealing 204 damage over 6 seconds. Corruption can stack up to 3 times on an enemy.",
         "image": "guldan_handofguldan.png",
         "abilityChanged": false,
-        "manaCost": "80 Mana",
+        "manaCost": "90 Mana",
         "cooldown": "14s"
       }
     ],
@@ -54,19 +54,19 @@
   "1": [
     {
       "name": "Pursuit of Flame",
-      "description": "{quest}Quest:{/quest} Hit 30 enemy Heroes with Fel Flame.{reward}Reward:{/reward} Fel Flame's radius is increased by 10%.",
+      "description": "Quest: Hit 30 enemy Heroes with Fel Flame without dying.Reward:Permanently increase Fel Flame's area by 33%.",
       "image": "guldan_felflame.png",
       "talentChanged": false
     },
     {
       "name": "Chaotic Energy",
-      "description": "Increases the cast range of Drain Life by 25% and the healing provided by Regen Globes by 50%.{quest}Quest:{/quest} Gather 15 Regen Globes.{reward}Reward:{/reward} Basic Ability Mana costs are permanently reduced by 20.",
+      "description": "Increases the cast range of Drain Life by 25%, and Regen Globes heal for 50% more.Quest: Gather 15 Regen Globes.Reward: Basic Ability Mana costs are permanently reduced by 20.",
       "image": "guldan_healthfunnel.png",
       "talentChanged": false
     },
     {
       "name": "Echoed Corruption",
-      "description": "{quest}Quest:{/quest} Hit 40 enemy Heroes with Corruption.{reward}Reward:{/reward} After the third strike, Corruption strikes 3 times in the opposite direction.",
+      "description": "Quest: Hit enemy Heroes with Corruption.Reward: After hitting 40 heroes, Corruption gains new functionality. After the third strike, Corruption strikes 3 times in the opposite direction.Pinnacle Reward: After 100 hits, Corruption heals for 50% of the damage dealt.",
       "image": "guldan_handofguldan.png",
       "talentChanged": false
     }
@@ -186,7 +186,7 @@
     },
     {
       "name": "Deep Impact",
-      "description": "Rain of Destruction slows enemies Movement Speed by 90% for 0.5 seconds.",
+      "description": "Rain of Destruction Slows enemies Movement Speed by 90% for 0.5 seconds.",
       "image": "guldan_rainoffire.png",
       "talentChanged": false
     },

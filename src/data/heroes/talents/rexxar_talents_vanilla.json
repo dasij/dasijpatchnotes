@@ -20,7 +20,7 @@
       {
         "name": "Mend Pet (E)",
         "description": "Heal Misha for 714 Health over 5 seconds.",
-        "image": "storm_ui_icon_rexxar_mendpet.png",
+        "image": "rexxar_stayinalive.png",
         "abilityChanged": false,
         "manaCost": "70 Mana",
         "cooldown": "10s"
@@ -47,7 +47,7 @@
     "trait": {
       "name": "Misha, Focus! (T)",
       "description": "Passive: Misha gains 15% move speed. Command Misha to attack a specific enemy or move to a point and wait.Targeting Rexxar commands Misha to retreat to his position, gaining 30% move speed until she reaches Rexxar.Targeting Misha commands her to hold her current position.",
-      "image": "storm_ui_icon_rexxar_mishafixate.png",
+      "image": "rexxar_heremishaactive.png",
       "abilityChanged": false,
       "cooldown": "0s"
     }
@@ -82,7 +82,7 @@
     },
     {
       "name": "Hunter-Gatherer",
-      "description": "{quest}Quest:{/quest} Gathering a Regeneration Globe increases Rexxar and Misha's Health Regeneration by 1 per second, up to 25 per second. {reward}Reward:{/reward} After gathering 25 Globes, Rexxar and Misha gain 15 Armor.",
+      "description": "Quest: Gathering a Regeneration Globe increases Rexxar and Misha's Health Regeneration by 1 per second, up to 25 per second. Reward: After gathering 25 Globes, Rexxar and Misha gain 15 Armor.",
       "image": "talent_regenerationmaster.png",
       "talentChanged": false
     },
@@ -166,7 +166,7 @@
     },
     {
       "name": "Primal Intimidation",
-      "description": "Activate to slow the Attack Speed by 50% and Movement Speed by 20% of Heroes and Summons near Rexxar and Misha for 2.5 seconds.Passive: Heroes and Summons that attack Rexxar or Misha have their Attack Speed slowed by 20% for 2.5 seconds.",
+      "description": "Activate to Slow the Attack Speed by 50% and Movement Speed by 20% of Heroes and Summons near Rexxar and Misha for 2.5 seconds.Passive: Heroes and Summons that attack Rexxar or Misha have their Attack Speed slowed by 20% for 2.5 seconds.",
       "image": "talent_imposingpresence.png",
       "talentChanged": false,
       "cooldown": "20s"
@@ -188,7 +188,7 @@
     },
     {
       "name": "Kill Command",
-      "description": "Unleash the Boars deals 50% more damage and roots for 1.5 seconds.",
+      "description": "Unleash the Boars deals 50% more damage and Roots for 1.5 seconds.",
       "image": "rexxar_unleashtheboars.png",
       "talentChanged": false
     },

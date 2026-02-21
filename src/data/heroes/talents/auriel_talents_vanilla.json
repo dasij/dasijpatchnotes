@@ -26,7 +26,7 @@
     "heroic": [
       {
         "name": "Resurrect (R)",
-        "description": "Channel on the spirit of a dead ally for 1 second. After a 5 second delay, they are brought back to life with 100% of their maximum Health at the location where they died.Auriel can use this ability while dead to resurrect herself.",
+        "description": "Channel on the spirit of a dead ally for 1 second. After a 3 second delay, they are brought back to life with 100% of their maximum Health at the location where they died.Auriel can use this ability while dead to resurrect herself.",
         "image": "auriel_resurrect.png",
         "abilityChanged": false,
         "cooldown": "100s"
@@ -41,7 +41,7 @@
     ],
     "trait": {
       "name": "Bestow Hope (T)",
-      "description": "Passive: 60% of the damage Auriel deals to Heroes and 20% dealt to non-Heroes is stored as energy.Bestow an allied Hero with Hope.  While they remain near Auriel, 30% of their damage to Heroes and 10% of their damage to non-Heroes is converted to energy. Auriel can only have Bestow Hope on 1 ally at a time.Auriel can store up to 475 energy.",
+      "description": "Passive: 70% of the damage Auriel deals to Heroes and 35% dealt to non-Heroes is stored as energy.Bestow an allied Hero with Hope. While they remain near Auriel, 30% of their damage to Heroes and 10% of their damage to non-Heroes is converted to energy. Auriel can only have Bestow Hope on 1 ally at a time.Auriel can store up to 475 energy.",
       "image": "auriel_bestowhope.png",
       "abilityChanged": false,
       "cooldown": "2s"
@@ -50,7 +50,7 @@
   "1": [
     {
       "name": "Increasing Clarity",
-      "description": "{quest}Quest:{/quest} Every time Sacred Sweep hits a Hero in the center, increase the center damage by 2, up to 50. {reward}Reward:{/reward} After hitting 25 Heroes, this center damage bonus is increased to 180.",
+      "description": "Quest: Every time Sacred Sweep hits a Hero in the center, increase the center damage by 2, up to 50. Reward: After hitting 25 Heroes, this center damage bonus is increased to 180.",
       "image": "auriel_angelicsweep.png",
       "talentChanged": false
     },
@@ -62,7 +62,7 @@
     },
     {
       "name": "Searing Light",
-      "description": "Ray of Heaven also deals damage to enemies in the area equal to 30% of the energy consumed.",
+      "description": "Ray of Heaven also deals damage to enemy Heroes in the area equal to 30% of the energy consumed.",
       "image": "auriel_rayofheaven.png",
       "talentChanged": false
     }
@@ -82,7 +82,7 @@
     },
     {
       "name": "Repeated Offense",
-      "description": "Enemies hit by Detainment Strike are knocked back 25% farther.{quest}Quest:{/quest} Every time Detainment Strike stuns a Hero, increase the stun damage by 10, up to 60.{reward}Reward:{/reward} After stunning 6 Heroes, increase this damage bonus to 250.",
+      "description": "Enemies hit by Detainment Strike are knocked back 30% farther.Quest: Every time Detainment Strike stuns a Hero, increase the stun damage by 10, up to 60.Reward: After stunning 6 Heroes, increase this damage bonus to 250.",
       "image": "auriel_restrainingblow_a.png",
       "talentChanged": false
     }
@@ -102,7 +102,7 @@
     },
     {
       "name": "Energized Cord",
-      "description": "Increases the energy stored from Auriel's Basic Attacks to 120% of the damage against Heroes and 55% of the damage against non-Heroes.Does not affect Auriel's Bestow Hope ally.",
+      "description": "Increases the energy stored from Auriel's Basic Attacks to 130% of the damage against Heroes and 70% of the damage against non-Heroes.Does not affect Auriel's Bestow Hope ally.Passive: Increase Basic Attack Range by 1.1.",
       "image": "auriel_bestowhope_a.png",
       "talentChanged": false
     }
@@ -110,7 +110,7 @@
   "10": [
     {
       "name": "Resurrect",
-      "description": "Channel on the spirit of a dead ally for 1 second. After a 5 second delay, they are brought back to life with 100% of their maximum Health at the location where they died.Auriel can use this ability while dead to resurrect herself.",
+      "description": "Channel on the spirit of a dead ally for 1 second. After a 3 second delay, they are brought back to life with 100% of their maximum Health at the location where they died.Auriel can use this ability while dead to resurrect herself.",
       "image": "auriel_resurrect.png",
       "talentChanged": false,
       "cooldown": "100s"
@@ -146,7 +146,7 @@
   "16": [
     {
       "name": "Reservoir of Hope",
-      "description": "{quest}Quest:{/quest} Each maximum energy Ray of Heaven Auriel casts increases the maximum amount of energy that can be stored by 75.",
+      "description": "Quest: Each maximum energy Ray of Heaven Auriel casts increases the maximum amount of energy that can be stored by 55.",
       "image": "auriel_rayofheaven.png",
       "talentChanged": false
     },
@@ -158,7 +158,7 @@
     },
     {
       "name": "Wrath of Heaven",
-      "description": "Allies with Bestow Hope gain 10% Spell Power.Enemy Heroes hit by the center area of Sacred Sweep or the terrain collision of Detainment Strike have their Spell Armor reduced by 10 for 3 seconds.",
+      "description": "Allies with Bestow Hope gain 15% Spell Power.Enemy Heroes hit by the center area of Sacred Sweep or the terrain collision of Detainment Strike have their Spell Armor reduced by 20 for 3 seconds.",
       "image": "auriel_bestowhope_a.png",
       "talentChanged": false
     }
@@ -166,7 +166,7 @@
   "20": [
     {
       "name": "Light Speed",
-      "description": "Resurrected allies gain 200% increased Movement Speed, decaying over 4 seconds.  While a resurrected ally remains alive, Resurrect's next cooldown recharges 100% faster.",
+      "description": "Resurrected allies gain 200% increased Movement Speed, decaying over 4 seconds. While a resurrected ally remains alive, Resurrect's next cooldown recharges 100% faster.",
       "image": "auriel_resurrect.png",
       "talentChanged": false
     },

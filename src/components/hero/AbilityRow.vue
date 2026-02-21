@@ -44,13 +44,19 @@ const displayImage = computed(() => {
     return imageSource
   }
   
+  // If it's already a relative path (contains / but doesn't start with it), return as-is
+  // This handles cases like 'heroes_portraits/hero.png' or 'talents/hero/image.png'
+  if (imageSource.includes('/')) {
+    return imageSource
+  }
+  
   // Use the injected helper function if available
   if (getTalentImagePath) {
     return getTalentImagePath(heroName.value, imageSource)
   }
   
   // Fallback to direct path
-  return `/talents/${heroName.value}/${imageSource}`
+  return `talents/${heroName.value}/${imageSource}`
 })
 </script>
 

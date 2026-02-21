@@ -124,7 +124,7 @@ const abilityImage = computed(() => {
     if (props.selectedAbility.image) {
       const imagePath = getTalentImagePath 
         ? getTalentImagePath(heroName.value, props.selectedAbility.image)
-        : `/talents/${heroName.value}/${props.selectedAbility.image}`
+        : `talents/${heroName.value}/${props.selectedAbility.image}`
       return imagePath || heroPortraitPath.value
     }
     return heroPortraitPath.value
@@ -132,7 +132,7 @@ const abilityImage = computed(() => {
   try {
     const imagePath = getTalentImagePath
       ? getTalentImagePath(heroName.value, props.selectedAbility.image)
-      : `/talents/${heroName.value}/${props.selectedAbility.image}`
+      : `talents/${heroName.value}/${props.selectedAbility.image}`
     return imagePath
   } catch {
     return ''
@@ -164,7 +164,7 @@ const talentImage = computed(() => {
   if (getTalentImagePath) {
     return getTalentImagePath(heroName.value, props.selectedTalent.image)
   }
-  return `/talents/${heroName.value}/${props.selectedTalent.image}`
+  return `talents/${heroName.value}/${props.selectedTalent.image}`
 })
 
 const hasTalentChanges = computed(() => 

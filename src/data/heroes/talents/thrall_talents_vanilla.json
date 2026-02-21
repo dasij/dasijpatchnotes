@@ -3,7 +3,7 @@
     "basic": [
       {
         "name": "Chain Lightning (Q)",
-        "description": "Shock an enemy with lightning, dealing 162 damage. The lightning then bounces 3 times to nearby enemies, dealing 81 damage to each enemy hit.",
+        "description": "Shock an enemy with lightning, dealing 170 damage. The lightning then bounces 3 times to nearby enemies, dealing 85 damage to each enemy hit.",
         "image": "thrall_chainlightning.png",
         "abilityChanged": false,
         "manaCost": "40 Mana",
@@ -15,7 +15,7 @@
         "image": "thrall_feralspirit.png",
         "abilityChanged": false,
         "manaCost": "40 Mana",
-        "cooldown": "12s"
+        "cooldown": "10s"
       },
       {
         "name": "Windfury (E)",
@@ -46,7 +46,7 @@
     ],
     "trait": {
       "name": "Frostwolf Resilience (T)",
-      "description": " Dealing damage with Abilities grants 1 stack of Frostwolf Resilience. At 5 stacks, Thrall is instantly healed for 223 Health.",
+      "description": " Dealing damage with Abilities grants 1 stack of Frostwolf Resilience. At 5 stacks, Thrall is instantly healed for 240 Health.",
       "image": "thrall_frostwolfresilience.png",
       "abilityChanged": false
     }
@@ -54,20 +54,20 @@
   "1": [
     {
       "name": "Echo of the Elements",
-      "description": "{quest}Quest:{/quest} Kill Minions or Heroes within 1.5 seconds of hitting them with Chain Lightning.{reward}Reward:{/reward} After killing 10 enemies, reduce the Mana cost of Chain Lightning from 40 to 20.{reward}Reward:{/reward} After killing 20 enemies, gain a second charge of Chain Lightning.",
+      "description": "Quest: Kill Minions or Heroes within 1.5 seconds of hitting them with Chain Lightning.Reward: After killing 20 enemies, reduce the Mana cost of Chain Lightning from 40 to 20.Reward: After killing 40 enemies, Chain Lightning bounces an additional time and gains an extra charge.Pinnacle Reward: After killing 100 enemies, each Chain Lighting bounce forks to an additional target.",
       "image": "thrall_chainlightning.png",
       "talentChanged": false
     },
     {
       "name": "Crash Lightning",
-      "description": "{repeatable_quest}Repeatable Quest:{/repeatable_quest} Hitting at least 2 Heroes with a single use of Chain Lightning increases the damage of its bounces by 12, up to 360.{reward}Reward:{/reward} After hitting multiple Heroes 30 times, Chain Lightning prioritizes bouncing to Heroes.",
+      "description": "Quest: Hit at least 2 Heroes with a single use of Chain Lightning. Upon dying, lose 6 stacks. Gained rewards cannot be lost.Reward: After hitting multiple Heroes 15 times, Chain Lightning deals 270 additional damage on its bounces.Reward: After hitting multiple Heroes 30 times, Chain Lightning deals 270 additional damage on its bounces, and prioritizes bouncing to enemy Heroes.",
       "image": "thrall_chainlightning_var1.png",
       "talentChanged": false
     },
     {
-      "name": "Rolling Thunder",
-      "description": "For 8 seconds after hitting an enemy with Chain Lightning, Thrall's next Basic Attack against them grants a stack of Frostwolf Resilience. If the target is an enemy Hero, then he also deals damage to them equal to 3% of their maximum Health and healing for the same amount.Passive: Increase the number of Chain Lightning bounces by 1.",
-      "image": "thrall_chainlightning_var2.png",
+      "name": "Maelstrom Weapon",
+      "description": "Quest: Basic Attack Heroes while Windfury's Movement Speed bonus is active.Reward: After hitting 20 Heroes, increase the Movement Speed bonus of Windfury to 40% and Thrall's Basic Attacks deal 40 additional damage.Reward: After hitting 40 Heroes, Thrall permanently gains 15% increased Movement Speed and his Basic Attacks gain an additional 75 damage.Pinnacle Reward: After hitting 100 Heroes, Frostwolf Resilience healing restores 200% more Health.",
+      "image": "thrall_windfury.png",
       "talentChanged": false
     }
   ],
@@ -80,7 +80,7 @@
     },
     {
       "name": "Frostwolf Pack",
-      "description": "{quest}Quest:{/quest} Hit 6 Heroes with Feral Spirit. Progress is lost on death and when Thrall fails to hit a Hero.{reward}Reward:{/reward} Reduce the cooldown and Mana cost of Feral Spirit by 50%.",
+      "description": "Quest: Hit 6 Heroes with Feral Spirit. Progress is lost on death and when Thrall fails to hit a Hero.Reward: Reduce the cooldown and Mana cost of Feral Spirit by 50%.",
       "image": "thrall_feralspirit_var1.png",
       "talentChanged": false
     },
@@ -93,9 +93,9 @@
   ],
   "7": [
     {
-      "name": "Maelstrom Weapon",
-      "description": "{repeatable_quest}Repeatable Quest:{/repeatable_quest} Basic Attacks against Heroes while Windfury's Movement Speed bonus is active increase Attack Damage by 1.{reward}Reward:{/reward} After gaining 20 Attack Damage, increase the Movement Speed bonus of Windfury to 40%.{reward}Reward:{/reward} After gaining 40 Attack Damage, Thrall permanently gains 15% increased Movement Speed.",
-      "image": "thrall_windfury.png",
+      "name": "Rolling Thunder",
+      "description": "For 8 seconds after hitting an enemy with Chain Lightning, Thrall's next Basic Attack against them grants a stack of Frostwolf Resilience. If the target is an enemy Hero, then he also deals damage to them equal to 3% of their maximum Health and healing for the same amount.",
+      "image": "thrall_chainlightning_var2.png",
       "talentChanged": false
     },
     {
@@ -105,8 +105,8 @@
       "talentChanged": false
     },
     {
-      "name": "Follow Through",
-      "description": "After using an Ability, your next Basic Attack within 6 seconds deals 40% additional damage.",
+      "name": "Elemental Assault",
+      "description": "After using an Ability, Thrall's next Basic Attack within 4 seconds deals 45% more damage.",
       "image": "talent_autoattack_damage.png",
       "talentChanged": false
     }
@@ -145,7 +145,7 @@
     },
     {
       "name": "Spirit Shield",
-      "description": "Every 45 seconds, gain 50 Spell Armor against the next enemy Ability and subsequent Abilities for 4 seconds. Frostwolf Resilience reduces this cooldown by 10 seconds.Can be toggled to allow or prevent this talent from triggering automatically.",
+      "description": "Every 45 seconds, gain 70 Spell Armor against the next enemy Ability and subsequent Abilities for 4 seconds. Frostwolf Resilience reduces this cooldown by 10 seconds.Can be toggled to allow or prevent this talent from triggering automatically.",
       "image": "talent_spellshield.png",
       "talentChanged": false,
       "cooldown": "45s"
@@ -154,13 +154,13 @@
   "16": [
     {
       "name": "Tempest Fury",
-      "description": "The final strike of Windfury hits 3 times for 75% normal damage.",
+      "description": "The final strike of Windfury hits 3 times for 75% normal damage. These hits do not provide quest progress.",
       "image": "thrall_windfury.png",
       "talentChanged": false
     },
     {
       "name": "Thunderstorm",
-      "description": "Chain Lightning Slows targets by 8% for 2 seconds.{quest}Quest:{/quest} Targeting a Hero directly with Chain Lightning increases this Slow by 8%, up to an additional 40%.{reward}Reward:{/reward} While at a 40% bonus, Chain Lightning's damage is increased by 25%.Bonuses are reset if Chain Lightning is used on the same Hero it was last used on, or if Thrall dies.",
+      "description": "Chain Lightning Slows the primary target by 8% for 2 seconds when used on Heroes.Quest: Targeting a Hero directly with Chain Lightning increases this Slow by 8%, up to an additional 40%.Reward: While at a 40% bonus, Chain Lightning's damage is increased by 30%.Bonuses are reset if Chain Lightning is used on the same Hero it was last used on, or if Thrall dies.",
       "image": "thrall_chainlightning.png",
       "talentChanged": false
     },
@@ -201,7 +201,7 @@
       "description": "Activate to immediately teleport to a target location and gain Windfury.",
       "image": "talent_boltofthestorm.png",
       "talentChanged": false,
-      "cooldown": "80s"
+      "cooldown": "90s"
     }
   ]
 }

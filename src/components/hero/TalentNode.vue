@@ -38,7 +38,7 @@ const imagePath = computed(() => {
   if (getTalentImagePath) {
     return getTalentImagePath(heroName.value, props.talent.image)
   }
-  return `/talents/${heroName.value}/${props.talent.image}`
+  return `talents/${heroName.value}/${props.talent.image}`
 })
 </script>
 

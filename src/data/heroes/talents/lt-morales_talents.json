@@ -49,7 +49,7 @@
     "general": {
       "name": "Base",
       "description": "Morales no longer has energy regeneration and starts with 0 energy.",
-      "image": "ltmorales.png",
+      "image": "medic_healingbeam.png",
       "developerCommentary": "This change is due to modifications in her ultimate ability."
     }
   },

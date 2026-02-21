@@ -6,19 +6,19 @@
         "description": "Deal 105 damage to enemies in an area and knock them back.",
         "image": "lucio_soundwave.png",
         "abilityChanged": false,
-        "manaCost": "30 Mana",
-        "cooldown": "7s"
+        "manaCost": "45 Mana",
+        "cooldown": "8s"
       },
       {
         "name": "Crossfade (W)",
-        "description": "Play one of two music tracks for L\u00facio and his allies.Healing Boost: Passively heal L\u00facio and nearby allied Heroes for 15 health per second.Speed Boost: Increase the Movement Speed of L\u00facio and nearby allied Heroes by 10%.",
-        "image": "lucio_crossfade_all.png",
+        "description": "Play one of two music tracks for Lúcio and his allies.Healing Boost: Passively heal Lúcio and nearby allied Heroes for 15 health per second.Speed Boost: Increase the Movement Speed of Lúcio and nearby allied Heroes by 10%.",
+        "image": "lucio_crossfade_a.png",
         "abilityChanged": false,
         "cooldown": "1s"
       },
       {
         "name": "Amp It Up (E)",
-        "description": "Raise L\u00facio's Crossfade track volume for 3 seconds, amping Healing Boost to 112 Health per second and Speed Boost to 30% increased Movement Speed.",
+        "description": "Raise Lúcio's Crossfade track volume for 3 seconds, amping Healing Boost to 112 Health per second and Speed Boost to 30% increased Movement Speed.",
         "image": "lucio_ampitup.png",
         "abilityChanged": false,
         "manaCost": "90 Mana",
@@ -28,7 +28,7 @@
     "heroic": [
       {
         "name": "Sound Barrier (R)",
-        "description": "After 1 second, L\u00facio and nearby allied Heroes gain a 1296 point Shield that rapidly decays over 6 seconds.",
+        "description": "After 1 second, Lúcio and nearby allied Heroes gain a 1296 point Shield that rapidly decays over 6 seconds.",
         "image": "lucio_soundbarrier.png",
         "abilityChanged": false,
         "manaCost": "100 Mana",
@@ -36,7 +36,7 @@
       },
       {
         "name": "High Five (R)",
-        "description": "Quickly skate to an allied Hero. Upon arrival the ally is healed for 230, L\u00facio is healed for 80, and both gain Unstoppable for 1 second.",
+        "description": "Quickly skate to an allied Hero. Upon arrival the ally is healed for 230, Lúcio is healed for 80, and both gain Unstoppable for 1 second.",
         "image": "lucio_highfive.png",
         "abilityChanged": false,
         "manaCost": "30 Mana"
@@ -45,7 +45,7 @@
     "trait": {
       "name": "Push Off (T)",
       "description": "While moving alongside terrain, activate to slide towards a targeted location. Enemies hit take 100 damage and are Slowed by 75% for 1 second.",
-      "image": "lucio_accelerando.png",
+      "image": "lucio_soundwave.png",
       "abilityChanged": false,
       "cooldown": "20s"
     }
@@ -53,13 +53,13 @@
   "1": [
     {
       "name": "Party Mix",
-      "description": "{quest}Quest:{/quest} Play L\u00facio's Crossfade tracks to nearby allies. Multiple allies provide additional time.{reward}Reward:{/reward} For every 1 Minute played, permanently increase Lucio's maximum Mana by 10. {reward}Reward:{/reward} Once you have played for 8 minutes or more, permanently increase Crossfade's range by 20%.",
+      "description": "Quest: Play Lúcio's Crossfade tracks to nearby allies. Multiple allies provide additional time.Reward: For every 1 Minute played, permanently increase Lúcio's maximum Mana by 10. Reward: Once you have played for 8 minutes or more, permanently increase Crossfade's radius by 20%.",
       "image": "lucio_crossfade_all.png",
       "talentChanged": false
     },
     {
       "name": "Accelerando",
-      "description": "Wall Ride's Movement Speed bonus gradually increases to 40% over 4 seconds while L\u00facio maintains its effect.",
+      "description": "Wall Ride's Movement Speed bonus gradually increases to 40% over 6 seconds while Lúcio maintains its effect.",
       "image": "lucio_wallride.png",
       "talentChanged": false
     },
@@ -73,13 +73,13 @@
   "4": [
     {
       "name": "Subwoofer",
-      "description": "Enemies within the first half of Soundwave's range are knocked back 75% further.{quest}Quest:{/quest} Hit 3 enemy Heroes with a single Soundwave.{reward}Reward:{/reward} Increase Soundwave's arc by 50% and its range by 20%.",
+      "description": "Enemies within the first half of Soundwave's range are knocked back 75% further.Quest: Hit 3 enemy Heroes with a single Soundwave.Reward: Increase Soundwave's arc by 50% and its range by 20%.",
       "image": "lucio_soundwave.png",
       "talentChanged": false
     },
     {
       "name": "Off the Wall",
-      "description": "Hitting an enemy with Soundwave while Wall Ride is active reduces its cooldown by 3 seconds.",
+      "description": "Hitting an enemy with Soundwave while Wall Ride is active sets its cooldown to 5 seconds and refunds 15 Mana.",
       "image": "lucio_soundwave_a.png",
       "talentChanged": false
     },
@@ -93,19 +93,19 @@
   "7": [
     {
       "name": "Good Vibrations",
-      "description": "Hitting an enemy with Soundwave grants L\u00facio a 38 Shield for 7 seconds. Hitting enemy Heroes grants 3 times this amount.",
+      "description": "Hitting an enemy with Soundwave grants Lúcio a 38 Shield for 8 seconds. Hitting enemy Heroes grants 3 times this amount.",
       "image": "lucio_soundwave.png",
       "talentChanged": false
     },
     {
       "name": "Reverse Amp",
-      "description": "Blast L\u00facio's active Crossfade track at enemy Heroes. While Amp It Up is active, Healing Boost deals 50 damage per second and Speed Boost Slows by 20%.This ability is unaffected by Crossfade talents.",
+      "description": "Blast Lúcio's active Crossfade track at enemy Heroes. While Amp It Up is active, Healing Boost deals 50 damage per second and Speed Boost Slows by 20%.This ability is unaffected by Crossfade talents.",
       "image": "lucio_crossfade_all.png",
       "talentChanged": false
     },
     {
       "name": "Boombox",
-      "description": "Place a boombox that plays L\u00facio's active Crossfade track. Its volume adjusts with Amp It Up. Allied Heroes near the boombox gain 5 Armor.Crossfade tracks do not stack.",
+      "description": "Place a boombox that plays Lúcio's active Crossfade track. Its volume adjusts with Amp It Up. Allied Heroes near the boombox gain 5 Armor.Crossfade tracks from Lúcio and the Boombox do not stack.",
       "image": "lucio_fineshrine.png",
       "talentChanged": false,
       "cooldown": "20s"
@@ -114,7 +114,7 @@
   "10": [
     {
       "name": "Sound Barrier",
-      "description": "After 1 second, L\u00facio and nearby allied Heroes gain a 1296 point Shield that rapidly decays over 6 seconds.",
+      "description": "After 1 second, Lúcio and nearby allied Heroes gain a 1296 point Shield that rapidly decays over 6 seconds.",
       "image": "lucio_soundbarrier.png",
       "talentChanged": false,
       "manaCost": "100 Mana",
@@ -122,7 +122,7 @@
     },
     {
       "name": "High Five",
-      "description": "Quickly skate to an allied Hero. Upon arrival the ally is healed for 230, L\u00facio is healed for 80, and both gain Unstoppable for 1 second.",
+      "description": "Quickly skate to an allied Hero. Upon arrival the ally is healed for 230, Lúcio is healed for 80, and both gain Unstoppable for 1 second.",
       "image": "lucio_highfive.png",
       "talentChanged": false,
       "manaCost": "30 Mana"
@@ -131,13 +131,13 @@
   "13": [
     {
       "name": "All Together",
-      "description": "For each ally affected by Crossfade, L\u00facio gains 5% Movement Speed that stacks with other bonuses.",
+      "description": "For each ally affected by Crossfade, Lúcio gains 5% Movement Speed that stacks with other bonuses.",
       "image": "lucio_crossfade_all.png",
       "talentChanged": false
     },
     {
       "name": "Heavy Casters",
-      "description": "Push Off no longer Slows enemies, and instead Stuns them for 0.5 seconds.",
+      "description": "Push Off no longer Slows the first Hero hit, and instead Stuns them for 0.5 seconds.",
       "image": "lucio_accelerando.png",
       "talentChanged": false
     },
@@ -150,20 +150,20 @@
   ],
   "16": [
     {
-      "name": "Rejuvenesc\u00eancia",
+      "name": "Rejuvenescência",
       "description": "While Amp It Up is active, Crossfade's Healing Boost heals for an additional 2.5% of the target's maximum Health each second.",
       "image": "lucio_ampitup.png",
       "talentChanged": false
     },
     {
       "name": "Up the Frequency",
-      "description": "Hitting enemy Heroes with Basic Attacks reduces the cooldown of Amp It Up by 0.4 seconds.Passive: Wall Ride increases Basic Attack range by 2.2.",
+      "description": "Hitting enemy Heroes with Basic Attacks reduces the cooldown of Amp It Up by 0.3 seconds.Passive: Wall Ride increases Basic Attack range by 2.2.",
       "image": "lucio_ampitup_b.png",
       "talentChanged": false
     },
     {
       "name": "Up To Eleven",
-      "description": "Increase the duration of Amp It Up by 1 second. While Amp It Up is active, enemy Heroes hit by Soundwave or Push-Off further increase its duration by 0.3 seconds.",
+      "description": "Hitting an enemy Hero with Soundwave or Push Off increases the duration of Amp It Up.Soundwave grants 0.5 seconds and Push Off grants 1 second. If Amp It Up is not active, these bonuses are granted to its next activation, up to 3 seconds.Passive: Increase the duration of Amp It Up by 1 second.",
       "image": "lucio_ampitup_a.png",
       "talentChanged": false
     }
@@ -183,7 +183,7 @@
     },
     {
       "name": "House Party",
-      "description": "For each ally affected by Crossfade, L\u00facio gains 8% increased healing.",
+      "description": "For each ally affected by Crossfade, Lúcio gains 8% increased healing.",
       "image": "lucio_crossfade_all.png",
       "talentChanged": false
     },

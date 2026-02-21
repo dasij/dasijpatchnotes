@@ -69,7 +69,7 @@
   "4": [
     {
       "name": "Taste For Explosions",
-      "description": "{quest}Quest:{/quest} Hitting a Hero with Frag Launcher increases its damage by 0.2%, up to 40%.",
+      "description": "Quest: Hitting a Hero with Frag Launcher increases its damage by 0.2%, up to 40%.",
       "image": "junkrat_frag_launcher.png",
       "talentChanged": false
     },
@@ -101,7 +101,7 @@
     },
     {
       "name": "Dirty Trickster",
-      "description": "Increase the explosion radius of Total Mayhem by 20%.  When Junkrat is Stunned, Rooted, or damaged by an enemy Hero while below 50% Health, he uses Total Mayhem, dropping 5 grenades at his feet that explode.  This effect has a 20 second cooldown.",
+      "description": "Increase the explosion radius of Total Mayhem by 20%. When Junkrat is Stunned, Rooted, or damaged by an enemy Hero while below 50% Health, he uses Total Mayhem, dropping 5 grenades at his feet that explode. This effect has a 20 second cooldown.",
       "image": "junkrat_bomb_pack.png",
       "talentChanged": false
     }
@@ -125,7 +125,7 @@
   "13": [
     {
       "name": "Bombs Away",
-      "description": "Increase Junkrat's Basic Attack range by 1.  Frag Launcher grenades fired within 0.5 seconds of using a Basic Attack deal 30% bonus damage.",
+      "description": "Increase Junkrat's Basic Attack range by 1. Frag Launcher grenades fired within 0.5 seconds of using a Basic Attack deal 30% bonus damage.",
       "image": "junkrat_frag_launcher.png",
       "talentChanged": false
     },
@@ -172,7 +172,7 @@
   "20": [
     {
       "name": "Extra Oomph",
-      "description": "Increase RIP-Tire's knockback distance by 50%, and its cooldown is reduced by 25 seconds for each enemy Hero hit.",
+      "description": "Increase RIP-Tire's knockback distance by 80%, and its cooldown is reduced by 25 seconds for each enemy Hero hit.",
       "image": "junkrat_rip_tire.png",
       "talentChanged": false
     },

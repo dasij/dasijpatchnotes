@@ -22,6 +22,15 @@
   color: #ffaa00;
 }
 
+/* Mythic Reward label - estilo roxo com símbolo ✦ */
+.mythic-label {
+  color: #c77dff;
+  font-weight: bold;
+  font-size: inherit;
+  text-shadow: 0 0 2px rgba(199, 125, 255, 0.5);
+  display: inline;
+}
+
 .bg-hots-repeat {
     background-image: url('@/assets/background-hots-bg.jpg');
     background-repeat: repeat-y;

@@ -88,7 +88,7 @@
     },
     {
       "name": "Piercing Light",
-      "description": "Chastise pierces to hit an additional Hero.{quest}Quest:{/quest} Hitting two Heroes with a single Chastise permanently increases Spell Power by 1, to a maximum of 10.",
+      "description": "Chastise pierces to hit an additional Hero.Quest: Hitting two Heroes with a single Chastise permanently increases Spell Power by 1, to a maximum of 10.",
       "image": "anduin_chastise_a.png",
       "talentChanged": false
     }
@@ -135,7 +135,7 @@
   "13": [
     {
       "name": "Speed of the Pious",
-      "description": "While Divine Star is traveling, gain 30% Movement Speed.  Each allied Hero healed by Divine Star on its return to Anduin reduces its cooldown by 1 second.",
+      "description": "While Divine Star is traveling, gain 30% Movement Speed. Each allied Hero healed by Divine Star on its return to Anduin reduces its cooldown by 1 second.",
       "image": "anduin_divine_star.png",
       "talentChanged": false
     },

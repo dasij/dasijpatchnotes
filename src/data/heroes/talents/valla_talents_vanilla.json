@@ -29,10 +29,10 @@
     "heroic": [
       {
         "name": "Strafe (R)",
-        "description": "Rapidly attack enemies within 10 range for 60 damage per hit, prioritizing Heroes over Minions. Valla is able to move and use Vault while strafing. Lasts for 4 seconds.",
+        "description": "Rapidly attack enemies within 10 range for 0 damage per hit, prioritizing Heroes over Minions. Valla is able to move and use Vault while strafing. Lasts for 4 seconds.",
         "image": "valla_strafe.png",
         "abilityChanged": false,
-        "manaCost": "80 Mana",
+        "manaCost": "60 Mana",
         "cooldown": "60s"
       },
       {
@@ -46,7 +46,7 @@
     ],
     "trait": {
       "name": "Hatred (T)",
-      "description": " Basic Attacks grant a stack of Hatred, up to 10. Each Hatred stack increases Basic Attack damage by 8% and Movement Speed by 1%. Lasts 6 seconds.",
+      "description": " Basic Attacks grant a stack of Hatred, up to 10. Each Hatred stack increases Basic Attack damage by 8% and Movement Speed by 1%. Lasts 5 seconds.",
       "image": "valla_hatred.png",
       "abilityChanged": false
     }
@@ -54,19 +54,19 @@
   "1": [
     {
       "name": "Puncturing Arrow",
-      "description": "Increase the number of Hungering Arrow bounces by 1.{quest}Quest:{/quest} Hitting an enemy Hero with the initial impact of Hungering Arrow refunds 40 Mana and permanently increases the damage of its initial impact by 6.",
+      "description": "Increase the number of Hungering Arrow bounces by 1.Quest: Hitting an enemy Hero with the initial impact of Hungering Arrow refunds 40 Mana and permanently increases the damage of its initial impact by 6.",
       "image": "valla_hungeringarrow.png",
       "talentChanged": false
     },
     {
       "name": "Fire At Will",
-      "description": "{quest}Quest:{/quest} Hitting a Hero with Multishot grants 2 Hatred and permanently increases its damage by 2.{reward}Reward:{/reward} After hitting 20 Heroes with Multishot, increase its damage by 40.",
+      "description": "Quest: Hitting a Hero with Multishot grants 2 Hatred and permanently increases its damage by 2.Reward: After hitting 20 Heroes with Multishot, increase its damage by 40.",
       "image": "valla_multishot.png",
       "talentChanged": false
     },
     {
       "name": "Creed of the Hunter",
-      "description": "{quest}Quest:{/quest} Every 50 Basic Attacks against Heroes increases Hatred's damage bonus per stack by 1%, up to 6%.Gambit: Gain 25% bonus Attack Speed. Every death reduces this bonus by 5%.",
+      "description": "Quest: Every 50 Basic Attacks against Heroes increases Hatred's damage bonus per stack by 1%, up to 6%.Gambit: Gain 25% bonus Attack Speed. Every death reduces this bonus by 5%.",
       "image": "valla_hatred.png",
       "talentChanged": false
     }
@@ -106,7 +106,7 @@
     },
     {
       "name": "Hot Pursuit",
-      "description": "Increase the Movement Speed bonus of each stack of Hatred to 2%.",
+      "description": "Increase the Movement Speed bonus of each stack of Hatred from 1% to 2%.",
       "image": "valla_hatred.png",
       "talentChanged": false
     }
@@ -114,10 +114,10 @@
   "10": [
     {
       "name": "Strafe",
-      "description": "Rapidly attack enemies within 10 range for 60 damage per hit, prioritizing Heroes over Minions. Valla is able to move and use Vault while strafing. Lasts for 4 seconds.",
+      "description": "Rapidly attack enemies within 10 range for 0 damage per hit, prioritizing Heroes over Minions. Valla is able to move and use Vault while strafing. Lasts for 4 seconds.",
       "image": "valla_strafe.png",
       "talentChanged": false,
-      "manaCost": "80 Mana",
+      "manaCost": "60 Mana",
       "cooldown": "60s"
     },
     {
@@ -153,7 +153,7 @@
   "16": [
     {
       "name": "Punishment",
-      "description": "While at max Hatred, Multishot's cooldown recharges 50% faster.",
+      "description": "While at max Hatred, Multishot's cooldown recharges 50% faster.Passive: Reduce Multishot's Mana cost from 75 to 55.",
       "image": "valla_multishot.png",
       "talentChanged": false
     },
@@ -165,7 +165,7 @@
     },
     {
       "name": "Manticore",
-      "description": "Every 3rd Basic Attack against the same Hero deals an additional 5% of their maximum Health as damage.",
+      "description": "Every 3rd Basic Attack against the same Hero deals an additional 4% of their maximum Health as damage.",
       "image": "talent_autoattack_searing.png",
       "talentChanged": false
     }

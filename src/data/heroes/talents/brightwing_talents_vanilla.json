@@ -24,13 +24,6 @@
         "abilityChanged": false,
         "manaCost": "60 Mana",
         "cooldown": "10s"
-      },
-      {
-        "name": "Hyper Shift (Z)",
-        "description": "After 2 seconds, teleport to an allied Hero and heal them for 25% of their maximum Health.",
-        "image": "brightwing_hypershift.png",
-        "abilityChanged": false,
-        "cooldown": "40s"
       }
     ],
     "heroic": [
@@ -68,7 +61,7 @@
     },
     {
       "name": "Hyper Shift",
-      "description": "Increase Phase Shift's healing by an additional 6% of the target's maximum Health. Nearby enemy Minion deaths reduce Phase Shift's cooldown by 1 second.",
+      "description": "Increase Phase Shift's healing by an additional 4% of the target's maximum Health. Nearby enemy Minion deaths reduce Phase Shift's cooldown by 0.5 second.",
       "image": "brightwing_hypershift.png",
       "talentChanged": false
     },
@@ -82,7 +75,7 @@
   "4": [
     {
       "name": "Dream Shot",
-      "description": "Increase Arcane Flare's range by 50%. Hitting a Hero with Arcane Flare's center reduces its cooldown to 2 seconds.",
+      "description": "Increase Arcane Flare's range by 60%. Hitting a Hero with Arcane Flare's center reduces its cooldown to 2 seconds.",
       "image": "brightwing_arcaneflare.png",
       "talentChanged": false
     },
@@ -140,7 +133,7 @@
   "13": [
     {
       "name": "Pixie Boost",
-      "description": "Pixie Dust gives 50% bonus Movement Speed, decaying to 20% over 3 seconds.",
+      "description": "Increase Pixie Dust's Movement Speed bonus to 50%, decaying to 20% over 3 seconds.",
       "image": "brightwing_pixiedust.png",
       "talentChanged": false
     },

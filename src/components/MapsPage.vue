@@ -26,11 +26,12 @@
 
     <!-- MAIN CONTENT -->
     <div class="main-content" :class="{ 'full-width': !showSidebar }">
-      <div class="content-header">
-        <h1 class="page-title">Maps</h1>
-      </div>
-      
-      <div class="maps-grid">
+      <div class="content-wrapper">
+        <div class="content-header">
+          <h1 class="page-title">Maps</h1>
+        </div>
+        
+        <div class="maps-grid">
         <div 
           v-for="map in sortedMaps" 
           :key="map.id" 
@@ -46,6 +47,7 @@
           </div>
         </div>
       </div>
+    </div>
     </div>
 
     <!-- Floating button to show sidebar when hidden -->
@@ -236,16 +238,47 @@ export default {
   margin-left: 280px;
   flex: 1;
   height: 100vh;
-  padding: 20px 30px;
+  padding: 10px 15px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   transition: margin-left 0.3s ease;
-  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .main-content.full-width {
   margin-left: 0;
+}
+
+/* Content Wrapper - Limita e centraliza o conteúdo */
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: auto;
+  max-height: 1200px;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 12px;
+  padding: 20px 30px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Para monitores grandes - centraliza o conteúdo */
+@media (min-height: 1080px) and (min-width: 1024px) {
+  .main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .content-wrapper {
+    height: 100%;
+    max-height: 1200px;
+    margin: auto;
+  }
 }
 
 .content-header {
@@ -266,6 +299,8 @@ export default {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
+  flex: 1;
+  min-height: 0;
   overflow-y: auto;
   padding-right: 10px;
 }
@@ -382,6 +417,10 @@ export default {
     padding: 15px 20px;
   }
   
+  .content-wrapper {
+    padding: 15px 20px;
+  }
+  
   .page-title {
     font-size: 28px;
   }
@@ -442,6 +481,12 @@ export default {
     padding: 70px 20px 20px 20px;
   }
   
+  .content-wrapper {
+    max-height: none;
+    height: auto;
+    padding: 15px 20px;
+  }
+  
   .maps-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
@@ -484,6 +529,12 @@ export default {
     padding: 60px 15px 15px 15px; /* Espaço para barra sticky no topo */
   }
   
+  .content-wrapper {
+    max-height: none;
+    height: auto;
+    padding: 15px;
+  }
+  
   .page-title {
     font-size: 24px;
     text-align: center;
@@ -492,6 +543,7 @@ export default {
   .maps-grid {
     grid-template-columns: 1fr;
     gap: 12px;
+    max-height: none;
   }
   
   .image-wrapper {

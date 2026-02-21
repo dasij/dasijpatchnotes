@@ -54,13 +54,13 @@
   "1": [
     {
       "name": "Thunderstroke",
-      "description": "Increase the damage of Lightning Fury by 15.{quest}Quest:{/quest} Lightning Fury's damage is increased by 1.5 every time it hits a Hero.",
+      "description": "Increase the damage of Lightning Fury by 20.Quest: Lightning Fury's damage is increased by 1.5 every time it hits a Hero.",
       "image": "cassia_lightningfury.png",
       "talentChanged": false
     },
     {
       "name": "Impale",
-      "description": "Increase Fend's cast range and area of effect by 25%. It deals an additional 50% damage to enemies below 50% Health.",
+      "description": "Increase Fend's cast range and radius by 25%. It deals an additional 70% damage to enemies below 50% Health.",
       "image": "cassia_fend.png",
       "talentChanged": false
     },
@@ -124,7 +124,7 @@
     {
       "name": "Valkyrie",
       "description": "Summon a Valkyrie that rushes to Cassia after 0.75 seconds, pulling the first enemy Hero hit, dealing 225 damage and Stunning them for 0.5 seconds at the end of her path. The Valkyrie knocks back all other enemy Heroes in her way.",
-      "image": "cassia_valkyrie.png",
+      "image": "cassia_valkrie.png",
       "talentChanged": false,
       "manaCost": "60 Mana",
       "cooldown": "60s"
@@ -173,14 +173,14 @@
   "20": [
     {
       "name": "Infinite Lightning",
-      "description": "Ball Lightning can now bounce indefinitely. Every bounce reduces its cooldown by 5 seconds.",
+      "description": "Ball Lightning can now bounce indefinitely. Every bounce reduces its cooldown by 4 seconds.",
       "image": "cassia_balllightning.png",
       "talentChanged": false
     },
     {
       "name": "Imprisoning Light",
       "description": "Upon impaling an enemy Hero, they are Blinded for 5 seconds and Cassia's Valkyrie creates a wave of light that deals 200 damage to nearby enemies. This wave Silences and Roots them for 3 seconds.",
-      "image": "cassia_valkyrie.png",
+      "image": "cassia_valkrie.png",
       "talentChanged": false
     },
     {
@@ -191,7 +191,7 @@
     },
     {
       "name": "Rockstopper",
-      "description": "Activate to fully charge Avoidance and increase its Armor value to 60 for 4 seconds.  Losing Avoidance removes this bonus.",
+      "description": "Activate to fully charge Avoidance and increase its Armor value to 60 for 4 seconds. Losing Avoidance removes this bonus.",
       "image": "cassia_avoidance.png",
       "talentChanged": false,
       "cooldown": "30s"

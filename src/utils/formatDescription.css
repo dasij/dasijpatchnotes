@@ -1,0 +1,45 @@
+/* CSS styles for quest/reward/mythic tags in descriptions */
+
+/* Quest and Reward tags - Blue/Cyan color */
+.quest-tag {
+  color: #00b4d8; /* Cyan/Blue color - adjust as needed */
+  font-weight: 600;
+}
+
+/* Alternative: use a class that matches HOTS in-game style */
+.quest-tag::before {
+  content: "❢ "; /* Quest bullet symbol */
+  color: #00b4d8;
+}
+
+/* Mythic Reward tag - Purple color */
+.mythic-tag {
+  color: #9d4edd; /* Purple color - adjust as needed */
+  font-weight: 600;
+}
+
+/* Alternative: use a class that matches HOTS in-game style */
+.mythic-tag::before {
+  content: "✦ "; /* Mythic star symbol */
+  color: #c77dff;
+}
+
+/* You can also use inline-block for better control */
+.quest-tag,
+.mythic-tag {
+  display: inline;
+  white-space: nowrap;
+}
+
+/* Optional: add background or border for emphasis */
+.quest-tag {
+  /* background: rgba(0, 180, 216, 0.1); */
+  /* padding: 0 4px; */
+  /* border-radius: 3px; */
+}
+
+.mythic-tag {
+  /* background: rgba(157, 78, 221, 0.1); */
+  /* padding: 0 4px; */
+  /* border-radius: 3px; */
+}

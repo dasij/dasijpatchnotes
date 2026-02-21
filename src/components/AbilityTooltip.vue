@@ -65,7 +65,7 @@ const imagePath = computed(() => {
     return getTalentImagePath(targetHeroName.value, props.item.image)
   }
   // Fallback to direct path
-  return `/talents/${targetHeroName.value}/${props.item.image}`
+  return `talents/${targetHeroName.value}/${props.item.image}`
 })
 
 const formattedDescription = computed(() => {

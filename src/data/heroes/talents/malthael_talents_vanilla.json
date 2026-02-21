@@ -29,7 +29,7 @@
     "heroic": [
       {
         "name": "Tormented Souls (R)",
-        "description": "Unleash a torrent of souls, continually applying Reaper's Mark to nearby enemies for 4 seconds.  When Tormented Souls is cast and when it expires, reset the cooldown of Wraith Strike.",
+        "description": "Unleash a torrent of souls, continually applying Reaper's Mark to nearby enemies for 4 seconds.Tormented Souls resets the cooldown of Wraith Strike when activated, and while active, Wraith Strike costs no Mana its cooldown is reduced to 2 seconds.",
         "image": "malthael_tormentedsoul.png",
         "abilityChanged": false,
         "manaCost": "20 Mana",
@@ -37,7 +37,7 @@
       },
       {
         "name": "Last Rites (R)",
-        "description": "Apply a death sentence to an enemy Hero that, after 2 seconds, deals damage equal to 50% of their missing Health.{quest}Quest:{/quest} Enemies killed between the application of Last Rites and within 1.5 seconds of it dealing damage permanently reduce its cooldown by 5 seconds, to a minimum of 20 seconds.",
+        "description": "Apply a death sentence to an enemy Hero that, after 2 seconds, deals damage equal to 50% of their missing Health.Quest: Enemies killed between the application of Last Rites and within 1.5 seconds of it dealing damage permanently reduce its cooldown by 5 seconds, to a minimum of 20 seconds.",
         "image": "malthael_lastrites.png",
         "abilityChanged": false,
         "manaCost": "100 Mana",
@@ -46,7 +46,7 @@
     ],
     "trait": {
       "name": "Reaper's Mark (T)",
-      "description": " Basic Attacks cleave in an area in front of Malthael and afflict non-Structure targets with Reaper's Mark for 4 seconds.  Marked enemies are revealed and take damage equal to 2% of their maximum Health every 1 second.",
+      "description": " Basic Attacks cleave in an area in front of Malthael and afflict non-Structure targets with Reaper's Mark for 4 seconds. Marked enemies are revealed and take damage equal to 2% of their maximum Health every 1 second.",
       "image": "malthael_reapersmark.png",
       "abilityChanged": false
     }
@@ -87,7 +87,7 @@
     },
     {
       "name": "Black Harvest",
-      "description": "{quest}Quest:{/quest} Apply Reaper's Mark to Heroes for a total of 180 seconds.{reward}Reward:{/reward} Permanently increase Reaper's Mark's duration by 2 seconds.",
+      "description": "Quest: Apply Reaper's Mark to Heroes for a total of 150 seconds.Reward: Permanently increase Reaper's Mark's duration by 2 seconds.",
       "image": "malthael_reapersmark.png",
       "talentChanged": false
     }
@@ -116,7 +116,7 @@
   "10": [
     {
       "name": "Tormented Souls",
-      "description": "Unleash a torrent of souls, continually applying Reaper's Mark to nearby enemies for 4 seconds.  When Tormented Souls is cast and when it expires, reset the cooldown of Wraith Strike.",
+      "description": "Unleash a torrent of souls, continually applying Reaper's Mark to nearby enemies for 4 seconds.Tormented Souls resets the cooldown of Wraith Strike when activated, and while active, Wraith Strike costs no Mana its cooldown is reduced to 2 seconds.",
       "image": "malthael_tormentedsoul.png",
       "talentChanged": false,
       "manaCost": "20 Mana",
@@ -124,7 +124,7 @@
     },
     {
       "name": "Last Rites",
-      "description": "Apply a death sentence to an enemy Hero that, after 2 seconds, deals damage equal to 50% of their missing Health.{quest}Quest:{/quest} Enemies killed between the application of Last Rites and within 1.5 seconds of it dealing damage permanently reduce its cooldown by 5 seconds, to a minimum of 20 seconds.",
+      "description": "Apply a death sentence to an enemy Hero that, after 2 seconds, deals damage equal to 50% of their missing Health.Quest: Enemies killed between the application of Last Rites and within 1.5 seconds of it dealing damage permanently reduce its cooldown by 5 seconds, to a minimum of 20 seconds.",
       "image": "malthael_lastrites.png",
       "talentChanged": false,
       "manaCost": "100 Mana",
@@ -182,7 +182,7 @@
   "20": [
     {
       "name": "Reaper of Souls",
-      "description": "Increase Tormented Souls' duration by 2 seconds.  While Tormented Souls is active, Hero Takedowns refresh the duration.",
+      "description": "Increase the duration of Tormented Souls to 6 seconds, and while Tormented Souls is active, Hero Takedowns refresh its duration.If 2 or more enemy Heroes are in Tormented Souls' radius, it does not decay.",
       "image": "malthael_tormentedsoul.png",
       "talentChanged": false
     },

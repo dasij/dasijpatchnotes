@@ -55,7 +55,7 @@ export function usePatchNotesData() {
     const fileName = heroNameToFileMap[itemName.value] || itemName.value
     
     if (itemType.value === 'hero') {
-      return `/heroes_portraits/${fileName}.png`
+      return `heroes_portraits/${fileName}.png`
     }
     return ''
   })

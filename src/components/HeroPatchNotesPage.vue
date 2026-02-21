@@ -84,7 +84,6 @@
                   <h1 class="hero-title clickable" @click="showHeroDeveloperCommentary" title="Click to view developer commentary">{{ hero.name }}</h1>
                   <TalentTypeToggle
                     v-model="talentType"
-                    v-model:dev-comments-always="showDevCommentsAlways"
                     @update:model-value="onTalentTypeChange"
                   />
                 </div>
@@ -410,6 +409,7 @@ const formatText = (text) => {
     .replace(/\{quest\}Quest:\{\/quest\}/g, '<br><span class="quest-label">❢ Quest:</span>')
     .replace(/\{reward\}Reward:\{\/reward\}/g, '<br><span class="reward-label">❢ Reward:</span>')
     .replace(/\{repeatable_quest\}Repeatable Quest:\{\/repeatable_quest\}/g, '<br><span class="repeatable-quest-label">❢ Repeatable Quest:</span>')
+    .replace(/\{mythic_reward\}Mythic Reward:\{\/mythic_reward\}/g, '<br><span class="mythic-label">✦ Mythic Reward:</span>')
   
   // Remove <br> no início se houver
   return result.replace(/^<br>/, '')
@@ -606,7 +606,24 @@ provide('getTalentImagePath', getTalentImagePath)
   height: 100%;
   width: 100%;
   max-width: 1600px;
-  margin: 0 auto;
+  max-height: 1200px;
+  margin: auto;
+}
+
+/* Para monitores 1080p e maiores - centraliza o conteúdo */
+@media (min-height: 1080px) and (min-width: 1024px) {
+  .main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-content {
+    height: auto;
+    max-height: 1200px;
+    aspect-ratio: 16/9;
+    margin: auto;
+  }
 }
 
 /* Top Section: 3 columns - 72% height */

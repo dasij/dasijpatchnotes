@@ -18,7 +18,7 @@
       },
       {
         "name": "Xplodium Charge (E)",
-        "description": "Place a bomb that deals 142 damage to enemies within the target area after 1.25 seconds.  Enemies hit are also Stunned for 1 second.",
+        "description": "Place a bomb that deals 142 damage to enemies within the target area after 1.25 seconds. Enemies hit are also Stunned for 1 second.",
         "image": "gazlowe_explodiumcharge.png",
         "abilityChanged": false,
         "cooldown": "12s"
@@ -34,7 +34,7 @@
       },
       {
         "name": "Grav-O-Bomb 3000 (R)",
-        "description": "After a 1.5 second delay, pull enemies toward the center of an area and deal 220 damage. Basic Abilities deal 30% more damage for 5 seconds after casting Grav-O-Bomb 3000.",
+        "description": "After a 1.5 second delay, pull enemies toward the center of an area, dealing 220 damage and Stunning them for 0.5 seconds. Basic Abilities deal 30% more damage for 5 seconds after casting Grav-O-Bomb 3000.",
         "image": "gazlowe_gravobomb.png",
         "abilityChanged": false,
         "cooldown": "60s"
@@ -43,7 +43,7 @@
     "trait": {
       "name": "Reduce, Reuse, Recycle (T)",
       "description": " Regenerate 1 Scrap every 4 seconds. Destroyed Rock-It! Turrets drop 1 Scrap, which can be picked up.Activate to destroy a target Rock-It! Turret.",
-      "image": "storm_ui_icon_gazlowe_salvager.png",
+      "image": "gazlowe_salvager.png",
       "abilityChanged": false
     }
   },
@@ -62,7 +62,7 @@
     },
     {
       "name": "One Man Wrecking Crew",
-      "description": "Casting Basic Abilities cause Gazlowe's next Basic Attack within 6 seconds to deal 60% more damage.  Stores up to 2 charges.",
+      "description": "Casting Basic Abilities cause Gazlowe's next Basic Attack within 6 seconds to deal 60% more damage. Stores up to 2 charges.",
       "image": "talent_autoattack_damage.png",
       "talentChanged": false
     }
@@ -118,7 +118,7 @@
     },
     {
       "name": "Grav-O-Bomb 3000",
-      "description": "After a 1.5 second delay, pull enemies toward the center of an area and deal 220 damage. Basic Abilities deal 30% more damage for 5 seconds after casting Grav-O-Bomb 3000.",
+      "description": "After a 1.5 second delay, pull enemies toward the center of an area, dealing 220 damage and Stunning them for 0.5 seconds. Basic Abilities deal 30% more damage for 5 seconds after casting Grav-O-Bomb 3000.",
       "image": "gazlowe_gravobomb.png",
       "talentChanged": false,
       "cooldown": "60s"

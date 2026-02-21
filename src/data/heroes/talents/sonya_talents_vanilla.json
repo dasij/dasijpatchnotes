@@ -170,7 +170,7 @@
   "20": [
     {
       "name": "Arreat Crater",
-      "description": "Leap leaves behind an impassable crater for 5 seconds.  Reduces Leap's cooldown by 20 seconds.",
+      "description": "Leap leaves behind an impassable crater for 5 seconds. Reduces Leap's cooldown by 20 seconds.",
       "image": "sonya_leap.png",
       "talentChanged": false
     },

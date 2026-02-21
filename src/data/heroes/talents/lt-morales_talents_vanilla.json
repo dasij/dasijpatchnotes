@@ -61,7 +61,7 @@
     },
     {
       "name": "Clear!",
-      "description": "{quest}Quest:{/quest} Each enemy Hero hit with Displacement Grenade restores 3 Energy.{reward}Reward:{/reward} After hitting 15 Heroes, reduce the cooldown of Displacement Grenade from 12 seconds to 9 seconds.{reward}Reward:{/reward} After hitting 30 Heroes, increase the detonation area of Displacement Grenade by 25%.",
+      "description": "Quest: Each enemy Hero hit with Displacement Grenade restores 3 Energy.Reward: After hitting 15 Heroes, reduce the cooldown of Displacement Grenade from 12 seconds to 9 seconds.Reward: After hitting 30 Heroes, increase the detonation area of Displacement Grenade by 25%.",
       "image": "medic_displacementgrenade.png",
       "talentChanged": false
     }
@@ -127,7 +127,7 @@
   "13": [
     {
       "name": "EMP Grenade",
-      "description": "Displacement Grenade deals an additional 96 damage over 2 seconds, and up to 400 bonus damage to Shields.",
+      "description": "Displacement Grenade deals an additional 96 damage over 2 seconds, and up to 400 bonus damage to Heroes' Shields.",
       "image": "medic_displacementgrenade.png",
       "talentChanged": false
     },
@@ -139,7 +139,7 @@
     },
     {
       "name": "Bedside Manner",
-      "description": "Heroes hit by Displacement Grenade will take an additional 6% of maximum Health as damage from Lt. Morales's next Basic Attack against them.Passive: Basic Attacks against Heroes deal an additional 1% of maximum Health as damage.",
+      "description": "Basic Attacks against enemy Heroes deal bonus damage equal to 1% of their maximum Health. Hitting an enemy Hero with Displacement Grenade increases the next instance of this damage against them to 6% for 6 seconds.",
       "image": "medic_displacementgrenade_c.png",
       "talentChanged": false
     }

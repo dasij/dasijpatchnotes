@@ -45,7 +45,7 @@ const imagePath = computed(() => {
   if (getTalentImagePath) {
     return getTalentImagePath(heroName.value, props.talent.image)
   }
-  return `/talents/${heroName.value}/${props.talent.image}`
+  return `talents/${heroName.value}/${props.talent.image}`
 })
 
 // Junta descrição + quest + rewards no mesmo formato do Tissue Regeneration
@@ -225,6 +225,11 @@ const formattedDescription = computed(() => {
 .card-body :deep(.reward-label),
 .card-body :deep(.repeatable-quest-label) {
   color: #ffd700;
+  font-weight: bold;
+}
+
+.card-body :deep(.mythic-label) {
+  color: #c77dff;
   font-weight: bold;
 }
 

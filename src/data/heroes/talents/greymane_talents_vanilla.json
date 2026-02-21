@@ -24,21 +24,6 @@
         "abilityChanged": false,
         "manaCost": "10 Mana",
         "cooldown": "5s"
-      },
-      {
-        "name": "Razor Swipe (Q)",
-        "description": "Swipe in the targeted direction, dealing 126 damage to enemies hit.",
-        "image": "greymane_swipe.png",
-        "abilityChanged": false,
-        "manaCost": "25 Mana",
-        "cooldown": "4s"
-      },
-      {
-        "name": "Disengage (E)",
-        "description": "Disengage Roll away and shapeshift into a Human.",
-        "image": "greymane_disengage.png",
-        "abilityChanged": false,
-        "cooldown": "5s"
       }
     ],
     "heroic": [
@@ -69,7 +54,7 @@
   "1": [
     {
       "name": "Wolfheart",
-      "description": "Increase the cooldown reduction from Basic Attacks during Inner Beast from 0.5 to 1.2 seconds.",
+      "description": "Increase the cooldown reduction from Basic Attacks during Inner Beast from 0.5 to 1.2 seconds, and Worgen Form's Armor bonus from 10 to 15.",
       "image": "greymane_beastfocus.png",
       "talentChanged": false
     },
@@ -115,13 +100,13 @@
     },
     {
       "name": "Incendiary Elixir",
-      "description": "{quest}Quest:{/quest} Reduce the cooldown of Gilnean Cocktail by 2 seconds. Every time Greymane hits an enemy Hero with the explosion damage from Gilnean Cocktail, increase its explosion damage by 25, up to 375.{reward}Reward:{/reward} After hitting 15 Heroes, the cooldown is reduced by an additional 3 seconds.",
+      "description": "Quest: Reduce the cooldown of Gilnean Cocktail by 2 seconds. Every time Greymane hits an enemy Hero with the explosion damage from Gilnean Cocktail, increase its explosion damage by 25, up to 375.Reward: After hitting 15 Heroes, the cooldown is reduced by an additional 3 seconds.",
       "image": "greymane_qattack.png",
       "talentChanged": false
     },
     {
       "name": "Wizened Duelist",
-      "description": "{quest}Quest:{/quest} Every 6 Human Basic Attacks against Heroes increase Basic Attack damage by 1%, up to 30%. Worgen Basic Attacks grant credit for 3 Basic Attacks. Half of this bonus is lost upon death.",
+      "description": "Quest: Every 6 Human Basic Attacks against Heroes increase Basic Attack damage by 1%, up to 30%. Worgen Basic Attacks grant credit for 3 Basic Attacks. Half of this bonus is lost upon death.",
       "image": "greymane_curseoftheworgen_var1.png",
       "talentChanged": false
     }
@@ -172,8 +157,8 @@
       "talentChanged": false
     },
     {
-      "name": "Executioner",
-      "description": "Attacking a Hero that is slowed, rooted, or stunned increases your Basic Attack damage by 30% for 3 seconds.",
+      "name": "Lord of His Pack",
+      "description": "Attacking a Hero that is Slowed, Rooted, or Stunned increases Greymane's Basic Attack damage by 25% for 3 seconds, increased to 50% while in Worgen Form.",
       "image": "talent_autoattack_damage.png",
       "talentChanged": false
     },

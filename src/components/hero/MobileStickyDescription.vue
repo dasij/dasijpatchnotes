@@ -126,13 +126,13 @@ const iconSrc = computed(() => {
     if (getTalentImagePath) {
       return getTalentImagePath(heroName.value, props.selectedAbility.image)
     }
-    return `/talents/${heroName.value}/${props.selectedAbility.image}`
+    return `talents/${heroName.value}/${props.selectedAbility.image}`
   }
   if (props.selectedTalent?.image) {
     if (getTalentImagePath) {
       return getTalentImagePath(heroName.value, props.selectedTalent.image)
     }
-    return `/talents/${heroName.value}/${props.selectedTalent.image}`
+    return `talents/${heroName.value}/${props.selectedTalent.image}`
   }
   return ''
 })

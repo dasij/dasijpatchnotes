@@ -50,11 +50,18 @@
       },
       {
         "name": "Blessed Shield (R)",
-        "description": "Deal 114 damage and Stun the first enemy hit for 1.5 seconds. Blessed Shield then bounces to 2 nearby enemies, dealing 57 damage and Stunning them for 0.75 seconds.",
+        "description": "Deal 114 damage and Stun the first enemy hit for 1.5 seconds. Blessed Shield then bounces to 2 nearby enemies, dealing 57 damage and Stunning them for 0.75 seconds.\n\n{highlight}NEW ACTIVE - Blessed Throw: Activate to throw a Blessed Shield that bounces off walls up to 6 times. This version does not pass through walls but ricochets off them. Shares cooldown with Blessed Shield.{/highlight}",
         "image": "johanna_blessed_shield.png",
-        "abilityChanged": false,
+        "abilityChanged": true,
         "manaCost": "90 Mana",
-        "cooldown": "60s"
+        "cooldown": "60s",
+        "developerCommentary": "This change is aimed on making Johanna have more WTF Moments...often seem as a boring tank i want to bring the best plus i didn't want to remove the baseline version that goes through wall so she has more flexibility by bringing it to an active",
+        "subtexts": [
+          "Blessed Throw is a new active ability that shares cooldown with Blessed Shield",
+          "Maximum bounces: 6",
+          "The wall bounce works similarly to <vanilla, abilities, basic, 1, hanzo> or <vanilla, abilities, basic, 2, hogger>",
+          "Blessed Throw has the same damage and stun values as the standard Blessed Shield"
+        ]
       }
     ],
     "trait": {
@@ -111,7 +118,7 @@
       "talentChanged": true,
       "passives": [
         "{quest}Quest:{/quest} Hit 4 or more Heroes at the same time with Punish",
-        "{reward}Reward: Basic attacks against marked targets grants Johanna 1 stack of 40 physical armor block."
+        "{reward}Reward:{/reward} Basic attacks against marked targets grants Johanna 1 stack of 40 physical armor block."
       ],
       "developerCommentary": "I made this level about Punish and i also like the quest from Subdue and i see it as something that makes Johanna more fun overall"
     },
@@ -122,7 +129,7 @@
       "talentChanged": true,
       "passives": [
         "{quest}Quest:{/quest} Hit 4 or more Heroes at the same time with Punish",
-        "{reward}Reward: Johanna basic attacks against marked heroes also heals 1.25% of maximum health of nearby heroes"
+        "{reward}Reward:{/reward} Johanna basic attacks against marked heroes also heals 1.25% of maximum health of nearby heroes"
       ],
       "developerCommentary": "I want my Crusader have the possibility for an utility tank similar to how Tyrael works as it's on the core values on the Diablo 3 being a support frontline.",
       "subtexts": [
@@ -173,11 +180,18 @@
     },
     {
       "name": "Blessed Shield",
-      "description": "Deal 114 damage and Stun the first enemy hit for 1.5 seconds. Blessed Shield then bounces to 2 nearby enemies, dealing 57 damage and Stunning them for 0.75 seconds.",
+      "description": "Deal 114 damage and Stun the first enemy hit for 1.5 seconds. Blessed Shield then bounces to 2 nearby enemies, dealing 57 damage and Stunning them for 0.75 seconds.\n\n{highlight}NEW ACTIVE - Blessed Throw: Activate to throw a Blessed Shield that bounces off walls up to 6 times. This version does not pass through walls but ricochets off them. Shares cooldown with Blessed Shield.{/highlight}",
       "image": "johanna_blessed_shield.png",
-      "talentChanged": false,
+      "talentChanged": true,
       "manaCost": "90 Mana",
-      "cooldown": "60s"
+      "cooldown": "60s",
+      "developerCommentary": "This change is aimed on making Johanna have more WTF Moments...often seem as a boring tank i want to bring the best plus i didn't want to remove the baseline version that goes through wall so she has more flexibility by bringing it to an active",
+      "subtexts": [
+        "Blessed Throw is a new active ability that shares cooldown with Blessed Shield",
+        "Maximum bounces: 6",
+        "The wall bounce works similarly to <vanilla, abilities, basic, 1, hanzo> or <vanilla, abilities, basic, 2, hogger>",
+        "Blessed Throw has the same damage and stun values as the standard Blessed Shield"
+      ]
     }
   ],
   "13": [
@@ -227,10 +241,10 @@
     },
     {
       "name": "Divine Fortress",
-      "description": "{highlight}Reduces all basic attack damage received from the direction you are facing by 40% returning the damage to the attacker while reducing 0.4 seconds of Iron Skin's cooldown up to 10 seconds.{/highlight}",
+      "description": "{highlight}Reduces all basic attack damage received from the direction you are facing by 40% returning the damage to the attacker.{/highlight}\n\n{highlight}While Iron Skin is active, the damage returned is increased to 60%.{/highlight}",
       "image": "talent_block.png",
       "talentChanged": true,
-      "developerCommentary": "Crusaders are strongly related to thorns and i liked the Holy Hold concept so i leveled him up",
+      "developerCommentary": "Crusaders are strongly related to thorns and I liked the Holy Hold concept so I leveled it up.",
       "subtexts": [
         "The damage is after physical armor blocks"
       ]

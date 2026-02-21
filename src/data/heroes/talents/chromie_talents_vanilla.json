@@ -4,15 +4,15 @@
       {
         "name": "Sand Blast (Q)",
         "description": "After 0.5 seconds, fire a missile that deals 305 damage to the first enemy hit. Deals 50% damage to Structures.Casting Sand Blast leaves an Echo behind that mimics Chromie's Sand Blast and Basic Attack, dealing 40% damage. Maximum of 1 Echo active at a time.",
-        "image": "chromie_aethercannon.png",
+        "image": "chromie_sandstrike.png",
         "abilityChanged": false,
         "manaCost": "20 Mana",
         "cooldown": "3s"
       },
       {
-        "name": "Dragon\u2019s Breath (W)",
+        "name": "Dragon’s Breath (W)",
         "description": "Vector TargetingLaunch 3 blasts into the air that land every 0.75 seconds towards the targeted direction, dealing 215 damage each.",
-        "image": "chromie_sandstrike.png",
+        "image": "chromie_aethercannon.png",
         "abilityChanged": false,
         "manaCost": "65 Mana",
         "cooldown": "14s"
@@ -30,14 +30,14 @@
       {
         "name": "Slowing Sands (R)",
         "description": "Summon a sand vortex that Slows enemies by 10% every 0.25 seconds, up to 70%.",
-        "image": "chromie_timewarp.png",
+        "image": "chromie_timeblock.png",
         "abilityChanged": false,
         "cooldown": "5s"
       },
       {
         "name": "Temporal Loop (R)",
         "description": "Choose an enemy Hero. After 3 seconds, they are teleported back to the location where Temporal Loop was cast on them.Basic Abilities recharge 500% faster for 3 seconds after casting Temporal Loop.",
-        "image": "chromie_looper.png",
+        "image": "chromie_timewarp.png",
         "abilityChanged": false,
         "manaCost": "60 Mana",
         "cooldown": "50s"
@@ -46,32 +46,32 @@
     "trait": {
       "name": "Timewalker (T)",
       "description": " Chromie has traveled to the future, and as such, will learn her Talents 2 levels earlier than her teammates!Detonate Time TrapDetonates active Time Traps.",
-      "image": "storm_ui_icon_chromie_timetraveler.png",
+      "image": "chromie_herethere.png",
       "abilityChanged": false
     }
   },
   "1": [
     {
       "name": "Once Again the First Time",
-      "description": "{quest}Quest:{/quest} Hit 40 Heroes with Sand Blast from Chromie or her Echoes.{reward}Reward:{/reward} Increase the maximum number of active Echoes to 2, and increase Echo damage to 45%.",
+      "description": "Quest: Hit 40 Heroes with Sand Blast from Chromie or her Echoes.Reward: Increase the maximum number of active Echoes to 2, and increase Echo damage to 45%.",
       "image": "chromie_aethercannon.png",
       "talentChanged": false
     },
     {
       "name": "Deep Breathing",
-      "description": "{quest}Quest:{/quest} Every time Dragon's Breath hits a Hero increase its damage by 1%, up to 20%.{reward}Reward:{/reward} After hitting 20 Heroes, reduce the cooldown of Dragon's Breath by 4 seconds and its Mana cost from 65 to 40.",
+      "description": "Quest: Every time Dragon's Breath hits a Hero increase its damage by 1%, up to 20%.Reward: After hitting 20 Heroes, reduce the cooldown of Dragon's Breath by 4 seconds and its Mana cost from 65 to 40.",
       "image": "chromie_sandstrike.png",
       "talentChanged": false
     },
     {
       "name": "Timewalker's Pursuit",
-      "description": "Gain 10% Spell Power and reduce the arming time of Time Traps by 0.75 seconds. Activate to reveal the targeted area for 4 seconds. Enemies seen are revealed for 4 seconds.",
+      "description": "Gain 15% Spell Power and reduce the arming time of Time Traps by 0.75 seconds. Activate to reveal the targeted area for 4 seconds. Enemies seen are revealed for 4 seconds.",
       "image": "talent_clairvoyance.png",
       "talentChanged": false,
       "cooldown": "25s"
     }
   ],
-  "4": [
+  "2": [
     {
       "name": "Chronic Conditions",
       "description": "After its Time Stop ends, enemies affected by Time Trap are Slowed by 30% for 3 seconds and allies gain 30% Movement Speed for 3 seconds.",
@@ -91,7 +91,7 @@
       "talentChanged": false
     }
   ],
-  "7": [
+  "5": [
     {
       "name": "Bronze Talons",
       "description": "Hitting a Hero with Sand Blast from Chromie or her Echoes grants 50% additional Basic Attack damage for 5 seconds.",
@@ -100,7 +100,7 @@
     },
     {
       "name": "Mobius Loop",
-      "description": "Dragon's Breath deals 30% bonus damage to enemies hit by its center.  Enemy Heroes hit by its center are Slowed by 60% for 0.75 seconds.",
+      "description": "Dragon's Breath deals 30% bonus damage to enemies hit by its center. Enemy Heroes hit by its center are Slowed by 40% for 0.75 seconds.",
       "image": "chromie_sandstrike.png",
       "talentChanged": false
     },
@@ -111,7 +111,7 @@
       "talentChanged": false
     }
   ],
-  "10": [
+  "8": [
     {
       "name": "Slowing Sands",
       "description": "Summon a sand vortex that Slows enemies by 10% every 0.25 seconds, up to 70%.",
@@ -128,7 +128,7 @@
       "cooldown": "50s"
     }
   ],
-  "13": [
+  "11": [
     {
       "name": "Gnome Speed Ahead!",
       "description": "After casting Sand Blast, Chromie gains 20% Movement Speed and 200% increased Health Regeneration for 3 seconds.",
@@ -147,10 +147,10 @@
       "description": "Activate to place Chromie in Stasis and gain Invulnerability for up to 5 seconds. Can be reactivated to end the effect early.",
       "image": "chromie_timeblock.png",
       "talentChanged": false,
-      "cooldown": "60s"
+      "cooldown": "1s"
     }
   ],
-  "16": [
+  "14": [
     {
       "name": "Shifting Sands",
       "description": "Hitting an enemy Hero with Chromie's primary Sand Blast grants 5% Spell Power for 8 seconds, up to a maximum of 50%. The duration is refreshed whenever an enemy is damaged by the primary Sand Blast.",
@@ -171,10 +171,10 @@
       "cooldown": "45s"
     }
   ],
-  "20": [
+  "18": [
     {
       "name": "Unravelling",
-      "description": "Every 0.25 seconds, enemy Heroes Slowed by Slowing Sands have their Spell Armor reduced by 10 up to 50. Slowing Sands persists for 5 seconds after it is cancelled.",
+      "description": "Every 0.25 seconds, enemy Heroes Slowed by Slowing Sands have their Spell Armor reduced by 10 up to 50.Passive: Increase Slowing Sands cast range by 50%, and Slowing Sands persists for 5 seconds after it is cancelled.",
       "image": "chromie_timewarp.png",
       "talentChanged": false
     },

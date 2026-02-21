@@ -54,7 +54,7 @@
   "1": [
     {
       "name": "Nerubian Armor",
-      "description": "Increase Hardened Carapace's Spell Armor by 25.",
+      "description": "Increase Harden Carapace's Spell Armor by 25.",
       "image": "anubarak_hardencarapace_var1.png",
       "talentChanged": false
     },
@@ -66,7 +66,7 @@
     },
     {
       "name": "Regeneration Master",
-      "description": "{quest}Quest:{/quest} Gathering a Regeneration Globe increases your Health Regeneration by 1 per second, up to 30. {reward}Reward:{/reward} After gathering 30 Regeneration Globes, you also gain 500 Health.",
+      "description": "Quest: Gathering a Regeneration Globe increases your Health Regeneration by 1 per second, up to 30. Reward: After gathering 25 Regeneration Globes, you also gain 500 Health.",
       "image": "talent_regenerationmaster.png",
       "talentChanged": false
     }
@@ -74,7 +74,7 @@
   "4": [
     {
       "name": "Bed of Barbs",
-      "description": "Create a bed of spikes along Impale's path that slows enemies by 25% and deals 21 damage per second.  Spikes persist for 3.5 seconds.",
+      "description": "Create a bed of spikes along Impale's path that Slows enemies by 25% and deals 21 damage per second. Spikes persist for 3.5 seconds.",
       "image": "anubarak_impale.png",
       "talentChanged": false
     },
@@ -143,8 +143,8 @@
       "talentChanged": false
     },
     {
-      "name": "Acid Drenched Mandibles",
-      "description": "Attacking a Hero that is slowed, rooted, or stunned increases Anub'arak's Basic Attack damage by 80% for 4 seconds.",
+      "name": "Acid-Drenched Mandibles",
+      "description": "Attacking a Hero that is Slowed, Rooted, or Stunned increases Anub'arak's Basic Attack damage by 80% for 4 seconds.",
       "image": "talent_autoattack_damage.png",
       "talentChanged": false
     }

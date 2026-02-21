@@ -15,7 +15,7 @@
         "image": "falstad_lightningrod.png",
         "abilityChanged": false,
         "manaCost": "60 Mana",
-        "cooldown": "13s"
+        "cooldown": "12s"
       },
       {
         "name": "Barrel Roll (E)",
@@ -37,7 +37,7 @@
       },
       {
         "name": "Mighty Gust (R)",
-        "description": "Push enemies away, and slow their Movement Speed by 40% decaying over 4 seconds.",
+        "description": "Push enemies away, and Slow them by 40%, decaying over 4 seconds.",
         "image": "falstad_mightygust.png",
         "abilityChanged": false,
         "manaCost": "70 Mana",
@@ -54,19 +54,19 @@
   "1": [
     {
       "name": "Gathering Storm",
-      "description": "{quest}Quest:{/quest} Every time Hammerang hits a Hero increase its damage by 0.5% and refund 6 Mana.{reward}Reward:{/reward} After hitting 30 Heroes with Hammerang, increase its damage by 15%.",
+      "description": "Quest: Hit enemy Heroes with Hammerang. Restore 6 Mana for each Hero hit. Upon dying, Lose 8 stacks.Reward: After hitting 30 Heroes, Hammerang permanently deals 30% more damage.Reward: After hitting 80 Heroes, Hammerang permanently deals an additional 50% damage.Pinnacle Reward: After hitting 150 Heroes, Hammerang permanently deals an additional 70% damage.",
       "image": "falstad_hammerang.png",
       "talentChanged": false
     },
     {
       "name": "Dishonorable Discharge",
-      "description": "Reduce Lightning Rod's cooldown by 2 seconds.{quest}Quest:{/quest} After 3 Lightning Rod strikes, subsequent strikes on enemy Heroes increases its damage by 1%, up to 75%.{reward}Reward:{/reward} After 30 subsequent strikes, further reduce Lightning Rod's cooldown by 2 seconds.{reward}Reward:{/reward} After 75 subsequent strikes, Takedowns reset Lightning Rod's cooldown.",
+      "description": "Quest: Each Lightning Rod strike upon a Hero after the 3rd generates 1 stack. If a Hero dies under its effect, generate 2 stacks.Reward: After 20 stacks, its damage is increased by 30%.Reward: After 45 stacks, its cooldown is reduced by 2 seconds and its damage is increased by an additional 75%.Pinnacle Reward: After 75 stacks, its number of strikes is increased by 2 and the final strike Stuns for 1.25 seconds.",
       "image": "falstad_lightningrod.png",
       "talentChanged": false
     },
     {
       "name": "Frequent Flyer",
-      "description": "Activate Frequent Flyer to gain 40% Attack Speed and Tailwind for 4 seconds.{quest}Quest:{/quest} Minion kills grant 0.2 Basic Attack Damage. Hero Takedowns grant 0.5 Basic Attack Damage.",
+      "description": "Activate Frequent Flyer to gain 25% Attack Speed and Tailwind for 4 seconds.Quest: Minion kills grant 1 stack. Hero Takedowns grant 5 stacks.Reward: After 50 stacks, gain 20 Attack Damage.Reward: After 125 stacks, gain 50 additional Attack Damage.Pinnacle Reward: After 300 stacks, gain 125 additional Attack Damage.",
       "image": "falstad_tailwind_a.png",
       "talentChanged": false,
       "cooldown": "45s"
@@ -106,8 +106,8 @@
       "talentChanged": false
     },
     {
-      "name": "Charged Up",
-      "description": "Increases the number of Lightning Rod strikes by 2 and its range by 25%.",
+      "name": "Thunderstrikes",
+      "description": "Lightning Rod deals 25% more damage each subsequent strike.",
       "image": "falstad_lightningrod.png",
       "talentChanged": false
     }
@@ -123,7 +123,7 @@
     },
     {
       "name": "Mighty Gust",
-      "description": "Push enemies away, and slow their Movement Speed by 40% decaying over 4 seconds.",
+      "description": "Push enemies away, and Slow them by 40%, decaying over 4 seconds.",
       "image": "falstad_mightygust.png",
       "talentChanged": false,
       "manaCost": "70 Mana",
@@ -132,8 +132,8 @@
   ],
   "13": [
     {
-      "name": "Thunderstrikes",
-      "description": "Lightning Rod deals 25% more damage each subsequent strike.",
+      "name": "Charged Up",
+      "description": "Increases Lightning Rod range by 25%. Hero Takedowns reset Lightning Rod's cooldown.",
       "image": "falstad_lightningrod.png",
       "talentChanged": false
     },

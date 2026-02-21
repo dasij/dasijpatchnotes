@@ -60,7 +60,7 @@
     },
     {
       "name": "Aether Walker",
-      "description": "Teleport costs no Mana.  If Li-Ming hasn't taken damage in the last 3 seconds, Teleport's cooldown is decreased by 2 seconds.  Casting Teleport causes Li-Ming's next cast of Magic Missiles to deal 10% bonus damage.",
+      "description": "Teleport costs no Mana. If Li-Ming hasn't taken damage in the last 3 seconds, Teleport's cooldown is decreased by 2 seconds. Casting Teleport causes Li-Ming's next cast of Magic Missiles to deal 10% bonus damage.",
       "image": "wizard_teleport.png",
       "talentChanged": false
     },
@@ -138,7 +138,7 @@
     },
     {
       "name": "Cannoneer",
-      "description": "When Li-Ming uses an Ability, her next Basic Attack's damage is increased by 75% and deals Spell damage instead of Physical.  Stacks up to 3 times.",
+      "description": "When Li-Ming uses an Ability, her next Basic Attack's damage is increased by 75% and deals Spell damage instead of Physical. Stacks up to 3 times.",
       "image": "talent_autoattack_damage.png",
       "talentChanged": false
     },
@@ -178,19 +178,19 @@
   "20": [
     {
       "name": "Temporal Flux",
-      "description": "Disintegrate gradually slows enemies caught in its beam, to a maximum of 60%.",
+      "description": "Disintegrate gradually Slows enemies caught in its beam, to a maximum of 60%.",
       "image": "wizard_disintegrate.png",
       "talentChanged": false
     },
     {
       "name": "Repulsion",
-      "description": "Increases Wave of Force knockback distance by 150% and increases its cast range by 100%.",
+      "description": "Increases Wave of Force knockback distance by 175% and increases its cast range by 95%.",
       "image": "wizard_waveofforce.png",
       "talentChanged": false
     },
     {
       "name": "Tal Rasha's Elements",
-      "description": "Casting Abilities increases the damage of the next Ability by 5%, up to 20%.  This bonus is reset when the same Ability is used within a chain.",
+      "description": "Casting Abilities increases the damage of the next Ability by 5%, up to 20%. This bonus is reset when the same Ability is used within a chain.",
       "image": "wizard_elementalexposure.png",
       "talentChanged": false
     },
@@ -199,7 +199,7 @@
       "description": "Activate to enter Archon form, allowing Li-Ming to repeatedly use Disintegrate, but be unable to cast other Abilities.",
       "image": "wizard_archon.png",
       "talentChanged": false,
-      "cooldown": "10s"
+      "cooldown": "1s"
     }
   ]
 }

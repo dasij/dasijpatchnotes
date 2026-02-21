@@ -37,7 +37,7 @@
       },
       {
         "name": "Summon Water Elemental (R)",
-        "description": "Summon a Water Elemental at target location. The Water Elemental's Basic Attacks deal 62 damage, splash for 25% damage and Chill. The Ability can be reactivated to retarget the Water Elemental.  Lasts 20 seconds.",
+        "description": "Summon a Water Elemental at target location. The Water Elemental's Basic Attacks deal 62 damage, splash for 25% damage and Chill. The Ability can be reactivated to retarget the Water Elemental. Lasts 20 seconds.",
         "image": "jaina_summonwaterelemental.png",
         "abilityChanged": false,
         "manaCost": "60 Mana",
@@ -46,7 +46,7 @@
     ],
     "trait": {
       "name": "Frostbite (T)",
-      "description": " Jaina's Abilities Chill targets, Slowing them by 25% and amplifying damage taken from her Abilities by 50%. Lasts 4 seconds.{quest}Quest:{/quest} Deal 12000 Ability damage to Chilled Heroes.{reward}Reward:{/reward} Unlock the Improved Ice Block Ability, allowing Jaina to become temporarily Invulnerable.",
+      "description": " Jaina's Abilities Chill targets, Slowing them by 25% and amplifying damage taken from her Abilities by 50%. Lasts 4 seconds.Quest: Deal 12000 Ability damage to Chilled Heroes.Reward: Unlock the Improved Ice Block Ability, allowing Jaina to become temporarily Invulnerable.",
       "image": "jaina_frostbite.png",
       "abilityChanged": false
     }
@@ -66,7 +66,7 @@
     },
     {
       "name": "Fingers of Frost",
-      "description": "{quest}Quest:{/quest} Gather Regeneration Globes to increase Jaina's Mana regeneration by 0.1 per second, up to 2 per second. {reward}Reward:{/reward} After gathering 20 Globes, the damage bonus from Frostbite is increased by 10%.",
+      "description": "Quest: Gather Regeneration Globes to increase Jaina's Mana regeneration by 0.1 per second, up to 2 per second. Reward: After gathering 20 Globes, the damage bonus from Frostbite is increased by 10%.",
       "image": "talent_conjurerspursuit.png",
       "talentChanged": false
     }
@@ -106,7 +106,7 @@
     },
     {
       "name": "Icefury Wand",
-      "description": "Basic Attacks against Chilled enemies deal 50% more damage and lower the cooldown of Blizzard by 1.25 seconds.  Doubled against enemy Heroes.",
+      "description": "Basic Attacks against Chilled enemies deal 50% more damage and lower the cooldown of Blizzard by 1.25 seconds. Doubled against enemy Heroes.",
       "image": "talent_autoattack_cooldown.png",
       "talentChanged": false
     }
@@ -122,7 +122,7 @@
     },
     {
       "name": "Summon Water Elemental",
-      "description": "Summon a Water Elemental at target location. The Water Elemental's Basic Attacks deal 62 damage, splash for 25% damage and Chill. The Ability can be reactivated to retarget the Water Elemental.  Lasts 20 seconds.",
+      "description": "Summon a Water Elemental at target location. The Water Elemental's Basic Attacks deal 62 damage, splash for 25% damage and Chill. The Ability can be reactivated to retarget the Water Elemental. Lasts 20 seconds.",
       "image": "jaina_summonwaterelemental.png",
       "talentChanged": false,
       "manaCost": "60 Mana",

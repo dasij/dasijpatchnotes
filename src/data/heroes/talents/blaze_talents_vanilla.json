@@ -3,7 +3,7 @@
     "basic": [
       {
         "name": "Flame Stream (Q)",
-        "description": "Fire two streams that deal 76 damage to enemies hit, and an additional 120 damage to enemies hit by both streams. Flame Stream Ignites Oil Spills it comes in contact with.",
+        "description": "Fire two streams that deal 76 damage to enemies hit, and an additional 120 damage to non-Structure enemies hit by both streams. Flame Stream Ignites Oil Spills it comes in contact with.",
         "image": "blaze_flame.png",
         "abilityChanged": false,
         "manaCost": "30 Mana",
@@ -29,11 +29,11 @@
     "heroic": [
       {
         "name": "Bunker Drop (R)",
-        "description": "After 0.5 seconds, deploy and enter a Bunker with 1435 Health. Blaze and his allies can enter and exit the Bunker at will. While in the Bunker, occupants gain access to Flamethrower, dealing 170 damage to enemies in a line. Exiting the Bunker grants 25 Armor for 2 seconds. Bunkers last 10 seconds, or until destroyed.",
+        "description": "After 0.5 seconds, deploy and enter a Bunker with 1435 Health. Blaze and his allies can enter and exit the Bunker at will. While in the Bunker, occupants gain access to Flamethrower, dealing 150 damage to enemies in a line. Exiting the Bunker grants 25 Armor for 2 seconds. Bunkers last 10 seconds, or until destroyed.",
         "image": "blaze_bunker.png",
         "abilityChanged": false,
-        "manaCost": "70 Mana",
-        "cooldown": "70s"
+        "manaCost": "80 Mana",
+        "cooldown": "80s"
       },
       {
         "name": "Combustion (R)",
@@ -55,7 +55,7 @@
   "1": [
     {
       "name": "Adrenaline Stimpack",
-      "description": "Passive: While over 80% Health, gain 25% bonus Attack Speed and 10% bonus Movement Speed.Activate to gain 100% Attack Speed and 25% Movement Speed for 5 seconds.",
+      "description": "Passive: While over 80% Health, gain 20% bonus Attack Speed and 10% bonus Movement Speed.Activate to gain 100% Attack Speed and 25% Movement Speed for 5 seconds.",
       "image": "blaze_stim_2.png",
       "talentChanged": false,
       "cooldown": "30s"
@@ -76,7 +76,7 @@
     },
     {
       "name": "New Habits",
-      "description": "Collecting Regeneration Globes reduces the cooldown of Pyromania by 6 seconds.{quest}Quest:{/quest} Collect 15 Regeneration Globes.{reward}Reward:{/reward} Pyromania grants Unstoppable for 2 seconds.",
+      "description": "Collecting Regeneration Globes reduces the cooldown of Pyromania by 6 seconds.Quest: Collect 15 Regeneration Globes.Reward: Pyromania grants Unstoppable for 2 seconds.",
       "image": "blaze_new_habits.png",
       "talentChanged": false
     }
@@ -96,7 +96,7 @@
     },
     {
       "name": "Incinerator Gauntlets",
-      "description": "Increase Basic Attack area by 15%, and Basic Attack damage to Minions, Mercenaries, and Monsters by 50%.",
+      "description": "Increase Basic Attack area by 15%, and Basic Attack damage to Minions, Mercenaries, and Monsters by 40%.",
       "image": "talent_autoattack_building.png",
       "talentChanged": false
     }
@@ -104,13 +104,13 @@
   "7": [
     {
       "name": "Suppressive Fire",
-      "description": "Each stream of Flame Stream reduces the Spell Power of Heroes hit by 25% for 4 seconds, up to 50%.",
+      "description": "Each stream of Flame Stream reduces the Spell Power of Heroes hit by 20% for 4 seconds, up to 40%.",
       "image": "blaze_flame.png",
       "talentChanged": false
     },
     {
       "name": "Nanomachine Coating",
-      "description": "Enemies standing in Oil Spills and Ignited Oil Spills have their Attack Speed reduced by 50% for 3 seconds.",
+      "description": "Enemies standing in Oil Spills and Ignited Oil Spills have their Attack Speed reduced by 35% for 4 seconds.",
       "image": "blaze_oil.png",
       "talentChanged": false
     },
@@ -124,11 +124,11 @@
   "10": [
     {
       "name": "Bunker Drop",
-      "description": "After 0.5 seconds, deploy and enter a Bunker with 1435 Health. Blaze and his allies can enter and exit the Bunker at will. While in the Bunker, occupants gain access to Flamethrower, dealing 170 damage to enemies in a line. Exiting the Bunker grants 25 Armor for 2 seconds. Bunkers last 10 seconds, or until destroyed.",
+      "description": "After 0.5 seconds, deploy and enter a Bunker with 1435 Health. Blaze and his allies can enter and exit the Bunker at will. While in the Bunker, occupants gain access to Flamethrower, dealing 150 damage to enemies in a line. Exiting the Bunker grants 25 Armor for 2 seconds. Bunkers last 10 seconds, or until destroyed.",
       "image": "blaze_bunker.png",
       "talentChanged": false,
-      "manaCost": "70 Mana",
-      "cooldown": "70s"
+      "manaCost": "80 Mana",
+      "cooldown": "80s"
     },
     {
       "name": "Combustion",
@@ -142,7 +142,7 @@
   "13": [
     {
       "name": "Grill and Kill",
-      "description": "Increase Ignited Oil Spill damage by 45%.{quest}Quest:{/quest} Damage enemy Heroes with Ignited Oil Spills 30 times.{reward}Reward:{/reward} Increase Oil Spill's Ignite duration by 2.5 seconds.",
+      "description": "Increase Ignited Oil Spill damage by 45%.Quest: Damage enemy Heroes with Ignited Oil Spills 30 times.Reward: Increase Oil Spill's Ignite duration by 2.5 seconds.",
       "image": "blaze_oil.png",
       "talentChanged": false
     },
@@ -154,7 +154,7 @@
     },
     {
       "name": "Collision Course",
-      "description": "Jet Propulsion's collision deals 275 damage to the first enemy Hero hit.",
+      "description": "Jet Propulsion's collision deals 260 damage to the first enemy Hero hit.",
       "image": "blaze_jet.png",
       "talentChanged": false
     }

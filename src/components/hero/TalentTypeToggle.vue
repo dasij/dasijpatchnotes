@@ -15,29 +15,17 @@
       <span :class="{ active: modelValue === 'modified' }">Modified</span>
     </div>
 
-    <label class="dev-comments-toggle">
-      <input id="dev-comments-toggle" type="checkbox" v-model="devCommentsModel" autocomplete="off">
-      <span class="checkmark-box">✓</span>
-      <span class="label-text">Dev Notes</span>
-    </label>
+
   </div>
 </template>
 
 <script setup>
 /* eslint-disable no-undef */
-import { computed } from 'vue'
-
-const props = defineProps({
-  modelValue: { type: String, default: 'modified' },
-  devCommentsAlways: { type: Boolean, default: false }
+defineProps({
+  modelValue: { type: String, default: 'modified' }
 })
 
-const emit = defineEmits(['update:modelValue', 'update:devCommentsAlways'])
-
-const devCommentsModel = computed({
-  get: () => props.devCommentsAlways,
-  set: (val) => emit('update:devCommentsAlways', val)
-})
+defineEmits(['update:modelValue'])
 </script>
 
 <style scoped>
